@@ -1,0 +1,3568 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.200 --> 00:00:03.790 align:start position:0%
+ 
+Okay.
+
+00:00:03.790 --> 00:00:03.800 align:start position:0%
+Okay.
+ 
+
+00:00:03.800 --> 00:00:04.870 align:start position:0%
+Okay.
+&gt;&gt; Hello<00:00:03.920><c> everyone.</c>
+
+00:00:04.870 --> 00:00:04.880 align:start position:0%
+&gt;&gt; Hello everyone.
+ 
+
+00:00:04.880 --> 00:00:07.390 align:start position:0%
+&gt;&gt; Hello everyone.
+Um<00:00:05.360><c> so</c><00:00:05.520><c> I'm</c><00:00:05.840><c> Jared</c><00:00:06.160><c> Huntington.</c><00:00:06.720><c> I'm</c><00:00:06.960><c> a</c><00:00:07.080><c> power</c>
+
+00:00:07.390 --> 00:00:07.400 align:start position:0%
+Um so I'm Jared Huntington. I'm a power
+ 
+
+00:00:07.400 --> 00:00:09.670 align:start position:0%
+Um so I'm Jared Huntington. I'm a power
+architect<00:00:07.840><c> with</c><00:00:08.000><c> Nvidia</c><00:00:08.440><c> working</c><00:00:08.800><c> on</c>
+
+00:00:09.670 --> 00:00:09.680 align:start position:0%
+architect with Nvidia working on
+ 
+
+00:00:09.680 --> 00:00:13.270 align:start position:0%
+architect with Nvidia working on
+uh<00:00:09.800><c> power</c><00:00:10.120><c> basically</c><00:00:10.600><c> from</c><00:00:11.080><c> SST</c><00:00:11.640><c> to</c><00:00:11.760><c> chip</c><00:00:12.480><c> and</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+uh power basically from SST to chip and
+ 
+
+00:00:13.280 --> 00:00:13.910 align:start position:0%
+uh power basically from SST to chip and
+uh
+
+00:00:13.910 --> 00:00:13.920 align:start position:0%
+uh
+ 
+
+00:00:13.920 --> 00:00:14.590 align:start position:0%
+uh
+I'll<00:00:14.000><c> let</c><00:00:14.320><c> you</c><00:00:14.400><c> go</c><00:00:14.480><c> first.</c>
+
+00:00:14.590 --> 00:00:14.600 align:start position:0%
+I'll let you go first.
+ 
+
+00:00:14.600 --> 00:00:18.270 align:start position:0%
+I'll let you go first.
+&gt;&gt; Roya<00:00:14.720><c> Movahedi,</c><00:00:15.880><c> uh</c><00:00:15.920><c> CMO</c><00:00:16.480><c> at</c><00:00:16.680><c> MagMates.</c>
+
+00:00:18.270 --> 00:00:18.280 align:start position:0%
+&gt;&gt; Roya Movahedi, uh CMO at MagMates.
+ 
+
+00:00:18.280 --> 00:00:20.630 align:start position:0%
+&gt;&gt; Roya Movahedi, uh CMO at MagMates.
+&gt;&gt; Yeah,<00:00:18.760><c> I'm</c><00:00:18.920><c> Shilei.</c><00:00:19.640><c> I'm</c><00:00:19.800><c> the</c><00:00:19.960><c> lead</c><00:00:20.120><c> engineer</c>
+
+00:00:20.630 --> 00:00:20.640 align:start position:0%
+&gt;&gt; Yeah, I'm Shilei. I'm the lead engineer
+ 
+
+00:00:20.640 --> 00:00:22.990 align:start position:0%
+&gt;&gt; Yeah, I'm Shilei. I'm the lead engineer
+in<00:00:20.840><c> MagMates</c><00:00:21.320><c> and</c><00:00:21.680><c> focus</c><00:00:22.000><c> on</c><00:00:22.320><c> focus</c><00:00:22.680><c> on</c><00:00:22.880><c> the</c>
+
+00:00:22.990 --> 00:00:23.000 align:start position:0%
+in MagMates and focus on focus on the
+ 
+
+00:00:23.000 --> 00:00:26.670 align:start position:0%
+in MagMates and focus on focus on the
+liquid<00:00:23.480><c> cool</c><00:00:23.960><c> power</c><00:00:24.160><c> supply</c><00:00:24.400><c> design.</c>
+
+00:00:26.670 --> 00:00:26.680 align:start position:0%
+liquid cool power supply design.
+ 
+
+00:00:26.680 --> 00:00:28.950 align:start position:0%
+liquid cool power supply design.
+&gt;&gt; Okay,<00:00:27.360><c> um</c><00:00:27.480><c> so</c><00:00:27.800><c> today</c><00:00:28.160><c> we're</c><00:00:28.320><c> talking</c><00:00:28.640><c> about</c>
+
+00:00:28.950 --> 00:00:28.960 align:start position:0%
+&gt;&gt; Okay, um so today we're talking about
+ 
+
+00:00:28.960 --> 00:00:31.910 align:start position:0%
+&gt;&gt; Okay, um so today we're talking about
+the<00:00:29.560><c> um</c><00:00:29.960><c> liquid</c><00:00:30.320><c> cooled</c><00:00:30.640><c> power</c><00:00:30.920><c> shelves</c><00:00:31.560><c> and</c>
+
+00:00:31.910 --> 00:00:31.920 align:start position:0%
+the um liquid cooled power shelves and
+ 
+
+00:00:31.920 --> 00:00:34.870 align:start position:0%
+the um liquid cooled power shelves and
+our<00:00:32.040><c> transition</c><00:00:32.680><c> to</c><00:00:32.880><c> 800</c><00:00:33.320><c> V</c><00:00:33.640><c> DC.</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+our transition to 800 V DC.
+ 
+
+00:00:34.880 --> 00:00:37.750 align:start position:0%
+our transition to 800 V DC.
+Um<00:00:35.520><c> and</c><00:00:36.240><c> uh</c><00:00:36.360><c> the</c><00:00:36.480><c> work</c><00:00:36.680><c> that</c><00:00:37.120><c> uh</c><00:00:37.200><c> MagMates</c><00:00:37.640><c> is</c>
+
+00:00:37.750 --> 00:00:37.760 align:start position:0%
+Um and uh the work that uh MagMates is
+ 
+
+00:00:37.760 --> 00:00:40.070 align:start position:0%
+Um and uh the work that uh MagMates is
+doing<00:00:38.040><c> with</c><00:00:38.400><c> Nvidia</c><00:00:38.880><c> on</c><00:00:39.080><c> developing</c><00:00:39.960><c> uh</c>
+
+00:00:40.070 --> 00:00:40.080 align:start position:0%
+doing with Nvidia on developing uh
+ 
+
+00:00:40.080 --> 00:00:42.270 align:start position:0%
+doing with Nvidia on developing uh
+liquid<00:00:40.400><c> cooled</c><00:00:40.920><c> power</c><00:00:41.160><c> shelves</c><00:00:41.560><c> that</c><00:00:42.000><c> we</c><00:00:42.120><c> can</c>
+
+00:00:42.270 --> 00:00:42.280 align:start position:0%
+liquid cooled power shelves that we can
+ 
+
+00:00:42.280 --> 00:00:43.630 align:start position:0%
+liquid cooled power shelves that we can
+use<00:00:42.520><c> for</c><00:00:42.720><c> the</c>
+
+00:00:43.630 --> 00:00:43.640 align:start position:0%
+use for the
+ 
+
+00:00:43.640 --> 00:00:45.630 align:start position:0%
+use for the
+uh<00:00:44.040><c> ecosystem.</c>
+
+00:00:45.630 --> 00:00:45.640 align:start position:0%
+uh ecosystem.
+ 
+
+00:00:45.640 --> 00:00:47.230 align:start position:0%
+uh ecosystem.
+So
+
+00:00:47.230 --> 00:00:47.240 align:start position:0%
+So
+ 
+
+00:00:47.240 --> 00:00:48.230 align:start position:0%
+So
+&gt;&gt; I<00:00:47.280><c> think</c><00:00:47.400><c> we</c><00:00:47.480><c> go</c><00:00:47.600><c> to</c><00:00:47.720><c> the</c><00:00:47.800><c> next.</c>
+
+00:00:48.230 --> 00:00:48.240 align:start position:0%
+&gt;&gt; I think we go to the next.
+ 
+
+00:00:48.240 --> 00:00:49.270 align:start position:0%
+&gt;&gt; I think we go to the next.
+&gt;&gt; What's<00:00:48.360><c> that?</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+&gt;&gt; What's that?
+ 
+
+00:00:49.280 --> 00:00:50.910 align:start position:0%
+&gt;&gt; What's that?
+Yeah,<00:00:49.600><c> so</c><00:00:49.920><c> then</c>
+
+00:00:50.910 --> 00:00:50.920 align:start position:0%
+Yeah, so then
+ 
+
+00:00:50.920 --> 00:00:52.070 align:start position:0%
+Yeah, so then
+uh<00:00:51.000><c> um</c>
+
+00:00:52.070 --> 00:00:52.080 align:start position:0%
+uh um
+ 
+
+00:00:52.080 --> 00:00:53.870 align:start position:0%
+uh um
+hopefully<00:00:52.400><c> everyone's</c><00:00:52.800><c> seen</c><00:00:53.200><c> seen</c><00:00:53.480><c> a</c><00:00:53.560><c> graph</c>
+
+00:00:53.870 --> 00:00:53.880 align:start position:0%
+hopefully everyone's seen seen a graph
+ 
+
+00:00:53.880 --> 00:00:55.870 align:start position:0%
+hopefully everyone's seen seen a graph
+similar<00:00:54.200><c> to</c><00:00:54.320><c> this,</c><00:00:54.640><c> right?</c><00:00:54.840><c> We</c><00:00:54.960><c> present</c><00:00:55.320><c> this</c>
+
+00:00:55.870 --> 00:00:55.880 align:start position:0%
+similar to this, right? We present this
+ 
+
+00:00:55.880 --> 00:00:58.390 align:start position:0%
+similar to this, right? We present this
+uh<00:00:56.400><c> in</c><00:00:56.840><c> several</c><00:00:57.160><c> of</c><00:00:57.280><c> our</c><00:00:57.720><c> or</c><00:00:57.880><c> several</c><00:00:58.200><c> of</c><00:00:58.280><c> our</c>
+
+00:00:58.390 --> 00:00:58.400 align:start position:0%
+uh in several of our or several of our
+ 
+
+00:00:58.400 --> 00:01:00.230 align:start position:0%
+uh in several of our or several of our
+talks,<00:00:58.720><c> but</c><00:00:59.360><c> th-</c><00:00:59.520><c> this</c><00:00:59.680><c> is</c><00:00:59.800><c> essentially</c>
+
+00:01:00.230 --> 00:01:00.240 align:start position:0%
+talks, but th- this is essentially
+ 
+
+00:01:00.240 --> 00:01:02.870 align:start position:0%
+talks, but th- this is essentially
+what's<00:01:00.440><c> driving</c><00:01:01.200><c> the</c><00:01:01.320><c> need</c><00:01:01.680><c> for</c><00:01:01.880><c> 800</c><00:01:02.240><c> V.</c>
+
+00:01:02.870 --> 00:01:02.880 align:start position:0%
+what's driving the need for 800 V.
+ 
+
+00:01:02.880 --> 00:01:03.670 align:start position:0%
+what's driving the need for 800 V.
+Um
+
+00:01:03.670 --> 00:01:03.680 align:start position:0%
+Um
+ 
+
+00:01:03.680 --> 00:01:05.270 align:start position:0%
+Um
+and<00:01:03.840><c> it's</c><00:01:04.000><c> essentially</c><00:01:04.400><c> if</c><00:01:04.519><c> we</c><00:01:04.640><c> look</c><00:01:04.879><c> at</c><00:01:05.080><c> the</c>
+
+00:01:05.270 --> 00:01:05.280 align:start position:0%
+and it's essentially if we look at the
+ 
+
+00:01:05.280 --> 00:01:07.630 align:start position:0%
+and it's essentially if we look at the
+power<00:01:05.640><c> consumption</c><00:01:06.440><c> over</c><00:01:06.720><c> time,</c><00:01:07.440><c> right?</c>
+
+00:01:07.630 --> 00:01:07.640 align:start position:0%
+power consumption over time, right?
+ 
+
+00:01:07.640 --> 00:01:09.830 align:start position:0%
+power consumption over time, right?
+There's<00:01:07.840><c> a</c><00:01:08.120><c> a</c><00:01:08.200><c> year-over-year</c><00:01:08.920><c> increase</c><00:01:09.760><c> uh</c>
+
+00:01:09.830 --> 00:01:09.840 align:start position:0%
+There's a a year-over-year increase uh
+ 
+
+00:01:09.840 --> 00:01:13.070 align:start position:0%
+There's a a year-over-year increase uh
+just<00:01:10.440><c> due</c><00:01:10.600><c> to</c><00:01:10.720><c> the</c><00:01:10.920><c> chips,</c><00:01:11.320><c> due</c><00:01:11.480><c> to</c><00:01:11.560><c> the</c><00:01:11.680><c> GPUs</c>
+
+00:01:13.070 --> 00:01:13.080 align:start position:0%
+just due to the chips, due to the GPUs
+ 
+
+00:01:13.080 --> 00:01:14.750 align:start position:0%
+just due to the chips, due to the GPUs
+um<00:01:13.440><c> pulling</c><00:01:13.680><c> more</c><00:01:13.840><c> power</c><00:01:14.200><c> for</c><00:01:14.520><c> more</c>
+
+00:01:14.750 --> 00:01:14.760 align:start position:0%
+um pulling more power for more
+ 
+
+00:01:14.760 --> 00:01:16.230 align:start position:0%
+um pulling more power for more
+performance.
+
+00:01:16.230 --> 00:01:16.240 align:start position:0%
+performance.
+ 
+
+00:01:16.240 --> 00:01:18.830 align:start position:0%
+performance.
+But<00:01:16.880><c> there's</c><00:01:17.040><c> another</c><00:01:17.360><c> aspect</c><00:01:17.960><c> about</c><00:01:18.320><c> GPUs</c>
+
+00:01:18.830 --> 00:01:18.840 align:start position:0%
+But there's another aspect about GPUs
+ 
+
+00:01:18.840 --> 00:01:20.910 align:start position:0%
+But there's another aspect about GPUs
+that's<00:01:19.080><c> unique,</c><00:01:19.920><c> which</c><00:01:20.200><c> is</c><00:01:20.400><c> we</c><00:01:20.520><c> really</c><00:01:20.760><c> want</c>
+
+00:01:20.910 --> 00:01:20.920 align:start position:0%
+that's unique, which is we really want
+ 
+
+00:01:20.920 --> 00:01:24.070 align:start position:0%
+that's unique, which is we really want
+to<00:01:20.960><c> pack</c><00:01:21.320><c> as</c><00:01:21.520><c> many</c><00:01:21.840><c> GPUs</c><00:01:22.480><c> into</c><00:01:22.760><c> one</c><00:01:23.480><c> cabinet</c><00:01:23.920><c> as</c>
+
+00:01:24.070 --> 00:01:24.080 align:start position:0%
+to pack as many GPUs into one cabinet as
+ 
+
+00:01:24.080 --> 00:01:25.270 align:start position:0%
+to pack as many GPUs into one cabinet as
+possible
+
+00:01:25.270 --> 00:01:25.280 align:start position:0%
+possible
+ 
+
+00:01:25.280 --> 00:01:28.190 align:start position:0%
+possible
+because<00:01:25.960><c> um</c><00:01:26.320><c> we</c><00:01:26.480><c> can</c><00:01:26.640><c> essentially</c><00:01:27.800><c> uh</c>
+
+00:01:28.190 --> 00:01:28.200 align:start position:0%
+because um we can essentially uh
+ 
+
+00:01:28.200 --> 00:01:30.150 align:start position:0%
+because um we can essentially uh
+increase<00:01:28.680><c> the</c><00:01:28.760><c> performance</c><00:01:29.360><c> if</c><00:01:29.560><c> we</c><00:01:29.680><c> keep</c><00:01:30.000><c> all</c>
+
+00:01:30.150 --> 00:01:30.160 align:start position:0%
+increase the performance if we keep all
+ 
+
+00:01:30.160 --> 00:01:32.270 align:start position:0%
+increase the performance if we keep all
+of<00:01:30.240><c> those</c><00:01:30.480><c> GPUs</c><00:01:31.120><c> on</c><00:01:31.240><c> a</c><00:01:31.320><c> copper</c><00:01:31.760><c> networking</c>
+
+00:01:32.270 --> 00:01:32.280 align:start position:0%
+of those GPUs on a copper networking
+ 
+
+00:01:32.280 --> 00:01:33.350 align:start position:0%
+of those GPUs on a copper networking
+domain.<00:01:32.720><c> And</c><00:01:32.880><c> so</c><00:01:32.960><c> that's</c><00:01:33.120><c> what's</c>
+
+00:01:33.350 --> 00:01:33.360 align:start position:0%
+domain. And so that's what's
+ 
+
+00:01:33.360 --> 00:01:36.030 align:start position:0%
+domain. And so that's what's
+fundamentally<00:01:33.880><c> different</c><00:01:34.400><c> between</c><00:01:34.800><c> GPUs</c><00:01:35.480><c> and</c>
+
+00:01:36.030 --> 00:01:36.040 align:start position:0%
+fundamentally different between GPUs and
+ 
+
+00:01:36.040 --> 00:01:38.710 align:start position:0%
+fundamentally different between GPUs and
+the<00:01:36.160><c> classic</c><00:01:36.520><c> web</c><00:01:36.720><c> servers.</c><00:01:37.120><c> So</c><00:01:37.800><c> very</c><00:01:38.120><c> quickly</c>
+
+00:01:38.710 --> 00:01:38.720 align:start position:0%
+the classic web servers. So very quickly
+ 
+
+00:01:38.720 --> 00:01:41.310 align:start position:0%
+the classic web servers. So very quickly
+we<00:01:38.880><c> can</c><00:01:39.000><c> go</c><00:01:39.160><c> from</c><00:01:39.360><c> an</c><00:01:39.480><c> NVL</c><00:01:40.000><c> 72</c><00:01:40.560><c> system</c><00:01:41.120><c> and</c><00:01:41.240><c> we</c>
+
+00:01:41.310 --> 00:01:41.320 align:start position:0%
+we can go from an NVL 72 system and we
+ 
+
+00:01:41.320 --> 00:01:44.390 align:start position:0%
+we can go from an NVL 72 system and we
+can<00:01:41.560><c> double</c><00:01:41.920><c> power</c><00:01:42.640><c> to</c><00:01:42.720><c> an</c><00:01:42.840><c> NVL</c><00:01:43.200><c> 144</c><00:01:43.840><c> system,</c>
+
+00:01:44.390 --> 00:01:44.400 align:start position:0%
+can double power to an NVL 144 system,
+ 
+
+00:01:44.400 --> 00:01:46.510 align:start position:0%
+can double power to an NVL 144 system,
+right?<00:01:44.720><c> And</c><00:01:44.880><c> so</c><00:01:44.960><c> that</c><00:01:45.680><c> that</c><00:01:45.960><c> doubling</c><00:01:46.400><c> of</c>
+
+00:01:46.510 --> 00:01:46.520 align:start position:0%
+right? And so that that doubling of
+ 
+
+00:01:46.520 --> 00:01:48.150 align:start position:0%
+right? And so that that doubling of
+power<00:01:46.880><c> can</c><00:01:47.040><c> happen</c><00:01:47.440><c> as</c><00:01:47.640><c> soon</c><00:01:47.840><c> as</c><00:01:48.040><c> the</c>
+
+00:01:48.150 --> 00:01:48.160 align:start position:0%
+power can happen as soon as the
+ 
+
+00:01:48.160 --> 00:01:50.590 align:start position:0%
+power can happen as soon as the
+packaging<00:01:49.400><c> uh</c><00:01:49.680><c> the</c><00:01:49.840><c> as</c><00:01:50.000><c> soon</c><00:01:50.160><c> as</c><00:01:50.280><c> there's</c><00:01:50.480><c> new</c>
+
+00:01:50.590 --> 00:01:50.600 align:start position:0%
+packaging uh the as soon as there's new
+ 
+
+00:01:50.600 --> 00:01:53.310 align:start position:0%
+packaging uh the as soon as there's new
+developments<00:01:51.160><c> in</c><00:01:51.280><c> packaging.</c><00:01:52.440><c> And</c><00:01:52.600><c> so</c><00:01:52.960><c> as</c>
+
+00:01:53.310 --> 00:01:53.320 align:start position:0%
+developments in packaging. And so as
+ 
+
+00:01:53.320 --> 00:01:55.310 align:start position:0%
+developments in packaging. And so as
+engineers<00:01:53.760><c> working</c><00:01:54.040><c> on</c><00:01:54.160><c> power,</c><00:01:54.920><c> we</c><00:01:55.080><c> don't</c>
+
+00:01:55.310 --> 00:01:55.320 align:start position:0%
+engineers working on power, we don't
+ 
+
+00:01:55.320 --> 00:01:56.750 align:start position:0%
+engineers working on power, we don't
+want<00:01:55.480><c> to</c><00:01:55.520><c> be</c><00:01:55.640><c> the</c><00:01:55.720><c> bottleneck</c><00:01:56.200><c> in</c><00:01:56.280><c> the</c><00:01:56.360><c> system.</c>
+
+00:01:56.750 --> 00:01:56.760 align:start position:0%
+want to be the bottleneck in the system.
+ 
+
+00:01:56.760 --> 00:01:59.190 align:start position:0%
+want to be the bottleneck in the system.
+We<00:01:56.840><c> don't</c><00:01:57.080><c> want</c><00:01:57.200><c> to</c><00:01:57.240><c> be</c><00:01:57.360><c> the</c><00:01:57.480><c> gate</c><00:01:58.080><c> for</c><00:01:58.400><c> what's</c>
+
+00:01:59.190 --> 00:01:59.200 align:start position:0%
+We don't want to be the gate for what's
+ 
+
+00:01:59.200 --> 00:02:00.230 align:start position:0%
+We don't want to be the gate for what's
+uh<00:01:59.280><c> you</c><00:01:59.360><c> know,</c><00:01:59.480><c> the</c><00:01:59.600><c> next</c><00:01:59.880><c> level</c><00:02:00.120><c> of</c>
+
+00:02:00.230 --> 00:02:00.240 align:start position:0%
+uh you know, the next level of
+ 
+
+00:02:00.240 --> 00:02:02.030 align:start position:0%
+uh you know, the next level of
+performance<00:02:00.760><c> that</c><00:02:00.880><c> we</c><00:02:00.960><c> can</c><00:02:01.080><c> get</c><00:02:01.200><c> in</c><00:02:01.320><c> the</c><00:02:01.400><c> rack.</c>
+
+00:02:02.030 --> 00:02:02.040 align:start position:0%
+performance that we can get in the rack.
+ 
+
+00:02:02.040 --> 00:02:03.270 align:start position:0%
+performance that we can get in the rack.
+And<00:02:02.160><c> so</c><00:02:02.240><c> that's</c><00:02:02.400><c> where</c><00:02:02.520><c> we</c><00:02:02.600><c> need</c><00:02:02.800><c> to</c><00:02:02.840><c> be</c>
+
+00:02:03.270 --> 00:02:03.280 align:start position:0%
+And so that's where we need to be
+ 
+
+00:02:03.280 --> 00:02:05.030 align:start position:0%
+And so that's where we need to be
+prepared<00:02:03.840><c> for</c><00:02:03.960><c> power</c><00:02:04.240><c> levels</c><00:02:04.560><c> to</c><00:02:04.680><c> increase</c>
+
+00:02:05.030 --> 00:02:05.040 align:start position:0%
+prepared for power levels to increase
+ 
+
+00:02:05.040 --> 00:02:06.590 align:start position:0%
+prepared for power levels to increase
+very<00:02:05.280><c> quickly.</c>
+
+00:02:06.590 --> 00:02:06.600 align:start position:0%
+very quickly.
+ 
+
+00:02:06.600 --> 00:02:07.790 align:start position:0%
+very quickly.
+And<00:02:06.760><c> so</c>
+
+00:02:07.790 --> 00:02:07.800 align:start position:0%
+And so
+ 
+
+00:02:07.800 --> 00:02:09.790 align:start position:0%
+And so
+in<00:02:07.920><c> order</c><00:02:08.119><c> to</c><00:02:08.280><c> support</c><00:02:09.119><c> uh</c><00:02:09.240><c> these</c><00:02:09.440><c> computer</c>
+
+00:02:09.790 --> 00:02:09.800 align:start position:0%
+in order to support uh these computer
+ 
+
+00:02:09.800 --> 00:02:11.990 align:start position:0%
+in order to support uh these computer
+racks,<00:02:10.119><c> we've</c><00:02:10.600><c> we've</c><00:02:10.759><c> essentially</c><00:02:11.720><c> uh</c><00:02:11.880><c> we</c>
+
+00:02:11.990 --> 00:02:12.000 align:start position:0%
+racks, we've we've essentially uh we
+ 
+
+00:02:12.000 --> 00:02:13.670 align:start position:0%
+racks, we've we've essentially uh we
+have<00:02:12.160><c> several</c><00:02:12.440><c> power</c><00:02:12.760><c> generations.</c><00:02:13.520><c> Our</c>
+
+00:02:13.670 --> 00:02:13.680 align:start position:0%
+have several power generations. Our
+ 
+
+00:02:13.680 --> 00:02:17.550 align:start position:0%
+have several power generations. Our
+first<00:02:13.920><c> generation</c><00:02:14.520><c> with</c><00:02:15.160><c> GB200,</c><00:02:16.040><c> GB300</c><00:02:17.440><c> uh</c>
+
+00:02:17.550 --> 00:02:17.560 align:start position:0%
+first generation with GB200, GB300 uh
+ 
+
+00:02:17.560 --> 00:02:20.830 align:start position:0%
+first generation with GB200, GB300 uh
+was<00:02:17.720><c> capable</c><00:02:18.280><c> of</c><00:02:18.480><c> 145</c><00:02:19.640><c> kW.</c>
+
+00:02:20.830 --> 00:02:20.840 align:start position:0%
+was capable of 145 kW.
+ 
+
+00:02:20.840 --> 00:02:23.670 align:start position:0%
+was capable of 145 kW.
+Our<00:02:20.959><c> second</c><00:02:21.320><c> generation</c><00:02:22.200><c> was</c><00:02:22.959><c> uh</c>
+
+00:02:23.670 --> 00:02:23.680 align:start position:0%
+Our second generation was uh
+ 
+
+00:02:23.680 --> 00:02:27.110 align:start position:0%
+Our second generation was uh
+basically<00:02:24.200><c> capable</c><00:02:24.680><c> of</c><00:02:24.880><c> 330</c><00:02:25.840><c> kW,</c><00:02:26.560><c> and</c><00:02:26.680><c> that's</c>
+
+00:02:27.110 --> 00:02:27.120 align:start position:0%
+basically capable of 330 kW, and that's
+ 
+
+00:02:27.120 --> 00:02:29.110 align:start position:0%
+basically capable of 330 kW, and that's
+uh<00:02:27.160><c> what</c><00:02:27.320><c> we're</c><00:02:27.400><c> using</c><00:02:27.720><c> for</c><00:02:27.840><c> Vera</c><00:02:28.080><c> Rubin.</c>
+
+00:02:29.110 --> 00:02:29.120 align:start position:0%
+uh what we're using for Vera Rubin.
+ 
+
+00:02:29.120 --> 00:02:30.430 align:start position:0%
+uh what we're using for Vera Rubin.
+And<00:02:29.240><c> then</c><00:02:29.320><c> now</c><00:02:29.520><c> what</c><00:02:29.640><c> we're</c><00:02:29.800><c> working</c><00:02:30.120><c> on</c><00:02:30.280><c> for</c>
+
+00:02:30.430 --> 00:02:30.440 align:start position:0%
+And then now what we're working on for
+ 
+
+00:02:30.440 --> 00:02:33.830 align:start position:0%
+And then now what we're working on for
+our<00:02:30.520><c> generation</c><00:02:31.120><c> 3</c><00:02:31.600><c> of</c><00:02:31.880><c> power</c><00:02:32.160><c> platforms</c>
+
+00:02:33.830 --> 00:02:33.840 align:start position:0%
+our generation 3 of power platforms
+ 
+
+00:02:33.840 --> 00:02:34.830 align:start position:0%
+our generation 3 of power platforms
+is
+
+00:02:34.830 --> 00:02:34.840 align:start position:0%
+is
+ 
+
+00:02:34.840 --> 00:02:38.110 align:start position:0%
+is
+uh<00:02:34.920><c> 100%</c><00:02:35.920><c> liquid</c><00:02:36.240><c> cooled</c><00:02:36.480><c> power</c><00:02:36.760><c> shelves.</c><00:02:37.280><c> And</c>
+
+00:02:38.110 --> 00:02:38.120 align:start position:0%
+uh 100% liquid cooled power shelves. And
+ 
+
+00:02:38.120 --> 00:02:39.790 align:start position:0%
+uh 100% liquid cooled power shelves. And
+with<00:02:38.240><c> that,</c><00:02:38.520><c> if</c><00:02:38.680><c> we</c><00:02:38.760><c> completely</c><00:02:39.200><c> fill</c><00:02:39.400><c> a</c><00:02:39.440><c> rack</c>
+
+00:02:39.790 --> 00:02:39.800 align:start position:0%
+with that, if we completely fill a rack
+ 
+
+00:02:39.800 --> 00:02:41.990 align:start position:0%
+with that, if we completely fill a rack
+and<00:02:39.920><c> we</c><00:02:40.040><c> push</c><00:02:40.320><c> to</c><00:02:40.400><c> the</c><00:02:40.520><c> limits</c><00:02:40.880><c> of</c><00:02:41.000><c> a</c><00:02:41.080><c> 50-V</c><00:02:41.760><c> bus</c>
+
+00:02:41.990 --> 00:02:42.000 align:start position:0%
+and we push to the limits of a 50-V bus
+ 
+
+00:02:42.000 --> 00:02:45.710 align:start position:0%
+and we push to the limits of a 50-V bus
+bar,<00:02:42.600><c> we</c><00:02:42.720><c> can</c><00:02:42.840><c> support</c><00:02:43.200><c> up</c><00:02:43.320><c> to</c><00:02:43.480><c> 570</c><00:02:44.440><c> kW.</c>
+
+00:02:45.710 --> 00:02:45.720 align:start position:0%
+bar, we can support up to 570 kW.
+ 
+
+00:02:45.720 --> 00:02:47.070 align:start position:0%
+bar, we can support up to 570 kW.
+And<00:02:45.840><c> so</c>
+
+00:02:47.070 --> 00:02:47.080 align:start position:0%
+And so
+ 
+
+00:02:47.080 --> 00:02:49.350 align:start position:0%
+And so
+um<00:02:47.560><c> and</c><00:02:47.680><c> then</c><00:02:47.800><c> finally,</c><00:02:48.600><c> we</c><00:02:48.760><c> are</c><00:02:48.920><c> working</c><00:02:49.200><c> on</c>
+
+00:02:49.350 --> 00:02:49.360 align:start position:0%
+um and then finally, we are working on
+ 
+
+00:02:49.360 --> 00:02:51.790 align:start position:0%
+um and then finally, we are working on
+native<00:02:49.920><c> 800-V</c><00:02:50.480><c> racks</c><00:02:50.760><c> where</c><00:02:50.880><c> we</c><00:02:51.000><c> take</c><00:02:51.240><c> 800-V</c>
+
+00:02:51.790 --> 00:02:51.800 align:start position:0%
+native 800-V racks where we take 800-V
+ 
+
+00:02:51.800 --> 00:02:54.150 align:start position:0%
+native 800-V racks where we take 800-V
+DC<00:02:52.200><c> directly</c><00:02:52.640><c> into</c><00:02:52.800><c> the</c><00:02:52.880><c> rack.</c><00:02:53.480><c> We're</c><00:02:53.600><c> not</c>
+
+00:02:54.150 --> 00:02:54.160 align:start position:0%
+DC directly into the rack. We're not
+ 
+
+00:02:54.160 --> 00:02:55.470 align:start position:0%
+DC directly into the rack. We're not
+prepared<00:02:54.520><c> to</c><00:02:54.600><c> show</c><00:02:54.760><c> what</c><00:02:55.000><c> that</c><00:02:55.080><c> looks</c><00:02:55.320><c> like</c>
+
+00:02:55.470 --> 00:02:55.480 align:start position:0%
+prepared to show what that looks like
+ 
+
+00:02:55.480 --> 00:02:58.750 align:start position:0%
+prepared to show what that looks like
+quite<00:02:55.720><c> yet,</c><00:02:56.080><c> but</c><00:02:56.480><c> um</c><00:02:56.920><c> this</c><00:02:57.160><c> generation</c><00:02:57.760><c> 3</c><00:02:58.120><c> is</c>
+
+00:02:58.750 --> 00:02:58.760 align:start position:0%
+quite yet, but um this generation 3 is
+ 
+
+00:02:58.760 --> 00:02:59.750 align:start position:0%
+quite yet, but um this generation 3 is
+um
+
+00:02:59.750 --> 00:02:59.760 align:start position:0%
+um
+ 
+
+00:02:59.760 --> 00:03:01.430 align:start position:0%
+um
+uh<00:02:59.840><c> is</c><00:03:00.000><c> kind</c><00:03:00.160><c> of</c><00:03:00.239><c> a</c><00:03:00.320><c> stepping</c><00:03:00.800><c> stone</c><00:03:01.040><c> to</c><00:03:01.160><c> get</c><00:03:01.320><c> us</c>
+
+00:03:01.430 --> 00:03:01.440 align:start position:0%
+uh is kind of a stepping stone to get us
+ 
+
+00:03:01.440 --> 00:03:02.350 align:start position:0%
+uh is kind of a stepping stone to get us
+there.
+
+00:03:02.350 --> 00:03:02.360 align:start position:0%
+there.
+ 
+
+00:03:02.360 --> 00:03:05.070 align:start position:0%
+there.
+And<00:03:02.519><c> so</c><00:03:03.239><c> from</c><00:03:03.480><c> a</c><00:03:03.800><c> a</c><00:03:03.880><c> rack</c><00:03:04.200><c> power</c><00:03:04.519><c> architecture</c>
+
+00:03:05.070 --> 00:03:05.080 align:start position:0%
+And so from a a rack power architecture
+ 
+
+00:03:05.080 --> 00:03:06.470 align:start position:0%
+And so from a a rack power architecture
+standpoint,
+
+00:03:06.470 --> 00:03:06.480 align:start position:0%
+standpoint,
+ 
+
+00:03:06.480 --> 00:03:07.870 align:start position:0%
+standpoint,
+what<00:03:06.600><c> we're</c><00:03:06.720><c> doing</c><00:03:06.959><c> is</c><00:03:07.120><c> we're</c><00:03:07.239><c> taking</c><00:03:07.600><c> in</c>
+
+00:03:07.870 --> 00:03:07.880 align:start position:0%
+what we're doing is we're taking in
+ 
+
+00:03:07.880 --> 00:03:10.949 align:start position:0%
+what we're doing is we're taking in
+800-V<00:03:08.680><c> DC,</c><00:03:09.760><c> and</c><00:03:09.880><c> then</c><00:03:10.200><c> we're</c><00:03:10.320><c> converting</c><00:03:10.800><c> it</c>
+
+00:03:10.949 --> 00:03:10.959 align:start position:0%
+800-V DC, and then we're converting it
+ 
+
+00:03:10.959 --> 00:03:15.030 align:start position:0%
+800-V DC, and then we're converting it
+to<00:03:11.160><c> 54-V</c><00:03:11.920><c> DC</c><00:03:12.440><c> on</c><00:03:12.640><c> the</c><00:03:12.760><c> 54-V</c><00:03:13.400><c> bus</c><00:03:13.600><c> bar.</c><00:03:14.040><c> And</c>
+
+00:03:15.030 --> 00:03:15.040 align:start position:0%
+to 54-V DC on the 54-V bus bar. And
+ 
+
+00:03:15.040 --> 00:03:17.310 align:start position:0%
+to 54-V DC on the 54-V bus bar. And
+initially,<00:03:15.840><c> the</c><00:03:16.120><c> the</c><00:03:16.280><c> first</c><00:03:16.600><c> step,</c><00:03:16.920><c> the</c><00:03:17.040><c> first</c>
+
+00:03:17.310 --> 00:03:17.320 align:start position:0%
+initially, the the first step, the first
+ 
+
+00:03:17.320 --> 00:03:19.030 align:start position:0%
+initially, the the first step, the first
+phase<00:03:17.560><c> in</c><00:03:17.640><c> that</c><00:03:17.800><c> development</c><00:03:18.320><c> is</c><00:03:18.640><c> a</c><00:03:18.720><c> power</c>
+
+00:03:19.030 --> 00:03:19.040 align:start position:0%
+phase in that development is a power
+ 
+
+00:03:19.040 --> 00:03:22.430 align:start position:0%
+phase in that development is a power
+rack<00:03:19.400><c> where</c><00:03:19.560><c> we</c><00:03:19.680><c> take</c><00:03:19.959><c> in</c><00:03:20.720><c> uh</c><00:03:20.959><c> AC,</c><00:03:21.760><c> and</c><00:03:21.920><c> then</c><00:03:22.160><c> we</c>
+
+00:03:22.430 --> 00:03:22.440 align:start position:0%
+rack where we take in uh AC, and then we
+ 
+
+00:03:22.440 --> 00:03:25.470 align:start position:0%
+rack where we take in uh AC, and then we
+output<00:03:22.880><c> 54-V</c><00:03:23.680><c> DC.</c><00:03:24.440><c> Or</c><00:03:24.680><c> I'm</c><00:03:24.800><c> sorry,</c><00:03:25.040><c> we</c><00:03:25.160><c> output</c>
+
+00:03:25.470 --> 00:03:25.480 align:start position:0%
+output 54-V DC. Or I'm sorry, we output
+ 
+
+00:03:25.480 --> 00:03:28.190 align:start position:0%
+output 54-V DC. Or I'm sorry, we output
+800-V,<00:03:26.280><c> and</c><00:03:26.400><c> then</c><00:03:26.560><c> we</c><00:03:27.040><c> uh</c><00:03:27.160><c> take</c><00:03:27.400><c> the</c><00:03:27.480><c> 800-V</c><00:03:28.080><c> and</c>
+
+00:03:28.190 --> 00:03:28.200 align:start position:0%
+800-V, and then we uh take the 800-V and
+ 
+
+00:03:28.200 --> 00:03:29.590 align:start position:0%
+800-V, and then we uh take the 800-V and
+go<00:03:28.320><c> to</c><00:03:28.440><c> 54</c><00:03:28.880><c> V.</c>
+
+00:03:29.590 --> 00:03:29.600 align:start position:0%
+go to 54 V.
+ 
+
+00:03:29.600 --> 00:03:32.270 align:start position:0%
+go to 54 V.
+And<00:03:29.800><c> so</c><00:03:30.160><c> what</c><00:03:30.400><c> this</c><00:03:30.560><c> allows</c><00:03:30.840><c> us</c><00:03:31.000><c> to</c><00:03:31.120><c> do</c>
+
+00:03:32.270 --> 00:03:32.280 align:start position:0%
+And so what this allows us to do
+ 
+
+00:03:32.280 --> 00:03:35.190 align:start position:0%
+And so what this allows us to do
+is<00:03:32.400><c> long-term,</c><00:03:33.000><c> anything</c><00:03:33.560><c> that</c><00:03:33.760><c> needs</c><00:03:34.000><c> to</c><00:03:34.120><c> be</c>
+
+00:03:35.190 --> 00:03:35.200 align:start position:0%
+is long-term, anything that needs to be
+ 
+
+00:03:35.200 --> 00:03:37.710 align:start position:0%
+is long-term, anything that needs to be
+800-V<00:03:35.800><c> capable,</c><00:03:36.519><c> whether</c><00:03:36.760><c> it's</c><00:03:37.200><c> uh</c><00:03:37.280><c> support</c>
+
+00:03:37.710 --> 00:03:37.720 align:start position:0%
+800-V capable, whether it's uh support
+ 
+
+00:03:37.720 --> 00:03:41.710 align:start position:0%
+800-V capable, whether it's uh support
+racks,<00:03:38.400><c> uh</c><00:03:38.519><c> networking</c><00:03:39.040><c> racks,</c><00:03:39.800><c> uh</c><00:03:40.320><c> even</c><00:03:40.640><c> our</c>
+
+00:03:41.710 --> 00:03:41.720 align:start position:0%
+racks, uh networking racks, uh even our
+ 
+
+00:03:41.720 --> 00:03:42.350 align:start position:0%
+racks, uh networking racks, uh even our
+um
+
+00:03:42.350 --> 00:03:42.360 align:start position:0%
+um
+ 
+
+00:03:42.360 --> 00:03:45.350 align:start position:0%
+um
+our<00:03:43.239><c> compute</c><00:03:43.640><c> racks,</c><00:03:44.320><c> right?</c><00:03:44.519><c> We</c><00:03:44.880><c> as</c><00:03:45.080><c> long</c><00:03:45.239><c> as</c>
+
+00:03:45.350 --> 00:03:45.360 align:start position:0%
+our compute racks, right? We as long as
+ 
+
+00:03:45.360 --> 00:03:48.110 align:start position:0%
+our compute racks, right? We as long as
+it's<00:03:45.519><c> been</c><00:03:45.680><c> designed</c><00:03:46.080><c> around</c><00:03:46.360><c> the</c><00:03:46.920><c> um</c><00:03:47.080><c> MGX</c><00:03:47.800><c> bus</c>
+
+00:03:48.110 --> 00:03:48.120 align:start position:0%
+it's been designed around the um MGX bus
+ 
+
+00:03:48.120 --> 00:03:50.350 align:start position:0%
+it's been designed around the um MGX bus
+bar,<00:03:48.760><c> we</c><00:03:48.880><c> can</c><00:03:49.040><c> take</c><00:03:49.320><c> it</c><00:03:49.519><c> and</c><00:03:49.640><c> we</c><00:03:49.760><c> can</c><00:03:49.920><c> make</c><00:03:50.120><c> it</c>
+
+00:03:50.350 --> 00:03:50.360 align:start position:0%
+bar, we can take it and we can make it
+ 
+
+00:03:50.360 --> 00:03:53.550 align:start position:0%
+bar, we can take it and we can make it
+land<00:03:50.680><c> in</c><00:03:50.880><c> an</c><00:03:51.120><c> AC</c><00:03:51.440><c> data</c><00:03:51.760><c> center</c><00:03:52.200><c> or</c><00:03:52.440><c> a</c>
+
+00:03:53.550 --> 00:03:53.560 align:start position:0%
+land in an AC data center or a
+ 
+
+00:03:53.560 --> 00:03:56.790 align:start position:0%
+land in an AC data center or a
+800<00:03:53.960><c> V</c><00:03:54.280><c> DC</c><00:03:54.680><c> data</c><00:03:54.960><c> center.</c>
+
+00:03:56.790 --> 00:03:56.800 align:start position:0%
+800 V DC data center.
+ 
+
+00:03:56.800 --> 00:03:58.470 align:start position:0%
+800 V DC data center.
+And<00:03:56.960><c> so</c><00:03:57.040><c> then</c>
+
+00:03:58.470 --> 00:03:58.480 align:start position:0%
+And so then
+ 
+
+00:03:58.480 --> 00:04:00.230 align:start position:0%
+And so then
+for<00:03:58.640><c> Gen3,</c><00:03:59.120><c> why</c><00:03:59.280><c> are</c><00:03:59.360><c> we</c><00:03:59.520><c> moving</c><00:03:59.800><c> to</c><00:03:59.920><c> liquid</c>
+
+00:04:00.230 --> 00:04:00.240 align:start position:0%
+for Gen3, why are we moving to liquid
+ 
+
+00:04:00.240 --> 00:04:02.230 align:start position:0%
+for Gen3, why are we moving to liquid
+cooling?<00:04:00.600><c> So</c><00:04:00.840><c> there's</c><00:04:01.320><c> several</c><00:04:01.680><c> reasons</c><00:04:02.080><c> why</c>
+
+00:04:02.230 --> 00:04:02.240 align:start position:0%
+cooling? So there's several reasons why
+ 
+
+00:04:02.240 --> 00:04:03.510 align:start position:0%
+cooling? So there's several reasons why
+we're<00:04:02.360><c> moving</c><00:04:02.680><c> to</c>
+
+00:04:03.510 --> 00:04:03.520 align:start position:0%
+we're moving to
+ 
+
+00:04:03.520 --> 00:04:05.870 align:start position:0%
+we're moving to
+liquid<00:04:03.880><c> cooling.</c><00:04:04.680><c> The</c><00:04:04.800><c> first</c><00:04:05.080><c> is</c><00:04:05.240><c> the</c><00:04:05.320><c> compute</c>
+
+00:04:05.870 --> 00:04:05.880 align:start position:0%
+liquid cooling. The first is the compute
+ 
+
+00:04:05.880 --> 00:04:09.030 align:start position:0%
+liquid cooling. The first is the compute
+just<00:04:06.120><c> has</c><00:04:06.440><c> to</c><00:04:06.760><c> move</c><00:04:07.080><c> to</c><00:04:07.200><c> liquid</c><00:04:07.520><c> cooling.</c>
+
+00:04:09.030 --> 00:04:09.040 align:start position:0%
+just has to move to liquid cooling.
+ 
+
+00:04:09.040 --> 00:04:10.150 align:start position:0%
+just has to move to liquid cooling.
+With<00:04:09.280><c> a</c>
+
+00:04:10.150 --> 00:04:10.160 align:start position:0%
+With a
+ 
+
+00:04:10.160 --> 00:04:11.470 align:start position:0%
+With a
+uh
+
+00:04:11.470 --> 00:04:11.480 align:start position:0%
+uh
+ 
+
+00:04:11.480 --> 00:04:13.270 align:start position:0%
+uh
+essentially<00:04:11.880><c> with</c><00:04:12.040><c> all</c><00:04:12.280><c> of</c><00:04:12.440><c> the</c><00:04:12.600><c> heat</c><00:04:12.880><c> sinks</c>
+
+00:04:13.270 --> 00:04:13.280 align:start position:0%
+essentially with all of the heat sinks
+ 
+
+00:04:13.280 --> 00:04:14.830 align:start position:0%
+essentially with all of the heat sinks
+that<00:04:13.400><c> we</c><00:04:13.480><c> need</c><00:04:13.720><c> in</c><00:04:13.760><c> the</c><00:04:13.880><c> system,</c><00:04:14.440><c> there's</c><00:04:14.640><c> just</c>
+
+00:04:14.830 --> 00:04:14.840 align:start position:0%
+that we need in the system, there's just
+ 
+
+00:04:14.840 --> 00:04:17.310 align:start position:0%
+that we need in the system, there's just
+not<00:04:15.040><c> enough</c><00:04:15.320><c> volume</c><00:04:15.800><c> to</c><00:04:15.959><c> fit</c><00:04:16.120><c> everything.</c>
+
+00:04:17.310 --> 00:04:17.320 align:start position:0%
+not enough volume to fit everything.
+ 
+
+00:04:17.320 --> 00:04:19.390 align:start position:0%
+not enough volume to fit everything.
+And<00:04:17.400><c> the</c><00:04:17.440><c> second</c><00:04:17.720><c> thing</c><00:04:17.880><c> is</c><00:04:18.079><c> once</c><00:04:18.359><c> you</c><00:04:19.160><c> once</c>
+
+00:04:19.390 --> 00:04:19.400 align:start position:0%
+And the second thing is once you once
+ 
+
+00:04:19.400 --> 00:04:21.990 align:start position:0%
+And the second thing is once you once
+you<00:04:19.519><c> actually</c><00:04:19.920><c> take</c><00:04:20.239><c> all</c><00:04:20.480><c> of</c><00:04:20.600><c> that</c><00:04:21.320><c> um</c>
+
+00:04:21.990 --> 00:04:22.000 align:start position:0%
+you actually take all of that um
+ 
+
+00:04:22.000 --> 00:04:24.070 align:start position:0%
+you actually take all of that um
+uh
+
+00:04:24.070 --> 00:04:24.080 align:start position:0%
+uh
+ 
+
+00:04:24.080 --> 00:04:26.150 align:start position:0%
+uh
+one<00:04:24.360><c> once</c><00:04:24.640><c> you</c><00:04:24.720><c> take</c><00:04:24.960><c> the</c><00:04:25.080><c> actual</c><00:04:25.520><c> rack</c><00:04:25.800><c> power,</c>
+
+00:04:26.150 --> 00:04:26.160 align:start position:0%
+one once you take the actual rack power,
+ 
+
+00:04:26.160 --> 00:04:27.790 align:start position:0%
+one once you take the actual rack power,
+there's<00:04:26.400><c> also</c><00:04:26.680><c> just</c><00:04:26.919><c> a</c><00:04:27.160><c> a</c><00:04:27.240><c> footprint</c>
+
+00:04:27.790 --> 00:04:27.800 align:start position:0%
+there's also just a a footprint
+ 
+
+00:04:27.800 --> 00:04:29.470 align:start position:0%
+there's also just a a footprint
+limitation<00:04:28.360><c> on</c><00:04:28.520><c> how</c><00:04:28.680><c> much</c><00:04:28.960><c> power</c><00:04:29.240><c> you</c><00:04:29.360><c> can</c>
+
+00:04:29.470 --> 00:04:29.480 align:start position:0%
+limitation on how much power you can
+ 
+
+00:04:29.480 --> 00:04:32.270 align:start position:0%
+limitation on how much power you can
+dissipate<00:04:30.000><c> in</c><00:04:30.120><c> the</c><00:04:30.200><c> rack.</c><00:04:31.000><c> And</c><00:04:31.200><c> so</c>
+
+00:04:32.270 --> 00:04:32.280 align:start position:0%
+dissipate in the rack. And so
+ 
+
+00:04:32.280 --> 00:04:33.310 align:start position:0%
+dissipate in the rack. And so
+um
+
+00:04:33.310 --> 00:04:33.320 align:start position:0%
+um
+ 
+
+00:04:33.320 --> 00:04:35.150 align:start position:0%
+um
+even<00:04:33.560><c> if</c><00:04:33.720><c> we</c><00:04:33.840><c> were</c><00:04:34.000><c> to</c><00:04:34.320><c> for</c><00:04:34.480><c> our</c><00:04:34.600><c> power</c><00:04:34.919><c> rack</c>
+
+00:04:35.150 --> 00:04:35.160 align:start position:0%
+even if we were to for our power rack
+ 
+
+00:04:35.160 --> 00:04:36.750 align:start position:0%
+even if we were to for our power rack
+start<00:04:35.480><c> filling</c><00:04:35.760><c> it</c><00:04:35.880><c> with</c><00:04:36.040><c> power</c><00:04:36.320><c> shelves,</c>
+
+00:04:36.750 --> 00:04:36.760 align:start position:0%
+start filling it with power shelves,
+ 
+
+00:04:36.760 --> 00:04:38.670 align:start position:0%
+start filling it with power shelves,
+there's<00:04:37.000><c> still</c><00:04:37.240><c> going</c><00:04:37.440><c> to</c><00:04:37.520><c> be</c><00:04:37.640><c> a</c><00:04:37.680><c> limit</c><00:04:38.160><c> of</c><00:04:38.560><c> you</c>
+
+00:04:38.670 --> 00:04:38.680 align:start position:0%
+there's still going to be a limit of you
+ 
+
+00:04:38.680 --> 00:04:42.670 align:start position:0%
+there's still going to be a limit of you
+know<00:04:38.760><c> 750</c><00:04:39.680><c> kW</c><00:04:40.040><c> to</c><00:04:40.200><c> 1</c><00:04:40.400><c> MW</c><00:04:41.320><c> of</c><00:04:41.800><c> dissipation.</c><00:04:42.520><c> And</c>
+
+00:04:42.670 --> 00:04:42.680 align:start position:0%
+know 750 kW to 1 MW of dissipation. And
+ 
+
+00:04:42.680 --> 00:04:44.670 align:start position:0%
+know 750 kW to 1 MW of dissipation. And
+so<00:04:43.400><c> then</c><00:04:43.600><c> we</c><00:04:43.720><c> need</c><00:04:43.880><c> to</c><00:04:43.960><c> move</c><00:04:44.240><c> to</c><00:04:44.360><c> liquid</c>
+
+00:04:44.670 --> 00:04:44.680 align:start position:0%
+so then we need to move to liquid
+ 
+
+00:04:44.680 --> 00:04:46.870 align:start position:0%
+so then we need to move to liquid
+cooling<00:04:45.320><c> for</c><00:04:45.440><c> that</c><00:04:45.640><c> reason.</c>
+
+00:04:46.870 --> 00:04:46.880 align:start position:0%
+cooling for that reason.
+ 
+
+00:04:46.880 --> 00:04:48.630 align:start position:0%
+cooling for that reason.
+The<00:04:46.960><c> next</c><00:04:47.240><c> reason</c><00:04:47.520><c> is</c><00:04:47.720><c> all</c><00:04:47.840><c> that</c><00:04:48.080><c> fan</c><00:04:48.320><c> power</c>
+
+00:04:48.630 --> 00:04:48.640 align:start position:0%
+The next reason is all that fan power
+ 
+
+00:04:48.640 --> 00:04:50.150 align:start position:0%
+The next reason is all that fan power
+that<00:04:48.800><c> we</c><00:04:48.880><c> are</c><00:04:49.000><c> dissipating,</c><00:04:49.560><c> we</c><00:04:49.680><c> can</c><00:04:49.800><c> return</c>
+
+00:04:50.150 --> 00:04:50.160 align:start position:0%
+that we are dissipating, we can return
+ 
+
+00:04:50.160 --> 00:04:53.310 align:start position:0%
+that we are dissipating, we can return
+that<00:04:50.360><c> back</c><00:04:50.600><c> to</c><00:04:50.720><c> compute.</c><00:04:51.800><c> Um</c><00:04:52.200><c> and</c><00:04:52.440><c> also</c><00:04:52.800><c> with</c>
+
+00:04:53.310 --> 00:04:53.320 align:start position:0%
+that back to compute. Um and also with
+ 
+
+00:04:53.320 --> 00:04:55.070 align:start position:0%
+that back to compute. Um and also with
+power<00:04:53.600><c> supplies</c><00:04:54.000><c> specifically,</c><00:04:54.760><c> we've</c><00:04:54.919><c> been</c>
+
+00:04:55.070 --> 00:04:55.080 align:start position:0%
+power supplies specifically, we've been
+ 
+
+00:04:55.080 --> 00:04:57.030 align:start position:0%
+power supplies specifically, we've been
+using<00:04:55.360><c> a</c><00:04:55.400><c> lot</c><00:04:55.600><c> of</c><00:04:55.720><c> electrolytic</c><00:04:56.360><c> capacitors</c>
+
+00:04:57.030 --> 00:04:57.040 align:start position:0%
+using a lot of electrolytic capacitors
+ 
+
+00:04:57.040 --> 00:04:59.350 align:start position:0%
+using a lot of electrolytic capacitors
+for<00:04:57.320><c> AC</c><00:04:57.600><c> input</c><00:04:57.919><c> current</c><00:04:58.200><c> shaping.</c><00:04:59.000><c> And</c><00:04:59.160><c> so</c>
+
+00:04:59.350 --> 00:04:59.360 align:start position:0%
+for AC input current shaping. And so
+ 
+
+00:04:59.360 --> 00:05:01.710 align:start position:0%
+for AC input current shaping. And so
+putting<00:04:59.640><c> those</c><00:05:00.000><c> against</c><00:05:00.440><c> a</c><00:05:00.720><c> a</c><00:05:00.760><c> cold</c><00:05:01.080><c> plate,</c>
+
+00:05:01.710 --> 00:05:01.720 align:start position:0%
+putting those against a a cold plate,
+ 
+
+00:05:01.720 --> 00:05:03.790 align:start position:0%
+putting those against a a cold plate,
+right,<00:05:02.000><c> it</c><00:05:02.080><c> allows</c><00:05:02.400><c> us</c><00:05:02.600><c> to</c><00:05:03.240><c> take</c><00:05:03.480><c> down</c><00:05:03.680><c> their</c>
+
+00:05:03.790 --> 00:05:03.800 align:start position:0%
+right, it allows us to take down their
+ 
+
+00:05:03.800 --> 00:05:05.670 align:start position:0%
+right, it allows us to take down their
+temperature<00:05:04.320><c> which</c><00:05:04.919><c> with</c><00:05:05.080><c> the</c><00:05:05.200><c> Arrhenius</c>
+
+00:05:05.670 --> 00:05:05.680 align:start position:0%
+temperature which with the Arrhenius
+ 
+
+00:05:05.680 --> 00:05:08.390 align:start position:0%
+temperature which with the Arrhenius
+law,<00:05:06.400><c> we</c><00:05:06.520><c> basically</c><00:05:07.080><c> every</c><00:05:07.360><c> 10°</c><00:05:07.880><c> C</c><00:05:08.080><c> we</c><00:05:08.240><c> can</c>
+
+00:05:08.390 --> 00:05:08.400 align:start position:0%
+law, we basically every 10° C we can
+ 
+
+00:05:08.400 --> 00:05:09.990 align:start position:0%
+law, we basically every 10° C we can
+cool<00:05:08.640><c> those</c><00:05:08.840><c> capacitors,</c><00:05:09.520><c> we</c><00:05:09.640><c> double</c><00:05:09.919><c> the</c>
+
+00:05:09.990 --> 00:05:10.000 align:start position:0%
+cool those capacitors, we double the
+ 
+
+00:05:10.000 --> 00:05:12.510 align:start position:0%
+cool those capacitors, we double the
+lifetime.<00:05:10.560><c> So</c><00:05:10.680><c> that's</c><00:05:10.880><c> beneficial.</c>
+
+00:05:12.510 --> 00:05:12.520 align:start position:0%
+lifetime. So that's beneficial.
+ 
+
+00:05:12.520 --> 00:05:13.470 align:start position:0%
+lifetime. So that's beneficial.
+And<00:05:12.640><c> then</c>
+
+00:05:13.470 --> 00:05:13.480 align:start position:0%
+And then
+ 
+
+00:05:13.480 --> 00:05:14.990 align:start position:0%
+And then
+we<00:05:13.680><c> also</c>
+
+00:05:14.990 --> 00:05:15.000 align:start position:0%
+we also
+ 
+
+00:05:15.000 --> 00:05:16.710 align:start position:0%
+we also
+can<00:05:15.160><c> eliminate</c><00:05:15.760><c> points</c><00:05:16.000><c> of</c><00:05:16.120><c> ingress.</c><00:05:16.560><c> So</c>
+
+00:05:16.710 --> 00:05:16.720 align:start position:0%
+can eliminate points of ingress. So
+ 
+
+00:05:16.720 --> 00:05:18.230 align:start position:0%
+can eliminate points of ingress. So
+anyone<00:05:17.080><c> who's</c><00:05:17.440><c> worked</c><00:05:17.720><c> around</c><00:05:18.000><c> power</c>
+
+00:05:18.230 --> 00:05:18.240 align:start position:0%
+anyone who's worked around power
+ 
+
+00:05:18.240 --> 00:05:19.870 align:start position:0%
+anyone who's worked around power
+supplies<00:05:18.720><c> in</c><00:05:18.840><c> data</c><00:05:19.080><c> centers,</c><00:05:19.480><c> a</c><00:05:19.520><c> common</c>
+
+00:05:19.870 --> 00:05:19.880 align:start position:0%
+supplies in data centers, a common
+ 
+
+00:05:19.880 --> 00:05:22.350 align:start position:0%
+supplies in data centers, a common
+failure<00:05:20.240><c> mode</c><00:05:20.480><c> is</c><00:05:21.040><c> dust</c><00:05:21.280><c> shorts</c><00:05:21.720><c> and</c><00:05:21.840><c> debris</c>
+
+00:05:22.350 --> 00:05:22.360 align:start position:0%
+failure mode is dust shorts and debris
+ 
+
+00:05:22.360 --> 00:05:24.190 align:start position:0%
+failure mode is dust shorts and debris
+and<00:05:22.560><c> work</c><00:05:22.800><c> that's</c><00:05:23.000><c> happening.</c><00:05:23.800><c> And</c><00:05:23.880><c> if</c><00:05:23.960><c> we</c><00:05:24.080><c> can</c>
+
+00:05:24.190 --> 00:05:24.200 align:start position:0%
+and work that's happening. And if we can
+ 
+
+00:05:24.200 --> 00:05:26.390 align:start position:0%
+and work that's happening. And if we can
+completely<00:05:24.720><c> seal</c><00:05:25.040><c> the</c><00:05:25.160><c> PSU,</c><00:05:25.640><c> we</c><00:05:25.880><c> eliminate</c>
+
+00:05:26.390 --> 00:05:26.400 align:start position:0%
+completely seal the PSU, we eliminate
+ 
+
+00:05:26.400 --> 00:05:28.190 align:start position:0%
+completely seal the PSU, we eliminate
+those<00:05:26.640><c> failure</c><00:05:27.000><c> modes.</c>
+
+00:05:28.190 --> 00:05:28.200 align:start position:0%
+those failure modes.
+ 
+
+00:05:28.200 --> 00:05:29.909 align:start position:0%
+those failure modes.
+And<00:05:28.320><c> then</c><00:05:28.640><c> finally</c><00:05:29.040><c> what</c><00:05:29.200><c> I'm</c><00:05:29.320><c> showing</c><00:05:29.640><c> here</c>
+
+00:05:29.909 --> 00:05:29.919 align:start position:0%
+And then finally what I'm showing here
+ 
+
+00:05:29.919 --> 00:05:31.870 align:start position:0%
+And then finally what I'm showing here
+is<00:05:30.320><c> the</c><00:05:30.400><c> back</c><00:05:30.720><c> of</c><00:05:30.840><c> a</c>
+
+00:05:31.870 --> 00:05:31.880 align:start position:0%
+is the back of a
+ 
+
+00:05:31.880 --> 00:05:33.790 align:start position:0%
+is the back of a
+power<00:05:32.240><c> rack</c><00:05:32.720><c> just</c><00:05:32.919><c> completely</c><00:05:33.440><c> filled</c><00:05:33.680><c> with</c>
+
+00:05:33.790 --> 00:05:33.800 align:start position:0%
+power rack just completely filled with
+ 
+
+00:05:33.800 --> 00:05:36.630 align:start position:0%
+power rack just completely filled with
+power<00:05:34.120><c> shelves.</c><00:05:34.919><c> And</c><00:05:35.280><c> as</c><00:05:35.440><c> you</c><00:05:35.520><c> can</c><00:05:35.680><c> see</c>
+
+00:05:36.630 --> 00:05:36.640 align:start position:0%
+power shelves. And as you can see
+ 
+
+00:05:36.640 --> 00:05:39.710 align:start position:0%
+power shelves. And as you can see
+trying<00:05:36.960><c> to</c><00:05:37.080><c> manage</c><00:05:37.640><c> the</c><00:05:38.440><c> the</c><00:05:38.760><c> hot</c><00:05:39.080><c> air</c><00:05:39.320><c> flowing</c>
+
+00:05:39.710 --> 00:05:39.720 align:start position:0%
+trying to manage the the hot air flowing
+ 
+
+00:05:39.720 --> 00:05:41.470 align:start position:0%
+trying to manage the the hot air flowing
+out<00:05:39.960><c> over</c><00:05:40.200><c> all</c><00:05:40.320><c> those</c><00:05:40.520><c> power</c><00:05:40.840><c> cables,</c><00:05:41.280><c> it's</c>
+
+00:05:41.470 --> 00:05:41.480 align:start position:0%
+out over all those power cables, it's
+ 
+
+00:05:41.480 --> 00:05:43.510 align:start position:0%
+out over all those power cables, it's
+just<00:05:41.800><c> completely</c><00:05:42.280><c> unmanageable</c><00:05:43.040><c> unless</c><00:05:43.400><c> we</c>
+
+00:05:43.510 --> 00:05:43.520 align:start position:0%
+just completely unmanageable unless we
+ 
+
+00:05:43.520 --> 00:05:46.590 align:start position:0%
+just completely unmanageable unless we
+move<00:05:43.760><c> to</c><00:05:43.880><c> liquid</c><00:05:44.200><c> cooled</c><00:05:44.400><c> power</c><00:05:44.680><c> shelves.</c>
+
+00:05:46.590 --> 00:05:46.600 align:start position:0%
+move to liquid cooled power shelves.
+ 
+
+00:05:46.600 --> 00:05:47.990 align:start position:0%
+move to liquid cooled power shelves.
+So<00:05:46.760><c> then</c>
+
+00:05:47.990 --> 00:05:48.000 align:start position:0%
+So then
+ 
+
+00:05:48.000 --> 00:05:50.670 align:start position:0%
+So then
+from<00:05:48.200><c> a</c><00:05:48.440><c> facility</c><00:05:48.960><c> standpoint,</c><00:05:49.880><c> uh</c><00:05:50.200><c> uh</c><00:05:50.280><c> we</c><00:05:50.480><c> we</c>
+
+00:05:50.670 --> 00:05:50.680 align:start position:0%
+from a facility standpoint, uh uh we we
+ 
+
+00:05:50.680 --> 00:05:51.910 align:start position:0%
+from a facility standpoint, uh uh we we
+really<00:05:50.920><c> want</c><00:05:51.120><c> to</c>
+
+00:05:51.910 --> 00:05:51.920 align:start position:0%
+really want to
+ 
+
+00:05:51.920 --> 00:05:54.110 align:start position:0%
+really want to
+improve<00:05:52.520><c> the</c><00:05:52.640><c> overall</c><00:05:53.160><c> facility</c><00:05:53.760><c> cooling</c>
+
+00:05:54.110 --> 00:05:54.120 align:start position:0%
+improve the overall facility cooling
+ 
+
+00:05:54.120 --> 00:05:56.310 align:start position:0%
+improve the overall facility cooling
+efficiency.<00:05:54.680><c> And</c><00:05:54.840><c> so,</c><00:05:55.520><c> we</c><00:05:55.600><c> can</c><00:05:55.760><c> do</c><00:05:55.880><c> that</c><00:05:56.080><c> by</c>
+
+00:05:56.310 --> 00:05:56.320 align:start position:0%
+efficiency. And so, we can do that by
+ 
+
+00:05:56.320 --> 00:05:57.990 align:start position:0%
+efficiency. And so, we can do that by
+eliminating<00:05:56.960><c> chillers.</c><00:05:57.440><c> That's</c><00:05:57.680><c> where</c><00:05:57.840><c> we're</c>
+
+00:05:57.990 --> 00:05:58.000 align:start position:0%
+eliminating chillers. That's where we're
+ 
+
+00:05:58.000 --> 00:06:00.550 align:start position:0%
+eliminating chillers. That's where we're
+moving<00:05:58.320><c> to</c><00:05:58.400><c> the</c><00:05:58.520><c> 45°</c><00:05:59.480><c> C</c><00:05:59.680><c> liquid</c><00:06:00.200><c> inlet</c>
+
+00:06:00.550 --> 00:06:00.560 align:start position:0%
+moving to the 45° C liquid inlet
+ 
+
+00:06:00.560 --> 00:06:03.710 align:start position:0%
+moving to the 45° C liquid inlet
+temperature.<00:06:01.560><c> Um</c><00:06:02.000><c> and</c><00:06:02.480><c> by</c><00:06:02.640><c> moving</c><00:06:03.000><c> to</c><00:06:03.240><c> a</c><00:06:03.320><c> dry</c>
+
+00:06:03.710 --> 00:06:03.720 align:start position:0%
+temperature. Um and by moving to a dry
+ 
+
+00:06:03.720 --> 00:06:06.470 align:start position:0%
+temperature. Um and by moving to a dry
+chiller<00:06:04.240><c> system</c><00:06:04.760><c> with</c><00:06:05.080><c> closed</c><00:06:05.480><c> loops,</c><00:06:06.240><c> we</c><00:06:06.360><c> can</c>
+
+00:06:06.470 --> 00:06:06.480 align:start position:0%
+chiller system with closed loops, we can
+ 
+
+00:06:06.480 --> 00:06:09.910 align:start position:0%
+chiller system with closed loops, we can
+basically<00:06:07.480><c> um</c><00:06:07.720><c> save</c><00:06:08.560><c> 2.6</c><00:06:09.160><c> million</c><00:06:09.480><c> gallons</c>
+
+00:06:09.910 --> 00:06:09.920 align:start position:0%
+basically um save 2.6 million gallons
+ 
+
+00:06:09.920 --> 00:06:12.870 align:start position:0%
+basically um save 2.6 million gallons
+per<00:06:10.120><c> megawatt</c><00:06:10.840><c> per</c><00:06:11.080><c> year</c><00:06:11.720><c> uh</c><00:06:12.200><c> when</c><00:06:12.400><c> compared</c>
+
+00:06:12.870 --> 00:06:12.880 align:start position:0%
+per megawatt per year uh when compared
+ 
+
+00:06:12.880 --> 00:06:14.070 align:start position:0%
+per megawatt per year uh when compared
+to<00:06:13.520><c> um</c>
+
+00:06:14.070 --> 00:06:14.080 align:start position:0%
+to um
+ 
+
+00:06:14.080 --> 00:06:16.150 align:start position:0%
+to um
+uh<00:06:14.560><c> evaporative</c><00:06:15.160><c> cooling,</c><00:06:15.600><c> right?</c><00:06:15.840><c> And</c><00:06:15.960><c> so,</c>
+
+00:06:16.150 --> 00:06:16.160 align:start position:0%
+uh evaporative cooling, right? And so,
+ 
+
+00:06:16.160 --> 00:06:18.030 align:start position:0%
+uh evaporative cooling, right? And so,
+it's<00:06:16.680><c> it's</c><00:06:16.840><c> a</c><00:06:16.880><c> much</c><00:06:17.120><c> more</c><00:06:17.360><c> effective</c><00:06:17.760><c> way</c><00:06:17.880><c> to</c>
+
+00:06:18.030 --> 00:06:18.040 align:start position:0%
+it's it's a much more effective way to
+ 
+
+00:06:18.040 --> 00:06:21.710 align:start position:0%
+it's it's a much more effective way to
+cool.<00:06:18.720><c> That</c><00:06:18.880><c> allows</c><00:06:19.240><c> you</c><00:06:19.360><c> to</c><00:06:19.480><c> go</c><00:06:19.760><c> to</c><00:06:20.200><c> a</c><00:06:20.760><c> um</c>
+
+00:06:21.710 --> 00:06:21.720 align:start position:0%
+cool. That allows you to go to a um
+ 
+
+00:06:21.720 --> 00:06:24.950 align:start position:0%
+cool. That allows you to go to a um
+or<00:06:22.240><c> allows</c><00:06:22.640><c> for</c><00:06:22.840><c> a</c><00:06:23.440><c> a</c><00:06:23.560><c> better</c><00:06:23.880><c> PUE.</c>
+
+00:06:24.950 --> 00:06:24.960 align:start position:0%
+or allows for a a better PUE.
+ 
+
+00:06:24.960 --> 00:06:27.909 align:start position:0%
+or allows for a a better PUE.
+And<00:06:25.600><c> uh</c><00:06:25.720><c> we</c><00:06:25.880><c> can</c><00:06:26.000><c> also</c><00:06:26.360><c> then</c><00:06:26.840><c> with</c><00:06:27.120><c> the</c><00:06:27.440><c> better</c>
+
+00:06:27.909 --> 00:06:27.919 align:start position:0%
+And uh we can also then with the better
+ 
+
+00:06:27.919 --> 00:06:30.190 align:start position:0%
+And uh we can also then with the better
+cooling<00:06:28.320><c> capability</c><00:06:29.000><c> increase</c><00:06:29.560><c> the</c><00:06:29.680><c> megawatt</c>
+
+00:06:30.190 --> 00:06:30.200 align:start position:0%
+cooling capability increase the megawatt
+ 
+
+00:06:30.200 --> 00:06:31.190 align:start position:0%
+cooling capability increase the megawatt
+per
+
+00:06:31.190 --> 00:06:31.200 align:start position:0%
+per
+ 
+
+00:06:31.200 --> 00:06:32.830 align:start position:0%
+per
+uh<00:06:31.280><c> meter</c><00:06:31.600><c> square.</c>
+
+00:06:32.830 --> 00:06:32.840 align:start position:0%
+uh meter square.
+ 
+
+00:06:32.840 --> 00:06:35.590 align:start position:0%
+uh meter square.
+And<00:06:33.560><c> uh</c><00:06:33.960><c> heat</c><00:06:34.200><c> reuse</c><00:06:34.560><c> becomes</c><00:06:34.960><c> a</c><00:06:35.120><c> viable</c>
+
+00:06:35.590 --> 00:06:35.600 align:start position:0%
+And uh heat reuse becomes a viable
+ 
+
+00:06:35.600 --> 00:06:37.550 align:start position:0%
+And uh heat reuse becomes a viable
+option.<00:06:35.919><c> And</c><00:06:36.120><c> and</c><00:06:36.480><c> I</c><00:06:36.560><c> think</c><00:06:36.800><c> one</c><00:06:36.919><c> of</c><00:06:36.960><c> the</c><00:06:37.320><c> more</c>
+
+00:06:37.550 --> 00:06:37.560 align:start position:0%
+option. And and I think one of the more
+ 
+
+00:06:37.560 --> 00:06:40.070 align:start position:0%
+option. And and I think one of the more
+interesting<00:06:38.160><c> things</c><00:06:38.560><c> is</c><00:06:39.400><c> uh</c><00:06:39.520><c> we</c><00:06:39.640><c> can</c><00:06:39.760><c> actually</c>
+
+00:06:40.070 --> 00:06:40.080 align:start position:0%
+interesting things is uh we can actually
+ 
+
+00:06:40.080 --> 00:06:42.070 align:start position:0%
+interesting things is uh we can actually
+change<00:06:40.360><c> the</c><00:06:40.480><c> data</c><00:06:40.720><c> center</c><00:06:41.000><c> layout</c><00:06:41.720><c> in</c><00:06:41.919><c> new</c>
+
+00:06:42.070 --> 00:06:42.080 align:start position:0%
+change the data center layout in new
+ 
+
+00:06:42.080 --> 00:06:43.830 align:start position:0%
+change the data center layout in new
+ways,<00:06:42.480><c> right?</c><00:06:42.640><c> We</c><00:06:42.760><c> no</c><00:06:42.919><c> longer</c><00:06:43.200><c> have</c><00:06:43.440><c> hot</c><00:06:43.640><c> aisle</c>
+
+00:06:43.830 --> 00:06:43.840 align:start position:0%
+ways, right? We no longer have hot aisle
+ 
+
+00:06:43.840 --> 00:06:45.110 align:start position:0%
+ways, right? We no longer have hot aisle
+containment<00:06:44.440><c> that</c><00:06:44.560><c> you</c><00:06:44.640><c> need</c><00:06:44.800><c> to</c><00:06:44.919><c> worry</c>
+
+00:06:45.110 --> 00:06:45.120 align:start position:0%
+containment that you need to worry
+ 
+
+00:06:45.120 --> 00:06:47.430 align:start position:0%
+containment that you need to worry
+about.<00:06:46.040><c> Um</c><00:06:46.200><c> and</c><00:06:46.320><c> you</c><00:06:46.400><c> can</c><00:06:46.520><c> now</c><00:06:46.720><c> push</c><00:06:47.040><c> racks</c>
+
+00:06:47.430 --> 00:06:47.440 align:start position:0%
+about. Um and you can now push racks
+ 
+
+00:06:47.440 --> 00:06:49.670 align:start position:0%
+about. Um and you can now push racks
+right<00:06:47.720><c> back</c><00:06:47.960><c> to</c><00:06:48.040><c> back,</c><00:06:48.440><c> or</c><00:06:48.560><c> you</c><00:06:48.680><c> can</c><00:06:48.840><c> put</c><00:06:49.360><c> uh</c>
+
+00:06:49.670 --> 00:06:49.680 align:start position:0%
+right back to back, or you can put uh
+ 
+
+00:06:49.680 --> 00:06:52.190 align:start position:0%
+right back to back, or you can put uh
+even<00:06:49.919><c> put</c><00:06:50.200><c> racks</c><00:06:50.560><c> into</c><00:06:51.400><c> shipping</c><00:06:51.760><c> containers</c>
+
+00:06:52.190 --> 00:06:52.200 align:start position:0%
+even put racks into shipping containers
+ 
+
+00:06:52.200 --> 00:06:53.750 align:start position:0%
+even put racks into shipping containers
+more<00:06:52.480><c> easily.</c>
+
+00:06:53.750 --> 00:06:53.760 align:start position:0%
+more easily.
+ 
+
+00:06:53.760 --> 00:06:56.190 align:start position:0%
+more easily.
+So,<00:06:53.880><c> then</c><00:06:54.320><c> uh</c><00:06:54.640><c> up</c><00:06:54.760><c> next</c><00:06:55.240><c> Roya</c><00:06:55.520><c> will</c><00:06:55.680><c> talk</c><00:06:55.960><c> more</c>
+
+00:06:56.190 --> 00:06:56.200 align:start position:0%
+So, then uh up next Roya will talk more
+ 
+
+00:06:56.200 --> 00:06:59.390 align:start position:0%
+So, then uh up next Roya will talk more
+about<00:06:56.800><c> um</c><00:06:57.080><c> the</c><00:06:57.760><c> work</c><00:06:58.000><c> that</c><00:06:58.160><c> MagNet's</c><00:06:58.560><c> doing.</c>
+
+00:06:59.390 --> 00:06:59.400 align:start position:0%
+about um the work that MagNet's doing.
+ 
+
+00:06:59.400 --> 00:07:01.710 align:start position:0%
+about um the work that MagNet's doing.
+Thanks.
+
+00:07:01.710 --> 00:07:01.720 align:start position:0%
+ 
+ 
+
+00:07:01.720 --> 00:07:03.550 align:start position:0%
+ 
+&gt;&gt; So,<00:07:01.880><c> we</c><00:07:02.040><c> all</c><00:07:02.240><c> know</c><00:07:02.480><c> about</c><00:07:02.800><c> the</c><00:07:02.880><c> benefits</c><00:07:03.360><c> of</c>
+
+00:07:03.550 --> 00:07:03.560 align:start position:0%
+&gt;&gt; So, we all know about the benefits of
+ 
+
+00:07:03.560 --> 00:07:06.350 align:start position:0%
+&gt;&gt; So, we all know about the benefits of
+liquid<00:07:03.919><c> cooling</c><00:07:04.440><c> coming</c><00:07:04.800><c> into</c><00:07:05.080><c> compute</c><00:07:05.600><c> tray.</c>
+
+00:07:06.350 --> 00:07:06.360 align:start position:0%
+liquid cooling coming into compute tray.
+ 
+
+00:07:06.360 --> 00:07:09.550 align:start position:0%
+liquid cooling coming into compute tray.
+Uh<00:07:06.520><c> but</c><00:07:06.760><c> as</c><00:07:07.040><c> we</c><00:07:07.680><c> move</c><00:07:07.960><c> forward</c><00:07:08.600><c> to</c><00:07:08.919><c> a</c><00:07:09.200><c> much</c>
+
+00:07:09.550 --> 00:07:09.560 align:start position:0%
+Uh but as we move forward to a much
+ 
+
+00:07:09.560 --> 00:07:12.710 align:start position:0%
+Uh but as we move forward to a much
+higher<00:07:09.919><c> and</c><00:07:10.120><c> higher</c><00:07:10.880><c> rack</c><00:07:11.160><c> density,</c><00:07:11.800><c> there</c><00:07:12.080><c> is</c>
+
+00:07:12.710 --> 00:07:12.720 align:start position:0%
+higher and higher rack density, there is
+ 
+
+00:07:12.720 --> 00:07:15.150 align:start position:0%
+higher and higher rack density, there is
+even<00:07:13.080><c> more</c><00:07:13.360><c> thermal</c><00:07:13.800><c> challenges</c><00:07:14.440><c> or</c><00:07:14.560><c> concerns</c>
+
+00:07:15.150 --> 00:07:15.160 align:start position:0%
+even more thermal challenges or concerns
+ 
+
+00:07:15.160 --> 00:07:18.430 align:start position:0%
+even more thermal challenges or concerns
+that<00:07:15.360><c> needs</c><00:07:15.600><c> to</c><00:07:15.680><c> be</c><00:07:15.800><c> addressed.</c><00:07:16.880><c> Um</c><00:07:17.480><c> for</c><00:07:17.800><c> us,</c>
+
+00:07:18.430 --> 00:07:18.440 align:start position:0%
+that needs to be addressed. Um for us,
+ 
+
+00:07:18.440 --> 00:07:20.870 align:start position:0%
+that needs to be addressed. Um for us,
+uh<00:07:18.480><c> we</c><00:07:18.640><c> solved</c><00:07:19.000><c> this</c><00:07:19.160><c> issue</c><00:07:19.520><c> by</c><00:07:19.720><c> making</c><00:07:20.200><c> the</c>
+
+00:07:20.870 --> 00:07:20.880 align:start position:0%
+uh we solved this issue by making the
+ 
+
+00:07:20.880 --> 00:07:24.909 align:start position:0%
+uh we solved this issue by making the
+power<00:07:21.360><c> shelf</c><00:07:21.919><c> liquid</c><00:07:22.320><c> cooled.</c><00:07:23.200><c> Um</c><00:07:23.680><c> so,</c><00:07:23.960><c> our</c><00:07:24.320><c> 2U</c>
+
+00:07:24.909 --> 00:07:24.919 align:start position:0%
+power shelf liquid cooled. Um so, our 2U
+ 
+
+00:07:24.919 --> 00:07:28.909 align:start position:0%
+power shelf liquid cooled. Um so, our 2U
+110<00:07:25.640><c> kW</c><00:07:26.160><c> power</c><00:07:26.480><c> shelf</c><00:07:26.840><c> is</c><00:07:27.320><c> 100%</c><00:07:28.120><c> liquid</c><00:07:28.480><c> cooled</c>
+
+00:07:28.909 --> 00:07:28.919 align:start position:0%
+110 kW power shelf is 100% liquid cooled
+ 
+
+00:07:28.919 --> 00:07:32.070 align:start position:0%
+110 kW power shelf is 100% liquid cooled
+with<00:07:29.120><c> zero</c><00:07:29.520><c> air</c><00:07:29.720><c> flow</c><00:07:30.040><c> inside.</c><00:07:31.160><c> Um</c><00:07:31.640><c> this</c><00:07:31.840><c> is</c><00:07:32.000><c> a</c>
+
+00:07:32.070 --> 00:07:32.080 align:start position:0%
+with zero air flow inside. Um this is a
+ 
+
+00:07:32.080 --> 00:07:34.990 align:start position:0%
+with zero air flow inside. Um this is a
+complete<00:07:32.720><c> fanless</c><00:07:33.320><c> design.</c>
+
+00:07:34.990 --> 00:07:35.000 align:start position:0%
+complete fanless design.
+ 
+
+00:07:35.000 --> 00:07:37.510 align:start position:0%
+complete fanless design.
+So,<00:07:35.200><c> all</c><00:07:35.400><c> that</c><00:07:35.680><c> heat</c><00:07:36.080><c> is</c><00:07:36.280><c> extracted</c><00:07:37.200><c> through</c>
+
+00:07:37.510 --> 00:07:37.520 align:start position:0%
+So, all that heat is extracted through
+ 
+
+00:07:37.520 --> 00:07:41.230 align:start position:0%
+So, all that heat is extracted through
+the<00:07:37.880><c> facility</c><00:07:38.560><c> liquid</c><00:07:38.960><c> cooling</c><00:07:39.360><c> loop.</c><00:07:40.200><c> Um</c><00:07:41.040><c> and</c>
+
+00:07:41.230 --> 00:07:41.240 align:start position:0%
+the facility liquid cooling loop. Um and
+ 
+
+00:07:41.240 --> 00:07:44.070 align:start position:0%
+the facility liquid cooling loop. Um and
+so,<00:07:41.400><c> this</c><00:07:41.720><c> fundamentally</c><00:07:42.600><c> changes</c><00:07:43.160><c> the</c><00:07:43.320><c> whole</c>
+
+00:07:44.070 --> 00:07:44.080 align:start position:0%
+so, this fundamentally changes the whole
+ 
+
+00:07:44.080 --> 00:07:46.310 align:start position:0%
+so, this fundamentally changes the whole
+infrastructure<00:07:45.080><c> in</c><00:07:45.280><c> the</c><00:07:45.440><c> rack</c><00:07:45.920><c> and</c><00:07:46.080><c> the</c><00:07:46.200><c> in</c>
+
+00:07:46.310 --> 00:07:46.320 align:start position:0%
+infrastructure in the rack and the in
+ 
+
+00:07:46.320 --> 00:07:47.910 align:start position:0%
+infrastructure in the rack and the in
+the<00:07:46.440><c> data</c><00:07:46.800><c> hall.</c>
+
+00:07:47.910 --> 00:07:47.920 align:start position:0%
+the data hall.
+ 
+
+00:07:47.920 --> 00:07:50.990 align:start position:0%
+the data hall.
+Um,<00:07:48.120><c> so</c><00:07:48.360><c> there</c><00:07:48.600><c> is</c><00:07:48.760><c> no</c><00:07:48.960><c> more</c><00:07:49.600><c> traditional</c><00:07:50.600><c> hot</c>
+
+00:07:50.990 --> 00:07:51.000 align:start position:0%
+Um, so there is no more traditional hot
+ 
+
+00:07:51.000 --> 00:07:53.510 align:start position:0%
+Um, so there is no more traditional hot
+and<00:07:51.160><c> cold</c><00:07:51.600><c> island</c><00:07:52.120><c> data</c><00:07:52.440><c> hall</c>
+
+00:07:53.510 --> 00:07:53.520 align:start position:0%
+and cold island data hall
+ 
+
+00:07:53.520 --> 00:07:56.910 align:start position:0%
+and cold island data hall
+and<00:07:54.200><c> relying</c><00:07:54.880><c> on</c><00:07:55.120><c> the</c><00:07:55.440><c> high</c><00:07:55.680><c> speed</c><00:07:56.120><c> fans</c><00:07:56.720><c> and</c>
+
+00:07:56.910 --> 00:07:56.920 align:start position:0%
+and relying on the high speed fans and
+ 
+
+00:07:56.920 --> 00:07:58.830 align:start position:0%
+and relying on the high speed fans and
+all<00:07:57.040><c> the</c><00:07:57.160><c> noise</c><00:07:57.480><c> that</c><00:07:57.680><c> comes</c><00:07:57.960><c> with</c><00:07:58.160><c> it.</c><00:07:58.600><c> Those</c>
+
+00:07:58.830 --> 00:07:58.840 align:start position:0%
+all the noise that comes with it. Those
+ 
+
+00:07:58.840 --> 00:08:01.270 align:start position:0%
+all the noise that comes with it. Those
+are<00:07:59.000><c> all</c><00:07:59.240><c> eliminated.</c>
+
+00:08:01.270 --> 00:08:01.280 align:start position:0%
+are all eliminated.
+ 
+
+00:08:01.280 --> 00:08:03.550 align:start position:0%
+are all eliminated.
+So<00:08:01.600><c> coming</c><00:08:01.920><c> into</c><00:08:02.200><c> power</c><00:08:02.560><c> shelf</c><00:08:03.120><c> when</c><00:08:03.360><c> we</c>
+
+00:08:03.550 --> 00:08:03.560 align:start position:0%
+So coming into power shelf when we
+ 
+
+00:08:03.560 --> 00:08:06.750 align:start position:0%
+So coming into power shelf when we
+remove<00:08:03.960><c> the</c><00:08:04.080><c> fan</c><00:08:04.600><c> and</c><00:08:04.840><c> fan</c><00:08:05.200><c> power</c><00:08:05.760><c> and</c><00:08:06.000><c> all</c><00:08:06.160><c> the</c>
+
+00:08:06.750 --> 00:08:06.760 align:start position:0%
+remove the fan and fan power and all the
+ 
+
+00:08:06.760 --> 00:08:09.110 align:start position:0%
+remove the fan and fan power and all the
+failure<00:08:07.200><c> points</c><00:08:07.560><c> that</c><00:08:07.760><c> comes</c><00:08:08.080><c> with</c><00:08:08.200><c> the</c><00:08:08.320><c> fan,</c>
+
+00:08:09.110 --> 00:08:09.120 align:start position:0%
+failure points that comes with the fan,
+ 
+
+00:08:09.120 --> 00:08:11.670 align:start position:0%
+failure points that comes with the fan,
+we<00:08:09.320><c> actually</c><00:08:09.720><c> enable</c><00:08:10.200><c> a</c><00:08:10.280><c> much</c><00:08:10.720><c> higher</c><00:08:11.040><c> density</c>
+
+00:08:11.670 --> 00:08:11.680 align:start position:0%
+we actually enable a much higher density
+ 
+
+00:08:11.680 --> 00:08:13.350 align:start position:0%
+we actually enable a much higher density
+power<00:08:11.960><c> supply.</c>
+
+00:08:13.350 --> 00:08:13.360 align:start position:0%
+power supply.
+ 
+
+00:08:13.360 --> 00:08:15.270 align:start position:0%
+power supply.
+Um,<00:08:13.400><c> and</c><00:08:13.560><c> also</c><00:08:13.919><c> more</c><00:08:14.240><c> efficient</c><00:08:14.760><c> use</c><00:08:14.960><c> of</c><00:08:15.120><c> the</c>
+
+00:08:15.270 --> 00:08:15.280 align:start position:0%
+Um, and also more efficient use of the
+ 
+
+00:08:15.280 --> 00:08:18.190 align:start position:0%
+Um, and also more efficient use of the
+rack<00:08:15.680><c> space</c><00:08:16.320><c> and</c><00:08:16.560><c> all</c><00:08:16.760><c> the</c><00:08:17.280><c> of</c><00:08:17.440><c> course</c><00:08:18.080><c> the</c>
+
+00:08:18.190 --> 00:08:18.200 align:start position:0%
+rack space and all the of course the
+ 
+
+00:08:18.200 --> 00:08:20.790 align:start position:0%
+rack space and all the of course the
+white<00:08:18.480><c> space</c><00:08:18.840><c> that</c><00:08:19.320><c> is</c><00:08:19.600><c> there.</c>
+
+00:08:20.790 --> 00:08:20.800 align:start position:0%
+white space that is there.
+ 
+
+00:08:20.800 --> 00:08:24.630 align:start position:0%
+white space that is there.
+Um,<00:08:21.440><c> so</c><00:08:21.600><c> when</c><00:08:21.760><c> we</c><00:08:21.880><c> combine</c><00:08:22.840><c> electronics</c><00:08:23.560><c> and</c>
+
+00:08:24.630 --> 00:08:24.640 align:start position:0%
+Um, so when we combine electronics and
+ 
+
+00:08:24.640 --> 00:08:26.030 align:start position:0%
+Um, so when we combine electronics and
+electronics<00:08:25.280><c> and</c><00:08:25.400><c> liquid</c><00:08:25.800><c> there</c><00:08:25.919><c> is</c>
+
+00:08:26.030 --> 00:08:26.040 align:start position:0%
+electronics and liquid there is
+ 
+
+00:08:26.040 --> 00:08:28.590 align:start position:0%
+electronics and liquid there is
+obviously<00:08:26.600><c> there</c><00:08:26.760><c> is</c><00:08:26.919><c> a</c><00:08:27.240><c> much</c><00:08:27.640><c> more</c><00:08:28.000><c> robust</c>
+
+00:08:28.590 --> 00:08:28.600 align:start position:0%
+obviously there is a much more robust
+ 
+
+00:08:28.600 --> 00:08:31.310 align:start position:0%
+obviously there is a much more robust
+approach<00:08:29.000><c> to</c><00:08:29.120><c> the</c><00:08:29.240><c> safety.</c><00:08:30.280><c> So</c><00:08:30.440><c> we</c><00:08:30.640><c> added</c><00:08:31.120><c> so</c>
+
+00:08:31.310 --> 00:08:31.320 align:start position:0%
+approach to the safety. So we added so
+ 
+
+00:08:31.320 --> 00:08:32.630 align:start position:0%
+approach to the safety. So we added so
+many<00:08:31.640><c> more</c>
+
+00:08:32.630 --> 00:08:32.640 align:start position:0%
+many more
+ 
+
+00:08:32.640 --> 00:08:35.630 align:start position:0%
+many more
+liquid<00:08:33.400><c> liquid</c><00:08:34.120><c> sensors</c><00:08:34.719><c> that</c><00:08:34.919><c> is</c><00:08:35.080><c> at</c><00:08:35.320><c> power</c>
+
+00:08:35.630 --> 00:08:35.640 align:start position:0%
+liquid liquid sensors that is at power
+ 
+
+00:08:35.640 --> 00:08:39.469 align:start position:0%
+liquid liquid sensors that is at power
+supply<00:08:36.599><c> and</c><00:08:36.760><c> power</c><00:08:37.039><c> shelf</c><00:08:37.479><c> level.</c><00:08:38.320><c> Um,</c>
+
+00:08:39.469 --> 00:08:39.479 align:start position:0%
+supply and power shelf level. Um,
+ 
+
+00:08:39.479 --> 00:08:41.469 align:start position:0%
+supply and power shelf level. Um,
+so<00:08:39.840><c> in</c><00:08:40.000><c> case</c><00:08:40.280><c> there</c><00:08:40.440><c> is</c><00:08:40.560><c> a</c><00:08:40.640><c> leakage</c><00:08:41.000><c> inside</c><00:08:41.400><c> the</c>
+
+00:08:41.469 --> 00:08:41.479 align:start position:0%
+so in case there is a leakage inside the
+ 
+
+00:08:41.479 --> 00:08:43.790 align:start position:0%
+so in case there is a leakage inside the
+power<00:08:41.760><c> shelf,</c><00:08:42.640><c> it</c><00:08:42.760><c> shuts</c><00:08:43.039><c> down</c><00:08:43.280><c> the</c><00:08:43.360><c> power</c>
+
+00:08:43.790 --> 00:08:43.800 align:start position:0%
+power shelf, it shuts down the power
+ 
+
+00:08:43.800 --> 00:08:46.790 align:start position:0%
+power shelf, it shuts down the power
+either<00:08:44.080><c> power</c><00:08:44.360><c> supply</c><00:08:44.800><c> which</c><00:08:45.040><c> is</c><00:08:45.640><c> 55</c><00:08:46.200><c> kilowatt</c>
+
+00:08:46.790 --> 00:08:46.800 align:start position:0%
+either power supply which is 55 kilowatt
+ 
+
+00:08:46.800 --> 00:08:49.470 align:start position:0%
+either power supply which is 55 kilowatt
+or<00:08:47.440><c> 110</c><00:08:47.960><c> kilowatt</c><00:08:48.440><c> which</c><00:08:48.600><c> is</c><00:08:48.720><c> at</c><00:08:48.920><c> power</c><00:08:49.160><c> shelf</c>
+
+00:08:49.470 --> 00:08:49.480 align:start position:0%
+or 110 kilowatt which is at power shelf
+ 
+
+00:08:49.480 --> 00:08:50.870 align:start position:0%
+or 110 kilowatt which is at power shelf
+level.
+
+00:08:50.870 --> 00:08:50.880 align:start position:0%
+level.
+ 
+
+00:08:50.880 --> 00:08:53.950 align:start position:0%
+level.
+Um,<00:08:51.760><c> I</c><00:08:51.920><c> want</c><00:08:52.200><c> to</c><00:08:52.960><c> say</c><00:08:53.200><c> that</c><00:08:53.400><c> there</c><00:08:53.560><c> is</c><00:08:53.680><c> more</c>
+
+00:08:53.950 --> 00:08:53.960 align:start position:0%
+Um, I want to say that there is more
+ 
+
+00:08:53.960 --> 00:08:56.430 align:start position:0%
+Um, I want to say that there is more
+benefits<00:08:54.520><c> to</c><00:08:54.640><c> the</c><00:08:54.839><c> cooling.</c><00:08:55.360><c> So</c><00:08:56.040><c> all</c><00:08:56.200><c> those</c>
+
+00:08:56.430 --> 00:08:56.440 align:start position:0%
+benefits to the cooling. So all those
+ 
+
+00:08:56.440 --> 00:08:59.350 align:start position:0%
+benefits to the cooling. So all those
+components<00:08:57.160><c> like</c><00:08:57.440><c> e-cap</c><00:08:58.160><c> and</c><00:08:58.400><c> semiconductors</c>
+
+00:08:59.350 --> 00:08:59.360 align:start position:0%
+components like e-cap and semiconductors
+ 
+
+00:08:59.360 --> 00:09:01.790 align:start position:0%
+components like e-cap and semiconductors
+are<00:08:59.600><c> always</c><00:08:59.960><c> running</c><00:09:00.320><c> at</c><00:09:00.480><c> lower</c><00:09:00.720><c> temperature.</c>
+
+00:09:01.790 --> 00:09:01.800 align:start position:0%
+are always running at lower temperature.
+ 
+
+00:09:01.800 --> 00:09:03.910 align:start position:0%
+are always running at lower temperature.
+So<00:09:02.080><c> this</c><00:09:02.400><c> increases</c><00:09:03.040><c> the</c><00:09:03.200><c> life</c><00:09:03.600><c> of</c><00:09:03.760><c> the</c>
+
+00:09:03.910 --> 00:09:03.920 align:start position:0%
+So this increases the life of the
+ 
+
+00:09:03.920 --> 00:09:06.870 align:start position:0%
+So this increases the life of the
+components<00:09:04.680><c> and</c><00:09:04.839><c> also</c><00:09:05.360><c> reliability.</c>
+
+00:09:06.870 --> 00:09:06.880 align:start position:0%
+components and also reliability.
+ 
+
+00:09:06.880 --> 00:09:09.950 align:start position:0%
+components and also reliability.
+Um,<00:09:07.400><c> and</c><00:09:07.560><c> finally</c><00:09:08.560><c> our</c><00:09:08.800><c> experience</c><00:09:09.520><c> with</c>
+
+00:09:09.950 --> 00:09:09.960 align:start position:0%
+Um, and finally our experience with
+ 
+
+00:09:09.960 --> 00:09:12.150 align:start position:0%
+Um, and finally our experience with
+e-manufacturing,<00:09:11.080><c> potting</c><00:09:11.560><c> machines</c><00:09:12.040><c> and</c>
+
+00:09:12.150 --> 00:09:12.160 align:start position:0%
+e-manufacturing, potting machines and
+ 
+
+00:09:12.160 --> 00:09:14.790 align:start position:0%
+e-manufacturing, potting machines and
+everything<00:09:12.520><c> that</c><00:09:12.720><c> we</c><00:09:12.839><c> have</c><00:09:13.080><c> today</c><00:09:14.040><c> enables</c><00:09:14.600><c> us</c>
+
+00:09:14.790 --> 00:09:14.800 align:start position:0%
+everything that we have today enables us
+ 
+
+00:09:14.800 --> 00:09:17.110 align:start position:0%
+everything that we have today enables us
+to<00:09:14.960><c> introduce</c><00:09:15.480><c> this</c><00:09:15.680><c> technology</c><00:09:16.320><c> much</c><00:09:16.640><c> faster</c>
+
+00:09:17.110 --> 00:09:17.120 align:start position:0%
+to introduce this technology much faster
+ 
+
+00:09:17.120 --> 00:09:20.870 align:start position:0%
+to introduce this technology much faster
+to<00:09:17.240><c> the</c><00:09:17.360><c> market.</c>
+
+00:09:20.870 --> 00:09:20.880 align:start position:0%
+ 
+ 
+
+00:09:20.880 --> 00:09:25.510 align:start position:0%
+ 
+So<00:09:21.280><c> if</c><00:09:21.520><c> you</c><00:09:21.680><c> move</c><00:09:22.280><c> both</c><00:09:22.800><c> power</c><00:09:23.160><c> compute</c><00:09:23.960><c> and</c>
+
+00:09:25.510 --> 00:09:25.520 align:start position:0%
+So if you move both power compute and
+ 
+
+00:09:25.520 --> 00:09:28.230 align:start position:0%
+So if you move both power compute and
+power<00:09:25.839><c> shelf</c><00:09:26.960><c> power</c><00:09:27.240><c> converters,</c><00:09:27.800><c> both</c><00:09:28.080><c> of</c>
+
+00:09:28.230 --> 00:09:28.240 align:start position:0%
+power shelf power converters, both of
+ 
+
+00:09:28.240 --> 00:09:30.630 align:start position:0%
+power shelf power converters, both of
+them<00:09:28.839><c> to</c><00:09:29.000><c> liquid</c><00:09:29.360><c> cooling,</c>
+
+00:09:30.630 --> 00:09:30.640 align:start position:0%
+them to liquid cooling,
+ 
+
+00:09:30.640 --> 00:09:32.829 align:start position:0%
+them to liquid cooling,
+our<00:09:30.800><c> study</c><00:09:31.200><c> shows</c><00:09:31.520><c> that</c><00:09:31.800><c> you</c><00:09:31.920><c> can</c><00:09:32.120><c> actually</c>
+
+00:09:32.829 --> 00:09:32.839 align:start position:0%
+our study shows that you can actually
+ 
+
+00:09:32.839 --> 00:09:35.950 align:start position:0%
+our study shows that you can actually
+save<00:09:33.280><c> on</c><00:09:33.440><c> capex</c><00:09:34.000><c> up</c><00:09:34.160><c> to</c><00:09:34.280><c> 10%</c><00:09:35.480><c> and</c><00:09:35.640><c> that's</c>
+
+00:09:35.950 --> 00:09:35.960 align:start position:0%
+save on capex up to 10% and that's
+ 
+
+00:09:35.960 --> 00:09:39.030 align:start position:0%
+save on capex up to 10% and that's
+mainly<00:09:36.480><c> coming</c><00:09:36.960><c> from</c><00:09:37.560><c> white</c><00:09:37.840><c> space</c><00:09:38.160><c> saving,</c>
+
+00:09:39.030 --> 00:09:39.040 align:start position:0%
+mainly coming from white space saving,
+ 
+
+00:09:39.040 --> 00:09:42.150 align:start position:0%
+mainly coming from white space saving,
+uh<00:09:39.120><c> compact</c><00:09:39.880><c> uh</c><00:09:40.120><c> power</c><00:09:40.480><c> conversion,</c><00:09:41.640><c> and</c><00:09:41.840><c> also</c>
+
+00:09:42.150 --> 00:09:42.160 align:start position:0%
+uh compact uh power conversion, and also
+ 
+
+00:09:42.160 --> 00:09:43.590 align:start position:0%
+uh compact uh power conversion, and also
+labor<00:09:42.560><c> saving,</c><00:09:43.080><c> and</c><00:09:43.240><c> all</c><00:09:43.400><c> that</c>
+
+00:09:43.590 --> 00:09:43.600 align:start position:0%
+labor saving, and all that
+ 
+
+00:09:43.600 --> 00:09:45.190 align:start position:0%
+labor saving, and all that
+infrastructure<00:09:44.320><c> that</c><00:09:44.520><c> comes</c><00:09:44.800><c> with</c><00:09:44.920><c> the</c><00:09:45.040><c> air</c>
+
+00:09:45.190 --> 00:09:45.200 align:start position:0%
+infrastructure that comes with the air
+ 
+
+00:09:45.200 --> 00:09:50.830 align:start position:0%
+infrastructure that comes with the air
+cooling<00:09:45.600><c> that</c><00:09:45.760><c> is</c><00:09:45.920><c> not</c><00:09:46.120><c> needed</c><00:09:46.520><c> anymore.</c>
+
+00:09:50.830 --> 00:09:50.840 align:start position:0%
+ 
+ 
+
+00:09:50.840 --> 00:09:52.910 align:start position:0%
+ 
+So,<00:09:50.960><c> we</c><00:09:51.120><c> have</c><00:09:51.400><c> a</c><00:09:51.440><c> mature</c><00:09:51.880><c> design</c><00:09:52.360><c> that</c><00:09:52.560><c> is</c><00:09:52.720><c> at</c>
+
+00:09:52.910 --> 00:09:52.920 align:start position:0%
+So, we have a mature design that is at
+ 
+
+00:09:52.920 --> 00:09:55.470 align:start position:0%
+So, we have a mature design that is at
+54<00:09:53.520><c> V</c><00:09:53.800><c> DC.</c><00:09:54.760><c> Uh</c>
+
+00:09:55.470 --> 00:09:55.480 align:start position:0%
+54 V DC. Uh
+ 
+
+00:09:55.480 --> 00:09:57.910 align:start position:0%
+54 V DC. Uh
+we<00:09:55.640><c> have</c><00:09:55.960><c> released</c><00:09:56.240><c> products</c><00:09:56.720><c> for</c><00:09:56.880><c> NVIDIA</c><00:09:57.320><c> MGX</c>
+
+00:09:57.910 --> 00:09:57.920 align:start position:0%
+we have released products for NVIDIA MGX
+ 
+
+00:09:57.920 --> 00:09:59.790 align:start position:0%
+we have released products for NVIDIA MGX
+series.<00:09:58.920><c> Um</c>
+
+00:09:59.790 --> 00:09:59.800 align:start position:0%
+series. Um
+ 
+
+00:09:59.800 --> 00:10:02.150 align:start position:0%
+series. Um
+And<00:09:59.960><c> also</c><00:10:00.280><c> introduce</c><00:10:00.880><c> all</c><00:10:01.080><c> the</c><00:10:01.280><c> power</c><00:10:01.760><c> only</c>
+
+00:10:02.150 --> 00:10:02.160 align:start position:0%
+And also introduce all the power only
+ 
+
+00:10:02.160 --> 00:10:05.590 align:start position:0%
+And also introduce all the power only
+racks,<00:10:02.680><c> which</c><00:10:02.920><c> is</c><00:10:03.080><c> 800</c><00:10:03.560><c> V</c><00:10:03.920><c> DC.</c><00:10:05.000><c> Uh</c>
+
+00:10:05.590 --> 00:10:05.600 align:start position:0%
+racks, which is 800 V DC. Uh
+ 
+
+00:10:05.600 --> 00:10:07.950 align:start position:0%
+racks, which is 800 V DC. Uh
+our<00:10:06.240><c> solution</c><00:10:06.360><c> combines</c><00:10:07.000><c> with</c><00:10:07.640><c> uh</c><00:10:07.680><c> all</c><00:10:07.840><c> the</c>
+
+00:10:07.950 --> 00:10:07.960 align:start position:0%
+our solution combines with uh all the
+ 
+
+00:10:07.960 --> 00:10:10.390 align:start position:0%
+our solution combines with uh all the
+DCDC<00:10:08.720><c> power</c><00:10:09.080><c> converters</c><00:10:09.640><c> and</c><00:10:09.800><c> modules</c><00:10:10.240><c> that</c>
+
+00:10:10.390 --> 00:10:10.400 align:start position:0%
+DCDC power converters and modules that
+ 
+
+00:10:10.400 --> 00:10:13.190 align:start position:0%
+DCDC power converters and modules that
+comes<00:10:10.800><c> together</c><00:10:11.240><c> with</c><00:10:11.360><c> a</c><00:10:11.400><c> compute</c><00:10:11.920><c> tray.</c><00:10:12.840><c> Uh</c>
+
+00:10:13.190 --> 00:10:13.200 align:start position:0%
+comes together with a compute tray. Uh
+ 
+
+00:10:13.200 --> 00:10:15.510 align:start position:0%
+comes together with a compute tray. Uh
+as<00:10:13.440><c> a</c><00:10:13.480><c> next</c><00:10:13.840><c> generation,</c><00:10:14.520><c> our</c><00:10:14.720><c> approach</c><00:10:15.200><c> is</c><00:10:15.400><c> to</c>
+
+00:10:15.510 --> 00:10:15.520 align:start position:0%
+as a next generation, our approach is to
+ 
+
+00:10:15.520 --> 00:10:18.110 align:start position:0%
+as a next generation, our approach is to
+go<00:10:15.720><c> to</c><00:10:15.880><c> facility</c><00:10:16.480><c> level.</c><00:10:17.280><c> So,</c><00:10:17.440><c> that</c><00:10:17.680><c> means</c>
+
+00:10:18.110 --> 00:10:18.120 align:start position:0%
+go to facility level. So, that means
+ 
+
+00:10:18.120 --> 00:10:20.150 align:start position:0%
+go to facility level. So, that means
+with<00:10:18.320><c> SSD</c><00:10:18.920><c> that</c><00:10:19.160><c> we</c><00:10:19.240><c> are</c><00:10:19.360><c> going</c><00:10:19.600><c> to</c><00:10:19.760><c> release</c>
+
+00:10:20.150 --> 00:10:20.160 align:start position:0%
+with SSD that we are going to release
+ 
+
+00:10:20.160 --> 00:10:21.590 align:start position:0%
+with SSD that we are going to release
+next<00:10:20.600><c> year,</c>
+
+00:10:21.590 --> 00:10:21.600 align:start position:0%
+next year,
+ 
+
+00:10:21.600 --> 00:10:24.990 align:start position:0%
+next year,
+uh<00:10:21.800><c> we</c><00:10:21.960><c> bring</c><00:10:22.320><c> the</c><00:10:22.440><c> whole</c><00:10:23.280><c> uh</c><00:10:23.320><c> 800</c><00:10:23.920><c> V</c><00:10:24.200><c> DC</c><00:10:24.640><c> bus</c>
+
+00:10:24.990 --> 00:10:25.000 align:start position:0%
+uh we bring the whole uh 800 V DC bus
+ 
+
+00:10:25.000 --> 00:10:28.430 align:start position:0%
+uh we bring the whole uh 800 V DC bus
+bar<00:10:25.640><c> to</c><00:10:25.920><c> directly</c><00:10:26.440><c> to</c><00:10:26.640><c> the</c><00:10:26.800><c> compute</c><00:10:27.880><c> rack,</c>
+
+00:10:28.430 --> 00:10:28.440 align:start position:0%
+bar to directly to the compute rack,
+ 
+
+00:10:28.440 --> 00:10:30.390 align:start position:0%
+bar to directly to the compute rack,
+which<00:10:28.640><c> is</c><00:10:28.760><c> also</c><00:10:29.080><c> liquid</c><00:10:29.480><c> cooled.</c>
+
+00:10:30.390 --> 00:10:30.400 align:start position:0%
+which is also liquid cooled.
+ 
+
+00:10:30.400 --> 00:10:32.870 align:start position:0%
+which is also liquid cooled.
+So,<00:10:30.560><c> that's</c><00:10:30.880><c> how</c><00:10:31.240><c> we</c><00:10:31.600><c> introduce</c><00:10:32.280><c> and</c><00:10:32.400><c> make</c><00:10:32.680><c> it</c>
+
+00:10:32.870 --> 00:10:32.880 align:start position:0%
+So, that's how we introduce and make it
+ 
+
+00:10:32.880 --> 00:10:36.750 align:start position:0%
+So, that's how we introduce and make it
+much<00:10:33.240><c> faster</c><00:10:33.960><c> to</c><00:10:34.080><c> deploy</c><00:10:35.120><c> um</c><00:10:35.840><c> for</c><00:10:36.160><c> any</c><00:10:36.480><c> next</c>
+
+00:10:36.750 --> 00:10:36.760 align:start position:0%
+much faster to deploy um for any next
+ 
+
+00:10:36.760 --> 00:10:41.190 align:start position:0%
+much faster to deploy um for any next
+generation<00:10:37.280><c> of</c><00:10:37.440><c> AI</c><00:10:37.640><c> data</c><00:10:37.960><c> centers.</c>
+
+00:10:41.190 --> 00:10:41.200 align:start position:0%
+ 
+ 
+
+00:10:41.200 --> 00:10:43.470 align:start position:0%
+ 
+Uh<00:10:41.440><c> with</c><00:10:41.640><c> that,</c><00:10:42.160><c> I'm</c><00:10:42.480><c> passing</c><00:10:42.880><c> to</c><00:10:43.320><c> my</c>
+
+00:10:43.470 --> 00:10:43.480 align:start position:0%
+Uh with that, I'm passing to my
+ 
+
+00:10:43.480 --> 00:10:45.310 align:start position:0%
+Uh with that, I'm passing to my
+colleague<00:10:43.839><c> Shi</c><00:10:44.000><c> Lei.</c>
+
+00:10:45.310 --> 00:10:45.320 align:start position:0%
+colleague Shi Lei.
+ 
+
+00:10:45.320 --> 00:10:47.070 align:start position:0%
+colleague Shi Lei.
+&gt;&gt; Okay.
+
+00:10:47.070 --> 00:10:47.080 align:start position:0%
+&gt;&gt; Okay.
+ 
+
+00:10:47.080 --> 00:10:50.190 align:start position:0%
+&gt;&gt; Okay.
+Okay.<00:10:47.640><c> I</c><00:10:47.720><c> will</c><00:10:47.920><c> introduce</c><00:10:48.760><c> uh</c><00:10:48.839><c> some</c><00:10:49.440><c> um</c>
+
+00:10:50.190 --> 00:10:50.200 align:start position:0%
+Okay. I will introduce uh some um
+ 
+
+00:10:50.200 --> 00:10:52.990 align:start position:0%
+Okay. I will introduce uh some um
+specific<00:10:51.240><c> uh</c><00:10:51.320><c> partial</c><00:10:51.720><c> design</c><00:10:52.400><c> on</c><00:10:52.560><c> the</c><00:10:52.720><c> liquid</c>
+
+00:10:52.990 --> 00:10:53.000 align:start position:0%
+specific uh partial design on the liquid
+ 
+
+00:10:53.000 --> 00:10:53.910 align:start position:0%
+specific uh partial design on the liquid
+cool.
+
+00:10:53.910 --> 00:10:53.920 align:start position:0%
+cool.
+ 
+
+00:10:53.920 --> 00:10:57.870 align:start position:0%
+cool.
+So,<00:10:54.160><c> the</c><00:10:54.360><c> first</c><00:10:54.600><c> one</c><00:10:54.800><c> is</c><00:10:55.040><c> the</c><00:10:55.560><c> um</c><00:10:55.640><c> 4</c><00:10:56.480><c> 54</c>
+
+00:10:57.870 --> 00:10:57.880 align:start position:0%
+So, the first one is the um 4 54
+ 
+
+00:10:57.880 --> 00:10:59.070 align:start position:0%
+So, the first one is the um 4 54
+um
+
+00:10:59.070 --> 00:10:59.080 align:start position:0%
+um
+ 
+
+00:10:59.080 --> 00:11:02.070 align:start position:0%
+um
+2<00:10:59.280><c> RU</c><00:11:00.160><c> uh</c><00:11:00.240><c> one</c><00:11:01.160><c> uh</c>
+
+00:11:02.070 --> 00:11:02.080 align:start position:0%
+2 RU uh one uh
+ 
+
+00:11:02.080 --> 00:11:06.270 align:start position:0%
+2 RU uh one uh
+1<00:11:02.800><c> 10</c><00:11:03.080><c> kW</c><00:11:03.600><c> liquid</c><00:11:03.920><c> cool</c><00:11:04.480><c> uh</c><00:11:04.560><c> SCDT</c><00:11:05.040><c> partial.</c><00:11:05.880><c> So,</c>
+
+00:11:06.270 --> 00:11:06.280 align:start position:0%
+1 10 kW liquid cool uh SCDT partial. So,
+ 
+
+00:11:06.280 --> 00:11:09.430 align:start position:0%
+1 10 kW liquid cool uh SCDT partial. So,
+this<00:11:06.480><c> shelf</c><00:11:07.120><c> uh</c><00:11:07.200><c> is</c><00:11:07.360><c> a</c><00:11:07.480><c> two</c><00:11:08.040><c> two</c><00:11:08.360><c> RU,</c><00:11:09.080><c> and</c><00:11:09.320><c> we</c>
+
+00:11:09.430 --> 00:11:09.440 align:start position:0%
+this shelf uh is a two two RU, and we
+ 
+
+00:11:09.440 --> 00:11:12.430 align:start position:0%
+this shelf uh is a two two RU, and we
+have<00:11:10.440><c> two</c><00:11:10.720><c> PSUs</c><00:11:11.160><c> inside.</c><00:11:11.680><c> So,</c><00:11:11.880><c> the</c><00:11:12.000><c> PSU</c>
+
+00:11:12.430 --> 00:11:12.440 align:start position:0%
+have two PSUs inside. So, the PSU
+ 
+
+00:11:12.440 --> 00:11:15.870 align:start position:0%
+have two PSUs inside. So, the PSU
+actually<00:11:12.800><c> is</c><00:11:13.480><c> hot</c><00:11:13.720><c> swappable.</c><00:11:14.880><c> And</c><00:11:15.040><c> also</c><00:11:15.839><c> uh</c>
+
+00:11:15.870 --> 00:11:15.880 align:start position:0%
+actually is hot swappable. And also uh
+ 
+
+00:11:15.880 --> 00:11:19.829 align:start position:0%
+actually is hot swappable. And also uh
+we<00:11:15.960><c> have</c><00:11:16.680><c> the</c><00:11:16.960><c> shelf</c><00:11:17.320><c> itself</c><00:11:17.880><c> has</c><00:11:18.200><c> dual</c><00:11:18.560><c> AC</c>
+
+00:11:19.829 --> 00:11:19.839 align:start position:0%
+we have the shelf itself has dual AC
+ 
+
+00:11:19.839 --> 00:11:24.270 align:start position:0%
+we have the shelf itself has dual AC
+um<00:11:20.000><c> inputs,</c><00:11:20.680><c> and</c><00:11:21.280><c> also</c><00:11:21.920><c> it</c><00:11:22.120><c> has</c><00:11:22.760><c> um</c><00:11:23.200><c> bus</c><00:11:23.440><c> clip</c>
+
+00:11:24.270 --> 00:11:24.280 align:start position:0%
+um inputs, and also it has um bus clip
+ 
+
+00:11:24.280 --> 00:11:27.190 align:start position:0%
+um inputs, and also it has um bus clip
+for<00:11:24.440><c> the</c><00:11:24.520><c> DC</c><00:11:24.839><c> output.</c><00:11:25.760><c> And</c><00:11:26.240><c> And</c><00:11:26.520><c> this</c><00:11:26.800><c> shelf</c>
+
+00:11:27.190 --> 00:11:27.200 align:start position:0%
+for the DC output. And And this shelf
+ 
+
+00:11:27.200 --> 00:11:28.990 align:start position:0%
+for the DC output. And And this shelf
+can<00:11:27.360><c> support</c><00:11:28.120><c> the</c>
+
+00:11:28.990 --> 00:11:29.000 align:start position:0%
+can support the
+ 
+
+00:11:29.000 --> 00:11:30.390 align:start position:0%
+can support the
+NVIDIA
+
+00:11:30.390 --> 00:11:30.400 align:start position:0%
+NVIDIA
+ 
+
+00:11:30.400 --> 00:11:31.390 align:start position:0%
+NVIDIA
+uh
+
+00:11:31.390 --> 00:11:31.400 align:start position:0%
+uh
+ 
+
+00:11:31.400 --> 00:11:34.470 align:start position:0%
+uh
+MGX<00:11:32.160><c> rack.</c>
+
+00:11:34.470 --> 00:11:34.480 align:start position:0%
+MGX rack.
+ 
+
+00:11:34.480 --> 00:11:36.030 align:start position:0%
+MGX rack.
+So,<00:11:34.600><c> it's</c><00:11:34.720><c> for</c><00:11:34.880><c> the</c><00:11:35.000><c> liquid</c>
+
+00:11:36.030 --> 00:11:36.040 align:start position:0%
+So, it's for the liquid
+ 
+
+00:11:36.040 --> 00:11:36.750 align:start position:0%
+So, it's for the liquid
+uh
+
+00:11:36.750 --> 00:11:36.760 align:start position:0%
+uh
+ 
+
+00:11:36.760 --> 00:11:39.910 align:start position:0%
+uh
+for<00:11:36.880><c> the</c><00:11:36.960><c> liquid</c><00:11:37.320><c> cool</c><00:11:37.960><c> specs</c><00:11:38.480><c> and</c><00:11:38.640><c> that's</c><00:11:38.880><c> the</c>
+
+00:11:39.910 --> 00:11:39.920 align:start position:0%
+for the liquid cool specs and that's the
+ 
+
+00:11:39.920 --> 00:11:41.950 align:start position:0%
+for the liquid cool specs and that's the
+uh<00:11:40.160><c> the</c><00:11:40.640><c> the</c><00:11:40.760><c> liquid</c>
+
+00:11:41.950 --> 00:11:41.960 align:start position:0%
+uh the the liquid
+ 
+
+00:11:41.960 --> 00:11:44.070 align:start position:0%
+uh the the liquid
+um<00:11:42.880><c> temperature</c>
+
+00:11:44.070 --> 00:11:44.080 align:start position:0%
+um temperature
+ 
+
+00:11:44.080 --> 00:11:48.430 align:start position:0%
+um temperature
+is<00:11:44.600><c> the</c><00:11:44.720><c> range</c><00:11:45.120><c> is</c><00:11:45.360><c> from</c><00:11:46.040><c> uh</c><00:11:46.160><c> 17°</c><00:11:47.280><c> to</c>
+
+00:11:48.430 --> 00:11:48.440 align:start position:0%
+is the range is from uh 17° to
+ 
+
+00:11:48.440 --> 00:11:51.790 align:start position:0%
+is the range is from uh 17° to
+uh<00:11:48.640><c> 50°</c>
+
+00:11:51.790 --> 00:11:51.800 align:start position:0%
+ 
+ 
+
+00:11:51.800 --> 00:11:53.910 align:start position:0%
+ 
+Uh<00:11:52.240><c> the</c><00:11:52.440><c> basic</c><00:11:53.280><c> uh</c>
+
+00:11:53.910 --> 00:11:53.920 align:start position:0%
+Uh the basic uh
+ 
+
+00:11:53.920 --> 00:11:55.910 align:start position:0%
+Uh the basic uh
+feature<00:11:54.280><c> actually</c><00:11:54.680><c> is</c><00:11:54.920><c> uh</c>
+
+00:11:55.910 --> 00:11:55.920 align:start position:0%
+feature actually is uh
+ 
+
+00:11:55.920 --> 00:12:00.230 align:start position:0%
+feature actually is uh
+uh<00:11:56.400><c> the</c><00:11:56.520><c> input</c><00:11:56.920><c> is</c><00:11:57.520><c> surface</c><00:11:58.120><c> input</c><00:11:58.920><c> and</c><00:11:59.320><c> uh</c>
+
+00:12:00.230 --> 00:12:00.240 align:start position:0%
+uh the input is surface input and uh
+ 
+
+00:12:00.240 --> 00:12:04.430 align:start position:0%
+uh the input is surface input and uh
+also<00:12:00.600><c> it</c><00:12:00.760><c> has</c><00:12:01.400><c> um</c><00:12:01.760><c> 10</c><00:12:02.120><c> K</c><00:12:02.640><c> joules</c><00:12:03.440><c> the</c><00:12:03.600><c> internal</c>
+
+00:12:04.430 --> 00:12:04.440 align:start position:0%
+also it has um 10 K joules the internal
+ 
+
+00:12:04.440 --> 00:12:07.270 align:start position:0%
+also it has um 10 K joules the internal
+energy<00:12:05.320><c> for</c><00:12:06.160><c> uh</c>
+
+00:12:07.270 --> 00:12:07.280 align:start position:0%
+energy for uh
+ 
+
+00:12:07.280 --> 00:12:13.030 align:start position:0%
+energy for uh
+input<00:12:07.640><c> current</c><00:12:08.520><c> uh</c><00:12:08.600><c> shaping.</c>
+
+00:12:13.030 --> 00:12:13.040 align:start position:0%
+ 
+ 
+
+00:12:13.040 --> 00:12:17.550 align:start position:0%
+ 
+Yeah,<00:12:13.160><c> this</c><00:12:13.400><c> is</c><00:12:13.920><c> our</c><00:12:14.440><c> liquid</c><00:12:14.840><c> cool</c><00:12:15.720><c> 800</c><00:12:16.360><c> W</c><00:12:16.920><c> DC</c>
+
+00:12:17.550 --> 00:12:17.560 align:start position:0%
+Yeah, this is our liquid cool 800 W DC
+ 
+
+00:12:17.560 --> 00:12:19.390 align:start position:0%
+Yeah, this is our liquid cool 800 W DC
+products.
+
+00:12:19.390 --> 00:12:19.400 align:start position:0%
+products.
+ 
+
+00:12:19.400 --> 00:12:23.350 align:start position:0%
+products.
+Um<00:12:20.040><c> for</c><00:12:20.280><c> this</c><00:12:20.520><c> racks</c><00:12:20.880><c> actually</c><00:12:21.440><c> it</c><00:12:21.760><c> has</c><00:12:22.280><c> eight</c>
+
+00:12:23.350 --> 00:12:23.360 align:start position:0%
+Um for this racks actually it has eight
+ 
+
+00:12:23.360 --> 00:12:24.190 align:start position:0%
+Um for this racks actually it has eight
+um
+
+00:12:24.190 --> 00:12:24.200 align:start position:0%
+um
+ 
+
+00:12:24.200 --> 00:12:26.750 align:start position:0%
+um
+power<00:12:24.360><c> shelves</c><00:12:25.120><c> inside.</c><00:12:26.000><c> So,</c><00:12:26.280><c> each</c><00:12:26.520><c> power</c>
+
+00:12:26.750 --> 00:12:26.760 align:start position:0%
+power shelves inside. So, each power
+ 
+
+00:12:26.760 --> 00:12:31.150 align:start position:0%
+power shelves inside. So, each power
+shelf<00:12:27.600><c> can</c><00:12:27.880><c> deliver</c><00:12:28.360><c> 100</c><00:12:28.960><c> kW</c><00:12:29.520><c> power.</c>
+
+00:12:31.150 --> 00:12:31.160 align:start position:0%
+shelf can deliver 100 kW power.
+ 
+
+00:12:31.160 --> 00:12:34.150 align:start position:0%
+shelf can deliver 100 kW power.
+Um<00:12:31.720><c> so,</c><00:12:31.920><c> the</c><00:12:32.080><c> total</c><00:12:32.320><c> power</c><00:12:32.680><c> can</c><00:12:32.920><c> reach</c><00:12:33.160><c> to</c><00:12:33.520><c> 800</c>
+
+00:12:34.150 --> 00:12:34.160 align:start position:0%
+Um so, the total power can reach to 800
+ 
+
+00:12:34.160 --> 00:12:35.270 align:start position:0%
+Um so, the total power can reach to 800
+kW.
+
+00:12:35.270 --> 00:12:35.280 align:start position:0%
+kW.
+ 
+
+00:12:35.280 --> 00:12:35.990 align:start position:0%
+kW.
+Uh
+
+00:12:35.990 --> 00:12:36.000 align:start position:0%
+Uh
+ 
+
+00:12:36.000 --> 00:12:38.110 align:start position:0%
+Uh
+we<00:12:36.240><c> have</c><00:12:36.560><c> also</c><00:12:36.920><c> the</c><00:12:37.040><c> BBU</c>
+
+00:12:38.110 --> 00:12:38.120 align:start position:0%
+we have also the BBU
+ 
+
+00:12:38.120 --> 00:12:42.070 align:start position:0%
+we have also the BBU
+um<00:12:38.480><c> select.</c><00:12:39.120><c> You</c><00:12:39.240><c> can</c><00:12:39.720><c> use</c><00:12:39.960><c> this</c><00:12:40.520><c> BBU</c><00:12:41.440><c> to</c>
+
+00:12:42.070 --> 00:12:42.080 align:start position:0%
+um select. You can use this BBU to
+ 
+
+00:12:42.080 --> 00:12:44.470 align:start position:0%
+um select. You can use this BBU to
+deliver<00:12:42.520><c> more</c><00:12:43.240><c> deliver</c>
+
+00:12:44.470 --> 00:12:44.480 align:start position:0%
+deliver more deliver
+ 
+
+00:12:44.480 --> 00:12:46.190 align:start position:0%
+deliver more deliver
+uh<00:12:44.839><c> 80</c>
+
+00:12:46.190 --> 00:12:46.200 align:start position:0%
+uh 80
+ 
+
+00:12:46.200 --> 00:12:50.350 align:start position:0%
+uh 80
+9<00:12:46.560><c> kW</c><00:12:47.480><c> discharge</c><00:12:47.880><c> power</c><00:12:48.760><c> and</c><00:12:49.320><c> also</c><00:12:49.640><c> it</c><00:12:49.960><c> it</c>
+
+00:12:50.350 --> 00:12:50.360 align:start position:0%
+9 kW discharge power and also it it
+ 
+
+00:12:50.360 --> 00:12:54.870 align:start position:0%
+9 kW discharge power and also it it
+extends<00:12:51.240><c> the</c><00:12:51.360><c> hold</c><00:12:51.560><c> up</c><00:12:51.680><c> time</c><00:12:51.960><c> to</c><00:12:52.120><c> 90</c><00:12:52.680><c> seconds.</c>
+
+00:12:54.870 --> 00:12:54.880 align:start position:0%
+extends the hold up time to 90 seconds.
+ 
+
+00:12:54.880 --> 00:12:56.470 align:start position:0%
+extends the hold up time to 90 seconds.
+This<00:12:55.040><c> power</c><00:12:55.240><c> shelf</c>
+
+00:12:56.470 --> 00:12:56.480 align:start position:0%
+This power shelf
+ 
+
+00:12:56.480 --> 00:12:57.790 align:start position:0%
+This power shelf
+uh<00:12:56.560><c> this</c><00:12:56.800><c> product</c>
+
+00:12:57.790 --> 00:12:57.800 align:start position:0%
+uh this product
+ 
+
+00:12:57.800 --> 00:13:02.630 align:start position:0%
+uh this product
+also<00:12:58.040><c> have</c><00:12:58.560><c> 300</c><00:12:59.360><c> W</c><00:13:00.120><c> uh</c><00:13:00.560><c> auxiliary</c><00:13:01.120><c> power.</c>
+
+00:13:02.630 --> 00:13:02.640 align:start position:0%
+also have 300 W uh auxiliary power.
+ 
+
+00:13:02.640 --> 00:13:06.190 align:start position:0%
+also have 300 W uh auxiliary power.
+We<00:13:02.720><c> also</c><00:13:03.560><c> um</c><00:13:03.800><c> provide</c><00:13:04.520><c> the</c><00:13:04.839><c> capacitor</c><00:13:05.320><c> tree</c>
+
+00:13:06.190 --> 00:13:06.200 align:start position:0%
+We also um provide the capacitor tree
+ 
+
+00:13:06.200 --> 00:13:09.190 align:start position:0%
+We also um provide the capacitor tree
+for<00:13:06.360><c> this</c><00:13:07.200><c> uh</c><00:13:07.320><c> rack</c><00:13:07.760><c> so,</c><00:13:07.960><c> you</c><00:13:08.120><c> can</c><00:13:08.720><c> also</c><00:13:08.960><c> use</c>
+
+00:13:09.190 --> 00:13:09.200 align:start position:0%
+for this uh rack so, you can also use
+ 
+
+00:13:09.200 --> 00:13:09.870 align:start position:0%
+for this uh rack so, you can also use
+the
+
+00:13:09.870 --> 00:13:09.880 align:start position:0%
+the
+ 
+
+00:13:09.880 --> 00:13:12.390 align:start position:0%
+the
+um<00:13:10.280><c> capacitor</c><00:13:10.680><c> tree</c><00:13:11.200><c> to</c><00:13:11.520><c> shaping</c><00:13:11.960><c> the</c><00:13:12.080><c> input</c>
+
+00:13:12.390 --> 00:13:12.400 align:start position:0%
+um capacitor tree to shaping the input
+ 
+
+00:13:12.400 --> 00:13:16.070 align:start position:0%
+um capacitor tree to shaping the input
+current.
+
+00:13:16.070 --> 00:13:16.080 align:start position:0%
+ 
+ 
+
+00:13:16.080 --> 00:13:19.990 align:start position:0%
+ 
+Uh<00:13:16.560><c> this</c><00:13:17.080><c> this</c><00:13:17.320><c> page</c><00:13:17.680><c> just</c><00:13:17.960><c> to</c><00:13:18.040><c> show</c><00:13:18.720><c> the</c>
+
+00:13:19.990 --> 00:13:20.000 align:start position:0%
+Uh this this page just to show the
+ 
+
+00:13:20.000 --> 00:13:23.270 align:start position:0%
+Uh this this page just to show the
+upgrade<00:13:20.920><c> from</c><00:13:21.280><c> the</c><00:13:21.760><c> air</c><00:13:21.920><c> cooling</c><00:13:22.520><c> to</c><00:13:22.640><c> liquid</c>
+
+00:13:23.270 --> 00:13:23.280 align:start position:0%
+upgrade from the air cooling to liquid
+ 
+
+00:13:23.280 --> 00:13:24.710 align:start position:0%
+upgrade from the air cooling to liquid
+liquid<00:13:23.640><c> cooling.</c>
+
+00:13:24.710 --> 00:13:24.720 align:start position:0%
+liquid cooling.
+ 
+
+00:13:24.720 --> 00:13:25.790 align:start position:0%
+liquid cooling.
+Uh<00:13:24.800><c> you</c><00:13:25.000><c> You</c><00:13:25.080><c> see</c>
+
+00:13:25.790 --> 00:13:25.800 align:start position:0%
+Uh you You see
+ 
+
+00:13:25.800 --> 00:13:27.190 align:start position:0%
+Uh you You see
+on<00:13:26.040><c> the</c>
+
+00:13:27.190 --> 00:13:27.200 align:start position:0%
+on the
+ 
+
+00:13:27.200 --> 00:13:30.670 align:start position:0%
+on the
+uh<00:13:27.600><c> left</c><00:13:27.920><c> side</c><00:13:28.720><c> is</c><00:13:29.040><c> the</c><00:13:29.520><c> air</c><00:13:29.720><c> cool</c><00:13:30.480><c> power</c>
+
+00:13:30.670 --> 00:13:30.680 align:start position:0%
+uh left side is the air cool power
+ 
+
+00:13:30.680 --> 00:13:32.270 align:start position:0%
+uh left side is the air cool power
+supply.<00:13:31.320><c> So,</c>
+
+00:13:32.270 --> 00:13:32.280 align:start position:0%
+supply. So,
+ 
+
+00:13:32.280 --> 00:13:35.630 align:start position:0%
+supply. So,
+it<00:13:32.440><c> has</c><00:13:32.800><c> a</c><00:13:33.120><c> fan</c><00:13:33.720><c> and</c><00:13:34.200><c> it</c><00:13:34.360><c> also</c><00:13:34.680><c> has</c>
+
+00:13:35.630 --> 00:13:35.640 align:start position:0%
+it has a fan and it also has
+ 
+
+00:13:35.640 --> 00:13:38.990 align:start position:0%
+it has a fan and it also has
+bulky<00:13:36.520><c> aluminum</c><00:13:37.560><c> heat</c><00:13:37.760><c> sinks.</c>
+
+00:13:38.990 --> 00:13:39.000 align:start position:0%
+bulky aluminum heat sinks.
+ 
+
+00:13:39.000 --> 00:13:41.590 align:start position:0%
+bulky aluminum heat sinks.
+On<00:13:39.320><c> the</c><00:13:39.400><c> right</c><00:13:39.600><c> side</c><00:13:40.160><c> is</c><00:13:40.600><c> just</c><00:13:40.840><c> an</c>
+
+00:13:41.590 --> 00:13:41.600 align:start position:0%
+On the right side is just an
+ 
+
+00:13:41.600 --> 00:13:44.110 align:start position:0%
+On the right side is just an
+example<00:13:42.480><c> of</c><00:13:42.680><c> the</c><00:13:42.880><c> liquid</c><00:13:43.200><c> cool</c><00:13:43.400><c> power</c><00:13:43.560><c> supply.</c>
+
+00:13:44.110 --> 00:13:44.120 align:start position:0%
+example of the liquid cool power supply.
+ 
+
+00:13:44.120 --> 00:13:46.670 align:start position:0%
+example of the liquid cool power supply.
+So,<00:13:44.680><c> in</c><00:13:44.920><c> the</c><00:13:45.120><c> liquid</c><00:13:45.480><c> cool</c><00:13:45.720><c> power</c><00:13:45.880><c> supply,</c><00:13:46.560><c> we</c>
+
+00:13:46.670 --> 00:13:46.680 align:start position:0%
+So, in the liquid cool power supply, we
+ 
+
+00:13:46.680 --> 00:13:48.310 align:start position:0%
+So, in the liquid cool power supply, we
+remove<00:13:47.000><c> the</c><00:13:47.120><c> fan.</c>
+
+00:13:48.310 --> 00:13:48.320 align:start position:0%
+remove the fan.
+ 
+
+00:13:48.320 --> 00:13:51.590 align:start position:0%
+remove the fan.
+And<00:13:48.560><c> and</c><00:13:48.720><c> also</c><00:13:49.000><c> remove</c><00:13:49.440><c> the</c><00:13:49.760><c> air</c><00:13:49.880><c> channel.</c><00:13:50.920><c> All</c>
+
+00:13:51.590 --> 00:13:51.600 align:start position:0%
+And and also remove the air channel. All
+ 
+
+00:13:51.600 --> 00:13:54.990 align:start position:0%
+And and also remove the air channel. All
+the<00:13:51.880><c> power</c><00:13:52.200><c> components</c><00:13:52.840><c> attached</c><00:13:53.480><c> to</c><00:13:53.800><c> the</c>
+
+00:13:54.990 --> 00:13:55.000 align:start position:0%
+the power components attached to the
+ 
+
+00:13:55.000 --> 00:13:56.430 align:start position:0%
+the power components attached to the
+cold<00:13:55.320><c> plate</c>
+
+00:13:56.430 --> 00:13:56.440 align:start position:0%
+cold plate
+ 
+
+00:13:56.440 --> 00:13:59.990 align:start position:0%
+cold plate
+at<00:13:56.600><c> the</c><00:13:56.680><c> bottom</c><00:13:57.160><c> of</c><00:13:57.520><c> the</c><00:13:58.440><c> PSU.</c><00:13:59.320><c> So,</c><00:13:59.560><c> with</c><00:13:59.760><c> this</c>
+
+00:13:59.990 --> 00:14:00.000 align:start position:0%
+at the bottom of the PSU. So, with this
+ 
+
+00:14:00.000 --> 00:14:01.670 align:start position:0%
+at the bottom of the PSU. So, with this
+configuration,
+
+00:14:01.670 --> 00:14:01.680 align:start position:0%
+configuration,
+ 
+
+00:14:01.680 --> 00:14:04.910 align:start position:0%
+configuration,
+it<00:14:01.880><c> can</c><00:14:02.240><c> reach</c><00:14:02.560><c> high</c><00:14:02.720><c> power</c><00:14:02.960><c> density</c><00:14:03.760><c> and</c><00:14:04.160><c> can</c>
+
+00:14:04.910 --> 00:14:04.920 align:start position:0%
+it can reach high power density and can
+ 
+
+00:14:04.920 --> 00:14:07.110 align:start position:0%
+it can reach high power density and can
+get<00:14:05.160><c> a</c><00:14:05.200><c> smaller</c><00:14:05.560><c> size.</c><00:14:06.360><c> So,</c><00:14:06.640><c> with</c><00:14:06.840><c> this</c>
+
+00:14:07.110 --> 00:14:07.120 align:start position:0%
+get a smaller size. So, with this
+ 
+
+00:14:07.120 --> 00:14:09.550 align:start position:0%
+get a smaller size. So, with this
+benefit,<00:14:07.960><c> we</c><00:14:08.120><c> can</c><00:14:08.520><c> easily</c><00:14:08.920><c> to</c><00:14:09.120><c> put</c><00:14:09.280><c> a</c><00:14:09.360><c> more</c>
+
+00:14:09.550 --> 00:14:09.560 align:start position:0%
+benefit, we can easily to put a more
+ 
+
+00:14:09.560 --> 00:14:12.990 align:start position:0%
+benefit, we can easily to put a more
+capacitor<00:14:10.600><c> and</c><00:14:11.120><c> to</c><00:14:11.360><c> get</c><00:14:11.680><c> a</c><00:14:12.040><c> higher</c><00:14:12.520><c> energy</c>
+
+00:14:12.990 --> 00:14:13.000 align:start position:0%
+capacitor and to get a higher energy
+ 
+
+00:14:13.000 --> 00:14:16.990 align:start position:0%
+capacitor and to get a higher energy
+storage<00:14:14.000><c> inside.</c>
+
+00:14:16.990 --> 00:14:17.000 align:start position:0%
+ 
+ 
+
+00:14:17.000 --> 00:14:18.910 align:start position:0%
+ 
+Since<00:14:17.840><c> this</c>
+
+00:14:18.910 --> 00:14:18.920 align:start position:0%
+Since this
+ 
+
+00:14:18.920 --> 00:14:21.670 align:start position:0%
+Since this
+configuration<00:14:19.680><c> removes</c><00:14:20.040><c> the</c><00:14:20.120><c> fan,</c><00:14:20.480><c> so</c><00:14:20.800><c> we</c>
+
+00:14:21.670 --> 00:14:21.680 align:start position:0%
+configuration removes the fan, so we
+ 
+
+00:14:21.680 --> 00:14:25.870 align:start position:0%
+configuration removes the fan, so we
+save<00:14:22.280><c> save</c><00:14:22.640><c> fan</c><00:14:22.880><c> power</c><00:14:23.680><c> and</c><00:14:23.840><c> also</c><00:14:24.440><c> we</c><00:14:24.920><c> uh</c>
+
+00:14:25.870 --> 00:14:25.880 align:start position:0%
+save save fan power and also we uh
+ 
+
+00:14:25.880 --> 00:14:26.910 align:start position:0%
+save save fan power and also we uh
+the
+
+00:14:26.910 --> 00:14:26.920 align:start position:0%
+the
+ 
+
+00:14:26.920 --> 00:14:29.829 align:start position:0%
+the
+power<00:14:27.160><c> components</c><00:14:27.720><c> actually</c><00:14:28.560><c> can</c>
+
+00:14:29.829 --> 00:14:29.839 align:start position:0%
+power components actually can
+ 
+
+00:14:29.839 --> 00:14:31.390 align:start position:0%
+power components actually can
+decrease
+
+00:14:31.390 --> 00:14:31.400 align:start position:0%
+decrease
+ 
+
+00:14:31.400 --> 00:14:33.510 align:start position:0%
+decrease
+the<00:14:32.000><c> junction</c><00:14:32.480><c> temperature</c><00:14:33.040><c> such</c><00:14:33.280><c> as</c><00:14:33.440><c> the</c>
+
+00:14:33.510 --> 00:14:33.520 align:start position:0%
+the junction temperature such as the
+ 
+
+00:14:33.520 --> 00:14:35.790 align:start position:0%
+the junction temperature such as the
+MOSFETs.<00:14:34.080><c> So,</c><00:14:34.640><c> the</c><00:14:34.760><c> total</c><00:14:35.000><c> efficiency</c><00:14:35.520><c> can</c><00:14:35.680><c> be</c>
+
+00:14:35.790 --> 00:14:35.800 align:start position:0%
+MOSFETs. So, the total efficiency can be
+ 
+
+00:14:35.800 --> 00:14:40.150 align:start position:0%
+MOSFETs. So, the total efficiency can be
+higher.
+
+00:14:40.150 --> 00:14:40.160 align:start position:0%
+ 
+ 
+
+00:14:40.160 --> 00:14:43.430 align:start position:0%
+ 
+And<00:14:40.560><c> also</c><00:14:40.800><c> you</c><00:14:40.920><c> know</c><00:14:41.120><c> that</c><00:14:41.440><c> the</c><00:14:41.760><c> liquid</c>
+
+00:14:43.430 --> 00:14:43.440 align:start position:0%
+And also you know that the liquid
+ 
+
+00:14:43.440 --> 00:14:45.270 align:start position:0%
+And also you know that the liquid
+heat
+
+00:14:45.270 --> 00:14:45.280 align:start position:0%
+heat
+ 
+
+00:14:45.280 --> 00:14:49.150 align:start position:0%
+heat
+transfer<00:14:46.240><c> coefficient</c><00:14:47.320><c> is</c><00:14:47.520><c> much</c><00:14:47.800><c> higher.</c><00:14:48.640><c> So,</c>
+
+00:14:49.150 --> 00:14:49.160 align:start position:0%
+transfer coefficient is much higher. So,
+ 
+
+00:14:49.160 --> 00:14:52.550 align:start position:0%
+transfer coefficient is much higher. So,
+with<00:14:49.360><c> this</c><00:14:49.880><c> liquid</c><00:14:50.280><c> cooling</c><00:14:51.160><c> the</c>
+
+00:14:52.550 --> 00:14:52.560 align:start position:0%
+with this liquid cooling the
+ 
+
+00:14:52.560 --> 00:14:55.790 align:start position:0%
+with this liquid cooling the
+hot<00:14:53.600><c> spot</c><00:14:54.360><c> can</c><00:14:54.680><c> be</c>
+
+00:14:55.790 --> 00:14:55.800 align:start position:0%
+hot spot can be
+ 
+
+00:14:55.800 --> 00:14:59.070 align:start position:0%
+hot spot can be
+suppressed.<00:14:56.640><c> So,</c><00:14:56.920><c> it</c><00:14:57.120><c> can</c><00:14:57.480><c> realize</c>
+
+00:14:59.070 --> 00:14:59.080 align:start position:0%
+suppressed. So, it can realize
+ 
+
+00:14:59.080 --> 00:15:01.030 align:start position:0%
+suppressed. So, it can realize
+a<00:14:59.200><c> lower</c><00:14:59.440><c> temperature</c><00:15:00.280><c> and</c><00:15:00.480><c> also</c><00:15:00.839><c> high</c>
+
+00:15:01.030 --> 00:15:01.040 align:start position:0%
+a lower temperature and also high
+ 
+
+00:15:01.040 --> 00:15:04.870 align:start position:0%
+a lower temperature and also high
+reliability.
+
+00:15:04.870 --> 00:15:04.880 align:start position:0%
+ 
+ 
+
+00:15:04.880 --> 00:15:07.110 align:start position:0%
+ 
+This<00:15:05.280><c> just</c><00:15:05.520><c> to</c><00:15:05.640><c> compare</c><00:15:06.120><c> between</c><00:15:06.480><c> the</c><00:15:06.600><c> EV</c><00:15:06.839><c> cold</c>
+
+00:15:07.110 --> 00:15:07.120 align:start position:0%
+This just to compare between the EV cold
+ 
+
+00:15:07.120 --> 00:15:09.070 align:start position:0%
+This just to compare between the EV cold
+plate<00:15:07.680><c> and</c><00:15:08.040><c> the</c>
+
+00:15:09.070 --> 00:15:09.080 align:start position:0%
+plate and the
+ 
+
+00:15:09.080 --> 00:15:12.790 align:start position:0%
+plate and the
+air<00:15:09.960><c> PSU</c><00:15:10.480><c> cold</c><00:15:10.960><c> plate.</c><00:15:11.680><c> So,</c><00:15:12.240><c> the</c><00:15:12.360><c> EV</c><00:15:12.560><c> cold</c>
+
+00:15:12.790 --> 00:15:12.800 align:start position:0%
+air PSU cold plate. So, the EV cold
+ 
+
+00:15:12.800 --> 00:15:15.510 align:start position:0%
+air PSU cold plate. So, the EV cold
+plate<00:15:13.120><c> actually</c><00:15:13.520><c> is</c><00:15:13.680><c> bulky</c><00:15:14.120><c> and</c><00:15:14.280><c> heavy.</c><00:15:15.200><c> And</c>
+
+00:15:15.510 --> 00:15:15.520 align:start position:0%
+plate actually is bulky and heavy. And
+ 
+
+00:15:15.520 --> 00:15:16.950 align:start position:0%
+plate actually is bulky and heavy. And
+so<00:15:15.800><c> we</c>
+
+00:15:16.950 --> 00:15:16.960 align:start position:0%
+so we
+ 
+
+00:15:16.960 --> 00:15:18.870 align:start position:0%
+so we
+now<00:15:17.280><c> we</c><00:15:17.440><c> use</c><00:15:17.880><c> the</c>
+
+00:15:18.870 --> 00:15:18.880 align:start position:0%
+now we use the
+ 
+
+00:15:18.880 --> 00:15:21.910 align:start position:0%
+now we use the
+cold<00:15:19.360><c> plate</c><00:15:19.680><c> with</c><00:15:20.000><c> uh</c><00:15:20.280><c> embedded</c><00:15:20.800><c> tubes.</c><00:15:21.720><c> So,</c>
+
+00:15:21.910 --> 00:15:21.920 align:start position:0%
+cold plate with uh embedded tubes. So,
+ 
+
+00:15:21.920 --> 00:15:23.350 align:start position:0%
+cold plate with uh embedded tubes. So,
+this<00:15:22.760><c> um</c>
+
+00:15:23.350 --> 00:15:23.360 align:start position:0%
+this um
+ 
+
+00:15:23.360 --> 00:15:25.670 align:start position:0%
+this um
+cold<00:15:23.600><c> plate</c><00:15:23.880><c> actually</c><00:15:24.360><c> we</c><00:15:24.520><c> can</c><00:15:24.720><c> make</c><00:15:24.880><c> it</c><00:15:25.040><c> thin</c>
+
+00:15:25.670 --> 00:15:25.680 align:start position:0%
+cold plate actually we can make it thin
+ 
+
+00:15:25.680 --> 00:15:29.870 align:start position:0%
+cold plate actually we can make it thin
+and<00:15:25.840><c> also</c><00:15:26.160><c> the</c><00:15:26.320><c> copper</c><00:15:27.440><c> uh</c><00:15:27.520><c> tube</c><00:15:28.160><c> is</c><00:15:28.920><c> um</c>
+
+00:15:29.870 --> 00:15:29.880 align:start position:0%
+and also the copper uh tube is um
+ 
+
+00:15:29.880 --> 00:15:30.430 align:start position:0%
+and also the copper uh tube is um
+uh
+
+00:15:30.430 --> 00:15:30.440 align:start position:0%
+uh
+ 
+
+00:15:30.440 --> 00:15:32.070 align:start position:0%
+uh
+how<00:15:30.560><c> to</c><00:15:30.640><c> say</c><00:15:30.760><c> this</c><00:15:31.000><c> is</c><00:15:31.200><c> a</c><00:15:31.240><c> dis-</c>
+
+00:15:32.070 --> 00:15:32.080 align:start position:0%
+how to say this is a dis-
+ 
+
+00:15:32.080 --> 00:15:35.030 align:start position:0%
+how to say this is a dis-
+uh<00:15:32.240><c> much</c><00:15:32.560><c> dissipation</c><00:15:33.240><c> on</c><00:15:33.480><c> the</c><00:15:33.880><c> heat,</c><00:15:34.240><c> so</c><00:15:34.920><c> we</c>
+
+00:15:35.030 --> 00:15:35.040 align:start position:0%
+uh much dissipation on the heat, so we
+ 
+
+00:15:35.040 --> 00:15:36.630 align:start position:0%
+uh much dissipation on the heat, so we
+can<00:15:35.200><c> use</c><00:15:35.400><c> that</c><00:15:35.600><c> one</c><00:15:35.840><c> to</c><00:15:36.000><c> get</c><00:15:36.280><c> lower</c>
+
+00:15:36.630 --> 00:15:36.640 align:start position:0%
+can use that one to get lower
+ 
+
+00:15:36.640 --> 00:15:43.990 align:start position:0%
+can use that one to get lower
+temperature.
+
+00:15:43.990 --> 00:15:44.000 align:start position:0%
+ 
+ 
+
+00:15:44.000 --> 00:15:46.990 align:start position:0%
+ 
+Uh<00:15:44.240><c> this</c><00:15:44.440><c> is</c><00:15:44.880><c> what</c><00:15:45.080><c> we</c><00:15:45.160><c> are</c><00:15:45.240><c> doing</c><00:15:45.720><c> for</c><00:15:45.960><c> the</c>
+
+00:15:46.990 --> 00:15:47.000 align:start position:0%
+Uh this is what we are doing for the
+ 
+
+00:15:47.000 --> 00:15:51.310 align:start position:0%
+Uh this is what we are doing for the
+uh<00:15:47.200><c> 100</c><00:15:47.920><c> K</c><00:15:48.320><c> 800</c><00:15:48.920><c> W</c><00:15:49.520><c> liquid</c><00:15:49.880><c> cool</c><00:15:50.480><c> uh</c><00:15:50.560><c> ACDC</c><00:15:51.120><c> power</c>
+
+00:15:51.310 --> 00:15:51.320 align:start position:0%
+uh 100 K 800 W liquid cool uh ACDC power
+ 
+
+00:15:51.320 --> 00:15:52.270 align:start position:0%
+uh 100 K 800 W liquid cool uh ACDC power
+shelf.
+
+00:15:52.270 --> 00:15:52.280 align:start position:0%
+shelf.
+ 
+
+00:15:52.280 --> 00:15:55.030 align:start position:0%
+shelf.
+So,<00:15:52.400><c> we</c><00:15:52.520><c> have</c><00:15:52.720><c> two</c><00:15:52.840><c> versions.</c><00:15:53.360><c> One</c><00:15:53.560><c> is</c><00:15:53.760><c> 2</c><00:15:53.960><c> RU</c>
+
+00:15:55.030 --> 00:15:55.040 align:start position:0%
+So, we have two versions. One is 2 RU
+ 
+
+00:15:55.040 --> 00:15:57.350 align:start position:0%
+So, we have two versions. One is 2 RU
+uh<00:15:55.200><c> with</c><00:15:55.400><c> BBU</c><00:15:55.760><c> version</c><00:15:56.200><c> and</c><00:15:56.400><c> another</c><00:15:56.720><c> one</c><00:15:57.000><c> is</c>
+
+00:15:57.350 --> 00:15:57.360 align:start position:0%
+uh with BBU version and another one is
+ 
+
+00:15:57.360 --> 00:15:59.870 align:start position:0%
+uh with BBU version and another one is
+the<00:15:58.320><c> 5</c><00:15:58.560><c> RU</c>
+
+00:15:59.870 --> 00:15:59.880 align:start position:0%
+the 5 RU
+ 
+
+00:15:59.880 --> 00:16:00.990 align:start position:0%
+the 5 RU
+um
+
+00:16:00.990 --> 00:16:01.000 align:start position:0%
+um
+ 
+
+00:16:01.000 --> 00:16:03.790 align:start position:0%
+um
+with<00:16:01.320><c> BBU.</c>
+
+00:16:03.790 --> 00:16:03.800 align:start position:0%
+with BBU.
+ 
+
+00:16:03.800 --> 00:16:06.470 align:start position:0%
+with BBU.
+And<00:16:04.000><c> the</c><00:16:04.120><c> 2</c><00:16:04.280><c> RU</c><00:16:05.080><c> um</c><00:16:05.200><c> without</c><00:16:05.480><c> BBU</c><00:16:05.760><c> actually</c><00:16:06.240><c> is</c>
+
+00:16:06.470 --> 00:16:06.480 align:start position:0%
+And the 2 RU um without BBU actually is
+ 
+
+00:16:06.480 --> 00:16:09.550 align:start position:0%
+And the 2 RU um without BBU actually is
+also<00:16:07.280><c> um</c><00:16:07.360><c> there's</c><00:16:07.720><c> two</c><00:16:08.040><c> PSU</c><00:16:08.440><c> inside,</c><00:16:08.880><c> so</c><00:16:09.400><c> the</c>
+
+00:16:09.550 --> 00:16:09.560 align:start position:0%
+also um there's two PSU inside, so the
+ 
+
+00:16:09.560 --> 00:16:12.670 align:start position:0%
+also um there's two PSU inside, so the
+PSU<00:16:10.280><c> itself</c><00:16:10.800><c> is</c><00:16:11.000><c> hot</c><00:16:11.200><c> swappable.</c>
+
+00:16:12.670 --> 00:16:12.680 align:start position:0%
+PSU itself is hot swappable.
+ 
+
+00:16:12.680 --> 00:16:14.270 align:start position:0%
+PSU itself is hot swappable.
+Um
+
+00:16:14.270 --> 00:16:14.280 align:start position:0%
+Um
+ 
+
+00:16:14.280 --> 00:16:19.030 align:start position:0%
+Um
+the<00:16:14.480><c> BB-</c><00:16:15.120><c> the</c><00:16:15.560><c> 5</c><00:16:15.880><c> RU</c><00:16:16.720><c> just</c><00:16:17.520><c> um</c>
+
+00:16:19.030 --> 00:16:19.040 align:start position:0%
+the BB- the 5 RU just um
+ 
+
+00:16:19.040 --> 00:16:21.990 align:start position:0%
+the BB- the 5 RU just um
+uh<00:16:19.240><c> there</c><00:16:19.440><c> is</c><00:16:19.600><c> just</c><00:16:19.960><c> the</c><00:16:20.040><c> additional</c><00:16:20.920><c> BBU</c>
+
+00:16:21.990 --> 00:16:22.000 align:start position:0%
+uh there is just the additional BBU
+ 
+
+00:16:22.000 --> 00:16:26.310 align:start position:0%
+uh there is just the additional BBU
+modules<00:16:23.120><c> uh</c><00:16:23.400><c> to</c><00:16:23.960><c> this</c><00:16:24.480><c> 2</c><00:16:24.640><c> RU</c><00:16:25.480><c> uh</c><00:16:25.680><c> shelf</c><00:16:26.080><c> power</c>
+
+00:16:26.310 --> 00:16:26.320 align:start position:0%
+modules uh to this 2 RU uh shelf power
+ 
+
+00:16:26.320 --> 00:16:28.030 align:start position:0%
+modules uh to this 2 RU uh shelf power
+shelves.
+
+00:16:28.030 --> 00:16:28.040 align:start position:0%
+shelves.
+ 
+
+00:16:28.040 --> 00:16:29.310 align:start position:0%
+shelves.
+Um<00:16:28.280><c> so,</c>
+
+00:16:29.310 --> 00:16:29.320 align:start position:0%
+Um so,
+ 
+
+00:16:29.320 --> 00:16:32.270 align:start position:0%
+Um so,
+um<00:16:29.440><c> the</c><00:16:29.600><c> shelf</c><00:16:29.960><c> itself</c><00:16:30.440><c> have</c><00:16:30.760><c> dual</c><00:16:31.120><c> AC</c><00:16:31.400><c> input</c>
+
+00:16:32.270 --> 00:16:32.280 align:start position:0%
+um the shelf itself have dual AC input
+ 
+
+00:16:32.280 --> 00:16:35.990 align:start position:0%
+um the shelf itself have dual AC input
+and<00:16:33.000><c> uh</c><00:16:33.520><c> it</c><00:16:33.680><c> can</c><00:16:33.920><c> also</c><00:16:34.160><c> support</c><00:16:34.800><c> a</c><00:16:34.839><c> media</c>
+
+00:16:35.990 --> 00:16:36.000 align:start position:0%
+and uh it can also support a media
+ 
+
+00:16:36.000 --> 00:16:36.790 align:start position:0%
+and uh it can also support a media
+um
+
+00:16:36.790 --> 00:16:36.800 align:start position:0%
+um
+ 
+
+00:16:36.800 --> 00:16:40.829 align:start position:0%
+um
+MTX<00:16:37.839><c> uh</c><00:16:37.920><c> rack.</c>
+
+00:16:40.829 --> 00:16:40.839 align:start position:0%
+ 
+ 
+
+00:16:40.839 --> 00:16:43.470 align:start position:0%
+ 
+Um<00:16:41.160><c> the</c><00:16:41.280><c> liquid</c><00:16:42.000><c> uh</c><00:16:42.200><c> inlet</c><00:16:42.600><c> temperature</c><00:16:43.080><c> range</c>
+
+00:16:43.470 --> 00:16:43.480 align:start position:0%
+Um the liquid uh inlet temperature range
+ 
+
+00:16:43.480 --> 00:16:44.790 align:start position:0%
+Um the liquid uh inlet temperature range
+is<00:16:44.120><c> um</c>
+
+00:16:44.790 --> 00:16:44.800 align:start position:0%
+is um
+ 
+
+00:16:44.800 --> 00:16:47.750 align:start position:0%
+is um
+17<00:16:45.640><c> C</c><00:16:45.880><c> to</c><00:16:46.360><c> 45</c><00:16:47.160><c> C</c>
+
+00:16:47.750 --> 00:16:47.760 align:start position:0%
+17 C to 45 C
+ 
+
+00:16:47.760 --> 00:16:49.790 align:start position:0%
+17 C to 45 C
+to<00:16:47.839><c> degree.</c>
+
+00:16:49.790 --> 00:16:49.800 align:start position:0%
+to degree.
+ 
+
+00:16:49.800 --> 00:16:53.829 align:start position:0%
+to degree.
+Uh<00:16:50.240><c> the</c><00:16:50.400><c> 2</c><00:16:50.560><c> RU</c><00:16:51.440><c> um</c><00:16:51.760><c> power</c><00:16:51.960><c> shelf</c><00:16:52.560><c> on</c><00:16:52.760><c> the</c><00:16:52.920><c> energy</c>
+
+00:16:53.829 --> 00:16:53.839 align:start position:0%
+Uh the 2 RU um power shelf on the energy
+ 
+
+00:16:53.839 --> 00:16:58.950 align:start position:0%
+Uh the 2 RU um power shelf on the energy
+in-<00:16:54.080><c> internal</c><00:16:54.440><c> energy</c><00:16:54.880><c> is</c><00:16:55.400><c> um</c><00:16:55.600><c> 10</c><00:16:56.280><c> kJ.</c>
+
+00:16:58.950 --> 00:16:58.960 align:start position:0%
+in- internal energy is um 10 kJ.
+ 
+
+00:16:58.960 --> 00:17:01.030 align:start position:0%
+in- internal energy is um 10 kJ.
+Okay.
+
+00:17:01.030 --> 00:17:01.040 align:start position:0%
+Okay.
+ 
+
+00:17:01.040 --> 00:17:02.470 align:start position:0%
+Okay.
+Next<00:17:01.280><c> one.</c>
+
+00:17:02.470 --> 00:17:02.480 align:start position:0%
+Next one.
+ 
+
+00:17:02.480 --> 00:17:06.230 align:start position:0%
+Next one.
+Uh<00:17:02.920><c> this</c><00:17:03.160><c> is</c><00:17:03.280><c> another</c><00:17:04.240><c> um</c><00:17:04.520><c> product</c><00:17:05.079><c> that</c><00:17:05.360><c> is</c><00:17:05.520><c> 95</c>
+
+00:17:06.230 --> 00:17:06.240 align:start position:0%
+Uh this is another um product that is 95
+ 
+
+00:17:06.240 --> 00:17:08.750 align:start position:0%
+Uh this is another um product that is 95
+kW<00:17:07.319><c> 40</c><00:17:08.000><c> uh</c>
+
+00:17:08.750 --> 00:17:08.760 align:start position:0%
+kW 40 uh
+ 
+
+00:17:08.760 --> 00:17:09.990 align:start position:0%
+kW 40 uh
+54
+
+00:17:09.990 --> 00:17:10.000 align:start position:0%
+54
+ 
+
+00:17:10.000 --> 00:17:13.150 align:start position:0%
+54
+uh<00:17:10.079><c> V</c><00:17:10.600><c> liquid</c><00:17:11.000><c> cool</c><00:17:11.400><c> DCDC</c><00:17:12.120><c> power</c><00:17:12.280><c> shelf.</c>
+
+00:17:13.150 --> 00:17:13.160 align:start position:0%
+uh V liquid cool DCDC power shelf.
+ 
+
+00:17:13.160 --> 00:17:15.990 align:start position:0%
+uh V liquid cool DCDC power shelf.
+Actually,<00:17:13.520><c> is</c><00:17:13.680><c> this</c><00:17:13.920><c> one</c><00:17:14.160><c> is</c><00:17:14.400><c> used</c><00:17:15.120><c> with</c><00:17:15.839><c> um</c>
+
+00:17:15.990 --> 00:17:16.000 align:start position:0%
+Actually, is this one is used with um
+ 
+
+00:17:16.000 --> 00:17:19.630 align:start position:0%
+Actually, is this one is used with um
+the<00:17:16.160><c> 800</c><00:17:16.720><c> W</c><00:17:17.520><c> uh</c><00:17:17.560><c> power</c><00:17:17.760><c> shelf.</c>
+
+00:17:19.630 --> 00:17:19.640 align:start position:0%
+the 800 W uh power shelf.
+ 
+
+00:17:19.640 --> 00:17:21.710 align:start position:0%
+the 800 W uh power shelf.
+So,<00:17:19.760><c> this</c><00:17:20.000><c> is</c><00:17:20.199><c> the</c><00:17:20.280><c> one</c>
+
+00:17:21.710 --> 00:17:21.720 align:start position:0%
+So, this is the one
+ 
+
+00:17:21.720 --> 00:17:24.470 align:start position:0%
+So, this is the one
+shelf<00:17:22.120><c> actually</c><00:17:22.520><c> is</c><00:17:22.720><c> one</c><00:17:23.000><c> PSU.</c>
+
+00:17:24.470 --> 00:17:24.480 align:start position:0%
+shelf actually is one PSU.
+ 
+
+00:17:24.480 --> 00:17:28.470 align:start position:0%
+shelf actually is one PSU.
+Uh<00:17:24.720><c> so,</c><00:17:25.000><c> this</c><00:17:25.319><c> one</c><00:17:25.680><c> is</c><00:17:25.880><c> also</c><00:17:26.280><c> hot</c><00:17:26.560><c> swappable.</c>
+
+00:17:28.470 --> 00:17:28.480 align:start position:0%
+Uh so, this one is also hot swappable.
+ 
+
+00:17:28.480 --> 00:17:31.790 align:start position:0%
+Uh so, this one is also hot swappable.
+Uh<00:17:28.800><c> it</c><00:17:29.280><c> can</c><00:17:29.480><c> also</c><00:17:29.760><c> support</c><00:17:30.600><c> the</c>
+
+00:17:31.790 --> 00:17:31.800 align:start position:0%
+Uh it can also support the
+ 
+
+00:17:31.800 --> 00:17:35.310 align:start position:0%
+Uh it can also support the
+uh<00:17:31.840><c> Nvidia</c><00:17:32.560><c> MTX</c><00:17:33.240><c> rack.</c>
+
+00:17:35.310 --> 00:17:35.320 align:start position:0%
+uh Nvidia MTX rack.
+ 
+
+00:17:35.320 --> 00:17:37.630 align:start position:0%
+uh Nvidia MTX rack.
+So,<00:17:35.400><c> the</c><00:17:35.520><c> input</c><00:17:35.880><c> is</c><00:17:36.200><c> 800</c><00:17:36.720><c> watt.</c>
+
+00:17:37.630 --> 00:17:37.640 align:start position:0%
+So, the input is 800 watt.
+ 
+
+00:17:37.640 --> 00:17:43.630 align:start position:0%
+So, the input is 800 watt.
+So,<00:17:37.760><c> output</c><00:17:38.120><c> is</c><00:17:38.600><c> uh</c><00:17:38.680><c> 54</c><00:17:39.560><c> watt.</c>
+
+00:17:43.630 --> 00:17:43.640 align:start position:0%
+ 
+ 
+
+00:17:43.640 --> 00:17:46.310 align:start position:0%
+ 
+Uh<00:17:44.040><c> this</c><00:17:44.280><c> is</c><00:17:44.560><c> the</c><00:17:44.960><c> uh</c>
+
+00:17:46.310 --> 00:17:46.320 align:start position:0%
+Uh this is the uh
+ 
+
+00:17:46.320 --> 00:17:48.710 align:start position:0%
+Uh this is the uh
+DC-DC<00:17:47.080><c> DC-DC</c><00:17:47.520><c> modules</c>
+
+00:17:48.710 --> 00:17:48.720 align:start position:0%
+DC-DC DC-DC modules
+ 
+
+00:17:48.720 --> 00:17:52.070 align:start position:0%
+DC-DC DC-DC modules
+uh<00:17:48.800><c> it's</c><00:17:49.480><c> 800</c><00:17:50.000><c> watt</c><00:17:50.320><c> to</c><00:17:50.680><c> 50</c><00:17:51.000><c> watt.</c>
+
+00:17:52.070 --> 00:17:52.080 align:start position:0%
+uh it's 800 watt to 50 watt.
+ 
+
+00:17:52.080 --> 00:17:55.390 align:start position:0%
+uh it's 800 watt to 50 watt.
+So,<00:17:52.640><c> the</c><00:17:52.760><c> first</c><00:17:53.040><c> one,</c><00:17:53.560><c> the</c><00:17:53.920><c> left</c><00:17:54.240><c> one</c><00:17:54.480><c> is</c><00:17:54.800><c> the</c>
+
+00:17:55.390 --> 00:17:55.400 align:start position:0%
+So, the first one, the left one is the
+ 
+
+00:17:55.400 --> 00:17:59.070 align:start position:0%
+So, the first one, the left one is the
+PDB<00:17:55.800><c> module</c><00:17:56.680><c> and</c><00:17:57.040><c> uh</c><00:17:57.080><c> it's</c><00:17:57.240><c> liquid</c><00:17:57.640><c> cooling.</c>
+
+00:17:59.070 --> 00:17:59.080 align:start position:0%
+PDB module and uh it's liquid cooling.
+ 
+
+00:17:59.080 --> 00:18:03.030 align:start position:0%
+PDB module and uh it's liquid cooling.
+Um<00:17:59.720><c> the</c><00:18:00.200><c> total</c><00:18:00.440><c> power</c><00:18:01.400><c> is</c><00:18:02.120><c> um</c>
+
+00:18:03.030 --> 00:18:03.040 align:start position:0%
+Um the total power is um
+ 
+
+00:18:03.040 --> 00:18:06.470 align:start position:0%
+Um the total power is um
+30<00:18:03.880><c> kW.</c>
+
+00:18:06.470 --> 00:18:06.480 align:start position:0%
+ 
+ 
+
+00:18:06.480 --> 00:18:08.870 align:start position:0%
+ 
+And<00:18:06.680><c> the</c><00:18:06.760><c> second</c><00:18:07.120><c> one,</c><00:18:07.600><c> the</c><00:18:07.760><c> right</c><00:18:08.000><c> one</c><00:18:08.240><c> is</c><00:18:08.600><c> the</c>
+
+00:18:08.870 --> 00:18:08.880 align:start position:0%
+And the second one, the right one is the
+ 
+
+00:18:08.880 --> 00:18:10.110 align:start position:0%
+And the second one, the right one is the
+10<00:18:09.120><c> kW</c>
+
+00:18:10.110 --> 00:18:10.120 align:start position:0%
+10 kW
+ 
+
+00:18:10.120 --> 00:18:15.990 align:start position:0%
+10 kW
+uh<00:18:10.160><c> DC-DC</c><00:18:10.640><c> module.</c>
+
+00:18:15.990 --> 00:18:16.000 align:start position:0%
+ 
+ 
+
+00:18:16.000 --> 00:18:20.830 align:start position:0%
+ 
+So,<00:18:16.240><c> I</c><00:18:16.360><c> think</c><00:18:17.120><c> that's</c><00:18:17.360><c> all</c><00:18:17.520><c> for</c><00:18:17.680><c> my</c><00:18:17.880><c> portion.</c>
+
+00:18:20.830 --> 00:18:20.840 align:start position:0%
+ 
+ 
+
+00:18:20.840 --> 00:18:23.870 align:start position:0%
+ 
+Yeah,<00:18:20.960><c> if</c><00:18:21.160><c> you</c><00:18:21.480><c> have</c><00:18:21.760><c> any</c><00:18:22.480><c> uh</c><00:18:22.600><c> question</c><00:18:23.440><c> or</c><00:18:23.680><c> if</c>
+
+00:18:23.870 --> 00:18:23.880 align:start position:0%
+Yeah, if you have any uh question or if
+ 
+
+00:18:23.880 --> 00:18:26.590 align:start position:0%
+Yeah, if you have any uh question or if
+you<00:18:24.600><c> you</c><00:18:24.720><c> are</c><00:18:24.840><c> interested</c><00:18:25.440><c> to</c><00:18:25.560><c> our</c><00:18:25.720><c> products,</c>
+
+00:18:26.590 --> 00:18:26.600 align:start position:0%
+you you are interested to our products,
+ 
+
+00:18:26.600 --> 00:18:30.470 align:start position:0%
+you you are interested to our products,
+you<00:18:26.800><c> can</c><00:18:27.160><c> go</c><00:18:27.400><c> to</c><00:18:27.680><c> C19</c><00:18:28.680><c> booth</c><00:18:29.200><c> and</c><00:18:29.480><c> we</c><00:18:29.600><c> can</c><00:18:30.280><c> have</c>
+
+00:18:30.470 --> 00:18:30.480 align:start position:0%
+you can go to C19 booth and we can have
+ 
+
+00:18:30.480 --> 00:18:32.870 align:start position:0%
+you can go to C19 booth and we can have
+a<00:18:30.560><c> detailed</c><00:18:30.920><c> discussion.</c>
+
+00:18:32.870 --> 00:18:32.880 align:start position:0%
+a detailed discussion.
+ 
+
+00:18:32.880 --> 00:18:33.790 align:start position:0%
+a detailed discussion.
+Yeah.
+
+00:18:33.790 --> 00:18:33.800 align:start position:0%
+Yeah.
+ 
+
+00:18:33.800 --> 00:18:34.350 align:start position:0%
+Yeah.
+&gt;&gt; Thank<00:18:33.920><c> you.</c>
+
+00:18:34.350 --> 00:18:34.360 align:start position:0%
+&gt;&gt; Thank you.
+ 
+
+00:18:34.360 --> 00:18:37.310 align:start position:0%
+&gt;&gt; Thank you.
+&gt;&gt; Thank<00:18:34.480><c> you.</c>
+
+00:18:37.310 --> 00:18:37.320 align:start position:0%
+ 
+ 
+
+00:18:37.320 --> 00:18:39.560 align:start position:0%
+ 
+&gt;&gt; Thank<00:18:37.440><c> you.</c>
+

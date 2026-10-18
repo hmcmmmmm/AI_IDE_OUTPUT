@@ -1,0 +1,44 @@
+<Slide style={{ width: 1280, height: 720, background: '#0E1420', position: 'relative', overflow: 'hidden' }}>
+
+    <Box style={{ position: 'absolute', left: 72, top: 40, width: 3, height: 44, background: '#C8A15A' }} />
+    <Box style={{ position: 'absolute', left: 92, top: 36, width: 860 }}><Text style={{ fontSize: 36, fontWeight: 'bold', lineHeight: 1.3, color: '#E8EDF3' }}>三项动作，把判断依据换掉</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 46 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, letterSpacing: 2, color: 'rgba(232,237,243,0.45)' }}>04 · 从误区到工具</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 130 }}><Text style={{ fontSize: 13, letterSpacing: 3, color: '#C8A15A' }}>接下来 90 天</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 160, width: 360, height: 1, background: 'rgba(232,237,243,0.16)' }} />
+<Box style={{ position: 'absolute', left: 72, top: 178 }}><Text style={{ fontFamily: 'Georgia', fontSize: 104, lineHeight: 1.0, letterSpacing: -4, color: '#C8A15A' }}>30</Text></Box>
+    <Box style={{ position: 'absolute', left: 194, top: 241 }}><Text style={{ fontSize: 20, lineHeight: 1.3, color: 'rgba(200,161,90,0.62)' }}>天</Text></Box>
+<Box style={{ position: 'absolute', left: 72, top: 318, width: 360 }}><Text style={{ fontSize: 20, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>拆覆盖率</Text></Box>
+<Box style={{ position: 'absolute', left: 72, top: 356, width: 344 }}><Text style={{ fontSize: 14, lineHeight: 1.85, color: 'rgba(232,237,243,0.55)' }}>把「覆盖率 85%」拆成四个分母，逐条写清每一层的分子与分母定义。</Text></Box>
+<Box style={{ position: 'absolute', left: 72, top: 500, width: 344, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 10.5, letterSpacing: 2, color: 'rgba(232,237,243,0.32)' }}>交付物</Text>
+        <Text style={{ fontSize: 13.5, lineHeight: 1.6, color: '#C8A15A', marginTop: 5 }}>四层覆盖率基线表</Text>
+    </Box>
+<Box style={{ position: 'absolute', left: 460, top: 160, width: 360, height: 1, background: 'rgba(232,237,243,0.16)' }} />
+<Box style={{ position: 'absolute', left: 460, top: 178 }}><Text style={{ fontFamily: 'Georgia', fontSize: 104, lineHeight: 1.0, letterSpacing: -4, color: '#C8A15A' }}>60</Text></Box>
+    <Box style={{ position: 'absolute', left: 582, top: 241 }}><Text style={{ fontSize: 20, lineHeight: 1.3, color: 'rgba(200,161,90,0.62)' }}>天</Text></Box>
+<Box style={{ position: 'absolute', left: 460, top: 318, width: 360 }}><Text style={{ fontSize: 20, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>两个专项 DVP</Text></Box>
+<Box style={{ position: 'absolute', left: 460, top: 356, width: 344 }}><Text style={{ fontSize: 14, lineHeight: 1.85, color: 'rgba(232,237,243,0.55)' }}>线缆做装配态判据（互锁 + 误码 + NCCL），液路做六阶段取样点。</Text></Box>
+<Box style={{ position: 'absolute', left: 460, top: 500, width: 344, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 10.5, letterSpacing: 2, color: 'rgba(232,237,243,0.32)' }}>交付物</Text>
+        <Text style={{ fontSize: 13.5, lineHeight: 1.6, color: '#C8A15A', marginTop: 5 }}>两份专项验证计划</Text>
+    </Box>
+<Box style={{ position: 'absolute', left: 848, top: 160, width: 360, height: 1, background: 'rgba(232,237,243,0.16)' }} />
+<Box style={{ position: 'absolute', left: 848, top: 178 }}><Text style={{ fontFamily: 'Georgia', fontSize: 104, lineHeight: 1.0, letterSpacing: -4, color: '#C8A15A' }}>90</Text></Box>
+    <Box style={{ position: 'absolute', left: 970, top: 241 }}><Text style={{ fontSize: 20, lineHeight: 1.3, color: 'rgba(200,161,90,0.62)' }}>天</Text></Box>
+<Box style={{ position: 'absolute', left: 848, top: 318, width: 360 }}><Text style={{ fontSize: 20, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>改评审清单</Text></Box>
+<Box style={{ position: 'absolute', left: 848, top: 356, width: 344 }}><Text style={{ fontSize: 14, lineHeight: 1.85, color: 'rgba(232,237,243,0.55)' }}>把「样机可运行」移出证据清单，改为「样机可运行，且以下证据齐备」。</Text></Box>
+<Box style={{ position: 'absolute', left: 848, top: 500, width: 344, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 10.5, letterSpacing: 2, color: 'rgba(232,237,243,0.32)' }}>交付物</Text>
+        <Text style={{ fontSize: 13.5, lineHeight: 1.6, color: '#C8A15A', marginTop: 5 }}>修订版评审清单</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 570, width: 1136, height: 1, background: 'rgba(232,237,243,0.16)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 594, width: 1136 }}><Text style={{ fontSize: 24, fontWeight: 'bold', lineHeight: 1.55, color: '#E8EDF3' }}>把判断依据从「谁说得更有信心」，换成「谁能拿出可复现的数据」。</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 660, width: 1136, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 678 }}><Text style={{ fontSize: 14, color: 'rgba(232,237,243,0.35)' }}>可制造性评估维度解析 · 基于 2026 OCP Global Summit 官方材料</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 678 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, color: 'rgba(232,237,243,0.45)' }}>16 / 16</Text></Box>
+
+</Slide>

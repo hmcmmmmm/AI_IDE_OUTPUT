@@ -1,0 +1,219 @@
+[
+ {
+  "idx": 1,
+  "start": 0.0,
+  "end": 6.0,
+  "rep_time": 3.0,
+  "en": ""
+ },
+ {
+  "idx": 2,
+  "start": 6.0,
+  "end": 66.0,
+  "rep_time": 9.0,
+  "en": "I have heard that this is the place to be. Uh Actually, this is uh AMD has been a long-standing supporter of OCP, but this is actually my first time at the OCP um Global Summit, and I have to say I'm just blown away by the scale of what uh we have here. So, I want to congratulate George and really the entire organizing committee for putting together just a fantastic event. So,  [applause]  So, today what I'd like to do is maybe talk a little bit about what we see at AMD in terms of what's happening in the market. Um I can say for sure it's the fastest-moving market that I've ever seen. Um so much uh change, so much innovation, so much collaboration. And maybe from an overarching standpoint, I would say, you know, for all of us at AMD, we wake up every day thinking that our job is to really push"
+ },
+ {
+  "idx": 3,
+  "start": 66.0,
+  "end": 96.0,
+  "rep_time": 81.0,
+  "en": "the boundaries of high-performance computing so that we can solve some of the most important challenges and problems in the world. And to do this actually requires intense collaboration because I'm a big believer in there is no one company that has every answer to every solution. And frankly, the more we can bring the best of our companies together, the better we're going to do as an industry. And so, AMD has opened as a foundation of our principles. It's one of the things that we think about when we develop technology. It's one of the things that"
+ },
+ {
+  "idx": 4,
+  "start": 96.0,
+  "end": 192.0,
+  "rep_time": 138.0,
+  "en": "we think about when we develop our road map. And when you look at the last 15 years of what OCP has really done, it's really been a huge part of our development road map going first going forward. First on our open server platforms, from our very first platform that we did with Naples back in 2017, that was a very close collaboration with our partner Microsoft, but together we brought it to OCP. When you look at, you know, over the last few years, a lot of work has come together on the networking side with the Ultra Ethernet Consortium, with the work that we're doing around, you know, UALink and ESON. All of those are really important things for interoperability. I'm excited to talk about Helios. So, we're going to talk a little bit about Helios today and the progress on that rack scale solution, which is again based on OCP standards. And then looking forward, I think we have lots more opportunities to collaborate together and these also become, whether you're talking about MRC or Oak, these are also areas where there's just a tremendous opportunity for us to come together as an ecosystem. And with the notion of when we come together as an open ecosystem, we will actually accelerate the pace of innovation and get better solutions for our joint customers. So, a little bit about the market, I think you guys know very well the AI market is truly transforming every part of the world, every industry that we're in, whether you're talking about healthcare or manufacturing or science. We're seeing much, much more capability come"
+ },
+ {
+  "idx": 5,
+  "start": 192.0,
+  "end": 225.0,
+  "rep_time": 207.0,
+  "en": "across. I like to say that we're in a world where computing equates to intelligence. And if you have the chance to be more intelligent, why wouldn't you try to get more capability? And that's really what we're trying to do in terms of bringing all of that into the ecosystem. And just a few of the demand numbers that you see, every time I look at these charts, they tend to keep going up into the right. And people are always asking, well, you know, are we sure that we're doing productive work with all of the AI compute that we're putting on board? And the answer is absolutely yes. I mean, we are doing a tremendous amount of work."
+ },
+ {
+  "idx": 6,
+  "start": 225.0,
+  "end": 267.0,
+  "rep_time": 246.0,
+  "en": "We're getting more and more productive each time. Yeah, you kind of look at some of these demand numbers and you see like a 95 x increase in tokens per month over the past 2 years. We're now at some number like almost 40 quadrillion inference tokens a month. Um when you think about what that means in terms of useful AI, we get a lot of different data, but I think the data that's most important to me is what do I see when I talk to customers and when I spend time with the largest users. Um you know, clearly training continues to be extremely important and we're going to continue to need the largest training clusters in"
+ },
+ {
+  "idx": 7,
+  "start": 267.0,
+  "end": 375.0,
+  "rep_time": 321.0,
+  "en": "the world and we're going to continue to push the envelope on capability. Let's call it, you know, 5 x increase every year since 2020 and that doesn't look like that's going to change. That's going to continue going on. Um but we've always thought that where AI really pays off is when inference overtakes training. And when you look at the numbers over the last few years, especially this year in 2026, this year is really the year of inference. This is the year where we believe inference is now about 60% of the market going forward. And it's not just inference, it's really the agentic workloads that have really taken off. So, you look at some of these numbers. This is some new data from Open Router which routes requests across many models and what you see is that the amount of human traffic has gone up steadily, but what's really grown is the amount of agentic traffic and we're seeing a 14 x growth just this year in the amount of a genetic traffic that is going through. And that kind of tells you the power of the of AI working. It is we're training better models. We now have the opportunity not just to do inference, but we have the opportunity to solve problems. And with that we're seeing a lot more opportunity for growth and you know, really productive growth going forward. Now, George showed some numbers about the TAM as it relates to the infrastructure. This is some information"
+ },
+ {
+  "idx": 8,
+  "start": 375.0,
+  "end": 483.0,
+  "rep_time": 417.0,
+  "en": "on the the TAM as it relates to the silicon and the systems which the silicon the core which is what you know, we're focused on. And we're seeing a couple things, right? First of all, we're seeing the data center AI accelerator TAM grow to close to 1 and 1/2 trillion by the time we get to 2030, which is a fantastically large number. That's why there's so much excitement and innovation in this area. But we've also seen that with a genetic workloads, we've seen a very significant increase in what was known as the traditional CPU TAM. If you were to look at this number, you know, let's call it even a year ago, you know, people would have said, \"Hey, the CPU market is probably a 20 billion-dollar market growing you know, single digits over the next few years.\" And we have actually raised the TAM on this three times in the last nine months because we've seen that much growth in the overall CPU demand, which we now believe will grow at approximately 50% CAGR over the next four or five years to over a 200 billion-dollar TAM by the time you get to 2030. And that has implications on how you want to build systems. The fact is, you know, there's no one size fits all when it comes to compute. You actually need the right compute for the right workload, and that's across CPUs and GPUs and ASICs and FPGAs and all of the mix in between. And that's the foundation of how we have, you know, really focused at AMD. So, when you think about, you know, the three things that we think are most important, um the first and foremost is"
+ },
+ {
+  "idx": 9,
+  "start": 483.0,
+  "end": 579.0,
+  "rep_time": 531.0,
+  "en": "we're a compute company. Compute equals intelligence. We need to have compute leadership. And that compute leadership is across, um every aspect of that, you know, CPU, GPU, ASIC, all of those capabilities because we need the right compute for each application. Um we also believe that you're going to see AI everywhere. So, we're going to spend a lot of time over the next few days probably talking about the big iron, um in the cloud, hyperscale, and enterprise. We're big believer in the fact that you're going to see AI infused through every aspect of the edge as well as the client in the ecosystem. And the more that we can get the standards across those, uh those different form factors to be the same, the more that we can get the software, uh to work across all of those systems, the better off we're going to be to provide productivity to the end users of, um these systems. And then the middle point is the point that's most relevant for today. Open is a foundation of what we do at AMD. We are big, big believers, as I said, in the idea that open platforms enable collaboration. Collaboration enables the best of each company to bring to the table so that we have better overall solutions. And the fact is, you know, AI at scale is a team sport. It is a an area where we want to bring, uh the the of the industry, uh together. So, I'll talk a little bit today about the work that we're doing on rack-scale innovation because it's uh been a very, very exciting uh year for us. Um and"
+ },
+ {
+  "idx": 10,
+  "start": 579.0,
+  "end": 594.0,
+  "rep_time": 585.0,
+  "en": "then a little bit about what we see going forward in terms of the agendic infrastructure. So, you know, first and foremost, I think all all of you guys know this, but you know, this has been a principle um frontier AI has higher and higher demands on what all of us do. You know, our job is to bring a solution"
+ },
+ {
+  "idx": 11,
+  "start": 594.0,
+  "end": 654.0,
+  "rep_time": 624.0,
+  "en": "to the market that allows our end users to use the technology as fast as possible, as efficiently as possible, with as little friction as possible to get the best tokens for dollar, to get the best tokens for outcome. And to do that, you need all of these pieces. You need to have leadership compute. You need to have an open rack architecture. You need to have um a fabric that allows you to scale uh across um the uh systems. Um we also need to care about things like efficiency and serviceability, um as well as, you know, overall turnkey solutions. So, you need all of these things. And I have to say um all of these things were critical when we decided to uh bring out the Helios uh architecture. We launched Helios in July of this year, just a couple of months ago. Um I will say, you know, our view is"
+ },
+ {
+  "idx": 12,
+  "start": 654.0,
+  "end": 708.0,
+  "rep_time": 681.0,
+  "en": "that this is the highest performance AI rack in the industry. 72 GPUs working together as a single accelerator. More than 18,000 GPU compute units. 4,600 Zen 6 cores. Each compute tray is just a little bit heavy um at uh 160 lb. Um and the total rack is nearly 7,000 lb. So, um it's a little bit of a machine. I think George said something like everyone gets a little wider as the years pass. Um I don't want to say that about our racks, but I would say we made a very deliberate choice with"
+ },
+ {
+  "idx": 13,
+  "start": 708.0,
+  "end": 810.0,
+  "rep_time": 744.0,
+  "en": "Helios uh to use the um OCP um open rack wide standard. Um it is uh one of the most ambitious engineering feats that I've ever had a chance to be part of in my career. Uh this was co-engineered with Meta, um our partner. I know you're going to hear from Santosh a little bit later on. Um I have to say it has been a tremendous partnership. And you know, we started with the notion of look, there going to be a lot of accelerators out there. Um it is not one-size-fits-all. It's not you know, one company has all the best parts. What we want to do is make it really easy for a heterogeneous data center environment. Cuz there's a firm belief in that you're going to need a mix of CPUs, GPUs, uh purpose-built ASICs. They're going to want to be in a similar data center environment. You're not going to want to switch out every component every time you change an accelerator. You're really going to try to to standardize as much as you can so that you are differentiating on the things that make the most difference. And that's exactly what we've done with um the Helios platform together with Meta. Um I think what we see here is um a tremendous opportunity to bring the ecosystem together. So, lots and lots of partners are needed to make Helios happen, but it includes um the uh open architecture on the rack standpoint, um open uh power shelves, open networking, and the overall management system. So, we're very uh happy with how Helios uh uh has come along. Um as part of this, uh networking is a huge piece of this ecosystem. I would say that we've spent um quite a bit of time internally, you know, for us, uh Nord who runs the data center solutions for us, in terms of architecting this thing, um whole thing coming together. But, our principle is we wanted to use the best solution that was available. And the best solution"
+ },
+ {
+  "idx": 14,
+  "start": 810.0,
+  "end": 858.0,
+  "rep_time": 834.0,
+  "en": "that would be was available would mean bringing in uh the leading networking partners in the world. We're doing tremendous work with Broadcom, Cisco, Arista, HPE, DriveNets. And the idea is to have leading front-end solution, um leading scale-up solution with uh UALink over Ethernet, as well as ESON, and then leading scale-out solutions, um as well, that are uh ahead of the industry. And all of this is delivered through the OCP open ecosystem. And all of this um openness extends to"
+ },
+ {
+  "idx": 15,
+  "start": 858.0,
+  "end": 933.0,
+  "rep_time": 882.0,
+  "en": "software, as well. So, the idea of software is, you know, we need to make for that it's super easy for our customers to bring new workloads onto our accelerators. And to do that, you want to have, let's call it, the leading open communities running natively. Uh we have the top 15 open AI communities that are supporting AI AMD natively. Uh we have seen uh significant benefit. Perhaps this is one of the largest benefits that we've seen of AI. Uh this is a case where, you know, agnetic AI can actually continue to make the performance of the hardware um better over time. Uh just to give you one uh statistic, um Hyperloom is our agnetic AI solution, and we've had it running continuously running for uh the Hugging Face models. So, over 14,000 models on Hugging Face with no humans in the loop, we've seen almost a 40% improvement in performance just having the agnetic AI run. So, the key is open ecosystems on hardware, software bringing the opportunity to get significant performance uh capability to our end users. So, if you take a look at all of those pieces, what does that mean to the end user? The Helios rack delivers um the highest"
+ },
+ {
+  "idx": 16,
+  "start": 933.0,
+  "end": 996.0,
+  "rep_time": 951.0,
+  "en": "compute in the industry, the highest memory uh capacity, the highest memory bandwidth, and the highest networking uh capacity or capability across um the industry. And to give you some idea of the numbers, uh we believe that uh we're translating into 30% more tokens per dollar using uh the Helios uh solution. Now, all the PowerPoint sounds great. It's probably better to see a few pictures. So, um let me show you a little bit here."
+ },
+ {
+  "idx": 17,
+  "start": 996.0,
+  "end": 1002.0,
+  "rep_time": 999.0,
+  "en": ""
+ },
+ {
+  "idx": 18,
+  "start": 1002.0,
+  "end": 1062.0,
+  "rep_time": 1017.0,
+  "en": "People told me that rack-scale solutions would be the hardest thing that we've ever done. Um I think they were absolutely right. Helios is absolutely uh the most uh sophisticated and complex system that we have built um at AMD together with our partners. Uh but I'm very happy to say that Helios is in production today. Uh we started shipping production in September. The first systems are installed at our leading customers, Open AI, Meta, Micro System uh Micro Microsoft, um Oracle, Anthropic, and we continue to see just tremendous learnings when we bring all of these these pieces together. So, our production will continue to ramp through the fourth quarter into the first half of next year, but what we did is, you know, with the OCP standard working together with our partners was just fantastic engineering overall. I'm happy to say there's significant growing adoption of Helios, not only the largest model companies, but in addition"
+ },
+ {
+  "idx": 19,
+  "start": 1062.0,
+  "end": 1089.0,
+  "rep_time": 1074.0,
+  "en": "a number of AI native companies, a number of the overall ecosystem ODMs, OEMs. I know a bunch of you are in the audience today. Neoclouds, thank you. Thank you for all of the collaboration on Helios. We're going to continue to broaden this going forward as we, you know, think about, you know, the next next few quarters. So, with that, maybe I'll transition a little bit to agentic infrastructure. And I would say that this is probably the place where that has been the most activity over the last let's call it 6 months or so. There's been a lot of talk about agents. I would say the excitement is real. I think we've all seen just tremendous productivity whether in personal use"
+ },
+ {
+  "idx": 20,
+  "start": 1089.0,
+  "end": 1119.0,
+  "rep_time": 1104.0,
+  "en": "cases or in the in enterprise use cases and it's moving much faster than we thought. So, kind of some of the examples out there that are pretty interesting. You know, Muse has kind of recaptured the imagination as to what AI can do for the"
+ },
+ {
+  "idx": 21,
+  "start": 1119.0,
+  "end": 1188.0,
+  "rep_time": 1152.0,
+  "en": "consumer. This number of 5 million downloads of Meta Muse was as of the end of September. So, that was like the first, you know, couple weeks. I'm sure Santosh will talk about it more. I think I read this morning in the Wall Street Journal that they're down to now up to 9 million downloads of Meta Muse in just the first month or so. You know, Open AI has talked about using um, 10,000 agents to solve some of the most difficult math problems um, in uh, history that haven't, you know, really seen the full uh, solution. Anthropic talks about using R&D agents to uh, really get a quad working. All of these say that agentic usage is real. I can tell you within AMD, we're actively using agents both on our silicon development as well as on our software development. I gave you the example of Hyperloom. So, you say, \"Okay, everyone talks about agents, but what do you actually need uh, for agents?\" And I think the most important thing to realize is that agents actually are not"
+ },
+ {
+  "idx": 22,
+  "start": 1188.0,
+  "end": 1245.0,
+  "rep_time": 1215.0,
+  "en": "one thing. You know, agents, like people, there are lots of different types of agents. You need the right agents for the right um, application. And for that, you actually need the right compute. So, when you're talking about personal agents, you probably want the densest agents possible. These are simpler tasks, and you want them to be uh, you know, very efficient. You want them to be maximum number of agents per watt, so you are uh, saving your power correctly. Um, you know, that's one class of agents. Uh, you talk about enterprise agents, where you're doing a lot of different types of activities, and so you want them to be pretty balanced. Or you're talking about some of the hardest compute problems out there, these technical compute agents. You're going You're going to want them to be bleeding-edge performance, kind of the the best of the best. And so, each of these agents needs a different type of compute. And what we believe is each of these agents also need the right type of rack. And that means you're going to see a certain type of rack in hyperscale environments, where you might have disaggregated CPU and GPU racks. Whereas in enterprise, you might want to see more all-in-one racks uh, going forward. So, I'm happy to say this morning, we announced um, the AMD Helion Agnostic AI"
+ },
+ {
+  "idx": 23,
+  "start": 1245.0,
+  "end": 1266.0,
+  "rep_time": 1254.0,
+  "en": ""
+ },
+ {
+  "idx": 24,
+  "start": 1266.0,
+  "end": 1335.0,
+  "rep_time": 1299.0,
+  "en": "Rack. Helion is the cousin to Helios. And uh it's really focused on the Agnostic AI compute um aspect of it. Uh what we're trying to do here is frankly do what is easiest in terms of bringing all of the pieces of the Open Compute um infrastructure together so that we can get the most efficient uh CPU uh racks. So, that is you can use the you can use a combination of CPUs and GPUs. They're also um we're also integrating it with a token router. Um I think everyone is talking about how can you most efficiently uh route your um overall AI usage. I know that within our own IT infrastructure, uh the idea is you don't need the same model for every question. You don't need the same compute for every question. You want to be able to route uh the right model and the right compute for the right um application. And that's a key piece of this as well as the overall um open environment. So, a few of the things about our Helion"
+ },
+ {
+  "idx": 25,
+  "start": 1335.0,
+  "end": 1392.0,
+  "rep_time": 1356.0,
+  "en": "um Agnostic AI Rack, um the nice thing about Helion is we've used uh you know, practically everything that we could through um OCC's OCP specs uh with the idea of it's a standard 21-in rack. It can be liquid or air cooled. It is up to 32,000 plus Zen 6 cores, which is 40% more than the other competitive racks. Um it's the highest compute density in the industry. It also can hold up to uh 32 um Instinct MI350P uh GPUs, um as well as a tremendous amount of networking capability. So, it's all coming together in a um open uh compute uh standard. And when you look at how we expect these to be used, when you start in a hyperscale configuration, given the density of compute in hyperscale, you would imagine that you would have significant, you know, GPU racks in one,"
+ },
+ {
+  "idx": 26,
+  "start": 1392.0,
+  "end": 1440.0,
+  "rep_time": 1407.0,
+  "en": "you know, portion of the data center or one part of the deployment, but you can have your Egentic CPU racks, you know, really sitting side by side and you can mix and match the type of CPU nodes in it. So, whether you're looking at personal agents or enterprise agents or technical agents, you can pick the right compute for the right the right workload. And in the enterprise configuration, you can actually add another piece of this, which is, you know, a lot of enterprises are probably, you know, not running the most advanced foundational model, at least when they're running them on prem. They could be actually wanting to have the ability to have both CPUs and GPUs in the same rack optimized for their particular workload. And so, that is what we can do with the Helion rack. And"
+ },
+ {
+  "idx": 27,
+  "start": 1440.0,
+  "end": 1452.0,
+  "rep_time": 1446.0,
+  "en": "I'm happy to say that there's been tremendously positive response to the to our Egentic rack. So, you know, two pieces. One is we have a rich ecosystem that are offering the"
+ },
+ {
+  "idx": 28,
+  "start": 1452.0,
+  "end": 1485.0,
+  "rep_time": 1464.0,
+  "en": "Helion rack starting November 26th and all of this is going to be contributed to OCP. So, you know, very excited for that.  [applause]  Okay, so in the final few minutes, I thought I would just give you an update on our silicon. We are always pushing the bleeding edge of silicon, as I said. In July, we talked about our Venice"
+ },
+ {
+  "idx": 29,
+  "start": 1485.0,
+  "end": 1623.0,
+  "rep_time": 1506.0,
+  "en": "portfolio and our our uh We believe these are the the best server portfolio for a gigantic rocks because we have the ability uh to really mix and match for the right workload. Uh we talked about the various flavors of Venice including our workhorse um for gigantic CPU servers, the Venice 256 core, our general purpose CPU servers as well as our CPUs for host nodes, the Venice um high frequency. And all of that is great, but I have uh when I saw you in July, I showed you four pieces of silicon and uh we have some new silicon to show you today. So, let me show you. Here we go. This is our new Epic uh Verona with uh  [applause]  Verona is based on uh the Venice family of CPU cores. Uh this guy is actually optimized for the lowest system power, so it actually has uh six uh CCDs or six CPU core dies um that uh have 32 cores each up to 192 cores. And with that, we've also updated the uh CPU to GPU bandwidth, which makes it um exceptionally good for uh head node solutions as well. So, uh Verona looks fantastic. Uh there's a lot of excitement about Verona as well as the rest of the Venice family and uh we will be in production in uh the first half of 2027. Um so, with that, um let me conclude and say, \"Look, we love OCP. We love the open ecosystem. Um open is a foundation for what we care about at AMD. Um it is uh open on every level. It's open on the hardware level. Uh it's open with specs. It's working with our partners. It's open on the software level working with um all of the software uh vendors to ensure that we are uh bringing that together and it's open on the ecosystem side as well. So, I'm very happy to say a lot of our partners are here at OCP this week. Um I think it's fantastic all of the work that's coming together and all of the learnings that we will get from bringing um the teams together. So, again, I want to say a big thank you to OCP for really bringing together this what I would call collaboration at scale. It's an opportunity for each of us to innovate on the things that we're"
+ },
+ {
+  "idx": 30,
+  "start": 1623.0,
+  "end": 1629.0,
+  "rep_time": 1626.0,
+  "en": ""
+ },
+ {
+  "idx": 31,
+  "start": 1629.0,
+  "end": 1657.95,
+  "rep_time": 1638.0,
+  "en": "best at and also for each of us to bring together all of the components um across the industry so that we can get solutions to the market uh faster. So, with that, thank you very much. Have a great OCP.  [applause]"
+ }
+]

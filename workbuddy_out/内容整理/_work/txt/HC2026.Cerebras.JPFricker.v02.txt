@@ -1,0 +1,556 @@
+
+--- p1 ---
+FOR WAFER SCALE ENGINE
+Jean-Philippe Fricker
+Co-Founder & Chief System Architect
+Cerebras Systems
+RACK-SCALE ARCHITECTURE
+--- p2 ---
+Forward-Looking Statements​ ​
+This presentation and the accompanying oral presentation contain “forward-looking statements” within the meaning of applicable 
+securities laws. All statements other than statements of historical fact could be deemed to be forward-looking. The words “may,” “will,” 
+“shall,” “should,” “expects,” “plans,” “anticipates,” “could,” “intends,” “target,” “projects,” “contemplates,” “believes,” “estimates,” 
+“predicts,” “potential,” “objective,” or “continue,” or the negative of these words or other similar terms or expressions that concern our 
+expectations, strategy, plans, or intentions are intended to identify forward-looking statements, although not all forward-looking 
+statements contain these identifying words. These forward-looking statements are subject to a number of risks and uncertainties, many 
+of which involve factors or circumstances that are beyond Cerebras’ control.  
+Cerebras’ actual results could differ materially from those stated or implied in forward-looking statements due to a number of factors. 
+Accordingly, undue reliance should not be placed on such statements. These forward-looking statements are made as of the date of this 
+presentation and are based on information available to Cerebras together with Cerebras’ expectations, estimates, forecasts, projections, 
+beliefs, and assumptions as of such date. These forward-looking statements should not be relied upon as representing Cerebras’ views as 
+of any date subsequent to the date of this presentation and the accompanying oral presentation. Past performance is not necessarily 
+indicative of future results. Cerebras undertakes no intention or obligation to update or revise any forward-looking statements, whether 
+as a result of new information, future events, or otherwise, except as required by law. 
+Further information on potential risks that could affect actual results is included in Cerebras’ most recent filings with the Securities and 
+Exchange Commission (the “SEC”), including in Cerebras’ most recent Quarterly Report on Form 10-Q, copies of which may be obtained by 
+visiting Cerebras’ Investor Relations website at investors.cerebras.ai or the SEC’s website at www.sec.gov.
+LEGAL DISCLAIMER
+--- p3 ---
+THE WORLD’S ONLY WAFER-SCALE CHIP
+--- p4 ---
+THE CEREBRAS CS-4
+I N T R O D U C I N G
+--- p5 ---
+
+--- p6 ---
+2x
+10X
+THROUGHPUT / WATT
+FASTER TOKENS
+THE CEREBRAS CS-4
+UP TO
+UP TO
+VS. Industry-Leading CS-3
+--- p7 ---
+
+--- p8 ---
+INFERENCE ON CEREBRAS IN PRODUCTION TODAY
+CS-3
+GPU
+Gemma
+4-31B
+Llama 
+3.3 70B
+GPT
+OSS-120B
+GLM
+4.7-355B
+Kimi 
+K2.7 1T
+GPT
+5.4
+GPT
+5.6 Sol
+4,000
+3,000
+2,000
+1,00
+0
+0
+5,000
+Source: Artificial Analysis and internal benchmarking (August 2026)
+Output Speed 
+(Tokens/sec)
+--- p9 ---
+CS-4 IS TRANSFORMATIVE: UP TO 30X FASTER
+Gemma
+4-31B
+Llama 
+3.3 70B
+GPT
+OSS-120B
+GLM
+4.7-355B
+Kimi 
+K2.7 1T
+GPT
+5.4
+GPT
+5.6 Sol
+4,000
+3,000
+2,000
+1,00
+0
+0
+5,000
+Output Speed 
+(Tokens/sec)
+Source: Artificial Analysis and internal benchmarking (August 2026)
+CS-3
+GPU
+--- p10 ---
+2,000x MORE MEMORY BANDWIDTH THAN RUBIN
+NVIDIA Rubin
+22 TByte/s
+Cerebras CS-4 WSE-3T
+43,200 TByte/s
+--- p11 ---
+HBM
+Llama 70B Weights
+GPU
+Compute
+LLM Weights in
+Off-Chip Memory
+NVIDIA Rubin
+22 TByte/s
+GPU
+--- p12 ---
+HBM
+Llama 70B Weights
+GPU
+Compute
+LLM Weights in
+Off-Chip Memory
+COMPUTE
+CORES
+Cerebras CS-4 WSE-3T
+43,200 TByte/s
+NVIDIA Rubin
+22 TByte/s
+GPU
+CEREBRAS WSE-3T
+LLM Weights in
+On-Chip Memory
+--- p13 ---
+P O W E R  D E L I V E R Y  I N  T H E  
+F R O N T  O F  T H E  R A C K
+B A C K P A C K  C O N T A I N S  
+W A F E R  S C A L E  E N G I N E
+C O M P U T E  I N  T H E  R E A R  I N  
+P L U G G A B L E  B A C K P A C K S
+NEXUS
+RACK-SCALE 
+PLATFORM
+DESIGNED FOR MODULARITY
+0 1
+0 2
+0 3
+Simpler to build
+Faster to deploy
+Independent innovation of 
+power, compute, IO
+All comparisons relative to Cerebras CS-3
+--- p14 ---
+3 WAFER-SCALE 
+BACKPACKS 
+PER CS-4
+0 1
+0 2
+0 3
+All comparisons relative to Cerebras CS-3
+--- p15 ---
+CS-4 BACKPACK: 
+NEXT-GEN PERFORMANCE
+Direct vertical power
+2x more power
+2x more cooling
+W A F E R  P A C K A G E
+W A F E R  I O  M O D U L E
+2x more bandwidth
+2x faster latency
+Modular upgrades
+50% fewer components
+60% more automation
+E F F I C I E N T  M A N U F A C T U R I N G  
+All comparisons relative to Cerebras CS-3
+--- p16 ---
+INEFFICIENT POWER DISTRIBUTION OF GPU
+Power losses along path inside 
+Printed Circuit Board
+Requires more copper layers to 
+reduce resistive losses — extra 
+cost & complexity
+~ 5 0 M M  B E T W E E N  P O W E R  C O N V E R T E R S  
+A N D  S I L I C O N  L O A D
+~50mm
+Image Source: nvidia.com/en-us/data-center/vera-rubin-nvl72
+--- p17 ---
+EFFICIENT POWER DISTRIBUTION
+N O  P R I N T E D  C I R C U I T  B O A R D
+DC/DC Power Converters directly on 
+the wafer
+No extra resistive power losses
+U N I F O R M  S H O R T  D I S T A N C E
+Power Converters spread uniformly
+to reduce extra resistive power losses and 
+parasitic inductances
+5 4 . 5 V D C  B U S B A R
+A R R A Y  O F  A C / D C  
+P O W E R  
+C O N V E R T E R S
+--- p18 ---
+EFFICIENT POWER DISTRIBUTION
+--- p19 ---
+EFFICIENT POWER DISTRIBUTION
+~0.5mm
+1 0 0 X   I M P R O V E M E N T  C O M P A R E D  
+T O  G P U
+DC/DC Power Converters directly on 
+the wafer
+No extra resistive power losses
+--- p20 ---
+THE NEXT GEN
+WAFER IO INTERFACE
+Extends fabric from wafer edges
+Modular & programmable for the future
+N E W  W A F E R  I O  M O D U L E
+H I G H E R  B A N D W I D T H
+A N D  L O W E R  L A T E N C Y
+New direct wafer link interfaces
+Standard RoCE protocol network
+--- p21 ---
+INTEGRATED WATER CONDITIONING
+V A L V E D  D R Y  Q U I C K  
+D I S C O N N E C T S
+For easy install
+Guarantees proper water flow rate
+F L O W  R E G U L A T I O N  A C T U A T O R
+Monitors leaks and condensation
+Shuts off AC power to all the
+Power Supply modules
+L E A K  D E T E C T I O N  M O D U L E
+E N E R G Y  M E T E R
+Monitors water flow rate
+Monitors water inlet & outlet temp.
+--- p22 ---
+WATER & COMPUTE IN THE REAR
+Supply and return manifolds on each side
+Valved Dry Quick Disconnects for easy install
+isolated from high-voltage AC power section in the front
+I N T E G R A T E D  W A T E R  D E L I V E R Y
+Fiber optic cables are protected
+I N T E G R A T E D  F I B E R  C O N D U I T
+Backpack can easily be swapped
+C S - 4  B A C K P A C K
+--- p23 ---
+Cool small devices in the Backpack
+F A N  M O D U L E S
+I N T E G R A T E D  P O W E R  
+P R O T E C T I O N
+Each Power Supply is protected by 
+a 30A circuit breaker behind cover 
+panels
+Input: up to 277VAC, Output 54.5VDC
+Up to 30x modules per backpack
+Flexible power feed redundancy:
+5+1, 4+1, 3+1, 4+2
+Air-cooled
+A C / D C  P O W E R  S U P P L Y  M O D U L E S
+POWER IN THE FRONT
+--- p24 ---
+POWER IN THE FRONT
+--- p25 ---
+Power is fed by up to 6 AC feeds
+from the top of the rack
+Fully phase balanced AC
+power delivery interconnect inside 
+both sides of the rack
+I N T E G R A T E D  P O W E R  D E L I V E R Y
+POWER IN THE FRONT
+--- p26 ---
+RUBIN NVL72 
+260 TB/S NVLINK
+5,000 CABLES
+“MORE BANDWIDTH
+THAN THE INTERNET”
+Image Source: developer.nvidia.com/blog/nvidia-gb200-nvl72-delivers-trillion-parameter-llm-training-and-real-time-inference/
+--- p27 ---
+CS-4 WSE-3T
+53.5 PB/S WAFER FABRIC
+NO CABLES, ALL ON-CHIP
+200X HIGHER BANDWIDTH THAN GPU 
+INTERCONNECT
+--- p28 ---
+CS-4 BY THE NUMBERS
+C S - 3
+C S - 4
+Memory capacity
+AI Compute
+Memory bandwidth
+Fabric bandwidth
+IO bandwidth
+IO latency
+125 PFLOPS
+21.6 PByte/s
+26.7 PByte/s
+1.2 Tbit/s
+5 us
+750 PFLOPS
+129.6 PByte/s
+160.5 PByte/s
+7.2 Tbit/s
+2 us
+44 GByte
+132 GByte
+Wafers
+1x WSE-3
+3x WSE-3 Turbo
+--- p29 ---
+Expert
+Expert
+SLOWER.
+HIGHER POWER.
+HIGHER COST.
+GPU
+Experts distributed 
+across multiple GPUs
+Tensor and expert 
+parallelism required
+Attempt to aggregate 
+memory bandwidth
+Complex communication 
+between GPUs
+TRY TO WORKAROUND MEMORY 
+BANDWIDTH
+--- p30 ---
+CEREBRAS WSE-3T
+Expert
+Expert
+Expert
+Expert
+ULTRAFAST. SIMPLE. 
+EFFICIENT.
+All experts run on a 
+single chip
+No cross-chip 
+communication
+No complex routing
+Experts interleaved on 
+wafer memory
+MEMORY BANDWIDTH ENABLES SPEED
+--- p31 ---
+HIGHER BANDWIDTH  
+LOWER LATENCY WITHIN 
+EACH WAFER
+BANDWIDTH PER WAFER
+✦
+New higher speed wafer links
+✦
+2.4Tb/s aggregate bandwidth
+2X
+CS-4 CLUSTER
+NETWORK
+3us latency
+U S E R S
+G P U  /  A S I C
+--- p32 ---
+HIGHER BANDWIDTH 
+LOWER LATENCY 
+BETWEEN WAFERS
+FASTER NETWORK LATENCY
+✦
+New low latency packet pipeline
+✦
+3us latency to users & disaggregated devices
+1.7X
+BANDWIDTH PER WAFER
+✦
+New higher speed wafer links
+✦
+2.4Tb/s aggregate bandwidth
+2X
+NETWORK
+3us latency
+2.4 Tb/s per wafer
+U S E R S
+G P U  /  A S I C
+CS-4 CLUSTER
+--- p33 ---
+HIGHER BANDWIDTH 
+LOWER LATENCY 
+BETWEEN WAFERS
+FASTER NETWORK LATENCY
+✦
+New low latency packet pipeline
+✦
+3us latency through network
+1.7X
+BANDWIDTH PER WAFER
+✦
+New higher speed wafer links
+✦
+2.4Tb/s aggregate bandwidth
+2X
+FASTER WAFER-TO-WAFER
+✦
+New Direct Wafer Links
+✦
+2us latency wafer-to-wafer
+2.5X
+NETWORK
+2us latency
+2.4 Tb/s per wafer
+3us latency
+CS-4 CLUSTER
+U S E R S
+G P U  /  A S I C
+--- p34 ---
+CS-3 ALREADY RUNS 
+THE LARGEST FRONTIER MODELS FAST
+GPT-5.6 SOL
+CS-3 CLUSTER
+…
+…
+…
+…
+…
+…
+--- p35 ---
+CS-3 ALREADY RUNS 
+THE LARGEST FRONTIER MODELS FAST
+Pipelining large models 
+across wafers is seamless 
+and fast
+0 1
+Keep almost all high communication 
+on wafer, using internal high 
+bandwidth fabric
+0 2
+Transfer only activations 
+between wafers, requiring 
+relatively lower bandwidth
+0 3
+…
+…
+…
+…
+…
+…
+GPT-5.6 SOL
+X        CS-3 CLUSTER
+Higher I/O bandwidth means faster hops between wafers for < 0.2 ms latency for 10T parameter model
+--- p36 ---
+GPU IS REALLY SLOW AT INFERENCE
+Interactivity
+TPS/User
+Throughput 
+Total TPS 
+per MW 
+GPU
+Source: Artificial Analysis and internal benchmarking (August 2026)
+--- p37 ---
+Interactivity
+TPS/User
+Throughput 
+Total TPS 
+per MW 
+STARTING FROM UP TO 15x FASTER THAN GPUS
+Ultrafast
+CS-3
+Source: Artificial Analysis and internal benchmarking (August 2026)
+GPU
+--- p38 ---
+Interactivity
+TPS/User
+Throughput 
+Total TPS 
+per MW 
+THE FASTEST GETS FASTER.
+Ultrafast
+Up to 
+2x faster
+Source: Artificial Analysis and internal benchmarking (August 2026)
+GPU
+CS-3
+--- p39 ---
+Interactivity
+TPS/User
+Throughput 
+Total TPS 
+per MW 
+Ultrafast
+Up to 10x more 
+token capacity
+Up to
+2x faster
+THE FASTEST GETS FASTER. BUILT FOR HYPERSCALE.
+Source: Artificial Analysis and internal benchmarking (August 2026)
+GPU
+CS-3
+--- p40 ---
+Interactivity
+TPS/User
+Throughput 
+Total TPS 
+per MW 
+THE FASTEST GETS FASTER. BUILT FOR HYPERSCALE.
+Ultrafast
+Up to 10x more 
+token capacity
+Up to 
+2x faster
+Source: Artificial Analysis and internal benchmarking (August 2026)
+GPU
+CS-3
+CS-4
+--- p41 ---
+DISAGGREGATION
+IO INTERFACE
+THE CEREBRAS CS-4 IS DESIGNED FOR 
+DISAGGREGATED INFERENCE 
+…
+--- p42 ---
+DESIGNED FROM GROUND UP
+FASTER
+PERFORMANCE
+Better User 
+Experiences
+Up to 30x faster than GPUs
+for more interactivity
+& intelligence
+GREATER
+SCALE
+Bring More Ultrafast
+Tokens to the World
+Built for hyperscale with 50% 
+fewer components and
+modular design
+HIGHER
+THROUGHPUT
+Improved
+Tokenomics
+Up to 10x higher throughput
+per watt for enhanced
+tokenomics
+Source: Internal benchmarking (August 2026)
+CEREBRAS CS-4
+--- p43 ---
+CS-5 ●CS-6
+DESIGNED FOR MULTIPLE 
+GENERATIONS
+CS-4
+EARLY ACCESS NOW, GA 
+LATER IN Q3 2026
+NEXUS RACK-SCALE PLATFORM
+--- p44 ---
+CEREBRAS CS-4
+SCAN THE QR CODE TO 
+LEARN MORE
+UP TO 30X FASTER THAN 
+GPUS
+UP TO 10X 
+HIGHER THROUGHPUT 
+PER WATT THAN CS-3
+HYPERSCALE-READY 
+MODULAR RACK-SCALE DESIGN

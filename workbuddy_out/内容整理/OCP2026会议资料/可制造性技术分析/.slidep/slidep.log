@@ -1,0 +1,281 @@
+=== boot pid=20600 ts=2026-10-18 13:42:08.677 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js create 可制造性技术分析.pptx ===
+[2026-10-18 13:42:08.676] [INFO ] [pid=20600] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=8804 ts=2026-10-18 13:43:03.743 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/01.slide ===
+[2026-10-18 13:43:03.743] [INFO ] [pid=8804] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:43:03.774] [INFO ] [pid=8804] [slide-version] fileId=sid_mvde version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=20516 ts=2026-10-18 13:43:10.512 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js lint 可制造性技术分析.pptx --dsl-file slides/01.slide --page-index 0 --visual ===
+[2026-10-18 13:43:10.511] [WARN ] [pid=20516] [lint] screenshot FAIL reason=screenshot returned unparseable output: (empty)
+=== boot pid=26576 ts=2026-10-18 13:43:25.406 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 0 --out ./preview/p01.png ===
+[2026-10-18 13:43:25.404] [INFO ] [pid=26576] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:43:25.440] [INFO ] [pid=26576] [slide-version] fileId=sid_mvde version=1 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25912 ts=2026-10-18 13:43:49.075 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/01.slide ===
+[2026-10-18 13:43:49.074] [INFO ] [pid=25912] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:43:49.104] [INFO ] [pid=25912] [slide-version] fileId=sid_mvde version=1 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=19684 ts=2026-10-18 13:43:53.898 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 0 --out ./preview/p01.png ===
+[2026-10-18 13:43:53.896] [INFO ] [pid=19684] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:43:53.933] [INFO ] [pid=19684] [slide-version] fileId=sid_mvde version=2 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=19208 ts=2026-10-18 13:44:10.120 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js inspect 可制造性技术分析.pptx --out ./preview/deck.md ===
+[2026-10-18 13:44:10.118] [INFO ] [pid=19208] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=28492 ts=2026-10-18 13:44:29.291 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js create 可制造性技术分析.pptx ===
+[2026-10-18 13:44:29.290] [INFO ] [pid=28492] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=26648 ts=2026-10-18 13:44:31.688 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/01.slide --page-index 0 ===
+[2026-10-18 13:44:31.688] [INFO ] [pid=26648] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:44:31.718] [INFO ] [pid=26648] [slide-version] fileId=984368DC version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=27012 ts=2026-10-18 13:44:33.712 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 0 --out ./preview/c01.png ===
+[2026-10-18 13:44:33.710] [INFO ] [pid=27012] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:44:33.747] [INFO ] [pid=27012] [slide-version] fileId=984368DC version=1 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25864 ts=2026-10-18 13:45:12.968 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/02.slide --page-index 1 ===
+[2026-10-18 13:45:12.968] [INFO ] [pid=25864] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:45:12.999] [INFO ] [pid=25864] [slide-version] fileId=984368DC version=1 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=22284 ts=2026-10-18 13:45:17.804 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 1 --out ./preview/c02.png ===
+[2026-10-18 13:45:17.802] [INFO ] [pid=22284] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:45:17.840] [INFO ] [pid=22284] [slide-version] fileId=984368DC version=2 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=27824 ts=2026-10-18 13:45:35.099 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/02.slide --page-index 1 ===
+[2026-10-18 13:45:35.099] [INFO ] [pid=27824] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:45:35.130] [INFO ] [pid=27824] [slide-version] fileId=984368DC version=2 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24028 ts=2026-10-18 13:45:39.993 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 1 --out ./preview/c02b.png ===
+[2026-10-18 13:45:39.991] [INFO ] [pid=24028] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:45:40.028] [INFO ] [pid=24028] [slide-version] fileId=984368DC version=3 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24380 ts=2026-10-18 13:45:57.176 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/03.slide --page-index 2 ===
+[2026-10-18 13:45:57.176] [INFO ] [pid=24380] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:45:57.205] [INFO ] [pid=24380] [slide-version] fileId=984368DC version=3 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=9708 ts=2026-10-18 13:46:01.865 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 2 --out ./preview/c03.png ===
+[2026-10-18 13:46:01.863] [INFO ] [pid=9708] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:46:01.899] [INFO ] [pid=9708] [slide-version] fileId=984368DC version=4 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=2276 ts=2026-10-18 13:46:20.875 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/03.slide --page-index 2 ===
+[2026-10-18 13:46:20.874] [INFO ] [pid=2276] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:46:20.904] [INFO ] [pid=2276] [slide-version] fileId=984368DC version=4 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28728 ts=2026-10-18 13:46:25.526 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 2 --out ./preview/c03b.png ===
+[2026-10-18 13:46:25.524] [INFO ] [pid=28728] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:46:25.562] [INFO ] [pid=28728] [slide-version] fileId=984368DC version=5 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25704 ts=2026-10-18 13:46:38.986 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/03.slide --page-index 2 ===
+[2026-10-18 13:46:38.986] [INFO ] [pid=25704] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:46:39.016] [INFO ] [pid=25704] [slide-version] fileId=984368DC version=5 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=23668 ts=2026-10-18 13:46:43.731 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 2 --out ./preview/c03c.png ===
+[2026-10-18 13:46:43.729] [INFO ] [pid=23668] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:46:43.767] [INFO ] [pid=23668] [slide-version] fileId=984368DC version=6 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=27400 ts=2026-10-18 13:47:24.709 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/04.slide --page-index 3 ===
+[2026-10-18 13:47:24.708] [INFO ] [pid=27400] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:47:24.739] [INFO ] [pid=27400] [slide-version] fileId=984368DC version=6 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31084 ts=2026-10-18 13:47:29.559 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 3 --out ./preview/c04.png ===
+[2026-10-18 13:47:29.557] [INFO ] [pid=31084] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:47:29.596] [INFO ] [pid=31084] [slide-version] fileId=984368DC version=7 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=30716 ts=2026-10-18 13:47:43.739 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/04.slide --page-index 3 ===
+[2026-10-18 13:47:43.738] [INFO ] [pid=30716] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:47:43.768] [INFO ] [pid=30716] [slide-version] fileId=984368DC version=7 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=27828 ts=2026-10-18 13:47:48.718 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 3 --out ./preview/c04b.png ===
+[2026-10-18 13:47:48.716] [INFO ] [pid=27828] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:47:48.752] [INFO ] [pid=27828] [slide-version] fileId=984368DC version=8 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28068 ts=2026-10-18 13:48:07.084 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/05.slide --page-index 4 ===
+[2026-10-18 13:48:07.083] [INFO ] [pid=28068] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:48:07.113] [INFO ] [pid=28068] [slide-version] fileId=984368DC version=8 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=27040 ts=2026-10-18 13:48:11.832 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 4 --out ./preview/c05.png ===
+[2026-10-18 13:48:11.831] [INFO ] [pid=27040] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:48:11.867] [INFO ] [pid=27040] [slide-version] fileId=984368DC version=9 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24456 ts=2026-10-18 13:48:34.497 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/06.slide --page-index 5 ===
+[2026-10-18 13:48:34.497] [INFO ] [pid=24456] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:48:34.529] [INFO ] [pid=24456] [slide-version] fileId=984368DC version=9 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=6848 ts=2026-10-18 13:48:39.409 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 5 --out ./preview/c06.png ===
+[2026-10-18 13:48:39.407] [INFO ] [pid=6848] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:48:39.444] [INFO ] [pid=6848] [slide-version] fileId=984368DC version=10 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=6316 ts=2026-10-18 13:49:10.255 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/06.slide --page-index 5 ===
+[2026-10-18 13:49:10.254] [INFO ] [pid=6316] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:49:10.285] [INFO ] [pid=6316] [slide-version] fileId=984368DC version=10 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=6116 ts=2026-10-18 13:49:15.261 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 5 --out ./preview/c06b.png ===
+[2026-10-18 13:49:15.256] [INFO ] [pid=6116] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:49:15.320] [INFO ] [pid=6116] [slide-version] fileId=984368DC version=11 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=11076 ts=2026-10-18 13:49:43.747 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/07.slide --page-index 6 ===
+[2026-10-18 13:49:43.747] [INFO ] [pid=11076] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:49:43.778] [INFO ] [pid=11076] [slide-version] fileId=984368DC version=11 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=8804 ts=2026-10-18 13:49:48.661 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 6 --out ./preview/c07.png ===
+[2026-10-18 13:49:48.659] [INFO ] [pid=8804] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:49:48.695] [INFO ] [pid=8804] [slide-version] fileId=984368DC version=12 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=23772 ts=2026-10-18 13:50:09.846 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/07.slide --page-index 6 ===
+[2026-10-18 13:50:09.845] [INFO ] [pid=23772] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:50:09.876] [INFO ] [pid=23772] [slide-version] fileId=984368DC version=12 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=26576 ts=2026-10-18 13:50:14.770 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 6 --out ./preview/c07b.png ===
+[2026-10-18 13:50:14.768] [INFO ] [pid=26576] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:50:14.806] [INFO ] [pid=26576] [slide-version] fileId=984368DC version=13 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25276 ts=2026-10-18 13:50:39.376 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/07.slide --page-index 6 ===
+[2026-10-18 13:50:39.376] [INFO ] [pid=25276] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:50:39.406] [INFO ] [pid=25276] [slide-version] fileId=984368DC version=13 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=26104 ts=2026-10-18 13:50:44.247 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 6 --out ./preview/c07c.png ===
+[2026-10-18 13:50:44.245] [INFO ] [pid=26104] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:50:44.281] [INFO ] [pid=26104] [slide-version] fileId=984368DC version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=30504 ts=2026-10-18 13:51:12.160 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/08.slide --page-index 7 ===
+[2026-10-18 13:51:12.159] [INFO ] [pid=30504] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:51:12.191] [INFO ] [pid=30504] [slide-version] fileId=984368DC version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=14252 ts=2026-10-18 13:51:17.413 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 7 --out ./preview/c08.png ===
+[2026-10-18 13:51:17.411] [INFO ] [pid=14252] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:51:17.449] [INFO ] [pid=14252] [slide-version] fileId=984368DC version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29240 ts=2026-10-18 13:51:23.884 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/08.slide --page-index 7 ===
+[2026-10-18 13:51:23.883] [INFO ] [pid=29240] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:51:23.914] [INFO ] [pid=29240] [slide-version] fileId=984368DC version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29932 ts=2026-10-18 13:51:30.974 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/08.slide --page-index 7 ===
+[2026-10-18 13:51:30.973] [INFO ] [pid=29932] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:51:31.004] [INFO ] [pid=29932] [slide-version] fileId=984368DC version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25360 ts=2026-10-18 13:51:37.599 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/08.slide --page-index 7 ===
+[2026-10-18 13:51:37.598] [INFO ] [pid=25360] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:51:37.630] [INFO ] [pid=25360] [slide-version] fileId=984368DC version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31504 ts=2026-10-18 13:51:44.091 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js inspect 可制造性技术分析.pptx --out ./preview/deck2.md ===
+[2026-10-18 13:51:44.089] [INFO ] [pid=31504] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=27212 ts=2026-10-18 13:51:50.868 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 6 --out ./preview/ping.png ===
+[2026-10-18 13:51:50.866] [INFO ] [pid=27212] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:51:50.904] [INFO ] [pid=27212] [slide-version] fileId=D3ADB265 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31728 ts=2026-10-18 13:52:26.499 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/08.slide --page-index 7 --timeout 180000 ===
+[2026-10-18 13:52:26.498] [INFO ] [pid=31728] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:52:26.529] [INFO ] [pid=31728] [slide-version] fileId=D3ADB265 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28356 ts=2026-10-18 13:52:28.596 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js inspect 可制造性技术分析.pptx --out ./preview/deck3.md ===
+[2026-10-18 13:52:28.594] [INFO ] [pid=28356] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=31260 ts=2026-10-18 13:52:37.773 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 7 --out ./preview/c08.png ===
+[2026-10-18 13:52:37.771] [INFO ] [pid=31260] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:52:37.808] [INFO ] [pid=31260] [slide-version] fileId=76E03883 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29800 ts=2026-10-18 13:52:58.160 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/08.slide --page-index 7 --timeout 180000 ===
+[2026-10-18 13:52:58.160] [INFO ] [pid=29800] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:52:58.190] [INFO ] [pid=29800] [slide-version] fileId=76E03883 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=21052 ts=2026-10-18 13:53:03.133 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 7 --out ./preview/c08b.png ===
+[2026-10-18 13:53:03.131] [INFO ] [pid=21052] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:53:03.168] [INFO ] [pid=21052] [slide-version] fileId=76E03883 version=1 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28664 ts=2026-10-18 13:53:33.756 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/09.slide --page-index 8 --timeout 180000 ===
+[2026-10-18 13:53:33.756] [INFO ] [pid=28664] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:53:33.787] [INFO ] [pid=28664] [slide-version] fileId=76E03883 version=1 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29436 ts=2026-10-18 13:53:38.641 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 8 --out ./preview/c09.png ===
+[2026-10-18 13:53:38.639] [INFO ] [pid=29436] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:53:38.678] [INFO ] [pid=29436] [slide-version] fileId=76E03883 version=2 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=7844 ts=2026-10-18 13:53:56.230 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/09.slide --page-index 8 --timeout 180000 ===
+[2026-10-18 13:53:56.230] [INFO ] [pid=7844] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:53:56.259] [INFO ] [pid=7844] [slide-version] fileId=76E03883 version=2 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=22396 ts=2026-10-18 13:54:01.091 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 8 --out ./preview/c09b.png ===
+[2026-10-18 13:54:01.090] [INFO ] [pid=22396] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:54:01.129] [INFO ] [pid=22396] [slide-version] fileId=76E03883 version=3 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31728 ts=2026-10-18 13:54:13.643 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/10.slide --page-index 9 --timeout 180000 ===
+[2026-10-18 13:54:13.642] [INFO ] [pid=31728] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:54:13.672] [INFO ] [pid=31728] [slide-version] fileId=76E03883 version=3 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29912 ts=2026-10-18 13:54:18.364 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 9 --out ./preview/c10.png ===
+[2026-10-18 13:54:18.362] [INFO ] [pid=29912] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:54:18.399] [INFO ] [pid=29912] [slide-version] fileId=76E03883 version=4 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29924 ts=2026-10-18 13:54:45.359 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/11.slide --page-index 10 --timeout 180000 ===
+[2026-10-18 13:54:45.358] [INFO ] [pid=29924] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:54:45.387] [INFO ] [pid=29924] [slide-version] fileId=76E03883 version=4 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25268 ts=2026-10-18 13:54:50.813 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 10 --out ./preview/c11.png ===
+[2026-10-18 13:54:50.811] [INFO ] [pid=25268] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:54:50.861] [INFO ] [pid=25268] [slide-version] fileId=76E03883 version=5 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=2688 ts=2026-10-18 13:55:13.734 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 10 --out ./preview/c11b.png ===
+[2026-10-18 13:55:13.732] [INFO ] [pid=2688] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:55:13.771] [INFO ] [pid=2688] [slide-version] fileId=76E03883 version=5 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28836 ts=2026-10-18 13:55:22.168 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/11.slide --page-index 10 --timeout 240000 ===
+[2026-10-18 13:55:22.168] [INFO ] [pid=28836] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:55:22.201] [INFO ] [pid=28836] [slide-version] fileId=76E03883 version=5 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31484 ts=2026-10-18 13:55:24.658 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 10 --out ./preview/c11b.png ===
+[2026-10-18 13:55:24.656] [INFO ] [pid=31484] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:55:24.695] [INFO ] [pid=31484] [slide-version] fileId=76E03883 version=6 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=20400 ts=2026-10-18 13:55:48.670 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/12.slide --page-index 11 --timeout 240000 ===
+[2026-10-18 13:55:48.669] [INFO ] [pid=20400] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:55:48.701] [INFO ] [pid=20400] [slide-version] fileId=76E03883 version=6 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28792 ts=2026-10-18 13:55:53.872 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 11 --out ./preview/c12.png ===
+[2026-10-18 13:55:53.869] [INFO ] [pid=28792] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:55:53.909] [INFO ] [pid=28792] [slide-version] fileId=76E03883 version=7 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29428 ts=2026-10-18 13:56:14.741 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/12.slide --page-index 11 --timeout 240000 ===
+[2026-10-18 13:56:14.741] [INFO ] [pid=29428] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:56:14.774] [INFO ] [pid=29428] [slide-version] fileId=76E03883 version=7 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31136 ts=2026-10-18 13:56:19.712 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 11 --out ./preview/c12b.png ===
+[2026-10-18 13:56:19.710] [INFO ] [pid=31136] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:56:19.748] [INFO ] [pid=31136] [slide-version] fileId=76E03883 version=8 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24548 ts=2026-10-18 13:56:37.722 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/12.slide --page-index 11 --timeout 240000 ===
+[2026-10-18 13:56:37.721] [INFO ] [pid=24548] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:56:37.751] [INFO ] [pid=24548] [slide-version] fileId=76E03883 version=8 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28972 ts=2026-10-18 13:56:42.777 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 11 --out ./preview/c12c.png ===
+[2026-10-18 13:56:42.775] [INFO ] [pid=28972] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:56:42.812] [INFO ] [pid=28972] [slide-version] fileId=76E03883 version=9 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28172 ts=2026-10-18 13:56:56.305 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/13.slide --page-index 12 --timeout 240000 ===
+[2026-10-18 13:56:56.303] [INFO ] [pid=28172] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:56:56.337] [INFO ] [pid=28172] [slide-version] fileId=76E03883 version=9 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24580 ts=2026-10-18 13:57:01.197 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 12 --out ./preview/c13.png ===
+[2026-10-18 13:57:01.195] [INFO ] [pid=24580] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:57:01.232] [INFO ] [pid=24580] [slide-version] fileId=76E03883 version=10 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24616 ts=2026-10-18 13:57:30.955 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/14.slide --page-index 13 --timeout 240000 ===
+[2026-10-18 13:57:30.954] [INFO ] [pid=24616] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:57:30.983] [INFO ] [pid=24616] [slide-version] fileId=76E03883 version=10 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=204 ts=2026-10-18 13:57:35.942 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 13 --out ./preview/c14.png ===
+[2026-10-18 13:57:35.940] [INFO ] [pid=204] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:57:35.975] [INFO ] [pid=204] [slide-version] fileId=76E03883 version=11 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24920 ts=2026-10-18 13:57:55.119 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/14.slide --page-index 13 --timeout 240000 ===
+[2026-10-18 13:57:55.118] [INFO ] [pid=24920] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:57:55.149] [INFO ] [pid=24920] [slide-version] fileId=76E03883 version=11 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=8208 ts=2026-10-18 13:58:00.076 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 13 --out ./preview/c14b.png ===
+[2026-10-18 13:58:00.074] [INFO ] [pid=8208] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:58:00.111] [INFO ] [pid=8208] [slide-version] fileId=76E03883 version=12 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=21052 ts=2026-10-18 13:58:22.964 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/15.slide --page-index 14 --timeout 240000 ===
+[2026-10-18 13:58:22.963] [INFO ] [pid=21052] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:58:22.997] [INFO ] [pid=21052] [slide-version] fileId=76E03883 version=12 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24516 ts=2026-10-18 13:58:28.071 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 14 --out ./preview/c15.png ===
+[2026-10-18 13:58:28.068] [INFO ] [pid=24516] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:58:28.106] [INFO ] [pid=24516] [slide-version] fileId=76E03883 version=13 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=20088 ts=2026-10-18 13:58:58.491 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/15.slide --page-index 14 --timeout 240000 ===
+[2026-10-18 13:58:58.490] [INFO ] [pid=20088] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:58:58.521] [INFO ] [pid=20088] [slide-version] fileId=76E03883 version=13 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=30516 ts=2026-10-18 13:59:03.527 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 14 --out ./preview/c15b.png ===
+[2026-10-18 13:59:03.525] [INFO ] [pid=30516] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:59:03.563] [INFO ] [pid=30516] [slide-version] fileId=76E03883 version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=10568 ts=2026-10-18 13:59:25.443 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/16.slide --page-index 15 --timeout 240000 ===
+[2026-10-18 13:59:25.442] [INFO ] [pid=10568] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:59:25.475] [INFO ] [pid=10568] [slide-version] fileId=76E03883 version=14 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=21668 ts=2026-10-18 13:59:30.578 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 15 --out ./preview/c16.png ===
+[2026-10-18 13:59:30.576] [INFO ] [pid=21668] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:59:30.613] [INFO ] [pid=21668] [slide-version] fileId=76E03883 version=15 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28068 ts=2026-10-18 13:59:49.969 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js upsert-dsl 可制造性技术分析.pptx --dsl-file slides/16.slide --page-index 15 --timeout 240000 ===
+[2026-10-18 13:59:49.969] [INFO ] [pid=28068] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:59:49.998] [INFO ] [pid=28068] [slide-version] fileId=76E03883 version=15 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25940 ts=2026-10-18 13:59:54.943 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 15 --out ./preview/c16b.png ===
+[2026-10-18 13:59:54.941] [INFO ] [pid=25940] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 13:59:54.977] [INFO ] [pid=25940] [slide-version] fileId=76E03883 version=16 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=26164 ts=2026-10-18 14:00:09.286 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js inspect 可制造性技术分析.pptx --out ./preview/final.md ===
+[2026-10-18 14:00:09.284] [INFO ] [pid=26164] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+=== boot pid=26324 ts=2026-10-18 14:00:18.047 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 0 --out ./preview/f01.png ===
+[2026-10-18 14:00:18.045] [INFO ] [pid=26324] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:18.081] [INFO ] [pid=26324] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=24776 ts=2026-10-18 14:00:20.822 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 1 --out ./preview/f02.png ===
+[2026-10-18 14:00:20.820] [INFO ] [pid=24776] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:20.855] [INFO ] [pid=24776] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31084 ts=2026-10-18 14:00:23.763 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 2 --out ./preview/f03.png ===
+[2026-10-18 14:00:23.761] [INFO ] [pid=31084] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:23.799] [INFO ] [pid=31084] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=28176 ts=2026-10-18 14:00:26.539 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 3 --out ./preview/f04.png ===
+[2026-10-18 14:00:26.537] [INFO ] [pid=28176] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:26.574] [INFO ] [pid=28176] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29224 ts=2026-10-18 14:00:29.364 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 4 --out ./preview/f05.png ===
+[2026-10-18 14:00:29.362] [INFO ] [pid=29224] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:29.398] [INFO ] [pid=29224] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25360 ts=2026-10-18 14:00:32.189 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 5 --out ./preview/f06.png ===
+[2026-10-18 14:00:32.187] [INFO ] [pid=25360] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:32.225] [INFO ] [pid=25360] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=25392 ts=2026-10-18 14:00:35.103 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 6 --out ./preview/f07.png ===
+[2026-10-18 14:00:35.100] [INFO ] [pid=25392] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:35.137] [INFO ] [pid=25392] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=7160 ts=2026-10-18 14:00:37.912 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 7 --out ./preview/f08.png ===
+[2026-10-18 14:00:37.910] [INFO ] [pid=7160] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:37.948] [INFO ] [pid=7160] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=17092 ts=2026-10-18 14:00:40.753 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 8 --out ./preview/f09.png ===
+[2026-10-18 14:00:40.752] [INFO ] [pid=17092] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:40.788] [INFO ] [pid=17092] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=26204 ts=2026-10-18 14:00:43.729 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 9 --out ./preview/f10.png ===
+[2026-10-18 14:00:43.727] [INFO ] [pid=26204] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:43.763] [INFO ] [pid=26204] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=29040 ts=2026-10-18 14:00:46.525 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 10 --out ./preview/f11.png ===
+[2026-10-18 14:00:46.523] [INFO ] [pid=29040] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:46.558] [INFO ] [pid=29040] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=20632 ts=2026-10-18 14:00:49.355 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 11 --out ./preview/f12.png ===
+[2026-10-18 14:00:49.353] [INFO ] [pid=20632] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:49.390] [INFO ] [pid=20632] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=31508 ts=2026-10-18 14:00:52.169 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 12 --out ./preview/f13.png ===
+[2026-10-18 14:00:52.166] [INFO ] [pid=31508] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:52.204] [INFO ] [pid=31508] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=21112 ts=2026-10-18 14:00:54.916 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 13 --out ./preview/f14.png ===
+[2026-10-18 14:00:54.914] [INFO ] [pid=21112] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:54.951] [INFO ] [pid=21112] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=6476 ts=2026-10-18 14:00:57.818 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 14 --out ./preview/f15.png ===
+[2026-10-18 14:00:57.816] [INFO ] [pid=6476] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:00:57.853] [INFO ] [pid=6476] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx
+=== boot pid=13788 ts=2026-10-18 14:01:00.670 cwd=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析 argv=C:\Users\zifeng\.workbuddy-ai\binaries\node\versions\22.22.2-6\node_modules\@tencent\slidep\dist\index.js screenshot 可制造性技术分析.pptx --page-index 15 --out ./preview/f16.png ===
+[2026-10-18 14:01:00.668] [INFO ] [pid=13788] [server-url] baseUrl=http://127.0.0.1:39099 source=env
+[2026-10-18 14:01:00.704] [INFO ] [pid=13788] [slide-version] fileId=E0A061F1 version=0 filePath=G:\AI_IDE_output\workbuddy_out\内容整理\OCP2026会议资料\可制造性技术分析\可制造性技术分析.pptx

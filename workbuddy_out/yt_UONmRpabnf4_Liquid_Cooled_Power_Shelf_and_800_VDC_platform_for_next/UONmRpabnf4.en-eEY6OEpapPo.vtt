@@ -1,0 +1,1123 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.280 --> 00:00:06.240
+Okay.
+
+00:00:03.840 --> 00:00:08.080
+Hello everyone. Um, so I'm Jared
+
+00:00:06.240 --> 00:00:10.719
+Huntington. I'm a power architect with
+
+00:00:08.080 --> 00:00:14.719
+Nvidia working on uh power basically
+
+00:00:10.719 --> 00:00:18.320
+from SST to chip and uh
+
+00:00:14.719 --> 00:00:21.439
+Roy Moi CMO at Magme.
+
+00:00:18.320 --> 00:00:24.240
+Yeah, I'm Chile and I'm here in Magnet
+
+00:00:21.439 --> 00:00:26.800
+and focus focus on the liquid cool power
+
+00:00:24.240 --> 00:00:29.039
+supply design.
+
+00:00:26.800 --> 00:00:32.000
+Okay. Um so today we're talking about
+
+00:00:29.039 --> 00:00:35.280
+the um liquid cooled power shelves and
+
+00:00:32.000 --> 00:00:38.000
+our transition to 800 volt DC
+
+00:00:35.280 --> 00:00:40.160
+um and uh the work that uh Megmi is
+
+00:00:38.000 --> 00:00:42.320
+doing with Nvidia on developing uh
+
+00:00:40.160 --> 00:00:45.840
+liquid cooled power shelves that um we
+
+00:00:42.320 --> 00:00:47.360
+can use for the uh e ecosystem.
+
+00:00:45.840 --> 00:00:48.320
+So
+
+00:00:47.360 --> 00:00:52.559
+can't go too
+
+00:00:48.320 --> 00:00:54.480
+what's up. Yeah. So then uh hopefully
+
+00:00:52.559 --> 00:00:57.280
+everyone's seen seen a graph similar to
+
+00:00:54.480 --> 00:00:59.840
+this right we present this uh in several
+
+00:00:57.280 --> 00:01:01.680
+of our or several of our talks but this
+
+00:00:59.840 --> 00:01:04.720
+is essentially what's driving the need
+
+00:01:01.680 --> 00:01:06.960
+for 800 volt um and it's essentially if
+
+00:01:04.720 --> 00:01:09.200
+we look at the power consumption over
+
+00:01:06.960 --> 00:01:11.760
+time right there's a a year-over-year
+
+00:01:09.200 --> 00:01:14.960
+increase uh just due to the chips due to
+
+00:01:11.760 --> 00:01:18.080
+the GPUs um pulling more power for more
+
+00:01:14.960 --> 00:01:20.080
+performance but there's another aspect
+
+00:01:18.080 --> 00:01:22.000
+about GPUs that's unique
+
+00:01:20.080 --> 00:01:25.360
+which is we really want to pack as many
+
+00:01:22.000 --> 00:01:28.479
+GPUs into one cabinet as possible
+
+00:01:25.360 --> 00:01:30.240
+because um we can essentially uh
+
+00:01:28.479 --> 00:01:32.400
+increase the performance if we keep all
+
+00:01:30.240 --> 00:01:33.520
+of those GPUs on a copper networking
+
+00:01:32.400 --> 00:01:36.079
+domain. And so that's what's
+
+00:01:33.520 --> 00:01:38.799
+fundamentally different between GPUs and
+
+00:01:36.079 --> 00:01:41.520
+the classic web servers. So very quickly
+
+00:01:38.799 --> 00:01:44.560
+we can go from an NVL72 system and we
+
+00:01:41.520 --> 00:01:46.720
+can double power to an NVL 144 system,
+
+00:01:44.560 --> 00:01:48.399
+right? And so that that doubling of
+
+00:01:46.720 --> 00:01:50.799
+power can happen as soon as the
+
+00:01:48.399 --> 00:01:53.439
+packaging uh as soon as there's new
+
+00:01:50.799 --> 00:01:55.439
+developments in packaging. And so as
+
+00:01:53.439 --> 00:01:56.960
+engineers working on power, we don't
+
+00:01:55.439 --> 00:01:58.960
+want to be the bottleneck in the system.
+
+00:01:56.960 --> 00:02:00.399
+We don't want to be the gate for what's
+
+00:01:58.960 --> 00:02:02.000
+uh you know the next level of
+
+00:02:00.399 --> 00:02:03.439
+performance that we can get in the rack.
+
+00:02:02.000 --> 00:02:05.119
+And so that's where we need to be
+
+00:02:03.439 --> 00:02:09.119
+prepared for power levels to increase
+
+00:02:05.119 --> 00:02:11.039
+very quickly. And so in order to support
+
+00:02:09.119 --> 00:02:12.879
+uh these compute racks, we've we've
+
+00:02:11.039 --> 00:02:15.280
+essentially uh we have several power
+
+00:02:12.879 --> 00:02:20.879
+generations. Our first generation with
+
+00:02:15.280 --> 00:02:24.319
+GB200, GB300 uh was capable of 145 kW.
+
+00:02:20.879 --> 00:02:27.360
+Our second generation was uh basically
+
+00:02:24.319 --> 00:02:29.599
+capable of 330 kW and that's uh what
+
+00:02:27.360 --> 00:02:31.360
+we're using for Vera Rubin. And then now
+
+00:02:29.599 --> 00:02:33.920
+what we're working on for our generation
+
+00:02:31.360 --> 00:02:37.440
+three of power platforms
+
+00:02:33.920 --> 00:02:39.680
+is uh 100% liquid cooled power shelves.
+
+00:02:37.440 --> 00:02:41.840
+And with that, if we completely fill a
+
+00:02:39.680 --> 00:02:45.760
+rack and we push to the limits of a 50VT
+
+00:02:41.840 --> 00:02:49.120
+bus bar, we can support up to 570 kW.
+
+00:02:45.760 --> 00:02:51.200
+And so, um, and then finally, we are
+
+00:02:49.120 --> 00:02:53.599
+working on native 800volt racks where we
+
+00:02:51.200 --> 00:02:55.280
+take 800 volt DC directly into the rack.
+
+00:02:53.599 --> 00:02:57.360
+We're not prepared to show what that
+
+00:02:55.280 --> 00:03:00.560
+looks like quite yet, but, um, this
+
+00:02:57.360 --> 00:03:03.360
+generation 3 is, um, uh, is kind of a
+
+00:03:00.560 --> 00:03:05.280
+stepping stone to get us there. And so
+
+00:03:03.360 --> 00:03:07.440
+from a a rack power architecture
+
+00:03:05.280 --> 00:03:10.560
+standpoint, what we're doing is we're
+
+00:03:07.440 --> 00:03:13.840
+taking in 800 volt DC and then we're
+
+00:03:10.560 --> 00:03:16.959
+converting it to 54vt DC on the 54vt bus
+
+00:03:13.840 --> 00:03:18.959
+bar. And initially the the first step,
+
+00:03:16.959 --> 00:03:22.080
+the first phase in that development is a
+
+00:03:18.959 --> 00:03:25.120
+power rack where we take in uh AC and
+
+00:03:22.080 --> 00:03:27.440
+then we output 54volt DC or I'm sorry,
+
+00:03:25.120 --> 00:03:30.239
+we output 800 volt and then we uh take
+
+00:03:27.440 --> 00:03:33.200
+the 800 volt and go to 54 volts. And so
+
+00:03:30.239 --> 00:03:36.000
+what this allows us to do is longterm
+
+00:03:33.200 --> 00:03:38.720
+anything that needs to be 800 volt
+
+00:03:36.000 --> 00:03:43.360
+capable whether it's uh support racks uh
+
+00:03:38.720 --> 00:03:45.680
+networking racks uh even our um our
+
+00:03:43.360 --> 00:03:48.879
+compute racks right we as long as it's
+
+00:03:45.680 --> 00:03:50.720
+been designed around the um MGX bus bar
+
+00:03:48.879 --> 00:03:54.799
+we can take it and we can make it land
+
+00:03:50.720 --> 00:03:56.799
+in an AC data center or a um 800volt DC
+
+00:03:54.799 --> 00:03:59.680
+data center.
+
+00:03:56.799 --> 00:04:01.439
+And so then uh for Gen 3, why are we
+
+00:03:59.680 --> 00:04:03.599
+moving to liquid cooling? So there's se
+
+00:04:01.439 --> 00:04:05.519
+several reasons why we're moving to uh
+
+00:04:03.599 --> 00:04:07.599
+liquid cooling for the the first is the
+
+00:04:05.519 --> 00:04:12.159
+compute just has to move to liquid
+
+00:04:07.599 --> 00:04:14.000
+cooling. Um with a uh essentially with
+
+00:04:12.159 --> 00:04:15.519
+all of the heat sinks that we need in
+
+00:04:14.000 --> 00:04:17.840
+the system, there's just not enough
+
+00:04:15.519 --> 00:04:20.079
+volume to fit everything. And the second
+
+00:04:17.840 --> 00:04:24.400
+thing is once you uh once you actually
+
+00:04:20.079 --> 00:04:26.320
+take all of that um uh
+
+00:04:24.400 --> 00:04:27.919
+once you take the actual rack power,
+
+00:04:26.320 --> 00:04:29.680
+there's also just a a footprint
+
+00:04:27.919 --> 00:04:33.840
+limitation on how much power you can
+
+00:04:29.680 --> 00:04:35.600
+dissipate in the rack. And so um even if
+
+00:04:33.840 --> 00:04:37.199
+we were to for our power racks start
+
+00:04:35.600 --> 00:04:39.040
+filling it with power shelves, there's
+
+00:04:37.199 --> 00:04:42.000
+still going to be a limit of you know
+
+00:04:39.040 --> 00:04:44.320
+750 kilowatt to 1 megawatt of uh
+
+00:04:42.000 --> 00:04:47.120
+dissipation. And so then we need to move
+
+00:04:44.320 --> 00:04:48.880
+to liquid cooling for that reason. The
+
+00:04:47.120 --> 00:04:50.479
+next reason is all that fan power that
+
+00:04:48.880 --> 00:04:53.520
+we are dissipating, we can return that
+
+00:04:50.479 --> 00:04:55.280
+back to compute. Um, and also with uh
+
+00:04:53.520 --> 00:04:57.120
+power supplies specifically, we've been
+
+00:04:55.280 --> 00:04:59.520
+using a lot of electrolytic capacitors
+
+00:04:57.120 --> 00:05:01.840
+for AC input current shaping. And so
+
+00:04:59.520 --> 00:05:04.000
+putting those against a cold plate,
+
+00:05:01.840 --> 00:05:05.840
+right? It allows us to take down their
+
+00:05:04.000 --> 00:05:08.560
+temperature, which um with the Aranius
+
+00:05:05.840 --> 00:05:10.240
+law, we basically every 10° C, we can
+
+00:05:08.560 --> 00:05:13.280
+cool those capacitors. We double the
+
+00:05:10.240 --> 00:05:16.320
+lifetime. So that's beneficial. And then
+
+00:05:13.280 --> 00:05:18.160
+um we also can eliminate points of
+
+00:05:16.320 --> 00:05:19.759
+ingress. So anyone who's worked around
+
+00:05:18.160 --> 00:05:22.000
+power supplies and data centers, a
+
+00:05:19.759 --> 00:05:24.160
+common failure mode is dust shorts and
+
+00:05:22.000 --> 00:05:26.080
+debris and work that's happening. And if
+
+00:05:24.160 --> 00:05:28.720
+we can completely seal the PSU, we
+
+00:05:26.080 --> 00:05:30.639
+eliminate those failure modes. And then
+
+00:05:28.720 --> 00:05:33.520
+finally, what I'm showing here is the
+
+00:05:30.639 --> 00:05:35.759
+back of a a power rack just completely
+
+00:05:33.520 --> 00:05:38.960
+filled with power shelves. And as you
+
+00:05:35.759 --> 00:05:40.960
+can see, uh, trying to manage the the
+
+00:05:38.960 --> 00:05:42.400
+hot air flowing out over all those power
+
+00:05:40.960 --> 00:05:44.320
+cables, it's just completely
+
+00:05:42.400 --> 00:05:46.639
+unmanageable unless we move to liquid
+
+00:05:44.320 --> 00:05:50.320
+cooled power shelves.
+
+00:05:46.639 --> 00:05:53.280
+So then from a facility standpoint, uh,
+
+00:05:50.320 --> 00:05:55.759
+we we really want to improve the overall
+
+00:05:53.280 --> 00:05:57.600
+facility cooling efficiency. And so we
+
+00:05:55.759 --> 00:05:59.840
+can do that by eliminating chillers.
+
+00:05:57.600 --> 00:06:02.800
+That's where we're moving to the 45° C
+
+00:05:59.840 --> 00:06:05.199
+liquid inlet temperature. Um and by
+
+00:06:02.800 --> 00:06:08.639
+moving to a dry chiller system with
+
+00:06:05.199 --> 00:06:11.280
+closed loops, we can basically um save
+
+00:06:08.639 --> 00:06:15.360
+2.6 million gallons per megawatt per
+
+00:06:11.280 --> 00:06:17.280
+year when compared to um evaporative
+
+00:06:15.360 --> 00:06:19.360
+cooling, right? And so it's it's a much
+
+00:06:17.280 --> 00:06:24.000
+more effective way to cool that allows
+
+00:06:19.360 --> 00:06:27.600
+you to go to a um or allows for a better
+
+00:06:24.000 --> 00:06:29.840
+PUE. And uh we can also then with the
+
+00:06:27.600 --> 00:06:34.000
+better cooling capability increase the
+
+00:06:29.840 --> 00:06:36.479
+megawatt per uh meter squared. And uh
+
+00:06:34.000 --> 00:06:38.319
+heat reuse becomes a viable option. And
+
+00:06:36.479 --> 00:06:40.560
+I think one of the more interesting
+
+00:06:38.319 --> 00:06:42.560
+things is uh we can actually change the
+
+00:06:40.560 --> 00:06:44.080
+data center layout uh in new ways,
+
+00:06:42.560 --> 00:06:45.280
+right? We no longer have hotisle
+
+00:06:44.080 --> 00:06:47.600
+containment that you need to worry
+
+00:06:45.280 --> 00:06:49.759
+about. Um and you can now push racks
+
+00:06:47.600 --> 00:06:52.319
+right back to back or you can put uh
+
+00:06:49.759 --> 00:06:55.680
+even put racks into shipping containers
+
+00:06:52.319 --> 00:06:58.160
+more easily. So then uh up next uh Roya
+
+00:06:55.680 --> 00:06:59.599
+will talk more about um the work that
+
+00:06:58.160 --> 00:07:01.759
+Megat is doing.
+
+00:06:59.599 --> 00:07:03.680
+Thanks.
+
+00:07:01.759 --> 00:07:06.319
+So we all know about the benefits of
+
+00:07:03.680 --> 00:07:09.680
+liquid cooling coming into compute tray.
+
+00:07:06.319 --> 00:07:12.720
+Uh but as we uh move forward to uh much
+
+00:07:09.680 --> 00:07:14.800
+higher and higher rack density, there is
+
+00:07:12.720 --> 00:07:17.599
+uh even more thermal challenges or
+
+00:07:14.800 --> 00:07:20.240
+concerns that needs to be addressed. Um
+
+00:07:17.599 --> 00:07:24.080
+for us uh we solved this issue by making
+
+00:07:20.240 --> 00:07:28.240
+the uh power shelf liquid cooled. Um so
+
+00:07:24.080 --> 00:07:31.280
+our 2U 110 kilowatt power shelf is 100%
+
+00:07:28.240 --> 00:07:35.120
+liquid cooled with zero air flow inside.
+
+00:07:31.280 --> 00:07:37.599
+Um this is a complete fanless design.
+
+00:07:35.120 --> 00:07:41.360
+So all that heat is extracted through
+
+00:07:37.599 --> 00:07:44.160
+the facility liquid cooling loop. Um and
+
+00:07:41.360 --> 00:07:46.639
+so this fundamentally changes the whole
+
+00:07:44.160 --> 00:07:49.919
+infrastructure in the rack in the in the
+
+00:07:46.639 --> 00:07:52.319
+data hall. Um so there is no more uh
+
+00:07:49.919 --> 00:07:55.520
+traditional hot and cold aisle in the
+
+00:07:52.319 --> 00:07:57.840
+data hall. Um and relying on the
+
+00:07:55.520 --> 00:08:01.520
+high-speed fans and all the noise that
+
+00:07:57.840 --> 00:08:03.759
+comes with it. Those are all eliminated.
+
+00:08:01.520 --> 00:08:06.879
+So coming into power shelf when we
+
+00:08:03.759 --> 00:08:09.199
+remove the fan and fan power and all the
+
+00:08:06.879 --> 00:08:11.840
+failure points that comes with the fan
+
+00:08:09.199 --> 00:08:14.800
+we actually enable a much higher density
+
+00:08:11.840 --> 00:08:17.680
+power supply um and also more efficient
+
+00:08:14.800 --> 00:08:21.039
+use of the rack space and all the of
+
+00:08:17.680 --> 00:08:24.240
+course uh the white space that is there.
+
+00:08:21.039 --> 00:08:26.240
+Um so when we combine uh electronics and
+
+00:08:24.240 --> 00:08:28.720
+uh electronics and liquid there's
+
+00:08:26.240 --> 00:08:31.520
+obviously there is a much more robust
+
+00:08:28.720 --> 00:08:34.800
+approach to the safety. So we added so
+
+00:08:31.520 --> 00:08:37.599
+many more um liquid uh liquid uh sensors
+
+00:08:34.800 --> 00:08:41.120
+that is at power supply and power shelf
+
+00:08:37.599 --> 00:08:43.360
+level. Um so in case there is a leakage
+
+00:08:41.120 --> 00:08:45.839
+inside the power shelf uh it shuts down
+
+00:08:43.360 --> 00:08:49.120
+the power either power supply which is
+
+00:08:45.839 --> 00:08:51.120
+55 kilowatt or 110 kilowatt which is at
+
+00:08:49.120 --> 00:08:54.160
+power shelf level.
+
+00:08:51.120 --> 00:08:56.640
+Um I want to uh say that there is more
+
+00:08:54.160 --> 00:08:59.440
+benefits to the cooling. So all those
+
+00:08:56.640 --> 00:09:02.000
+components like ECAP and semiconductors
+
+00:08:59.440 --> 00:09:04.160
+are always running at lower temperature.
+
+00:09:02.000 --> 00:09:07.120
+So this increases the life of the
+
+00:09:04.160 --> 00:09:10.320
+components and also reliability.
+
+00:09:07.120 --> 00:09:12.320
+Um and finally uh our experience with EV
+
+00:09:10.320 --> 00:09:14.880
+manufacturing, putting machines and
+
+00:09:12.320 --> 00:09:17.200
+everything that we have today enables us
+
+00:09:14.880 --> 00:09:20.600
+to introduce this technology much faster
+
+00:09:17.200 --> 00:09:20.600
+to the market.
+
+00:09:21.120 --> 00:09:28.399
+So if you move both power compute and uh
+
+00:09:25.680 --> 00:09:31.360
+power shelf uh power converters both of
+
+00:09:28.399 --> 00:09:33.600
+them to liquid cooling uh our study
+
+00:09:31.360 --> 00:09:36.640
+shows that you can actually save on
+
+00:09:33.600 --> 00:09:39.279
+capex up to 10%. And that's mainly
+
+00:09:36.640 --> 00:09:42.320
+coming from white space saving uh
+
+00:09:39.279 --> 00:09:44.399
+compact uh power conversion and also
+
+00:09:42.320 --> 00:09:46.080
+labor saving and all that infrastructure
+
+00:09:44.399 --> 00:09:49.640
+that comes with the air cooling that is
+
+00:09:46.080 --> 00:09:49.640
+not needed anymore.
+
+00:09:50.800 --> 00:09:56.720
+So we have a mature design that is at 54
+
+00:09:53.680 --> 00:10:00.480
+volt DC. Uh we have released products
+
+00:09:56.720 --> 00:10:03.040
+for MVDIMGX series. Um and also
+
+00:10:00.480 --> 00:10:06.480
+introduce all the power only racks which
+
+00:10:03.040 --> 00:10:09.200
+is 800 volts DC. Uh our solution
+
+00:10:06.480 --> 00:10:10.880
+combines with uh all the DCDC power
+
+00:10:09.200 --> 00:10:13.680
+converters and modules that comes
+
+00:10:10.880 --> 00:10:16.079
+together with a compute tray. Uh as a
+
+00:10:13.680 --> 00:10:19.040
+next generation our approach is to go to
+
+00:10:16.079 --> 00:10:21.680
+facility level. So that means with SSD
+
+00:10:19.040 --> 00:10:25.200
+that we are going to release next year
+
+00:10:21.680 --> 00:10:28.560
+uh we bring the whole uh 800 volt DC bus
+
+00:10:25.200 --> 00:10:31.040
+bar to directly to the compute rack
+
+00:10:28.560 --> 00:10:34.000
+which is also liquid cooled. So that's
+
+00:10:31.040 --> 00:10:37.519
+how we introduce and make it much faster
+
+00:10:34.000 --> 00:10:41.160
+to deploy um for any next generation of
+
+00:10:37.519 --> 00:10:41.160
+AI data centers.
+
+00:10:41.279 --> 00:10:45.519
+Uh with that I'm passing to my colleague
+
+00:10:44.000 --> 00:10:47.120
+Chile.
+
+00:10:45.519 --> 00:10:50.399
+Okay.
+
+00:10:47.120 --> 00:10:53.200
+Okay. Uh I will introduce uh some um
+
+00:10:50.399 --> 00:10:57.760
+specific partial of design on the liquid
+
+00:10:53.200 --> 00:11:04.079
+cool. So the first one is uh four uh 54
+
+00:10:57.760 --> 00:11:07.200
+um 2 RU uh one uh 110 kilowatt liquid
+
+00:11:04.079 --> 00:11:11.279
+cool uh ACDC power shelf. So this shelf
+
+00:11:07.200 --> 00:11:13.839
+uh is a two two RU and we have two PSU
+
+00:11:11.279 --> 00:11:17.440
+inside. So the PSU actually is a hot
+
+00:11:13.839 --> 00:11:22.000
+swapable and so uh we have the shelf
+
+00:11:17.440 --> 00:11:26.160
+itself has dual AC um beeps and uh also
+
+00:11:22.000 --> 00:11:30.800
+it has um bus clip for the DC output and
+
+00:11:26.160 --> 00:11:34.560
+and this shelf can support the media
+
+00:11:30.800 --> 00:11:37.920
+uh MGX rack.
+
+00:11:34.560 --> 00:11:42.959
+So for the liquid um for the liquid cool
+
+00:11:37.920 --> 00:11:47.120
+u specs that the uh the the liquid um
+
+00:11:42.959 --> 00:11:51.839
+temperature is the range is from uh 17
+
+00:11:47.120 --> 00:11:56.160
+degree to uh 50 uh 60 degree.
+
+00:11:51.839 --> 00:12:00.240
+Uh the basic uh feature actually is uh
+
+00:11:56.160 --> 00:12:04.560
+uh the input is three-phase input and uh
+
+00:12:00.240 --> 00:12:11.720
+also it has um 10k juice the internal
+
+00:12:04.560 --> 00:12:11.720
+energy for uh input current uh shaping.
+
+00:12:13.040 --> 00:12:19.600
+Yeah, this is our liquid cool uh 800
+
+00:12:16.480 --> 00:12:23.279
+volt DC power projects.
+
+00:12:19.600 --> 00:12:26.959
+And for this rex actually it has eight
+
+00:12:23.279 --> 00:12:31.279
+um power shelves instead. So each power
+
+00:12:26.959 --> 00:12:34.320
+shelf can deliver 100 kilowatt power.
+
+00:12:31.279 --> 00:12:38.639
+Um so the total power can reach to 800
+
+00:12:34.320 --> 00:12:42.240
+kilowatt. Uh we have also the BBU um
+
+00:12:38.639 --> 00:12:46.639
+select you can use this uh BBU to uh
+
+00:12:42.240 --> 00:12:50.480
+deliver more uh deliver uh 89
+
+00:12:46.639 --> 00:12:54.880
+kilowatt discharge power and also it
+
+00:12:50.480 --> 00:12:58.240
+extends the hold up time to 90 seconds.
+
+00:12:54.880 --> 00:13:03.680
+This power shelf uh this power uh also
+
+00:12:58.240 --> 00:13:07.200
+have 300 W uh auxiliary power. We also
+
+00:13:03.680 --> 00:13:10.320
+um provide the capacitor tray for this
+
+00:13:07.200 --> 00:13:12.560
+uh rack. So you can also use um
+
+00:13:10.320 --> 00:13:15.560
+capacitor tree to shaping the input
+
+00:13:12.560 --> 00:13:15.560
+current.
+
+00:13:16.160 --> 00:13:23.360
+Uh this this page just show the upgrade
+
+00:13:20.959 --> 00:13:27.279
+from the air cooling to liquid cool
+
+00:13:23.360 --> 00:13:30.800
+liquid cooling. Uh you can see uh on the
+
+00:13:27.279 --> 00:13:34.800
+uh left side is uh air cool uh power
+
+00:13:30.800 --> 00:13:39.519
+supply. So uh it has a fan and it also
+
+00:13:34.800 --> 00:13:42.959
+has um bulky aluminum hings. Uh on the
+
+00:13:39.519 --> 00:13:45.200
+right side is just an example of the
+
+00:13:42.959 --> 00:13:47.279
+liquid cool power supply. So in the
+
+00:13:45.200 --> 00:13:50.079
+liquid cool power supply we removed the
+
+00:13:47.279 --> 00:13:52.959
+fan and and also removed the air
+
+00:13:50.079 --> 00:13:57.279
+channel. Um all the power components
+
+00:13:52.959 --> 00:14:01.600
+attached to the code plate at the bottom
+
+00:13:57.279 --> 00:14:04.320
+of the PSU. So with this configuration
+
+00:14:01.600 --> 00:14:07.279
+um it can reach high power density and
+
+00:14:04.320 --> 00:14:09.760
+can get a smaller size. So with this
+
+00:14:07.279 --> 00:14:13.199
+benefit we can easily to put more
+
+00:14:09.760 --> 00:14:17.120
+capacitor and to get higher energy
+
+00:14:13.199 --> 00:14:20.160
+storage uh instead.
+
+00:14:17.120 --> 00:14:24.000
+Um since this um configuration removes
+
+00:14:20.160 --> 00:14:27.839
+the fan so we uh seal seal fan power and
+
+00:14:24.000 --> 00:14:30.240
+also we uh the uh power components
+
+00:14:27.839 --> 00:14:33.120
+actually uh can
+
+00:14:30.240 --> 00:14:35.199
+um decrease the junction temperature
+
+00:14:33.120 --> 00:14:39.000
+such as the MOSFETs. So the total
+
+00:14:35.199 --> 00:14:39.000
+efficiency can be higher.
+
+00:14:40.320 --> 00:14:47.920
+uh and also you know that the liquid um
+
+00:14:43.600 --> 00:14:51.440
+heat um transfer coefficiency is much
+
+00:14:47.920 --> 00:14:57.040
+higher. So with this uh liquid cooling
+
+00:14:51.440 --> 00:15:00.639
+the uh hot spot can be um suppressed so
+
+00:14:57.040 --> 00:15:04.199
+it can realize a lower temperature and
+
+00:15:00.639 --> 00:15:04.199
+also high reliability.
+
+00:15:04.880 --> 00:15:11.839
+Uh this just a compare between the EV
+
+00:15:07.040 --> 00:15:14.240
+code plate and the um IPSU code plate.
+
+00:15:11.839 --> 00:15:19.199
+So the EV code plate actually is working
+
+00:15:14.240 --> 00:15:22.079
+and heavy and so we uh now we use the uh
+
+00:15:19.199 --> 00:15:24.959
+copper plate with embedded tubes. So
+
+00:15:22.079 --> 00:15:28.880
+this um cold plate actually we can make
+
+00:15:24.959 --> 00:15:32.720
+it thin and also the copper uh tube is
+
+00:15:28.880 --> 00:15:35.519
+um uh how to see things is dis uh much
+
+00:15:32.720 --> 00:15:39.880
+dissipation on the head. So we can use
+
+00:15:35.519 --> 00:15:39.880
+that one to get a lower temperature.
+
+00:15:44.000 --> 00:15:51.360
+Uh this is what we are doing for the uh
+
+00:15:47.519 --> 00:15:54.000
+100K 800 volt liquid cool ACDC power
+
+00:15:51.360 --> 00:15:57.120
+shelf. So we have two versions. One is
+
+00:15:54.000 --> 00:16:01.120
+two RU with BBU version and another one
+
+00:15:57.120 --> 00:16:03.839
+is the F RU
+
+00:16:01.120 --> 00:16:06.320
+with BBU
+
+00:16:03.839 --> 00:16:09.440
+and the two RU um without BBU actually
+
+00:16:06.320 --> 00:16:14.320
+is also um there is two PSU inside. So
+
+00:16:09.440 --> 00:16:19.759
+the PSU itself is hot swappable. Um
+
+00:16:14.320 --> 00:16:24.560
+the BB the F RU is just um uh that is
+
+00:16:19.759 --> 00:16:28.079
+just additional BBU modules uh to this
+
+00:16:24.560 --> 00:16:31.519
+to RU uh sh power shelves.
+
+00:16:28.079 --> 00:16:35.120
+Uh so uh the shelf itself have dual AC
+
+00:16:31.519 --> 00:16:40.959
+input beep and uh it can also support a
+
+00:16:35.120 --> 00:16:43.279
+media um MTX uh rack
+
+00:16:40.959 --> 00:16:50.079
+and the liquid uh inlet temperature
+
+00:16:43.279 --> 00:16:53.920
+range is um 17 C degree to 45 C degree.
+
+00:16:50.079 --> 00:16:59.040
+uh the two um power shaft on the energy
+
+00:16:53.920 --> 00:17:01.199
+in internal energy is u 10 k juice.
+
+00:16:59.040 --> 00:17:02.720
+Okay,
+
+00:17:01.199 --> 00:17:06.319
+that's
+
+00:17:02.720 --> 00:17:11.439
+uh this is another um product that is 95
+
+00:17:06.319 --> 00:17:14.640
+kilowatt uh 40 uh 54 uh volt liquid cool
+
+00:17:11.439 --> 00:17:19.600
+DCDC per shelf. Actually this one is
+
+00:17:14.640 --> 00:17:22.880
+used with um the 800 volt uh per shelf.
+
+00:17:19.600 --> 00:17:26.720
+So this is the one uh shelf actually is
+
+00:17:22.880 --> 00:17:28.480
+one PSU. Uh so this one is also hot
+
+00:17:26.720 --> 00:17:33.360
+swappable.
+
+00:17:28.480 --> 00:17:35.280
+Uh it can also support the uh media MTX
+
+00:17:33.360 --> 00:17:38.640
+rack.
+
+00:17:35.280 --> 00:17:42.679
+So the input is 800 volt. So output is
+
+00:17:38.640 --> 00:17:42.679
+uh 54 volt.
+
+00:17:43.679 --> 00:17:53.200
+Uh this is our um DCDC DCDC modules. Um
+
+00:17:48.799 --> 00:17:57.120
+it's 800 volt to 50 volt. So the first
+
+00:17:53.200 --> 00:18:01.520
+one, the left one is the PDB module and
+
+00:17:57.120 --> 00:18:03.679
+it's liquid cooling and the total power
+
+00:18:01.520 --> 00:18:06.480
+is um
+
+00:18:03.679 --> 00:18:09.200
+30 kilowatt
+
+00:18:06.480 --> 00:18:13.880
+and the second one the red one is the 10
+
+00:18:09.200 --> 00:18:13.880
+kilowatt DCTC module.
+
+00:18:16.080 --> 00:18:24.000
+So I think that's all for my portion.
+
+00:18:20.799 --> 00:18:25.919
+Yeah, if you have any uh question or if
+
+00:18:24.000 --> 00:18:29.840
+you in you are interested to our
+
+00:18:25.919 --> 00:18:32.960
+products, you can go to C19 booth and we
+
+00:18:29.840 --> 00:18:34.400
+can have a detailed discussion.
+
+00:18:32.960 --> 00:18:37.360
+Yeah. Thank you.
+
+00:18:34.400 --> 00:18:40.520
+Thank you.
+
+00:18:37.360 --> 00:18:40.520
+Thank you.
+

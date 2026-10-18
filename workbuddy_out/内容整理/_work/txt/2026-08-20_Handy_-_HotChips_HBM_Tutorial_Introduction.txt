@@ -1,0 +1,196 @@
+
+--- p1 ---
+OBJECTIVE
+ANALYSIS
+Memory: Feeding AI’s 
+Voracious Hunger for Data
+Jim Handy
+OBJECTIVE ANALYSIS
+1
+--- p2 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Agenda
+1. The current AI memory market
+2. Future directions & solutions
+3. Today’s instructors
+2
+--- p3 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Hyperscalers’ Capital Spending Binge
+$
+$50
+$100
+$150
+$200
+Property and Eqp’t Spending ($B)
+Hyperscale Datacenter Capital Spending
+Alphabet
+Meta
+Amazon
+Azure
+Alibaba
+Apple
+3
+--- p4 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+3 Drivers of DRAM Shortage
+• AI spending more than anticipated
+• Bandwidth requirements consume inordinate 
+wafer volume
+–HBM takes 3X the die area of DDR
+• DRAM wafer volume static for >10 years
+–New capacity takes >2 years to install
+4
+--- p5 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Result: Record Memory Revenues
+$
+$50
+$100
+$150
+$200
+DRAM + NAND Revenues ($B)
+Samsung
+Kioxia
+SanDisk
+Micron
+SK hynix
+5
+--- p6 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Most of Growth is from Pricing
+$0.00
+$0.05
+$0.10
+$0.15
+$0.20
+$0.25
+$0.30
+$0.35
+$0.40
+$0
+$2
+$4
+$6
+$8
+$10
+$12
+$14
+$16
+$18
+NAND Flash Lowest $/GB
+DRAM Lowest Spot $/GB
+Branded DRAM
+NAND
+DRAM
+7.1X
+NAND
+6.9X
+--- p7 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+HBM & DRAM Future Dynamics
+• New report from Objective Analysis
+• Covers all perspectives
+–What is HBM and why it’s so costly
+–Supply Chain – who buys it and why
+–Price dynamics: HBM vs. DRAM
+–Forecast (Revenues, units, ASP)
+• Downloadable in September:
+–Objective-Analysis.com/reports
+7
+--- p8 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+2. Long-Term Outlook
+8
+--- p9 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Moving to Inference
+• Inference resources span a very wide range
+–Microcontrollers sufficient for the lowest end
+–Hyperscale datacenters remain at the top (LLMs)
+• Ongoing algorithm refinements
+–Today’s data movement issues may fade out
+• Opportunities for processing in memory (PIM)
+9
+--- p10 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Processing In/Near Memory
+• Use the base die in HBM
+• Custom memory chips for higher performance
+• Analog Neural Nets (ANN) for the low end
+• Software support is currently weak
+–This is a gating factor
+10
+--- p11 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+2026 Memory Wall Looks Different
+11
+--- p12 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Reducing Data Traffic
+The bandwidth requirement of a 
+communications channel is inversely 
+proportional to the intelligence at either end
+12
+AI
+AI
+--- p13 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+“AI Everywhere”
+• AI will become invisible
+• AI will drive down costs
+• Everyone will use agents all the time
+• Similar to earlier technology adoptions:
+–Semiconductors
+–Microprocessors & microcontrollers
+–The Internet
+13
+--- p14 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+What’s Being Done About It?
+14
+--- p15 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+3. Your Instructors
+15
+--- p16 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Raghu Sreeramaneni, Micron
+Evolving memory architectures for AI
+Fellow, HBM Design Architecture
+Micron Technology
+16
+--- p17 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Sangwook Han, PhD, Samsung
+HBM Base Die: How will HBM evolve in the 
+future by utilizing the logic process?
+Design Lead, Custom HBM4E
+Samsung Electronics
+17
+--- p18 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Jaesik Lee, SK hynix
+Advanced Packaging for High Bandwidth 
+Memory (HBM)
+VP of Package Engineering
+SK hynix America
+18
+--- p19 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+D-Matrix: 3D DRAM based 
+Accelerator for Generative Inference
+Founder/CTO, D-Matrix
+19
+Sudeep Bhoja
+Software Engineer, Meta
+Aayush Ankit
+--- p20 ---
+OBJECTIVE ANALYSIS – www.OBJECTIVE-ANALYSIS.com
+Oxmiq Labs: HBF in AI Compute:
+A System Architect’s view
+System Architect, Oxmiq
+20
+Anurag Agrawal
+Architect, Praxmati
+Radhakrishna Giduthuri

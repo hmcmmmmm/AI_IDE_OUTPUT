@@ -1,0 +1,75 @@
+<Slide style={{ width: 1280, height: 720, background: '#0E1420', position: 'relative', overflow: 'hidden' }}>
+
+    <Box style={{ position: 'absolute', left: 72, top: 150, width: 288, flexDirection: 'column' }}>
+        <Text style={{ fontFamily: 'Georgia', fontSize: 13, letterSpacing: 4, color: 'rgba(232,237,243,0.38)' }}>CONTENTS</Text>
+        <Text style={{ fontSize: 46, fontWeight: 'bold', lineHeight: 1.25, color: '#E8EDF3', marginTop: 16 }}>目录</Text>
+        <Box style={{ width: 56, height: 2, background: '#C8A15A', marginTop: 18, marginBottom: 20 }} />
+        <Text style={{ fontSize: 17, lineHeight: 1.75, color: 'rgba(232,237,243,0.55)' }}>四章，<br />四个必须回答的问题。</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 476, width: 288, flexDirection: 'column' }}>
+        <Text style={{ fontFamily: 'Georgia', fontSize: 118, lineHeight: 1.0, letterSpacing: -4, color: 'rgba(232,237,243,0.06)' }}>04</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 420, top: 142, width: 788, flexDirection: 'column' }}>
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-start', height: 104 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 32, lineHeight: 1.2, color: '#C8A15A', width: 62 }}>01</Text>
+            <Box style={{ flexDirection: 'column', gap: 9, width: 726 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', width: 726 }}>
+                    <Text style={{ fontSize: 25, fontWeight: 'bold', lineHeight: 1.3, color: '#E8EDF3' }}>起点：一行十九个字</Text>
+                    <Text style={{ fontFamily: 'Georgia', fontSize: 14, lineHeight: 1.3, color: 'rgba(232,237,243,0.40)' }}>P3–P4</Text>
+                </Box>
+                <Text style={{ fontSize: 15, lineHeight: 1.6, color: 'rgba(232,237,243,0.50)' }}>为什么这一行值得单独拆——它把「做出来了」和「能重复做出来」切成两件事。</Text>
+            </Box>
+        </Box>
+        <Box style={{ width: 788, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-start', height: 104 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 32, lineHeight: 1.2, color: '#C8A15A', width: 62 }}>02</Text>
+            <Box style={{ flexDirection: 'column', gap: 9, width: 726 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', width: 726 }}>
+                    <Text style={{ fontSize: 25, fontWeight: 'bold', lineHeight: 1.3, color: '#E8EDF3' }}>三级验收与覆盖率</Text>
+                    <Text style={{ fontFamily: 'Georgia', fontSize: 14, lineHeight: 1.3, color: 'rgba(232,237,243,0.40)' }}>P5–P9</Text>
+                </Box>
+                <Text style={{ fontSize: 15, lineHeight: 1.6, color: 'rgba(232,237,243,0.50)' }}>L10 / L11 / L12 各自证明什么、不证明什么；覆盖率如何不被一个百分比糊弄。</Text>
+            </Box>
+        </Box>
+        <Box style={{ width: 788, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-start', height: 104 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 32, lineHeight: 1.2, color: '#C8A15A', width: 62 }}>03</Text>
+            <Box style={{ flexDirection: 'column', gap: 9, width: 726 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', width: 726 }}>
+                    <Text style={{ fontSize: 25, fontWeight: 'bold', lineHeight: 1.3, color: '#E8EDF3' }}>两个物理面：线缆与液路</Text>
+                    <Text style={{ fontFamily: 'Georgia', fontSize: 14, lineHeight: 1.3, color: 'rgba(232,237,243,0.40)' }}>P10–P12</Text>
+                </Box>
+                <Text style={{ fontSize: 15, lineHeight: 1.6, color: 'rgba(232,237,243,0.50)' }}>为什么偏偏点名这两类，以及它们的缺陷为什么在样机阶段不暴露。</Text>
+            </Box>
+        </Box>
+        <Box style={{ width: 788, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-start', height: 104 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 32, lineHeight: 1.2, color: '#C8A15A', width: 62 }}>04</Text>
+            <Box style={{ flexDirection: 'column', gap: 9, width: 726 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', width: 726 }}>
+                    <Text style={{ fontSize: 25, fontWeight: 'bold', lineHeight: 1.3, color: '#E8EDF3' }}>从误区到工具</Text>
+                    <Text style={{ fontFamily: 'Georgia', fontSize: 14, lineHeight: 1.3, color: 'rgba(232,237,243,0.40)' }}>P13–P16</Text>
+                </Box>
+                <Text style={{ fontSize: 15, lineHeight: 1.6, color: 'rgba(232,237,243,0.50)' }}>「样机可运行即可量产」错在哪一步，以及用什么判据替换它。</Text>
+            </Box>
+        </Box>
+        <Box style={{ width: 788, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 420, top: 588, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+        <Box style={{ width: 5, height: 5, background: '#C8A15A' }} />
+        <Text style={{ fontSize: 15, color: 'rgba(232,237,243,0.45)' }}>阅读建议：P6、P8、P11 三页可独立抽出，作为单独议题上会。</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 660, width: 1136, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 678 }}><Text style={{ fontSize: 14, color: 'rgba(232,237,243,0.35)' }}>可制造性评估维度解析</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 678 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, color: 'rgba(232,237,243,0.45)' }}>02 / 16</Text></Box>
+
+</Slide>

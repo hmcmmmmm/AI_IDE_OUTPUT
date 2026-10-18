@@ -1,0 +1,635 @@
+
+--- p1 ---
+Diamond Rapids 
+Intel’s next generation Xeon CPU
+Krishnakanth Sistla  - Intel Fellow | Chief Architect Xeon Performance
+--- p2 ---
+2
+Evolving Data Center Workloads ….
+… push the frontier of CPU architecture
+Higher performance per 
+thread & system level 
+optimization
+Maximize 
+performance 
+per watt
+AI, cryptography, 
+compression, 
+networking, …
+Architecture 
+modularity, coherency 
+& scale up
+Memory encryption, 
+isolation, RoT,
+ RAS,….
+Performance 
+Efficiency 
+Acceleration 
+Scalability  
+Security  
+2
+--- p3 ---
+3
+Intel
+® Xeon
+® Architecture Journey
+3
+Ring
+Mesh
+Tiled Mesh
+Modular Mesh 
+2.5D & 3D  
+Disaggregated 2.5D  
+Monolithic  
+Monolithic   
+Disaggregated 2.5D  
+Sapphire Rapids, 
+Emerald Rapids
+Granite Rapids, 
+Sierra Forest   
+Haswell, 
+Broadwell, …
+Skylake, Cascade Lake, 
+Cooper Lake, Ice Lake
+Function Based Partition
+Tile Based Partition
+Centralized
+Function Based 
+Partition
+3D Mesh 
+Centralized
+Clearwater 
+Forest
+Intel® Xeon® 6 
+with P-cores and E-cores
+Intel® Xeon® 6+ 
+processors
+4th & 5th  Gen Intel® Xeon® 
+Scalable processors
+1st, 2nd , 3rd Gen Intel® Xeon® 
+Scalable processors
+Intel® Xeon® 
+processors
+--- p4 ---
+Tiled Mesh
+Modular Mesh 
+2.5D & 3D  
+Disaggregated 2.5D  
+Disaggregated 2.5D  
+Sapphire Rapids, 
+Emerald Rapids
+Granite Rapids, 
+Sierra Forest   
+Function Based Partition
+Tile Based Partition
+Function Based 
+Partition
+3D Mesh 
+Clearwater 
+Forest
+Intel® Xeon® 6 
+with P-cores and E-cores
+Intel® Xeon® 6+ 
+processors
+4th & 5th  Gen Intel® Xeon® 
+Scalable processors
+n® 
+The Next Frontier of 
+DC CPU Architecture
+Defined by how effectively the processor 
+moves, processes and protects 
+data at hyperscale
+4
+--- p5 ---
+5
+Centralized I/O & Memory in Fabric Hub  
+Scalable Compute Building Blocks
+Unified Memory Fabric
+Flexible I/O Fabric
+Fan -out Fabric 
+Architecture   
+5
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Fabric Hub
+Accelerators
+I/O
+I/O 
+I/O
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Fabric Hub
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Accelerators
+I/O
+I/O 
+I/O
+Compute Building Block
+Cores + L2$
+Shared LLC
+--- p6 ---
+6
+Centralized I/O & Memory in Fabric Hub  
+Scalable Compute Building Blocks
+Unified Memory Fabric
+Flexible I/O Fabric
+Fan -out Fabric 
+Architecture   
+6
+Fabric Hub
+Accelerators
+I/O
+I/O 
+I/O
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Fabric Hub
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Accelerators
+I/O
+I/O 
+I/O
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+--- p7 ---
+Scalable Compute 
+Building Blocks 
+Scalable number of core chiplets per Base Tile
+LLC in Base Tile shared across Compute Building Block 
+Scalable number of Compute Building Blocks / Chip
+Up to 16 cores per Core Chiplet
+3D Xbar connects cores to LLC on Base Tile
+7
+Compute Building Block
+Shared LLC
+Die 2 Die
+Caching Agent & Snoop Filter
+CBB
+Core
+Cores + L2$
+Core Chiplet 
+3DXbar
+Base Tile 
+Base Tile 
+Core Chiplet
+--- p8 ---
+8
+Centralized I/O & Memory in Fabric Hub  
+Scalable Compute Building Blocks
+Unified Memory Fabric
+Flexible I/O Fabric
+Fan -out Fabric 
+Architecture   
+8
+Fabric Hub
+Accelerators
+I/O
+I/O 
+I/O
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Fabric Hub
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Accelerators
+I/O
+I/O 
+I/O
+--- p9 ---
+9
+Centralized I/O & Memory in Fabric Hub  
+Scalable Compute Building Blocks
+Unified Memory Fabric
+Flexible I/O Fabric
+Fan -out Fabric 
+Architecture   
+9
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Compute Building Block
+Cores + L2$
+Shared LLC
+Fabric Hub
+Accelerators
+I/O
+I/O 
+I/O
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Fabric Hub
+DDR
+DDR
+DDR
+DDR
+DDR
+DDR
+Accelerators
+I/O
+I/O 
+I/O
+--- p10 ---
+Unified Memory Fabric 
+Scalable 
+Fabric Hub
+Flexbus I/O Fabric
+Flexible I/O 
+Subsystem
+I/O 
+PHY
+I/O 
+Cache
+Accelerators
+I/O
+ Interconnect
+Snoop 
+Filter
+Memory Subsystem with up to 1.6 TB/s bandwidth
+DDR
+PHY
+Home 
+Agent
+Snoop 
+Filter
+Memory 
+Value
+ Function
+Mem
+Controller
+Mem
+Encryption
+Mem
+Interconnect
+10
+--- p11 ---
+Unified Memory 
+Fabric
+Memory Subsystem
+DDR 
+PHY
+MC
+MSE
+MC
+MSE
+MVF
+Home Agent
+MVF
+HA & HSF
+Memory 
+Inter-
+connect
+Memory Encryption Engine (MSE)
+supports DDR or CXL memory encryption 
+Memory Controller (MC)
+schedules DDR accesses with robust ECC, power 
+management, and row-hammer protection 
+Home Agent (HA) & Home Snoop Filter (HSF)
+On-Die Home Snoop Filter for coherency
+Memory Value Function (MVF)
+supports CXL memory (1LM or Flat2LM) and mirroring
+--- p12 ---
+12
+Flexbus  I/O
+Fabric 
+12
+IO Interconnect
+Flexible I/O Subsystem 
+HS I/O PHY
+HS I/O PHY
+HS I/O PHY
+HS I/O PHY
+I/O Cache
+SF
+CA
+I/O Cache
+IAA
+DSA
+QAT
+QAT
+IAA
+DSA
+I/O Cache
+SF
+CA
+I/O Cache
+I/O PHY 
+4 x 16 high speed I/O lanes per Fabric Hub
+Additional 4 lanes of PCIe Gen4 for Platform Infra
+I/O Caching & Filtering
+Up to 16MB of IO Cache, with on-die Snoop filtering 
+and caching agent for coherency
+Accelerator Complexes 
+Each Fabric Hub houses 2 Accelerator complexes
+with QAT/DSA/IAA
+Flexible I/O Subsystem
+Each x16 can be used as PCIe Gen6, CXL 3, UPI 3 ports, 
+or some combinations
+--- p13 ---
+Fabric Hub power and thermal management
+MR4 based memory thermal management
+L0p support on both UXI and PCIe
+Use-case based power direction to I/O & Mem 
+Core and CBB power management
+Power & Thermal 
+Management
+Distinct DVFS domains
+New core idle power state with L2 cache retention
+Priority Core Turbo support
+Core DVFS 
+domain
+CBB uncore  
+DVFS domain
+I/O DVFS 
+domain
+Memory DVFS 
+domain
+13
+Compute Building Block
+Shared LLC
+Die 2 Die
+Caching Agent & Snoop Filter
+Core
+Core
+Core
+Core
+Core
+3DXbar
+Cores + L2$
+--- p14 ---
+14
+Diamond 
+Rapids
+ 
+14
+--- p15 ---
+1515
+Memory
+Compute
+I/O
+Security & 
+Acceleration
+Diamond Rapids 
+SoC Overview
+4 Compute Building Blocks
+Up to 1.28 GB of LLC across all CBBs
+Up to 256 cores total 
+16 channels
+Up to 8000MT/s DDR5
+Up to 12800MT/s MRDIMM
+128 Lanes
+PCIe Gen 6, CXL 3.0, UPI 3
+8 lanes PCIe Gen 4 
+Intel TDX, Intel TDX connect, Intel SGX
+Intel QAT, Intel DSA, Intel IAA
+Intel AMX, AVX-10
+--- p16 ---
+16
+Diamond Rapids 
+Construction
+Hybrid Bonding Interface (HBI)
+Foveros 3D Direct
+Die to Die Interface
+Substrate Copper Links (UCIe-S) 
+16x Core Chiplets
+2x Fabric Hub Tile
+4x Base Tile
+Substrate
+IMH Tile
+IMH Tile
+Diamond Rapids Cross -section
+Base Tile
+Cores
+Cores
+Cores
+Cores
+Base Tile
+Cores
+Cores
+Cores
+Cores
+16
+--- p17 ---
+33% tighter skew corners
+New 5th  logic Vt option between ULVT and LVT
+Improved process variation
+Expanded low-power,  high-performance device offerings
+PowerBoost dual-contact low-resistance option
+Intel 18A-P 
+17
+-18%
+Power
+18A -P
+18A
+Performance
+18A -P
+18A
+Thermal 
+Resistance
+18A
+18A -P
+Via 
+Resistance
+18A
+18A -P
++9 %
+-10-30 %
+-20 -40 %
+*based on an industry standard core sub block
+--- p18 ---
+Intel
+® Advanced 
+Performance 
+Extensions 
+Recompile without source code changes
+Performance increase on recompiled SW
+Legacy x86 code compatible
+Intel® APX
+18
+New ISA
+New
+Capabilities
+New State
+Built on
+Enabled by
+Spill/fill optimization instructions
+Conditional ISA
+64-bit absolute branch
+Three-operand (NDD) instructions
+Flag suppression support
+XSAVE-enabling
++16 GPRs (total of 32 integer)
+New encoding for r16-r31
+--- p19 ---
+19
+Security / RAS 
+On-die snoop filter
+replaces DRAM-resident directory state
+Preserves full ECC protection 
+by eliminating directory storage in memory
+Lower latency & reduced coherence traffic 
+for cache lookups
+Simpler memory subsystem 
+with improved reliability
+Directory 
+moved on-die
+Previous Products
+Diamond Rapids
+DRAM
+Data
+ECC
+Directory State
+On-die snoop 
+filter directory
+CPU
+DRAM
+Data
+ECC
+19
+Full ECC protection
+--- p20 ---
+20
+Designed for 
+Next Gen Agentic 
+AI Infrastructure
+20
+Matrix Multiplication Acceleration
+Enhanced vector instruction sets  
+Enhanced vector instruction sets  
+High-Bandwidth, Low Latency I/O Fabric 
+High Performance Core Count
+High-performance core count
+Matrix multiplication acceleration & 
+Enhanced vector instruction sets  
+Large, fast, coherent cache
+High bandwidth memory support 
+High-Bandwidth, low latency I/O Fabric 
+256 
+cores
+AMX & AVX 10.2
+With FP8, FP16 & BF16 support
+1.28GB 
+Last Level Cache
+1.6TB/s
+12800MT/s MRDIMM 
+128 Lanes 
+up to 2TB/s Bi
+-directional 
+bandwidth
+Up to
+--- p21 ---
+21
+Diamond Rapids 
+Performance 
+Efficiency 
+Acceleration 
+Scalability  
+Security  
+High-throughput 
+Compute
+Efficient 
+Performance
+Infrastructure & AI 
+Acceleration
+Modular  
+Architecture
+Multi Level Security
+Intel’s next generation Xeon CPU 
+with performance cores
+Up to 256 cores
+Built-with 18A-P
+Massive LLC
+Unified Memory Fabric
+Independent  DVFS
+Intel AMX
+AVX 10.2 
+Intel QAT / Intel DSA / Intel IAA 
+Lower Power I/O Fabric
+Fan-out Fabric Architecture 
+Modular CBBs
+Foveros 3D Direct (HBI)
+Intel TDX, Intel SGX
+Improved RAS
+Enhanced QoS & Telemetry 
+21
+--- p22 ---
+22
+Notices & Disclaimers
+22
+Code names are used by Intel to identify products, technologies, or services that are in development and not publicly availab
+le. 
+These are not "commercial" names and not intended to function as trademarks. 
+Performance varies by use, configuration and other factors. Learn more at intel.com/performanceindex .
+Performance results are based on testing as of dates shown in configurations and may not reflect all publicly available updat
+es.  See backup 
+for configuration details.  No product or component can be absolutely secure. 
+Your costs and results may vary. 
+Intel technologies may require enabled hardware, software or service activation.
+© Intel Corporation.  Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries.  Other names and brands
+may be claimed as the property of others.
+--- p23 ---
+Thank You

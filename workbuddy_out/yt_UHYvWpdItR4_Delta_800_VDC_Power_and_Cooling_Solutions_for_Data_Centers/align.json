@@ -1,0 +1,184 @@
+[
+ {
+  "idx": 1,
+  "start": 3.0,
+  "end": 93.0,
+  "rep_time": 48.0,
+  "en": "Okay, good afternoon and welcome to the OCP Summit. Um, thank you for joining the um, executive session today. So, I have the honor to be on stage with Mike To from Nvidia.  It's my honor, too, Ralph.  So, he's a principal electrical engineer in charge of AI factory power infrastructure.  Yeah, good to be here.  Okay, so my name is Ralph Piper. I'm the R&D director of um, custom design business unit located in Germany. Um, since beginning of this year, I'm the uh, member of the advisory board of the OCP. And today we want to present the 800-V power and cooling solutions for data centers. So, why are we here today? So, we all know the power demand of the AI factories is increasing exponentially. And uh, the 50-V um, voltage is not the right choice anymore to power um, compute rack with 1 MW of power dissipation. So, uh, we will head to um, 800-V distribution. And uh, we will present now solutions for all cluster sizes. Um, for sure also um, cooling will be uh, essential or critical for this power levels. And at the end of the presentation, we will also show some cooling solutions from Delta. So, who is Delta? So, we were founded by Bruce Cheng um, 1971. And over the last"
+ },
+ {
+  "idx": 2,
+  "start": 93.0,
+  "end": 123.0,
+  "rep_time": 108.0,
+  "en": "five and a half decades, we came we became the worldwide leading manufacturer of power supplies and brushless DC fans. Um, in the last 15 years, we saved around 31 million tons carbon emission by um, steadily increasing our efficiency of our products. So, now I had hand over to Mike. He will tell us why we choose 800 V.  Wow, it's a full house today. For this OCP, you're going to have about 800 V DC a lot. Just myself, I got six sessions. So, can't believe that. It's crazy. But, before you dive into it, we have to understand why. Right? People are like, \"800 V DC, are you really serious? Is there really a need?\" Right? So, I think"
+ },
+ {
+  "idx": 3,
+  "start": 123.0,
+  "end": 237.0,
+  "rep_time": 180.0,
+  "en": "we'll give some quick feedback. Um but they have two visions. Um from Jensen, there are only two strong directions. Number one, how we can optimize power for tokens. And number two, how we can do fast deployment. Right? It's simple, right? How hard can that be, right? Jensen always says that. Uh but we need everybody here to help. Seriously. So, on the optimized token ones, number one is scalable architecture. We are driving 800 V DC. It's not just for the voltage. It's going to be more efficient by cutting out the uh conversion. It's also going to be more compact. Less copper from three three three-phase to two-phase. Uh then we're also talking about how we're going to really drive the the next-generation of compute density. Right? So, we're pushing towards the the the 800 V DC backbone native backbone design. Right? So, we have to have the involvement to support that. And also, exactly about utilization. Right? You heard about max LPS from the last session. Right? This is exactly where with 800 V DC with energy storage, we got and also the control, we can be more efficient to subscribe more GPU loads to the fixed amount of the the the utility. Then on the right side is fast deployment. Right? So, from now on, we have we're going to show the architecture. AC-DC coexistence is critical. Right? So, we want to make sure that we have these two options for now for the for for the industry. Then same time, this becomes the the exactly driver enabler for 800 V DC to support module design. And with that, this module can be faster deployment. You can do parallel construction, prefab, pre-built, pre-commission all together as a parallel path."
+ },
+ {
+  "idx": 4,
+  "start": 237.0,
+  "end": 303.0,
+  "rep_time": 270.0,
+  "en": "Tomorrow, no, Wednesday, we have a session with Jared Huntington. We're going to release the the latest road map. But, this has been announced back in May. As you know, speed of light, right? Every day things are changed. But, to pay attention is a four parallel line. That reflects to the fourth generation of the rack power capacity. Right? So, very quickly we're at Gen 2 today. In via 72, 54 V DC main plane. So, yes, today we still fueling a a powering AC to the rack as default. But, that means we also ready for DC. Why? We can do DC DC power shelf. 800 DC 254 DC, there's no problem. And very quickly for the Gen 3, the next generation, we're pushing 570 kW per per rack capacity by using eight power shelf straight. And the DC DC power shelf in this case we full liquid cool. And the Gen 4 is still secret here, but that's exactly a native ALC rack, which is planned for 2028 deployment."
+ },
+ {
+  "idx": 5,
+  "start": 303.0,
+  "end": 456.0,
+  "rep_time": 306.0,
+  "en": "Where is the Okay. Okay, don't want to click too many times. So, we call this a quick distribution options, right? So, just like go to ice cream shop, everybody like different flavors. Cuz they have different personality in this case have different use cases. So, to the file apps today, AC still works, right? But, we are reaching a limit. And we got ABC, that's really depends on where you are. For A, we talk about smaller scale enterprise single row. Treat as adapter, you travel around, easy per computer rack. You put adapter, you put a power rack as a side car, directly get it integrated. Fast deployment. Option B is where we treat a pod, a cluster as a target audience, right? To feed 800 C on adjacent at the end at the end of the row. So, this design way can be functional, such as colos, such as neo clouds, you can treat different cluster by feeding different voltages without without touching the gray space or the white space, just at the end of the row. And we get to the next chapter, option C. You're going to hear this a lot. This is the future, where we're going to open a new architecture. Treat the whole building. You see no more blue? Straight from medium voltage AC to to to 800 DC straight. I'll turn it to Ralph.  Okay. So, here you see our 800 V transition plan, how we see this from top to bottom is the time. And from left to right um is the the voltage conversion. Um so, the the top row, the three green boxes, you see they are still um powered by a 400 or 400 V AC, uh which is the normal three-phase uh distribution in the building, and um it's converted with a line frequency transformer from the medium voltage grid. So, the first green two green boxes are 50 V units, and the third one, this is uh like option A from Mike. So, this is a side car. So, whenever the uh IT rack power goes beyond 250 kW, um we recommend to switch to the 800 V supply voltage, where we can distribute the power with a cable. And then on the bottom, you see the um SST, solid-state transformer, or TRU, transistor rectifier unit, which directly converts the medium voltage into 800 V building distribution. This is the option C. So, to have a quick look to the 50 V um"
+ },
+ {
+  "idx": 6,
+  "start": 456.0,
+  "end": 492.0,
+  "rep_time": 474.0,
+  "en": "products we have. So, um starting with the two uh single-phase units. So, we have 5,500 W on the left, and then the right one is a 12 kW HPRV2. And uh we also offer now the 18.5 kW three-phase units. Um we have a a one U shelf with four units, which is 74 kW, as well as the VR200 shelf. So, it's three RU with 110 kW. Um here you see um a normal uh single-line diagram of a traditional uh data center."
+ },
+ {
+  "idx": 7,
+  "start": 492.0,
+  "end": 531.0,
+  "rep_time": 510.0,
+  "en": "Uh today, we will focus on the dynamics of the GPU, which is very uh stiff load steps, and we don't want to see this on the AC grid. So, one option is this um orange-circled um uh cap shelf. So, we can deploy a 50-V or a 400-V cap shelf to the bus to cope with the dynamics, but as this is an external unit, um it's always only reacting on the load steps. So, it's always a little bit too late. Um so, a much better option is uh to put"
+ },
+ {
+  "idx": 8,
+  "start": 531.0,
+  "end": 597.0,
+  "rep_time": 564.0,
+  "en": "the energy storage into the power supply. So, um on the right side, you see this EDPP load um pulse pattern. So, it starts with 180 to 200% load for a few hundred microseconds, and then followed by a 50-ms 150% load. And then we are below the uh TDP uh limit. Um on the top in the middle, you see a single-phase unit with three bulk caps, and the energy is not enough to cope with this 50-ms uh load step. Um and the result as you see on the left side, um we see this on the AC input um current and on the grid. Um but the energy provider or grid provider want to see a very clean um input current. So, we put a lot of caps into this three-phase unit, 16 pieces. And um here on this um scope pictures, we see the impact. So, the top one again is the single-phase unit um where the blue curve is the output load and the the yellow curve is the input current. So, you see exactly the pulsating uh input current on the input."
+ },
+ {
+  "idx": 9,
+  "start": 597.0,
+  "end": 639.0,
+  "rep_time": 618.0,
+  "en": "Um where else on the three-phase unit in the bottom, we have the same load steps on the output and the bulk voltage, the green one, this is going up and down, swinging by 150 um V in sync with the output load in sync with the output load and uh the result is a very perfect flat um yeah, input current. Okay, back to Mike telling us about bigger cluster sizes."
+ },
+ {
+  "idx": 10,
+  "start": 639.0,
+  "end": 657.0,
+  "rep_time": 645.0,
+  "en": "Yeah, so you heard about Ralph about Delta solution, right? That's amazing about how things really get done. Um I have to stay on your position. See, okay. So, this is option A, right? We're talking about adapters, right? You can see right in the middle serving a 2VR today. Um you know, to your right, you see the pictures about where you're going to black in boost the 100 amp AC whips still coming down. Uh there's there there's still quite many cables uh"
+ },
+ {
+  "idx": 11,
+  "start": 657.0,
+  "end": 702.0,
+  "rep_time": 678.0,
+  "en": "for AC input. And then the blue cable representing the adjacent uh power cables, right? At 125 amp DC. Straight through the wall and connected to to to the power shelf. There's no DC bus bar. Okay, so for this one from regulatory from arc flash is very very minimal concern, right? And we're utilizing a whip design to protect the IT personnel. I think it's a power problem. Okay. And then we talk about the HDA center enterprise could be a best use cases. So you can see per row, you can see the black in the middle is where the power rack's going to position. But you can see this also expanding the row length.  Okay. So here's we see two products, so two sidecars. So on the left is the OCP"
+ },
+ {
+  "idx": 12,
+  "start": 702.0,
+  "end": 717.0,
+  "rep_time": 708.0,
+  "en": ""
+ },
+ {
+  "idx": 13,
+  "start": 717.0,
+  "end": 771.0,
+  "rep_time": 744.0,
+  "en": "HPRV4. So it's a 900 kW AC power installation with flexible GPU and CP BBU and CBU configuration. Um as Mike said, in this one we have a vertical bus bar connecting all the equipment together bringing up to the top section where we have a DCPDU which protects from faults. So there are the crosslink cables connected. On the right side you see the Nvidia rack with six shelves. So they are disaggregated, so stand alone, right? Not connected to each other. And we can also offer optional 480 kW BBU backup power. On the other side of the crosslink cable in the IT rack, there will be this downstream 800 V to 50 V converter."
+ },
+ {
+  "idx": 14,
+  "start": 771.0,
+  "end": 798.0,
+  "rep_time": 783.0,
+  "en": "Um we have two sizes, 19-in with 90 kW and 21-in with 108 kW. A very high peak efficiency, 98.5%, and we offer the same shelf controller like we offer for the AC power supplies."
+ },
+ {
+  "idx": 15,
+  "start": 798.0,
+  "end": 873.0,
+  "rep_time": 834.0,
+  "en": "Um then we also see the transition now for our power supplies to move from air cooling to liquid cooling. So these are just three uh reasons. So, the first one is um even if we have 97% efficiency, this 3% losses of 1 MW um side rack is still 30 kW hot air, which is uh too much and inefficient. Um then also the fans itself, they have a quite high power consumption. So, for the 30 kW meter unit, we have 200 W for the fan, which is 0.7% efficiency loss. And then also the fans make a very unbearable noise, as you can imagine. And um the solution is a kind of pizza box PSU. So, we don't have um single modules, which are exchangeable. So, it's it's one box, one cooling loop, same like a server. And uh we will offer the DCDC and also the the ACDC unit actually in in two IU size. So, we can reduce from three IU to two IU. Okay. Back to Mike.  All right, so that's option A. So, looking at option B here, right? So, B is, like I said, exactly, you can see power conversion stay outside the row, which is at the end in this case. This could be right adjacent to it or could be in different room. Uh the bottom is"
+ },
+ {
+  "idx": 16,
+  "start": 873.0,
+  "end": 909.0,
+  "rep_time": 891.0,
+  "en": "shows the front view, right? You can see this core power center can be directly intake tray cables from the gray space and feeding the using RPP solution, right? Remote power panel to feed individual whip whip into the compute uh cluster directly. So, that's a ideal solution, like I said, to be functional, such as a Colos and Neo Clouds can can support. Um so, this is one uh use cases, right? For hyperscaler who are doing in-flight project today, they don't want to do retrofit for day two, they may consider this option without impacting the supply chain, without"
+ },
+ {
+  "idx": 17,
+  "start": 909.0,
+  "end": 927.0,
+  "rep_time": 918.0,
+  "en": "impacting the current design planning, and still quickly adopt the solution to be 800 DC ready. Then option C, I'll give you a quick pick on this one, right? This is showing using the RMU loop to the far left, uh which again using 35 kV, 34.5 kV, and we"
+ },
+ {
+  "idx": 18,
+  "start": 927.0,
+  "end": 966.0,
+  "rep_time": 945.0,
+  "en": "can support a 6 + 1 architecture. And we target each SST or TRU to be 5 MW, and integrate with ESS cabinet to to to uh on the top. So, this become a mod right? And then we do the catcher system at a back end connecting through the output switchboard. And then directly one-to-one feed to the cut compute cluster. So, why this design is ideal? It's also support a module design and fast deployment. Those can become turn into a containerized solution."
+ },
+ {
+  "idx": 19,
+  "start": 966.0,
+  "end": 1002.0,
+  "rep_time": 984.0,
+  "en": "To illustrate, shows a quick AI-generated image, right? It's nothing is real, but just for your illustration. Each of the compute, right, can have the compute cluster inside and the DCRP PR adjacent to it with the uh self-equipped chiller uh for cooling system. And like Ralph talking about, everything becomes liquid cool, so the thermal rejection, right, or thermal management is going to be easier. But you can see just required maybe cable bus or uh uh a bus dock to be to quickly connect. Everything can be pre-back pre-fab pre-built from the factory side."
+ },
+ {
+  "idx": 20,
+  "start": 1002.0,
+  "end": 1026.0,
+  "rep_time": 1014.0,
+  "en": "So, this give you a quick road map about how things can be simplified on the power path, right? To illustrate, this is to the AC. You can see all the seven stages, right? Where today from medium voltage AC single-stage conversion and directly send the power to the rack, right? And that's the vision we see how things can be much streamlined, simplified, more compact, and become uh module deployable."
+ },
+ {
+  "idx": 21,
+  "start": 1026.0,
+  "end": 1095.0,
+  "rep_time": 1059.0,
+  "en": "ESS is important, right? Ralph showed about power smoothing, right? So, I want to quickly talk about if you have the ESS integrated at SST output end, you enable four different uh possibility. Number one is about full right through. Right? So, today you are putting bass at a grid location. Right? But, you have to do inverter. Right? So, it's efficiency problem. You have to plan different spaces. But, in this case, this could be distributed across different SST location. Secondly, backup power. People want BBU. People want UPS. This directly enables that. Depends on how you size your ESS, you have this backup power to bring our service uptime. And then we have the power smoothing feature. Right? This is super critical. Right? Uh we have a separate session uh from our uh uh VP GG will talk about intelligent power smoothing to tell you more about how NVIDIA internally can behave a closer control for power smoothing that you can uh not impacting the system stability and grid interconnection. Last one is load averaging, like I said. Right? We want to treat max LPS as a standard for a standard power consumption. Minimize the fluctuation. So, with a very finite grid power, we can subscribe most of the GPU as we can. Finally, this gets to my my microgrid. Right? So, everybody know about microgrid. Right? This is a microgrid. To your far left, you have all the different sources including ESS you can connect it to. And this become a intelligent hub. Right? And you can start training your AI to find the most optimizing mode. Right? So, it's a"
+ },
+ {
+  "idx": 22,
+  "start": 1095.0,
+  "end": 1125.0,
+  "rep_time": 1110.0,
+  "en": "feedback loop. Right? You generate tokens not just for not just for other industry, but also for your data center operations. And to your right, it becomes a different operating mode for the computer that you can how you can optimize the power for."
+ },
+ {
+  "idx": 23,
+  "start": 1125.0,
+  "end": 1158.0,
+  "rep_time": 1140.0,
+  "en": "This is a quick roadmap. Right? So, we have option A ready for you today. Right? For the side car power rack design. And then in the middle is a power center. Right? Shooting for Q2 next year. And then very quickly 2028, like I said, that's where we're going to have our 800 DC native rack cons. Right? We need to have uh uh option C ready. Right? To catch that full new system. And then to the bottom, it shows the quick roadmap. Right? But, we're going to talk more for different session for details like how we can really get this executed efficiently. Now, Robert have a cooling solution.  Yeah, it's the last minute, so I want to show you how our um liquid cooling uh BU can support a data center"
+ },
+ {
+  "idx": 24,
+  "start": 1158.0,
+  "end": 1194.0,
+  "rep_time": 1176.0,
+  "en": "solutions. So, um on board level, we focus on a thermal solutions for hot spots. On rack level, we offer um liquid to air and liquid to liquid CDUs as well as a in-row CDU. So, um with the readiness of board and rack level solutions together with the rack manifold design, Delta can support a comprehensive um thermal solution for an entire rack. Um on this page, you see this um 800 V DC in in-row CDU."
+ },
+ {
+  "idx": 25,
+  "start": 1194.0,
+  "end": 1236.0,
+  "rep_time": 1215.0,
+  "en": "Um so, it has a thermal capability of 2.5 MW, flow rate is around 4,000 L per minute, and um one key feature is uh the serviceability. So, all the the key and critical items like pumps, filters, and sensors are redundant and uh hot swappable, so you can uh exchange it during the run time without shutting down the system. So, this gives you very uh reliable uh operation of your data center. Okay, and that brings us to the end.  Come on.  Yeah.  If you have any questions, yeah, feel free to come to the front or microphone.  Yeah.  We are at booth B5, so um we are happy happy to see you there and um yeah, to present our products. Yeah, thank you for listening.  Thank you."
+ },
+ {
+  "idx": 26,
+  "start": 1236.0,
+  "end": 1474.281361,
+  "rep_time": 1266.0,
+  "en": "[applause]  Yes, question, please.  Yeah, Michael Harrison from MVA Thermal Energy. Um one quick question. Um at the moment with the 18.5 kW power supplies, you've got 1,200 joules of energy buffering in them. Um I see in your road map you're talking about maintaining that, but then at some point in the future when the SST becomes the central part of the architecture, it appears that that whole energy buffering at the rack level disappears. Is this the um idea, or is the Do you see all of that energy buffering disappearing from the compute racks or close to it? Or is there going to be some need to retain some kind of energy buffering?  So Wednesday we're going to talk about MTIA and DC power uh system performance criteria. And short answer is there's still going to be minimal energy storage um uh um numbers to be at a rack level. So the whole AMTC distribution system can be supported, right? Uh understanding that there'll be minimal storage even without power shelf, right? And then we have most of the storage ESS control at SST.  Mhm. Okay. Thanks.  Thank you.  Okay. Um so my question first is for uh the Delta power supply, what is the voltage input range that it can take on the 800-V DC? Does it have to be 800 stable? Can it go up and down? How wide can that be?  Plus minus 10% currently.  Okay. And then how hard would it be to design a 1,500-V one?  Creepage and clearance distance for sure will increase, but from transformer design point of view I don't see a a problem.  Okay. So So now this goes on to Nvidia. 800-V DC, that means that we're going to have twice as many PCSs, twice as much expensive power electronics on these sites and twice twice as much copper than if we did 1,500 V DC. So, you think about it. You go get a 5-MW PCS, it's probably running $300,000 today. And and now to get the same 5 MW, you got to basically double that price.  Yeah, so answer your question quickly, right? The reason why do 800 V DC only coming from 1,500 V angle, which nobody's doing 1,500 V, but with that being said, 800 V today compared to 400 V AC, there's strong value from copper saving and others. But, I understand that people may look at 1,500 V today. But, the reason why we pick 800 V DC is not because because the EV industry, it's because the rack, Infineon, and others, right, on power electronic portion that are able to support the 3.3 kV components. Okay, so it's limited by the rack to pick that voltage and become native. Right? It's not about we cannot Why we don't go 1,500 V? Because the rack is already You have to do power conversion. If you look at data center, 90% or more are all going to GPU. Right? So, that efficiency of the conversion is there. And how you're going to be more efficient power distribution is the distance from your SST to the rack to be minimal. So, that copper exposure, if you want to compare to 1,500 V, can be manageable.  Okay. Awesome.  Okay. Thank you."
+ }
+]

@@ -1,0 +1,329 @@
+
+--- p1 ---
+Codename: Wildcat Lake (WCL)
+Intel®
+Core
+Series 3
+Hot Chips – August 2026
+--- p2 ---
+Hot Chips 2026
+Notices & Disclaimers
+Performance varies by use, configuration and other factors. Learn more at intel.com/performanceindex.
+Performance results are based on testing as of dates shown in configurations and may not reflect all 
+publicly available updates.  See backup for configuration details.  No product or component can be 
+absolutely secure. 
+Your costs and results may vary. 
+Intel technologies may require enabled hardware, software or service activation.
+© Intel Corporation.  Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its 
+subsidiaries.  Other names and brands may be claimed as the property of others.
+--- p3 ---
+Hot Chips 2026
+Intel® Core
+ Series 3
+01
+Built to maximize 
+value
+02
+SoC Construction 
+Trade-offs
+03
+Right Sized 
+Compute
+04
+Right Sized 
+Platform
+05
+Key Innovation: 
+UCIe for Client
+06
+Summary
+--- p4 ---
+Hot Chips 2026
+Modern connectivity without 
+compromise, including Thunderbolt 
+4, Wi-Fi 7, and Bluetooth 6, so value 
+systems still feel current and capable
+Derived from Core Ultra Series 3 
+(code name Panther Lake), designed 
+to bring the features people care 
+about most at broad scale
+Scales beyond notebooks to essential 
+edge deployments, including 
+robotics, smart buildings, point-of-sale 
+terminals, and smart metering
+Designed for all-day
+battery life in thin-and-light 
+designs, improved
+efficiency for everyday 
+productivity and creation
+AI-ready
+architecture delivering 
+up to 40 platform TOPS
+ for client AI workloads
+across CPU, GPU,
+and NPU
+Up to 2.7X* 
+faster AI 
+performance
+Up to 2.1X 
+faster creation 
+and productivity
+Up to 64% 
+lower processor 
+power
+* Compared to Intel Core 7 Processor 150U (code name Raptor Lake U Refresh)
+"Designed for All Day Battery Life": refers to laptops powered by Intel® Core  Series 3 processors with minimum battery size and power efficient designs that leverage Intel's latest architecture, advanced compute technology and 
+power optimizations that combine to deliver extended battery life while performing office multitasking, video playback, web browsing, and standby time in a typical consumer PC usage scenario and realistic environment. 
+See intel.com/performanceindex for workload and configuration details.  Individual system results will vary significantly with different usages, battery capacity and other OEM design factors.
+Intel® Core
+ Series 3
+Overview
+--- p5 ---
+Hot Chips 2026
+Foveros connects multiple chiplets using 
+a passive base die (silicon interposer)
+Swap Foveros for MCP/Organic
+Cost Benefits are Essential to this Segment
+Requires Optimization to Maximize Benefits
+Elimination of the Base Die
+Reduced Assembly cost and yield  Loss
+Must be monolithic or MCP/Organic
+Fewer Signals
+Power Management
+Packaging
+--- p6 ---
+Hot Chips 2026
+Primarily Drive cost reduction through
+Maintain the Same  Process Nodes & Die partition
+Highly focus innovation in a single area: UCIe
+Best user experience 
+(ex: CPU ST perf, USB2 I/Os)
+Validation, schedule, & R&D
+Right-size IPs
+MCP
+Right-size Platform
+Path to Mainstream Success
+From Intel® Core® Ultra Series 3
+--- p7 ---
+Hot Chips 2026
+Intel® Core® Ultra Series 3 “U”
+Intel® Core® Series 3
+Graphics
+4Xe, 40 TOPs, Ray Tracing
+2Xe Integrated, 20 TOPs
+NPU
+3 Tiles, 53 TOPs
+1 Tile, 17 TOPs
+P Cores
+4, 12 MB L3
+2, 6 MB L3
+Memory
+96GB, 128b L5-9.6, 8MB Cache
+64GB, 64b L5-7.47, 4MB Cache
+Camera
+Yes
+Removed
+Media
+8K60, w/ VVC decode & full effects
+4K60, only HDR effect
+Display
+4x UHBR20
+3x HBR3 (4K60)
+-38% Die Area
+Right Size Compute
+for Mainstream
+--- p8 ---
+Hot Chips 2026
+Intel® Core® Ultra Series 3
+Intel® Core® Series 3
+TBT/USB4
+3 w/ eDP muxing (4 physical)
+2
+PCIe
+4 Gen5, 8 Gen4
+6 Gen4
+USB
+2x USB3.2, 8x USB2
+2x USB3.2, 8x USB2
+Camera PHYs
+CSI
+Removed
+Audio
+4 Speakers & Mics
+5 DSPs
+4.6 MB
+2 Speakers & Mics
+3 DSP (~0.8x due to higher frequency)
+3.0 MB (0.8x)
+Globals
+Baseline
+Few changes => few issues
+-15% Die Area
+Right Size IO 
+for Mainstream
+--- p9 ---
+Hot Chips 2026
+50x25x1.5 mm
+Foveros
+Core Ultra
+Series 3
+Enables Additional System Savings
+Fewer IO for smaller package
+Smaller Package saves board space.
+Power Delivery Changes 
+No Dead ports
+35x25x1.23 mm
+Organic MCP
+Core
+Series 3
+Cost Reduced Platform
+Unique for Mainstream
+--- p10 ---
+Hot Chips 2026
+Core 7 processor BOM
+Full saving
+Minimum saving
+128b => 64b DRAM
+8 => 6 Layer Type3 PCB
+DRAM footprint / SODIMM connector
+Integrated 
+WiFi7
+Power Delivery
+Add LP E-core rail for battery Life
+But better ICCMax & Load Lines
+Integrated PD 
+controller
+(In USB retimer)
+Project Firefly
+Phone ecosystem
+Platform Cost Savings
+from Intel® Core® 7 processor 150U 
+Visualization for illustrative purposes only
+--- p11 ---
+Hot Chips 2026
+Intel® Core® Series 3 
+Die to Die with UCIe
+Intel® Core® Ultra Series 3 Die to Die
+Visualizations for illustrative purposes only
+70% larger
+Worth it for 
+MCP savings
+MCP Savings Required a new Die to Die technology
+UCIe best fulfilled this need
+--- p12 ---
+Hot Chips 2026
+Optimizations
+UCIe Area
+Foveros: 36 um
+UCIe: 110 um
+Need higher GTps
+Bigger I/O area
+Bigger Controller Area
+No Base Die => Larger Bump Pitch
+Results
+Size IO bandwidth for Mainstream
+Target 12 GBps for PCIe4 SSD
+16R16W @ 8 GTps
+Size Display: UHBR20 => 4Kp60
+(Match RPL-U HDMI/eDP)
+16W @ 8 GTps
+Sideband Signals reduced
+Many Packetized
+--- p13 ---
+Hot Chips 2026
+Mitigations
+UCIe Protocol Changes
+Largest validation focus area
+Fuses and survivability options 
+to ensure UCIe bring up worked
+Data now 
+packetized 
+(delayed)
+Slower sideband 
+signals were not
+UCIe right in the middle of Boot, Debug, 
+Security, and Display protocols
+Data – Control Signal timing
+--- p14 ---
+Hot Chips 2026
+Optimizations
+UCIe Power
+Adopted multiple link states 
+Up to 8x idle power savings
+QoS scheduling of Display traffic
+Enables lower link states w/ display
+Clocks want to always run 
+to minimize latency hit
+Idle systems still have Display traffic which 
+crosses UCIe - especially without Panel Self 
+Refresh (PSR). Biggest power concern
+Packetization increases Power
+--- p15 ---
+Hot Chips 2026
+UCIe Signal Integrity
+Optimizations
+Initially had two IO Voltage options
+Board LDO: Cleaner, but more cost
+Use existing VCCAON rail
+Proved LDO not needed
+Limited to 8 GTps max
+No Retry or Forward Error Correction
+Fall back options to lower frequency
+Less risk, but more area
+Tight voltage tolerances
+Bit Error Rate (BER)
+High Frequency Challenges
+--- p16 ---
+Hot Chips 2026
+Pcores
+LP Ecores
+GPU
+NPU
+Config 1
+2
+4
+2Xe
+Yes
+Config 2
+1
+4
+1Xe
+Yes
+Embedded
+2
+4
+1Xe
+No
+29% of compute die area recoverable
+Elected to maintain battery life and platform 
+consistency and not recover these.
+Frequency binning for CPU,  GPU, and NPU
+Any Pcore
+Any Xe Core
+NPU
+LP Ecore 
+(battery life)
+Display Pipes 
+(consistency)
+I/O 
+(consistency)
+Balanced Die Yield Recovery
+Critical to cost, especially for a new process
+--- p17 ---
+Hot Chips 2026
+Cost Reduction
+Excellent Value
+Foveros to MCP
+Size IPs for Mainstream
+Lower Platform Cost 
+(Package, BoM, IOs)
+Reuse for Schedule & R&D
+Latest IP Technology 
+(not Gen N-2)
+CPU Single Thread Perf
+AI and DRAM Technology
+Security and SoC Features
+Intel® Core
+ Series 3
+A New Tier of Value for Mainstream
+--- p18 ---

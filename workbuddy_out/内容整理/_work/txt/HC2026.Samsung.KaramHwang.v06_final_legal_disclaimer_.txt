@@ -1,0 +1,730 @@
+
+--- p1 ---
+1
+Legal Disclaimer
+Copyright © 2013-2026 Samsung Electronics Co., Ltd. Confidential. All rights reserved.
+This document has been prepared by Samsung Electronics Co., Ltd. (“Samsung”). All contents in this document is the property of Samsung, protected by applicable laws and non-disclosure agreements between Samsung and you
+or your employer, as applicable. You are strictly prohibited from, without limitation, disclosing, copying, reproducing, distributing, transmitting, modifying, rebroadcasting, re-encoding, re-presenting, exploiting, or creating
+derivative works of this document or any parts of this document without the prior written permission from Samsung.
+The contents of this document are provided for informational purposes only. No representation or warranty (whether express or implied) is made by Samsung or any of its officers, advisers, agents, or employees as to the
+accuracy, reasonableness or completeness of the information, statements, opinions, or matters contained in this document, and they are provided on an "AS-IS" basis. Samsung will not be responsible for any damages arising out
+of the use of, or otherwise relating to, this document. Nothing in this document grants you any license or rights in or to information, materials, or contents provided in this document, or any other intellectual property.
+The contents of this document may also include forward-looking statements. These forward-looking statements include all matters that are not historical facts, as well as statements regarding Samsung's intentions, beliefs and
+current expectations concerning, among other things, market prospects, growth, strategies, and the industry in which Samsung operates. By definition, forward-looking statements involve risks and uncertainties because they
+relate to events and depend on circumstances that may or may not occur in the future. Samsung hereby reminds you that forward-looking statements are not guarantees of future performance and that the actual developments
+of Samsung, the market, or the industry in which Samsung operates may differ materially from those made or suggested by the forward-looking statements contained in this document or in the accompanying oral statements. In
+addition, even if the information contained herein or the accompanying oral statements are shown to be accurate, those statements may not be indicative of future developments.
+All contents in this document may be subject to change without notice. Without limiting the generality of the foregoing,
+1.
+All design, features and specifications represented herein may change without notice; 
+2.
+Images shown here have been adjusted for demonstration purposes and may appear differently on the actual products;
+3.
+All data on products herein, including their performances, are based on internal testing using standard Samsung benchmarks under laboratory conditions. Test results do not guarantee future performance under such test 
+conditions, and the actual throughput or performance that any user will experience may vary depending upon many factors; and
+4.
+All images on screen are simulated, except where otherwise noted.
+BY CONTINUING TO ACCESS THIS DOCUMENT, YOU ARE DEEMED TO HAVE READ, UNDERSTOOD, AND AGREED WITH THE FOREGOING TERMS AND CONDITIONS.
+--- p2 ---
+2
+Samsung LPDDR5X-PIM
+: World’s First LPDDR based Processing-In-Memory (PIM) Solution      
+for AI Inference
+Karam Hwang, Yoonah Paik, Sukhan Lee, Taeyang Jeong, Wontak Han, Byeongho Kim, Sanghoon Cha, Hyeonsu Kim, 
+Seyoon Kong, Jihyun Choi, Duksung Kim, Doohee Hwang, Jangseok Choi and Kyomin Sohn
+--- p3 ---
+3
+AI Chip Component Cost Breakdown
+•
+The Cost of Memory (specifically HBM) takes up the majority of the AI chip component 
+spending
+•
+Cost has grown from 52% (Q1 ‘24) to 63% (Q4 ‘25)
+52%
+15%
+19%
+14%
+54%
+14%
+18%
+14%
+56%
+12%
+18%
+14%
+57%
+11%
+18%
+14%
+56%
+12%
+17%
+14%
+59%
+11%
+17%
+14%
+61%
+10%
+16%
+13%
+63%
+9%
+15%
+13%
+Memory
+Logic
+Packaging
+Auxiliary
+100%
+50%
+Q1 ‘24
+Q2
+Q1 ‘25
+Q3
+Q4
+Q2
+Q3
+Q4
+V. Somala, "Memory has grown to nearly two-thirds of AI chip component costs“, Epoch AI, (accessed Aug. 9, 2026)
+--- p4 ---
+4
+The Need for New Memory Solutions
+The de facto memory solution to support AI Inference: HBM
+• High power consumption
+• Complex packaging 
+To achieve lower cost, various advancements have been made in AI Inference: 
+• Efficient LLM architecture 
+• Smaller size models
+A new memory form factor is required →LP-PIM
+• Higher bandwidth (compared to normal LPDDR)
+• Lower overall power consumption at system level
+--- p5 ---
+5
+Progression of Samsung PIM Technology
+HBM-PIM Cluster Validation &
+LP-PIM Conceptualization
+Samsung PIM/PNM 
+for 
+Transformer based AI
+2023
+HBM PIM-Cluster
+HBM-PIM Proof of Concept
+Aquabolt-XL : Samsung HBM2-PIM with
+in-memory processing 
+for ML accelerators and beyond
+2021
+LPDDR5X-PIM Productization
+World’s First LPDDR-PIM Solution 
+for 
+AI Inference
+2026
+--- p6 ---
+6
+•
+16 PIM blocks are implemented to all DRAM Banks to maximize internal PIM Bandwidth
+•
+MAC trees operating in parallel
+ALU will support both FP 
+and INT datatype calculation
+LPDDR5X-PIM Architecture
+256 bits
+MAC Trees
+1)
+Exact description of the terms are provided in Appendix : Terms and Functions
+Note : All figures are not to scale
+1)
+1)
+1)
+1)
+1)
+1)
+1)
+--- p7 ---
+7
+LPDDR5X-PIM Specifications
+Target Application
+Server / Mobile / Client
+PIM configuration
+1 PIM / 1 Bank
+DRAM / PIM bandwidth
+76.8 GB/s 1), 614 GB/s (8x)
+Configuration Register 2)
+256 bit / 1 PIM
+Instruction Register File (IRF) 2)
+1 kbit / 1 PIM
+Source Register File (SRF) 2)
+4 kbit / 1 PIM
+Scale Register File (ScRF) 2)
+2 kbit / 1 PIM
+Vector Register File (VRF) 2)
+1 kbit / 1 PIM
+1)
+Based on a x64 LP5X/LP5X-PIM package operating @ 9600 Mbps frequency
+2)
+Exact description of the terms are provided in Appendix : Terms and Functions
+LPDDR5X-PIM Package
+561-ball Package (based on JEDEC standard)
+16 GB Density
+2 ranks of 4-CH (x64)
+Ball Grid Array
+4 dies @ rank 0
+4 dies @ rank 1
+--- p8 ---
+8
+LPDDR5X-PIM Multi-Precision Datatype Support
+•
+The first LP-PIM product with multi-precision datatype support 
+•
+Can be selected via the ‘MAC Precision Datatype Select’ and ‘MAC Precision Activation 
+Bitwidth’ field in the CRF
+- 15 different combinations are supported
+Input Data Precision (Activation)
+Input Data Precision (Weight)
+Computation Power (per PKG)
+UINT (8, 16)
+SINT4
+2.4 TOPs
+SINT (4, 8, 16)
+UINT (8, 16)
+SINT8
+1.2 TOPs
+SINT (8, 16)
+FP16
+FP8 (E4M3)
+1.2 TFLOPs
+FP8 (E4M3, E5M2)
+FP16
+FP8 (E5M2)
+1.2 TFLOPs
+FP8 (E4M3, E5M2)
+--- p9 ---
+9
+3
+READ 
+BANK 00, CA 03
+READ 
+BANK 00, CA 01
+0
+1
+3
+2
+3
+1
+0
+0
+1
+2
+READ 
+BANK 00, CA 00
+MAC VRF[0] += 
+CA [    ] * SRF[0]
+MAC VRF[0] += 
+CA [    ] * SRF[1]
+MAC VRF[0] += 
+CA [    ] * SRF[2]
+How PIM Utilizes Conventional DRAM Controller
+•
+Utilization of conventional DRAM controller is achieved through Address Align Mode (AAM)
+•
+This novel method leverages the mapping between DRAM addresses and MAC instructions, 
+maintaining re-ordering technique in DRAM controllers to maximize performance
+Conventional (non-AAM) Instruction Case
+AAM Instruction Case
+0
+1
+2
+SRF
+VRF
+BANK
+PIM BLOCK
+CA
+②
+①
+③
+②
+①
+③
+MAC
+0
+1
+2
+SRF
+VRF
+BANK
+PIM BLOCK
+CA
+②
+①
+③
+②
+①
+③
+MAC
+ACT 
+BANK 00, RA 00
+DRAM command
+Instruction Register 
+File
+READ 
+BANK 00, CA 00
+MAC VRF[0] += 
+CA [    ] * SRF[0]
+ALIGN
+①
+READ 
+BANK 00, CA 01
+MAC VRF[0] += 
+CA [    ] * SRF[1]
+ALIGN
+②
+READ 
+BANK 00, CA 03
+MAC VRF[0] += 
+CA [    ] * SRF[2]
+MIS-
+ALIGN
+③
+MAC VRF[*] += 
+CA [    ] * SRF[*]
+MAC VRF[*] += 
+CA [    ] * SRF[*]
+MAC VRF[*] += 
+CA [    ] * SRF[*]
+AAM Instruction Register File
+MAC VRF[0] += 
+CA [    ] * SRF[00]
+MAC VRF[0] += 
+CA [    ] * SRF[01]
+MAC VRF[0] += 
+CA [    ] * SRF[03]
+IRF register will be first set 
+as “Don’t Care”
+VRF/SRF address set based on 
+RA/CA address, respectively
+ACT 
+BANK 00, RA 00
+DRAM command
+READ 
+BANK 00, CA 00
+READ 
+BANK 00, CA 01
+READ 
+BANK 00, CA 03
+ALIGN
+①
+ALIGN
+②
+ALIGN
+③
+00
+01
+03
+00
+01
+03
+0
+1
+2
+0
+1
+2
+3
+0
+1
+2
+3
+0
+1
+3
+0
+1
+3
+00
+01
+03
+RA 00
+S. Lee et al., “Hardware Architecture and Software Stack for PIM Based on Commercial DRAM Technology”, 2021 ACM/IEEE 48th Annual International Symposium on 
+Computer Architecture (ISCA), 2021, pp. 43-56. Available on the IEEE Xplore Digital Library.
+--- p10 ---
+10
+10
+LPDDR5X-PIM Mode Change
+•
+Requires predefined rows for mode change and PIM register (Defined through MR 1) )
+- Predefined rows for mode change per channel (MB: Multi-bank, SB: Single-bank)
+- A predefined row for register access per bank (PIM Registers)
+- A faster and reliable mode change method compared to previous generation (HBM-PIM)
+ACT (SB) + PRE
+SB Mode Idle
+ACT (MB) + PRE
+PIM Registers
+Activated
+Bank
+Activated
+PRE
+ACT
+Multi Bank
+Activated
+PRE
+ACT
+MB Mode Idle
+PIM Registers 
+Activated
+WRITE
+READ
+RD
+WR
+WRITE
+READ
+RDP 2)
+WRP 2)
+WRITE
+WRPB 2)
+WRITE
+READ
+PIMX_ RD 2) PIMX_WR 2)
+Normal (SB) Mode
+PIM (MB) Mode
+1)
+MR : Mode Register
+2)
+Exact description of the commands are provided in Appendix : Terms and Functions
+PRE
+ACT
+PRE
+ACT
+--- p11 ---
+11
+11
+LPDDR5X-PIM Operation : Activation Write (WRPB 1)
+②Each data packet sent by the host will be broadcast into SRF registers in the PIM block. 
+PAD
+512 element FP8 activation data
+Host (xPU)
+Broken down into 16 units of 
+32 element FP8 data packet
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+16 x WRPB 1)
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+①To fill each SRF 
+register of 4K-bits 
+in each bank, 16 
+WRPB commands 
+are required.
+•
+The following execution process shows how the PIM will conduct a MAC operation 
+(assumption: weight parameters already written into the cell, currently in PIM MB mode), 
+followed by sending calculated data to host
+1) Exact description of the commands are provided in Appendix : Terms and Functions
+Note: Example shown depicts 512 elements of FP8 data. Considering activation datatype, number of elements will vary (limited to the 4K-bit SRF register size).
+--- p12 ---
+12
+12
+•
+The following execution process shows how the PIM will conduct a MAC operation       
+(assumption : weight parameters already written into the cell, currently in PIM MB mode), 
+followed by sending calculated data to host
+Input (Weight)
+PIMX_RD reads weight elements (32 byte) from 
+DRAM cell, and are evenly mapped to the MAC 
+trees
+MAC
+Tree
+DRAM Bank (cell)
+Source Register File (SRF) 1)
+Vector Register File (VRF) 1)
+Input (Activation)
+Elements are broadcast to the MAC trees.
+Output
+The output elements from each MAC trees 
+are combined into a single VRF register
+LPDDR5X-PIM Operation : Weight Matrix Load (PIMX_RD1)
+1) Exact description of the commands are provided in Appendix : Terms and Functions
+--- p13 ---
+13
+13
+MAC
+Tree
+DRAM Bank (cell)
+Output
+The VRF register will be updated every time 
+once MAC is completed (through PIMX_RD 
+command). PIMX_WR transfers calculated 
+output data from VRF register to DRAM bank.
+•
+The following execution process shows how the PIM will conduct a MAC operation 
+(assumption : weight parameters already written into the cell, currently in PIM MB mode), 
+followed by sending calculated data to host
+LPDDR5X-PIM Operation : Vector Store (PIMX_WR1)
+Source Register File (SRF) 1)
+Vector Register File (VRF) 1)
+1) Exact description of the commands are provided in Appendix : Terms and Functions
+Note: To move a fully filled VRF register of 1K-bits to the cell, 4 PIMX_WR commands are required. PIMX_RD to PIMX_WR command execution ratio does not have to be 1:1
+--- p14 ---
+14
+14
+LPDDR5X-PIM Operation : Vector Read
+Note: Example shown depicts 16 RD commands. Based on the size of the VRF register (1K bits), a maximum of 64 RD commands can be executed
+PAD
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+16 x RD
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+PIM
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+Bank 
+①Host will execute 
+16 RD commands 
+sequentially, where 
+output data stored 
+in each bank is 
+transferred to host
+Output Data
+Host (xPU)
+0
+1
+2 3 4 5 6 7 8 9 10 11 12 13 14 15
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+•
+From here, the host switches from MB →SB mode
+•
+Here, the host executes 16 RD commands to retrieve calculated PIM data
+--- p15 ---
+15
+15
+Samsung Edge AI Accelerator SoC w/ LPDDR5X
+Samsung Edge AI Accelerator SoC w/ LPDDR5X-PIM
+Evaluation Setup
+•
+Tested on silicon w/ Samsung Edge AI accelerator SoC (LPDDR5X & LPDDR5X-PIM)
+•
+Model used for evaluation : Llama-3.1-8B
+•
+Context Length : 320 Tokens (Input & Output) 
+•
+Applied data type for Activation / Weight / Output : SINT8 / SINT4 / SINT32
+Prompt : “The challenges of building Processing in Memory (PIM) systems?”
+*All third-party brand names, product names, and trademarks referenced herein are the property of their respective owners. Such references are solely for the purpose of describing compatibility and does not imply 
+any affiliation with, endorsement by, or sponsorship by the respective trademark or copyright holders.
+--- p16 ---
+16
+16
+Evaluation Results
+•
+Samsung edge AI accelerator SoC performance comparison (LPDDR5X-PIM, LPDDR5X) 
+LPDDR5X-PIM
+LPDDR5X
+0
+4
+8
+10
+12
+5.4 sec
+12.3 sec
+Run Time 1)
+2
+6
+14
+>2.28x
+Faster
+1) Performance optimization with PIM is still ongoing
+>3.01x
+Gain
+LPDDR5X-PIM
+LPDDR5X
+0
+10
+20
+30
+40
+50
+60
+Output Tokens Per Second (TPS) 1)
+70
+80
+27.0 TPS
+81.3 TPS
+--- p17 ---
+17
+17
+Current Progress in LP-PIM
+LPDDR5X-PIM
+•
+Simulator, and datasheet are available upon request
+•
+The simulator is part of our Software Development Kit (SDK) bundle, which can be referred in 
+the appendix
+•
+SDK is for reference guidance only, as system operation will vary by host
+•
+More information regarding the simulator can be referred to the following paper : “S. Cha, J. 
+Choi, B. Kim, Y. Paik, S. Lee, and K. Sohn, "LP5X-PIM Sim: A High-Fidelity HW/SW Integrated 
+Simulator for LPDDR5X-PIM," arXiv:2606.00636, May 2026”    
+LPDDR6-PIM
+•
+JEDEC 1st full version spec near finalization (specific for mobile/client profile)
+•
+Next JEDEC version is also being considered
+--- p18 ---
+18
+18
+Key Takeaways
+World’s first LPDDR5X-PIM product
+•
+8× bandwidth compared to conventional LPDDR5X
+•
+Multi-Precision datatype support
+•
+Acceptable for existing SoCs: Drop-in replacement enabled by AAM
+LPDDR5X-PIM evaluation results
+•
+3.01x performance gain over conventional LPDDR5X solution
+LPDDR6-PIM
+•
+JEDEC LP6-PIM standardization under progress
+--- p19 ---
+19
+19
+THANK YOU
+--- p20 ---
+20
+20
+Appendix – Terms and Functions
+•
+The exact function of the terms and functions are listed in the table below:
+Term
+Description
+Source Register File (SRF)
+Register used to buffer input activation vectors as input for a GEMV operation (input register)
+Scale Register File (ScRF)
+Register used to buffer scale factors to multiply with associated weight values for a GEMV operation
+Vector Register File (VRF)
+Register used to store partials sums during accumulation (output register)
+Instruction Register File (IRF)
+Register used to store 16b PIM instruction (total of 64 instructions can be stored)
+Configuration Register File
+Register used to configure various PIM block settings (ex : MAC precision datatype, bit-width) 
+Read PIM (RDP)
+Reads a 32B value from the designated register in a single PIM block
+Write PIM (WRP)
+Writes a 32B value to the designated register in a single PIM block
+Write PIM Broadcast (WRPB)
+Writes a 32B value to the designated register in multiple PIM blocks
+PIM Execution Read (PIMX-RD)
+Performs a designated operation in all PIM blocks by reading values from DRAM
+PIM Execution Write (PIMX-WR)
+Writes the value of the designated register in each PIM block to DRAM
+--- p21 ---
+21
+21
+Appendix - LPDDR5X-PIM Software Development Kit
+•
+PIM SDK that is used as reference to make PIM control software stack
+- Provides a toolchain for implementing PIM functions and evaluating performance
+- Contains LLM performance evaluation environment with *ExecuTorch framework
+*ExecuTorch is an end-to-end solution for enabling on-device inference capabilities across mobile and edge devices including wearables, embedded devices and microcontrollers.
+** All third-party brand names, product names, and trademarks referenced herein are the property of their respective owners. Such references are solely for the purpose of describing 
+compatibility and does not imply any affiliation with, endorsement by, or sponsorship by the respective trademark or copyright holders. 
+PIMCompiler
+(C++)
+PIMLibrary
+(C++)
+PIM Simulator (C++)
+DL 
+Compiler
+PIM AI S/W Stack
+Model Quantizer
+(Python)
+ExecuTorch Framework
+DL 
+Runtime
+PIM 
+Runtime(C++)
+XNNPACK
+Model Tools
+Benchmark & AI Models
+Benchmark Tools
+PIM Benchmark (C++)
+LLM Benchmark
+AI Models
+LLAMA
+Vendor Specific Models
+PIM Model Converter
+(Python)
+PIM Runtime and S/W Emulator
+ATEN
+System S/W
+DMA Buffer Allocator
+PIM specific items

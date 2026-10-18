@@ -1,0 +1,63 @@
+<Slide style={{ width: 1280, height: 720, background: '#0E1420', position: 'relative', overflow: 'hidden' }}>
+
+    <Box style={{ position: 'absolute', left: 72, top: 96, width: 3, height: 528, background: '#C8A15A' }} />
+
+    <Box style={{ position: 'absolute', left: 856, top: 132, width: 352, flexDirection: 'column' }}>
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', height: 116 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 92, lineHeight: 1.0, letterSpacing: -2, color: 'rgba(232,237,243,0.13)' }}>L10</Text>
+            <Box style={{ flexDirection: 'column', alignItems: 'flex-end', gap: 7, paddingBottom: 8 }}>
+                <Text style={{ fontFamily: 'Georgia', fontSize: 13, letterSpacing: 2, color: 'rgba(200,161,90,0.60)' }}>TRAY</Text>
+                <Text style={{ fontSize: 13, color: 'rgba(232,237,243,0.32)' }}>托盘级验收</Text>
+            </Box>
+        </Box>
+        <Box style={{ width: 352, height: 1, background: 'rgba(232,237,243,0.09)' }} />
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', height: 116 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 92, lineHeight: 1.0, letterSpacing: -2, color: 'rgba(232,237,243,0.13)' }}>L11</Text>
+            <Box style={{ flexDirection: 'column', alignItems: 'flex-end', gap: 7, paddingBottom: 8 }}>
+                <Text style={{ fontFamily: 'Georgia', fontSize: 13, letterSpacing: 2, color: 'rgba(200,161,90,0.60)' }}>RACK</Text>
+                <Text style={{ fontSize: 13, color: 'rgba(232,237,243,0.32)' }}>整机柜验收</Text>
+            </Box>
+        </Box>
+        <Box style={{ width: 352, height: 1, background: 'rgba(232,237,243,0.09)' }} />
+
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', height: 116 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 92, lineHeight: 1.0, letterSpacing: -2, color: 'rgba(232,237,243,0.13)' }}>L12</Text>
+            <Box style={{ flexDirection: 'column', alignItems: 'flex-end', gap: 7, paddingBottom: 8 }}>
+                <Text style={{ fontFamily: 'Georgia', fontSize: 13, letterSpacing: 2, color: 'rgba(200,161,90,0.60)' }}>CLUSTER</Text>
+                <Text style={{ fontSize: 13, color: 'rgba(232,237,243,0.32)' }}>集群级验收</Text>
+            </Box>
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 120, top: 96, width: 700, height: 528, flexDirection: 'column', justifyContent: 'space-between' }}>
+
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+            <Text style={{ fontSize: 14, letterSpacing: 3, color: 'rgba(232,237,243,0.55)' }}>技术分析报告</Text>
+            <Box style={{ width: 28, height: 1, background: 'rgba(232,237,243,0.22)' }} />
+            <Text style={{ fontFamily: 'Georgia', fontSize: 14, letterSpacing: 2, color: 'rgba(232,237,243,0.55)' }}>OCP GLOBAL SUMMIT 2026</Text>
+        </Box>
+
+        <Box style={{ flexDirection: 'column', gap: 0 }}>
+            <Text style={{ fontSize: 74, fontWeight: 'bold', lineHeight: 1.2, color: '#E8EDF3' }}>「可制造性」<br />评估维度解析</Text>
+            <Box style={{ width: 64, height: 2, background: '#C8A15A', marginTop: 28, marginBottom: 24 }} />
+            <Text style={{ fontSize: 21, lineHeight: 1.6, color: 'rgba(232,237,243,0.74)' }}>L10–L12 测试覆盖 · 线缆与液路验证</Text>
+            <Text style={{ fontSize: 21, lineHeight: 1.6, color: 'rgba(232,237,243,0.40)' }}>以及「样机可运行即视为可量产」的工程含义</Text>
+        </Box>
+
+        <Box style={{ flexDirection: 'column', gap: 12 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                <Box style={{ width: 6, height: 6, background: '#C8A15A' }} />
+                <Text style={{ fontSize: 17, color: '#C8A15A' }}>样机可运行 ≠ 可量产</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+                <Text style={{ fontSize: 14, color: 'rgba(232,237,243,0.36)' }}>研发管理层内部参考 · 基于 OCP 2026 官方演示材料</Text>
+                <Text style={{ fontFamily: 'Georgia', fontSize: 14, color: 'rgba(232,237,243,0.36)' }}>2026.10</Text>
+            </Box>
+        </Box>
+
+    </Box>
+
+</Slide>

@@ -1,0 +1,298 @@
+{
+ "video": "G:\\AI_IDE_output\\workbuddy_out\\yt_UHYvWpdItR4_Delta_800_VDC_Power_and_Cooling_Solutions_for_Data_Centers\\video.mp4",
+ "info": {
+  "fps": 60.0,
+  "width": 1920,
+  "height": 1080,
+  "duration": 1474.281361
+ },
+ "interval": 3.0,
+ "states": [
+  {
+   "start": 3.0,
+   "end": 90.0,
+   "duration": 90.0,
+   "internal_motion": 0.0044,
+   "edge_density": 0.0779,
+   "rep_frame": ".\\scan\\s_00017.jpg",
+   "rep_time": 48.0,
+   "samples": 30,
+   "likely_slide": true
+  },
+  {
+   "start": 93.0,
+   "end": 120.0,
+   "duration": 30.0,
+   "internal_motion": 0.0024,
+   "edge_density": 0.0829,
+   "rep_frame": ".\\scan\\s_00037.jpg",
+   "rep_time": 108.0,
+   "samples": 10,
+   "likely_slide": true
+  },
+  {
+   "start": 123.0,
+   "end": 234.0,
+   "duration": 114.0,
+   "internal_motion": 0.0062,
+   "edge_density": 0.0949,
+   "rep_frame": ".\\scan\\s_00061.jpg",
+   "rep_time": 180.0,
+   "samples": 38,
+   "likely_slide": true
+  },
+  {
+   "start": 237.0,
+   "end": 300.0,
+   "duration": 66.0,
+   "internal_motion": 0.0051,
+   "edge_density": 0.0692,
+   "rep_frame": ".\\scan\\s_00091.jpg",
+   "rep_time": 270.0,
+   "samples": 22,
+   "likely_slide": true
+  },
+  {
+   "start": 303.0,
+   "end": 453.0,
+   "duration": 153.0,
+   "internal_motion": 0.0071,
+   "edge_density": 0.078,
+   "rep_frame": ".\\scan\\s_00103.jpg",
+   "rep_time": 306.0,
+   "samples": 2,
+   "likely_slide": true
+  },
+  {
+   "start": 456.0,
+   "end": 489.0,
+   "duration": 36.0,
+   "internal_motion": 0.0034,
+   "edge_density": 0.0576,
+   "rep_frame": ".\\scan\\s_00159.jpg",
+   "rep_time": 474.0,
+   "samples": 12,
+   "likely_slide": true
+  },
+  {
+   "start": 492.0,
+   "end": 528.0,
+   "duration": 39.0,
+   "internal_motion": 0.0021,
+   "edge_density": 0.0703,
+   "rep_frame": ".\\scan\\s_00171.jpg",
+   "rep_time": 510.0,
+   "samples": 13,
+   "likely_slide": true
+  },
+  {
+   "start": 531.0,
+   "end": 594.0,
+   "duration": 66.0,
+   "internal_motion": 0.0059,
+   "edge_density": 0.0738,
+   "rep_frame": ".\\scan\\s_00189.jpg",
+   "rep_time": 564.0,
+   "samples": 22,
+   "likely_slide": true
+  },
+  {
+   "start": 597.0,
+   "end": 636.0,
+   "duration": 42.0,
+   "internal_motion": 0.0062,
+   "edge_density": 0.0988,
+   "rep_frame": ".\\scan\\s_00207.jpg",
+   "rep_time": 618.0,
+   "samples": 14,
+   "likely_slide": true
+  },
+  {
+   "start": 639.0,
+   "end": 651.0,
+   "duration": 15.0,
+   "internal_motion": 0.0035,
+   "edge_density": 0.0511,
+   "rep_frame": ".\\scan\\s_00216.jpg",
+   "rep_time": 645.0,
+   "samples": 5,
+   "likely_slide": true
+  },
+  {
+   "start": 657.0,
+   "end": 699.0,
+   "duration": 45.0,
+   "internal_motion": 0.0024,
+   "edge_density": 0.1046,
+   "rep_frame": ".\\scan\\s_00227.jpg",
+   "rep_time": 678.0,
+   "samples": 15,
+   "likely_slide": true
+  },
+  {
+   "start": 702.0,
+   "end": 714.0,
+   "duration": 15.0,
+   "internal_motion": 0.0033,
+   "edge_density": 0.0643,
+   "rep_frame": ".\\scan\\s_00237.jpg",
+   "rep_time": 708.0,
+   "samples": 5,
+   "likely_slide": true
+  },
+  {
+   "start": 717.0,
+   "end": 768.0,
+   "duration": 54.0,
+   "internal_motion": 0.0031,
+   "edge_density": 0.0811,
+   "rep_frame": ".\\scan\\s_00249.jpg",
+   "rep_time": 744.0,
+   "samples": 18,
+   "likely_slide": true
+  },
+  {
+   "start": 771.0,
+   "end": 795.0,
+   "duration": 27.0,
+   "internal_motion": 0.0018,
+   "edge_density": 0.0653,
+   "rep_frame": ".\\scan\\s_00262.jpg",
+   "rep_time": 783.0,
+   "samples": 9,
+   "likely_slide": true
+  },
+  {
+   "start": 798.0,
+   "end": 870.0,
+   "duration": 75.0,
+   "internal_motion": 0.003,
+   "edge_density": 0.0649,
+   "rep_frame": ".\\scan\\s_00279.jpg",
+   "rep_time": 834.0,
+   "samples": 25,
+   "likely_slide": true
+  },
+  {
+   "start": 873.0,
+   "end": 906.0,
+   "duration": 36.0,
+   "internal_motion": 0.0031,
+   "edge_density": 0.092,
+   "rep_frame": ".\\scan\\s_00298.jpg",
+   "rep_time": 891.0,
+   "samples": 12,
+   "likely_slide": true
+  },
+  {
+   "start": 909.0,
+   "end": 924.0,
+   "duration": 18.0,
+   "internal_motion": 0.0037,
+   "edge_density": 0.0645,
+   "rep_frame": ".\\scan\\s_00307.jpg",
+   "rep_time": 918.0,
+   "samples": 6,
+   "likely_slide": true
+  },
+  {
+   "start": 927.0,
+   "end": 963.0,
+   "duration": 39.0,
+   "internal_motion": 0.0029,
+   "edge_density": 0.0811,
+   "rep_frame": ".\\scan\\s_00316.jpg",
+   "rep_time": 945.0,
+   "samples": 13,
+   "likely_slide": true
+  },
+  {
+   "start": 966.0,
+   "end": 999.0,
+   "duration": 36.0,
+   "internal_motion": 0.0035,
+   "edge_density": 0.0869,
+   "rep_frame": ".\\scan\\s_00329.jpg",
+   "rep_time": 984.0,
+   "samples": 12,
+   "likely_slide": true
+  },
+  {
+   "start": 1002.0,
+   "end": 1023.0,
+   "duration": 24.0,
+   "internal_motion": 0.0032,
+   "edge_density": 0.0814,
+   "rep_frame": ".\\scan\\s_00339.jpg",
+   "rep_time": 1014.0,
+   "samples": 8,
+   "likely_slide": true
+  },
+  {
+   "start": 1026.0,
+   "end": 1092.0,
+   "duration": 69.0,
+   "internal_motion": 0.0046,
+   "edge_density": 0.0881,
+   "rep_frame": ".\\scan\\s_00354.jpg",
+   "rep_time": 1059.0,
+   "samples": 23,
+   "likely_slide": true
+  },
+  {
+   "start": 1095.0,
+   "end": 1122.0,
+   "duration": 30.0,
+   "internal_motion": 0.0071,
+   "edge_density": 0.1085,
+   "rep_frame": ".\\scan\\s_00371.jpg",
+   "rep_time": 1110.0,
+   "samples": 10,
+   "likely_slide": true
+  },
+  {
+   "start": 1125.0,
+   "end": 1152.0,
+   "duration": 30.0,
+   "internal_motion": 0.0036,
+   "edge_density": 0.0842,
+   "rep_frame": ".\\scan\\s_00381.jpg",
+   "rep_time": 1140.0,
+   "samples": 10,
+   "likely_slide": true
+  },
+  {
+   "start": 1158.0,
+   "end": 1191.0,
+   "duration": 36.0,
+   "internal_motion": 0.0069,
+   "edge_density": 0.0795,
+   "rep_frame": ".\\scan\\s_00393.jpg",
+   "rep_time": 1176.0,
+   "samples": 12,
+   "likely_slide": true
+  },
+  {
+   "start": 1194.0,
+   "end": 1233.0,
+   "duration": 42.0,
+   "internal_motion": 0.0039,
+   "edge_density": 0.0946,
+   "rep_frame": ".\\scan\\s_00406.jpg",
+   "rep_time": 1215.0,
+   "samples": 14,
+   "likely_slide": true
+  },
+  {
+   "start": 1236.0,
+   "end": 1474.0,
+   "duration": 238.0,
+   "internal_motion": 0.0364,
+   "edge_density": 0.0727,
+   "rep_frame": ".\\scan\\s_00423.jpg",
+   "rep_time": 1266.0,
+   "samples": 5,
+   "likely_slide": true
+  }
+ ]
+}

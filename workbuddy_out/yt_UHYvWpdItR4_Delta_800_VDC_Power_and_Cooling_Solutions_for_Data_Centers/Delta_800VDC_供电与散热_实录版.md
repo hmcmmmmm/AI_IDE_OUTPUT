@@ -1,0 +1,547 @@
+# 800 VDC 供电与散热方案
+
+**Ralf Pieper（Delta）、Mike Tu（NVIDIA）OCP Global Summit 2026 演讲 · 图文实录**
+
+---
+
+## 关于这份文档
+
+这是一份**逐段实录**，不是要点综述。每一节遵循同一结构：
+
+- **图片**：演讲当时投影的幻灯片，按时间顺序
+- **中文译文**：讲者在这一页停留期间所说的话，逐句翻译，不作删减
+- **英文原句**：同段话的英文原文，供核对与引用
+- **小结**：整理者对这一段的一句话归纳，与讲话内容明确区分
+
+原文由 YouTube 自动字幕转写，已去除 um、uh 等口头填充词，并修正明显的转写错误：**Ralf Pieper**（字幕作 Ralph Piper）、**Mike Tu**（字幕作 Mike To）、**Delta**（字幕作 Data / Delta）、**HPRv4 / HPRv2**（字幕作 HPRV4 / HPRV2）、**NVL72**（字幕作 via 72 / 2VR）、**EDPP**（字幕作 EDPP / 保持能量指标）、**RPP 远端配电盘**（字幕作 RPP / PR）、**SST 固态变压器**（字幕作 SST / TRU）。
+
+凡口播数字与幻灯片标注不一致处，正文采用幻灯片值，并在当节注明差异；仅存在于口播、幻灯片上无对应的数字，标注为「口头表述」。问答环节的观众发言按原意译出并标明发言者。
+
+---
+
+## 视频信息
+
+| 项目 | 内容 |
+|---|---|
+| 标题 | Delta 800 VDC Power and Cooling Solutions for Data Centers |
+| 讲者 | Ralf Pieper，Delta 研发与设计资深总监<br>Mike Tu，NVIDIA 首席电气工程师 |
+| 场合 | OCP Global Summit 2026 · Executive Session |
+| 时间地点 | 2026 年 10 月 13 日，加州圣何塞（页脚：October 12–15, 2026） |
+| 时长 | 24 分 34 秒 |
+| 频道 | Open Compute Project（YouTube） |
+| 链接 | https://www.youtube.com/watch?v=UHYvWpdItR4 |
+
+---
+
+# 第一部分　为什么是 800 VDC
+
+## 01　开场：1 MW 机架让 50 V 不再成立
+
+![800 VDC Power and Cooling Solutions for Data Centers：Mike Tu（NVIDIA，首席电气工程师）与 Ralf Pieper（Delta，研发与设计资深总监）](images/01_00m48s.jpg)
+
+好，下午好，欢迎来到 OCP 峰会。感谢大家来参加今天的这场高管专场。今天我很荣幸和来自 NVIDIA 的 Mike Tu 同台。
+
+我也很荣幸，Ralf。他是首席电气工程师，负责 AI 工厂的电力基础设施。很高兴来到这里。
+
+好，我叫 Ralf Pieper，是定制设计事业部的研发总监，部门在德国。从今年年初起，我是 OCP 顾问委员会的成员。今天我们想讲的是面向数据中心的 800 V 供电与散热方案。
+
+我们为什么在这里？大家都知道，AI 工厂的电力需求在指数级上升。而 50 V 这个电压，已经不再是给功耗 1 MW 的计算机架供电的正确选择。所以我们要走向 800 V 配电。今天我们会给出覆盖所有集群规模的方案。当然，在这样的功率水平下，散热同样关键。演讲最后我们也会展示一些 Delta 的散热方案。
+
+Delta 是谁？公司由 Bruce Cheng 创立于 1971 年。在过去的……
+
+> Okay, good afternoon and welcome to the OCP Summit. Thank you for joining the executive session today. So, I have the honor to be on stage with Mike Tu from Nvidia. It's my honor, too, Ralf. So, he's a principal electrical engineer in charge of AI factory power infrastructure. Yeah, good to be here. Okay, so my name is Ralf Pieper. I'm the R&D director of custom design business unit located in Germany. Since beginning of this year, I'm the member of the advisory board of the OCP. And today we want to present the 800-V power and cooling solutions for data centers. So, why are we here today? So, we all know the power demand of the AI factories is increasing exponentially. And the 50-V voltage is not the right choice anymore to power compute rack with 1 MW of power dissipation. So, we will head to 800-V distribution. And we will present now solutions for all cluster sizes. For sure also cooling will be essential or critical for this power levels. And at the end of the presentation, we will also show some cooling solutions from Delta. So, who is Delta? So, we were founded by Bruce Cheng 1971. And over the last
+
+<div class="takeaway"><b>小结</b>　开场的论证很短也很硬：1 MW 机架 + 50 V = 两万安培，这个电流量级已经不是"优化"能解决的，只能换电压等级。</div>
+
+## 02　Delta 是谁
+
+![Delta at a Glance：1971 年由 Bruce Cheng 创立；No.1 商用电源制造商、2025 年营收 178.8 亿美元、每年投入超过 8% 营收做研发、2010–2025 年减碳 3130 万吨](images/02_01m48s.jpg)
+
+……五十五年里，我们成为了全球领先的电源与无刷直流风扇制造商。在过去 15 年里，通过持续提升产品效率，我们减少了大约 3100 万吨碳排放（幻灯片标注 31.3 M tons，2010–2025）。
+
+那么现在我把时间交给 Mike，他来讲我们为什么选择 800 V。
+
+哇，今天满场。这届 OCP，你会听到很多关于 800 V 直流的讨论。光我自己就有六场。真不敢相信，太疯狂了。但在深入之前，我们得先理解为什么。大家会说："800 V 直流，你是认真的吗？真的有这个必要吗？"所以我想……
+
+> five and a half decades, we became the worldwide leading manufacturer of power supplies and brushless DC fans. In the last 15 years, we saved around 31 million tons carbon emission by steadily increasing our efficiency of our products. So, now I hand over to Mike. He will tell us why we choose 800 V. Wow, it's a full house today. For this OCP, you're going to have about 800 V DC a lot. Just myself, I got six sessions. So, can't believe that. It's crazy. But, before you dive into it, we have to understand why. Right? People are like, "800 V DC, are you really serious? Is there really a need?" Right? So, I think
+
+<div class="takeaway"><b>小结</b>　"我自己就有六场"这句话透露了一个信号：800 VDC 在这一届 OCP 已经不是某一家公司的提案，而是整条供应链的共同议题。</div>
+
+## 03　800 VDC 的两个目标
+
+![Why 800 VDC?：01 Optimize Power for Token Production（可扩展供电架构、更高 AI 计算密度、更好的电力利用率与韧性）；02 Expedite Deployment of AI Factories（灵活的供电选项、简化的基础设施、更快的工厂建设）；底部"More compute from every watt. Faster capacity from every build."](images/03_03m00s.jpg)
+
+……先给一些快速回应。其实只有两个愿景——来自 Jensen（黄仁勋）的只有两个强方向。第一，如何为 token 优化电力。第二，如何做到快速部署。就这么简单，对吧？这有多难呢？Jensen 总这么说。但我们需要在座每一个人来帮忙，说真的。
+
+那么在"为 token 优化电力"这一侧，第一是可扩展的架构。我们推动 800 V 直流，并不只是为了电压本身。它会因为砍掉一级变换而更高效，也会更紧凑，铜用量更少——从三相到两相。然后我们还在谈怎么真正推动下一代计算密度，所以我们正走向 800 V 直流"原生骨干"的设计，这需要整个生态一起参与来支撑。
+
+还有利用率。你们在上一场里听过 MaxLPS。这正是 800 V 直流加上储能、加上控制能起作用的地方：我们可以更高效地把更多 GPU 负载"订"到固定数量的电网容量上。
+
+右边是快速部署。接下来我们会展示架构。"交流与直流共存"是关键——我们要确保现阶段行业里这两种选择都在。同时，这也正是 800 V 直流支持模块化设计的驱动因素。有了模块化，部署就能更快：并行施工、预制、预搭建、预调试，全部可以并行推进。
+
+> we'll give some quick feedback. But they have two visions. From Jensen, there are only two strong directions. Number one, how we can optimize power for tokens. And number two, how we can do fast deployment. Right? It's simple, right? How hard can that be? Jensen always says that. But we need everybody here to help. Seriously. So, on the optimized token ones, number one is scalable architecture. We are driving 800 V DC. It's not just for the voltage. It's going to be more efficient by cutting out the conversion. It's also going to be more compact. Less copper from three-phase to two-phase. Then we're also talking about how we're going to really drive the next-generation of compute density. So, we're pushing towards the 800 V DC native backbone design. So, we have to have the involvement to support that. And also, exactly about utilization. You heard about max LPS from the last session. This is exactly where with 800 V DC with energy storage, and also the control, we can be more efficient to subscribe more GPU loads to the fixed amount of the utility. Then on the right side is fast deployment. So, from now on, we're going to show the architecture. AC-DC coexistence is critical. So, we want to make sure that we have these two options for now for the industry. Then same time, this becomes the exactly driver enabler for 800 V DC to support module design. And with that, this module can be faster deployment. You can do parallel construction, prefab, pre-built, pre-commission all together as a parallel path.
+
+<div class="takeaway"><b>小结</b>　两个目标里，"快速部署"其实更难兑现——它要求供电从"现场施工"变成"工厂出货"，这也是后文方案 A/B/C 的分水岭。</div>
+
+## 04　四代机架功率台阶
+
+![800 VDC Imperative：机柜功率（kW）对时间（2024–2032）的四级台阶与 72/144 GPU 趋势线；Gen 1 GB200/GB300 NVL72 54 VDC 145 kW、Gen 2 Vera Rubin NVL72 54 VDC 330 kW、Gen 3 54 VDC 570 kW（800 VDC 进 PSU、100% 液冷）、Gen 4 原生 800 VDC](images/04_04m30s.jpg)
+
+明天——不，是周三，我们和 Jared Huntington 有一场，会发布最新的路线图。不过这张图五月份就公布过了。你知道，光速一样，每天情况都在变。要注意的是四条平行的线，它们对应机架功率容量的第四代。
+
+我们很快就到了今天所处的第二代：NVL72，54 V 直流主平面。是的，今天我们默认还是把交流电送进机架，但这意味着我们同时也为直流做好了准备——因为我们可以做 DC/DC 电源托盘，800 V 直流转 54 V 直流，没问题。
+
+而很快到第三代、下一代，我们靠八个电源托盘把单机架容量推到 570 kW，这一代的 DC/DC 电源托盘是全液冷的。第四代这里还是保密状态，但那就是原生的 800 V 直流机架，计划 2028 年部署。
+
+> Tomorrow, no, Wednesday, we have a session with Jared Huntington. We're going to release the latest road map. But, this has been announced back in May. As you know, speed of light. Every day things are changed. But, to pay attention is a four parallel line. That reflects to the fourth generation of the rack power capacity. So, very quickly we're at Gen 2 today. NVL72, 54 V DC main plane. So, yes, today we still powering AC to the rack as default. But, that means we also ready for DC. Why? We can do DC DC power shelf. 800 DC to 54 DC, there's no problem. And very quickly for the Gen 3, the next generation, we're pushing 570 kW per rack capacity by using eight power shelf straight. And the DC DC power shelf in this case we full liquid cool. And the Gen 4 is still secret here, but that's exactly a native 800 VDC rack, which is planned for 2028 deployment.
+
+<div class="takeaway"><b>小结</b>　注意 Gen 3 的定义方式：仍然是 54 V 母排，但 800 V 已经进到 PSU 内部——这不是过渡妥协，而是把"最后一跳"留给机架自己解决。</div>
+
+## 05　800 VDC 过渡路线图
+
+![800 VDC Transition Plan：上排为交流进线的 1PH/3PH AC PSU 托盘与 800 VDC 边车（c250 kW 用于 54 VDC，>250 kW 用于 +400 VDC）；下排为 SST/TRU 3–5 MW 直接输出 800 VDC 母线；右侧自上而下标注 Today → Next Gen 50 V Server → Next Gen 800 V native Server](images/05_05m06s.jpg)
+
+在哪……好，不想点太多次。我们把这叫做"几种配电选项"。就像去冰淇淋店，每个人喜欢的口味不同，因为性格不同——这里是使用场景不同。
+
+对现在这些应用，交流仍然能用，但我们正在接近极限。于是有了 A、B、C 三种，取决于你在什么位置。
+
+A 是较小规模的企业单排。把它当成一个适配器：你可以到处搬，按计算机架来，放一个适配器、把电源机架当作边车（side car）直接集成进去，部署很快。
+
+B 是把一个 pod、一个集群当作目标对象，在行的末端把 800 V 直流送到相邻位置。这种设计适用于 colo、neo cloud 这类场景：你可以在完全不动机房灰空间和白空间的情况下，只在行的末端用不同电压服务不同集群。
+
+然后进入下一章，方案 C。这个词你会听到很多次。这是未来——我们要开一套新架构，把整栋楼当成对象。你看不到蓝色（交流）了：从中压交流直接变成 800 V 直流。我把时间交给 Ralf。
+
+好，这里是我们看到的 800 V 过渡计划。从上到下是时间，从左到右是电压变换。
+
+> Where is the — Okay. Don't want to click too many times. So, we call this a few distribution options. Just like go to ice cream shop, everybody like different flavors. Because they have different personality, in this case have different use cases. So, to the file apps today, AC still works, but we are reaching a limit. And we got ABC, that's really depends on where you are. For A, we talk about smaller scale enterprise single row. Treat as adapter, you travel around, easy per computer rack. You put adapter, you put a power rack as a side car, directly get it integrated. Fast deployment. Option B is where we treat a pod, a cluster as a target audience, to feed 800 VDC adjacent at the end of the row. So, this design way can be functional, such as colos, such as neo clouds, you can treat different cluster by feeding different voltages without touching the gray space or the white space, just at the end of the row. And we get to the next chapter, option C. You're going to hear this a lot. This is the future, where we're going to open a new architecture. Treat the whole building. You see no more blue? Straight from medium voltage AC to 800 VDC straight. I'll turn it to Ralph. Okay. So, here you see our 800 V transition plan, how we see this from top to bottom is the time. And from left to right is the voltage conversion.
+
+<div class="takeaway"><b>小结</b>　A/B/C 不是三代产品，而是三种"改造深度"：换机架、换一排、换整栋楼——决定权在客户手里那栋楼还有多少年寿命。</div>
+
+---
+
+# 第二部分　从电网到芯片：三个难题
+
+## 06　50 VDC 产品谱
+
+![50 VDC Product Overview：ORV3 HPR/GB300 33 kW 托盘（7.5 kW/PSU）、ORV3 HPR2 72 kW 托盘（16.5 kW/PSU）、3PH 18.5kW 74 kW 托盘、VR200 110 kW 托盘（18.5 kW/54 V PSU，提升 200%），时间轴 2025–2027](images/06_07m54s.jpg)
+
+……我们有的产品。先从两款单相单元说起：左边是 5,500 W，右边是 12 kW 的 HPRv2。现在我们也提供 18.5 kW 的三相单元。我们有 1U 装四个单元的托盘，74 kW；以及 VR200 托盘，3U、110 kW。
+
+这里看到的是一个传统数据中心的常规单线图。
+
+> products we have. So, starting with the two single-phase units. So, we have 5,500 W on the left, and then the right one is a 12 kW HPRV2. And we also offer now the 18.5 kW three-phase units. We have a one U shelf with four units, which is 74 kW, as well as the VR200 shelf. So, it's three RU with 110 kW. Here you see a normal single-line diagram of a traditional data center.
+
+<div class="takeaway"><b>小结</b>　从 33 kW 到 110 kW，单托盘功率三年翻了三倍多——但这条路已经走到头，110 kW 之后再翻倍就要换电压等级。</div>
+
+## 07　传统七级链路：问题出在哪一级
+
+![Grid-to-Chip Power Solution for Data Centers：34.5 kVAC 到 0.65 VDC 的常规交流分布式链路——市电、变压器、ATS、UPS、PDU、Power Shelf、CPU/GPU，另有锂电池经 CBU 支撑 50 V 母线](images/07_08m30s.jpg)
+
+今天我们重点讲 GPU 的动态特性——非常硬的负载阶跃，而我们不希望这些东西出现在交流电网上。
+
+一种办法是图上橙色圈出来的电容托盘：我们可以在母线上挂一个 50 V 或 400 V 的电容托盘来应对这些动态。但因为它是一个外部单元，它永远只能"响应"负载阶跃，所以总是稍微晚了一点。更好的办法是把……
+
+> Today, we will focus on the dynamics of the GPU, which is very stiff load steps, and we don't want to see this on the AC grid. So, one option is this orange-circled cap shelf. So, we can deploy a 50-V or a 400-V cap shelf to the bus to cope with the dynamics, but as this is an external unit, it's always only reacting on the load steps. So, it's always a little bit too late. So, a much better option is to put
+
+<div class="takeaway"><b>小结</b>　"总是晚了一点"是这一页的核心判断：外部电容只能事后补偿，而 GPU 的阶跃是微秒级——补偿的位置必须往电源内部挪。</div>
+
+## 08　把储能塞进电源里
+
+![Trending: High-Energy and High-Power PSUs：能量存储被引入以平滑 GPU 负载波形；1PH PSU（GB300 NVL72）与 3PH PSU（Vera Rubin NVL72）实物，底部注明"铝电解电容嵌入 PSU 以应对高频动态负载"](images/08_09m24s.jpg)
+
+……储能放进电源里面。右边你看到的是 EDPP 的负载脉冲波形：先是一两百微秒的 180% 到 200% 负载，接着是 50 毫秒的 150% 负载，然后就回到 TDP 限值以下。
+
+中间上方是一个单相单元，里面有三个大电容，它的能量不足以应对这 50 毫秒的负载阶跃。结果就像左边看到的，我们在交流输入电流上、在电网上都能看到它。但供电方希望看到非常干净的输入电流。所以我们在这款三相单元里放了很多电容——16 个。
+
+在这几张示波器图上能看到效果：上面那张还是单相单元，蓝色曲线是输出负载，黄色曲线是输入电流，你能清楚地看到输入侧的脉动电流。
+
+> the energy storage into the power supply. So, on the right side, you see this EDPP load pulse pattern. So, it starts with 180 to 200% load for a few hundred microseconds, and then followed by a 50-ms 150% load. And then we are below the TDP limit. On the top in the middle, you see a single-phase unit with three bulk caps, and the energy is not enough to cope with this 50-ms load step. And the result as you see on the left side, we see this on the AC input current and on the grid. But the energy provider or grid provider want to see a very clean input current. So, we put a lot of caps into this three-phase unit, 16 pieces. And here on these scope pictures, we see the impact. So, the top one again is the single-phase unit where the blue curve is the output load and the yellow curve is the input current. So, you see exactly the pulsating input current on the input.
+
+<div class="takeaway"><b>小结</b>　"16 个电容"是这一页最实在的数字：它把 GPU 的 50 毫秒阶跃挡在 PSU 里，代价是体积——这也解释了后面为什么必须液冷。</div>
+
+## 09　三相 PSU 如何把输入电流抹平
+
+![AC Smooth Control with High Energy PSU：上图为 1PH NVIDIA GB200 NVL72 的输入电流（黄）、输出负载（蓝）、母线电压（绿）；下图为 3PH NVIDIA Vera Rubin NVL72，输入电流平直而输出仍在阶跃](images/09_10m18s.jpg)
+
+而下面那张三相单元，输出上是一样的负载阶跃，母线电压——绿色那条——会上下摆动 150 V（口头表述），与输出负载同步；结果是输入电流非常完美地平直。
+
+好，回到 Mike，请他讲更大的集群规模。
+
+> where else on the three-phase unit in the bottom, we have the same load steps on the output and the bulk voltage, the green one, this is going up and down, swinging by 150 V in sync with the output load, and the result is a very perfect flat input current. Okay, back to Mike telling us about bigger cluster sizes.
+
+<div class="takeaway"><b>小结</b>　波形图给出了这场演讲最直观的证据：让母线电压去"扛"波动，电网侧才能看到一条直线——储能的位置决定了波形由谁承担。</div>
+
+---
+
+# 第三部分　三种部署形态
+
+## 10　过渡：从机架走向吉瓦级工厂
+
+![章节页：Empowering the Future — Gigawatt AI Factory by 800 VDC](images/10_10m45s.jpg)
+
+好，你们刚听了 Ralf 讲 Delta 的方案，很了不起，事情就是这样真正被做出来的。我得回到我这边。
+
+这是方案 A，我们在讲适配器。你看中间那块，今天在服务一台 VR（NVL72）。右边那些图，是你把 100 A 的交流线缆接进去的位置——还是要往下走，交流输入的线缆依然相当多。
+
+> Yeah, so you heard about Ralph about Delta solution, right? That's amazing about how things really get done. I have to stay on your position. So, this is option A, right? We're talking about adapters. You can see right in the middle serving a 2VR today. To your right, you see the pictures about where you're going to black in boost the 100 amp AC whips still coming down. There's still quite many cables
+
+<div class="takeaway"><b>小结</b>　章节页出现时讲者已经在讲方案 A 了——这个 5 秒的错位正好说明：演讲的节奏由内容驱动，幻灯片的翻页只是跟随。</div>
+
+## 11　方案 A：边车式电源机架
+
+![Option A: Edge Inference Upgrade：L11 = 1 台 800 VDC 电源机架 + 2 台 VR NVL72 计算架；电源机架 660 kW、415–480 VAC 输入配 12 根 100 A 交流套管、800 VDC 输出配 8 根 125 A 直流电缆、支持 N+N 冗余、可容纳 BBU](images/11_11m18s.jpg)
+
+……交流输入。然后蓝色线缆代表相邻的电源线，125 A 直流，直接穿墙接到电源托盘上。这里没有直流母排。
+
+所以对这一个方案来说，从法规、从电弧闪光的角度，顾虑非常非常小；而且我们用线缆套管（whip）的设计来保护 IT 人员。我觉得这是个电源问题。
+
+好，接下来我们说 HDA 中心、企业级可能是最合适的使用场景。你可以按排来看，中间黑色的部分就是电源机架要放的位置。但你也看到，这会拉长整排的长度。
+
+> for AC input. And then the blue cable representing the adjacent power cables, at 125 amp DC. Straight through the wall and connected to the power shelf. There's no DC bus bar. Okay, so for this one from regulatory, from arc flash is very minimal concern. And we're utilizing a whip design to protect the IT personnel. I think it's a power problem. Okay. And then we talk about the HDA center enterprise could be a best use cases. So you can see per row, the black in the middle is where the power rack's going to position. But you can see this also expanding the row length.
+
+<div class="takeaway"><b>小结</b>　"没有直流母排"是方案 A 最被低估的优点：它把 800 V 的风险收敛到几根穿墙电缆里，监管与安全评审因此变得可承受。</div>
+
+## 12　案例 1：边缘数据中心
+
+![Case 1 – Edge Data Center w/ Option A：玻璃幕墙机房内的整排计算架，末端为电源机架，窗外是城市天际线](images/12_11m48s.jpg)
+
+（这一页停留的十几秒里没有讲话。画面是方案 A 的边缘数据中心示意：整排计算架，末端接一台电源机架。）
+
+> （本页无讲话）
+
+<div class="takeaway"><b>小结</b>　边缘场景的约束不是功率而是空间：电源机架必须能塞进既有楼层、贴着幕墙摆放，这正是"边车"形态存在的理由。</div>
+
+## 13　两种边车：900 kW 交流与 660 kW 直流
+
+![ORV3 / 800 VDC In-Row Power Rack：左为 ORV3 HPRv4 900 kW 交流电源机架（N+2 冗余、5 组 180 kW 电源托盘、BBU 25 kW / CBU 16 kW）；右为 800 VDC 660 kW 机架（18.5 kW PSU ×6、20 kW BBU ×4、集成 480 kW BBU 备电、效率可达 98%）](images/13_12m24s.jpg)
+
+HPRv4。它是一套 900 kW 的交流供电装置，BBU 和 CBU 的配置很灵活。就像 Mike 说的，这里面有一条垂直母排把所有设备连起来，一直引到顶部，那里有一个 DCPDU 做故障保护。所以交叉连接线缆就接在那儿。
+
+右边你看到的是 NVIDIA 机架，里面有六个托盘。它们是解耦的、各自独立的，彼此不相连。我们还可以提供可选的 480 kW BBU 备电。
+
+在交叉线缆另一侧的 IT 机架里，就是下游那个 800 V 转 50 V 的变换器。
+
+> HPRV4. So it's a 900 kW AC power installation with flexible GPU and CP BBU and CBU configuration. As Mike said, in this one we have a vertical bus bar connecting all the equipment together bringing up to the top section where we have a DCPDU which protects from faults. So there are the crosslink cables connected. On the right side you see the Nvidia rack with six shelves. So they are disaggregated, so stand alone, not connected to each other. And we can also offer optional 480 kW BBU backup power. On the other side of the crosslink cable in the IT rack, there will be this downstream 800 V to 50 V converter.
+
+<div class="takeaway"><b>小结</b>　"六个托盘彼此不相连"是个刻意设计：电源解耦之后，单个托盘故障不会沿母排扩散，冗余才能按托盘粒度配置。</div>
+
+## 14　机架内 800 V 转 50 V
+
+![In-Rack 800 VDC to 50 VDC DC-DC Power Shelf：1U 概念、19 英寸 90 kW 与 21 英寸 108 kW 两种规格、峰值效率 98.5%、6 路 15 kW/18 kW 输出、800 V 转 54 V 隔离变换、母排夹连接、支持 Ethernet/Redfish 的托盘控制器](images/14_13m03s.jpg)
+
+我们有两个尺寸：19 英寸 90 kW，21 英寸 108 kW。峰值效率很高，98.5%，而且我们提供和交直流电源一样的托盘控制器。
+
+> We have two sizes, 19-in with 90 kW and 21-in with 108 kW. A very high peak efficiency, 98.5%, and we offer the same shelf controller like we offer for the AC power supplies.
+
+<div class="takeaway"><b>小结</b>　把 800→54 V 这一级做成 1U 托盘并沿用同一套控制器，等于让机架侧"忘记"上游是交流还是直流——这才是 A/B/C 三种形态能共存的技术前提。</div>
+
+## 15　风冷转液冷：三条理由
+
+![Transition from Air to Liquid Cooling：97% 效率下 1 MW 负载仍有 30 kW 损耗；30 kW 单元的风扇功耗达 200 W（0.7% 效率损失）；38,000 转风扇噪音难以忍受](images/15_13m54s.jpg)
+
+然后我们也看到，现在我们的电源正在从风冷转向液冷。原因有三条。
+
+第一，即使我们做到 97% 效率，1 MW 机架那 3% 的损耗仍然是 30 kW 的热风，这太多了，也不经济。
+
+第二，风扇本身的功耗相当高。对一个 30 kW 的单元，风扇要 200 W，等于 0.7% 的效率损失。
+
+第三，风扇的噪音是难以忍受的，你可以想象。
+
+解决办法是一种"披萨盒"式的 PSU：不再有可更换的单个模块，而是一整个盒子、一个冷却回路，就像一台服务器。我们会把 DC/DC 和 AC/DC 单元都做成 2U 尺寸，也就是从 3U 减到 2U。
+
+好，回到 Mike。
+
+> Then we also see the transition now for our power supplies to move from air cooling to liquid cooling. So these are just three reasons. The first one is even if we have 97% efficiency, this 3% losses of 1 MW rack is still 30 kW hot air, which is too much and inefficient. Then also the fans itself, they have a quite high power consumption. So, for the 30 kW unit, we have 200 W for the fan, which is 0.7% efficiency loss. And then also the fans make a very unbearable noise, as you can imagine. And the solution is a kind of pizza box PSU. So, we don't have single modules, which are exchangeable. So, it's one box, one cooling loop, same like a server. And we will offer the DCDC and also the ACDC unit actually in two U size. So, we can reduce from three U to two U. Okay. Back to Mike.
+
+<div class="takeaway"><b>小结</b>　"披萨盒 PSU"放弃的是可更换模块，换来的是整机一体化散热——这笔交易的潜台词是：电源的可靠性已经高到不需要现场换模块了。</div>
+
+## 16　方案 B：把功率变换移出这一排
+
+![Option B: Compute Cluster Upgrade (RPP)：L12/13 = 4 台 800 VDC 电源中心 + 14 台 VR NVL72 计算架；每排配 4 台 800–1000 kW 电源中心、POD 容量可达 6 MW、可配置 4 台做 3 台或 N+N 冗余、每台 NVL72 需 4 根 125 A 套管](images/16_14m51s.jpg)
+
+好，那就是方案 A。现在看方案 B。就像我说的，B 的特点是把功率变换留在这一排之外——在这个例子里是在行的末端。它也可以紧邻，或者放在另一个房间。下面……
+
+……是正视图。你可以看到这个核心电源中心可以直接从灰空间接入托盘线缆，再通过 RPP 方案送出去——远端配电盘（Remote Power Panel），把一根根套管线缆直接送进计算集群。所以这是一个理想的方案，就像我说的，对 colo 和 neo cloud 这类场景是成立的。
+
+这也是一种用例：对那些今天正在施工中的超大规模项目，他们不想在"第二天"再做改造，就可以考虑这个方案，既不影响供应链，也不……
+
+> All right, so that's option A. So, looking at option B here. So, B is, like I said, exactly, you can see power conversion stay outside the row, which is at the end in this case. This could be right adjacent to it or could be in different room. The bottom is shows the front view. You can see this core power center can be directly intake tray cables from the gray space and feeding the using RPP solution, remote power panel to feed individual whip into the compute cluster directly. So, that's an ideal solution, like I said, to be functional, such as a Colos and Neo Clouds can support. So, this is one use cases. For hyperscaler who are doing in-flight project today, they don't want to do retrofit for day two, they may consider this option without impacting the supply chain, without
+
+<div class="takeaway"><b>小结</b>　方案 B 的真正卖点是"不动灰空间"：电源中心放在行末或隔壁房间，改造范围因此被压缩到白空间之内，机房整体不必重新报批。</div>
+
+## 17　案例 2B：超大规模在建项目
+
+![Case 2B – Hyperscale In-flight Pivot w/ Option B：沙漠中的超大规模园区航拍，厂房与变电站已成形、部分仍在施工](images/17_15m18s.jpg)
+
+……影响当前的设计规划，同时又能快速让方案具备 800 V 直流能力。然后是方案 C，我快速带你看一下。这里最左边是 RMU 环网，用的是 35 kV、34.5 kV，我们……
+
+> impacting the current design planning, and still quickly adopt the solution to be 800 DC ready. Then option C, I'll give you a quick pick on this one. This is showing using the RMU loop to the far left, which again using 35 kV, 34.5 kV, and we
+
+<div class="takeaway"><b>小结</b>　"在建项目"才是 800 VDC 最现实的客户：图纸还没冻结，改一次架构的成本远低于建成后改造——这张航拍就是最好的销售道具。</div>
+
+## 18　方案 C：绿地数据大厅
+
+![Option C: Green Field Data Hall：L14 = 中压进线到 7 台 800 VDC 电源块 + 6 个计算集群；7 台 DC 电源块、6+1 冗余、可转为 DC UPS；右侧为 MVAC 环网经 RMU 到 7 台 5 MW SST（含 ESS）再馈入数据大厅的拓扑](images/18_15m45s.jpg)
+
+……可以支持 6+1 的架构。我们目标是把每一台 SST 或 TRU 做到 5 MW，并在顶部集成 ESS 柜。这样它就变成了一个模块。
+
+后端我们做汇流系统，通过输出配电柜连起来，然后一对一直接送到计算集群。
+
+为什么这个设计理想？因为它同样支持模块化设计和快速部署，可以变成集装箱化的方案。
+
+> can support a 6 + 1 architecture. And we target each SST or TRU to be 5 MW, and integrate with ESS cabinet on the top. So, this become a module. And then we do the catcher system at a back end connecting through the output switchboard. And then directly one-to-one feed to the compute cluster. So, why this design is ideal? It's also support a module design and fast deployment. Those can become turn into a containerized solution.
+
+<div class="takeaway"><b>小结</b>　7 台做 6+1，是这一页唯一的安全边际：单台 5 MW 的 SST 失效时，整栋楼少 1/7 的算力，而不是全停——模块化的真正价值在这里。</div>
+
+## 19　集装箱化示意
+
+![Option C 同一页加入 AI 生成示意图：集装箱式计算集群顶部自带冷机，旁边是电源控制单元与 SST，之间以母线与管路连接](images/19_16m24s.jpg)
+
+为了说明，这里放一张快速生成的 AI 图。它不是真的，只是示意。
+
+每一个计算单元里面可以放计算集群，旁边紧挨着电源，自带冷机做散热。就像 Ralf 讲的，一切都变成液冷，所以排热、热管理都会更容易。
+
+你可以看到，需要的只是电缆母线或者母线对接装置来快速连接。所有东西都可以在工厂侧预制、预装、预搭建。
+
+> To illustrate, shows a quick AI-generated image. It's nothing is real, but just for your illustration. Each of the compute can have the compute cluster inside and the DC power adjacent to it with the self-equipped chiller for cooling system. And like Ralph talking about, everything becomes liquid cool, so the thermal rejection, or thermal management is going to be easier. But you can see just required maybe cable bus or a bus dock to quickly connect. Everything can be pre-fab, pre-built from the factory side.
+
+<div class="takeaway"><b>小结</b>　讲者特意声明"这不是真的"——恰恰说明这个形态还没有产品：集装箱化是路线图的终点，不是货架上的选项。</div>
+
+## 20　七级变四级
+
+![800 VDC simplifies the Power Path：常规路径七级（MVAC 电网、降压变压器、低压开关柜、UPS、PSU/RPP、机架 PSU、计算），800 VDC 路径四级（MVAC 电网、SST 中压整流、800 VDC 配电、原生 800 VDC 计算）；"不只是电压变化，而是重新设计系统的机会"](images/20_16m54s.jpg)
+
+这张图给你一个快速的路线，说明电力路径可以怎么简化。作为对照，这是交流的路径——你可以看到全部七级。而今天，从中压交流一次变换就直接把电送到机架。
+
+这就是我们看到的愿景：整条路径可以更精简、更简单、更紧凑，并且变成可模块化部署的。
+
+> So, this give you a quick road map about how things can be simplified on the power path. To illustrate, this is to the AC. You can see all the seven stages. Where today from medium voltage AC single-stage conversion and directly send the power to the rack. And that's the vision we see how things can be much streamlined, simplified, more compact, and become module deployable.
+
+<div class="takeaway"><b>小结</b>　七级到四级，被砍掉的是变压器、开关柜和 UPS——这三样恰好也是交付周期最长、最占建筑面积的部分。</div>
+
+---
+
+# 第四部分　储能、微电网与落地节奏
+
+## 21　ESS 打开的四种可能
+
+![Integrated ESS: Reliability and Power Optimization：800 VDC 电源模块（SST 变换、保护与安全、BMS 控制、RPP 配电）＋ 电网/发电 ＋ AI 计算 ＋ ESS 能量缓冲；右侧四栏为故障穿越、备电、功率平滑、负载平均化](images/21_17m39s.jpg)
+
+ESS 很重要。Ralf 讲了功率平滑。我想快速说一下：如果把 ESS 集成在 SST 的输出端，你会打开四种可能。
+
+第一是故障穿越（fault ride-through）。今天你是把电池放在电网侧，但你得配逆变器，所以有效率问题，还得规划不同的空间。而在这个方案里，它可以分布到不同的 SST 位置。
+
+第二是备电。大家想要 BBU、想要 UPS，这就直接提供了。取决于你把 ESS 做多大，你就有了这份备电来提升服务可用性。
+
+第三是功率平滑。这一点极其关键。我们另有一场，由我们的 VP 讲智能功率平滑，会更详细地说明 NVIDIA 内部如何做更精细的功率平滑控制，从而不影响系统稳定性和并网。
+
+最后是负载平均化。就像我说的，我们想把 MaxLPS 当作标准功耗的基准，把波动降到最小。这样在很有限的电网容量下，我们能"订"到尽可能多的 GPU。
+
+最后，这就到了我的微电网。大家都知道微电网。这是一个微电网：最左边是各种电源，包括可以接入的 ESS，它变成一个智能枢纽，你可以开始训练你的 AI 去寻找最优运行模式。所以它是一个……
+
+> ESS is important, right? Ralph showed about power smoothing. So, I want to quickly talk about if you have the ESS integrated at SST output end, you enable four different possibility. Number one is about fault ride-through. So, today you are putting batteries at a grid location. But, you have to do inverter. So, it's efficiency problem. You have to plan different spaces. But, in this case, this could be distributed across different SST location. Secondly, backup power. People want BBU. People want UPS. This directly enables that. Depends on how you size your ESS, you have this backup power to bring our service uptime. And then we have the power smoothing feature. This is super critical. We have a separate session from our VP GG will talk about intelligent power smoothing to tell you more about how NVIDIA internally can behave a closer control for power smoothing that you can not impacting the system stability and grid interconnection. Last one is load averaging, like I said. We want to treat max LPS as a standard for a standard power consumption. Minimize the fluctuation. So, with a very finite grid power, we can subscribe most of the GPU as we can. Finally, this gets to my microgrid. So, everybody know about microgrid. This is a microgrid. To your far left, you have all the different sources including ESS you can connect it to. And this become a intelligent hub. And you can start training your AI to find the most optimizing mode. So, it's a
+
+<div class="takeaway"><b>小结</b>　四种能力里只有"备电"是传统 UPS 的本职，其余三项（穿越、平滑、平均化）都是把储能当"电网接口"用——这是 800 VDC 带来的新视角。</div>
+
+## 22　微电网：为运营而生的 token
+
+![How 800 VDC Powers an AI Factory：左侧市电、现场发电、可再生能源、电池储能四路输入，汇入"800 VDC 智能微电网"（变换·保护·配电·控制），右侧输出到 AI 计算、制冷与网络](images/22_18m30s.jpg)
+
+……反馈回路。你产出的 token 不只服务其他行业，也服务你自己的数据中心运营。右边则是计算机不同的运行模式，你可以据此去优化它的电力。
+
+> feedback loop. You generate tokens not just for other industry, but also for your data center operations. And to your right, it becomes a different operating mode for the computer that you can how you can optimize the power for.
+
+<div class="takeaway"><b>小结</b>　"token 也用于自己的运营"把 AI 工厂从耗电方变成了调度方——微电网在这里不是备电方案，而是让算力参与电力市场的接口。</div>
+
+## 23　设备就绪度：三个季度一步
+
+![800 VDC Equipment Readiness：Q3 2026 方案 A 电源机架（可部署）、Q2 2027 方案 B 电源中心（可部署）、Q1 2028 方案 C 电源块（开发就绪）；下方五栏为接地与保护、设备认证、保护器件、母线连接器与套管、高密度功率变换](images/23_19m00s.jpg)
+
+这是一个快速路线图。方案 A 今天就准备好了——边车式电源机架的设计。中间是电源中心，目标是明年二季度。然后很快到 2028 年，就像我说的，那是我们要有 800 V 直流原生机架的时点，我们必须把方案 C 准备好，去接住那套全新的系统。
+
+下面这张是整体路线图。但细节我们会放在其他场次讲，讲怎么才能真正高效地落地。
+
+现在，Ralf 来讲散热方案。
+
+> This is a quick roadmap. So, we have option A ready for you today, for the side car power rack design. And then in the middle is a power center, shooting for Q2 next year. And then very quickly 2028, like I said, that's where we're going to have our 800 VDC native racks. We need to have option C ready to catch that full new system. And then to the bottom, it shows the quick roadmap. But, we're going to talk more for different session for details like how we can really get this executed efficiently. Now, Ralph have a cooling solution.
+
+<div class="takeaway"><b>小结</b>　三个季度一步的节奏不是产品节奏，而是生态节奏：接地规范、认证路径、MCCB/SSCB、125 A 母线——五栏里有四栏不在 Delta 自己手里。</div>
+
+---
+
+# 第五部分　液冷与问答
+
+## 24　液冷产品组合
+
+![Delta Liquid Cooling Solution Portfolio：01 板级（闭环用 DC 泵、开环用快接头与软管）；02 机架级（Delta DC 泵、风扇与泵集成、冗余泵设计）；03 系统级（一站式液冷集成）](images/24_19m36s.jpg)
+
+好，时间只剩最后一点，我想给你们看我们的液冷事业部怎么支撑数据中心……方案。
+
+在板级，我们专注热点的散热方案。在机架级，我们提供液对空、液对液的 CDU，以及行级 CDU。所以，随着板级和机架级方案的成熟，再加上机架歧管的设计，Delta 能为整个机架提供一套完整的散热方案。
+
+这一页你看到的是 800 V 直流的行级 CDU。
+
+> Yeah, it's the last minute, so I want to show you how our liquid cooling BU can support a data center solutions. So, on board level, we focus on a thermal solutions for hot spots. On rack level, we offer liquid to air and liquid to liquid CDUs as well as a in-row CDU. So, with the readiness of board and rack level solutions together with the rack manifold design, Delta can support a comprehensive thermal solution for an entire rack. On this page, you see this 800 VDC in-row CDU.
+
+<div class="takeaway"><b>小结</b>　板级、机架级、系统级三层同时在场，说明液冷已经从"选配"变成整机厂必须自研的能力——否则电源和散热的边界会互相拖累。</div>
+
+## 25　800 VDC 行级 CDU
+
+![800 VDC In-Row CDU：2.5 MW 制冷能力（@Tapp 4°C）、流量 3,850 LPM @60Psi；LED 状态指示、泵冗余 2+1、传感器热插拔、6 英寸过滤器可更换、4 英寸过滤器 2+1 冗余](images/25_20m15s.jpg)
+
+它的散热能力是 2.5 MW，流量大约每分钟 4,000 升（幻灯片标注 3,850 LPM @60Psi）。
+
+一个关键特性是可维护性：所有关键部件——泵、过滤器、传感器——都是冗余且热插拔的，所以你可以在运行中更换，不必停机。这给数据中心带来非常可靠的运行。
+
+好，这就到结尾了。来吧。如果有问题，欢迎到前面来或者用麦克风。我们在 B5 展位，很高兴在那里见到大家，给大家介绍我们的产品。谢谢大家的聆听。谢谢。（掌声）
+
+> So, it has a thermal capability of 2.5 MW, flow rate is around 4,000 L per minute, and one key feature is the serviceability. So, all the key and critical items like pumps, filters, and sensors are redundant and hot swappable, so you can exchange it during the run time without shutting down the system. So, this gives you very reliable operation of your data center. Okay, and that brings us to the end. Come on. If you have any questions, feel free to come to the front or microphone. We are at booth B5, so we are happy to see you there and to present our products. Thank you for listening. Thank you. [applause]
+
+<div class="takeaway"><b>小结</b>　2.5 MW 单机、泵 2+1、过滤器 2+1——CDU 的可靠性指标已经按"不停机"来设计，这与电源侧的 N+2 是同一套思路。</div>
+
+## 26　问答：为什么不做 1,500 V
+
+![Thank you!：联系邮箱 Ralf.pieper@deltaww.com，Delta 展位 B5](images/26_21m06s.jpg)
+
+（掌声）好，请提问。
+
+**Michael Harrison（MVA Thermal Energy）**：快速问一个问题。目前 18.5 kW 的电源里有 1,200 焦耳的能量缓冲。我看到你们的路线图说要保持这一点，但未来某个时候 SST 成为架构中心之后，机架级的那部分能量缓冲看起来就消失了。这是你们的设想吗？还是说，你们认为计算机架上的能量缓冲会全部消失、或接近消失？还是仍然需要保留某种形式的能量缓冲？
+
+**Mike Tu**：周三我们会讲 MTIA 和直流电力系统的性能准则。简短回答是：机架级仍然会有最低限度的储能，数量级的量，这样整套配电系统才能被支撑起来——也就是说，即使没有电源托盘，也会有最低限度的储能。而大部分储能和 ESS 控制会放在 SST 那一级。
+
+好，谢谢。
+
+**提问**：我的问题首先是给 Delta 的电源：它在 800 V 直流下的输入电压范围是多少？必须是稳定的 800 V 吗？可以上下波动吗？范围能有多宽？
+
+**Ralf Pieper**：目前是正负 10%。
+
+**提问**：好。那么设计一个 1,500 V 的版本会有多难？
+
+**Ralf Pieper**：爬电距离和电气间隙肯定要加大，但从变压器设计的角度看，我不认为有问题。
+
+**提问**：好。那这就问到 NVIDIA 了。800 V 直流意味着我们要在这个场址上放两倍的 PCS、两倍的昂贵功率电子、两倍的铜，比起 1,500 V 直流。你想一想，一台 5 MW 的 PCS 今天大概要 30 万美元。现在要拿到同样的 5 MW，你基本要把这个价格翻倍。
+
+**Mike Tu**：好，快速回答你的问题。为什么只做 800 V 直流——这个问法是从 1,500 V 的角度来的，而目前没人在做 1,500 V。话虽如此，今天 800 V 相比 400 V 交流，在省铜和其他方面已经有很强的价值。我理解大家会去看 1,500 V。
+
+但我们选 800 V 直流，不是因为电动车行业，而是因为机架——英飞凌和其他厂商在功率电子部分能够支持 3.3 kV 的器件。所以，是这个机架把电压限制在这里，让它成为"原生"。
+
+这不是我们做不到。为什么不走 1,500 V？因为机架本身……你终究要做功率变换。看数据中心，90% 以上的电最终都去了 GPU，所以那一级变换的效率就在那里。而要让配电更高效，关键是让你的 SST 到机架的距离最短。所以那部分铜的暴露量，如果你要和 1,500 V 比，是可以管得住的。
+
+好，太棒了。谢谢。
+
+> [applause] Yes, question, please. Yeah, Michael Harrison from MVA Thermal Energy. One quick question. At the moment with the 18.5 kW power supplies, you've got 1,200 joules of energy buffering in them. I see in your road map you're talking about maintaining that, but then at some point in the future when the SST becomes the central part of the architecture, it appears that that whole energy buffering at the rack level disappears. Is this the idea, or do you see all of that energy buffering disappearing from the compute racks or close to it? Or is there going to be some need to retain some kind of energy buffering?
+
+> So Wednesday we're going to talk about MTIA and DC power system performance criteria. And short answer is there's still going to be minimal energy storage numbers to be at a rack level. So the whole AMTC distribution system can be supported, understanding that there'll be minimal storage even without power shelf. And then we have most of the storage ESS control at SST.
+
+> Mhm. Okay. Thanks. Thank you.
+
+> Okay. So my question first is for the Delta power supply, what is the voltage input range that it can take on the 800-V DC? Does it have to be 800 stable? Can it go up and down? How wide can that be?
+
+> Plus minus 10% currently.
+
+> Okay. And then how hard would it be to design a 1,500-V one? Creepage and clearance distance for sure will increase, but from transformer design point of view I don't see a problem.
+
+> Okay. So now this goes on to Nvidia. 800-V DC, that means that we're going to have twice as many PCSs, twice as much expensive power electronics on these sites and twice as much copper than if we did 1,500 V DC. So, you think about it. You go get a 5-MW PCS, it's probably running $300,000 today. And now to get the same 5 MW, you got to basically double that price.
+
+> Yeah, so answer your question quickly. The reason why do 800 V DC only coming from 1,500 V angle, which nobody's doing 1,500 V, but with that being said, 800 V today compared to 400 V AC, there's strong value from copper saving and others. But, I understand that people may look at 1,500 V today. But, the reason why we pick 800 V DC is not because the EV industry, it's because the rack, Infineon, and others, on power electronic portion that are able to support the 3.3 kV components. Okay, so it's limited by the rack to pick that voltage and become native. It's not about we cannot — why we don't go 1,500 V? Because the rack is already — you have to do power conversion. If you look at data center, 90% or more are all going to GPU. So, that efficiency of the conversion is there. And how you're going to be more efficient power distribution is the distance from your SST to the rack to be minimal. So, that copper exposure, if you want to compare to 1,500 V, can be manageable.
+
+> Okay. Awesome. Okay. Thank you.
+
+<div class="takeaway"><b>小结</b>　这场问答给出了全场最诚实的一句：800 V 不是最优电压，而是"机架能接住"的最高电压——上限由 3.3 kV 器件决定，不由铜价决定。</div>
+
+---
+
+# 附录
+
+## A. 关键数据核对表
+
+| 数据项 | 幻灯片值 | 口播值 | 本文采用 |
+|---|---|---|---|
+| Delta 成立年份 | 1971 | 1971 | 一致 |
+| 2025 年营收 | $17.88 B | — | 幻灯片值 |
+| 研发投入占比 | >8% | — | 幻灯片值 |
+| 累计减碳 | 31.3 M Tons（2010–2025） | "约 3100 万吨" | 一致 |
+| Gen 1（GB200/GB300 NVL72） | 145 kW，54 VDC | — | 幻灯片值 |
+| Gen 2（Vera Rubin NVL72） | 330 kW，54 VDC | — | 幻灯片值 |
+| Gen 3 | 570 kW，54 VDC，800 VDC 进 PSU | 570 kW / 八个托盘 | 一致 |
+| Gen 4 | 原生 800 VDC | 2028 年部署 | 幻灯片值 + 口播时间 |
+| ORV3 HPR/GB300 托盘 | 33 kW（7.5 kW/PSU） | 5,500 W 单 PSU | 一致（33/5.5≈6 台） |
+| ORV3 HPR2 托盘 | 72 kW（16.5 kW/PSU） | 12 kW PSU | 幻灯片值（口播为上一代功率） |
+| 3PH 18.5 kW 托盘 | 74 kW | 74 kW | 一致 |
+| VR200 托盘 | 110 kW，18.5 kW/54 V PSU | 3RU 110 kW | 一致 |
+| EDPP 脉冲 | — | 180–200% 持续数百微秒，随后 50 ms 150% | 口播值（已标注） |
+| 三相单元电容数 | — | 16 个 | 口播值（已标注） |
+| 母线电压摆幅 | — | 150 V | 口播值（已标注） |
+| 方案 A 电源机架 | 660 kW，12×100 A 交流、8×125 A 直流 | — | 幻灯片值 |
+| 方案 A 计算架 | 每台 NVL72 用 1RU DC/DC 托盘 @90 kW | — | 幻灯片值 |
+| HPRv4 机架 | 900 kW，N+2，5 组 180 kW | 900 kW | 一致 |
+| HPRv4 备电 | BBU 25 kW / CBU 16 kW | — | 幻灯片值 |
+| 800 VDC 机架 | 660 kW，18.5 kW×6，BBU 20 kW×4，480 kW 备电 | 480 kW | 一致 |
+| 800→50 V 托盘 | 19" 90 kW / 21" 108 kW，98.5% | 90 / 108 kW，98.5% | 一致 |
+| PSU 效率与损耗 | — | 97% → 1 MW 负载下 30 kW 损耗 | 口播值（已标注） |
+| 风扇功耗 | — | 30 kW 单元 200 W，0.7% | 口播值（已标注） |
+| 风扇转速 | — | 38,000 rpm | 口播值（已标注） |
+| PSU 尺寸 | — | 3U → 2U | 口播值（已标注） |
+| 方案 B 电源中心 | 4×800–1000 kW，POD 6 MW，4 台做 3 台或 N+N | — | 幻灯片值 |
+| 方案 B 计算架 | 每台 NVL72 需 4×125 A 套管 | — | 幻灯片值 |
+| 方案 C 拓扑 | 7 台 DC 电源块，6+1 冗余 | 6+1 | 一致 |
+| SST 单机容量 | 5 MW | 5 MW | 一致 |
+| 中压等级 | 35 kV / 34.5 kV | 35 kV / 34.5 kV | 一致 |
+| 电源路径级数 | 常规 7 级 → 800 VDC 4 级 | 7 级 | 一致 |
+| CDU 制冷量 | 2.5 MW @Tapp 4 °C | 2.5 MW | 一致 |
+| CDU 流量 | 3,850 LPM @60Psi | "约 4,000 L/min" | **幻灯片值**（口播取整） |
+| 泵 / 过滤器冗余 | 2+1 / 2+1 | "冗余且热插拔" | 幻灯片值 |
+| 800 VDC 输入容差 | — | ±10% | 口播值（已标注） |
+| 观众论点：5 MW PCS 价格 | — | 约 30 万美元，1,500 V 下翻倍 | 观众口播（已标注） |
+| 观众论点：机架级储能 | — | 18.5 kW PSU 内 1,200 J | 观众口播（已标注） |
+
+## B. 时间轴
+
+| 时间 | 内容 |
+|---|---|
+| 00:03 | 开场：50 V 已不适配 1 MW 机架 |
+| 01:33 | Delta 公司概览 |
+| 02:03 | 800 VDC 的两个目标：token 优化与快速部署 |
+| 03:57 | 四代机架功率台阶 |
+| 05:03 | A/B/C 三种配电选项与过渡路线图 |
+| 07:36 | 50 VDC 产品谱 |
+| 08:12 | 传统七级链路与外部电容的局限 |
+| 08:51 | 把储能放进 PSU：EDPP 波形与 16 个电容 |
+| 09:57 | 三相 PSU 的输入电流平滑 |
+| 10:39 | 章节页：吉瓦级 AI 工厂 |
+| 10:57 | 方案 A：边车式电源机架 |
+| 11:42 | 案例一：边缘数据中心（无讲话） |
+| 11:57 | 900 kW 交流机架与 660 kW 直流机架 |
+| 12:51 | 机架内 800→50 V 托盘 |
+| 13:18 | 风冷转液冷的三条理由 |
+| 14:33 | 方案 B：把功率变换移出这一排 |
+| 15:09 | 案例二 B：超大规模在建项目 |
+| 15:27 | 方案 C：绿地数据大厅 |
+| 16:06 | 集装箱化示意（AI 生成图） |
+| 16:42 | 七级变四级 |
+| 17:06 | ESS 的四种能力与微电网 |
+| 18:30 | 800 VDC 智能微电网 |
+| 18:45 | 设备就绪度路线图 |
+| 19:18 | 液冷产品组合 |
+| 19:54 | 800 VDC 行级 CDU 与收尾 |
+| 20:36 | 问答：机架级储能、输入范围、1,500 V 之争 |
+
+## C. 术语对照
+
+| 缩写 | 全称 | 说明 |
+|---|---|---|
+| SST | Solid State Transformer | 固态变压器，中压交流直接变 800 V 直流 |
+| TRU | Transformer Rectifier Unit | 变压器整流单元，与 SST 同义的另一种叫法 |
+| PSU | Power Supply Unit | 单个电源模块 |
+| Power Shelf | — | 电源托盘，多个 PSU 组成的机架单元 |
+| EDPP | Energy During Power-loss Protection | 掉电保持能量指标，单位 kJ |
+| BBU / CBU | Battery / Capacitor Backup Unit | 电池 / 电容备电单元 |
+| RPP | Remote Power Panel | 远端配电盘，方案 B 中从电源中心向集群馈电 |
+| RMU | Ring Main Unit | 环网柜，中压进线的开关单元 |
+| ESS | Energy Storage System | 储能系统，接在 SST 输出端 |
+| CDU | Coolant Distribution Unit | 冷量分配单元，液冷回路的核心设备 |
+| HPR | High Power Rack | Delta 的高功率电源托盘系列（HPRv2 / HPRv4） |
+| PCS | Power Conversion System | 功率变换系统，此处指中压侧整流装置 |
+| MCCB / SSCB | Molded Case / Solid State Circuit Breaker | 塑壳 / 固态断路器 |
+| HAC | Hot Aisle Containment | 热通道封闭 |
+| PUE | Power Usage Effectiveness | 数据中心能源使用效率 |

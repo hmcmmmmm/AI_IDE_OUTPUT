@@ -1,0 +1,876 @@
+
+--- p1 ---
+Confidential © 2026 BOS Semiconductors Co., Ltd.
+A u t o m o t i v e  A I  A c ce l e r a t o r  ·  C h i p l e t  S o C
+Eagle-N
+A Modular, Chiplet-Based SoC
+for Scalable Automotive AI
+--- p2 ---
+BOS Semiconductors│2
+Eagle-N, High Level Overview
+AI Accelerator for Automotive IVI/ADAS and Physical AI
+• 250 TOPS (Dense) of Tenstorrent NPU, Supports INT8, FP8, BF16, and Mx, 
+Architecture is flexible to support future AI model
+• Samsung Foundry 5nm Automotive process
+• Multiple performance options through Harvesting and Chiplet
+• Virtualization in NPU/SOC for multiple independent process
+• Chiplet architecture for the flexible scalability and system expansion
+• Communicate with main ADAS chip via PCIe/UCIe
+• ARM Cortex A53 Quad core and LPDDR5X memory
+• ASIL-B/AEC Q-100 Grade 2 (Safety Island, Security manager)
+--- p3 ---
+BOS Semiconductors│3
+Scalability & Application
+Flexible choice of NPU performance / Various application support where on-device AI is needed
+S
+W
+I
+T
+C
+H
+190/250
+380/440/500
+TOPS
+1,000/
+2,000
+TOPS
+S
+W
+I
+T
+C
+H
+190/250
+380/440/500
+TOPS
+1,000/
+2,000
+TOPS
+On-device and Physical AI
+Automotive IVI and ADAS
+--- p4 ---
+BOS Semiconductors│4
+AI BOX ECU as AI Extension for IVI
+Add 190–500 TOPS AI to existing IVI head units
+PCIe or Ethernet
+Existing IVI ECU BOX
+AI BOX
+190~500 TOPS NPU
+Qwen/Llama and many 
+more VML/LLM enabled
+--- p5 ---
+BOS Semiconductors│5
+Eagle-N Block Diagram
+Cortex-A53 host · Tenstorrent Trinity NPU · security & safety islands
+Main Bus Interconnect
+Core0
+Core1
+Core2
+Core3
+CPU: Cortex-A53
+NPU: Tenstorrent Trinity
+PCIe
+Gen5
+8-lane
+Low 
+Speed
+IO
+USB
+2.0
+UCIe
+STD PKG
+32-lane
+LPDDR5x
+8533M
+6ch 
+x16bit
+LPDDR5x
+8533M
+6ch 
+x16bit
+OSPI
+Safety Island
+T
+T
+T
+T
+T
+T
+T
+T
+T
+T
+T
+T
+Security
+HSM: RT-640
+MCU: Cortex-M7
+SD/
+eMMC
+--- p6 ---
+BOS Semiconductors│6
+NPU Overview
+Tenstorrent Trinity IP — 12× Tensix Neo · 4×5 mesh NoC
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+Fast 
+Dispatch
+Engine
+Router
+Fast 
+Dispatch
+Engine
+Router
+NoC2AXI
+NoC2AXI
+NoC2AXI
+NoC2AXI
+SoC AXI interconnect 
+•
+Tenstorrent Trinity IP
+o
+12x Tensix Neo Cluster
+o
+2x Fast Dispatch Engine
+o
+2x Router
+o
+4x NoC2AXI
+•
+NoC within NPU
+o
+256 Byte bidirectional NoC mesh
+
+Both directions run simultaneously
+o
+NoC2AXI
+
+64 Byte Manager/Subordinate AXI ports
+•
+Fast Dispatch Engine
+o
+Fast kernel dispatch to Tensix Neo clusters
+
+Pre-fetch and queue kernels to mitigate Host-to-IP 
+or DRAM-to-IP latency
+
+Dispatch them to the clusters as soon as they are 
+ready
+--- p7 ---
+BOS Semiconductors│7
+NOC Fabric for data movement
+•
+NOC
+o
+Bidirectional 256B Width Bus
+
+A tile can be receiving a weight data while it streams 
+out a result without stalls
+o
+4x5 2D Meshed NOC
+
+A 2D mesh gives every tile up to four neighbors 
+(N/S/E/W) plus its local port 
+o
+Configurable Bidirectional Quad Port Router
+
+Flexible and diverse routing protocol
+
+Adaptive NoC Routing for Diverse Workloads
+
+Flexible On-Chip SRAM Utilization
+o
+The NoC can be extended to route data over die-to-die
+interfaces
+--- p8 ---
+BOS Semiconductors│8
+NPU Tensix Neo Cluster
+•
+The compute block of the NPU
+•
+Each cluster contains:
+o
+4 compute engines
+
+A NEO is the tensor-math core
+o
+A shared 3MB memory
+•
+Weights, activations, and intermediate tiles 
+stay on-chip, cutting power-hungry DRAM 
+round-trips for higher energy efficiency
+o
+A NoC Interface Unit (NIU)
+
+Injection/ejection packet to/from the NoC
+o
+A data movement element (Overlay)
+
+Prefetches into the register files
+
+FPUs keep computing, sustaining near-pe
+ak MAC utilization
+TENSIX
+NEO CORE 
+1
+TENSIX
+NEO CORE 
+2
+TENSIX
+NEO CORE 
+3
+Shared L1 Memory (3MB)
+256B Mesh NoC + Data Movement Cores
+Cluster
+Sync
+TENSIX
+NEO CORE 
+0
+--- p9 ---
+BOS Semiconductors│9
+Tensix Core
+•
+FPU for matrix multiplication, SFPU for 
+general math operation such as exponential
+•
+4 RISC-V for controlling compute and 8 
+RISC-V for data movement
+•
+Packer/Unpacker for data conversion 
+between SRAM and register files
+•
+3M bytes SRAM in each tensix core enables 
+near memory computing.
+•
+Explicit data movement: data movement is 
+explicit and decoupled from compute.
+--- p10 ---
+BOS Semiconductors│10
+NPU Virtualization
+•
+Virtualization
+o
+Run one physical Trinity die as two independe
+nt logical NPUs
+•
+Dual Fast Dispatch
+o
+Independent issues to its own 6 Tensix cluster
+s via the dedicated hardware interface
+•
+Independent partition
+o
+Each partition has its own compute, dispatch, 
+DRAM/AXI I/O, clocks, and reset — able to ru
+n a different workload independently
+•
+Memory access control
+o
+SoC interconnect supports MMU for memory 
+protection between the two partitions
+Partition 1
+Partition 0
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+TensixNeo
+Cluster
+Fast 
+Dispatch
+Engine
+Router
+Fast 
+Dispatch
+Engine
+Router
+NoC2AXI
+NoC2AXI
+NoC2AXI
+NoC2AXI
+SoC AXI interconnect
+--- p11 ---
+BOS Semiconductors│11
+OCA (Open Chiplet Atlas) for Chiplet Systems
+Benefit of Chiplet Systems
+Yield improvement, Reticle restriction, Heterogeneous process, Reusability
+Issues in Chiplet Systems
+Chiplet discovery and enumeration
+System boot and initialization
+Inter-chiplet messaging, interrupt delivery, Time synchronization
+Memory addressing and access control
+RAS (Reliability, Availability, Serviceability)
+Functional Safety and Security management
+DFT and Test architecture
+OCA defines a common system architecture for Chiplet systems
+--- p12 ---
+BOS Semiconductors│12
+Eagle-N OCA Support
+Chiplet configuration using Eagle-N
+Eagle-N + Eagle-N:
+Host SoC + Eagle-N:
+Eagle-N is designed for compatibility with OCA.
+Transport layer: UCIe, I3C
+Protocol layer: AXI, OCCP
+System layer
+Layered view of OCA Chiplet Interoperability
+--- p13 ---
+BOS Semiconductors│13
+Protocol and Transport Layer
+Remark
+Transport
+Protocol
+OCA AXI over UCIe
+UCIe Standard Package
+High Bandwidth D2D
+I3C
+Low Bandwidth D2D
+Doorbell in UCIe block
+Message Signaled Interrupt (MSI)
+Interrupt
+System timer sync signals
+TMR_SYNC_LOAD, TMR_CNT_CREDIT
+Open Chiplet Time Synchronization 
+(OCTS)
+One cross trigger port
+CT_Req_out, CT_Ack_in, CT_Req_in, CT_Ack_out
+Open Chiplet Cross Triggering (OCCT)
+STAP (Secondary TAP)
+Additional JTAG bypass port
+JTAG
+Fatal / Non-Fatal
+A dedicated I3C for functional safety message channel
+Two interrupts for functional safety
+Functional Safety
+Eagle-N
+(Secondary)
+Primary SoC
+Safety
+Entity
+Safety
+Entity
+I3C
+Interrupt
+UCIe
+UCIe
+OCTS
+OCCT
+JTAG
+JTAG
+HB D2D
+*OCTS: OpenChiplet Time Synchronization
+*OCCT: OpenChiplet Cross Triggering
+--- p14 ---
+BOS Semiconductors│14
+System Layer
+Description
+Functional Domain
+The UCIe AXI Bridge integrates an Address Protection Unit (APU) on both the inbound and 
+outbound paths, providing address translation and access protection for all transactions.
+Addressing
+Eagle-N supports operation as both a primary chiplet and a secondary chiplet. When operating 
+as a secondary chiplet, its firmware can be downloaded from the primary chiplet over the D2D 
+interface.
+Boot
+An integrated 64-bit system time counter supports Open Chiplet Time Synchronization (OCTS). 
+The counter can be configured to operate as either the primary counter or the secondary counter.
+System Time Management
+Eagle-N provides secure interoperability with OCA-compliant chiplets through authenticated 
+boot, lifecycle-based security, and AXI-based access control.
+Security
+The UCIe block supports MSI-based inter-chiplet interrupts through a built-in doorbell 
+mechanism. The Safety Entity supports dedicated Fatal and Non-Fatal Error/Status interrupt 
+signaling between chiplets.
+Interrupts
+Eagle-N implements one OCCT channel for cross-trigger signaling and provides full OCCT 
+connectivity as a leaf chiplet. ETR trace data can be transferred across the UCIe channel and 
+dumped into remote memory.
+Design for Debug
+IEEE 1838 STAP is implemented to support daisy-chained ATE-mode BIST execution and scan 
+dump across multiple dies. Open Chiplet Packetized Scan (OCPS) is not implemented.
+Design for Test
+Eagle-N supports a one-to-one Safety Primary/Secondary Chiplet configuration and OCA-based 
+FuSa messaging, including periodic channel checks and CRC.
+Functional Safety
+--- p15 ---
+BOS Semiconductors│15
+Functional Safety overview
+
+Random Hardware Fault Capability
+
+NPU domain: ASIL B 
+
+SPFM ≥ 90%, LFM ≥ 60%, PMHF ≤ 60 FIT
+
+Safety Island: ASIL D
+
+SPFM ≥ 99%, LFM ≥ 90%, PMHF ≤ 3 FIT
+
+Systematic Fault Capability
+
+NPU domain & Safety Island: ASIL D
+
+Deterministic Fault Handling
+
+Fault detection synchronized with the NPU inference cycle
+
+33 ms FHTI (aligned with the video frame period, 30fps), and 1 ms safety reaction time
+
+Safe State 
+
+Explicit failure report to system; or initiates a chip reset.
+* SPFM : Single Point Fault Metric
+* LFM : Latent Fault Metric
+* PMHF : Probabilistic Metric for random Hardware Failures
+* FHTI : Fault Handling Time Interval
+--- p16 ---
+BOS Semiconductors│16
+Safety Island for Functional Safety
+
+Power, Reset, Clock, NoC Bus, Memory, and 
+Peripherals are fully isolated, enabling robust 
+safety monitoring even in the event of Main
+Domain failure.
+
+Performs processor, temperature, clock, and 
+power monitoring that cannot be reliably handled 
+by the Main Domain itself.
+
+Its independence from the Main Domain enables 
+fail-operational capability even when the Main 
+Domain fails.
+An independently isolated Safety Island keeps monitoring and reporting safety issues even when the Main
+Domain fails
+--- p17 ---
+BOS Semiconductors│17
+Functional Safety for OCA
+Chiplet Safety Protocol (CSP) with E2E protection
+Safety Entity in each Chiplet
+•
+Safety Island that keeps monitoring and reporting safety issues
+Hierarchical Safety Entities (Primary and Secondary)
+•
+Primary aggregates error info and determines the SiP-wide safe
+state
+Dedicated Error Interrupts : Fatal / Non-Fatal
+Dedicated FuSa Messaging Channel (I3C)
+•
+Executes error query, response, clearing, and self-test
+•
+Primary executes periodic self-tests through the Channel
+Primary SoC
+Eagle-N
+(Secondary)
+Secondary
+Safety Entity
+Primary
+Safety Entity
+Error Interrupt
+(Fatal / Non-Fatal)
+Dedicated
+FuSa Messaging 
+Channel (I3C)
+--- p18 ---
+BOS Semiconductors│18
+Eagle-N Interconnect Architecture
+Interconnect Architecture
+•
+High bandwidth requirements 
+•
+Memory bandwidth decides AI model performance rather 
+than compute performance in many AI models 
+ 
+•
+Architecture Overview 
+•
+Hierarchical NoC architecture consisting of a high-bandwidth 
+main fabric and subsystem-specific local buses, enabling 
+scalable heterogeneous subsystems. 
+ 
+•
+High-Bandwidth Interconnect 
+•
+1024-bit @ 800 MHz (dual-channel) main fabric and 512-bit 
+@ 1 GHz (four-channel) on-chip NPU fabric. 
+ 
+•
+Memory Subsystem 
+•
+Up to 204 GB/s memory bandwidth through 12-channel 
+LPDDR5X with channel interleaving. 
+ 
+•
+Efficiency Optimization 
+•
+High bandwidth utilization under burst workloads through 
+reorder buffers and transaction scheduling.
+--- p19 ---
+BOS Semiconductors│19
+DRAM Interface
+LPDDR5/5x up to 8533Mbps
+16bit 12-channel
+Bandwidth: up to 204 GB/s
+Depopulation support
+12-channel
+
+8-channel
+
+4-channel
+DRAM Capacity
+Max. 8 GB per 1-channel
+Up to 96 GB
+DRAM interleaving
+4KB interleaving for left and right
+256byte interleaving for each channel
+Eagle-N
+DRAM
+16bit
+Eagle-N
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+12-channel
+8-channel
+DRAM Interface
+Eagle-N
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+12-channel
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+DRAM
+16bit
+--- p20 ---
+BOS Semiconductors│20
+DRAM Placement Example
+•
+DRAM depopulation support
+•
+Eagle-A: 6ch 4ch or 2ch
+•
+Eagle-N: 12ch 8ch or 4ch
+N1
+A1
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+A1
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+N1
+A1
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+A1
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+LPDDR 16bit 6ch Interface
+A1
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+A1
+DRAM
+32bit
+DRAM
+32bit
+DRAM
+32bit
+--- p21 ---
+BOS Semiconductors│21
+Eagle-N A0 sample for PoC
+--- p22 ---
+BOS Semiconductors│22
+Evaluation board of Eagle-N A0 sample
+LPDDR5x 7.5Gbps 16bit x 8 channel
+2x PCIe 4-lane Gen5 PCIe with 32GT/s 
+QSPI and Octal DDR200
+SD/eMMC with SD 4.2 and eMMC 5.1
+7x I2C, 6x SPI, 4x UART, 8x PWM, 64x GPIO, JTAG, 
+Alert IO
+--- p23 ---
+BOS Semiconductors│23
+A0 sample for PoC – AI demo (1/2)
+Yolo
+Resnet/VIT
+SSR
+Qwen 2.5-7B, VLM
+• YOLO: An object detection model that identifies the locations and classes of objects in images or videos in real time.
+• Resnet: An image classification model that uses residual connections to train deep neural networks effectively.
+• ViT (Vision Transformer): An image classification model that divides an image into patches and processes them using a Transformer architecture.
+• SSR (Sparse Scene Representation): An end-to-end autonomous driving model that learns sparse scene representations to integrate perception and driving planning.
+• Qwen-VL: A multimodal model that jointly processes images and text for visual question answering and document understanding.
+--- p24 ---
+BOS Semiconductors│24
+A0 sample for PoC – AI demo (2/2)
+Stable Diffusion
+HRNet
+• PDL (Panoptic-DeepLab): A panoptic segmentation model that classifies every pixel while distinguishing individual object instances.
+• Llama: Meta’s large language model for text generation, question answering, summarization, and translation.
+• OFT (Orthographic Feature Transform): A 3D object detection model that transforms image features into a bird’s-eye-view representation
+• UFLD (Ultra Fast Lane Detection): A lane detection model that identifies lane regions and separates individual lane instances in road images.
+• Stable Diffusion: An image generation model that creates or edits images from text descriptions (Prompt: “Tropical beach with palm trees, crystal clear water”).
+• HRNet (High Resolution Network): A vision model for human pose estimation by detecting body keypoints.
+Llama 3.1-8B, LLM
+PDL
+UFLD
+OFT
+--- p25 ---
+BOS Semiconductors│25
+AI Model Evaluation (1/2)
+•
+Eagle-N validation against real-world AI workloads demonstrates the following: 
+Performance
+Metric / Configuration
+Workload
+17.3 TPS
+Batch Size 1
+Generative AI (Llama 8B)
+50 TPS
+4-bit Quantization + Speculative Deco
+ding
+>6,000 FPS
+Batch Size 4
+Computer Vision (ResNet-50)
+--- p26 ---
+BOS Semiconductors│26
+AI Model Evaluation (2/2)
+•
+Detailed BM results of LLM/VLM models for various model sizes
+•
+Input tokens: The number of text tokens provided to the model
+•
+Output tokens: The number of text tokens generated by the model in the response
+•
+Context size: The maximum sequence length supported by the KV cache, including input and output tokens
+•
+ViT delay: The latency required for the Vision Transformer to convert an image into visual tokens
+•
+With Eagle-N speculative decoding and 4bit quantization, the evaluated 8B models show ~50 TPS
+•
+Decode throughput increases as the model size decreases
+Output TPS
+(Tokens/s)
+TTFT (ms)
+ViT Delay (ms)
+Context Size
+Output Tokens
+Input Tokens
+Data type
+Input(Video)
+HW Architecture
+Parameter
+s
+Model
+Memory BW
+TOPS
+107.10 
+39.81 
+-
+4096
+256
+128
+4bit
+-
+204
+250
+3B
+Qwen2.5
+54.80 
+72.85 
+-
+4096
+256
+128
+4bit
+-
+204
+250
+7B
+106.20 
+80.93 
+38.97 
+4096
+256
+128
+4bit
+224x224
+204
+250
+3B
+Qwen2.5-VL
+54.60 
+128.32 
+39.75 
+4096
+256
+128
+4bit
+224x224
+204
+250
+7B
+91.70 
+51.07 
+-
+4096
+256
+128
+4bit
+-
+204
+250
+4B
+Qwen3
+50.50 
+81.76 
+-
+4096
+256
+128
+4bit
+-
+204
+250
+8B
+90.00 
+72.32 
+15.16 
+4096
+256
+128
+4bit
+256x256
+204
+250
+4B
+Qwen3-VL
+50.20 
+122.77 
+28.33 
+4096
+256
+128
+4bit
+256x256
+204
+250
+8B
+--- p27 ---
+Confidential © 2026 BOS Semiconductors Co., Ltd.
+Thank you.
