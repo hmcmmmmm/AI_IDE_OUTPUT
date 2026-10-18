@@ -6,3 +6,30 @@
 Thumbs.db
 desktop.ini
 *.tmp
+
+# 视频文件：体积过大，不上传（GitHub 单文件上限 100MB，仓库建议 1GB 以内）
+*.mkv
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4v
+*.mpg
+*.mpeg
+*.rmvb
+*.rm
+*.vob
+*.m2ts
+*.mts
+*.3gp
+*.ogv
+*.ts
+
+# 网盘 / 下载工具的未完成临时文件
+*.downloading
+*.baiduyun.p.downloading
+*.part
+*.crdownload
+*.!qb
