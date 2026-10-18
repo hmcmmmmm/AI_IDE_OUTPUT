@@ -1,0 +1,25 @@
+<Slide style={{ width: 1280, height: 720, background: '#0E1420', position: 'relative', overflow: 'hidden' }}>
+
+    <Box style={{ position: 'absolute', right: 56, top: 200, flexDirection: 'column', alignItems: 'flex-end' }}>
+        <Text style={{ fontFamily: 'Georgia', fontSize: 300, lineHeight: 1.0, letterSpacing: -8, color: 'rgba(232,237,243,0.05)' }}>03</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 206, flexDirection: 'row', gap: 40 }}>
+
+        <Box style={{ width: 3, background: '#C8A15A' }} />
+
+        <Box style={{ width: 560, flexDirection: 'column' }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 16, letterSpacing: 5, color: '#C8A15A' }}>CHAPTER 03</Text>
+            <Text style={{ fontSize: 52, fontWeight: 'bold', lineHeight: 1.25, color: '#E8EDF3', marginTop: 26 }}>两个物理面</Text>
+            <Box style={{ width: 64, height: 1, background: 'rgba(232,237,243,0.22)', marginTop: 24, marginBottom: 26 }} />
+            <Text style={{ fontSize: 22, lineHeight: 1.7, color: 'rgba(232,237,243,0.62)' }}>线缆与液路。</Text>
+            <Text style={{ fontSize: 18, lineHeight: 1.85, color: 'rgba(232,237,243,0.45)', marginTop: 14 }}>原文单独点名这两类，<br />因为它们是样机阶段最不暴露、<br />量产阶段最高频的两类失效。</Text>
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 660, width: 1136, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 678 }}><Text style={{ fontSize: 14, color: 'rgba(232,237,243,0.35)' }}>本章 P10–P12 · 共 3 页</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 678 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, color: 'rgba(232,237,243,0.45)' }}>10 / 16</Text></Box>
+
+</Slide>

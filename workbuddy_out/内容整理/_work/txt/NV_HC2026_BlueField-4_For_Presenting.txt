@@ -1,0 +1,653 @@
+
+--- p1 ---
+Hot Chips 2026
+Idan Burstein
+NVIDIA BlueField-4 
+Processor Powers 
+the AI Factory
+--- p2 ---
+Agentic AI Is the Most Complex 
+Computing Workload in History
+Context
+LLM
+Observe
+LLM
+Reason
+LLM
+Act
+LLM
+Tools and Skills
+CPU
+CUDA
+LLM
+Security and Governance
+CPU
+DPU
+Prompt
+Orchestration
+CPU
+Memory
+CPU
+DPU
+CUDA
+LLM
+Network
+--- p3 ---
+Extreme co-design for agentic AI across seven chips and five racks
+NVIDIA Vera Rubin Is a Full-Stack AI Factory Platform
+Groq 3 
+LPX
+Extend Interactivity
+Vera Rubin 
+NVL72
+Foundation Platform
+Spectrum-6 SPX 
+Networking
+Scale-Out Fabric
+Vera CPU 
+Rack 
+Tool Calls and Sandboxes
+Vera BlueField-4 
+STX Storage
+Context Memory Storage
+--- p4 ---
+Required in every node in the data center
+DPU Is the Processor for Networking, Security and Storage
+CPU
+General-purpose compute
+▪
+Applications
+▪
+Operating systems
+▪
+Business logic
+GPU
+Accelerated compute
+▪
+AI / ML
+▪
+High-performance computing
+▪
+Parallel workloads
+DPU
+Data center processing
+▪
+Networking
+▪
+Storage
+▪
+Security
+--- p5 ---
+DPU is the Trusted Entity of the Platform
+The DPU is a server in front of the server — isolating the host from the data center fabric
+BlueField DPU & DOCA
+DPU OS 
+DPU NIC and Acceleration
+DPU CPU
+Host Server
+CPU
+GPU
+LPU
+Tenant OS
+Model Weights
+LLM Calls
+User Data
+Storage
+Networking
+Security
+Data Center Shared Resources
+Network
+Storage
+Security
+Data Center Resource Management
+Tenant Domain
+Data Center Domain
+Trusted Entity
+--- p6 ---
+GPU
+Scale-Up
+ 
+ 
+ 
+Scale-Up 
+Infrastructure
+NVLink
+Tenant Domain
+Scale-Up Makes Multiple GPUs Operate as One System
+--- p7 ---
+Scale-Out/
+Across 
+Connect-X
+Spectrum-X 
+Scale-Up 
+Infrastructure
+NVLink
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+Scale-Across
+Scale-Out
+Tenant Domain
+Scale-Out Transforms the Data 
+Center to One Unit of Compute
+--- p8 ---
+Co-designed security, data, and infrastructure services 
+BlueField Is Co-Designed Into Every Vera Rubin System 
+Scale-Out/
+Across 
+Connect-X
+Spectrum-X 
+Scale-Up 
+Infrastructure
+NVLink
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+Scale-Across
+Scale-Out
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+Tenant Domain
+Data Center Domain
+--- p9 ---
+End to end data center networking solution designed for the diverse agentic workload
+Announcing BlueField-4 Spectrum-X Scale-In Network
+BF
+Agentic 
+Storage
+BF
+Agentic 
+CPU
+BF
+WAN 
+Access
+BF
+Cloud 
+Security
+BF
+Data Center
+Orchestration
+BF
+Cloud 
+Services
+Scale-In
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+Scale-Across
+Scale-Out
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+Tenant Domain
+Data Center Domain
+Scale In Challenges
+•
+Multiple applications​
+•
+Multiple tenants​
+•
+Assets (e.g. user data)​
+•
+WAN access​
+•
+Data center orchestration​
+Storage-Scale
+--- p10 ---
+1.5x Faster Storage Access With 
+NVIDIA Spectrum-X Ethernet
+5GB Files
+10GB Files
+50GB Files
+Spectrum-X Ethernet vs. OTS Ethernet
+1.3x
+1.4x
+1.5x
+--- p11 ---
+DPU Requires World-Class Network Acceleration and CPU
+Network & data acceleration
+Data transfers with RDMA and TCP/IP
+Encryption & authentication
+Firewall packet processing
+Line-rate switching & routing
+Complex control at high rate
+Keys & session management
+Firewall connection management
+Storage volume & I/O management
+Telemetry & health
+NVIDIA ConnectX-9
+NVIDIA Grace CPU
+--- p12 ---
+One size fits all DPU 
+Cloud DPUs Were Built for General-Purpose Computing
+Hot Chips 2021
+--- p13 ---
+CLOUD DPU
+AI DPU
+Bandwidth
+200 Gb/s
+Bandwidth
+7 Tb/s 
+Workloads
+General purpose
+Workloads
+Training, inference, agents
+Systems
+Standard form factor
+Systems
+Complex integration to every platform
+Asset value
+Replaceable servers
+Asset value
+GPUs + model weights
+Integration
+Pluggable PCIe card
+Integration
+Co-designed at system level
+Agentic AI Requires a New Class of AI-Native Infrastructure
+--- p14 ---
+Integrating world class CPU and world class networking, storage and security acceleration
+BlueField-4: The AI-Native Scale-In Infrastructure Engine 
+Grace CPU
+•
+CPU SPECINT 220 (6x BF3)​
+•
+CPU LPDDR5 Bandwidth 275GB/s​
+•
+64 Arm Neoverse V2 
+ @1.7GHz​
+•
+PCIe and Astra​
+ConnectX-9 Networking 
+•
+800G Ethernet (2x BF3)​
+•
+200G PAM4 SerDes​
+•
+PCIe Gen6 x16 ​
+•
+Spectrum-X RDMA, MRC, RoCE, PRDMA​
+•
+Inline encryption (PSP, TLS, IPSEC, AES-XTS)​
+•
+200 MPPS ​
+•
+25 MIOPs
+--- p15 ---
+Every compute tray needs 7Tb/s of aggregate network bandwidth
+Vera Rubin Server Extreme Bandwidth Requirements
+4x1.6 Tb/s
+GPU scale-out
+800 Gb/s
+GPU scale-in
+7 Tb/s
+Aggregate per Vera Rubin compute tray
+Rubin GPU
+Rubin GPU
+Vera CPU
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+Vera Rubin Compute Tray
+Rubin GPU
+Rubin GPU
+Vera CPU
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+--- p16 ---
+GPU network can’t be secured end to end isolated from the tenant
+Vera Rubin: The Traditional Approach #1 - Reduced Security
+Scale-out traffic not isolated  
+800G
+Rubin GPU
+Rubin GPU
+Vera CPU
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+Vera Rubin Compute Tray
+Rubin GPU
+Rubin GPU
+Vera CPU
+800G
+800G
+800G
+800G
+800G
+800G
+800G
+800G
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+BlueField-4 DPU
+ConnectX-9
+Grace
+Tenant Domain
+Data Center Domain
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+Scale-in traffic isolated
+--- p17 ---
+Every DPU needs—CPUs, memory system, connection to data center network, connection to management
+Vera Rubin: The Traditional Approach #2 - 4x Higher Power
+Power, cost and connectivity 
+complexity for every NIC
+Power, cost and connectivity 
+complexity for every NIC
+Rubin GPU
+Rubin GPU
+Vera CPU
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+Vera Rubin Compute Tray
+Rubin GPU
+Rubin GPU
+Vera CPU
+Astra
+BlueField-4 DPU
+ConnectX-9
+Grace
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+Grace
+ConnectX-9
+Grace
+ConnectX-9
+Grace
+ConnectX-9
+Grace
+ConnectX-9
+Grace
+ConnectX-9
+Grace
+ConnectX-9
+Grace
+ConnectX-9
+Grace
+ConnectX-9
+800G
+800G
+800G
+800G
+800G
+800G
+800G
+800G
+800G
+--- p18 ---
+BlueField-4 owns the data path — zero-trust enforced and telemetry collected at 7 Tb/s, without touching the host
+Vera Rubin: BlueField-4 Astra Delivers 7Tb/s with 
+CSP-Grade Security and Management
+All network traffic secured
+800G
+Rubin GPU
+Rubin GPU
+Vera CPU
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+Vera Rubin Compute Tray
+Rubin GPU
+Rubin GPU
+Vera CPU
+Astra
+800G
+800G
+800G
+800G
+800G
+800G
+800G
+800G
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+ConnectX-9
+BlueField-4 DPU
+ConnectX-9
+Grace
+Tenant Domain
+Data Center Domain
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+PCIe G6
+--- p19 ---
+Encrypted and virtualized scale out traffic secured and monitored by BlueField-4
+Scale Linearly to Multi-Terabit Networking Performance
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+1
+2
+3
+4
+5
+6
+7
+8
+Average Bandwidth (Tb/s)
+Number of NICs
+Measured (Tb/s)
+Ideal Linear Scaling
+--- p20 ---
+Vera Rubin: BlueField-4 7Tb/s Platform Level DPU Live
+--- p21 ---
+Unlock 2x Faster Data Access for Rubin GPUs
+NVMe over fabrics performance running on BlueField-4 Grace
+8 Cores for 1.6Tbs
+16 Cores for 20M IOPS
+--- p22 ---
+In-silicon security enforces policy at the speed of AI agents
+Vera CPU: BF4 Makes Agentic Security Transparent
+NVIDIA Vera CPU
+Infrastructure 
+Mapping
+DOCA Flow
+DOCA Vault
+DOCA Argus
+Network
+Flow Control
+Files
+Objects
+Processors
+Threads
+Memory
+Network
+Connections
+File
+Descriptors
+Libraries
+Telemetry
+NVIDIA BlueField-4
+--- p23 ---
+Line-Rate Networking for the Small Packets AI Infrastructure
+--- p24 ---
+Storage-Scale Scales Agent 
+Context With 5x Better Power Efficiency 
+GPU HBM
+System Memory
+Local Storage
+Scale-In 
+Network
+G1
+Active KV
+G2
+Staging / Spillover KV
+G3
+Warm KV reuse
+G4
+Cold or shared KV context
+Scale-In 
+Network
+G3.5 - CMX
+Based on Vera CPU and ConnectX-9
+3.2Tb/s Storage Access, x10 IOPs, x5 Efficiency
+Co-designed with leading storage partners
+Managed by DOCA MEMOS end to end with BlueField-4
+--- p25 ---
+Vera Rubin Co-Designs Every Layer of 
+the AI Factory for Agentic AI 
+BF
+Agentic 
+Storage
+BF
+Agentic 
+CPU
+BF
+WAN 
+Access
+BF
+Cloud 
+Security
+BF
+Data Center
+Orchestration
+BF
+Cloud 
+Services
+Scale-In
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+CX
+CX
+CX
+CX
+GPU
+Scale-Up
+Scale-Across
+Scale-Out
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+BF
+Summary
+•
+BlueField-4 is the first AI native DPU 
+•
+Vera Rubin: 7Tb/s DPU with Astra
+•
+Vera: Agentic security and confidential compute
+•
+Scale-In: End to end service access & security
+•
+Scale-Out & Across: Data center services with Astra
+•
+Storage-Scale: Efficient AI storage tier
+Storage-Scale

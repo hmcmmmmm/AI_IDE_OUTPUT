@@ -1,0 +1,571 @@
+
+--- p1 ---
+Raptor:
+The First 3D-DRAM Accelerator for Generative Inference
+Sudeep Bhoja, Co-founder & CTO, d-Matrix      ·      
+Aayush Ankit,+ Software Engineer, AI & Systems Codesign, Meta
+Hot Chips 2026   ·   Stanford   ·   Aug 23–25, 2026
++Work done while at d-Matrix
+--- p2 ---
+The Growing Data Problem
+Model weights keep growing
+KV cache grows with context
+x batch size
+64 users at 1M
+context:
+~ 935GB KV
+Longer context × more users ⇒ Large KV cache
+Weights and KV cache present a capacity and bandwidth problem. Both are growing.
+--- p3 ---
+Today’s Memory Technologies
+--- p4 ---
+SRAM: Bandwidth Advantage
+Why SRAM is fast:
+•  6T cell, direct bit-line access
+•  On-die: no interposer, no package crossing
+•  Sub-ns access latency
+Corsair SRAM Accelerator Specs – card pair:
+Metric
+Value
+Bandwidth
+300 TB/s
+Capacity
+4 GB
+Latency
+~1 ns
+I/O energy
+~0.5 pJ/bit
+Why SRAM cannot scale:
+• 6T cell is 10× larger than DRAM 1T1C
+• Bitcell frozen ~0.021 µm² across N5 → N3E → N2
+(TSMC IEDM/ISSCC)
+• Leakage: tens of watts at GB scale
+• Practical limit: ~4 GB per card pair
+• Cost: 100x DRAM
+SRAM is the fastest memory in silicon. 
+Example use case: Draft model in frontier-LLM speculative decoding.
+Source: Dayo et al.
+--- p5 ---
+HBM: The Bandwidth Issue
+HBM provides high capacity 
+●
+1TIC cell, high array density
+●
+8–16 core dies per stack 
+●
+8 stacks per package
+HBM BW is challenging to scale to SRAM-like numbers  
+●
+Pin speed, IO width (per HBM base die) have improved slowly
+●
+Number of stacks is beachfront limited
+●
+Dedicating the entire die beachfront to HBM forces harder packaging 
+(interposer size, warpage). Examples of 4 die package beachfronts 
+●
+A Practical limit w/ HBM4 (Vera Rubin, MI 455): ~20TB/s
+--- p6 ---
+HBM: The Power Problem
+HBM capacity is very high but SOTA packages neither have beachfront, nor power for SRAM-like bandwidth.
+At 2.4pJ/bit, 100TB/s 
+requires 1.92KW for HBM 
+power only (excluding 
+fabric power)
+--- p7 ---
+3D-DRAM: An idea whose time has come
+DRAM on top
+DRAM die
+DRAM die
+DRAM die
+DRAM die
+Logic
+Substrate
+Logic on top
+Logic
+DRAM die
+DRAM die
+DRAM die
+DRAM die
+Substrate
+Thermal challenge
+Accelerator heat must escape through the 
+temperature-sensitive DRAM stack
+Power-delivery challenge
+100s of watts delivered through TSVs in the 
+DRAM stack (IR drop)
+1-Hi stack, Logic-on-Top with power density ≤ 0.5 W/mm² can be reliably liquid-cooled (DRAM < 100°C) with 
+required power delivery.
+--- p8 ---
+Why 3D-DRAM?
+SRAM
+On-die memory
+Compute + SRAM per tile
+Capacity
+Low
+Bandwidth
+High
+Power
+Low
+HBM
+2D package + beachfront
+Compute
+NoC feeds edge HBM stacks
+Capacity
+High
+Bandwidth
+Low
+Power
+High
+3D DRAM
+Stacked compute-on-memory
+Compute
+DRAM
+Compute on DRAM, vertical IO
+Capacity
+Medium
+Bandwidth
+High
+Power
+Low-Med
+The energy ladder
+Memories & interconnect
+Energy / bit
+SRAM (on-die)
+~50 fJ
+On-chip wire
+~35 fJ/mm
+3D vertical IO
+0.3–0.4 pJ
+Interposer trace
+~500 fJ/mm
+2.5D HBM4 (system)
+2.5pJ + 3pJ (on 
+chip) 
+3D IO lands ~10× below HBM — PHY-less, mm-
+scale vertical path instead of cm-scale 
+interposer + PHY
+3D DRAM larger die (≤4 layers vs. 12–16 HBM): Better yield 
+SRAM-class bandwidth at ~1/10th HBM energy — short 3D IO, no sideways data movement, no PHY, no beachfront limit
+--- p9 ---
+Serving LLM Inference Workloads
+--- p10 ---
+LLM Inference
+Prefill Stage
+Prompt tokens (all, in parallel)
+t1
+t2
+t3
+t4
+t5
+Transformer layers × N
+Multi-Head Attention
+Feed-Forward (FFN)
+KV
+cache
+write
+→ first token, then hand to Decode
+Decode Stage
+Current token (1)
+tk
+Transformer layers × N
+Multi-Head Attention
+Feed-Forward (FFN)
+KV
+cache
+read
+append
+tk+1
+Next token
+autoregressive
+(repeat per token)
+•  Prefill Stage is compute-throughput bound 
+◦Large M dimension from processing multiple tokens at a time (irrespective of batch size)
+•  Decode Stage is typically memory-bandwidth bound 
+◦Small M dimension (small, modest batch sizes for low-latency scenarios)
+        ◦  Attention can become compute bound with high GQA + speculative decoding (independent of batch size)
+        ◦  MoE is memory-bandwidth bound even for modest batch sizes + speculative decoding
+Agentic
+--- p11 ---
+Majority of wall-clock inference time is spent in decode
+Decode Phase (memory bound component) is a critical part of overall inference runtime.
+--- p12 ---
+1Hi 32GB 3D-DRAM: Frontier LLMs fit in one Raptor Rack 
+Sizing assumptions
+Precision
+4-bit weights · 8-bit KV cache
+Scale-up diameter
+72 cards
+Model Details
+72-card scale-up at 32 GB/card hosts Kimi K3 at 1M context. Disaggregation & multi-rack extends beyond
+--- p13 ---
+From Raptor Chiplet to Rack
+--- p14 ---
+Building a 3D-DRAM Based Inference System
+C O M P L E X  C O - D E S I G N
+1
+Rethinking Memory 
+Subsystem
+Addressing memory bandwidth 
+bottlenecks through innovative 3D-
+DRAM technology.
+NEXT SUBSECTION
+2
+Rethinking Data Movement 
+Fabric
+Low latency is a must-have to avoid 
+being cornered by Amdahl's Law.
+• Topology
+• Protocol
+• Physical layer
+THIS SECTION
+3
+Workload Mapping
+Sharding and collective 
+communication algorithms.
+Requires coordination of 8K virtual 
+devices over a hierarchical network vs. 
+~72 devices in a typical GPU system.
+NOT COVERED
+Hot Chips 2026  |  d-Matrix
+--- p15 ---
+Low Latency Fabric (Intra-Card and Inter-Card)
+T O P O L O G Y
+• Full-mesh package reduces intra-package latency.
+○Realized via “virtual” diagonals (green / magenta D2D).
+○Physical diagonals increase distance (package size, D2D power) and 
+package layers.
+P R O T O C O L
+• Push-style end-to-end — intra-card and inter-card.
+○Device initiated.
+○Single-sided — source card doesn’t receive an ACK.
+○Efficient support for multiple in-flight short-message transfers on a 
+card.
+Hot Chips 2026  |  d-Matrix
+--- p16 ---
+3D-DRAM: The Opportunity
+--- p17 ---
+Raptor 3D-DRAM
+• Top die: TSMC N4 logic 
+• Bottom die: 3D DRAM
+• Integration: 36µ Face to Face (F2F) stacking
+• Proven low cost, high volume, high yield process
+--- p18 ---
+The 3D-DRAM Integration Landscape
+Hardware
+Architecture
+Co-Design
+TSV density vs. routing
+congestion trade-offs
+Power delivery through
+3D stack (IR drop, decap)
+Signal integrity: crosstalk
+& SSN on wide parallel bus
+★ I/O power: no burst
+structure ⇒ no PHY DBI
+μBump yield & alignment
+at 36 μm pitch
+Clock distribution &
+skew across die stack
+★ Bank-to-channel mapping:
+840 banks ≠ 256×4
+Weight & KV-cache tiling
+across banked memory
+★ Redundancy without
+breaking channel symmetry
+LPDDR5X as secondary
+tier: data placement policy
+Compiler support for
+stream-aware access patterns
+Runtime KV-cache alloc
+& eviction across banks
+★ Thermal: Tj=105°C
+⇒ 8× faster refresh
+ECC, DBI metadata, &
+scrub share bank rows
+Refresh scheduling vs.
+compute pipeline bubbles
+Known-good-die testing
+→ post-package repair flow
+Multi-high stacking:
+routing, power, thermals
+Hybrid bonding roadmap:
+<2 μm pitch, 8-high
+★   The challenges we discuss in this talk
+--- p19 ---
+These Challenges Are Entangled
+840 Banks
+per Chiplet
+Challenge 1
+Bank Mapping
+Challenge 2
+I/O Power
+Challenge 3
+Thermal Reliability
+3 banks/ch ≠ 128B flit
+∼700 TSVs/mm2,
+no DBI pin
+Tj=105°C, 4 ms retention
+data layout drives bit transitions
+I/O switching raises Tj
+redundancy reshapes channel topology
+A solution to any one challenge constrains the design space of the other two.
+--- p20 ---
+Challenge 1: The Bank-to-Channel Mapping Problem
+TE-Group
+TE 0
+TE 1
+TE 14
+TE 15
+· · ·
+Ch 0
+Ch 1
+Ch 14
+Ch 15
+· · ·
+3D-DRAM
+Bank 0
+Bank 1
+Bank 2
+Bank 3
+Bank
+N-2
+Bank
+N-1
+Bank N
+· · ·
+banks shared across channels
+The setup
+• Each TE needs a 128 B flit per access
+• 16 ch × 16 TE-Groups = 256 ch/chiplet
+• Each bank delivers 32 B per column access
+The arithmetic
+• 128 B ÷ 32 B = 4 banks/ch needed
+• DRAM die: 840 banks (768 after 72 spares)
+• 768 ÷ 256 = 3 banks/ch available
+Need 4 banks/channel  ⇒  have only 3  ⇒  the 128 B flit does not divide evenly
+--- p21 ---
+Challenge 1: The Overfetch Dilemma
+TE-Group
+TE 0
+TE 15
+· · ·
+Ch 0
+Ch 15
+· · ·
+A group of 3 banks forms a channel
+3D-DRAM
+Bank 0
+Bank 1
+Bank 2
+· · ·
+Bank 45
+Bank 46
+Bank 47
+48 banks/TE-Group  ·  768/chiplet
+With 3 banks per channel:
+• One channel access returns 96 B (3 x 32 B)
+• 128 B flit ⇒ two accesses ⇒ 192 B fetched
+• 33% overfetch ≈ 33 TB/s wasted
+Naïve fix — column staggering:
+• Stagger column indices to pack one flit per pair
+• Requires a 192 B shifting buffer
+• Complicates timing closure and verification
+How to deliver 128 B from 3 × 32 B banks without
+wasting bandwidth or adding complex datapaths?
+--- p22 ---
+Solution: Stream Blocking
+Challenge.  A 128 B flit = 4×32 B, but each channel has only 3 banks — a naïve fetch reads 192 B per 128 B flit 
+(⇒ 33% overfetch).
+Ch k
+Bank 0
+Bank 1
+Bank 2
+P0
+P1
+P2
+32 B
+32 B
+32 B
+32 B
+32 B
+32 B
+32 B
+32 B
+32 B
+1 shared partial access (96 B)
+aligned (96 B)  +  P0  =  Flit 0 (128 B)
+aligned (96 B)  +  P1  =  Flit 1 (128 B)
+aligned (96 B)  +  P2  =  Flit 2 (128 B)
+3 aligned
+accesses
+Puts the 4th 32 B (the partial) into one access shared by 3 flits — 4 × 96 = 384 B in = 3 × 128 = 384 B out ⇒ 0% overfetch.
+Every column access is fully utilised  —  the 33 TB/s lost
+to overfetch is reclaimed, with no shifting network.
+--- p23 ---
+Challenge 2: The I/O Power Wall
+The power cost of 100 TB/s:
+Measured I/O Power
+PI/O = 100 TB/s × 0.37 pJ/bit = 296 W
+Why conventional DBI cannot help:
+• HBM uses multi-cycle bursts (BL 4–16)
+• PHY sees full burst ⇒ decides on inversion
+• DBI pin per byte lane signals choice
+Our 3D-DRAM has none of these: single-cycle 
+transfer, no burst, no sideband pin.
+Interface comparison:
+DDR / HBM
+Transfer
+Multi-cycle burst
+Lookahead
+Full burst visible
+DBI
+Dedicated pin/lane
+Our 3D-DRAM
+Transfer
+Single-cycle 256-bit
+Lookahead
+None
+DBI
+No pin. No sideband.
+DBI would save 20% power
+Need to rethink interface.
+How to achieve DBI architecturally?
+--- p24 ---
+Solution: Stream Flipping (Pinless DBI)
+Challenge.  I/O dominates: 100 TB/s x 0.37 pJ/bit = 296 W, and conventional DBI needs a sideband pin the 
+single-cycle 3D-DRAM link doesn’t have.
+128 B flit
+1 hardware tile = 16 KB = 128 flits
+⇒ long per-channel flit streams; each flit 
+compared to the previous one.
+(a) Without DBI
+flit i−1:   0 0 ··· 0
+flit i:      1 1 ··· 1
+flit i+1:   0 0 ··· 0
+→ every bit toggles twice
+(b) Stream flipping: invert flit i
+0 0 ··· 0
+0 0 ··· 0 (was 1···1)
+0 0 ··· 0
+0
+1
+0
+meta
+→ ≈0 toggles + 1 metadata bit / flit
+Architectural DBI, no pin:
+• Write: compare each flit to the previous → invert.
+• Read: fetch the 1-bit tag; invert if set
+• Tag co-located with ECC ⇒ 0.8% overhead, no PHY 
+change → 20% power savings.
+The full 20% I/O power saving with no pin and no PHY change.
+--- p25 ---
+Challenge 3: DRAM Reliability at 105°C
+Logic Die (TSMC N4P)
+μBumps (36 μm)
+3D-DRAM Die
+Substrate
+Tj up to
+105°C
+Retention consequence
+Standard: 32 ms at 85°C
+At 105°C: drops to 4 ms
+⇒ 8x more frequent refresh
+Three compounding problems:
+1. Yield — 840 banks/die. Even a 1% fault rate risks losing 
+entire channels. Discarding bonded dies is uneconomical.
+2. Symmetry — Disabling a faulty bank narrows its channel. 
+Tensor engines expect uniform channel widths—one weak 
+channel throttles the entire slice.
+3. Error accumulation — Higher Tj drives more soft errors. 
+ECC, scrub, and refresh must all coexist without stalling 
+throughput.
+How to maintain full-bandwidth, symmetric channels when banks fail and refresh is 8x nominal?
+--- p26 ---
+Solution: Thermal-Aware Refresh & ECC
+Challenge.  At 105°C, retention falls 32 ms → 4 ms (8x more refresh), and bits still need correcting -- all 
+without losing significant bandwidth.
+Deep banking makes refresh cheap
+commodity
+∼32K rows
+Raptor
+1366 rows
+long sweep
+vs
+fast
+16–32x fewer rows ⇒ 4 ms refresh (8x more frequent) costs 
+only 1.37% → ∼100 TB/s.
+Interleaved ECC, co-located with DBI
+··· 116 data columns ···
+last 8 cols
+ECC + DBI
+Last 8 of 124 columns: paired [132,128] Reed–Solomon + 
+DBI bits, interleaved with the subarray.
+Read order:
+ECC + DBI
+data flits
+correct + flip
+Deep banking turns an 8x refresh penalty into only a <1.4% bandwidth loss
+--- p27 ---
+Solution: Bank Chaining
+Challenge.  The 72 spare banks must cover faults anywhere on the die — without making channels 
+asymmetric or adding long edge wires.
+banks
+Level 1
+Level 2
+logic die
+L0
+L1
+L2
+L3
+L4
+L5
+Channel 0
+Channel 1
+B0
+B1
+×
+B3
+×
+B5
+S0
+S1
+Level 1 skips the first fault (B2); Level 2 skips the second (B4) — M=2 physical mux levels tolerate 2 faults anywhere, 
+spares backfill, channels stay symmetric.
+The chiplet’s 72 in-line redundant µbanks absorb arbitrary faults --
+symmetric channels, negligible routing cost.
+--- p28 ---
+Conclusions - 1
+Our contribution
+3D-DRAM puts bandwidth and capacity in one package → three co-designed solutions.
+Raptor 3D-DRAM vs. HBM4 & Rubin R200   silicon-area basis
+Metric
+Raptor 3D-DRAM
+HBM4 24 Gb
+HBM4 32 Gb
+Rubin R200
+Capacity (MB/mm²)
+11.4
+21.9
+26.3
+21.9
+Bandwidth (GB/s/mm²)
+32.6
+1.67
+1.51
+1.39
+Power per GB/s (mW/GB/s)
+2.96
+40.0
+40.0
+40.0
+Effective-BW basis (Raptor 83%, Rubin 85% util.). Power per GB/s: lower is better. Rubin R200 = 8× HBM4 24 Gb SoC.
+≈20x the bandwidth per mm2 and 13.5x better power per GB/s.
+The memory wall is a technology problem.  3D-DRAM is the solution.
+--- p29 ---
+Raptor sustains ~1000 TPS/User for serving 3T class model at 1M context !
+Moderate per-card memory paired with high memory bandwidth wins Low Latency Inference
+--- p30 ---
+
+--- p31 ---
+More information on Raptor: 
+Raptor paper: ISCA 2026

@@ -1,0 +1,1875 @@
+
+--- p1 ---
+Hot Chips 2026
+Prashant Ranjan, Jackson Peng, Torsten Hoefler
+Maia 200
+A Data Center Scale AI Accelerator
+for Large Scale Inference using 
+Software Defined Dataflow
+--- p2 ---
+Co-designing Maia 200
+The Most Efficient Inference Engine on Azure
+Inference Design Goals & Challenges
+SDLA Dataflow Architecture
+Maia 200 SoC
+Maia 200 System
+SDLA-Based Kernel Co-Design 
+Benchmarking & Performance Results
+--- p3 ---
+Inference Design 
+Goals & Challenges
+--- p4 ---
+Diverse 
+Workloads
+• Prefill vs Decode
+• Mixture of Experts
+• Agentic Interactions
+• Programmable
+Diverse 
+Applications
+•
+Interactive Chat
+•
+Summarization
+•
+Deep Reasoning
+•
+Deep Research
+Challenging SLAs
+•
+Low Latency Tokens 
+•
+High Throughput
+•
+High Availability
+•
+High Reliability 
+Inference Design Goals & Challenges
+Designing Infrastructure to Deliver all this at: Minimum $/Token & W/Token
+--- p5 ---
+SDLA Dataflow Architecture
+Software Defined Local Access Dataflow
+--- p6 ---
+SDLA forms a New 
+Class of Architecture
+SDLA Dataflow Architecture
+Software Defined Local Access Dataflow
+•
+Explicit software orchestration
+•
+Independent control and data 
+streams  
+•
+Data obliviousness
+•
+Locally accessed
+--- p7 ---
+Maia 200 SoC
+Control  |  Compute  |  I/O  |  Semaphores
+--- p8 ---
+Asynchronous Control & Data Path
+HW Queues with Macro-Instructions:
+• In-order execution of Macro-Instructions
+• Explicit synchronization through Semaphores 
+between HW queues
+Control Processors (CPs) run the control path: 
+Enqueues Dataflow Instructions to the 
+accelerator queues
+Pre0
+Pre1
+Pre2
+Post0 Post1 Post2
+Instruction
+Dataflow Instruction 
+Precondition on up 
+to 3 semaphores
+(wait)
+Postcondition on up 
+to 3 semaphores
+(signal)
+•
+DMA command
+•
+kernel invocation
+•
+Network tx / rx
+DMA and Processing Elements (PEs) run the data path: 
+Executes Dataflow Instructions 
+Memory
+CP
+Engine
+Memory
+CP
+DMA
+PE
+Engine
+DMA
+PE
+--- p9 ---
+Tile Tensor Unit (TTU)
+Tile Vector Processor 
+(TVP)
+Tile Control Processor 
+(TCP)
+High Throughput Compute
+Each Tile Packages Compute, Local Memory & 
+Data Movement Control into a Self-Contained Unit
+•
+High-throughput matrix 
+multiply and convolution engine
+•
+Optimized for low precision 
+block scaled data types 
+(FP8/FP6/FP4)
+•
+Support Hardware data type 
+conversion at line rate through 
+TDMA
+•
+Fully programmable SIMD 
+engine 
+•
+Maintains flexibility for model 
+and algorithm changes 
+•
+Support Hardware data type 
+conversion at line rate 
+through TDMA
+•
+Executes control code to 
+orchestrate the SDLA dataflow 
+•
+Coordinates TTU, TVP, and DMA 
+tasks
+•
+Controls hardware semaphores 
+for fine-grained sync between 
+movement & execution
+--- p10 ---
+Hierarchical Data Storage
+•
+L1 (TSRAM) and L2 (CSRAM) to facilitate 
+data re-use and reduce data movement
+Hierarchical Data Movement
+•
+Hierarchy of DMA engines
+•
+Tile (TSRAM) <-> Cluster (CSRAM) <-> 
+Chip (HBM)
+•
+Cluster to Cluster Broadcast
+Hierarchical Data Storage & Movement
+Local Data Access
+--- p11 ---
+I/O: Custom NIC & Interconnect Protocol
+Higher Performance at Low Power & Area
+Custom Embedded AI NIC (ANC)
+Custom Scale Up Fabric Transport (ATL)
+•
+Ethernet based 
+•
+End point controlled Multi Pathing support 
+(Packet Spray, load balancing, OOO Receiver)
+•
+Supports multi-tier network
+•
+Reliability focused (Hardware based Fast 
+failure detection and Recovery)
+•
+End2End encrypted  
+Low Power (<8pJ/b), Latency (<1us, P2P, one-way 
+mem2mem) and Size
+ATL had key influence on standardization of the Ultra Ethernet Transport (UET) and Multipath Reliable Connection (MRC) Specifications
+--- p12 ---
+Load balancing at every level is fundamental to scale performance with the system
+ANC
+Network 
+Plane 1
+ANC
+ANC
+ANC
+Network Plane 
+T1-
+Switch
+Cluster 0
+Sharding across 
+Clusters
+T0-Switch
+Maia 200
+Cluster 1
+Cluster 2
+Cluster 3
+T1-
+Switch
+Load Balancing: Intra & Inter Chip
+Intra-Chip Load Balancing 
+Inter-Chip Load Balancing 
+•
+Hierarchical NOC and Compute
+•
+Intra-Chip Multicast/Broadcast support
+•
+Unified HBM
+•
+Sharding across ANCs
+•
+FCQ (Fully connected Quad) 
+•
+Load balancing in Network
+--- p13 ---
+Putting It All Together : 
+Maia 200 SOC
+HBM
+HBM
+HBM
+HBM
+HBM
+HBM
+PAM4
+PAM4
+PAM4
+PAM4
+Cluster
+Cluster
+Cluster
+Cluster
+CSRAM
+GNOC
+GNOC
+GNOC
+GNOC
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+CSRAM
+CSRAM
+CSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+Tile
+TSRAM
+PCle
+Maia 200
+Peak Dense Tensor TOPS
+FP4: 10,145
+FP8: 5,072
+BF16: 1,268
+Peak HBM BW (TB/s)
+7 TB/s
+Number of HBM Stacks
+6
+HBM Capacity (GB)
+216
+SRAM Capacity (MB)
+272
+SRAM BW (TB/s)
+80
+Host PCIe BW (GB/s)
+64
+PCIe Configuration
+Gen6 x8
+Backend Network Bandwidth (GB/s, Uni-
+directional)
+1,400
+Backend Network Configuration
+28x400
+SOC Die Area (mm2)
+~820
+Package Size
+75x75
+SoC TDP (provision)
+750W
+Process Technology
+TSMC 3nm
+Package Technology
+CoWoS-S
+--- p14 ---
+Maia 200 System
+From Chips to Cluster
+--- p15 ---
+FCQ Topology: Fully Connected Quad
+Maximizing local bandwidth for tensor parallelism
+•
+Tray Level: Fully Connected Quad 
+(FCQ)
+•
+4 Accelerators directly connected via 
+fixed Ethernet links (no switch)
+•
+Maximum bandwidth between 
+nearest neighbors for TP-heavy 
+operations
+•
+Efficient AllGather and AllReduce
+within the Quad
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+Maia 200 Compute Tray
+Maia 200
+Maia 200
+Maia 200
+Maia 200
+Cluster          Memory
+C
+M
+--- p16 ---
+Unified Ethernet Scale-Up Network
+One Network, One Protocol, from Chip to 6k Accelerator Cluster
+Why Unified?
+•
+Single Ethernet-based fabric
+•
+Same ATL stack everywhere
+•
+Standard switch ecosystem
+--- p17 ---
+Optimized Maia 200 I/O Stack
+Communication
+Microsoft Collective 
+Communication Library 
+(MCCL)
+• Efficient Non-blocking MPI implementation (minimize pipeline bubbles)
+• Hides Synchronization Overhead (pipelined commands)
+• Simple software APIs
+• Algorithmic Optimizations (reduce incast, maximize overlap)
+Compute and IO 
+Distribution
+E2E Load Balanced
+• Distributed Workload Parallelization Strategy 
+• Intra Chip Sharding
+• IO Load Balancing Throughout (SOC to System)
+Network 
+Fixed (FCQ) + Switched 
+(Two Tier Unified Clos)
+• RDMA based
+• Transport offload
+• E2E Congestion Control 
+• Reliability focused 
+Connectivity
+Custom Interconnect
+• Integrated NIC (ANC)
+• Custom Transport Protocol (ATL)
+• Area, Power and Latency Optimized
+--- p18 ---
+SDLA-Based Kernel 
+Co-Design
+Compute & Collective Kernel Co-Design & Optimization
+--- p19 ---
+SDLA-Driven Design
+• Fully asynchronous programming model
+• Separate data flow, data computation 
+and control flow; and achieve fully-
+overlapped operations
+• Efficiently utilizing a localized hierarchical 
+memory subsystem
+Kernel Co-Design
+SDLA Based Kernel Implementation 
+Allows HW/SW Codesign
+•
+Let HW/SW orchestrate the best data movement and 
+placement at all development phase
+•
+A predictable data movement overhead at early 
+phase of silicon development
+•
+Optimized SoC NoC implementation for best 
+P(ower)-P(erformance)-A(rea)
+--- p20 ---
+Kernel Design (Batch GEMM)
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+A
+W
+B=A*W
+A
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+Gather Based Implementation
+On-chip Data Flows
+Benefit
+•
+Activation: gather (broadcast) over central GNOC
+•
+Weight: load from nearby HBM
+•
+Output: pinned in the tile L1 SRAM
+•
+Fully utilize the broadcast NOC to send low-
+precision activation while pinning high-precision 
+outputs
+•
+Reduce the weight movement for power saving.
+--- p21 ---
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+A
+W
+B=A*W
+A
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+W0
+W0
+W0
+W1
+W1
+W1
+W2
+W2
+W2
+W3
+W3
+W3
+B0
+B0
+B0B0
+B0
+B0
+B1
+B1
+B1B1
+B1
+B1
+B2
+B2
+B2B2
+B2
+B2
+B3
+B3
+B3B3
+B3
+B3
+A
+Kernel Design (Batch GEMM)
+Gather Based Implementation
+On-chip Data Flows
+Benefit
+•
+Activation: gather (broadcast) over central GNOC
+•
+Weight: load from nearby HBM
+•
+Output: pinned in the tile L1 SRAM
+•
+Fully utilize the broadcast NOC to send low-
+precision activation while pinning high-precision 
+outputs
+•
+Reduce the weight movement for power saving.
+--- p22 ---
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+A
+W
+B=A*W
+A
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+C
+M
+W0
+W0
+W0
+W1
+W1
+W1
+W2
+W2
+W2
+W3
+W3
+W3
+B0
+B0
+B0B0
+B0
+B0
+B1
+B1
+B1B1
+B1
+B1
+B2
+B2
+B2B2
+B2
+B2
+B3
+B3
+B3B3
+B3
+B3
+A
+Kernel Design (Batch GEMM)
+Gather Based Implementation
+On-chip Data Flows
+Benefit
+•
+Activation: gather (broadcast) over central GNOC
+•
+Weight: load from nearby HBM
+•
+Output: pinned in the tile L1 SRAM
+•
+Fully utilize the broadcast NOC to send low-
+precision activation while pinning high-precision 
+outputs
+•
+Reduce the weight movement for power saving.
+--- p23 ---
+Gather-Based Implementation
+System level data flows
+•
+Activation: gather (broadcast) over network
+•
+Each chip run (Batch) GEMM on each chunk of 
+received activations
+Benefit
+•
+Overlap collective and GEMM at fine 
+granularity
+Kernel Design Distributed 
+(Batch GEMM)
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+A
+W
+B=A*W
+B0
+B1
+B2
+B3
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+--- p24 ---
+Kernel Design Distributed 
+(Batch GEMM)
+Gather-Based Implementation
+System level data flows
+•
+Activation: gather (broadcast) over network
+•
+Each chip run (Batch) GEMM on each chunk of 
+received activations
+Benefit
+•
+Overlap collective and GEMM at fine 
+granularity
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+A
+W
+B=A*W
+B0
+B1
+B2
+B3
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+B0
+W0
+B0
+B1
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W1
+W0
+B0
+W0
+B0
+B2
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W2
+W0
+B0
+W0
+B0
+B3
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W3
+W0
+B0
+W0
+B0
+B0
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W0
+--- p25 ---
+Kernel Design Distributed 
+(Batch GEMM)
+Gather-Based Implementation
+System level data flows
+•
+Activation: gather (broadcast) over network
+•
+Each chip run (Batch) GEMM on each chunk of 
+received activations
+Benefit
+•
+Overlap collective and GEMM at fine 
+granularity
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+W0
+B0
+W1
+W2
+W3
+B1
+B2
+B3
+A
+W
+B=A*W
+B0
+B1
+B2
+B3
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+AllGather
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+W1
+W2
+W3
+W0
+B0
+W0
+B0
+B1
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W1
+W0
+B0
+W0
+B0
+B2
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W2
+W0
+B0
+W0
+B0
+B3
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W3
+W0
+B0
+W0
+B0
+B0
+A
+0
+A
+1
+A
+1
+A
+2
+A
+3
+W0
+W0
+W0
+W0
+W0
+W0
+W0
+--- p26 ---
+•
+Fully adopt to flash attention variants 
+and can either pin Q(uery)/O(utput) or 
+pin K(ey)/V(alue) in TSRAM
+•
+Block interleaving to get fully overlapped 
+2 Tensor operations and 2 SIMD 
+operations 
+Kernel Design Attention 
+(Scaled-Dot-Product)
+QK
+Block
+QK
+Block
+QK
+Block
+QK
+Block
+#1: Flash attention based work partition
+--- p27 ---
+Q*KT
+TTU
+ TVP
+Q*KT
+Softmax
+Q*KT
+Softmax
+P*V
+Rescale
+Q*KT
+Softmax
+P*V
+Rescale
+Q*KT
+Softmax
+P*V
+P*V
+Rescale
+Q*KT
+Q*KT
+Rescale
+#4: Interleaved scheduling inside Tile
+QK
+Block
+QK
+Block
+QK
+Block
+QK
+Block
+#1: Flash attention based work partition
+Q*KT
+Softmax
+P*V
+Rescale
+TTU
+TVP
+TTU
+TVP
+#2: Ops per each QK block
+Q*KT
+Softmax
+P*V
+Rescale
+Q*KT
+Softmax
+P*V
+Rescale
+Q*KT
+Softmax
+P*V
+Rescale
+Q*KT
+Softmax
+P*V
+Rescale
+op1
+op2
+op3
+op4
+Slot 1
+Slot 2
+Slot 3
+Slot 4
+Slot 5
+Q*KT
+Q*KT
+#3: Operation booking table
+•
+Fully adopt to flash attention variants 
+and can either pin Q(uery)/O(utput) or 
+pin K(ey)/V(alue) in TSRAM
+•
+Block interleaving to get fully overlapped 
+2 Tensor operations and 2 SIMD 
+operations 
+Kernel Design Attention 
+(Scaled-Dot-Product)
+--- p28 ---
+An adaptive logical topology
+Broadcast Based implementation
+•
+Fit for small sized transfer for low latency
+Hierarchical Based Implementation
+•
+Fit for medium sized transfer for balanced 
+throughput/latency
+Kernel Design Collectives
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+Broadcast Based Collectives
+Hierarchical Based Collectives.
+--- p29 ---
+Kernel Design Collectives
+An adaptive logical topology
+Ring Based Implementation
+•
+Fit for large sized transfer for peak 
+throughput
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+C
+M
+C M
+Ring Based Collectives
+--- p30 ---
+Performance Results
+Kernel Performance (as of June 2026)
+--- p31 ---
+GEMM
+Benchmark
+•
+Float8 * Float8, TP=1
+•
+Float4 * Float4, TP=1
+Throughput – Compute 
+Intensity Chart
+•
+Roofline vs Achieved
+𝑨𝒓𝒊𝒕𝒉𝒎𝒆𝒕𝒊𝒄𝑰𝒏𝒕𝒆𝒏𝒔𝒊𝒕𝒚= 𝑻𝒆𝒏𝒔𝒐𝒓𝑶𝒑𝒔
+𝑰/𝑶
+--- p32 ---
+Benchmark
+•
+Fused scaled-dot-product w/ 
+flash attention 2 
+implementation
+•
+Tensor: Float8, SIMD: Float32
+•
+GQA = 4
+Throughput Chart
+•
+Roofline vs Achieved
+•
+Computation := QHead * 
+Context ^ 2
+Attention
+--- p33 ---
+Benchmark
+•
+Allreduce (BF16), TP8
+•
+Alltoall, TP8
+Throughput – Transfer Size 
+Chart
+•
+Roofline vs Achieved
+Collective
+--- p34 ---
+Summary & Key Takeaways
+A new class of data-
+movement-centric 
+architectures
+SDLA 
+Architecture
+TTU, DMA hierarchy, 
+memory tiers, on 
+chip NOC, integrated 
+NICs and Software 
+SDKs
+Vertically 
+Co-Designed 
+SoC & System
+Unified All Ethernet 
+Network
+Optimized 
+System Design
+Optimized compute 
++ communication 
+kernels design
+Kernel 
+Co-Design
+Higher
+Performance /$ 
+Result : Lower 
+TCO, Better 
+Energy 
+Efficiency
+--- p35 ---
+Q&A

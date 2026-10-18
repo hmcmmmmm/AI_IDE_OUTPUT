@@ -1,0 +1,66 @@
+<Slide style={{ width: 1280, height: 720, background: '#0E1420', position: 'relative', overflow: 'hidden' }}>
+
+    <Box style={{ position: 'absolute', left: 72, top: 40, width: 3, height: 44, background: '#C8A15A' }} />
+    <Box style={{ position: 'absolute', left: 92, top: 36, width: 880 }}><Text style={{ fontSize: 36, fontWeight: 'bold', lineHeight: 1.3, color: '#E8EDF3' }}>样机证明存在性，量产要求分布性</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 46 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, letterSpacing: 2, color: 'rgba(232,237,243,0.45)' }}>04 · 从误区到工具</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 140 }}><Text style={{ fontSize: 13, letterSpacing: 3, color: '#C8A15A' }}>四道台阶，缺一级就上不去</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 520, width: 670, height: 1, background: 'rgba(232,237,243,0.18)' }} />
+<Box style={{ position: 'absolute', left: 72, top: 410, width: 160, height: 110, background: 'rgba(232,237,243,0.14)', padding: 14 }}><Text style={{ fontFamily: 'Georgia', fontSize: 22, lineHeight: 1.3, color: 'rgba(232,237,243,0.50)' }}>01</Text></Box>
+<Box style={{ position: 'absolute', left: 72, top: 536, width: 160, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>样机</Text>
+        <Text style={{ fontSize: 12.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.48)', marginTop: 4 }}>存在性证明</Text>
+        <Text style={{ fontSize: 11.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.30)', marginTop: 2 }}>n = 1</Text>
+    </Box>
+<Box style={{ position: 'absolute', left: 242, top: 345, width: 160, height: 175, background: 'rgba(232,237,243,0.24)', padding: 14 }}><Text style={{ fontFamily: 'Georgia', fontSize: 22, lineHeight: 1.3, color: 'rgba(232,237,243,0.72)' }}>02</Text></Box>
+<Box style={{ position: 'absolute', left: 242, top: 536, width: 160, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>DVT</Text>
+        <Text style={{ fontSize: 12.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.48)', marginTop: 4 }}>设计裕度达标</Text>
+        <Text style={{ fontSize: 11.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.30)', marginTop: 2 }}>设计能过</Text>
+    </Box>
+<Box style={{ position: 'absolute', left: 412, top: 280, width: 160, height: 240, background: 'rgba(200,161,90,0.42)', padding: 14 }}><Text style={{ fontFamily: 'Georgia', fontSize: 22, lineHeight: 1.3, color: '#0E1420' }}>03</Text></Box>
+<Box style={{ position: 'absolute', left: 412, top: 536, width: 160, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>PVT</Text>
+        <Text style={{ fontSize: 12.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.48)', marginTop: 4 }}>产线跑得稳</Text>
+        <Text style={{ fontSize: 11.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.30)', marginTop: 2 }}>线能跑通</Text>
+    </Box>
+<Box style={{ position: 'absolute', left: 582, top: 215, width: 160, height: 305, background: '#C8A15A', padding: 14 }}><Text style={{ fontFamily: 'Georgia', fontSize: 22, lineHeight: 1.3, color: '#0E1420' }}>04</Text></Box>
+<Box style={{ position: 'absolute', left: 582, top: 536, width: 160, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', lineHeight: 1.4, color: '#C8A15A' }}>MP</Text>
+        <Text style={{ fontSize: 12.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.48)', marginTop: 4 }}>分布可控</Text>
+        <Text style={{ fontSize: 11.5, lineHeight: 1.6, color: 'rgba(232,237,243,0.30)', marginTop: 2 }}>批批一致</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 630, width: 670 }}><Text style={{ fontSize: 12, lineHeight: 1.7, color: 'rgba(232,237,243,0.30)' }}>台阶高度示意「证据强度」，不代表工期或成本比例。</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 806, top: 140, width: 402, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 13, letterSpacing: 3, color: '#C8A15A' }}>现实参照：Open Rack Wide</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 10, marginTop: 8 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 64, lineHeight: 1.05, letterSpacing: -2, color: '#E8EDF3' }}>13</Text>
+            <Text style={{ fontSize: 16, lineHeight: 1.4, color: 'rgba(232,237,243,0.55)', marginBottom: 8 }}>个月，从规范初稿到量产爬坡</Text>
+        </Box>
+        <Text style={{ fontSize: 13.5, lineHeight: 1.8, color: 'rgba(232,237,243,0.50)', marginTop: 12 }}>这 13 个月不是在改设计，是在做公差、工装与产能。</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 806, top: 388, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.28)' }} />
+<Box style={{ position: 'absolute', left: 830, top: 380, width: 80 }}><Text style={{ fontFamily: 'Georgia', fontSize: 13, lineHeight: 1.5, color: 'rgba(232,237,243,0.45)' }}>2025.10</Text></Box>
+<Box style={{ position: 'absolute', left: 916, top: 380, width: 292 }}><Text style={{ fontSize: 13, lineHeight: 1.5, color: 'rgba(232,237,243,0.62)' }}>规范初稿 v0.9.0</Text></Box>
+<Box style={{ position: 'absolute', left: 806, top: 442, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.28)' }} />
+<Box style={{ position: 'absolute', left: 830, top: 434, width: 80 }}><Text style={{ fontFamily: 'Georgia', fontSize: 13, lineHeight: 1.5, color: 'rgba(232,237,243,0.45)' }}>2026.03</Text></Box>
+<Box style={{ position: 'absolute', left: 916, top: 434, width: 292 }}><Text style={{ fontSize: 13, lineHeight: 1.5, color: 'rgba(232,237,243,0.62)' }}>设计冻结 v0.9.5</Text></Box>
+<Box style={{ position: 'absolute', left: 806, top: 496, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.28)' }} />
+<Box style={{ position: 'absolute', left: 830, top: 488, width: 80 }}><Text style={{ fontFamily: 'Georgia', fontSize: 13, lineHeight: 1.5, color: 'rgba(232,237,243,0.45)' }}>2026.04</Text></Box>
+<Box style={{ position: 'absolute', left: 916, top: 488, width: 292 }}><Text style={{ fontSize: 13, lineHeight: 1.5, color: 'rgba(232,237,243,0.62)' }}>规范 v1.0.0</Text></Box>
+<Box style={{ position: 'absolute', left: 806, top: 550, width: 7, height: 7, borderRadius: 4, background: '#C8A15A' }} />
+<Box style={{ position: 'absolute', left: 830, top: 542, width: 80 }}><Text style={{ fontFamily: 'Georgia', fontSize: 13, lineHeight: 1.5, color: 'rgba(232,237,243,0.45)' }}>2026.11</Text></Box>
+<Box style={{ position: 'absolute', left: 916, top: 542, width: 292 }}><Text style={{ fontSize: 13, lineHeight: 1.5, color: '#C8A15A' }}>量产爬坡</Text></Box>
+<Box style={{ position: 'absolute', left: 809, top: 388, width: 1, height: 176, background: 'rgba(232,237,243,0.12)' }} />
+
+    <Box style={{ position: 'absolute', left: 806, top: 596, width: 402 }}><Text style={{ fontSize: 12.5, lineHeight: 1.8, color: 'rgba(232,237,243,0.45)' }}>DVT 与 PVT 各走过至少一轮完整工程样机，才进入量产。</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 660, width: 1136, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 678 }}><Text style={{ fontSize: 14, color: 'rgba(232,237,243,0.35)' }}>可制造性评估维度解析</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 678 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, color: 'rgba(232,237,243,0.45)' }}>14 / 16</Text></Box>
+
+</Slide>

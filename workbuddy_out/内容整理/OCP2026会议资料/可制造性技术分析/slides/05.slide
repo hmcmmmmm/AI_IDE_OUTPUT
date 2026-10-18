@@ -1,0 +1,25 @@
+<Slide style={{ width: 1280, height: 720, background: '#0E1420', position: 'relative', overflow: 'hidden' }}>
+
+    <Box style={{ position: 'absolute', right: 56, top: 200, flexDirection: 'column', alignItems: 'flex-end' }}>
+        <Text style={{ fontFamily: 'Georgia', fontSize: 300, lineHeight: 1.0, letterSpacing: -8, color: 'rgba(232,237,243,0.05)' }}>02</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 206, flexDirection: 'row', gap: 40 }}>
+
+        <Box style={{ width: 3, background: '#C8A15A' }} />
+
+        <Box style={{ width: 560, flexDirection: 'column' }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 16, letterSpacing: 5, color: '#C8A15A' }}>CHAPTER 02</Text>
+            <Text style={{ fontSize: 52, fontWeight: 'bold', lineHeight: 1.25, color: '#E8EDF3', marginTop: 26 }}>三级验收</Text>
+            <Box style={{ width: 64, height: 1, background: 'rgba(232,237,243,0.22)', marginTop: 24, marginBottom: 26 }} />
+            <Text style={{ fontSize: 22, lineHeight: 1.7, color: 'rgba(232,237,243,0.62)' }}>L10 证明托盘，L11 证明机柜，<br />L12 证明集群。</Text>
+            <Text style={{ fontSize: 18, lineHeight: 1.85, color: 'rgba(232,237,243,0.45)', marginTop: 14 }}>三者不是逐级更严格，<br />而是回答三个不同的问题。</Text>
+        </Box>
+
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 660, width: 1136, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 678 }}><Text style={{ fontSize: 14, color: 'rgba(232,237,243,0.35)' }}>本章 P5–P9 · 共 5 页</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 678 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, color: 'rgba(232,237,243,0.45)' }}>05 / 16</Text></Box>
+
+</Slide>

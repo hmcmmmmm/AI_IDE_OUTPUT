@@ -1,0 +1,1 @@
+python md2wechat.py "G:\AI_IDE_output\workbuddy_out\yt_3nFDQMaoNKc\AMD_OCP_2026_实录版.md" --max-width 900 --quality 78

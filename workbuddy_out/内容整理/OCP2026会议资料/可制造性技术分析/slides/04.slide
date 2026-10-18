@@ -1,0 +1,88 @@
+<Slide style={{ width: 1280, height: 720, background: '#0E1420', position: 'relative', overflow: 'hidden' }}>
+
+    <Box style={{ position: 'absolute', left: 72, top: 40, width: 3, height: 44, background: '#C8A15A' }} />
+    <Box style={{ position: 'absolute', left: 92, top: 36, width: 920 }}><Text style={{ fontSize: 36, fontWeight: 'bold', lineHeight: 1.3, color: '#E8EDF3' }}>六个维度里，只有「可制造性」把证据卡在决策之后</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 46 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, letterSpacing: 2, color: 'rgba(232,237,243,0.45)' }}>01 · 起点</Text></Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 416, width: 712, height: 72, background: 'rgba(200,161,90,0.09)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 416, width: 3, height: 72, background: '#C8A15A' }} />
+    <Box style={{ position: 'absolute', left: 200, top: 158, width: 144, alignItems: 'center' }}><Text style={{ fontSize: 15, letterSpacing: 0.5, color: 'rgba(232,237,243,0.55)' }}>概念设计</Text></Box>
+    <Box style={{ position: 'absolute', left: 344, top: 158, width: 144, alignItems: 'center' }}><Text style={{ fontSize: 15, letterSpacing: 0.5, color: 'rgba(232,237,243,0.55)' }}>样机 DVT</Text></Box>
+    <Box style={{ position: 'absolute', left: 488, top: 158, width: 144, alignItems: 'center' }}><Text style={{ fontSize: 15, letterSpacing: 0.5, color: 'rgba(232,237,243,0.55)' }}>制造 PVT·MP</Text></Box>
+    <Box style={{ position: 'absolute', left: 632, top: 158, width: 144, alignItems: 'center' }}><Text style={{ fontSize: 15, letterSpacing: 0.5, color: 'rgba(232,237,243,0.55)' }}>部署运营</Text></Box>
+    <Box style={{ position: 'absolute', left: 72, top: 192, width: 712, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 221, width: 128, flexDirection: 'row' }}><Text style={{ fontSize: 18, fontWeight: 'normal', lineHeight: 1.4, color: 'rgba(232,237,243,0.85)' }}>性能</Text></Box>
+    <Box style={{ position: 'absolute', left: 268.5, top: 232.5, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.20)' }} />
+    <Box style={{ position: 'absolute', left: 407, top: 227, width: 18, height: 18, borderRadius: 9, background: '#E8EDF3' }} />
+    <Box style={{ position: 'absolute', left: 551, top: 227, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 555, top: 231, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 695, top: 227, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 699, top: 231, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 200, top: 272, width: 584, height: 1, background: 'rgba(232,237,243,0.07)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 293, width: 128, flexDirection: 'row' }}><Text style={{ fontSize: 18, fontWeight: 'normal', lineHeight: 1.4, color: 'rgba(232,237,243,0.85)' }}>功耗</Text></Box>
+    <Box style={{ position: 'absolute', left: 263, top: 299, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 267, top: 303, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 407, top: 299, width: 18, height: 18, borderRadius: 9, background: '#E8EDF3' }} />
+    <Box style={{ position: 'absolute', left: 551, top: 299, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 555, top: 303, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 695, top: 299, width: 18, height: 18, borderRadius: 9, background: '#E8EDF3' }} />
+    <Box style={{ position: 'absolute', left: 200, top: 344, width: 584, height: 1, background: 'rgba(232,237,243,0.07)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 365, width: 128, flexDirection: 'row' }}><Text style={{ fontSize: 18, fontWeight: 'normal', lineHeight: 1.4, color: 'rgba(232,237,243,0.85)' }}>可靠性</Text></Box>
+    <Box style={{ position: 'absolute', left: 268.5, top: 376.5, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.20)' }} />
+    <Box style={{ position: 'absolute', left: 407, top: 371, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 411, top: 375, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 551, top: 371, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 555, top: 375, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 695, top: 371, width: 18, height: 18, borderRadius: 9, background: '#E8EDF3' }} />
+    <Box style={{ position: 'absolute', left: 200, top: 416, width: 584, height: 1, background: 'rgba(232,237,243,0.07)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 437, width: 128, flexDirection: 'row' }}><Text style={{ fontSize: 18, fontWeight: 'bold', lineHeight: 1.4, color: '#C8A15A' }}>可制造性</Text></Box>
+    <Box style={{ position: 'absolute', left: 268.5, top: 448.5, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.20)' }} />
+    <Box style={{ position: 'absolute', left: 412.5, top: 448.5, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.20)' }} />
+    <Box style={{ position: 'absolute', left: 551, top: 443, width: 18, height: 18, borderRadius: 9, background: '#C8A15A' }} />
+    <Box style={{ position: 'absolute', left: 695, top: 443, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 699, top: 447, width: 10, height: 10, borderRadius: 5, background: '#1A1B22' }} />
+    <Box style={{ position: 'absolute', left: 200, top: 488, width: 584, height: 1, background: 'rgba(232,237,243,0.07)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 509, width: 128, flexDirection: 'row' }}><Text style={{ fontSize: 18, fontWeight: 'normal', lineHeight: 1.4, color: 'rgba(232,237,243,0.85)' }}>可维护性</Text></Box>
+    <Box style={{ position: 'absolute', left: 268.5, top: 520.5, width: 7, height: 7, borderRadius: 4, background: 'rgba(232,237,243,0.20)' }} />
+    <Box style={{ position: 'absolute', left: 407, top: 515, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 411, top: 519, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 551, top: 515, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 555, top: 519, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 695, top: 515, width: 18, height: 18, borderRadius: 9, background: '#E8EDF3' }} />
+    <Box style={{ position: 'absolute', left: 200, top: 560, width: 584, height: 1, background: 'rgba(232,237,243,0.07)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 581, width: 128, flexDirection: 'row' }}><Text style={{ fontSize: 18, fontWeight: 'normal', lineHeight: 1.4, color: 'rgba(232,237,243,0.85)' }}>生态成熟度</Text></Box>
+    <Box style={{ position: 'absolute', left: 263, top: 587, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 267, top: 591, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 407, top: 587, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 411, top: 591, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 551, top: 587, width: 18, height: 18, borderRadius: 9, background: 'rgba(232,237,243,0.28)' }} /><Box style={{ position: 'absolute', left: 555, top: 591, width: 10, height: 10, borderRadius: 5, background: '#1B2432' }} />
+    <Box style={{ position: 'absolute', left: 695, top: 587, width: 18, height: 18, borderRadius: 9, background: '#E8EDF3' }} />
+
+<Box style={{ position: 'absolute', left: 817, top: 152, flexDirection: 'column', gap: 8 }}>
+        <Text style={{ fontSize: 13, letterSpacing: 3, color: '#C8A15A' }}>读法</Text>
+        <Box style={{ width: 32, height: 1, background: 'rgba(200,161,90,0.45)', marginTop: 2 }} />
+    </Box>
+    <Box style={{ position: 'absolute', left: 817, top: 200, width: 391, flexDirection: 'column' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 13, color: 'rgba(200,161,90,0.75)' }}>01</Text>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>决策早于证据</Text>
+        </Box>
+        <Text style={{ fontSize: 14.5, lineHeight: 1.75, color: 'rgba(232,237,243,0.50)', marginTop: 8 }}>样机→量产的立项决策，发生在量产证据产生之前。这不是流程缺陷，是产品化的固有节奏。</Text>
+    </Box>
+    <Box style={{ position: 'absolute', left: 817, top: 334, width: 391, height: 1, background: 'rgba(232,237,243,0.08)' }} />
+    <Box style={{ position: 'absolute', left: 817, top: 350, width: 391, flexDirection: 'column' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 13, color: 'rgba(200,161,90,0.75)' }}>02</Text>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>两端都不牢</Text>
+        </Box>
+        <Text style={{ fontSize: 14.5, lineHeight: 1.75, color: 'rgba(232,237,243,0.50)', marginTop: 8 }}>样机端只有 n=1 的存在性证据；分布性证据要等 PVT 之后才产生。</Text>
+    </Box>
+    <Box style={{ position: 'absolute', left: 817, top: 484, width: 391, height: 1, background: 'rgba(232,237,243,0.08)' }} />
+    <Box style={{ position: 'absolute', left: 817, top: 500, width: 391, flexDirection: 'column' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
+            <Text style={{ fontFamily: 'Georgia', fontSize: 13, color: 'rgba(200,161,90,0.75)' }}>03</Text>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', lineHeight: 1.4, color: '#E8EDF3' }}>于是最容易被顶替</Text>
+        </Box>
+        <Text style={{ fontSize: 14.5, lineHeight: 1.75, color: 'rgba(232,237,243,0.50)', marginTop: 8 }}>评审时用「样机跑通了」代替可制造性论证——不是谁在撒谎，是那一刻确实没有别的证据。</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 640, flexDirection: 'row', alignItems: 'center', gap: 18 }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 7 }}><Box style={{ width: 11, height: 11, borderRadius: 6, background: '#E8EDF3' }} /><Text style={{ fontSize: 13, color: 'rgba(232,237,243,0.45)' }}>强证据</Text></Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 7 }}><Box style={{ width: 11, height: 11, borderRadius: 6, background: 'rgba(232,237,243,0.28)' }} /><Text style={{ fontSize: 13, color: 'rgba(232,237,243,0.45)' }}>部分证据</Text></Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 7 }}><Box style={{ width: 6, height: 6, borderRadius: 3, background: 'rgba(232,237,243,0.20)' }} /><Text style={{ fontSize: 13, color: 'rgba(232,237,243,0.45)' }}>基本无证据</Text></Box>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 660, width: 1136, height: 1, background: 'rgba(232,237,243,0.10)' }} />
+    <Box style={{ position: 'absolute', left: 72, top: 678 }}><Text style={{ fontSize: 14, color: 'rgba(232,237,243,0.35)' }}>可制造性评估维度解析</Text></Box>
+    <Box style={{ position: 'absolute', right: 72, top: 678 }}><Text style={{ fontFamily: 'Georgia', fontSize: 14, color: 'rgba(232,237,243,0.45)' }}>04 / 16</Text></Box>
+
+</Slide>

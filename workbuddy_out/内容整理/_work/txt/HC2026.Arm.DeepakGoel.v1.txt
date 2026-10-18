@@ -1,0 +1,549 @@
+
+--- p1 ---
+1
+Disaggregated, chiplet-based server SoC 
+to enable scalable coherency and 
+memory bandwidth in the terabyte/s era
+Deepak Goel 
+Vice President of Solutions Engineering
+Arm
+August 2026
+Hot Chips 2026
+Saurabh Pradhan
+Director of Product Management
+Arm
+--- p2 ---
+2
+1.5B
+Neoverse cores shipped into 
+datacenters
+500M in last 9 months
+>60% 
+Arm share as host CPU in AI 
+server platforms* 
+>120k
+Companies deploying 
+Arm in the cloud today
+--- p3 ---
+3
++
++
+C P U
+M M U
+C M N
+S Y S T E M  I P
+C P U
+M M U
+C M N
+S Y S T E M  I P
+Compute Subsystems (CSS)
+IP
+Arm Neoverse
+First production silicon
+--- p4 ---
+4
+Arm Neoverse V3 core
+Branch 
+Predictor
+Instruction 
+Fetch
+Decode 
+Queue
+Decode
+Rename / 
+Dispatch
+Issue 
+Queues
+Load-Store 
+Pipelines
+Integer Pipelines
+Advanced SIMD Pipelines
+HW Prefetch
+L2
+AMBA
+CHI
+ECC/Parity for all 
+Core and L2 RAMs
+Dual 128-bit, low-
+latency datapath
+AMBA CHI.F 
+system interface
+32B DAT 
+channels
+10-cycle load-to-use, 
+128B/cycle
+ 2MB Private L2
+Advanced 
+branch 
+predictors
+Power-optimized 
+10-way decode
+384+ OoO window
+10-wide dispatch
+8-wide retire
+1 LS + 2 LD + 1 ST/ cycle 
+64kB DCache
+8-ALU + 
+3-branch
+10-wide 
+front-end
+Advanced data 
+prefetchers
+Instruction 
+prefetcher
+High-BW fetch, 
+64kB Icache
+--- p5 ---
+5
+CPU
+System Cache
+CPU
+System Cache
+CPU
+System Cache
+CPU
+System Cache
+CPU
+System Cache
+CPU
+System Cache
+CPU
+System Cache
+CPU
+System Cache
+Scalable coherent fabric and hierarchical 
+caching
+•
+8 rows x 9 columns CMN-S3 mesh delivers high-
+bandwidth, low-latency coherency across CPUs, 
+memory, I/O, and accelerators.
+•
+128 MB distributed SLC with snoop filtering and HN-S 
+hierarchical caching supports advanced CHI-F 
+coherency and RAS.
+System scale-up, memory expansion, and 
+high-speed IO
+•
+Coherent multi-chiplet scaling, two-socket SMP, and 
+CXL 3.0 Type 3 memory expansion.
+•
+Per socket: 96 PCIe Gen6 lanes and 12 DDR 
+controllers for high-bandwidth I/O and memory access.
+PCIe-G6
+Accel
+Accel
+Serial IO
+100/400GbE
+NoC (NI) Fabric
+SMMU / Interrupt Virtualization
+CMN S3
+CMN-S3: Arm Coherent Mesh Network  
+CXL
+MMU
+Memory Controllers
+SMP
+DDR
+PCIe DL/PHY
+UCIe
+--- p6 ---
+6
+Arm CSS V3
+•
+70 Arm Neoverse V3 cores per chiplet
+•
+64KB I-cache/D-cache/Core
+•
+2MB L2 private cache/Core
+•
+Coherent CMN interconnect  
+•
+128MB shared system level cache
+•
+Dual Socket support ( 2 chiplets per socket )
+•
+Runtime security Engine as RoT
+•
+System Control Processor (SCP) for system 
+level power management 
+•
+Local Control Processors (LCP) for local 
+power management
+•
+Manageability Control processor (MCP) as 
+satellite manageability core to interface with 
+external BMC
+•
+IO Virtualization support with SMMU-700
+Processor 
+Block
+GIC
+Block
+IO
+Block
+System, 
+Power, and 
+Board 
+Management
+Interconnect and Systems Caches (CMN)
+Local Power 
+Management
+Peripheral
+Block
+Clock Control 
+Block
+Decode
+The foundation of Arm AGI CPU
+--- p7 ---
+7
+--- p8 ---
+8
+Single chiplet 
+block diagram
+--- p9 ---
+9
+AGI CPU chiplet interconnect diagram
+--- p10 ---
+10
+AGI CPU floorplan
+SoC
+Technology: 
+TSMC N3P
+PSS
+SCS
+DDS
+DMS
+CTSS
+PSS
+SCS
+Legend: 
+CTSS : Compute subsystem
+DDS : Die-to-Die subsystem
+DMS : DDR memory subsystem
+SCS : System control subsystem
+PSS : PCIe subsystem
+DMS
+--- p11 ---
+11
+AGI CPU floorplan
+Technology: 
+TSMC N3P
+Transistors per chiplet:
+>50B
+Chiplet
+--- p12 ---
+12
+Memory tuned 
+for compute
+6GB/s memory BW / core
+6TB per chip capacity
+Up to DDR5-8800
+World class Arm efficiency
+Incredible TSMC 3nm efficiency
+Maximum compute density
+300 Watt TDP
+I/O for composable AI systems
+96x lanes PCIe Gen6
+CXL 3.0 – memory expansion and more
+AMBA CHI extension links
+Latency-optimized 
+memory access
+Dual chiplet design
+Memory and I/O on same die
+Sub 100ns memory latency
+Up to 136 Arm Neoverse V3 cores
+Dedicated 2MB L2 cache per core
+Up to 3.7Ghz
+Responsive performance
+*Qualification of higher data rates based on commercial availability.
+--- p13 ---
+13
+Elements of efficient performance
+LMBench
+100ns
+L2
+SLC
+DDR
+Latency
+Chiplet 0
+Chiplet 1
+Memory
+Memory
+Numa2
+Buffer Size
+*Qualification of higher data rates based on commercial availability.
+IPC
+Tracking to production targets
+300W
+Frequency
+Tracking to production targets
+Memory BW
+DDR5-8000 validated for production*
+Memory Latency
+<100ns
+--- p14 ---
+14
+Arm AGI CPU: Features and specs
+Feature type
+Instance count
+Type/features
+Aggregated capacity/throughput
+Processing cores
+64 cores
+64 KB I Cache
+64 KB D Cache
+2 × 128-bit vector; Crypto and RME supported; MTE2, MTE3, and ETEv1p2 
+not supported
+Typical frequency: 2.8 GHz
+Nominal frequency: 3.5 GHz
+Boost frequency: 3.7 GHz
+128 cores
+Typical frequency: 2.8 GHz
+Nominal frequency: 3.2 GHz
+Boost frequency: 3.5 GHz
+136 cores
+Level 2 Cache (L2S)
+64 cores
+2 MB per core
+128 MB
+128 cores
+256 MB
+136 cores
+272 MB
+System-level Cache 
+(SLC)
+64 cores
+Remote caching (super-home node)
+128 MB
+128 cores
+136 cores
+PCIe and CXL
+96 lanes
+Gen6-capable; bifurcation: 1 ×16, 2 ×8, 4 ×4, 1 ×8, or 2 ×4. CXL bifurcation: 
+2 ×8. CXL 3.0 Type 3 and CML_SMP support.
+768 GBps (Tx) + 768 GBps (Rx)
+(simultaneously active)
+PCIe low-speed lanes
+6 lanes
+×1 link (Gen4-capable)
+12 GBps (Tx) + 12 GBps (Rx)
+DDR5
+12 × 80 channels
+RDIMM
+• 1 DIMM per channel, 2 ranks at 8800 Mbps(1)
+• 2 DIMMs per channel, 4 ranks at 6400 Mbps
+Aggregated raw throughput:
+•  ~845 GBps at 8800 Mbps(1)
+• ~614 GBps at 6400 Mbps
+UCIe standard(2)
+16 macros (×16)
+BER: 1e-15 or less; 32 Gbps data-lane transfer rate
+1 TBps (Tx) + 1 TBps (Rx)
+(simultaneously active)
+I3C
+6 used + 4 
+reserved
+Supports BMC interfacing, external DIMM telemetry reading, and external 
+socket interfacing
+Typical frequency: 1 MHz
+I2C
+3 used + 5 
+reserved
+SMBus-capable I2C interface; supports BMC interfacing and PCIe hot-plug 
+detection
+Typical frequency: 400 kHz–1 MHz
+SPI
+2
+Interface to boot flash (QSPI) and TPM
+Typical frequency: 50 MHz
+1. Qualification of higher data rates based on commercial availability.
+2. UCIe-S links are used for chiplet-to-chiplet connection. The SoC does not provide external UCIe ports.
+--- p15 ---
+15
+Memory subsystem (RAS)
+Memory subsystem, RAS and power management
+Hierarchical power and 
+thermal management
+Memory subsystem
+•
+DDR5 up to 8800 MT/s, Fully 
+out-of-order command 
+scheduling, anti-starvation 
+mechanisms, address mapping 
+for bank parallelism and 
+programmable page policies
+•
+Bandwidth control: Provides 
+memory-bandwidth limiting and 
+monitoring through MPAM, QoS-
+based traffic prioritization and 
+congestion feedback to regulate 
+traffic
+•
+DDC / Single-DRAM-device 
+failure correction (Chipkill-
+class protection), memory 
+scrubbing, row-hammer 
+mitigation, repair support, 
+error injection and RAS error 
+records
+•
+Local Control Processor (Arm 
+Cortex M55) for a column of 
+cores in a chiplet
+•
+System Control Processor 
+(Arm Cortex M7) per chiplet
+•
+Shared voltage rail/chiplet 
+architecture
+--- p16 ---
+16
+Die-to-die subsystem 
+PCIE subsystem & Die-to-die subsystem
+PCIE subsystem 
+•
+Total PCIe lanes (96 Gen6 + 6 Gen4 
+Utility Lanes)
+•
+Supports CXL Type3 devices with no 
+back invalidate
+•
+Six PCIe Subsystems (PSS)
+•
+Lane bifurcation: x16, 2 x8, 4 x4 for 
+x16 PSS
+•
+PCIe Hot-Plug support
+•
+RAS: AER, DPC, ECRC, poison 
+handling, surprise link down recovery
+•
+Standard Packaging: UCIe 
+standard compliant. Sixteen 
+macros@32Gbps per chiplet
+•
+Use CCG (CMN Coherent 
+Gateway) to connect two Phoenix 
+Compute Chiplets (PCC)
+•
+Latency optimized interface for 
+communication across two 
+chiplets
+--- p17 ---
+17
+P R O C E S S O R
+• 2x Arm AGI CPU
+• Up to 272 cores 
+F R O N T  S T O R A G E
+( p e r  n o d e )
+• 15mm Data Drive 7600 1.92TB
+• 9.5mm Boot Drive 7600 1.92TB
+I N T E R N A L  
+S T O R A G E ( p e r  n o d e )
+• 9.5mm Data Drive 7600 1.92 TB 
+• E1.S Expansion Slot
+ 
+M E M O R Y ( p e r  n o d e )
+• 12 DDR5 8800 DIMM Slots
+• CXL 3.0
+E X P A N S I O N  S L O T S  
+( p e r  n o d e )
+• PCIe x16 FHHL Gen 6.0 Slot
+• PCIe x16 HHHL Gen 6.0 Slot
+• Compute Express Link 3.0
+• 200 Gb/s Ethernet Port
+A I R  C O O L E D
+• 5 Dual Rotor Fans (per node)
+• 5°C to 35°C Operating Temperature 
+Customer reference server
+Arm AGI CPU 1OU dual node reference server
+Accelerated time-to-market with known-good reference design
+--- p18 ---
+18
+Arm AGI CPU 
+Reference servers
+Arm AGI CPU 1OU dual node
+Reference server
+Arm AGI CPU 2U2P 
+Reference server
+Arm AGI CPU 
+Commercial servers
+Supermicro 5U 
+Arm AGI CPU 
+PCIe GPU system
+Supermicro 2U Hyper 
+Arm AGI CPU Hyper 
+system
+Supermicro 2U4N 
+Arm AGI CPU 
+Liquid-cooled server
+Supermicro 2U Hyper-E 
+Arm AGI CPU server
+Lenovo HR650a V3 2U Arm 
+AGI CPU system
+ASRock Rack 
+2OU2N-Arm system
+Arm AGI CPU 
+Rack-scale systems
+Supermicro 2U 4-node
+Arm AGI CPU 
+Rack-Scale solution
+Supermicro 1U 4-node
+Arm AGI CPU 
+Rack-scale solution
+Liquid-cooled
+Liquid-cooled
+Reference 1U 2-Node 
+Arm AGI CPU
+Rack-Scale solution  
+Air-cooled
+--- p19 ---
+19
+Extending cloud & AI software ecosystem to Arm AGI CPU
+Operating Systems
+Hypervisors
+Software Tools, Frameworks, Libraries
+AI Agentic Workloads
+Applications
+Provide platform 
+access to partners
+Enablement steps
+Validate specific software 
+requirements 
+Workload benchmarking 
+and optimizations
+Enable customer and 
+developer migrations
+--- p20 ---
+20
+Proven technology
+Built on Arm Neoverse, the technology 
+used by leading cloud service providers 
+and hyperscalers
+Arm platform advantage
+A unique continuum: 
+Architecture → IP → CSS → SoC
+Purpose-built for Agentic AI
+•
+Balanced architecture focused on 
+Agentic AI workloads 
+•
+Market-leading memory bandwidth per 
+core and I/O bandwidth per core 
+Long-term commitment
+The first product on a long-term Arm SoC 
+roadmap for this market
+Built to scale
+•
+Rack is the new unit of compute
+•
+Higher rack level compute 
+density under given power envelope
+20
+--- p21 ---
+The Arm trademarks featured in this presentation are registered 
+trademarks or trademarks of Arm Limited (or its subsidiaries) in the 
+US and/or elsewhere. All rights reserved. All other marks featured 
+may be trademarks of their respective owners.
+www.arm.com/company/policies/trademarks
+Thank you!

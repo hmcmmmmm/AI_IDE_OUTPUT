@@ -1,0 +1,739 @@
+
+--- p1 ---
+Hot Chips 2026
+Jonathon Evans, Polychronis Xekalakis
+NVIDIA Vera CPU
+--- p2 ---
+Agentic AI is the Most Complex 
+Computing Workload in History
+Context
+LLM
+Observe
+LLM
+Reason
+LLM
+Act
+LLM
+Tools and Skills
+CPU
+CUDA
+LLM
+Security and Governance
+CPU
+DPU
+Prompt
+Orchestration
+CPU
+Memory
+CPU
+DPU
+CUDA
+LLM
+Network
+--- p3 ---
+Extreme co-design for agentic AI across seven chips and five racks
+Beyond the GPU - NVIDIA Vera Rubin is 
+a Full-Stack AI Factory Platform
+Groq 3 
+LPX
+Extend Interactivity
+Vera Rubin 
+NVL72
+Foundation Platform
+Spectrum-6 SPX 
+Networking
+Scale-Out Fabric
+Vera CPU 
+Rack 
+Tool Calls and Sandboxes
+Vera BlueField-4 
+STX Storage
+Context Memory Storage
+--- p4 ---
+Vera Rubin NVL72 is the Foundation of Every AI Factory
+Vera Rubin 
+NVL72
+TPS
+per MW
+User Interactivity
+Blackwell 
+NVL72
+Hopper 
+NVL8
+--- p5 ---
+0M
+20M
+40M
+60M
+50
+100
+150
+200
+250
+300
+DeepSeek-v4-PRO  |  140K+ Context | SemiAnalysis AgentX
+Vera Rubin NVL72 Delivers Up to 30X Throughput Per MW
+Vera Rubin NVL72*
+GB300 NVL72
+Total Token 
+Throughput
+(TPS per MW)
+Interactivity
+(TPS/User)
+2X
+30X
+10X
+*Unofficial Results. Pending Semi-Analysis Review
+--- p6 ---
+Improving user experiences for agentic workloads
+NVIDIA Groq 3 LPX — Sets New Standard for AI Interactivity
+Lowest Latency 
+Inference
+LPX
+Vera Rubin 
+NVL72
+TPS
+per MW
+User Interactivity
+Blackwell 
+NVL72
+Hopper 
+NVL8
+--- p7 ---
+Record measured by Artificial Analysis with 100K context length for agents
+LPX 3rd Party Benchmark — 4X Faster Long-Context Decode
+NVIDIA Groq 3 LPX
+In Full 
+Production
+4X Faster
+100K Token Context
+--- p8 ---
+Vera CPU
+--- p9 ---
+The max single-threaded CPU at scale
+Vera CPU Maximizes Agent Performance 
+per Core – Not Core Count
+Single-Threaded 
+Core Performance
+Low
+High
+Low
+High
+Throughput
+Cloud CPU
+Scale Out
+Pre-Cloud CPU
+Frequency-Optimized
+Max Single-Threaded 
+CPU at Scale
+NEW
+--- p10 ---
+Exemplifies the max single-threaded CPU at scale
+Vera CPU: Low-Latency Compute That 
+Won’t Keep AI Agents Waiting
+IO
+Compute
+Die
+Memory 
+Controller
+Memory 
+Controller
+Memory 
+Controller
+Memory 
+Controller
+IO
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+Compute
+NVIDIA Vera CPU
+Traditional Chiplet Architecture
+--- p11 ---
+Headless browsers
+Vera Drives Massive Speedups Across 
+Real-World Agentic Workflows
+0
+5
+10
+15
+20
+25
+0
+50
+100
+150
+200
+OPS Per Second
+Browser Instances
+Vera
+Traditional CPU
+Speedometer With Chromium
+NVIDIA Vera CPU | Cores / Threads: 88/176 | OS: Ubuntu 24.04.3 LTS | Compiler:GCC15 
+AMD EPYC 9655P | Cores / Threads: 96/192 | OS: Ubuntu 24.04.4 LTS | Compiler: GCC15 
+Removing the rendering part and caching re-use, 
+browsers can be sped up by up to 4.5X
+24% Faster
+4.5X
+--- p12 ---
+Five Innovations Differentiate Vera From 
+Conventional Data Center CPUs
+Agents need CPUs with
+Massive 
+Cores
+Completely
+Protected
+Built for Power 
+Limited Data Centers
+Built to Process 
+Massive Data
+Massive I/O
+--- p13 ---
+Differentiator 1:
+Massive Cores
+--- p14 ---
+Massive Cores Deliver the Deterministic Single-Thread 
+Performance AI Agents Demand
+67%
+100%
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+100%
+Traditional CPU
+Vera CPU
+Loaded Per-Core Perf
+--- p15 ---
+High performance, area and energy efficient custom cores
+Olympus Delivers More Agent 
+Performance per Core, per Watt
+Re-Order Buffer
+Vector 
+Register File
+Integer 
+Register File
+Move Elimination 
+Memory Renaming 
+VP
+Instruction Fetch
+10-Way Decode
+Dec
+Dec
+Dec
+Dec
+Dec
+Dec
+Dec
+Dec
+Dec
+Dec
+10 fused instructions
+16 instructions / cycle
+128B / cycle
+Branch Predictor Unit (BPU)
+BPU
+Front End
+Rename / Allocation
+Instruction Fetch Unit (IFU)
+L1 Inst Cache
+64KB 4-way
+ITLB 64e, FA
+Rename / Allocate / 
+Commit
+10 uOPs Cycle
+ALU
+ALU
+BR
+ALU
+ALU
+BR
+ALU
+ALU
+BR
+ALU, ALU
+MUL, MUL
+SHIFT, SHIFT
+IDEV, IDEV
+CRC, CRC
+BR
+VEC
+VEC
+VEC
+VEC
+VEC
+VEC
+ST / 
+LD / ST
+ST / 
+LD / ST
+LD
+LD
+uOPs
+uOPs
+uOPs
+uOPs
+uOPs
+uOPs
+uOPs
+uOPs
+uOPs
+uOPs
+uOPs
+Big Store Buffer
+Big Load Buffer
+Memory Disamb 
+Predictor
+Memory Subsystem
+DTLB 112e FA
+L1 Data Cache
+96KB 6-Way
+L2 
+Cache
+2 MiB
+8-way
+Unified 
+STLB
+(3k Entries)
+32B / Cycle
+32B / Cycle
+Scheduling and Execution
+Load / Store
+Issue
+Decode Queue 
+(48 Instructions)
+Olympus Microarchitecture
+--- p16 ---
+Deterministic high performance 
+Spatial Multithreading Makes 
+High Performance Deterministic
+Noisy neighbor and resource contention
+Traditional SMT (x86)
+Per Core Score SpecInt2k17 Rate-1
+Determinism and isolation
+NVIDIA Spatial Multi-Threading
+Load / Store
+Branch Predictor / 
+Fetch
+Branch Predictor / 
+Fetch
+Memory
+Decode
+Decode
+Int / FP
+Load / Store
+Memory
+Int / FP
+Thread Wait
+Thread 1
+Thread 2
+3.0
+4.0
+5.0
+6.0
+7.0
+8.0
+9.0
+10.0
+11.0
+12.0
+13.0
+Traditional CPU
+Vera
+Rate-1 of thread with noisy neighbor
+GB_SR
+Stream
+Twin (Rate)
+Nop
+Thread 1
+Thread 2
+Branch Predictor / 
+Fetch
+Branch Predictor / 
+Fetch
+Memory
+Load / Store
+Decode
+Decode
+Int
+Memory
+Load / Store
+FP
+FP
+Int
+--- p17 ---
+Comparison based on relative performance for individual SPECrate®2026_int_base benchmark ratios between an NVIDIA Vera CPU and an AMD EPYC 9755 measured internally July 
+2026. Selected benchmarks shown are those most relevant to agentic AI workloads.  Results are estimated due to the use of a pre-production reference system but otherwise follow 
+all SPEC CPU 2026 Run and Reporting rules. SPEC®, SPEC CPU®, and SPECrate® are registered trademarks of the Standard Performance Evaluation Corporation (www.spec.org).
+SPEC CPU® leadership
+Vera and Olympus — A Single Thread Perf Machine
+1.2X
+1.3X
+1.3X
+1.3X
+1.4X
+1.4X
+1.6X
+1.6X
+1.6X
+1.7X
+1.7X
+1.7X
+1.7X
+1.8X
+0.0X
+0.5X
+1.0X
+1.5X
+2.0X
+Compression
+777.zstd_r
+Search
+707.ntest_r
+Neural Net
+706.stockfish_r
+Crypto
+750.sealcrypto_r
+Event Sim
+710.omnetpp_r
+EDA
+734.vpr_r
+Data Proc
+708.sqlite_r
+Network Sim
+753.ns3_r
+EDA
+729.abc_r
+EDA
+735.gem5_r
+LLVM
+723.llvm_r
+Code Analysis
+727.cppcheck_r
+GCC
+721.gcc_r
+Python
+714.cpython_r
+NVIDIA Vera 88C
+Traditional CPU
+1.8X Agentic
+1.5X Data Processing
+1.7X EDA
+Python
+714.cpython_r
+GCC
+721.gcc_r
+Code Analysis
+727.cppcheck_r
+LLVM
+712.llvm_r
+EDA
+735.gem5_r
+EDA
+729.abc_r
+Network Sim
+753.ns3_r
+Data Proc
+708.sqlite_r
+EDA
+734.vpr_r
+Event Sim
+710.omnetpp_r
+Crypto
+750.sealcrypto_r
+Search
+707.ntest_r
+Neural Net
+706.stockfish_r
+Compression
+777.zstd_r
+--- p18 ---
+Differentiator 2: 
+Built for Power 
+Limited Datacenter
+--- p19 ---
+NVIDIA Vera, designed for agentic:
+• High performance, power efficient cores
+• Stable core performance across load 
+(well provisioned for power and bandwidth)
+Performance-under-load is key
+Power and Bandwidth Provisioning is Critical for Agents
+0.70
+0.75
+0.80
+0.85
+0.90
+0.95
+1.00
+8
+28
+48
+68
+88
+108
+128
+Single Core Normalized 
+Frequency 
+Core Count
+NVIDIA Vera
+Traditional CPU
+0
+100
+200
+300
+400
+500
+8
+28
+48
+68
+88
+108
+128
+Power (W)
+Core Count
+NVIDIA Vera
+Traditional CPU
+--- p20 ---
+Industry-First LPDDR5X Maximizes Memory 
+Bandwidth Within Data Center Power Limits
+0.8X
+1X
+1X
+5X
+16-Channel MRDIMM
+DDR5-12800
+16-Channel
+DDR5-8000
+12-Channel
+DDR5-6400
+NVIDIA Vera
+LPDDR5X-9600
+Bandwidth / W
+Data center-class LPDDR5X implementation
+--- p21 ---
+Differentiator 3:  
+Built to Process 
+Massive Data
+--- p22 ---
+NVIDIA Olympus Cores
+Scalable Coherency Fabric
+SLC
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+SLC
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+SLC
+SLC
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+Vera designed to support core collaboration
+Scalable Coherency Eliminates Data Ingestion Bottleneck
+Fabric mesh simplified for illustrative purposes
+2nd Gen NVIDIA Scalable 
+Coherency Fabric (SCF)
+3.4 TB/s bisection bandwidth
+88 NVIDIA Custom Olympus 
+Cores with 176 threads
+164MB L3 Cache
+Monolithic Compute Die
+--- p23 ---
+Vera Delivers up to 6X more Data Processing Performance
+Traditional CPU
+NVIDIA Vera
+6X
+p99 streaming Latency
+(Lower is better)
+“In collaboration with Redpanda and HPE, using NVIDIA Vera 
+CPUs, we will be scaling our capacity, while further optimizing 
+latency to power a high-performance, resilient and AI-ready 
+market infrastructure.”
+Lynn Martin – President of NYSE Group
+Benchmarks versus AMD EPYC Turin
+--- p24 ---
+Differentiator 4:  
+Completely Protected
+--- p25 ---
+Vera Rubin platform security
+Confidential Computing and DOCA 
+Secure the AI Factory End-to-End
+Confidential Computing
+DOCA Security
+72 Rubin GPUs
+36 Vera CPUs
+18 BlueField-4
+NVLink
+STX
+LPDDR5X
+--- p26 ---
+Deep co-design at work
+Confidential Compute Secures the Full Rack
+NVIDIA Vera 
+Rubin NVL72
+72 GPUs |  36 CPUs
+Vera SOC Package
+Rubin SOC
+PCIe
+NVLINK-C2C
+ATC
+SMMU
+Memory Fabric
+Encryption Eng
+TEE
+Non-TEE
+Device Memory
+Rubin Package
+TEE
+Non-TEE
+Memory Fabric
+IF
+Coherent Gateway
+ATS
+Device CTRL
+PE
+Cache
+NT
+TEE
+MMU
+PCIe-RP
+Device 
+Security 
+Checks
+CPU Memory
+Device Client
+ATS
+NVLINK
+--- p27 ---
+Differentiator 5: 
+Massive I/O
+--- p28 ---
+SYSTEM IO
+NVLINK-C2C
+LPDDR 
+CTRL
+LPDDR 
+CTRL
+LPDDR 
+CTRL
+LPDDR 
+CTRL
+LPDDR 
+CTRL
+LPDDR 
+CTRL
+LPDDR 
+CTRL
+LPDDR 
+CTRL
+NVIDIA Olympus Cores
+Scalable Coherency Fabric
+SLC
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+SLC
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+SLC
+SLC
+CSN
+Core
+SLC
+Core
+Bridge
+MSN
+x16 PCIe Gen 6
+256 GB/s bandwidth  
+CXL 3.1
+NVLink-C2C
+1,800GB/s Coherent 
+CPU-GPU Interface
+1.5TB SOCAMM LPDDR5X
+1.2TB/s Memory BW
+Confidential Computing
+TEE-I/O Capable
+4.3 TB/s aggregate off die bandwidth keeping the AI factory flowing
+Vera’s Massive I/O Keeps GPUs 
+and Memory Investments Fully Utilized
+Fabric mesh simplified for illustrative purposes
+2nd Gen NVIDIA Scalable 
+Coherency Fabric (SCF)
+3.4 TB/s bisection bandwidth
+88 NVIDIA Custom Olympus 
+Cores with 176 threads
+164MB L3 Cache
+Monolithic Compute Die
+--- p29 ---
+Closing
+--- p30 ---
+Vera Rubin 
+NVL72
+72 GPUs 
+36 CPUs
+Vera Rubin Co-Designs Every Layer of 
+the AI Factory for Agentic AI
+• NVIDIA’s second-generation server SOC​
+• Designed for agentic workloads​
+• NVIDIA Olympus cores​
+• Rack scale confidential compute​
+Thanks to the Vera CPU Team
+NVIDIA Vera Liquid 
+Cooled Rack
+256 Veras
+22,528 Olympus Cores
+Standard Enterprise Air 
+Cooled 2S CPU Server
+NVIDIA Vera CPU
+NVIDIA Vera CPU
+--- p31 ---
+31

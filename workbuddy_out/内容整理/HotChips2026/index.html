@@ -41,7 +41,15 @@
   .lock { color:#8a5a00; font-size:12px; white-space:nowrap; }
   .muted { color:#9aa4b2; font-size:12px; }
   footer { max-width:1240px; margin:0 auto; padding:0 20px 40px; color:#8b93a1; font-size:12px; }
-  @media (max-width:760px) { .hide-sm { display:none; } header h1 { font-size:21px; } }
+  .hero { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:18px; }
+  .hero a { display:block; background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:18px 20px; text-decoration:none; color:var(--ink); transition:.15s; }
+  .hero a:hover { border-color:var(--accent); box-shadow:0 2px 12px rgba(31,78,140,.10); transform:translateY(-1px); }
+  .hero b { display:block; font-size:16px; color:var(--accent); margin-bottom:4px; }
+  .hero span { font-size:12.5px; color:var(--sub); }
+  .hero em { display:inline-block; font-style:normal; font-size:11px; background:var(--accent-soft);
+    color:#1c4577; border-radius:5px; padding:1px 7px; margin-left:6px; vertical-align:2px; }
+  @media (max-width:760px) { .hide-sm { display:none; } header h1 { font-size:21px; } .hero { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -56,10 +64,20 @@
   </div>
 </header>
 <main>
+  <div class="hero">
+    <a href="06_%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/HotChips2026_%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A.html">
+      <b>Hot Chips 2026 深度分析报告<em>推荐先读</em></b>
+      <span>13 章 + 4 附录 + 41 图 ｜ 基于 36 份一手 PDF（906 页）逐页精读 ｜ 每条结论带证据等级与可证伪条件</span>
+    </a>
+    <a href="05_%E6%B8%A0%E9%81%93%E5%9B%BE%E6%96%87%E5%BD%92%E6%A1%A3/README.md">
+      <b>渠道图文归档<em>5 篇</em></b>
+      <span>知乎 17,470 字读稿 + 雪球全景梳理 + Intel 三张牌 + NVIDIA 官方口径 + 百度百科 ｜ 48 张原页图 + 逐条核对表</span>
+    </a>
+  </div>
   <div class="note">
     <b>获取状态：</b>官方已公布全部 51 个文稿文件路径，但服务器启用了
     <code>Basic Auth · realm="Attendees Only"</code>，未持参会凭证访问一律返回 <b>HTTP 401</b>。
-    往届（如 HC2025）文稿已完全公开，2026 年文稿预计在归档期开放后转为免费。
+    本库已通过参会者流转渠道取得其中 <b>36 份原始 PDF</b>（136 MB / 906 页）并逐份精读，缺口 15 份为 11 篇海报与开闭幕环节。往届（如 HC2025）文稿已完全公开。
     持参会账号可用 <code>02_文稿清单/download_slides.py</code> 批量下载。
   </div>
   <div class="toolbar">
