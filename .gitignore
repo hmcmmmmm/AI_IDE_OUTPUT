@@ -27,6 +27,10 @@ desktop.ini
 *.ogv
 *.ts
 
+# Office / WPS 打开文档时产生的锁文件
+~$*
+.~lock.*
+
 # 网盘 / 下载工具的未完成临时文件
 *.downloading
 *.baiduyun.p.downloading
