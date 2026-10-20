@@ -1,0 +1,4040 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.120 --> 00:00:03.870 align:start position:0%
+ 
+All<00:00:03.160><c> right.</c>
+
+00:00:03.870 --> 00:00:03.880 align:start position:0%
+All right.
+ 
+
+00:00:03.880 --> 00:00:06.950 align:start position:0%
+All right.
+Um<00:00:04.360><c> so</c><00:00:04.560><c> today</c><00:00:04.880><c> I'm</c><00:00:05.000><c> going</c><00:00:05.200><c> to</c><00:00:05.920><c> uh</c><00:00:06.120><c> as</c><00:00:06.600><c> as</c><00:00:06.800><c> Hal</c>
+
+00:00:06.950 --> 00:00:06.960 align:start position:0%
+Um so today I'm going to uh as as Hal
+ 
+
+00:00:06.960 --> 00:00:08.990 align:start position:0%
+Um so today I'm going to uh as as Hal
+said,<00:00:07.600><c> I'm</c><00:00:07.640><c> going</c><00:00:07.760><c> to</c><00:00:07.880><c> talk</c><00:00:08.080><c> about</c><00:00:08.360><c> multi</c>
+
+00:00:08.990 --> 00:00:09.000 align:start position:0%
+said, I'm going to talk about multi
+ 
+
+00:00:09.000 --> 00:00:11.350 align:start position:0%
+said, I'm going to talk about multi
+domain<00:00:09.400><c> time</c><00:00:09.680><c> synchronization</c><00:00:10.600><c> in</c><00:00:10.880><c> the</c><00:00:11.080><c> data</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+domain time synchronization in the data
+ 
+
+00:00:11.360 --> 00:00:13.870 align:start position:0%
+domain time synchronization in the data
+center.<00:00:12.160><c> And</c><00:00:12.840><c> uh</c><00:00:12.920><c> I'm</c><00:00:12.960><c> going</c><00:00:13.160><c> to</c><00:00:13.240><c> talk</c><00:00:13.520><c> about</c>
+
+00:00:13.870 --> 00:00:13.880 align:start position:0%
+center. And uh I'm going to talk about
+ 
+
+00:00:13.880 --> 00:00:14.990 align:start position:0%
+center. And uh I'm going to talk about
+both<00:00:14.200><c> the</c>
+
+00:00:14.990 --> 00:00:15.000 align:start position:0%
+both the
+ 
+
+00:00:15.000 --> 00:00:17.390 align:start position:0%
+both the
+the<00:00:15.120><c> network</c><00:00:15.520><c> architecture</c><00:00:16.320><c> and</c><00:00:17.040><c> uh</c><00:00:17.160><c> and</c><00:00:17.320><c> the</c>
+
+00:00:17.390 --> 00:00:17.400 align:start position:0%
+the network architecture and uh and the
+ 
+
+00:00:17.400 --> 00:00:19.830 align:start position:0%
+the network architecture and uh and the
+system<00:00:17.800><c> architecture.</c>
+
+00:00:19.830 --> 00:00:19.840 align:start position:0%
+system architecture.
+ 
+
+00:00:19.840 --> 00:00:22.670 align:start position:0%
+system architecture.
+So,<00:00:20.480><c> the</c><00:00:20.600><c> two</c><00:00:20.760><c> things</c><00:00:21.320><c> that</c><00:00:22.080><c> um</c><00:00:22.480><c> that</c><00:00:22.600><c> I'm</c>
+
+00:00:22.670 --> 00:00:22.680 align:start position:0%
+So, the two things that um that I'm
+ 
+
+00:00:22.680 --> 00:00:26.150 align:start position:0%
+So, the two things that um that I'm
+going<00:00:22.840><c> to</c><00:00:22.920><c> talk</c><00:00:23.160><c> about</c><00:00:23.400><c> specifically</c><00:00:24.760><c> are</c><00:00:25.480><c> uh</c>
+
+00:00:26.150 --> 00:00:26.160 align:start position:0%
+going to talk about specifically are uh
+ 
+
+00:00:26.160 --> 00:00:27.470 align:start position:0%
+going to talk about specifically are uh
+you<00:00:26.280><c> know,</c><00:00:26.360><c> what</c><00:00:26.560><c> we</c><00:00:26.720><c> want</c><00:00:26.920><c> to</c><00:00:27.000><c> bring</c><00:00:27.240><c> to</c><00:00:27.360><c> the</c>
+
+00:00:27.470 --> 00:00:27.480 align:start position:0%
+you know, what we want to bring to the
+ 
+
+00:00:27.480 --> 00:00:30.750 align:start position:0%
+you know, what we want to bring to the
+data<00:00:27.760><c> center</c><00:00:28.240><c> are</c><00:00:28.840><c> um</c><00:00:29.320><c> increased</c><00:00:29.840><c> accuracy</c>
+
+00:00:30.750 --> 00:00:30.760 align:start position:0%
+data center are um increased accuracy
+ 
+
+00:00:30.760 --> 00:00:33.150 align:start position:0%
+data center are um increased accuracy
+and<00:00:31.280><c> increased</c><00:00:31.720><c> availability.</c>
+
+00:00:33.150 --> 00:00:33.160 align:start position:0%
+and increased availability.
+ 
+
+00:00:33.160 --> 00:00:34.790 align:start position:0%
+and increased availability.
+Um<00:00:33.440><c> I</c><00:00:33.520><c> think</c><00:00:34.160><c> uh</c>
+
+00:00:34.790 --> 00:00:34.800 align:start position:0%
+Um I think uh
+ 
+
+00:00:34.800 --> 00:00:36.750 align:start position:0%
+Um I think uh
+most<00:00:35.080><c> people</c><00:00:35.320><c> know</c><00:00:35.440><c> what</c><00:00:35.600><c> time</c><00:00:35.880><c> accuracy</c><00:00:36.440><c> is.</c>
+
+00:00:36.750 --> 00:00:36.760 align:start position:0%
+most people know what time accuracy is.
+ 
+
+00:00:36.760 --> 00:00:38.110 align:start position:0%
+most people know what time accuracy is.
+It's<00:00:37.400><c> uh</c>
+
+00:00:38.110 --> 00:00:38.120 align:start position:0%
+It's uh
+ 
+
+00:00:38.120 --> 00:00:41.550 align:start position:0%
+It's uh
+within<00:00:38.800><c> whatever</c><00:00:39.760><c> nanoseconds</c><00:00:40.600><c> of</c><00:00:41.280><c> uh</c><00:00:41.360><c> of</c><00:00:41.480><c> the</c>
+
+00:00:41.550 --> 00:00:41.560 align:start position:0%
+within whatever nanoseconds of uh of the
+ 
+
+00:00:41.560 --> 00:00:44.750 align:start position:0%
+within whatever nanoseconds of uh of the
+clock<00:00:41.880><c> reference.</c><00:00:42.760><c> Availability</c><00:00:44.120><c> um</c><00:00:44.520><c> maybe</c>
+
+00:00:44.750 --> 00:00:44.760 align:start position:0%
+clock reference. Availability um maybe
+ 
+
+00:00:44.760 --> 00:00:47.790 align:start position:0%
+clock reference. Availability um maybe
+it's<00:00:44.960><c> a</c><00:00:45.000><c> little</c><00:00:45.240><c> less</c><00:00:45.480><c> intuitive,</c><00:00:46.240><c> but</c><00:00:47.000><c> when</c>
+
+00:00:47.790 --> 00:00:47.800 align:start position:0%
+it's a little less intuitive, but when
+ 
+
+00:00:47.800 --> 00:00:48.470 align:start position:0%
+it's a little less intuitive, but when
+uh
+
+00:00:48.470 --> 00:00:48.480 align:start position:0%
+uh
+ 
+
+00:00:48.480 --> 00:00:49.990 align:start position:0%
+uh
+uh
+
+00:00:49.990 --> 00:00:50.000 align:start position:0%
+uh
+ 
+
+00:00:50.000 --> 00:00:51.990 align:start position:0%
+uh
+when<00:00:50.160><c> the</c><00:00:50.240><c> time</c><00:00:50.480><c> source</c><00:00:50.760><c> goes</c><00:00:50.960><c> away,</c><00:00:51.560><c> she</c><00:00:51.880><c> the</c>
+
+00:00:51.990 --> 00:00:52.000 align:start position:0%
+when the time source goes away, she the
+ 
+
+00:00:52.000 --> 00:00:53.110 align:start position:0%
+when the time source goes away, she the
+GM,
+
+00:00:53.110 --> 00:00:53.120 align:start position:0%
+GM,
+ 
+
+00:00:53.120 --> 00:00:55.630 align:start position:0%
+GM,
+um<00:00:53.760><c> you</c><00:00:53.880><c> know,</c><00:00:53.960><c> currently</c><00:00:54.920><c> uh</c><00:00:55.120><c> sort</c><00:00:55.360><c> of</c><00:00:55.440><c> the</c>
+
+00:00:55.630 --> 00:00:55.640 align:start position:0%
+um you know, currently uh sort of the
+ 
+
+00:00:55.640 --> 00:00:57.710 align:start position:0%
+um you know, currently uh sort of the
+the<00:00:55.760><c> base</c><00:00:56.640><c> um</c>
+
+00:00:57.710 --> 00:00:57.720 align:start position:0%
+the base um
+ 
+
+00:00:57.720 --> 00:01:01.950 align:start position:0%
+the base um
+the<00:00:57.800><c> base</c><00:00:58.080><c> profile</c><00:00:58.720><c> of</c><00:00:58.840><c> PTP</c><00:00:59.720><c> uses</c><00:01:00.640><c> uh</c><00:01:00.720><c> BMCA</c>
+
+00:01:01.950 --> 00:01:01.960 align:start position:0%
+the base profile of PTP uses uh BMCA
+ 
+
+00:01:01.960 --> 00:01:05.189 align:start position:0%
+the base profile of PTP uses uh BMCA
+beat<00:01:02.200><c> BTCA</c><00:01:02.920><c> is</c><00:01:03.120><c> the</c><00:01:03.600><c> the</c><00:01:03.720><c> new</c><00:01:03.880><c> term</c><00:01:04.519><c> um</c><00:01:05.040><c> to</c>
+
+00:01:05.189 --> 00:01:05.199 align:start position:0%
+beat BTCA is the the new term um to
+ 
+
+00:01:05.199 --> 00:01:07.270 align:start position:0%
+beat BTCA is the the new term um to
+switch<00:01:05.519><c> over.</c><00:01:06.040><c> And</c><00:01:06.160><c> that</c><00:01:06.320><c> takes</c><00:01:06.560><c> some</c><00:01:06.760><c> time.</c>
+
+00:01:07.270 --> 00:01:07.280 align:start position:0%
+switch over. And that takes some time.
+ 
+
+00:01:07.280 --> 00:01:09.590 align:start position:0%
+switch over. And that takes some time.
+And<00:01:07.440><c> during</c><00:01:07.720><c> that</c><00:01:07.960><c> time,</c><00:01:08.720><c> we're</c><00:01:08.960><c> in</c><00:01:09.320><c> we're</c><00:01:09.480><c> in</c>
+
+00:01:09.590 --> 00:01:09.600 align:start position:0%
+And during that time, we're in we're in
+ 
+
+00:01:09.600 --> 00:01:12.230 align:start position:0%
+And during that time, we're in we're in
+holdover<00:01:10.520><c> and</c><00:01:10.960><c> our</c><00:01:11.120><c> clocks</c><00:01:11.560><c> are</c><00:01:11.760><c> drifting</c>
+
+00:01:12.230 --> 00:01:12.240 align:start position:0%
+holdover and our clocks are drifting
+ 
+
+00:01:12.240 --> 00:01:14.870 align:start position:0%
+holdover and our clocks are drifting
+apart.<00:01:13.200><c> Um</c><00:01:13.600><c> so</c><00:01:13.880><c> we're</c><00:01:14.080><c> going</c><00:01:14.320><c> to</c><00:01:14.400><c> propose</c><00:01:14.840><c> a</c>
+
+00:01:14.870 --> 00:01:14.880 align:start position:0%
+apart. Um so we're going to propose a
+ 
+
+00:01:14.880 --> 00:01:18.270 align:start position:0%
+apart. Um so we're going to propose a
+solution<00:01:15.520><c> where</c><00:01:15.880><c> we</c><00:01:16.480><c> uh</c><00:01:16.680><c> don't</c><00:01:17.480><c> uh</c>
+
+00:01:18.270 --> 00:01:18.280 align:start position:0%
+solution where we uh don't uh
+ 
+
+00:01:18.280 --> 00:01:20.390 align:start position:0%
+solution where we uh don't uh
+what<00:01:18.600><c> where</c><00:01:18.720><c> we</c><00:01:19.080><c> work</c><00:01:19.280><c> around</c><00:01:19.560><c> that.</c>
+
+00:01:20.390 --> 00:01:20.400 align:start position:0%
+what where we work around that.
+ 
+
+00:01:20.400 --> 00:01:23.310 align:start position:0%
+what where we work around that.
+So,<00:01:20.960><c> uh</c><00:01:21.160><c> first</c><00:01:21.400><c> of</c><00:01:21.480><c> all,</c><00:01:22.000><c> I'll</c><00:01:22.200><c> talk</c><00:01:22.400><c> about</c><00:01:23.120><c> uh</c>
+
+00:01:23.310 --> 00:01:23.320 align:start position:0%
+So, uh first of all, I'll talk about uh
+ 
+
+00:01:23.320 --> 00:01:25.350 align:start position:0%
+So, uh first of all, I'll talk about uh
+improved<00:01:23.800><c> accuracy.</c>
+
+00:01:25.350 --> 00:01:25.360 align:start position:0%
+improved accuracy.
+ 
+
+00:01:25.360 --> 00:01:26.230 align:start position:0%
+improved accuracy.
+Um
+
+00:01:26.230 --> 00:01:26.240 align:start position:0%
+Um
+ 
+
+00:01:26.240 --> 00:01:29.710 align:start position:0%
+Um
+so<00:01:26.560><c> so</c><00:01:26.760><c> basically</c><00:01:27.880><c> um</c><00:01:28.400><c> I</c><00:01:28.560><c> I</c><00:01:28.640><c> think</c><00:01:28.960><c> the</c><00:01:29.440><c> well,</c>
+
+00:01:29.710 --> 00:01:29.720 align:start position:0%
+so so basically um I I think the well,
+ 
+
+00:01:29.720 --> 00:01:31.630 align:start position:0%
+so so basically um I I think the well,
+I'll<00:01:30.080><c> I'll</c><00:01:30.160><c> talk</c><00:01:30.280><c> about</c><00:01:30.480><c> this</c><00:01:30.640><c> in</c><00:01:30.760><c> slightly</c><00:01:31.480><c> uh</c>
+
+00:01:31.630 --> 00:01:31.640 align:start position:0%
+I'll I'll talk about this in slightly uh
+ 
+
+00:01:31.640 --> 00:01:34.190 align:start position:0%
+I'll I'll talk about this in slightly uh
+backwards<00:01:32.080><c> order</c><00:01:32.280><c> here.</c><00:01:33.040><c> The</c><00:01:33.600><c> uh</c><00:01:33.680><c> the</c><00:01:33.760><c> global</c>
+
+00:01:34.190 --> 00:01:34.200 align:start position:0%
+backwards order here. The uh the global
+ 
+
+00:01:34.200 --> 00:01:37.590 align:start position:0%
+backwards order here. The uh the global
+time<00:01:34.520><c> scale</c><00:01:35.120><c> is</c><00:01:35.680><c> is</c><00:01:35.880><c> basically</c><00:01:36.240><c> what</c><00:01:36.440><c> we</c><00:01:36.600><c> have</c>
+
+00:01:37.590 --> 00:01:37.600 align:start position:0%
+time scale is is basically what we have
+ 
+
+00:01:37.600 --> 00:01:41.230 align:start position:0%
+time scale is is basically what we have
+currently.<00:01:38.320><c> Um</c><00:01:38.600><c> it's</c><00:01:39.000><c> it's</c><00:01:39.240><c> a</c><00:01:39.320><c> UTC</c><00:01:40.320><c> TAI</c>
+
+00:01:41.230 --> 00:01:41.240 align:start position:0%
+currently. Um it's it's a UTC TAI
+ 
+
+00:01:41.240 --> 00:01:42.950 align:start position:0%
+currently. Um it's it's a UTC TAI
+traceable<00:01:41.800><c> time.</c>
+
+00:01:42.950 --> 00:01:42.960 align:start position:0%
+traceable time.
+ 
+
+00:01:42.960 --> 00:01:46.150 align:start position:0%
+traceable time.
+And<00:01:43.880><c> uh</c><00:01:43.960><c> it's</c><00:01:44.720><c> uh</c><00:01:44.800><c> on</c><00:01:45.120><c> on</c><00:01:45.240><c> the</c><00:01:45.320><c> Linux</c><00:01:45.640><c> system,</c>
+
+00:01:46.150 --> 00:01:46.160 align:start position:0%
+And uh it's uh on on the Linux system,
+ 
+
+00:01:46.160 --> 00:01:49.190 align:start position:0%
+And uh it's uh on on the Linux system,
+it's<00:01:46.400><c> mapped</c><00:01:46.800><c> to</c><00:01:47.120><c> the</c><00:01:47.640><c> the</c><00:01:47.720><c> real-time</c><00:01:48.240><c> clock.</c>
+
+00:01:49.190 --> 00:01:49.200 align:start position:0%
+it's mapped to the the real-time clock.
+ 
+
+00:01:49.200 --> 00:01:52.750 align:start position:0%
+it's mapped to the the real-time clock.
+Um<00:01:49.520><c> so</c><00:01:49.680><c> this</c><00:01:49.920><c> is</c><00:01:50.480><c> pretty</c><00:01:50.720><c> standard</c><00:01:51.240><c> stuff.</c><00:01:52.120><c> So,</c>
+
+00:01:52.750 --> 00:01:52.760 align:start position:0%
+Um so this is pretty standard stuff. So,
+ 
+
+00:01:52.760 --> 00:01:55.550 align:start position:0%
+Um so this is pretty standard stuff. So,
+uh<00:01:52.840><c> what</c><00:01:53.000><c> we're</c><00:01:53.120><c> proposing</c><00:01:53.880><c> is</c><00:01:54.280><c> a</c><00:01:54.400><c> second</c><00:01:55.280><c> time</c>
+
+00:01:55.550 --> 00:01:55.560 align:start position:0%
+uh what we're proposing is a second time
+ 
+
+00:01:55.560 --> 00:01:57.710 align:start position:0%
+uh what we're proposing is a second time
+scale,<00:01:56.360><c> and</c><00:01:56.640><c> we're</c><00:01:56.760><c> going</c><00:01:56.880><c> to</c><00:01:57.000><c> call</c><00:01:57.280><c> this</c><00:01:57.600><c> the</c>
+
+00:01:57.710 --> 00:01:57.720 align:start position:0%
+scale, and we're going to call this the
+ 
+
+00:01:57.720 --> 00:02:01.190 align:start position:0%
+scale, and we're going to call this the
+rack<00:01:58.040><c> local</c><00:01:58.800><c> time</c><00:01:59.120><c> scale.</c><00:02:00.000><c> And</c><00:02:00.600><c> so</c><00:02:00.720><c> basically</c>
+
+00:02:01.190 --> 00:02:01.200 align:start position:0%
+rack local time scale. And so basically
+ 
+
+00:02:01.200 --> 00:02:04.510 align:start position:0%
+rack local time scale. And so basically
+this<00:02:01.440><c> is</c><00:02:01.640><c> going</c><00:02:01.960><c> to</c><00:02:02.080><c> be</c><00:02:02.600><c> the</c><00:02:03.080><c> each</c><00:02:03.560><c> um</c><00:02:04.240><c> so</c><00:02:04.360><c> if</c><00:02:04.440><c> we</c>
+
+00:02:04.510 --> 00:02:04.520 align:start position:0%
+this is going to be the each um so if we
+ 
+
+00:02:04.520 --> 00:02:05.990 align:start position:0%
+this is going to be the each um so if we
+have<00:02:04.640><c> an</c><00:02:04.760><c> application</c><00:02:05.360><c> that's</c><00:02:05.520><c> contained</c>
+
+00:02:05.990 --> 00:02:06.000 align:start position:0%
+have an application that's contained
+ 
+
+00:02:06.000 --> 00:02:09.830 align:start position:0%
+have an application that's contained
+completely<00:02:06.520><c> within</c><00:02:06.840><c> a</c><00:02:06.880><c> rack,</c><00:02:07.840><c> now</c><00:02:08.520><c> we</c><00:02:08.800><c> have</c><00:02:09.479><c> uh</c>
+
+00:02:09.830 --> 00:02:09.840 align:start position:0%
+completely within a rack, now we have uh
+ 
+
+00:02:09.840 --> 00:02:12.670 align:start position:0%
+completely within a rack, now we have uh
+we<00:02:09.960><c> can</c><00:02:10.119><c> use</c><00:02:10.320><c> a</c><00:02:10.360><c> rack</c><00:02:10.720><c> local</c><00:02:11.040><c> time</c><00:02:11.320><c> scale</c><00:02:12.080><c> and</c>
+
+00:02:12.670 --> 00:02:12.680 align:start position:0%
+we can use a rack local time scale and
+ 
+
+00:02:12.680 --> 00:02:14.710 align:start position:0%
+we can use a rack local time scale and
+so<00:02:12.800><c> that's</c><00:02:13.080><c> going</c><00:02:13.240><c> to</c><00:02:13.360><c> be</c><00:02:13.640><c> synchronized</c><00:02:14.400><c> over</c>
+
+00:02:14.710 --> 00:02:14.720 align:start position:0%
+so that's going to be synchronized over
+ 
+
+00:02:14.720 --> 00:02:18.390 align:start position:0%
+so that's going to be synchronized over
+fewer<00:02:15.160><c> hops</c><00:02:15.800><c> and</c><00:02:16.320><c> it's</c><00:02:16.800><c> uh</c><00:02:17.080><c> going</c><00:02:17.280><c> to</c><00:02:17.840><c> uh</c>
+
+00:02:18.390 --> 00:02:18.400 align:start position:0%
+fewer hops and it's uh going to uh
+ 
+
+00:02:18.400 --> 00:02:21.230 align:start position:0%
+fewer hops and it's uh going to uh
+do<00:02:18.520><c> better</c><00:02:18.840><c> at</c><00:02:18.959><c> synchronizing</c><00:02:20.120><c> applic-</c>
+
+00:02:21.230 --> 00:02:21.240 align:start position:0%
+do better at synchronizing applic-
+ 
+
+00:02:21.240 --> 00:02:22.830 align:start position:0%
+do better at synchronizing applic-
+doing<00:02:21.560><c> do</c><00:02:21.680><c> better</c><00:02:21.959><c> at</c><00:02:22.080><c> synch-</c>
+
+00:02:22.830 --> 00:02:22.840 align:start position:0%
+doing do better at synch-
+ 
+
+00:02:22.840 --> 00:02:24.390 align:start position:0%
+doing do better at synch-
+synchronizing<00:02:23.400><c> the</c><00:02:23.520><c> application</c><00:02:24.120><c> because</c>
+
+00:02:24.390 --> 00:02:24.400 align:start position:0%
+synchronizing the application because
+ 
+
+00:02:24.400 --> 00:02:27.270 align:start position:0%
+synchronizing the application because
+there<00:02:24.680><c> will</c><00:02:24.840><c> be</c><00:02:25.320><c> fewer</c><00:02:25.640><c> hops.</c><00:02:26.440><c> Basically</c><00:02:27.000><c> each</c>
+
+00:02:27.270 --> 00:02:27.280 align:start position:0%
+there will be fewer hops. Basically each
+ 
+
+00:02:27.280 --> 00:02:30.830 align:start position:0%
+there will be fewer hops. Basically each
+hop<00:02:27.920><c> uh</c><00:02:28.200><c> we</c><00:02:28.400><c> lose</c><00:02:29.080><c> say</c><00:02:29.360><c> for</c><00:02:29.560><c> example</c><00:02:30.040><c> we</c><00:02:30.160><c> lose</c>
+
+00:02:30.830 --> 00:02:30.840 align:start position:0%
+hop uh we lose say for example we lose
+ 
+
+00:02:30.840 --> 00:02:33.470 align:start position:0%
+hop uh we lose say for example we lose
+uh<00:02:31.000><c> 4</c><00:02:31.240><c> nanoseconds</c><00:02:32.080><c> per</c><00:02:32.320><c> link.</c><00:02:33.160><c> You</c><00:02:33.240><c> know,</c><00:02:33.360><c> you</c>
+
+00:02:33.470 --> 00:02:33.480 align:start position:0%
+uh 4 nanoseconds per link. You know, you
+ 
+
+00:02:33.480 --> 00:02:36.070 align:start position:0%
+uh 4 nanoseconds per link. You know, you
+multiply<00:02:33.920><c> that</c><00:02:34.120><c> by</c><00:02:34.280><c> three.</c><00:02:34.840><c> Now</c><00:02:35.160><c> you've</c><00:02:35.400><c> got</c>
+
+00:02:36.070 --> 00:02:36.080 align:start position:0%
+multiply that by three. Now you've got
+ 
+
+00:02:36.080 --> 00:02:37.550 align:start position:0%
+multiply that by three. Now you've got
+uh
+
+00:02:37.550 --> 00:02:37.560 align:start position:0%
+uh
+ 
+
+00:02:37.560 --> 00:02:39.390 align:start position:0%
+uh
+you<00:02:37.680><c> know,</c><00:02:37.920><c> three</c><00:02:38.160><c> times</c><00:02:38.720><c> three</c><00:02:38.920><c> times</c><00:02:39.200><c> that</c>
+
+00:02:39.390 --> 00:02:39.400 align:start position:0%
+you know, three times three times that
+ 
+
+00:02:39.400 --> 00:02:40.310 align:start position:0%
+you know, three times three times that
+error.
+
+00:02:40.310 --> 00:02:40.320 align:start position:0%
+error.
+ 
+
+00:02:40.320 --> 00:02:42.949 align:start position:0%
+error.
+And<00:02:40.920><c> uh</c><00:02:41.280><c> so</c><00:02:41.520><c> so</c><00:02:41.680><c> basically</c>
+
+00:02:42.949 --> 00:02:42.959 align:start position:0%
+And uh so so basically
+ 
+
+00:02:42.959 --> 00:02:44.350 align:start position:0%
+And uh so so basically
+there's<00:02:43.640><c> uh</c>
+
+00:02:44.350 --> 00:02:44.360 align:start position:0%
+there's uh
+ 
+
+00:02:44.360 --> 00:02:46.470 align:start position:0%
+there's uh
+uh<00:02:44.680><c> what</c><00:02:44.840><c> we're</c><00:02:44.959><c> proposing</c><00:02:45.480><c> here</c><00:02:45.720><c> is</c><00:02:45.959><c> to</c><00:02:46.360><c> to</c>
+
+00:02:46.470 --> 00:02:46.480 align:start position:0%
+uh what we're proposing here is to to
+ 
+
+00:02:46.480 --> 00:02:49.430 align:start position:0%
+uh what we're proposing here is to to
+shorten<00:02:47.040><c> the</c><00:02:47.680><c> uh</c><00:02:47.760><c> the</c><00:02:47.840><c> network</c><00:02:48.200><c> distance</c><00:02:48.720><c> from</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+shorten the uh the network distance from
+ 
+
+00:02:49.440 --> 00:02:55.350 align:start position:0%
+shorten the uh the network distance from
+the<00:02:50.000><c> uh</c><00:02:50.160><c> grandmaster</c><00:02:50.760><c> to</c><00:02:50.920><c> improve</c><00:02:51.320><c> accuracy.</c>
+
+00:02:55.350 --> 00:02:55.360 align:start position:0%
+ 
+ 
+
+00:02:55.360 --> 00:02:58.110 align:start position:0%
+ 
+So,<00:02:55.920><c> here's</c><00:02:56.440><c> uh</c><00:02:56.520><c> here's</c><00:02:56.800><c> a</c><00:02:57.320><c> quick</c><00:02:57.560><c> graphical</c>
+
+00:02:58.110 --> 00:02:58.120 align:start position:0%
+So, here's uh here's a quick graphical
+ 
+
+00:02:58.120 --> 00:02:59.670 align:start position:0%
+So, here's uh here's a quick graphical
+representation<00:02:58.959><c> of</c><00:02:59.080><c> what</c><00:02:59.200><c> I'm</c><00:02:59.320><c> talking</c>
+
+00:02:59.670 --> 00:02:59.680 align:start position:0%
+representation of what I'm talking
+ 
+
+00:02:59.680 --> 00:03:03.790 align:start position:0%
+representation of what I'm talking
+about.<00:03:00.440><c> And</c><00:03:01.080><c> uh</c><00:03:01.560><c> so</c><00:03:02.000><c> uh</c><00:03:02.320><c> our</c><00:03:02.480><c> network</c><00:03:02.880><c> card</c><00:03:03.600><c> uh</c>
+
+00:03:03.790 --> 00:03:03.800 align:start position:0%
+about. And uh so uh our network card uh
+ 
+
+00:03:03.800 --> 00:03:06.590 align:start position:0%
+about. And uh so uh our network card uh
+we<00:03:04.000><c> la-</c><00:03:04.280><c> label</c><00:03:04.600><c> this</c><00:03:04.760><c> as</c><00:03:05.239><c> the</c><00:03:05.400><c> IPU.</c><00:03:06.160><c> This</c><00:03:06.320><c> is</c><00:03:06.480><c> an</c>
+
+00:03:06.590 --> 00:03:06.600 align:start position:0%
+we la- label this as the IPU. This is an
+ 
+
+00:03:06.600 --> 00:03:08.949 align:start position:0%
+we la- label this as the IPU. This is an
+Intel<00:03:07.080><c> product.</c><00:03:07.680><c> It's</c><00:03:08.080><c> uh</c><00:03:08.239><c> it's</c><00:03:08.360><c> a</c>
+
+00:03:08.949 --> 00:03:08.959 align:start position:0%
+Intel product. It's uh it's a
+ 
+
+00:03:08.959 --> 00:03:12.430 align:start position:0%
+Intel product. It's uh it's a
+more<00:03:09.120><c> or</c><00:03:09.200><c> less</c><00:03:09.360><c> a</c><00:03:09.440><c> smart</c><00:03:09.800><c> NIC.</c><00:03:10.600><c> Um</c><00:03:11.160><c> so</c><00:03:11.720><c> it</c><00:03:12.200><c> going</c>
+
+00:03:12.430 --> 00:03:12.440 align:start position:0%
+more or less a smart NIC. Um so it going
+ 
+
+00:03:12.440 --> 00:03:15.229 align:start position:0%
+more or less a smart NIC. Um so it going
+forward<00:03:12.880><c> I'll</c><00:03:13.600><c> I'll</c><00:03:13.720><c> use</c><00:03:14.000><c> IPU</c><00:03:14.680><c> NIC</c>
+
+00:03:15.229 --> 00:03:15.239 align:start position:0%
+forward I'll I'll use IPU NIC
+ 
+
+00:03:15.239 --> 00:03:18.070 align:start position:0%
+forward I'll I'll use IPU NIC
+interchangeably<00:03:16.320><c> but</c><00:03:16.959><c> uh</c>
+
+00:03:18.070 --> 00:03:18.080 align:start position:0%
+interchangeably but uh
+ 
+
+00:03:18.080 --> 00:03:19.229 align:start position:0%
+interchangeably but uh
+that's
+
+00:03:19.229 --> 00:03:19.239 align:start position:0%
+that's
+ 
+
+00:03:19.239 --> 00:03:21.190 align:start position:0%
+that's
+what<00:03:19.440><c> the</c><00:03:19.640><c> what</c><00:03:19.920><c> we</c><00:03:20.040><c> have</c><00:03:20.239><c> in</c><00:03:20.320><c> the</c><00:03:20.400><c> diagram.</c>
+
+00:03:21.190 --> 00:03:21.200 align:start position:0%
+what the what we have in the diagram.
+ 
+
+00:03:21.200 --> 00:03:23.470 align:start position:0%
+what the what we have in the diagram.
+So,<00:03:21.720><c> uh</c><00:03:22.160><c> what</c><00:03:22.320><c> I'm</c><00:03:22.400><c> what</c><00:03:22.560><c> I'm</c><00:03:22.680><c> showing</c><00:03:22.959><c> here</c><00:03:23.200><c> is</c>
+
+00:03:23.470 --> 00:03:23.480 align:start position:0%
+So, uh what I'm what I'm showing here is
+ 
+
+00:03:23.480 --> 00:03:26.270 align:start position:0%
+So, uh what I'm what I'm showing here is
+that<00:03:23.680><c> we</c><00:03:23.800><c> have</c><00:03:24.200><c> a</c><00:03:24.680><c> global</c><00:03:25.040><c> time</c><00:03:25.320><c> scale.</c><00:03:26.160><c> It's</c>
+
+00:03:26.270 --> 00:03:26.280 align:start position:0%
+that we have a global time scale. It's
+ 
+
+00:03:26.280 --> 00:03:28.350 align:start position:0%
+that we have a global time scale. It's
+going<00:03:26.400><c> to</c><00:03:26.440><c> be</c><00:03:26.519><c> mapped</c><00:03:26.959><c> clock</c><00:03:27.280><c> real</c><00:03:27.519><c> time</c><00:03:28.000><c> and</c>
+
+00:03:28.350 --> 00:03:28.360 align:start position:0%
+going to be mapped clock real time and
+ 
+
+00:03:28.360 --> 00:03:31.030 align:start position:0%
+going to be mapped clock real time and
+again<00:03:28.640><c> this</c><00:03:28.800><c> is</c><00:03:29.040><c> the</c><00:03:29.160><c> standard</c><00:03:29.920><c> way</c><00:03:30.400><c> that</c><00:03:30.600><c> PTP</c>
+
+00:03:31.030 --> 00:03:31.040 align:start position:0%
+again this is the standard way that PTP
+ 
+
+00:03:31.040 --> 00:03:33.990 align:start position:0%
+again this is the standard way that PTP
+use<00:03:31.800><c> is</c><00:03:31.959><c> used</c><00:03:32.280><c> with</c><00:03:32.440><c> a</c><00:03:32.480><c> single</c><00:03:33.160><c> uh</c><00:03:33.400><c> single</c><00:03:33.720><c> time</c>
+
+00:03:33.990 --> 00:03:34.000 align:start position:0%
+use is used with a single uh single time
+ 
+
+00:03:34.000 --> 00:03:38.190 align:start position:0%
+use is used with a single uh single time
+scale.<00:03:35.000><c> So,</c><00:03:35.519><c> now</c><00:03:35.880><c> what</c><00:03:36.000><c> we</c><00:03:36.120><c> do</c><00:03:36.680><c> is</c><00:03:37.320><c> we</c><00:03:37.600><c> add</c><00:03:38.080><c> a</c>
+
+00:03:38.190 --> 00:03:38.200 align:start position:0%
+scale. So, now what we do is we add a
+ 
+
+00:03:38.200 --> 00:03:40.310 align:start position:0%
+scale. So, now what we do is we add a
+second<00:03:38.560><c> time</c><00:03:38.840><c> scale</c><00:03:39.560><c> and</c><00:03:39.680><c> this</c><00:03:39.840><c> is</c><00:03:39.959><c> going</c><00:03:40.200><c> to</c>
+
+00:03:40.310 --> 00:03:40.320 align:start position:0%
+second time scale and this is going to
+ 
+
+00:03:40.320 --> 00:03:42.870 align:start position:0%
+second time scale and this is going to
+be<00:03:40.760><c> the</c><00:03:40.880><c> rack</c><00:03:41.239><c> local</c><00:03:41.600><c> time</c><00:03:41.880><c> scale.</c>
+
+00:03:42.870 --> 00:03:42.880 align:start position:0%
+be the rack local time scale.
+ 
+
+00:03:42.880 --> 00:03:45.630 align:start position:0%
+be the rack local time scale.
+And<00:03:43.600><c> uh</c><00:03:43.880><c> so</c><00:03:43.959><c> there's</c><00:03:44.200><c> a</c><00:03:44.440><c> in</c><00:03:44.560><c> terms</c><00:03:44.920><c> of</c><00:03:45.120><c> the</c>
+
+00:03:45.630 --> 00:03:45.640 align:start position:0%
+And uh so there's a in terms of the
+ 
+
+00:03:45.640 --> 00:03:48.270 align:start position:0%
+And uh so there's a in terms of the
+Linux<00:03:46.000><c> system,</c><00:03:46.800><c> there's</c><00:03:47.160><c> a</c><00:03:47.400><c> couple</c><00:03:47.720><c> of</c><00:03:47.880><c> things</c>
+
+00:03:48.270 --> 00:03:48.280 align:start position:0%
+Linux system, there's a couple of things
+ 
+
+00:03:48.280 --> 00:03:50.830 align:start position:0%
+Linux system, there's a couple of things
+that<00:03:48.880><c> uh</c><00:03:49.160><c> get</c><00:03:49.400><c> added</c><00:03:49.720><c> here.</c><00:03:50.360><c> So,</c><00:03:50.480><c> we</c><00:03:50.600><c> have</c><00:03:50.760><c> a</c>
+
+00:03:50.830 --> 00:03:50.840 align:start position:0%
+that uh get added here. So, we have a
+ 
+
+00:03:50.840 --> 00:03:55.230 align:start position:0%
+that uh get added here. So, we have a
+V-clock.<00:03:52.000><c> Um</c><00:03:52.400><c> so</c><00:03:53.120><c> this</c><00:03:53.360><c> is</c><00:03:53.960><c> uh</c><00:03:54.200><c> going</c><00:03:54.440><c> to</c><00:03:54.480><c> be</c><00:03:54.640><c> a</c>
+
+00:03:55.230 --> 00:03:55.240 align:start position:0%
+V-clock. Um so this is uh going to be a
+ 
+
+00:03:55.240 --> 00:03:56.430 align:start position:0%
+V-clock. Um so this is uh going to be a
+board
+
+00:03:56.430 --> 00:03:56.440 align:start position:0%
+board
+ 
+
+00:03:56.440 --> 00:03:57.350 align:start position:0%
+board
+It's<00:03:56.640><c> it</c>
+
+00:03:57.350 --> 00:03:57.360 align:start position:0%
+It's it
+ 
+
+00:03:57.360 --> 00:04:00.350 align:start position:0%
+It's it
+virtual<00:03:57.720><c> PhD</c><00:03:58.240><c> is</c><00:03:58.480><c> a</c><00:03:59.200><c> uh</c><00:03:59.560><c> pretty</c><00:03:59.800><c> overloaded</c>
+
+00:04:00.350 --> 00:04:00.360 align:start position:0%
+virtual PhD is a uh pretty overloaded
+ 
+
+00:04:00.360 --> 00:04:02.190 align:start position:0%
+virtual PhD is a uh pretty overloaded
+term,<00:04:00.640><c> so</c><00:04:01.360><c> uh</c>
+
+00:04:02.190 --> 00:04:02.200 align:start position:0%
+term, so uh
+ 
+
+00:04:02.200 --> 00:04:04.830 align:start position:0%
+term, so uh
+but<00:04:02.360><c> basically</c><00:04:03.040><c> uh</c><00:04:03.280><c> there's</c><00:04:03.600><c> a</c><00:04:03.760><c> there's</c><00:04:04.040><c> a</c>
+
+00:04:04.830 --> 00:04:04.840 align:start position:0%
+but basically uh there's a there's a
+ 
+
+00:04:04.840 --> 00:04:07.150 align:start position:0%
+but basically uh there's a there's a
+uh<00:04:04.920><c> there's</c><00:04:05.080><c> a</c><00:04:05.120><c> software</c><00:04:05.800><c> PhD</c>
+
+00:04:07.150 --> 00:04:07.160 align:start position:0%
+uh there's a software PhD
+ 
+
+00:04:07.160 --> 00:04:09.830 align:start position:0%
+uh there's a software PhD
+that<00:04:07.760><c> uh</c><00:04:07.920><c> does</c><00:04:08.160><c> the</c><00:04:08.240><c> translation.</c><00:04:09.360><c> And</c><00:04:09.600><c> you'll</c>
+
+00:04:09.830 --> 00:04:09.840 align:start position:0%
+that uh does the translation. And you'll
+ 
+
+00:04:09.840 --> 00:04:13.310 align:start position:0%
+that uh does the translation. And you'll
+also<00:04:10.160><c> notice</c><00:04:10.959><c> that</c><00:04:11.400><c> we</c><00:04:11.800><c> have</c><00:04:12.120><c> the</c><00:04:12.520><c> uh</c><00:04:12.720><c> um</c>
+
+00:04:13.310 --> 00:04:13.320 align:start position:0%
+also notice that we have the uh um
+ 
+
+00:04:13.320 --> 00:04:15.390 align:start position:0%
+also notice that we have the uh um
+have<00:04:13.520><c> a</c><00:04:13.560><c> free-running</c><00:04:14.160><c> clock</c><00:04:14.600><c> in</c><00:04:14.720><c> the</c><00:04:14.840><c> NIC.</c>
+
+00:04:15.390 --> 00:04:15.400 align:start position:0%
+have a free-running clock in the NIC.
+ 
+
+00:04:15.400 --> 00:04:18.550 align:start position:0%
+have a free-running clock in the NIC.
+So,<00:04:15.560><c> we're</c><00:04:15.720><c> not</c><00:04:16.239><c> directly</c><00:04:17.160><c> uh</c><00:04:17.600><c> disciplining</c>
+
+00:04:18.550 --> 00:04:18.560 align:start position:0%
+So, we're not directly uh disciplining
+ 
+
+00:04:18.560 --> 00:04:21.470 align:start position:0%
+So, we're not directly uh disciplining
+the<00:04:18.680><c> NIC</c><00:04:18.920><c> clock.</c><00:04:20.000><c> Um</c><00:04:20.440><c> all</c><00:04:20.799><c> the</c><00:04:21.160><c> all</c><00:04:21.280><c> of</c><00:04:21.359><c> the</c>
+
+00:04:21.470 --> 00:04:21.480 align:start position:0%
+the NIC clock. Um all the all of the
+ 
+
+00:04:21.480 --> 00:04:23.990 align:start position:0%
+the NIC clock. Um all the all of the
+disciplining<00:04:22.080><c> is</c><00:04:22.360><c> contained</c><00:04:22.919><c> within</c><00:04:23.720><c> the</c><00:04:23.800><c> V</c>
+
+00:04:23.990 --> 00:04:24.000 align:start position:0%
+disciplining is contained within the V
+ 
+
+00:04:24.000 --> 00:04:26.430 align:start position:0%
+disciplining is contained within the V
+clock<00:04:24.280><c> itself.</c><00:04:25.280><c> And</c><00:04:25.800><c> the</c><00:04:25.919><c> other</c><00:04:26.160><c> the</c><00:04:26.280><c> other</c>
+
+00:04:26.430 --> 00:04:26.440 align:start position:0%
+clock itself. And the other the other
+ 
+
+00:04:26.440 --> 00:04:28.950 align:start position:0%
+clock itself. And the other the other
+part<00:04:26.840><c> to</c><00:04:27.480><c> um</c>
+
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+part to um
+ 
+
+00:04:28.960 --> 00:04:31.630 align:start position:0%
+part to um
+to<00:04:29.080><c> notice</c><00:04:29.400><c> here</c><00:04:29.720><c> is</c><00:04:30.400><c> that</c><00:04:30.840><c> we</c><00:04:31.000><c> have</c><00:04:31.200><c> the</c><00:04:31.520><c> the</c>
+
+00:04:31.630 --> 00:04:31.640 align:start position:0%
+to notice here is that we have the the
+ 
+
+00:04:31.640 --> 00:04:34.390 align:start position:0%
+to notice here is that we have the the
+concept<00:04:32.280><c> of</c><00:04:32.480><c> the</c><00:04:32.640><c> aux</c><00:04:32.919><c> clock.</c><00:04:33.680><c> And</c><00:04:33.840><c> that's</c><00:04:34.120><c> a</c>
+
+00:04:34.390 --> 00:04:34.400 align:start position:0%
+concept of the aux clock. And that's a
+ 
+
+00:04:34.400 --> 00:04:37.470 align:start position:0%
+concept of the aux clock. And that's a
+relatively<00:04:35.040><c> new</c><00:04:35.640><c> Linux</c><00:04:36.000><c> feature</c><00:04:36.840><c> that</c><00:04:37.040><c> allows</c>
+
+00:04:37.470 --> 00:04:37.480 align:start position:0%
+relatively new Linux feature that allows
+ 
+
+00:04:37.480 --> 00:04:40.590 align:start position:0%
+relatively new Linux feature that allows
+us<00:04:37.760><c> to</c><00:04:38.360><c> uh</c><00:04:38.720><c> have</c>
+
+00:04:40.590 --> 00:04:40.600 align:start position:0%
+us to uh have
+ 
+
+00:04:40.600 --> 00:04:43.270 align:start position:0%
+us to uh have
+more<00:04:41.080><c> or</c><00:04:41.120><c> less</c><00:04:41.320><c> an</c><00:04:41.440><c> arbitrary</c><00:04:42.040><c> number</c><00:04:42.560><c> of</c><00:04:43.080><c> of</c>
+
+00:04:43.270 --> 00:04:43.280 align:start position:0%
+more or less an arbitrary number of of
+ 
+
+00:04:43.280 --> 00:04:44.750 align:start position:0%
+more or less an arbitrary number of of
+time<00:04:43.560><c> bases</c>
+
+00:04:44.750 --> 00:04:44.760 align:start position:0%
+time bases
+ 
+
+00:04:44.760 --> 00:04:46.710 align:start position:0%
+time bases
+um<00:04:44.960><c> that</c><00:04:45.520><c> are</c>
+
+00:04:46.710 --> 00:04:46.720 align:start position:0%
+um that are
+ 
+
+00:04:46.720 --> 00:04:48.510 align:start position:0%
+um that are
+behave<00:04:47.120><c> exactly</c><00:04:47.640><c> I</c><00:04:47.760><c> mean</c><00:04:47.880><c> I</c><00:04:47.919><c> mean</c><00:04:48.120><c> it's</c><00:04:48.320><c> it's</c>
+
+00:04:48.510 --> 00:04:48.520 align:start position:0%
+behave exactly I mean I mean it's it's
+ 
+
+00:04:48.520 --> 00:04:50.390 align:start position:0%
+behave exactly I mean I mean it's it's
+not<00:04:48.760><c> clock</c><00:04:49.040><c> real</c><00:04:49.200><c> time,</c><00:04:49.800><c> but</c><00:04:49.919><c> they</c><00:04:50.000><c> behave</c>
+
+00:04:50.390 --> 00:04:50.400 align:start position:0%
+not clock real time, but they behave
+ 
+
+00:04:50.400 --> 00:04:52.550 align:start position:0%
+not clock real time, but they behave
+exactly<00:04:50.840><c> like</c><00:04:51.040><c> clock</c><00:04:51.360><c> real</c><00:04:51.560><c> time</c>
+
+00:04:52.550 --> 00:04:52.560 align:start position:0%
+exactly like clock real time
+ 
+
+00:04:52.560 --> 00:04:55.550 align:start position:0%
+exactly like clock real time
+using<00:04:52.960><c> the</c><00:04:53.400><c> POSIX</c><00:04:54.360><c> uh</c>
+
+00:04:55.550 --> 00:04:55.560 align:start position:0%
+using the POSIX uh
+ 
+
+00:04:55.560 --> 00:04:57.390 align:start position:0%
+using the POSIX uh
+POSIX<00:04:55.880><c> clock</c><00:04:56.200><c> interface.</c>
+
+00:04:57.390 --> 00:04:57.400 align:start position:0%
+POSIX clock interface.
+ 
+
+00:04:57.400 --> 00:04:59.750 align:start position:0%
+POSIX clock interface.
+Um,<00:04:58.040><c> and</c><00:04:58.360><c> that</c><00:04:58.560><c> that's</c><00:04:58.760><c> something</c><00:04:59.160><c> that's</c>
+
+00:04:59.750 --> 00:04:59.760 align:start position:0%
+Um, and that that's something that's
+ 
+
+00:04:59.760 --> 00:05:02.990 align:start position:0%
+Um, and that that's something that's
+again<00:05:00.120><c> pretty</c><00:05:00.360><c> recent,</c><00:05:01.240><c> and</c><00:05:01.720><c> there's</c><00:05:02.680><c> still</c>
+
+00:05:02.990 --> 00:05:03.000 align:start position:0%
+again pretty recent, and there's still
+ 
+
+00:05:03.000 --> 00:05:05.270 align:start position:0%
+again pretty recent, and there's still
+some<00:05:03.240><c> development</c><00:05:04.240><c> uh</c><00:05:04.720><c> still</c><00:05:05.080><c> some</c>
+
+00:05:05.270 --> 00:05:05.280 align:start position:0%
+some development uh still some
+ 
+
+00:05:05.280 --> 00:05:08.430 align:start position:0%
+some development uh still some
+development<00:05:05.800><c> to</c><00:05:05.880><c> do</c><00:05:06.040><c> there.</c><00:05:06.919><c> So,</c><00:05:07.600><c> um</c>
+
+00:05:08.430 --> 00:05:08.440 align:start position:0%
+development to do there. So, um
+ 
+
+00:05:08.440 --> 00:05:10.230 align:start position:0%
+development to do there. So, um
+and<00:05:08.880><c> and</c><00:05:09.040><c> another</c>
+
+00:05:10.230 --> 00:05:10.240 align:start position:0%
+and and another
+ 
+
+00:05:10.240 --> 00:05:10.990 align:start position:0%
+and and another
+um
+
+00:05:10.990 --> 00:05:11.000 align:start position:0%
+um
+ 
+
+00:05:11.000 --> 00:05:13.750 align:start position:0%
+um
+another<00:05:11.560><c> closely</c><00:05:12.000><c> related</c><00:05:12.480><c> topic</c><00:05:12.880><c> here</c><00:05:13.520><c> is</c>
+
+00:05:13.750 --> 00:05:13.760 align:start position:0%
+another closely related topic here is
+ 
+
+00:05:13.760 --> 00:05:17.390 align:start position:0%
+another closely related topic here is
+time<00:05:14.080><c> virtualization.</c><00:05:15.440><c> Um,</c><00:05:16.000><c> so</c><00:05:16.360><c> the</c><00:05:16.600><c> VMs</c>
+
+00:05:17.390 --> 00:05:17.400 align:start position:0%
+time virtualization. Um, so the VMs
+ 
+
+00:05:17.400 --> 00:05:21.110 align:start position:0%
+time virtualization. Um, so the VMs
+don't<00:05:17.680><c> have</c><00:05:18.200><c> access</c><00:05:19.040><c> direct</c><00:05:19.400><c> access</c><00:05:19.960><c> to</c><00:05:20.560><c> uh</c><00:05:21.000><c> so</c>
+
+00:05:21.110 --> 00:05:21.120 align:start position:0%
+don't have access direct access to uh so
+ 
+
+00:05:21.120 --> 00:05:23.950 align:start position:0%
+don't have access direct access to uh so
+the<00:05:21.600><c> non-privileged</c><00:05:22.280><c> VMs</c><00:05:23.000><c> don't</c><00:05:23.280><c> have</c><00:05:23.560><c> access</c>
+
+00:05:23.950 --> 00:05:23.960 align:start position:0%
+the non-privileged VMs don't have access
+ 
+
+00:05:23.960 --> 00:05:28.430 align:start position:0%
+the non-privileged VMs don't have access
+direct<00:05:24.320><c> access</c><00:05:24.720><c> to</c><00:05:24.840><c> PTP</c><00:05:25.280><c> time.</c><00:05:26.200><c> So,</c><00:05:27.000><c> um</c>
+
+00:05:28.430 --> 00:05:28.440 align:start position:0%
+direct access to PTP time. So, um
+ 
+
+00:05:28.440 --> 00:05:31.350 align:start position:0%
+direct access to PTP time. So, um
+we<00:05:29.240><c> So,</c><00:05:29.360><c> there's</c><00:05:29.680><c> a</c><00:05:30.080><c> basically</c><00:05:30.520><c> the</c><00:05:30.640><c> solution</c>
+
+00:05:31.350 --> 00:05:31.360 align:start position:0%
+we So, there's a basically the solution
+ 
+
+00:05:31.360 --> 00:05:34.710 align:start position:0%
+we So, there's a basically the solution
+is<00:05:31.880><c> in</c><00:05:32.040><c> software,</c><00:05:33.000><c> we</c><00:05:33.160><c> use</c><00:05:33.440><c> TSC</c><00:05:34.080><c> as</c><00:05:34.280><c> a</c><00:05:34.320><c> common</c>
+
+00:05:34.710 --> 00:05:34.720 align:start position:0%
+is in software, we use TSC as a common
+ 
+
+00:05:34.720 --> 00:05:36.110 align:start position:0%
+is in software, we use TSC as a common
+time<00:05:35.040><c> reference.</c>
+
+00:05:36.110 --> 00:05:36.120 align:start position:0%
+time reference.
+ 
+
+00:05:36.120 --> 00:05:40.950 align:start position:0%
+time reference.
+Uh<00:05:36.360><c> all</c><00:05:36.560><c> the</c><00:05:36.640><c> VMs</c><00:05:37.240><c> have</c><00:05:37.960><c> access</c><00:05:38.480><c> to</c><00:05:38.880><c> TSC.</c><00:05:40.120><c> Um,</c>
+
+00:05:40.950 --> 00:05:40.960 align:start position:0%
+Uh all the VMs have access to TSC. Um,
+ 
+
+00:05:40.960 --> 00:05:43.630 align:start position:0%
+Uh all the VMs have access to TSC. Um,
+and<00:05:41.560><c> uh</c><00:05:41.960><c> they</c><00:05:42.080><c> can</c><00:05:42.240><c> use</c><00:05:42.400><c> that</c><00:05:42.600><c> to</c><00:05:42.720><c> translate</c>
+
+00:05:43.630 --> 00:05:43.640 align:start position:0%
+and uh they can use that to translate
+ 
+
+00:05:43.640 --> 00:05:46.270 align:start position:0%
+and uh they can use that to translate
+time<00:05:44.000><c> from</c><00:05:44.320><c> one</c><00:05:44.840><c> uh</c><00:05:45.000><c> uh,</c><00:05:45.400><c> from</c><00:05:45.520><c> the</c><00:05:45.600><c> hypervisor</c>
+
+00:05:46.270 --> 00:05:46.280 align:start position:0%
+time from one uh uh, from the hypervisor
+ 
+
+00:05:46.280 --> 00:05:48.750 align:start position:0%
+time from one uh uh, from the hypervisor
+to<00:05:46.400><c> another</c><00:05:46.680><c> VM,</c><00:05:47.480><c> one</c><00:05:47.720><c> VM</c><00:05:47.960><c> to</c><00:05:48.080><c> the</c><00:05:48.200><c> other,</c><00:05:48.560><c> that</c>
+
+00:05:48.750 --> 00:05:48.760 align:start position:0%
+to another VM, one VM to the other, that
+ 
+
+00:05:48.760 --> 00:05:51.830 align:start position:0%
+to another VM, one VM to the other, that
+sort<00:05:48.920><c> of</c><00:05:49.000><c> thing.</c><00:05:49.800><c> So,</c><00:05:50.400><c> um,</c>
+
+00:05:51.830 --> 00:05:51.840 align:start position:0%
+sort of thing. So, um,
+ 
+
+00:05:51.840 --> 00:05:54.750 align:start position:0%
+sort of thing. So, um,
+basically,<00:05:52.600><c> this</c><00:05:52.920><c> is</c><00:05:53.880><c> we</c><00:05:54.080><c> we</c><00:05:54.240><c> already</c><00:05:54.520><c> have</c>
+
+00:05:54.750 --> 00:05:54.760 align:start position:0%
+basically, this is we we already have
+ 
+
+00:05:54.760 --> 00:05:56.630 align:start position:0%
+basically, this is we we already have
+limited<00:05:55.160><c> support</c><00:05:55.640><c> for</c><00:05:55.760><c> this</c><00:05:55.960><c> in</c><00:05:56.040><c> the</c><00:05:56.160><c> Linux</c>
+
+00:05:56.630 --> 00:05:56.640 align:start position:0%
+limited support for this in the Linux
+ 
+
+00:05:56.640 --> 00:05:59.710 align:start position:0%
+limited support for this in the Linux
+kernel<00:05:57.160><c> and</c><00:05:57.600><c> uh,</c><00:05:57.880><c> in</c><00:05:57.960><c> terms</c><00:05:58.360><c> of</c><00:05:58.840><c> uh,</c><00:05:59.120><c> PTP</c><00:05:59.640><c> the</c>
+
+00:05:59.710 --> 00:05:59.720 align:start position:0%
+kernel and uh, in terms of uh, PTP the
+ 
+
+00:05:59.720 --> 00:06:01.950 align:start position:0%
+kernel and uh, in terms of uh, PTP the
+PTP<00:06:00.160><c> KVM</c><00:06:00.760><c> driver.</c>
+
+00:06:01.950 --> 00:06:01.960 align:start position:0%
+PTP KVM driver.
+ 
+
+00:06:01.960 --> 00:06:02.910 align:start position:0%
+PTP KVM driver.
+Um,
+
+00:06:02.910 --> 00:06:02.920 align:start position:0%
+Um,
+ 
+
+00:06:02.920 --> 00:06:05.750 align:start position:0%
+Um,
+so,<00:06:03.640><c> it's</c><00:06:04.160><c> basically</c><00:06:04.680><c> it's</c><00:06:04.880><c> it's</c><00:06:05.120><c> tied</c>
+
+00:06:05.750 --> 00:06:05.760 align:start position:0%
+so, it's basically it's it's tied
+ 
+
+00:06:05.760 --> 00:06:08.390 align:start position:0%
+so, it's basically it's it's tied
+specifically<00:06:06.480><c> to</c><00:06:06.600><c> KVM,</c><00:06:07.520><c> doesn't</c><00:06:07.960><c> currently</c>
+
+00:06:08.390 --> 00:06:08.400 align:start position:0%
+specifically to KVM, doesn't currently
+ 
+
+00:06:08.400 --> 00:06:11.670 align:start position:0%
+specifically to KVM, doesn't currently
+work<00:06:08.760><c> with</c><00:06:09.160><c> other</c><00:06:09.760><c> um,</c>
+
+00:06:11.670 --> 00:06:11.680 align:start position:0%
+work with other um,
+ 
+
+00:06:11.680 --> 00:06:15.110 align:start position:0%
+work with other um,
+other<00:06:12.160><c> uh,</c><00:06:12.480><c> um,</c><00:06:12.800><c> other</c><00:06:13.000><c> hypervisors,</c><00:06:14.160><c> but</c><00:06:14.800><c> uh,</c>
+
+00:06:15.110 --> 00:06:15.120 align:start position:0%
+other uh, um, other hypervisors, but uh,
+ 
+
+00:06:15.120 --> 00:06:17.630 align:start position:0%
+other uh, um, other hypervisors, but uh,
+it's<00:06:15.280><c> basically</c><00:06:15.720><c> the</c><00:06:15.840><c> same</c><00:06:16.120><c> concept</c><00:06:16.840><c> and</c><00:06:17.160><c> it's</c>
+
+00:06:17.630 --> 00:06:17.640 align:start position:0%
+it's basically the same concept and it's
+ 
+
+00:06:17.640 --> 00:06:20.310 align:start position:0%
+it's basically the same concept and it's
+uh,<00:06:17.800><c> just</c><00:06:18.160><c> a</c><00:06:18.400><c> a</c><00:06:18.560><c> matter</c><00:06:19.000><c> of</c><00:06:19.360><c> of</c><00:06:19.680><c> implementing</c>
+
+00:06:20.310 --> 00:06:20.320 align:start position:0%
+uh, just a a matter of of implementing
+ 
+
+00:06:20.320 --> 00:06:21.430 align:start position:0%
+uh, just a a matter of of implementing
+the<00:06:20.440><c> code.</c>
+
+00:06:21.430 --> 00:06:21.440 align:start position:0%
+the code.
+ 
+
+00:06:21.440 --> 00:06:24.710 align:start position:0%
+the code.
+Um,<00:06:22.200><c> and</c><00:06:22.520><c> and</c><00:06:22.800><c> and</c><00:06:22.960><c> currently,</c><00:06:23.840><c> there's</c><00:06:24.080><c> also</c>
+
+00:06:24.710 --> 00:06:24.720 align:start position:0%
+Um, and and and currently, there's also
+ 
+
+00:06:24.720 --> 00:06:27.950 align:start position:0%
+Um, and and and currently, there's also
+another<00:06:25.160><c> problem</c><00:06:25.720><c> that</c><00:06:26.480><c> where</c><00:06:26.800><c> VMX</c><00:06:27.360><c> its</c><00:06:27.600><c> are</c>
+
+00:06:27.950 --> 00:06:27.960 align:start position:0%
+another problem that where VMX its are
+ 
+
+00:06:27.960 --> 00:06:30.270 align:start position:0%
+another problem that where VMX its are
+are<00:06:28.120><c> required,</c><00:06:28.880><c> but</c><00:06:29.520><c> that's</c><00:06:29.840><c> probably</c>
+
+00:06:30.270 --> 00:06:30.280 align:start position:0%
+are required, but that's probably
+ 
+
+00:06:30.280 --> 00:06:32.470 align:start position:0%
+are required, but that's probably
+something<00:06:30.720><c> that</c><00:06:31.160><c> could</c><00:06:31.400><c> be</c><00:06:31.600><c> work</c><00:06:32.200><c> worked</c>
+
+00:06:32.470 --> 00:06:32.480 align:start position:0%
+something that could be work worked
+ 
+
+00:06:32.480 --> 00:06:34.909 align:start position:0%
+something that could be work worked
+around<00:06:33.040><c> as</c><00:06:33.240><c> well,</c><00:06:33.760><c> where</c><00:06:33.919><c> there's</c><00:06:34.840><c> where</c>
+
+00:06:34.909 --> 00:06:34.919 align:start position:0%
+around as well, where there's where
+ 
+
+00:06:34.919 --> 00:06:36.270 align:start position:0%
+around as well, where there's where
+there's<00:06:35.120><c> a</c><00:06:35.200><c> will,</c><00:06:35.440><c> there's</c><00:06:35.640><c> a</c><00:06:35.680><c> way</c><00:06:36.000><c> kind</c><00:06:36.200><c> of</c>
+
+00:06:36.270 --> 00:06:36.280 align:start position:0%
+there's a will, there's a way kind of
+ 
+
+00:06:36.280 --> 00:06:38.590 align:start position:0%
+there's a will, there's a way kind of
+thing.
+
+00:06:38.590 --> 00:06:38.600 align:start position:0%
+thing.
+ 
+
+00:06:38.600 --> 00:06:39.430 align:start position:0%
+thing.
+So,
+
+00:06:39.430 --> 00:06:39.440 align:start position:0%
+So,
+ 
+
+00:06:39.440 --> 00:06:42.230 align:start position:0%
+So,
+uh,<00:06:39.560><c> we'll</c><00:06:39.880><c> we'll</c><00:06:40.040><c> take</c><00:06:40.240><c> a</c><00:06:40.320><c> look</c><00:06:40.640><c> at</c><00:06:41.560><c> uh,</c>
+
+00:06:42.230 --> 00:06:42.240 align:start position:0%
+uh, we'll we'll take a look at uh,
+ 
+
+00:06:42.240 --> 00:06:45.190 align:start position:0%
+uh, we'll we'll take a look at uh,
+what's<00:06:42.720><c> what</c><00:06:42.880><c> we're</c><00:06:43.000><c> proposing</c><00:06:43.640><c> here</c><00:06:44.080><c> for</c><00:06:44.720><c> uh,</c>
+
+00:06:45.190 --> 00:06:45.200 align:start position:0%
+what's what we're proposing here for uh,
+ 
+
+00:06:45.200 --> 00:06:46.430 align:start position:0%
+what's what we're proposing here for uh,
+virtual<00:06:45.560><c> is</c><00:06:45.680><c> it</c>
+
+00:06:46.430 --> 00:06:46.440 align:start position:0%
+virtual is it
+ 
+
+00:06:46.440 --> 00:06:48.710 align:start position:0%
+virtual is it
+sharing<00:06:46.840><c> time</c><00:06:47.600><c> uh,</c>
+
+00:06:48.710 --> 00:06:48.720 align:start position:0%
+sharing time uh,
+ 
+
+00:06:48.720 --> 00:06:51.550 align:start position:0%
+sharing time uh,
+with<00:06:48.840><c> a</c><00:06:48.919><c> virtual</c><00:06:49.280><c> machine.</c><00:06:50.080><c> So,</c><00:06:50.760><c> uh,</c><00:06:51.000><c> here's</c>
+
+00:06:51.550 --> 00:06:51.560 align:start position:0%
+with a virtual machine. So, uh, here's
+ 
+
+00:06:51.560 --> 00:06:54.110 align:start position:0%
+with a virtual machine. So, uh, here's
+where<00:06:51.760><c> we</c><00:06:51.840><c> started</c><00:06:52.520><c> from</c><00:06:52.680><c> the</c><00:06:52.760><c> last</c><00:06:53.080><c> slide.</c>
+
+00:06:54.110 --> 00:06:54.120 align:start position:0%
+where we started from the last slide.
+ 
+
+00:06:54.120 --> 00:06:57.884 align:start position:0%
+where we started from the last slide.
+And<00:06:54.400><c> so</c><00:06:54.520><c> now,</c><00:06:55.200><c> we</c><00:06:55.400><c> added</c><00:06:55.760><c> an</c><00:06:55.880><c> unprivileged</c><00:06:56.440><c> VM.</c>
+
+00:06:57.884 --> 00:06:57.894 align:start position:0%
+And so now, we added an unprivileged VM.
+ 
+
+00:06:57.894 --> 00:06:58.750 align:start position:0%
+And so now, we added an unprivileged VM.
+&gt;&gt; [snorts]
+
+00:06:58.750 --> 00:06:58.760 align:start position:0%
+&gt;&gt; [snorts]
+ 
+
+00:06:58.760 --> 00:07:00.190 align:start position:0%
+&gt;&gt; [snorts]
+&gt;&gt; And<00:06:59.400><c> uh,</c>
+
+00:07:00.190 --> 00:07:00.200 align:start position:0%
+&gt;&gt; And uh,
+ 
+
+00:07:00.200 --> 00:07:01.750 align:start position:0%
+&gt;&gt; And uh,
+basically,
+
+00:07:01.750 --> 00:07:01.760 align:start position:0%
+basically,
+ 
+
+00:07:01.760 --> 00:07:04.630 align:start position:0%
+basically,
+the<00:07:02.320><c> I</c><00:07:02.440><c> mean,</c><00:07:02.680><c> it's</c>
+
+00:07:04.630 --> 00:07:04.640 align:start position:0%
+the I mean, it's
+ 
+
+00:07:04.640 --> 00:07:07.230 align:start position:0%
+the I mean, it's
+we're<00:07:04.960><c> we're</c><00:07:05.080><c> just</c><00:07:05.280><c> doing</c><00:07:05.560><c> exactly</c><00:07:06.320><c> what</c>
+
+00:07:07.230 --> 00:07:07.240 align:start position:0%
+we're we're just doing exactly what
+ 
+
+00:07:07.240 --> 00:07:09.909 align:start position:0%
+we're we're just doing exactly what
+what<00:07:07.880><c> we</c><00:07:08.400><c> uh,</c><00:07:08.840><c> we</c><00:07:09.000><c> said</c><00:07:09.280><c> on</c><00:07:09.360><c> the</c><00:07:09.480><c> previous</c>
+
+00:07:09.909 --> 00:07:09.919 align:start position:0%
+what we uh, we said on the previous
+ 
+
+00:07:09.919 --> 00:07:13.630 align:start position:0%
+what we uh, we said on the previous
+slide.<00:07:10.840><c> Uh,</c><00:07:11.200><c> the</c><00:07:11.800><c> uh,</c><00:07:12.320><c> the</c><00:07:12.440><c> unprivileged</c><00:07:13.040><c> VM</c>
+
+00:07:13.630 --> 00:07:13.640 align:start position:0%
+slide. Uh, the uh, the unprivileged VM
+ 
+
+00:07:13.640 --> 00:07:16.830 align:start position:0%
+slide. Uh, the uh, the unprivileged VM
+knows<00:07:14.120><c> the</c><00:07:14.240><c> relationship</c><00:07:15.280><c> uh,</c><00:07:15.480><c> between</c><00:07:15.840><c> TSC</c>
+
+00:07:16.830 --> 00:07:16.840 align:start position:0%
+knows the relationship uh, between TSC
+ 
+
+00:07:16.840 --> 00:07:18.590 align:start position:0%
+knows the relationship uh, between TSC
+and<00:07:16.960><c> the</c><00:07:17.040><c> clock</c><00:07:17.640><c> that</c><00:07:17.960><c> exists</c><00:07:18.400><c> on</c><00:07:18.520><c> the</c>
+
+00:07:18.590 --> 00:07:18.600 align:start position:0%
+and the clock that exists on the
+ 
+
+00:07:18.600 --> 00:07:22.350 align:start position:0%
+and the clock that exists on the
+hypervisor<00:07:19.440><c> or</c><00:07:19.600><c> the</c><00:07:20.200><c> or</c><00:07:20.320><c> the</c><00:07:20.440><c> service</c><00:07:20.840><c> VM</c><00:07:21.720><c> and</c>
+
+00:07:22.350 --> 00:07:22.360 align:start position:0%
+hypervisor or the or the service VM and
+ 
+
+00:07:22.360 --> 00:07:26.150 align:start position:0%
+hypervisor or the or the service VM and
+uh,<00:07:22.520><c> can</c><00:07:22.960><c> easily</c><00:07:23.320><c> reproduce</c><00:07:23.800><c> that</c><00:07:24.080><c> clock.</c>
+
+00:07:26.150 --> 00:07:26.160 align:start position:0%
+uh, can easily reproduce that clock.
+ 
+
+00:07:26.160 --> 00:07:30.390 align:start position:0%
+uh, can easily reproduce that clock.
+In<00:07:26.240><c> its</c><00:07:26.400><c> own</c><00:07:26.800><c> in</c><00:07:26.960><c> its</c><00:07:27.120><c> own</c><00:07:27.240><c> VM.</c>
+
+00:07:30.390 --> 00:07:30.400 align:start position:0%
+ 
+ 
+
+00:07:30.400 --> 00:07:31.350 align:start position:0%
+ 
+So,
+
+00:07:31.350 --> 00:07:31.360 align:start position:0%
+So,
+ 
+
+00:07:31.360 --> 00:07:32.110 align:start position:0%
+So,
+um,
+
+00:07:32.110 --> 00:07:32.120 align:start position:0%
+um,
+ 
+
+00:07:32.120 --> 00:07:33.390 align:start position:0%
+um,
+so<00:07:32.160><c> that's</c><00:07:32.800><c> uh,</c>
+
+00:07:33.390 --> 00:07:33.400 align:start position:0%
+so that's uh,
+ 
+
+00:07:33.400 --> 00:07:36.270 align:start position:0%
+so that's uh,
+that's<00:07:33.640><c> all</c><00:07:34.080><c> there</c><00:07:34.280><c> is</c><00:07:34.520><c> for</c><00:07:35.120><c> uh,</c><00:07:35.400><c> multiple</c>
+
+00:07:36.270 --> 00:07:36.280 align:start position:0%
+that's all there is for uh, multiple
+ 
+
+00:07:36.280 --> 00:07:38.630 align:start position:0%
+that's all there is for uh, multiple
+multiple<00:07:36.680><c> clocks</c><00:07:37.680><c> um,</c><00:07:38.080><c> you</c><00:07:38.160><c> know,</c><00:07:38.240><c> multiple</c>
+
+00:07:38.630 --> 00:07:38.640 align:start position:0%
+multiple clocks um, you know, multiple
+ 
+
+00:07:38.640 --> 00:07:42.150 align:start position:0%
+multiple clocks um, you know, multiple
+time<00:07:38.880><c> bases.</c><00:07:39.640><c> Got</c><00:07:39.800><c> the</c><00:07:39.919><c> rack</c><00:07:40.200><c> local</c><00:07:40.960><c> and</c><00:07:41.680><c> uh,</c>
+
+00:07:42.150 --> 00:07:42.160 align:start position:0%
+time bases. Got the rack local and uh,
+ 
+
+00:07:42.160 --> 00:07:43.910 align:start position:0%
+time bases. Got the rack local and uh,
+global<00:07:42.480><c> time</c><00:07:42.840><c> base.</c>
+
+00:07:43.910 --> 00:07:43.920 align:start position:0%
+global time base.
+ 
+
+00:07:43.920 --> 00:07:46.670 align:start position:0%
+global time base.
+So,<00:07:44.320><c> now</c><00:07:44.600><c> we're</c><00:07:44.720><c> going</c><00:07:44.920><c> to</c><00:07:45.040><c> talk</c><00:07:45.360><c> about</c>
+
+00:07:46.670 --> 00:07:46.680 align:start position:0%
+So, now we're going to talk about
+ 
+
+00:07:46.680 --> 00:07:49.990 align:start position:0%
+So, now we're going to talk about
+reliability.<00:07:48.080><c> And</c><00:07:48.640><c> so,</c><00:07:48.800><c> we're</c><00:07:48.960><c> proposing</c>
+
+00:07:49.990 --> 00:07:50.000 align:start position:0%
+reliability. And so, we're proposing
+ 
+
+00:07:50.000 --> 00:07:51.790 align:start position:0%
+reliability. And so, we're proposing
+that
+
+00:07:51.790 --> 00:07:51.800 align:start position:0%
+that
+ 
+
+00:07:51.800 --> 00:07:53.630 align:start position:0%
+that
+I've<00:07:51.920><c> talked</c><00:07:52.160><c> about</c><00:07:52.520><c> the</c>
+
+00:07:53.630 --> 00:07:53.640 align:start position:0%
+I've talked about the
+ 
+
+00:07:53.640 --> 00:07:58.030 align:start position:0%
+I've talked about the
+problems<00:07:54.160><c> with</c><00:07:54.800><c> BMCA</c><00:07:55.520><c> PTCA.</c><00:07:56.760><c> So,</c><00:07:57.680><c> what</c><00:07:57.840><c> we</c>
+
+00:07:58.030 --> 00:07:58.040 align:start position:0%
+problems with BMCA PTCA. So, what we
+ 
+
+00:07:58.040 --> 00:08:01.990 align:start position:0%
+problems with BMCA PTCA. So, what we
+propose<00:07:58.560><c> is</c><00:07:58.800><c> using</c><00:07:59.200><c> hot</c><00:07:59.480><c> standby.</c><00:08:00.800><c> And</c>
+
+00:08:01.990 --> 00:08:02.000 align:start position:0%
+propose is using hot standby. And
+ 
+
+00:08:02.000 --> 00:08:05.510 align:start position:0%
+propose is using hot standby. And
+the<00:08:02.480><c> basic</c><00:08:02.880><c> idea</c><00:08:03.200><c> here</c><00:08:03.640><c> is</c><00:08:03.960><c> that</c><00:08:04.880><c> we</c><00:08:05.200><c> are</c>
+
+00:08:05.510 --> 00:08:05.520 align:start position:0%
+the basic idea here is that we are
+ 
+
+00:08:05.520 --> 00:08:08.550 align:start position:0%
+the basic idea here is that we are
+synchronized<00:08:06.240><c> to</c><00:08:06.360><c> multiple</c><00:08:07.320><c> times</c><00:08:08.160><c> multiple</c>
+
+00:08:08.550 --> 00:08:08.560 align:start position:0%
+synchronized to multiple times multiple
+ 
+
+00:08:08.560 --> 00:08:09.710 align:start position:0%
+synchronized to multiple times multiple
+GMs
+
+00:08:09.710 --> 00:08:09.720 align:start position:0%
+GMs
+ 
+
+00:08:09.720 --> 00:08:13.790 align:start position:0%
+GMs
+at<00:08:10.240><c> the</c><00:08:10.320><c> same</c><00:08:10.640><c> time</c><00:08:11.360><c> and</c><00:08:11.800><c> we</c><00:08:12.000><c> can</c><00:08:12.520><c> seamlessly</c>
+
+00:08:13.790 --> 00:08:13.800 align:start position:0%
+at the same time and we can seamlessly
+ 
+
+00:08:13.800 --> 00:08:15.190 align:start position:0%
+at the same time and we can seamlessly
+and<00:08:13.960><c> immediately</c>
+
+00:08:15.190 --> 00:08:15.200 align:start position:0%
+and immediately
+ 
+
+00:08:15.200 --> 00:08:19.670 align:start position:0%
+and immediately
+switch<00:08:15.800><c> over</c><00:08:16.240><c> to</c><00:08:16.760><c> another</c><00:08:17.120><c> time</c><00:08:17.400><c> source</c><00:08:17.919><c> when</c>
+
+00:08:19.670 --> 00:08:19.680 align:start position:0%
+switch over to another time source when
+ 
+
+00:08:19.680 --> 00:08:21.550 align:start position:0%
+switch over to another time source when
+when<00:08:19.800><c> the</c><00:08:19.880><c> primary</c><00:08:20.400><c> time</c><00:08:20.680><c> source</c><00:08:21.000><c> goes</c>
+
+00:08:21.550 --> 00:08:21.560 align:start position:0%
+when the primary time source goes
+ 
+
+00:08:21.560 --> 00:08:23.550 align:start position:0%
+when the primary time source goes
+primary<00:08:21.960><c> GM</c><00:08:22.240><c> goes</c><00:08:22.480><c> away.</c>
+
+00:08:23.550 --> 00:08:23.560 align:start position:0%
+primary GM goes away.
+ 
+
+00:08:23.560 --> 00:08:27.150 align:start position:0%
+primary GM goes away.
+And<00:08:24.240><c> there's</c><00:08:24.560><c> a</c><00:08:24.600><c> couple</c><00:08:24.960><c> of</c><00:08:25.080><c> ways</c><00:08:26.160><c> um</c>
+
+00:08:27.150 --> 00:08:27.160 align:start position:0%
+And there's a couple of ways um
+ 
+
+00:08:27.160 --> 00:08:29.310 align:start position:0%
+And there's a couple of ways um
+that<00:08:27.280><c> we</c><00:08:27.440><c> see</c><00:08:28.240><c> implementing</c><00:08:28.880><c> this</c><00:08:29.080><c> hot</c>
+
+00:08:29.310 --> 00:08:29.320 align:start position:0%
+that we see implementing this hot
+ 
+
+00:08:29.320 --> 00:08:30.590 align:start position:0%
+that we see implementing this hot
+standby.
+
+00:08:30.590 --> 00:08:30.600 align:start position:0%
+standby.
+ 
+
+00:08:30.600 --> 00:08:33.630 align:start position:0%
+standby.
+So,<00:08:31.280><c> there's</c><00:08:31.560><c> one</c><00:08:32.200><c> that's</c><00:08:32.520><c> the</c>
+
+00:08:33.630 --> 00:08:33.640 align:start position:0%
+So, there's one that's the
+ 
+
+00:08:33.640 --> 00:08:36.350 align:start position:0%
+So, there's one that's the
+we<00:08:33.760><c> do</c><00:08:33.919><c> this</c><00:08:34.159><c> on</c><00:08:34.280><c> the</c><00:08:34.400><c> host.</c><00:08:35.280><c> So,</c>
+
+00:08:36.350 --> 00:08:36.360 align:start position:0%
+we do this on the host. So,
+ 
+
+00:08:36.360 --> 00:08:37.790 align:start position:0%
+we do this on the host. So,
+we'll
+
+00:08:37.790 --> 00:08:37.800 align:start position:0%
+we'll
+ 
+
+00:08:37.800 --> 00:08:40.430 align:start position:0%
+we'll
+talk<00:08:38.039><c> a</c><00:08:38.120><c> little</c><00:08:38.719><c> little</c><00:08:38.960><c> bit</c><00:08:39.479><c> more</c><00:08:39.760><c> about</c><00:08:40.320><c> a</c>
+
+00:08:40.430 --> 00:08:40.440 align:start position:0%
+talk a little little bit more about a
+ 
+
+00:08:40.440 --> 00:08:42.350 align:start position:0%
+talk a little little bit more about a
+clock<00:08:40.800><c> manager.</c><00:08:41.200><c> That's</c><00:08:41.520><c> something</c><00:08:42.120><c> that</c>
+
+00:08:42.350 --> 00:08:42.360 align:start position:0%
+clock manager. That's something that
+ 
+
+00:08:42.360 --> 00:08:44.630 align:start position:0%
+clock manager. That's something that
+we're<00:08:42.479><c> working</c><00:08:42.880><c> on.</c>
+
+00:08:44.630 --> 00:08:44.640 align:start position:0%
+we're working on.
+ 
+
+00:08:44.640 --> 00:08:47.870 align:start position:0%
+we're working on.
+And<00:08:45.080><c> that's</c><00:08:45.680><c> that's</c><00:08:45.920><c> something</c><00:08:46.440><c> that</c>
+
+00:08:47.870 --> 00:08:47.880 align:start position:0%
+And that's that's something that
+ 
+
+00:08:47.880 --> 00:08:50.950 align:start position:0%
+And that's that's something that
+we<00:08:48.000><c> can</c><00:08:48.160><c> use</c><00:08:48.520><c> to</c><00:08:48.880><c> switch</c><00:08:49.720><c> between</c><00:08:50.200><c> the</c><00:08:50.280><c> primary</c>
+
+00:08:50.950 --> 00:08:50.960 align:start position:0%
+we can use to switch between the primary
+ 
+
+00:08:50.960 --> 00:08:56.030 align:start position:0%
+we can use to switch between the primary
+and<00:08:51.320><c> the</c><00:08:51.480><c> secondary</c><00:08:52.080><c> clock</c><00:08:53.040><c> on</c><00:08:53.240><c> the</c><00:08:53.360><c> host.</c>
+
+00:08:56.030 --> 00:08:56.040 align:start position:0%
+ 
+ 
+
+00:08:56.040 --> 00:08:57.110 align:start position:0%
+ 
+There's
+
+00:08:57.110 --> 00:08:57.120 align:start position:0%
+There's
+ 
+
+00:08:57.120 --> 00:08:59.150 align:start position:0%
+There's
+and<00:08:57.480><c> we</c><00:08:57.640><c> propose</c><00:08:58.000><c> there's</c><00:08:58.280><c> another</c><00:08:58.640><c> way</c><00:08:58.839><c> to</c><00:08:59.000><c> do</c>
+
+00:08:59.150 --> 00:08:59.160 align:start position:0%
+and we propose there's another way to do
+ 
+
+00:08:59.160 --> 00:09:02.510 align:start position:0%
+and we propose there's another way to do
+this<00:08:59.400><c> also</c><00:09:00.280><c> where</c><00:09:00.880><c> the</c><00:09:01.080><c> endpoint</c><00:09:01.800><c> is</c><00:09:02.000><c> actually</c>
+
+00:09:02.510 --> 00:09:02.520 align:start position:0%
+this also where the endpoint is actually
+ 
+
+00:09:02.520 --> 00:09:04.350 align:start position:0%
+this also where the endpoint is actually
+on<00:09:03.200><c> the</c><00:09:03.320><c> nick.</c>
+
+00:09:04.350 --> 00:09:04.360 align:start position:0%
+on the nick.
+ 
+
+00:09:04.360 --> 00:09:08.270 align:start position:0%
+on the nick.
+And<00:09:04.880><c> in</c><00:09:04.960><c> this</c><00:09:05.160><c> case,</c><00:09:05.560><c> all</c><00:09:05.760><c> of</c><00:09:05.839><c> the</c><00:09:05.960><c> redundancy</c>
+
+00:09:08.270 --> 00:09:08.280 align:start position:0%
+And in this case, all of the redundancy
+ 
+
+00:09:08.280 --> 00:09:11.430 align:start position:0%
+And in this case, all of the redundancy
+the<00:09:08.520><c> other</c><00:09:08.760><c> clock</c><00:09:09.080><c> manager</c><00:09:10.080><c> redundancy</c>
+
+00:09:11.430 --> 00:09:11.440 align:start position:0%
+the other clock manager redundancy
+ 
+
+00:09:11.440 --> 00:09:15.030 align:start position:0%
+the other clock manager redundancy
+algorithms<00:09:12.440><c> are</c><00:09:12.640><c> actually</c><00:09:13.280><c> on</c><00:09:14.000><c> the</c>
+
+00:09:15.030 --> 00:09:15.040 align:start position:0%
+algorithms are actually on the
+ 
+
+00:09:15.040 --> 00:09:18.870 align:start position:0%
+algorithms are actually on the
+on<00:09:15.160><c> the</c><00:09:15.480><c> on</c><00:09:15.600><c> the</c><00:09:15.720><c> nick</c><00:09:15.920><c> itself</c><00:09:16.839><c> and</c>
+
+00:09:18.870 --> 00:09:18.880 align:start position:0%
+on the on the nick itself and
+ 
+
+00:09:18.880 --> 00:09:22.590 align:start position:0%
+on the on the nick itself and
+we
+
+00:09:22.590 --> 00:09:22.600 align:start position:0%
+ 
+ 
+
+00:09:22.600 --> 00:09:25.470 align:start position:0%
+ 
+And<00:09:22.920><c> basically,</c><00:09:23.440><c> we</c><00:09:23.920><c> we</c><00:09:24.040><c> move</c><00:09:24.480><c> all</c><00:09:24.680><c> that</c>
+
+00:09:25.470 --> 00:09:25.480 align:start position:0%
+And basically, we we move all that
+ 
+
+00:09:25.480 --> 00:09:29.430 align:start position:0%
+And basically, we we move all that
+complexity<00:09:26.480><c> from</c><00:09:26.680><c> the</c><00:09:26.800><c> host</c><00:09:27.520><c> to</c><00:09:27.720><c> the</c><00:09:27.800><c> nick.</c>
+
+00:09:29.430 --> 00:09:29.440 align:start position:0%
+complexity from the host to the nick.
+ 
+
+00:09:29.440 --> 00:09:32.310 align:start position:0%
+complexity from the host to the nick.
+And<00:09:29.880><c> so,</c><00:09:30.160><c> again,</c><00:09:30.520><c> let's</c><00:09:30.920><c> take</c><00:09:31.120><c> a</c><00:09:31.200><c> look</c><00:09:31.480><c> at</c><00:09:32.120><c> what</c>
+
+00:09:32.310 --> 00:09:32.320 align:start position:0%
+And so, again, let's take a look at what
+ 
+
+00:09:32.320 --> 00:09:34.630 align:start position:0%
+And so, again, let's take a look at what
+that<00:09:33.120><c> looks</c><00:09:33.480><c> at</c><00:09:33.720><c> a</c>
+
+00:09:34.630 --> 00:09:34.640 align:start position:0%
+that looks at a
+ 
+
+00:09:34.640 --> 00:09:37.110 align:start position:0%
+that looks at a
+at<00:09:34.760><c> a</c><00:09:34.800><c> system</c><00:09:35.480><c> system</c><00:09:35.920><c> level.</c>
+
+00:09:37.110 --> 00:09:37.120 align:start position:0%
+at a system system level.
+ 
+
+00:09:37.120 --> 00:09:39.990 align:start position:0%
+at a system system level.
+So,<00:09:37.480><c> we'll</c><00:09:37.680><c> start</c><00:09:38.760><c> uh</c><00:09:39.040><c> uh</c>
+
+00:09:39.990 --> 00:09:40.000 align:start position:0%
+So, we'll start uh uh
+ 
+
+00:09:40.000 --> 00:09:42.270 align:start position:0%
+So, we'll start uh uh
+start<00:09:40.240><c> with</c><00:09:40.440><c> the</c><00:09:41.040><c> the</c><00:09:41.120><c> most</c><00:09:41.360><c> basic</c><00:09:41.920><c> P2P</c>
+
+00:09:42.270 --> 00:09:42.280 align:start position:0%
+start with the the most basic P2P
+ 
+
+00:09:42.280 --> 00:09:46.150 align:start position:0%
+start with the the most basic P2P
+configuration,<00:09:43.560><c> single</c><00:09:44.200><c> single</c><00:09:44.520><c> GN,</c><00:09:45.160><c> single</c>
+
+00:09:46.150 --> 00:09:46.160 align:start position:0%
+configuration, single single GN, single
+ 
+
+00:09:46.160 --> 00:09:48.630 align:start position:0%
+configuration, single single GN, single
+single<00:09:46.480><c> time</c><00:09:46.720><c> base.</c>
+
+00:09:48.630 --> 00:09:48.640 align:start position:0%
+single time base.
+ 
+
+00:09:48.640 --> 00:09:49.750 align:start position:0%
+single time base.
+And
+
+00:09:49.750 --> 00:09:49.760 align:start position:0%
+And
+ 
+
+00:09:49.760 --> 00:09:52.790 align:start position:0%
+And
+so,<00:09:50.320><c> what</c><00:09:50.480><c> redundancy</c><00:09:51.120><c> looks</c><00:09:51.400><c> like</c><00:09:52.000><c> again,</c>
+
+00:09:52.790 --> 00:09:52.800 align:start position:0%
+so, what redundancy looks like again,
+ 
+
+00:09:52.800 --> 00:09:54.870 align:start position:0%
+so, what redundancy looks like again,
+we're<00:09:52.960><c> using</c><00:09:53.320><c> V</c><00:09:53.480><c> clocks.</c><00:09:54.080><c> We're</c><00:09:54.240><c> using</c><00:09:54.560><c> them</c>
+
+00:09:54.870 --> 00:09:54.880 align:start position:0%
+we're using V clocks. We're using them
+ 
+
+00:09:54.880 --> 00:09:57.750 align:start position:0%
+we're using V clocks. We're using them
+differently<00:09:55.480><c> here</c><00:09:56.160><c> because</c><00:09:56.360><c> we</c><00:09:56.480><c> have</c><00:09:57.240><c> two</c><00:09:57.560><c> V</c>
+
+00:09:57.750 --> 00:09:57.760 align:start position:0%
+differently here because we have two V
+ 
+
+00:09:57.760 --> 00:09:59.830 align:start position:0%
+differently here because we have two V
+clocks,<00:09:58.320><c> one</c><00:09:58.640><c> that</c><00:09:58.920><c> would</c><00:09:59.080><c> represent</c><00:09:59.560><c> say</c><00:09:59.720><c> the</c>
+
+00:09:59.830 --> 00:09:59.840 align:start position:0%
+clocks, one that would represent say the
+ 
+
+00:09:59.840 --> 00:10:02.270 align:start position:0%
+clocks, one that would represent say the
+primary<00:10:00.280><c> time</c><00:10:00.560><c> source,</c><00:10:01.280><c> one</c><00:10:01.480><c> that</c><00:10:01.640><c> represents</c>
+
+00:10:02.270 --> 00:10:02.280 align:start position:0%
+primary time source, one that represents
+ 
+
+00:10:02.280 --> 00:10:04.510 align:start position:0%
+primary time source, one that represents
+the<00:10:02.400><c> secondary</c><00:10:03.040><c> time</c><00:10:03.320><c> source.</c>
+
+00:10:04.510 --> 00:10:04.520 align:start position:0%
+the secondary time source.
+ 
+
+00:10:04.520 --> 00:10:06.350 align:start position:0%
+the secondary time source.
+Um
+
+00:10:06.350 --> 00:10:06.360 align:start position:0%
+Um
+ 
+
+00:10:06.360 --> 00:10:07.390 align:start position:0%
+Um
+So,
+
+00:10:07.390 --> 00:10:07.400 align:start position:0%
+So,
+ 
+
+00:10:07.400 --> 00:10:09.510 align:start position:0%
+So,
+uh
+
+00:10:09.510 --> 00:10:09.520 align:start position:0%
+ 
+ 
+
+00:10:09.520 --> 00:10:11.110 align:start position:0%
+ 
+And<00:10:09.760><c> and</c><00:10:10.080><c> and</c><00:10:10.200><c> basically</c><00:10:10.560><c> there's</c><00:10:10.920><c> there's</c>
+
+00:10:11.110 --> 00:10:11.120 align:start position:0%
+And and and basically there's there's
+ 
+
+00:10:11.120 --> 00:10:13.470 align:start position:0%
+And and and basically there's there's
+some<00:10:11.240><c> software</c><00:10:11.760><c> logic</c><00:10:12.160><c> again.</c><00:10:12.680><c> This</c><00:10:12.960><c> is</c>
+
+00:10:13.470 --> 00:10:13.480 align:start position:0%
+some software logic again. This is
+ 
+
+00:10:13.480 --> 00:10:15.710 align:start position:0%
+some software logic again. This is
+something<00:10:13.880><c> with</c><00:10:14.560><c> something</c><00:10:15.440><c> that</c><00:10:15.600><c> we're</c>
+
+00:10:15.710 --> 00:10:15.720 align:start position:0%
+something with something that we're
+ 
+
+00:10:15.720 --> 00:10:18.550 align:start position:0%
+something with something that we're
+developing<00:10:16.400><c> in</c><00:10:16.640><c> the</c><00:10:17.040><c> the</c><00:10:17.120><c> clock</c><00:10:17.480><c> manager</c>
+
+00:10:18.550 --> 00:10:18.560 align:start position:0%
+developing in the the clock manager
+ 
+
+00:10:18.560 --> 00:10:22.510 align:start position:0%
+developing in the the clock manager
+software.<00:10:19.760><c> And</c><00:10:20.200><c> so,</c><00:10:20.520><c> it's</c><00:10:21.320><c> determines</c><00:10:21.840><c> when</c>
+
+00:10:22.510 --> 00:10:22.520 align:start position:0%
+software. And so, it's determines when
+ 
+
+00:10:22.520 --> 00:10:24.790 align:start position:0%
+software. And so, it's determines when
+one<00:10:22.760><c> of</c><00:10:22.880><c> the</c><00:10:23.040><c> And</c><00:10:23.160><c> this</c><00:10:23.320><c> is</c><00:10:23.560><c> all</c><00:10:23.880><c> at</c><00:10:24.120><c> the</c><00:10:24.480><c> all</c><00:10:24.680><c> at</c>
+
+00:10:24.790 --> 00:10:24.800 align:start position:0%
+one of the And this is all at the all at
+ 
+
+00:10:24.800 --> 00:10:27.350 align:start position:0%
+one of the And this is all at the all at
+the<00:10:24.920><c> system</c><00:10:25.320><c> level.</c><00:10:25.680><c> So,</c><00:10:26.000><c> looking</c><00:10:26.480><c> at</c><00:10:27.080><c> the</c><00:10:27.160><c> V</c>
+
+00:10:27.350 --> 00:10:27.360 align:start position:0%
+the system level. So, looking at the V
+ 
+
+00:10:27.360 --> 00:10:30.150 align:start position:0%
+the system level. So, looking at the V
+clock<00:10:27.840><c> and</c><00:10:27.960><c> the</c><00:10:28.040><c> state</c><00:10:28.640><c> of</c><00:10:28.880><c> P2P</c><00:10:29.240><c> for</c><00:10:29.480><c> L</c>
+
+00:10:30.150 --> 00:10:30.160 align:start position:0%
+clock and the state of P2P for L
+ 
+
+00:10:30.160 --> 00:10:31.870 align:start position:0%
+clock and the state of P2P for L
+determines
+
+00:10:31.870 --> 00:10:31.880 align:start position:0%
+determines
+ 
+
+00:10:31.880 --> 00:10:35.470 align:start position:0%
+determines
+whether<00:10:32.240><c> the</c><00:10:32.400><c> primary</c><00:10:33.640><c> source</c><00:10:34.200><c> is</c><00:10:34.800><c> still</c>
+
+00:10:35.470 --> 00:10:35.480 align:start position:0%
+whether the primary source is still
+ 
+
+00:10:35.480 --> 00:10:38.710 align:start position:0%
+whether the primary source is still
+alive<00:10:36.200><c> and</c><00:10:36.360><c> accurate.</c><00:10:37.160><c> And</c><00:10:37.800><c> if</c><00:10:37.920><c> it</c><00:10:38.040><c> isn't,</c>
+
+00:10:38.710 --> 00:10:38.720 align:start position:0%
+alive and accurate. And if it isn't,
+ 
+
+00:10:38.720 --> 00:10:40.350 align:start position:0%
+alive and accurate. And if it isn't,
+then<00:10:38.920><c> we</c><00:10:39.040><c> switch</c><00:10:39.400><c> to</c><00:10:39.480><c> the</c><00:10:39.560><c> secondary</c><00:10:40.080><c> time</c>
+
+00:10:40.350 --> 00:10:40.360 align:start position:0%
+then we switch to the secondary time
+ 
+
+00:10:40.360 --> 00:10:42.270 align:start position:0%
+then we switch to the secondary time
+source.
+
+00:10:42.270 --> 00:10:42.280 align:start position:0%
+source.
+ 
+
+00:10:42.280 --> 00:10:46.070 align:start position:0%
+source.
+So,<00:10:43.080><c> and</c><00:10:43.280><c> this</c><00:10:43.640><c> redundancy</c><00:10:44.360><c> can</c><00:10:44.520><c> also</c><00:10:45.000><c> be</c><00:10:45.240><c> used</c>
+
+00:10:46.070 --> 00:10:46.080 align:start position:0%
+So, and this redundancy can also be used
+ 
+
+00:10:46.080 --> 00:10:49.390 align:start position:0%
+So, and this redundancy can also be used
+along<00:10:46.520><c> with</c><00:10:47.080><c> our</c><00:10:47.240><c> multiple</c><00:10:47.680><c> time</c><00:10:47.960><c> bases.</c><00:10:48.640><c> So,</c>
+
+00:10:49.390 --> 00:10:49.400 align:start position:0%
+along with our multiple time bases. So,
+ 
+
+00:10:49.400 --> 00:10:51.190 align:start position:0%
+along with our multiple time bases. So,
+this<00:10:49.560><c> is</c><00:10:49.760><c> sort</c><00:10:50.080><c> of</c>
+
+00:10:51.190 --> 00:10:51.200 align:start position:0%
+this is sort of
+ 
+
+00:10:51.200 --> 00:10:54.470 align:start position:0%
+this is sort of
+the<00:10:51.280><c> complete</c><00:10:51.800><c> picture</c><00:10:52.640><c> where</c><00:10:52.960><c> we</c><00:10:53.160><c> have</c>
+
+00:10:54.470 --> 00:10:54.480 align:start position:0%
+the complete picture where we have
+ 
+
+00:10:54.480 --> 00:10:57.310 align:start position:0%
+the complete picture where we have
+redundant<00:10:55.280><c> global</c><00:10:55.880><c> and</c><00:10:56.360><c> rack</c><00:10:56.680><c> local</c><00:10:57.040><c> time</c>
+
+00:10:57.310 --> 00:10:57.320 align:start position:0%
+redundant global and rack local time
+ 
+
+00:10:57.320 --> 00:11:01.510 align:start position:0%
+redundant global and rack local time
+bases.
+
+00:11:01.510 --> 00:11:01.520 align:start position:0%
+ 
+ 
+
+00:11:01.520 --> 00:11:04.990 align:start position:0%
+ 
+And<00:11:02.360><c> at</c><00:11:02.560><c> virtualization,</c><00:11:03.960><c> and</c>
+
+00:11:04.990 --> 00:11:05.000 align:start position:0%
+And at virtualization, and
+ 
+
+00:11:05.000 --> 00:11:07.990 align:start position:0%
+And at virtualization, and
+basic<00:11:05.520><c> basically</c><00:11:06.520><c> the</c><00:11:06.640><c> virtualization</c><00:11:07.440><c> works</c>
+
+00:11:07.990 --> 00:11:08.000 align:start position:0%
+basic basically the virtualization works
+ 
+
+00:11:08.000 --> 00:11:10.110 align:start position:0%
+basic basically the virtualization works
+the<00:11:08.080><c> same</c><00:11:08.400><c> way</c><00:11:08.760><c> as</c><00:11:09.000><c> well.</c>
+
+00:11:10.110 --> 00:11:10.120 align:start position:0%
+the same way as well.
+ 
+
+00:11:10.120 --> 00:11:11.310 align:start position:0%
+the same way as well.
+So,
+
+00:11:11.310 --> 00:11:11.320 align:start position:0%
+So,
+ 
+
+00:11:11.320 --> 00:11:14.430 align:start position:0%
+So,
+now<00:11:11.880><c> we'll</c><00:11:12.040><c> go</c><00:11:12.240><c> to</c><00:11:12.440><c> the</c><00:11:12.839><c> the</c><00:11:13.000><c> second</c><00:11:13.920><c> our</c><00:11:14.280><c> our</c>
+
+00:11:14.430 --> 00:11:14.440 align:start position:0%
+now we'll go to the the second our our
+ 
+
+00:11:14.440 --> 00:11:17.430 align:start position:0%
+now we'll go to the the second our our
+second<00:11:14.839><c> box</c><00:11:15.600><c> where</c><00:11:16.000><c> we</c><00:11:16.280><c> offload</c><00:11:17.000><c> all</c><00:11:17.160><c> of</c><00:11:17.280><c> this</c>
+
+00:11:17.430 --> 00:11:17.440 align:start position:0%
+second box where we offload all of this
+ 
+
+00:11:17.440 --> 00:11:21.070 align:start position:0%
+second box where we offload all of this
+complexity<00:11:18.640><c> to</c><00:11:18.960><c> the</c><00:11:19.240><c> network</c><00:11:19.640><c> card</c><00:11:19.960><c> itself.</c>
+
+00:11:21.070 --> 00:11:21.080 align:start position:0%
+complexity to the network card itself.
+ 
+
+00:11:21.080 --> 00:11:22.590 align:start position:0%
+complexity to the network card itself.
+So,
+
+00:11:22.590 --> 00:11:22.600 align:start position:0%
+So,
+ 
+
+00:11:22.600 --> 00:11:25.270 align:start position:0%
+So,
+in<00:11:22.720><c> this</c><00:11:23.280><c> in</c><00:11:23.400><c> this</c><00:11:23.560><c> case</c><00:11:24.160><c> again,</c><00:11:24.880><c> all</c><00:11:25.040><c> of</c><00:11:25.120><c> this</c>
+
+00:11:25.270 --> 00:11:25.280 align:start position:0%
+in this in this case again, all of this
+ 
+
+00:11:25.280 --> 00:11:28.470 align:start position:0%
+in this in this case again, all of this
+is<00:11:25.520><c> offloaded.</c><00:11:26.320><c> And</c><00:11:26.480><c> now</c><00:11:27.000><c> all</c><00:11:27.240><c> of</c><00:11:27.280><c> that</c><00:11:27.520><c> detail</c>
+
+00:11:28.470 --> 00:11:28.480 align:start position:0%
+is offloaded. And now all of that detail
+ 
+
+00:11:28.480 --> 00:11:29.829 align:start position:0%
+is offloaded. And now all of that detail
+is
+
+00:11:29.829 --> 00:11:29.839 align:start position:0%
+is
+ 
+
+00:11:29.839 --> 00:11:33.110 align:start position:0%
+is
+invisible<00:11:30.480><c> to</c><00:11:30.680><c> the</c><00:11:30.800><c> host.</c><00:11:31.840><c> So,</c><00:11:32.560><c> uh</c><00:11:32.640><c> we</c><00:11:32.760><c> just</c>
+
+00:11:33.110 --> 00:11:33.120 align:start position:0%
+invisible to the host. So, uh we just
+ 
+
+00:11:33.120 --> 00:11:36.870 align:start position:0%
+invisible to the host. So, uh we just
+have<00:11:33.800><c> a</c><00:11:34.480><c> a</c><00:11:34.560><c> pH</c><00:11:35.360><c> So,</c><00:11:35.480><c> we</c><00:11:35.600><c> would</c><00:11:35.800><c> have</c><00:11:36.280><c> at</c><00:11:36.640><c> at</c><00:11:36.720><c> this</c>
+
+00:11:36.870 --> 00:11:36.880 align:start position:0%
+have a a pH So, we would have at at this
+ 
+
+00:11:36.880 --> 00:11:40.230 align:start position:0%
+have a a pH So, we would have at at this
+point<00:11:37.120><c> multiple</c><00:11:37.600><c> PHCs,</c><00:11:38.400><c> one</c><00:11:38.840><c> for</c><00:11:39.680><c> uh</c><00:11:39.880><c> one</c><00:11:40.080><c> for</c>
+
+00:11:40.230 --> 00:11:40.240 align:start position:0%
+point multiple PHCs, one for uh one for
+ 
+
+00:11:40.240 --> 00:11:42.950 align:start position:0%
+point multiple PHCs, one for uh one for
+each<00:11:40.440><c> time</c><00:11:40.720><c> base.</c><00:11:41.640><c> Uh</c><00:11:41.920><c> there</c><00:11:42.400><c> there's</c><00:11:42.600><c> no</c><00:11:42.800><c> P</c>
+
+00:11:42.950 --> 00:11:42.960 align:start position:0%
+each time base. Uh there there's no P
+ 
+
+00:11:42.960 --> 00:11:44.710 align:start position:0%
+each time base. Uh there there's no P
+clocks.<00:11:43.920><c> Um</c>
+
+00:11:44.710 --> 00:11:44.720 align:start position:0%
+clocks. Um
+ 
+
+00:11:44.720 --> 00:11:47.470 align:start position:0%
+clocks. Um
+all<00:11:44.880><c> of</c><00:11:45.000><c> that</c><00:11:45.640><c> is</c><00:11:45.800><c> transparent.</c><00:11:46.520><c> The</c><00:11:46.880><c> the</c><00:11:47.000><c> time</c>
+
+00:11:47.470 --> 00:11:47.480 align:start position:0%
+all of that is transparent. The the time
+ 
+
+00:11:47.480 --> 00:11:49.070 align:start position:0%
+all of that is transparent. The the time
+is<00:11:48.400><c> uh</c>
+
+00:11:49.070 --> 00:11:49.080 align:start position:0%
+is uh
+ 
+
+00:11:49.080 --> 00:11:51.470 align:start position:0%
+is uh
+it's<00:11:49.600><c> a</c><00:11:49.640><c> complete</c><00:11:50.000><c> endpoint</c><00:11:50.680><c> on</c><00:11:51.000><c> on</c><00:11:51.160><c> the</c><00:11:51.240><c> NIC</c>
+
+00:11:51.470 --> 00:11:51.480 align:start position:0%
+it's a complete endpoint on on the NIC
+ 
+
+00:11:51.480 --> 00:11:53.750 align:start position:0%
+it's a complete endpoint on on the NIC
+card.<00:11:52.360><c> And</c><00:11:52.520><c> again,</c>
+
+00:11:53.750 --> 00:11:53.760 align:start position:0%
+card. And again,
+ 
+
+00:11:53.760 --> 00:11:56.350 align:start position:0%
+card. And again,
+uh<00:11:53.840><c> we</c><00:11:54.000><c> can</c><00:11:54.200><c> support</c><00:11:54.600><c> virtualization.</c><00:11:56.040><c> We</c>
+
+00:11:56.350 --> 00:11:56.360 align:start position:0%
+uh we can support virtualization. We
+ 
+
+00:11:56.360 --> 00:11:58.870 align:start position:0%
+uh we can support virtualization. We
+have<00:11:56.800><c> uh</c><00:11:56.960><c> we</c><00:11:57.120><c> have</c><00:11:57.280><c> more</c><00:11:57.560><c> options</c><00:11:58.000><c> here.</c><00:11:58.360><c> We</c><00:11:58.760><c> we</c>
+
+00:11:58.870 --> 00:11:58.880 align:start position:0%
+have uh we have more options here. We we
+ 
+
+00:11:58.880 --> 00:12:01.350 align:start position:0%
+have uh we have more options here. We we
+don't<00:11:59.160><c> have</c><00:11:59.520><c> to</c>
+
+00:12:01.350 --> 00:12:01.360 align:start position:0%
+don't have to
+ 
+
+00:12:01.360 --> 00:12:03.030 align:start position:0%
+don't have to
+we<00:12:01.480><c> don't</c><00:12:01.640><c> have</c><00:12:01.760><c> to</c><00:12:01.880><c> share</c><00:12:02.200><c> the</c><00:12:02.360><c> time</c><00:12:02.720><c> within</c>
+
+00:12:03.030 --> 00:12:03.040 align:start position:0%
+we don't have to share the time within
+ 
+
+00:12:03.040 --> 00:12:05.630 align:start position:0%
+we don't have to share the time within
+the<00:12:03.120><c> platform.</c><00:12:04.320><c> A</c><00:12:04.960><c> uh</c>
+
+00:12:05.630 --> 00:12:05.640 align:start position:0%
+the platform. A uh
+ 
+
+00:12:05.640 --> 00:12:07.270 align:start position:0%
+the platform. A uh
+non-privileged
+
+00:12:07.270 --> 00:12:07.280 align:start position:0%
+non-privileged
+ 
+
+00:12:07.280 --> 00:12:10.990 align:start position:0%
+non-privileged
+VM<00:12:08.080><c> can</c><00:12:08.680><c> directly</c><00:12:09.640><c> pull</c><00:12:09.880><c> the</c><00:12:10.040><c> time</c><00:12:10.640><c> from</c><00:12:10.880><c> the</c>
+
+00:12:10.990 --> 00:12:11.000 align:start position:0%
+VM can directly pull the time from the
+ 
+
+00:12:11.000 --> 00:12:13.990 align:start position:0%
+VM can directly pull the time from the
+NIC<00:12:11.240><c> card</c><00:12:11.800><c> in</c><00:12:11.880><c> this</c><00:12:12.040><c> case.</c>
+
+00:12:13.990 --> 00:12:14.000 align:start position:0%
+NIC card in this case.
+ 
+
+00:12:14.000 --> 00:12:17.110 align:start position:0%
+NIC card in this case.
+So,<00:12:14.520><c> uh</c><00:12:15.000><c> so</c><00:12:15.080><c> basically</c><00:12:15.600><c> all</c><00:12:15.960><c> all</c><00:12:16.240><c> of</c><00:12:16.320><c> the</c><00:12:16.960><c> all</c>
+
+00:12:17.110 --> 00:12:17.120 align:start position:0%
+So, uh so basically all all of the all
+ 
+
+00:12:17.120 --> 00:12:19.110 align:start position:0%
+So, uh so basically all all of the all
+of<00:12:17.200><c> the</c><00:12:17.240><c> stuff</c><00:12:17.480><c> that</c><00:12:17.600><c> we</c><00:12:17.680><c> talked</c><00:12:17.960><c> about</c><00:12:18.240><c> before</c>
+
+00:12:19.110 --> 00:12:19.120 align:start position:0%
+of the stuff that we talked about before
+ 
+
+00:12:19.120 --> 00:12:21.670 align:start position:0%
+of the stuff that we talked about before
+that<00:12:19.240><c> was</c><00:12:19.440><c> on</c><00:12:19.920><c> on</c><00:12:20.080><c> the</c><00:12:20.200><c> NIC,</c><00:12:20.760><c> you</c><00:12:20.840><c> know,</c><00:12:21.000><c> with</c>
+
+00:12:21.670 --> 00:12:21.680 align:start position:0%
+that was on on the NIC, you know, with
+ 
+
+00:12:21.680 --> 00:12:23.190 align:start position:0%
+that was on on the NIC, you know, with
+I'm<00:12:21.800><c> sorry,</c><00:12:22.080><c> on</c><00:12:22.200><c> the</c><00:12:22.280><c> host</c><00:12:22.720><c> with</c>
+
+00:12:23.190 --> 00:12:23.200 align:start position:0%
+I'm sorry, on the host with
+ 
+
+00:12:23.200 --> 00:12:26.870 align:start position:0%
+I'm sorry, on the host with
+virtualization<00:12:24.600><c> and</c><00:12:25.280><c> uh</c><00:12:25.440><c> redundancy,</c>
+
+00:12:26.870 --> 00:12:26.880 align:start position:0%
+virtualization and uh redundancy,
+ 
+
+00:12:26.880 --> 00:12:29.430 align:start position:0%
+virtualization and uh redundancy,
+um<00:12:27.000><c> all</c><00:12:27.240><c> that</c><00:12:27.680><c> is</c><00:12:28.000><c> pushed</c><00:12:28.280><c> down</c><00:12:28.560><c> into</c><00:12:28.800><c> the</c><00:12:28.920><c> NIC</c>
+
+00:12:29.430 --> 00:12:29.440 align:start position:0%
+um all that is pushed down into the NIC
+ 
+
+00:12:29.440 --> 00:12:33.670 align:start position:0%
+um all that is pushed down into the NIC
+and<00:12:30.280><c> uh</c><00:12:30.640><c> not</c><00:12:31.520><c> um</c>
+
+00:12:33.670 --> 00:12:33.680 align:start position:0%
+and uh not um
+ 
+
+00:12:33.680 --> 00:12:34.230 align:start position:0%
+and uh not um
+uh
+
+00:12:34.230 --> 00:12:34.240 align:start position:0%
+uh
+ 
+
+00:12:34.240 --> 00:12:35.430 align:start position:0%
+uh
+and<00:12:34.880><c> uh</c>
+
+00:12:35.430 --> 00:12:35.440 align:start position:0%
+and uh
+ 
+
+00:12:35.440 --> 00:12:37.150 align:start position:0%
+and uh
+does<00:12:35.600><c> not</c><00:12:35.960><c> doesn't</c><00:12:36.200><c> require</c><00:12:36.520><c> any</c><00:12:36.680><c> support</c><00:12:37.040><c> on</c>
+
+00:12:37.150 --> 00:12:37.160 align:start position:0%
+does not doesn't require any support on
+ 
+
+00:12:37.160 --> 00:12:38.390 align:start position:0%
+does not doesn't require any support on
+the<00:12:37.240><c> host.</c>
+
+00:12:38.390 --> 00:12:38.400 align:start position:0%
+the host.
+ 
+
+00:12:38.400 --> 00:12:41.350 align:start position:0%
+the host.
+So,<00:12:38.880><c> um</c><00:12:39.320><c> and</c><00:12:39.440><c> again,</c><00:12:40.240><c> um</c>
+
+00:12:41.350 --> 00:12:41.360 align:start position:0%
+So, um and again, um
+ 
+
+00:12:41.360 --> 00:12:43.910 align:start position:0%
+So, um and again, um
+I'm<00:12:41.480><c> not</c><00:12:41.640><c> going</c><00:12:41.760><c> to</c><00:12:41.880><c> talk</c><00:12:42.120><c> a</c><00:12:42.160><c> lot</c><00:12:42.360><c> about</c><00:12:42.680><c> P</c><00:12:43.080><c> PTM,</c>
+
+00:12:43.910 --> 00:12:43.920 align:start position:0%
+I'm not going to talk a lot about P PTM,
+ 
+
+00:12:43.920 --> 00:12:45.630 align:start position:0%
+I'm not going to talk a lot about P PTM,
+but<00:12:44.120><c> PTM</c><00:12:44.960><c> uh</c>
+
+00:12:45.630 --> 00:12:45.640 align:start position:0%
+but PTM uh
+ 
+
+00:12:45.640 --> 00:12:48.630 align:start position:0%
+but PTM uh
+plays<00:12:46.040><c> a</c><00:12:46.160><c> big</c><00:12:46.800><c> uh</c><00:12:47.080><c> big</c><00:12:47.320><c> role</c><00:12:47.600><c> here</c>
+
+00:12:48.630 --> 00:12:48.640 align:start position:0%
+plays a big uh big role here
+ 
+
+00:12:48.640 --> 00:12:49.190 align:start position:0%
+plays a big uh big role here
+um
+
+00:12:49.190 --> 00:12:49.200 align:start position:0%
+um
+ 
+
+00:12:49.200 --> 00:12:51.790 align:start position:0%
+um
+in<00:12:49.440><c> the</c><00:12:49.720><c> accuracy</c><00:12:50.400><c> between,</c><00:12:51.480><c> you</c><00:12:51.560><c> know,</c>
+
+00:12:51.790 --> 00:12:51.800 align:start position:0%
+in the accuracy between, you know,
+ 
+
+00:12:51.800 --> 00:12:54.990 align:start position:0%
+in the accuracy between, you know,
+transferring<00:12:52.480><c> time</c><00:12:52.960><c> from</c><00:12:53.200><c> the</c><00:12:53.360><c> IPU</c><00:12:54.480><c> to</c><00:12:54.720><c> or</c><00:12:54.880><c> the</c>
+
+00:12:54.990 --> 00:12:55.000 align:start position:0%
+transferring time from the IPU to or the
+ 
+
+00:12:55.000 --> 00:12:59.110 align:start position:0%
+transferring time from the IPU to or the
+NIC<00:12:55.680><c> IPU</c><00:12:56.160><c> to</c><00:12:56.320><c> the</c><00:12:56.440><c> host.</c><00:12:57.360><c> Um</c><00:12:57.920><c> and</c><00:12:58.560><c> yeah,</c><00:12:59.000><c> I'm</c>
+
+00:12:59.110 --> 00:12:59.120 align:start position:0%
+NIC IPU to the host. Um and yeah, I'm
+ 
+
+00:12:59.120 --> 00:13:02.110 align:start position:0%
+NIC IPU to the host. Um and yeah, I'm
+I'm<00:12:59.480><c> I'm</c><00:12:59.680><c> glad</c><00:13:00.080><c> that</c><00:13:00.280><c> I've</c><00:13:00.800><c> heard</c><00:13:01.600><c> uh</c><00:13:01.720><c> PTM</c>
+
+00:13:02.110 --> 00:13:02.120 align:start position:0%
+I'm I'm glad that I've heard uh PTM
+ 
+
+00:13:02.120 --> 00:13:04.310 align:start position:0%
+I'm I'm glad that I've heard uh PTM
+mentioned<00:13:02.480><c> several</c><00:13:02.760><c> times</c><00:13:03.120><c> today.</c><00:13:03.440><c> It's</c><00:13:04.120><c> uh</c>
+
+00:13:04.310 --> 00:13:04.320 align:start position:0%
+mentioned several times today. It's uh
+ 
+
+00:13:04.320 --> 00:13:07.110 align:start position:0%
+mentioned several times today. It's uh
+it's<00:13:04.839><c> it's</c><00:13:04.960><c> good.</c>
+
+00:13:07.110 --> 00:13:07.120 align:start position:0%
+it's it's good.
+ 
+
+00:13:07.120 --> 00:13:09.790 align:start position:0%
+it's it's good.
+So,<00:13:07.880><c> um</c><00:13:08.040><c> yeah,</c><00:13:08.440><c> we</c><00:13:08.600><c> would</c><00:13:09.160><c> we</c><00:13:09.280><c> would</c><00:13:09.440><c> love</c><00:13:09.680><c> to</c>
+
+00:13:09.790 --> 00:13:09.800 align:start position:0%
+So, um yeah, we would we would love to
+ 
+
+00:13:09.800 --> 00:13:10.990 align:start position:0%
+So, um yeah, we would we would love to
+see<00:13:10.440><c> uh</c>
+
+00:13:10.990 --> 00:13:11.000 align:start position:0%
+see uh
+ 
+
+00:13:11.000 --> 00:13:14.950 align:start position:0%
+see uh
+PTM<00:13:11.400><c> supported</c><00:13:12.000><c> on</c><00:13:12.320><c> all</c><00:13:12.520><c> NICs</c><00:13:13.120><c> and</c><00:13:13.760><c> uh</c><00:13:14.080><c> all</c><00:13:14.720><c> uh</c>
+
+00:13:14.950 --> 00:13:14.960 align:start position:0%
+PTM supported on all NICs and uh all uh
+ 
+
+00:13:14.960 --> 00:13:18.590 align:start position:0%
+PTM supported on all NICs and uh all uh
+all<00:13:15.160><c> hosts.</c>
+
+00:13:18.590 --> 00:13:18.600 align:start position:0%
+ 
+ 
+
+00:13:18.600 --> 00:13:19.990 align:start position:0%
+ 
+So,<00:13:19.200><c> um</c>
+
+00:13:19.990 --> 00:13:20.000 align:start position:0%
+So, um
+ 
+
+00:13:20.000 --> 00:13:22.430 align:start position:0%
+So, um
+that's<00:13:20.760><c> uh</c><00:13:20.920><c> that</c><00:13:21.120><c> concludes</c><00:13:22.120><c> what</c><00:13:22.320><c> I've</c>
+
+00:13:22.430 --> 00:13:22.440 align:start position:0%
+that's uh that concludes what I've
+ 
+
+00:13:22.440 --> 00:13:25.270 align:start position:0%
+that's uh that concludes what I've
+talked<00:13:22.760><c> about</c><00:13:23.080><c> today.</c><00:13:23.800><c> And</c><00:13:24.480><c> um</c>
+
+00:13:25.270 --> 00:13:25.280 align:start position:0%
+talked about today. And um
+ 
+
+00:13:25.280 --> 00:13:28.950 align:start position:0%
+talked about today. And um
+so,<00:13:25.720><c> again,</c><00:13:26.480><c> the</c><00:13:27.080><c> uh</c><00:13:27.400><c> clock</c><00:13:27.720><c> manager</c><00:13:28.160><c> software</c>
+
+00:13:28.950 --> 00:13:28.960 align:start position:0%
+so, again, the uh clock manager software
+ 
+
+00:13:28.960 --> 00:13:31.150 align:start position:0%
+so, again, the uh clock manager software
+that<00:13:29.120><c> we're</c><00:13:29.280><c> working</c><00:13:29.680><c> on,</c><00:13:30.280><c> that's</c><00:13:30.600><c> part</c><00:13:30.960><c> of</c>
+
+00:13:31.150 --> 00:13:31.160 align:start position:0%
+that we're working on, that's part of
+ 
+
+00:13:31.160 --> 00:13:34.190 align:start position:0%
+that we're working on, that's part of
+the<00:13:31.280><c> libptp</c><00:13:32.040><c> management</c><00:13:32.640><c> project,</c>
+
+00:13:34.190 --> 00:13:34.200 align:start position:0%
+the libptp management project,
+ 
+
+00:13:34.200 --> 00:13:36.070 align:start position:0%
+the libptp management project,
+which<00:13:34.480><c> is</c><00:13:35.080><c> something</c><00:13:35.360><c> that's</c><00:13:35.520><c> been</c><00:13:35.680><c> around</c>
+
+00:13:36.070 --> 00:13:36.080 align:start position:0%
+which is something that's been around
+ 
+
+00:13:36.080 --> 00:13:39.030 align:start position:0%
+which is something that's been around
+for<00:13:36.200><c> a</c><00:13:36.240><c> while</c><00:13:37.120><c> that</c><00:13:37.600><c> allows</c><00:13:37.920><c> you</c><00:13:38.000><c> to</c>
+
+00:13:39.030 --> 00:13:39.040 align:start position:0%
+for a while that allows you to
+ 
+
+00:13:39.040 --> 00:13:42.470 align:start position:0%
+for a while that allows you to
+interface<00:13:39.640><c> with</c><00:13:40.360><c> with</c><00:13:40.560><c> PTP</c><00:13:41.280><c> using</c><00:13:41.680><c> 1588</c>
+
+00:13:42.470 --> 00:13:42.480 align:start position:0%
+interface with with PTP using 1588
+ 
+
+00:13:42.480 --> 00:13:44.910 align:start position:0%
+interface with with PTP using 1588
+management<00:13:42.960><c> protocol.</c><00:13:43.960><c> So,</c><00:13:44.320><c> we</c><00:13:44.520><c> use</c><00:13:44.720><c> that</c>
+
+00:13:44.910 --> 00:13:44.920 align:start position:0%
+management protocol. So, we use that
+ 
+
+00:13:44.920 --> 00:13:46.750 align:start position:0%
+management protocol. So, we use that
+management<00:13:45.400><c> protocol</c><00:13:46.000><c> and</c><00:13:46.160><c> add</c><00:13:46.400><c> some</c><00:13:46.560><c> more</c>
+
+00:13:46.750 --> 00:13:46.760 align:start position:0%
+management protocol and add some more
+ 
+
+00:13:46.760 --> 00:13:49.190 align:start position:0%
+management protocol and add some more
+stuff<00:13:47.560><c> that</c><00:13:47.840><c> we</c><00:13:48.080><c> can</c>
+
+00:13:49.190 --> 00:13:49.200 align:start position:0%
+stuff that we can
+ 
+
+00:13:49.200 --> 00:13:52.070 align:start position:0%
+stuff that we can
+now<00:13:49.760><c> now</c><00:13:49.960><c> switch</c><00:13:50.400><c> from</c><00:13:51.080><c> um</c>
+
+00:13:52.070 --> 00:13:52.080 align:start position:0%
+now now switch from um
+ 
+
+00:13:52.080 --> 00:13:54.670 align:start position:0%
+now now switch from um
+one<00:13:52.240><c> source</c><00:13:52.600><c> to</c><00:13:52.760><c> another.</c><00:13:53.640><c> That's</c><00:13:54.000><c> the</c><00:13:54.440><c> that's</c>
+
+00:13:54.670 --> 00:13:54.680 align:start position:0%
+one source to another. That's the that's
+ 
+
+00:13:54.680 --> 00:13:56.630 align:start position:0%
+one source to another. That's the that's
+the<00:13:54.800><c> major</c><00:13:55.400><c> kind</c><00:13:55.720><c> of</c>
+
+00:13:56.630 --> 00:13:56.640 align:start position:0%
+the major kind of
+ 
+
+00:13:56.640 --> 00:13:59.870 align:start position:0%
+the major kind of
+feature<00:13:56.960><c> there.</c><00:13:57.680><c> And</c><00:13:58.000><c> I've</c><00:13:58.120><c> also</c><00:13:58.400><c> included</c><00:13:59.080><c> a</c>
+
+00:13:59.870 --> 00:13:59.880 align:start position:0%
+feature there. And I've also included a
+ 
+
+00:13:59.880 --> 00:14:02.710 align:start position:0%
+feature there. And I've also included a
+a<00:13:59.960><c> link</c><00:14:00.320><c> to</c><00:14:00.640><c> the</c><00:14:00.760><c> Linux</c><00:14:01.120><c> aux</c><00:14:01.400><c> clocks,</c><00:14:02.440><c> which</c>
+
+00:14:02.710 --> 00:14:02.720 align:start position:0%
+a link to the Linux aux clocks, which
+ 
+
+00:14:02.720 --> 00:14:04.830 align:start position:0%
+a link to the Linux aux clocks, which
+are<00:14:03.320><c> uh</c>
+
+00:14:04.830 --> 00:14:04.840 align:start position:0%
+are uh
+ 
+
+00:14:04.840 --> 00:14:06.870 align:start position:0%
+are uh
+which<00:14:05.080><c> are</c><00:14:05.320><c> which</c><00:14:05.520><c> are</c><00:14:06.200><c> a</c><00:14:06.280><c> little</c><00:14:06.560><c> bit</c><00:14:06.760><c> in</c>
+
+00:14:06.870 --> 00:14:06.880 align:start position:0%
+which are which are a little bit in
+ 
+
+00:14:06.880 --> 00:14:09.590 align:start position:0%
+which are which are a little bit in
+development.<00:14:07.480><c> They're</c><00:14:07.640><c> quite</c><00:14:07.960><c> a</c><00:14:08.000><c> way</c><00:14:08.320><c> along.</c>
+
+00:14:09.590 --> 00:14:09.600 align:start position:0%
+development. They're quite a way along.
+ 
+
+00:14:09.600 --> 00:14:11.190 align:start position:0%
+development. They're quite a way along.
+And<00:14:10.600><c> uh</c>
+
+00:14:11.190 --> 00:14:11.200 align:start position:0%
+And uh
+ 
+
+00:14:11.200 --> 00:14:12.270 align:start position:0%
+And uh
+what's
+
+00:14:12.270 --> 00:14:12.280 align:start position:0%
+what's
+ 
+
+00:14:12.280 --> 00:14:16.270 align:start position:0%
+what's
+what<00:14:12.400><c> we're</c><00:14:12.920><c> proposing</c><00:14:13.680><c> is</c><00:14:14.200><c> to</c><00:14:15.040><c> work</c>
+
+00:14:16.270 --> 00:14:16.280 align:start position:0%
+what we're proposing is to work
+ 
+
+00:14:16.280 --> 00:14:19.070 align:start position:0%
+what we're proposing is to work
+work<00:14:16.440><c> with</c><00:14:16.560><c> the</c><00:14:16.640><c> community</c><00:14:17.400><c> on</c><00:14:17.720><c> the</c><00:14:18.120><c> OP</c>
+
+00:14:19.070 --> 00:14:19.080 align:start position:0%
+work with the community on the OP
+ 
+
+00:14:19.080 --> 00:14:24.390 align:start position:0%
+work with the community on the OP
+OCPE<00:14:19.880><c> data</c><00:14:20.120><c> center</c><00:14:20.400><c> profile,</c><00:14:21.600><c> and</c><00:14:22.600><c> we</c><00:14:23.440><c> uh</c>
+
+00:14:24.390 --> 00:14:24.400 align:start position:0%
+OCPE data center profile, and we uh
+ 
+
+00:14:24.400 --> 00:14:27.870 align:start position:0%
+OCPE data center profile, and we uh
+we<00:14:25.080><c> love</c><00:14:25.280><c> to</c><00:14:25.360><c> get</c><00:14:25.560><c> any</c><00:14:25.720><c> of</c><00:14:25.840><c> your</c><00:14:25.960><c> feedback,</c><00:14:26.760><c> and</c>
+
+00:14:27.870 --> 00:14:27.880 align:start position:0%
+we love to get any of your feedback, and
+ 
+
+00:14:27.880 --> 00:14:28.710 align:start position:0%
+we love to get any of your feedback, and
+uh<00:14:27.920><c> yeah</c>
+
+00:14:28.710 --> 00:14:28.720 align:start position:0%
+uh yeah
+ 
+
+00:14:28.720 --> 00:14:30.430 align:start position:0%
+uh yeah
+get<00:14:29.080><c> uh</c>
+
+00:14:30.430 --> 00:14:30.440 align:start position:0%
+get uh
+ 
+
+00:14:30.440 --> 00:14:33.590 align:start position:0%
+get uh
+add<00:14:30.800><c> add</c><00:14:31.320><c> uh</c><00:14:31.800><c> add</c><00:14:32.040><c> these</c><00:14:32.280><c> features</c><00:14:32.880><c> to</c><00:14:33.160><c> the</c>
+
+00:14:33.590 --> 00:14:33.600 align:start position:0%
+add add uh add these features to the
+ 
+
+00:14:33.600 --> 00:14:37.045 align:start position:0%
+add add uh add these features to the
+data<00:14:33.800><c> center</c><00:14:34.040><c> profile.</c>
+
+00:14:37.045 --> 00:14:37.055 align:start position:0%
+ 
+ 
+
+00:14:37.055 --> 00:14:41.630 align:start position:0%
+ 
+&gt;&gt; [applause]
+
+00:14:41.630 --> 00:14:41.640 align:start position:0%
+ 
+ 
+
+00:14:41.640 --> 00:14:47.030 align:start position:0%
+ 
+&gt;&gt; All<00:14:41.760><c> right,</c><00:14:42.000><c> let's</c><00:14:42.200><c> go</c><00:14:42.320><c> for</c><00:14:42.480><c> questions.</c>
+
+00:14:47.030 --> 00:14:47.040 align:start position:0%
+ 
+ 
+
+00:14:47.040 --> 00:14:50.510 align:start position:0%
+ 
+Kishon.
+
+00:14:50.510 --> 00:14:50.520 align:start position:0%
+ 
+ 
+
+00:14:50.520 --> 00:14:52.829 align:start position:0%
+ 
+&gt;&gt; Thank<00:14:50.760><c> you,</c><00:14:50.880><c> Chris.</c><00:14:51.200><c> That</c><00:14:51.360><c> was</c><00:14:51.480><c> a</c><00:14:51.520><c> lot</c><00:14:51.760><c> of</c><00:14:51.839><c> fun.</c>
+
+00:14:52.829 --> 00:14:52.839 align:start position:0%
+&gt;&gt; Thank you, Chris. That was a lot of fun.
+ 
+
+00:14:52.839 --> 00:14:54.790 align:start position:0%
+&gt;&gt; Thank you, Chris. That was a lot of fun.
+I<00:14:52.880><c> had</c><00:14:53.000><c> a</c><00:14:53.080><c> question.</c><00:14:53.600><c> In</c><00:14:53.720><c> your</c><00:14:53.960><c> IPU,</c><00:14:54.520><c> you</c><00:14:54.640><c> may</c>
+
+00:14:54.790 --> 00:14:54.800 align:start position:0%
+I had a question. In your IPU, you may
+ 
+
+00:14:54.800 --> 00:14:56.670 align:start position:0%
+I had a question. In your IPU, you may
+have<00:14:55.120><c> multiple</c>
+
+00:14:56.670 --> 00:14:56.680 align:start position:0%
+have multiple
+ 
+
+00:14:56.680 --> 00:14:59.950 align:start position:0%
+have multiple
+uh<00:14:57.440><c> time</c><00:14:57.760><c> PTP</c><00:14:58.200><c> time</c><00:14:58.480><c> receivers.</c>
+
+00:14:59.950 --> 00:14:59.960 align:start position:0%
+uh time PTP time receivers.
+ 
+
+00:14:59.960 --> 00:15:02.230 align:start position:0%
+uh time PTP time receivers.
+If<00:15:00.120><c> you</c><00:15:00.200><c> have</c><00:15:00.600><c> multiple</c><00:15:01.000><c> GMs,</c>
+
+00:15:02.230 --> 00:15:02.240 align:start position:0%
+If you have multiple GMs,
+ 
+
+00:15:02.240 --> 00:15:02.710 align:start position:0%
+If you have multiple GMs,
+&gt;&gt; Yeah.
+
+00:15:02.710 --> 00:15:02.720 align:start position:0%
+&gt;&gt; Yeah.
+ 
+
+00:15:02.720 --> 00:15:05.030 align:start position:0%
+&gt;&gt; Yeah.
+&gt;&gt; So,<00:15:02.839><c> you</c><00:15:02.960><c> do</c><00:15:03.200><c> you</c><00:15:03.280><c> have</c><00:15:03.480><c> multiple</c><00:15:03.960><c> PHCs</c><00:15:04.800><c> as</c>
+
+00:15:05.030 --> 00:15:05.040 align:start position:0%
+&gt;&gt; So, you do you have multiple PHCs as
+ 
+
+00:15:05.040 --> 00:15:06.150 align:start position:0%
+&gt;&gt; So, you do you have multiple PHCs as
+well?
+
+00:15:06.150 --> 00:15:06.160 align:start position:0%
+well?
+ 
+
+00:15:06.160 --> 00:15:08.710 align:start position:0%
+well?
+&gt;&gt; Um<00:15:06.560><c> yeah.</c><00:15:07.280><c> And</c><00:15:07.440><c> I</c><00:15:07.520><c> mean,</c><00:15:08.000><c> yeah,</c><00:15:08.320><c> it</c><00:15:08.440><c> would</c><00:15:08.600><c> it</c>
+
+00:15:08.710 --> 00:15:08.720 align:start position:0%
+&gt;&gt; Um yeah. And I mean, yeah, it would it
+ 
+
+00:15:08.720 --> 00:15:11.190 align:start position:0%
+&gt;&gt; Um yeah. And I mean, yeah, it would it
+would<00:15:09.000><c> look</c><00:15:09.240><c> a</c><00:15:09.320><c> lot</c><00:15:09.680><c> like</c><00:15:10.640><c> um</c>
+
+00:15:11.190 --> 00:15:11.200 align:start position:0%
+would look a lot like um
+ 
+
+00:15:11.200 --> 00:15:13.910 align:start position:0%
+would look a lot like um
+it<00:15:11.280><c> would</c><00:15:11.440><c> look</c><00:15:11.640><c> a</c><00:15:11.680><c> lot</c><00:15:12.000><c> like</c><00:15:12.640><c> what</c><00:15:12.839><c> we</c><00:15:12.960><c> have</c><00:15:13.360><c> on</c>
+
+00:15:13.910 --> 00:15:13.920 align:start position:0%
+it would look a lot like what we have on
+ 
+
+00:15:13.920 --> 00:15:16.950 align:start position:0%
+it would look a lot like what we have on
+on<00:15:14.160><c> Linux.</c><00:15:14.760><c> So,</c><00:15:15.440><c> you</c><00:15:15.520><c> know,</c><00:15:15.680><c> in</c><00:15:16.280><c> Linux,</c><00:15:16.839><c> we</c>
+
+00:15:16.950 --> 00:15:16.960 align:start position:0%
+on Linux. So, you know, in Linux, we
+ 
+
+00:15:16.960 --> 00:15:18.630 align:start position:0%
+on Linux. So, you know, in Linux, we
+have<00:15:17.160><c> this</c><00:15:17.440><c> V</c><00:15:17.600><c> clock</c><00:15:18.160><c> where</c><00:15:18.320><c> we</c><00:15:18.440><c> have</c><00:15:18.600><c> a</c>
+
+00:15:18.630 --> 00:15:18.640 align:start position:0%
+have this V clock where we have a
+ 
+
+00:15:18.640 --> 00:15:22.790 align:start position:0%
+have this V clock where we have a
+software<00:15:19.839><c> translation</c><00:15:20.920><c> of</c><00:15:21.240><c> the</c><00:15:21.960><c> underlying</c>
+
+00:15:22.790 --> 00:15:22.800 align:start position:0%
+software translation of the underlying
+ 
+
+00:15:22.800 --> 00:15:25.150 align:start position:0%
+software translation of the underlying
+timestamp<00:15:23.400><c> clock</c><00:15:24.160><c> and</c><00:15:24.360><c> we'd</c><00:15:24.520><c> have</c><00:15:24.680><c> the</c><00:15:24.800><c> set</c>
+
+00:15:25.150 --> 00:15:25.160 align:start position:0%
+timestamp clock and we'd have the set
+ 
+
+00:15:25.160 --> 00:15:26.790 align:start position:0%
+timestamp clock and we'd have the set
+and<00:15:25.320><c> it's</c><00:15:25.480><c> the</c><00:15:25.600><c> same</c><00:15:25.840><c> concept</c><00:15:26.680><c> in</c><00:15:26.760><c> the</c>
+
+00:15:26.790 --> 00:15:26.800 align:start position:0%
+and it's the same concept in the
+ 
+
+00:15:26.800 --> 00:15:28.150 align:start position:0%
+and it's the same concept in the
+&gt;&gt; Thank<00:15:26.920><c> you.</c><00:15:27.040><c> That</c><00:15:27.480><c> that</c><00:15:27.680><c> answered</c><00:15:28.040><c> my</c>
+
+00:15:28.150 --> 00:15:28.160 align:start position:0%
+&gt;&gt; Thank you. That that answered my
+ 
+
+00:15:28.160 --> 00:15:29.550 align:start position:0%
+&gt;&gt; Thank you. That that answered my
+question.<00:15:28.600><c> You</c><00:15:28.680><c> have</c><00:15:28.880><c> a</c>
+
+00:15:29.550 --> 00:15:29.560 align:start position:0%
+question. You have a
+ 
+
+00:15:29.560 --> 00:15:31.950 align:start position:0%
+question. You have a
+You<00:15:29.680><c> have</c><00:15:29.880><c> a</c><00:15:30.400><c> something</c><00:15:30.880><c> common,</c><00:15:31.520><c> a</c><00:15:31.600><c> common</c>
+
+00:15:31.950 --> 00:15:31.960 align:start position:0%
+You have a something common, a common
+ 
+
+00:15:31.960 --> 00:15:34.470 align:start position:0%
+You have a something common, a common
+clock<00:15:32.320><c> which</c><00:15:32.560><c> is</c><00:15:33.360><c> running</c><00:15:33.680><c> the</c><00:15:33.800><c> time</c><00:15:34.040><c> stamp</c>
+
+00:15:34.470 --> 00:15:34.480 align:start position:0%
+clock which is running the time stamp
+ 
+
+00:15:34.480 --> 00:15:39.670 align:start position:0%
+clock which is running the time stamp
+and<00:15:34.640><c> then</c><00:15:34.800><c> the</c><00:15:35.320><c> translation</c><00:15:36.040><c> from</c><00:15:36.280><c> that</c><00:15:36.640><c> is</c><00:15:37.720><c> is</c>
+
+00:15:39.670 --> 00:15:39.680 align:start position:0%
+and then the translation from that is is
+ 
+
+00:15:39.680 --> 00:15:42.110 align:start position:0%
+and then the translation from that is is
+custom<00:15:40.120><c> to</c><00:15:40.360><c> which</c><00:15:41.120><c> GM</c><00:15:41.560><c> you</c><00:15:41.680><c> are</c>
+
+00:15:42.110 --> 00:15:42.120 align:start position:0%
+custom to which GM you are
+ 
+
+00:15:42.120 --> 00:15:43.470 align:start position:0%
+custom to which GM you are
+&gt;&gt; That's<00:15:42.680><c> right.</c><00:15:43.000><c> Yeah.</c>
+
+00:15:43.470 --> 00:15:43.480 align:start position:0%
+&gt;&gt; That's right. Yeah.
+ 
+
+00:15:43.480 --> 00:15:50.910 align:start position:0%
+&gt;&gt; That's right. Yeah.
+&gt;&gt; Okay.<00:15:43.880><c> Thank</c><00:15:44.080><c> you.</c>
+
+00:15:50.910 --> 00:15:50.920 align:start position:0%
+ 
+ 
+
+00:15:50.920 --> 00:15:56.790 align:start position:0%
+ 
+&gt;&gt; Any<00:15:51.000><c> more</c><00:15:51.160><c> questions?</c>
+
+00:15:56.790 --> 00:15:56.800 align:start position:0%
+ 
+ 
+
+00:15:56.800 --> 00:16:01.590 align:start position:0%
+ 
+&gt;&gt; Okay.
+
+00:16:01.590 --> 00:16:01.600 align:start position:0%
+ 
+ 
+
+00:16:01.600 --> 00:16:04.430 align:start position:0%
+ 
+&gt;&gt; Mr.<00:16:01.920><c> Stanton.</c>
+
+00:16:04.430 --> 00:16:04.440 align:start position:0%
+&gt;&gt; Mr. Stanton.
+ 
+
+00:16:04.440 --> 00:16:06.830 align:start position:0%
+&gt;&gt; Mr. Stanton.
+&gt;&gt; All<00:16:04.520><c> right.</c><00:16:04.920><c> Thank</c><00:16:05.200><c> you.</c>
+
+00:16:06.830 --> 00:16:06.840 align:start position:0%
+&gt;&gt; All right. Thank you.
+ 
+
+00:16:06.840 --> 00:16:10.110 align:start position:0%
+&gt;&gt; All right. Thank you.
+In<00:16:07.240><c> this</c><00:16:07.560><c> case</c><00:16:08.320><c> you</c>
+
+00:16:10.110 --> 00:16:10.120 align:start position:0%
+In this case you
+ 
+
+00:16:10.120 --> 00:16:13.030 align:start position:0%
+In this case you
+GM<00:16:11.040><c> local</c><00:16:11.800><c> or</c><00:16:11.960><c> global</c>
+
+00:16:13.030 --> 00:16:13.040 align:start position:0%
+GM local or global
+ 
+
+00:16:13.040 --> 00:16:15.350 align:start position:0%
+GM local or global
+&gt;&gt; I'm<00:16:13.560><c> having</c><00:16:13.760><c> I'm</c><00:16:13.920><c> having</c><00:16:14.200><c> some</c><00:16:14.320><c> trouble.</c><00:16:15.160><c> Can</c>
+
+00:16:15.350 --> 00:16:15.360 align:start position:0%
+&gt;&gt; I'm having I'm having some trouble. Can
+ 
+
+00:16:15.360 --> 00:16:16.910 align:start position:0%
+&gt;&gt; I'm having I'm having some trouble. Can
+we<00:16:15.680><c> get</c><00:16:15.880><c> his</c><00:16:16.040><c> mic</c><00:16:16.440><c> turned</c><00:16:16.720><c> up?</c>
+
+00:16:16.910 --> 00:16:16.920 align:start position:0%
+we get his mic turned up?
+ 
+
+00:16:16.920 --> 00:16:17.670 align:start position:0%
+we get his mic turned up?
+&gt;&gt; Yeah. Yeah.
+
+00:16:17.670 --> 00:16:17.680 align:start position:0%
+&gt;&gt; Yeah. Yeah.
+ 
+
+00:16:17.680 --> 00:16:18.790 align:start position:0%
+&gt;&gt; Yeah. Yeah.
+Are<00:16:17.840><c> you</c><00:16:17.920><c> okay</c><00:16:18.160><c> now?</c>
+
+00:16:18.790 --> 00:16:18.800 align:start position:0%
+Are you okay now?
+ 
+
+00:16:18.800 --> 00:16:19.710 align:start position:0%
+Are you okay now?
+&gt;&gt; Yeah.<00:16:19.240><c> Yeah.</c>
+
+00:16:19.710 --> 00:16:19.720 align:start position:0%
+&gt;&gt; Yeah. Yeah.
+ 
+
+00:16:19.720 --> 00:16:23.990 align:start position:0%
+&gt;&gt; Yeah. Yeah.
+&gt;&gt; So<00:16:20.040><c> in</c><00:16:20.240><c> this</c><00:16:20.520><c> case</c><00:16:21.720><c> you</c><00:16:21.920><c> have</c><00:16:22.160><c> a</c><00:16:22.240><c> global</c><00:16:23.160><c> GM</c>
+
+00:16:23.990 --> 00:16:24.000 align:start position:0%
+&gt;&gt; So in this case you have a global GM
+ 
+
+00:16:24.000 --> 00:16:24.710 align:start position:0%
+&gt;&gt; So in this case you have a global GM
+&gt;&gt; That's<00:16:24.200><c> right.</c>
+
+00:16:24.710 --> 00:16:24.720 align:start position:0%
+&gt;&gt; That's right.
+ 
+
+00:16:24.720 --> 00:16:26.829 align:start position:0%
+&gt;&gt; That's right.
+&gt;&gt; and<00:16:25.040><c> local</c>
+
+00:16:26.829 --> 00:16:26.839 align:start position:0%
+&gt;&gt; and local
+ 
+
+00:16:26.839 --> 00:16:28.829 align:start position:0%
+&gt;&gt; and local
+real<00:16:27.120><c> time</c><00:16:27.480><c> GM</c>
+
+00:16:28.829 --> 00:16:28.839 align:start position:0%
+real time GM
+ 
+
+00:16:28.839 --> 00:16:29.790 align:start position:0%
+real time GM
+Yes.
+
+00:16:29.790 --> 00:16:29.800 align:start position:0%
+Yes.
+ 
+
+00:16:29.800 --> 00:16:31.110 align:start position:0%
+Yes.
+Is<00:16:30.080><c> this</c>
+
+00:16:31.110 --> 00:16:31.120 align:start position:0%
+Is this
+ 
+
+00:16:31.120 --> 00:16:35.350 align:start position:0%
+Is this
+multiple<00:16:31.920><c> domain</c><00:16:32.560><c> as</c><00:16:32.800><c> you</c><00:16:33.040><c> refer</c><00:16:33.680><c> to</c><00:16:33.920><c> or</c><00:16:34.120><c> is</c><00:16:34.320><c> it</c>
+
+00:16:35.350 --> 00:16:35.360 align:start position:0%
+multiple domain as you refer to or is it
+ 
+
+00:16:35.360 --> 00:16:36.950 align:start position:0%
+multiple domain as you refer to or is it
+If
+
+00:16:36.950 --> 00:16:36.960 align:start position:0%
+If
+ 
+
+00:16:36.960 --> 00:16:39.670 align:start position:0%
+If
+this<00:16:37.240><c> is</c><00:16:37.720><c> what</c><00:16:38.040><c> you</c><00:16:38.200><c> refer</c><00:16:38.800><c> to</c>
+
+00:16:39.670 --> 00:16:39.680 align:start position:0%
+this is what you refer to
+ 
+
+00:16:39.680 --> 00:16:42.950 align:start position:0%
+this is what you refer to
+why<00:16:39.960><c> would</c><00:16:40.200><c> be</c><00:16:40.800><c> multiple</c><00:16:41.320><c> domain?</c>
+
+00:16:42.950 --> 00:16:42.960 align:start position:0%
+why would be multiple domain?
+ 
+
+00:16:42.960 --> 00:16:45.790 align:start position:0%
+why would be multiple domain?
+So<00:16:43.320><c> I</c><00:16:43.440><c> you</c><00:16:43.560><c> mean</c><00:16:43.920><c> the</c><00:16:44.040><c> domain</c><00:16:44.480><c> is</c><00:16:44.680><c> a</c><00:16:44.720><c> PTP</c><00:16:45.280><c> domain</c>
+
+00:16:45.790 --> 00:16:45.800 align:start position:0%
+So I you mean the domain is a PTP domain
+ 
+
+00:16:45.800 --> 00:16:48.470 align:start position:0%
+So I you mean the domain is a PTP domain
+or<00:16:46.000><c> is</c><00:16:46.200><c> different</c><00:16:46.720><c> concept</c><00:16:47.440><c> in</c><00:16:47.560><c> your</c>
+
+00:16:48.470 --> 00:16:48.480 align:start position:0%
+or is different concept in your
+ 
+
+00:16:48.480 --> 00:16:51.710 align:start position:0%
+or is different concept in your
+&gt;&gt; Yeah.<00:16:49.080><c> So</c><00:16:49.320><c> I'm</c><00:16:50.080><c> So</c><00:16:50.280><c> all</c><00:16:50.480><c> of</c><00:16:50.600><c> these</c>
+
+00:16:51.710 --> 00:16:51.720 align:start position:0%
+&gt;&gt; Yeah. So I'm So all of these
+ 
+
+00:16:51.720 --> 00:16:54.390 align:start position:0%
+&gt;&gt; Yeah. So I'm So all of these
+all<00:16:51.880><c> of</c><00:16:51.960><c> these</c><00:16:52.240><c> use</c><00:16:52.600><c> PTP</c><00:16:53.040><c> domains</c><00:16:54.040><c> but</c><00:16:54.280><c> in</c>
+
+00:16:54.390 --> 00:16:54.400 align:start position:0%
+all of these use PTP domains but in
+ 
+
+00:16:54.400 --> 00:16:56.630 align:start position:0%
+all of these use PTP domains but in
+terms<00:16:54.920><c> of</c><00:16:55.400><c> So</c><00:16:55.560><c> they</c>
+
+00:16:56.630 --> 00:16:56.640 align:start position:0%
+terms of So they
+ 
+
+00:16:56.640 --> 00:16:58.430 align:start position:0%
+terms of So they
+I<00:16:56.680><c> mean</c><00:16:56.800><c> I</c><00:16:56.880><c> think</c><00:16:57.200><c> you're</c><00:16:57.360><c> asking</c><00:16:57.640><c> about</c><00:16:57.920><c> the</c>
+
+00:16:58.430 --> 00:16:58.440 align:start position:0%
+I mean I think you're asking about the
+ 
+
+00:16:58.440 --> 00:17:01.750 align:start position:0%
+I mean I think you're asking about the
+rack<00:16:58.800><c> local</c><00:16:59.400><c> versus</c><00:17:00.080><c> the</c><00:17:00.200><c> global</c><00:17:00.600><c> time</c><00:17:00.880><c> base.</c>
+
+00:17:01.750 --> 00:17:01.760 align:start position:0%
+rack local versus the global time base.
+ 
+
+00:17:01.760 --> 00:17:04.350 align:start position:0%
+rack local versus the global time base.
+And<00:17:02.240><c> those</c><00:17:02.880><c> would</c><00:17:03.120><c> be</c>
+
+00:17:04.350 --> 00:17:04.360 align:start position:0%
+And those would be
+ 
+
+00:17:04.360 --> 00:17:06.829 align:start position:0%
+And those would be
+Yeah.<00:17:04.560><c> Those</c><00:17:04.880><c> would</c><00:17:05.000><c> be</c><00:17:05.480><c> separate</c><00:17:05.920><c> domains</c>
+
+00:17:06.829 --> 00:17:06.839 align:start position:0%
+Yeah. Those would be separate domains
+ 
+
+00:17:06.839 --> 00:17:08.910 align:start position:0%
+Yeah. Those would be separate domains
+and<00:17:07.000><c> if</c><00:17:07.120><c> they're</c><00:17:07.240><c> redundant</c><00:17:08.040><c> then</c><00:17:08.240><c> there's</c>
+
+00:17:08.910 --> 00:17:08.920 align:start position:0%
+and if they're redundant then there's
+ 
+
+00:17:08.920 --> 00:17:12.750 align:start position:0%
+and if they're redundant then there's
+that<00:17:09.120><c> many</c><00:17:09.400><c> domains</c><00:17:10.560><c> as</c><00:17:10.800><c> well.</c><00:17:11.680><c> So</c><00:17:12.480><c> each</c><00:17:12.680><c> of</c>
+
+00:17:12.750 --> 00:17:12.760 align:start position:0%
+that many domains as well. So each of
+ 
+
+00:17:12.760 --> 00:17:15.590 align:start position:0%
+that many domains as well. So each of
+these<00:17:13.240><c> would</c><00:17:13.400><c> be</c><00:17:13.560><c> represented</c><00:17:14.720><c> by</c><00:17:15.040><c> their</c><00:17:15.360><c> own</c>
+
+00:17:15.590 --> 00:17:15.600 align:start position:0%
+these would be represented by their own
+ 
+
+00:17:15.600 --> 00:17:19.350 align:start position:0%
+these would be represented by their own
+GM<00:17:16.600><c> and</c><00:17:17.319><c> in</c><00:17:17.439><c> the</c><00:17:17.600><c> case</c><00:17:18.040><c> of</c><00:17:18.360><c> the</c><00:17:18.480><c> rack</c><00:17:18.760><c> local</c>
+
+00:17:19.350 --> 00:17:19.360 align:start position:0%
+GM and in the case of the rack local
+ 
+
+00:17:19.360 --> 00:17:21.510 align:start position:0%
+GM and in the case of the rack local
+versus<00:17:20.000><c> global</c>
+
+00:17:21.510 --> 00:17:21.520 align:start position:0%
+versus global
+ 
+
+00:17:21.520 --> 00:17:23.630 align:start position:0%
+versus global
+they<00:17:21.680><c> would</c><00:17:21.880><c> be</c><00:17:22.680><c> totally</c><00:17:23.040><c> different</c><00:17:23.400><c> time</c>
+
+00:17:23.630 --> 00:17:23.640 align:start position:0%
+they would be totally different time
+ 
+
+00:17:23.640 --> 00:17:25.030 align:start position:0%
+they would be totally different time
+bases.
+
+00:17:25.030 --> 00:17:25.040 align:start position:0%
+bases.
+ 
+
+00:17:25.040 --> 00:17:29.510 align:start position:0%
+bases.
+&gt;&gt; But<00:17:25.720><c> you</c><00:17:25.920><c> same</c><00:17:26.760><c> profile</c><00:17:28.040><c> is</c><00:17:28.400><c> different</c><00:17:29.000><c> domain</c>
+
+00:17:29.510 --> 00:17:29.520 align:start position:0%
+&gt;&gt; But you same profile is different domain
+ 
+
+00:17:29.520 --> 00:17:31.590 align:start position:0%
+&gt;&gt; But you same profile is different domain
+or
+
+00:17:31.590 --> 00:17:31.600 align:start position:0%
+or
+ 
+
+00:17:31.600 --> 00:17:32.670 align:start position:0%
+or
+&gt;&gt; I'm<00:17:31.880><c> sorry.</c>
+
+00:17:32.670 --> 00:17:32.680 align:start position:0%
+&gt;&gt; I'm sorry.
+ 
+
+00:17:32.680 --> 00:17:35.830 align:start position:0%
+&gt;&gt; I'm sorry.
+&gt;&gt; I<00:17:33.200><c> understand</c><00:17:33.760><c> it's</c><00:17:33.960><c> the</c><00:17:34.040><c> same</c><00:17:34.520><c> profile</c><00:17:35.560><c> so</c>
+
+00:17:35.830 --> 00:17:35.840 align:start position:0%
+&gt;&gt; I understand it's the same profile so
+ 
+
+00:17:35.840 --> 00:17:39.030 align:start position:0%
+&gt;&gt; I understand it's the same profile so
+they<00:17:36.080><c> should</c><00:17:36.520><c> be</c><00:17:36.880><c> same</c><00:17:37.360><c> domain</c><00:17:37.960><c> but</c><00:17:38.480><c> you</c>
+
+00:17:39.030 --> 00:17:39.040 align:start position:0%
+they should be same domain but you
+ 
+
+00:17:39.040 --> 00:17:40.630 align:start position:0%
+they should be same domain but you
+mentioned<00:17:39.400><c> different</c><00:17:40.040><c> domain.</c>
+
+00:17:40.630 --> 00:17:40.640 align:start position:0%
+mentioned different domain.
+ 
+
+00:17:40.640 --> 00:17:41.830 align:start position:0%
+mentioned different domain.
+&gt;&gt; to
+
+00:17:41.830 --> 00:17:41.840 align:start position:0%
+&gt;&gt; to
+ 
+
+00:17:41.840 --> 00:17:43.190 align:start position:0%
+&gt;&gt; to
+use
+
+00:17:43.190 --> 00:17:43.200 align:start position:0%
+use
+ 
+
+00:17:43.200 --> 00:17:46.230 align:start position:0%
+use
+multiple<00:17:44.560><c> domains.</c>
+
+00:17:46.230 --> 00:17:46.240 align:start position:0%
+multiple domains.
+ 
+
+00:17:46.240 --> 00:17:49.270 align:start position:0%
+multiple domains.
+So<00:17:46.640><c> with</c><00:17:47.560><c> uh</c>
+
+00:17:49.270 --> 00:17:49.280 align:start position:0%
+So with uh
+ 
+
+00:17:49.280 --> 00:17:54.030 align:start position:0%
+So with uh
+So<00:17:49.400><c> with</c><00:17:49.680><c> with</c><00:17:50.160><c> IEE</c><00:17:51.160><c> 2000</c><00:17:51.840><c> you</c><00:17:51.920><c> know</c><00:17:52.000><c> PTP</c><00:17:52.440><c> 2019</c>
+
+00:17:54.030 --> 00:17:54.040 align:start position:0%
+So with with IEE 2000 you know PTP 2019
+ 
+
+00:17:54.040 --> 00:17:58.990 align:start position:0%
+So with with IEE 2000 you know PTP 2019
+we<00:17:54.360><c> could</c><00:17:54.600><c> have</c><00:17:55.000><c> multiple</c><00:17:56.200><c> PTP</c><00:17:57.080><c> domains</c><00:17:58.360><c> um</c>
+
+00:17:58.990 --> 00:17:59.000 align:start position:0%
+we could have multiple PTP domains um
+ 
+
+00:17:59.000 --> 00:18:01.190 align:start position:0%
+we could have multiple PTP domains um
+running<00:17:59.360><c> simultaneously</c><00:18:00.360><c> over</c><00:18:00.600><c> the</c><00:18:00.720><c> same</c>
+
+00:18:01.190 --> 00:18:01.200 align:start position:0%
+running simultaneously over the same
+ 
+
+00:18:01.200 --> 00:18:01.990 align:start position:0%
+running simultaneously over the same
+wire.
+
+00:18:01.990 --> 00:18:02.000 align:start position:0%
+wire.
+ 
+
+00:18:02.000 --> 00:18:05.790 align:start position:0%
+wire.
+&gt;&gt; Okay.<00:18:02.280><c> Okay.</c>
+
+00:18:05.790 --> 00:18:05.800 align:start position:0%
+ 
+ 
+
+00:18:05.800 --> 00:18:07.510 align:start position:0%
+ 
+&gt;&gt; Uh<00:18:06.240><c> great</c><00:18:06.600><c> great</c><00:18:06.760><c> presentation.</c><00:18:07.280><c> Thank</c><00:18:07.440><c> you</c>
+
+00:18:07.510 --> 00:18:07.520 align:start position:0%
+&gt;&gt; Uh great great presentation. Thank you
+ 
+
+00:18:07.520 --> 00:18:10.550 align:start position:0%
+&gt;&gt; Uh great great presentation. Thank you
+Chris.<00:18:08.240><c> You</c><00:18:08.400><c> talked</c><00:18:08.640><c> about</c><00:18:09.040><c> selecting</c>
+
+00:18:10.550 --> 00:18:10.560 align:start position:0%
+Chris. You talked about selecting
+ 
+
+00:18:10.560 --> 00:18:13.430 align:start position:0%
+Chris. You talked about selecting
+a<00:18:10.680><c> clock,</c><00:18:11.560><c> changing</c><00:18:12.000><c> clock.</c><00:18:12.920><c> I</c><00:18:13.000><c> guess</c><00:18:13.280><c> though</c>
+
+00:18:13.430 --> 00:18:13.440 align:start position:0%
+a clock, changing clock. I guess though
+ 
+
+00:18:13.440 --> 00:18:15.710 align:start position:0%
+a clock, changing clock. I guess though
+you<00:18:13.680><c> could</c><00:18:13.960><c> also</c><00:18:14.320><c> just</c><00:18:14.640><c> take</c><00:18:15.120><c> all</c><00:18:15.520><c> of</c><00:18:15.600><c> the</c>
+
+00:18:15.710 --> 00:18:15.720 align:start position:0%
+you could also just take all of the
+ 
+
+00:18:15.720 --> 00:18:18.430 align:start position:0%
+you could also just take all of the
+clocks<00:18:16.080><c> however</c><00:18:16.400><c> many</c><00:18:16.640><c> there</c><00:18:16.760><c> were</c><00:18:17.680><c> and</c><00:18:18.040><c> then</c>
+
+00:18:18.430 --> 00:18:18.440 align:start position:0%
+clocks however many there were and then
+ 
+
+00:18:18.440 --> 00:18:20.270 align:start position:0%
+clocks however many there were and then
+somehow<00:18:18.880><c> ensemble</c><00:18:19.400><c> them</c><00:18:19.520><c> as</c><00:18:19.680><c> well</c><00:18:19.920><c> because</c>
+
+00:18:20.270 --> 00:18:20.280 align:start position:0%
+somehow ensemble them as well because
+ 
+
+00:18:20.280 --> 00:18:22.110 align:start position:0%
+somehow ensemble them as well because
+that<00:18:20.880><c> which</c><00:18:21.080><c> relates</c><00:18:21.400><c> back</c><00:18:21.600><c> to</c><00:18:21.680><c> the</c><00:18:21.760><c> previous</c>
+
+00:18:22.110 --> 00:18:22.120 align:start position:0%
+that which relates back to the previous
+ 
+
+00:18:22.120 --> 00:18:23.870 align:start position:0%
+that which relates back to the previous
+to<00:18:22.200><c> the</c><00:18:22.240><c> solar</c><00:18:22.480><c> quartz</c><00:18:23.360><c> talk</c><00:18:23.600><c> about</c>
+
+00:18:23.870 --> 00:18:23.880 align:start position:0%
+to the solar quartz talk about
+ 
+
+00:18:23.880 --> 00:18:26.030 align:start position:0%
+to the solar quartz talk about
+resilience<00:18:24.520><c> and</c><00:18:24.880><c> and</c><00:18:25.040><c> all</c><00:18:25.200><c> of</c><00:18:25.280><c> that.</c><00:18:25.680><c> Is</c><00:18:25.840><c> that</c>
+
+00:18:26.030 --> 00:18:26.040 align:start position:0%
+resilience and and all of that. Is that
+ 
+
+00:18:26.040 --> 00:18:26.470 align:start position:0%
+resilience and and all of that. Is that
+right?
+
+00:18:26.470 --> 00:18:26.480 align:start position:0%
+right?
+ 
+
+00:18:26.480 --> 00:18:29.270 align:start position:0%
+right?
+&gt;&gt; Yes.<00:18:26.760><c> Yeah.</c><00:18:27.120><c> You</c><00:18:27.560><c> could</c><00:18:27.880><c> definitely</c><00:18:28.360><c> do</c><00:18:28.560><c> that</c>
+
+00:18:29.270 --> 00:18:29.280 align:start position:0%
+&gt;&gt; Yes. Yeah. You could definitely do that
+ 
+
+00:18:29.280 --> 00:18:31.750 align:start position:0%
+&gt;&gt; Yes. Yeah. You could definitely do that
+and<00:18:30.200><c> I</c><00:18:30.440><c> didn't</c><00:18:30.680><c> specifically</c><00:18:31.200><c> call</c><00:18:31.440><c> it</c><00:18:31.600><c> out</c>
+
+00:18:31.750 --> 00:18:31.760 align:start position:0%
+and I didn't specifically call it out
+ 
+
+00:18:31.760 --> 00:18:33.470 align:start position:0%
+and I didn't specifically call it out
+here<00:18:32.000><c> but</c><00:18:32.200><c> on</c><00:18:32.320><c> the</c><00:18:32.440><c> last</c><00:18:32.840><c> slide</c><00:18:33.160><c> we</c><00:18:33.280><c> talked</c>
+
+00:18:33.470 --> 00:18:33.480 align:start position:0%
+here but on the last slide we talked
+ 
+
+00:18:33.480 --> 00:18:37.150 align:start position:0%
+here but on the last slide we talked
+about<00:18:34.120><c> Byzantine</c><00:18:34.960><c> fault</c><00:18:35.280><c> tolerance</c><00:18:36.000><c> and</c><00:18:36.520><c> so</c>
+
+00:18:37.150 --> 00:18:37.160 align:start position:0%
+about Byzantine fault tolerance and so
+ 
+
+00:18:37.160 --> 00:18:41.070 align:start position:0%
+about Byzantine fault tolerance and so
+now<00:18:37.520><c> we</c><00:18:38.000><c> also</c><00:18:38.640><c> you</c><00:18:38.760><c> know</c><00:18:38.880><c> can</c><00:18:39.480><c> you</c><00:18:39.560><c> know</c>
+
+00:18:41.070 --> 00:18:41.080 align:start position:0%
+now we also you know can you know
+ 
+
+00:18:41.080 --> 00:18:44.270 align:start position:0%
+now we also you know can you know
+secure<00:18:41.440><c> the</c><00:18:41.600><c> time</c><00:18:42.280><c> as</c><00:18:42.560><c> well</c><00:18:42.880><c> as</c>
+
+00:18:44.270 --> 00:18:44.280 align:start position:0%
+secure the time as well as
+ 
+
+00:18:44.280 --> 00:18:46.990 align:start position:0%
+secure the time as well as
+yeah.<00:18:44.600><c> So</c><00:18:44.760><c> your</c><00:18:44.960><c> way</c><00:18:45.360><c> of</c><00:18:45.720><c> averaging</c><00:18:46.440><c> is</c><00:18:46.800><c> is</c>
+
+00:18:46.990 --> 00:18:47.000 align:start position:0%
+yeah. So your way of averaging is is
+ 
+
+00:18:47.000 --> 00:18:50.670 align:start position:0%
+yeah. So your way of averaging is is
+possible.<00:18:47.840><c> I</c><00:18:47.880><c> mean</c><00:18:48.080><c> I</c><00:18:48.120><c> think</c><00:18:48.840><c> that</c><00:18:49.000><c> one</c><00:18:49.200><c> AS</c><00:18:49.760><c> DM</c>
+
+00:18:50.670 --> 00:18:50.680 align:start position:0%
+possible. I mean I think that one AS DM
+ 
+
+00:18:50.680 --> 00:18:52.630 align:start position:0%
+possible. I mean I think that one AS DM
+is<00:18:50.880><c> just</c><00:18:51.120><c> sort</c><00:18:51.280><c> of</c><00:18:51.400><c> a</c><00:18:51.440><c> primary</c><00:18:52.000><c> secondary</c>
+
+00:18:52.630 --> 00:18:52.640 align:start position:0%
+is just sort of a primary secondary
+ 
+
+00:18:52.640 --> 00:18:53.870 align:start position:0%
+is just sort of a primary secondary
+switches
+
+00:18:53.870 --> 00:18:53.880 align:start position:0%
+switches
+ 
+
+00:18:53.880 --> 00:18:57.030 align:start position:0%
+switches
+but<00:18:54.560><c> certainly</c><00:18:55.120><c> it</c><00:18:55.200><c> could</c><00:18:55.400><c> be</c><00:18:56.040><c> we</c><00:18:56.200><c> could</c><00:18:56.360><c> do</c>
+
+00:18:57.030 --> 00:18:57.040 align:start position:0%
+but certainly it could be we could do
+ 
+
+00:18:57.040 --> 00:18:57.590 align:start position:0%
+but certainly it could be we could do
+some<00:18:57.240><c> of</c>
+
+00:18:57.590 --> 00:18:57.600 align:start position:0%
+some of
+ 
+
+00:18:57.600 --> 00:18:58.950 align:start position:0%
+some of
+&gt;&gt; And<00:18:57.720><c> you</c><00:18:57.800><c> mentioned</c><00:18:58.120><c> the</c><00:18:58.200><c> software</c><00:18:58.640><c> layer</c><00:18:58.880><c> I</c>
+
+00:18:58.950 --> 00:18:58.960 align:start position:0%
+&gt;&gt; And you mentioned the software layer I
+ 
+
+00:18:58.960 --> 00:19:00.950 align:start position:0%
+&gt;&gt; And you mentioned the software layer I
+think<00:18:59.120><c> a</c><00:18:59.200><c> slide</c><00:18:59.440><c> or</c><00:18:59.560><c> two</c><00:18:59.760><c> before</c><00:19:00.040><c> but</c>
+
+00:19:00.950 --> 00:19:00.960 align:start position:0%
+think a slide or two before but
+ 
+
+00:19:00.960 --> 00:19:02.430 align:start position:0%
+think a slide or two before but
+is<00:19:01.160><c> that</c><00:19:01.520><c> something</c><00:19:02.000><c> that</c><00:19:02.200><c> would</c><00:19:02.320><c> be</c>
+
+00:19:02.430 --> 00:19:02.440 align:start position:0%
+is that something that would be
+ 
+
+00:19:02.440 --> 00:19:03.910 align:start position:0%
+is that something that would be
+supported<00:19:02.920><c> in</c><00:19:03.000><c> the</c><00:19:03.080><c> software</c><00:19:03.480><c> layer</c><00:19:03.720><c> as</c><00:19:03.840><c> you</c>
+
+00:19:03.910 --> 00:19:03.920 align:start position:0%
+supported in the software layer as you
+ 
+
+00:19:03.920 --> 00:19:05.470 align:start position:0%
+supported in the software layer as you
+envision<00:19:04.320><c> it</c><00:19:04.440><c> now?</c>
+
+00:19:05.470 --> 00:19:05.480 align:start position:0%
+envision it now?
+ 
+
+00:19:05.480 --> 00:19:06.230 align:start position:0%
+envision it now?
+&gt;&gt; Um<00:19:05.760><c> yeah.</c>
+
+00:19:06.230 --> 00:19:06.240 align:start position:0%
+&gt;&gt; Um yeah.
+ 
+
+00:19:06.240 --> 00:19:13.190 align:start position:0%
+&gt;&gt; Um yeah.
+&gt;&gt; Okay.<00:19:06.560><c> Thank</c><00:19:06.760><c> you.</c>
+
+00:19:13.190 --> 00:19:13.200 align:start position:0%
+ 
+ 
+
+00:19:13.200 --> 00:19:15.070 align:start position:0%
+ 
+&gt;&gt; Hey<00:19:13.320><c> Chris.</c><00:19:13.800><c> Good</c><00:19:14.000><c> to</c><00:19:14.120><c> see</c><00:19:14.320><c> you.</c>
+
+00:19:15.070 --> 00:19:15.080 align:start position:0%
+&gt;&gt; Hey Chris. Good to see you.
+ 
+
+00:19:15.080 --> 00:19:15.990 align:start position:0%
+&gt;&gt; Hey Chris. Good to see you.
+Um
+
+00:19:15.990 --> 00:19:16.000 align:start position:0%
+Um
+ 
+
+00:19:16.000 --> 00:19:17.870 align:start position:0%
+Um
+So,<00:19:16.200><c> I</c><00:19:16.280><c> have</c><00:19:16.440><c> a</c><00:19:16.560><c> question</c><00:19:17.040><c> that's</c><00:19:17.320><c> slightly</c><00:19:17.760><c> in</c>
+
+00:19:17.870 --> 00:19:17.880 align:start position:0%
+So, I have a question that's slightly in
+ 
+
+00:19:17.880 --> 00:19:19.030 align:start position:0%
+So, I have a question that's slightly in
+the<00:19:17.960><c> future.</c>
+
+00:19:19.030 --> 00:19:19.040 align:start position:0%
+the future.
+ 
+
+00:19:19.040 --> 00:19:20.910 align:start position:0%
+the future.
+Suppose<00:19:19.720><c> you</c><00:19:19.800><c> know,</c><00:19:19.920><c> measurements</c><00:19:20.480><c> you</c><00:19:20.600><c> find</c>
+
+00:19:20.910 --> 00:19:20.920 align:start position:0%
+Suppose you know, measurements you find
+ 
+
+00:19:20.920 --> 00:19:23.230 align:start position:0%
+Suppose you know, measurements you find
+out<00:19:21.120><c> that</c><00:19:21.880><c> time</c><00:19:22.160><c> synchronization</c><00:19:22.920><c> actually</c>
+
+00:19:23.230 --> 00:19:23.240 align:start position:0%
+out that time synchronization actually
+ 
+
+00:19:23.240 --> 00:19:26.910 align:start position:0%
+out that time synchronization actually
+doesn't<00:19:23.600><c> work</c><00:19:24.480><c> uh</c><00:19:24.800><c> at</c><00:19:24.960><c> scale</c><00:19:25.400><c> because</c><00:19:26.040><c> uh</c>
+
+00:19:26.910 --> 00:19:26.920 align:start position:0%
+doesn't work uh at scale because uh
+ 
+
+00:19:26.920 --> 00:19:28.510 align:start position:0%
+doesn't work uh at scale because uh
+you<00:19:26.960><c> know,</c><00:19:27.080><c> from</c><00:19:27.320><c> quantum</c><00:19:27.640><c> physics</c><00:19:28.000><c> time</c><00:19:28.280><c> goes</c>
+
+00:19:28.510 --> 00:19:28.520 align:start position:0%
+you know, from quantum physics time goes
+ 
+
+00:19:28.520 --> 00:19:31.430 align:start position:0%
+you know, from quantum physics time goes
+both<00:19:28.760><c> forward</c><00:19:29.160><c> and</c><00:19:29.320><c> backward</c><00:19:30.400><c> and</c><00:19:31.080><c> literally</c>
+
+00:19:31.430 --> 00:19:31.440 align:start position:0%
+both forward and backward and literally
+ 
+
+00:19:31.440 --> 00:19:32.630 align:start position:0%
+both forward and backward and literally
+goes<00:19:31.680><c> sideways.</c>
+
+00:19:32.630 --> 00:19:32.640 align:start position:0%
+goes sideways.
+ 
+
+00:19:32.640 --> 00:19:32.790 align:start position:0%
+goes sideways.
+&gt;&gt; Yeah.
+
+00:19:32.790 --> 00:19:32.800 align:start position:0%
+&gt;&gt; Yeah.
+ 
+
+00:19:32.800 --> 00:19:35.070 align:start position:0%
+&gt;&gt; Yeah.
+&gt;&gt; I<00:19:32.880><c> have</c><00:19:33.040><c> seen</c><00:19:33.360><c> some</c><00:19:33.520><c> of</c><00:19:33.600><c> these</c><00:19:33.800><c> observations.</c>
+
+00:19:35.070 --> 00:19:35.080 align:start position:0%
+&gt;&gt; I have seen some of these observations.
+ 
+
+00:19:35.080 --> 00:19:37.710 align:start position:0%
+&gt;&gt; I have seen some of these observations.
+What<00:19:35.320><c> is</c><00:19:35.480><c> it</c><00:19:36.000><c> that</c><00:19:36.320><c> will</c><00:19:36.480><c> not</c>
+
+00:19:37.710 --> 00:19:37.720 align:start position:0%
+What is it that will not
+ 
+
+00:19:37.720 --> 00:19:39.350 align:start position:0%
+What is it that will not
+work<00:19:38.240><c> for</c><00:19:38.440><c> you</c>
+
+00:19:39.350 --> 00:19:39.360 align:start position:0%
+work for you
+ 
+
+00:19:39.360 --> 00:19:41.310 align:start position:0%
+work for you
+if<00:19:39.960><c> you</c><00:19:40.120><c> had</c><00:19:40.320><c> to</c><00:19:40.400><c> get</c><00:19:40.600><c> rid</c><00:19:40.760><c> of</c><00:19:41.120><c> time</c>
+
+00:19:41.310 --> 00:19:41.320 align:start position:0%
+if you had to get rid of time
+ 
+
+00:19:41.320 --> 00:19:42.910 align:start position:0%
+if you had to get rid of time
+synchronization?
+
+00:19:42.910 --> 00:19:42.920 align:start position:0%
+synchronization?
+ 
+
+00:19:42.920 --> 00:19:45.070 align:start position:0%
+synchronization?
+&gt;&gt; Um<00:19:43.600><c> so,</c>
+
+00:19:45.070 --> 00:19:45.080 align:start position:0%
+&gt;&gt; Um so,
+ 
+
+00:19:45.080 --> 00:19:47.150 align:start position:0%
+&gt;&gt; Um so,
+I<00:19:45.120><c> mean,</c><00:19:45.720><c> there's</c><00:19:46.640><c> there</c><00:19:46.760><c> were</c><00:19:46.840><c> a</c><00:19:46.880><c> lot</c><00:19:47.080><c> of</c>
+
+00:19:47.150 --> 00:19:47.160 align:start position:0%
+I mean, there's there were a lot of
+ 
+
+00:19:47.160 --> 00:19:49.430 align:start position:0%
+I mean, there's there were a lot of
+applications<00:19:48.000><c> mentioned</c><00:19:48.360><c> today,</c><00:19:48.760><c> but</c><00:19:49.280><c> what</c>
+
+00:19:49.430 --> 00:19:49.440 align:start position:0%
+applications mentioned today, but what
+ 
+
+00:19:49.440 --> 00:19:50.710 align:start position:0%
+applications mentioned today, but what
+we're<00:19:49.640><c> looking</c>
+
+00:19:50.710 --> 00:19:50.720 align:start position:0%
+we're looking
+ 
+
+00:19:50.720 --> 00:19:52.390 align:start position:0%
+we're looking
+you<00:19:50.800><c> know,</c><00:19:51.120><c> specifically</c><00:19:51.680><c> at</c><00:19:51.840><c> Intel,</c><00:19:52.200><c> what</c>
+
+00:19:52.390 --> 00:19:52.400 align:start position:0%
+you know, specifically at Intel, what
+ 
+
+00:19:52.400 --> 00:19:57.110 align:start position:0%
+you know, specifically at Intel, what
+we're<00:19:52.640><c> really</c><00:19:52.920><c> looking</c><00:19:53.240><c> at</c><00:19:53.480><c> are</c><00:19:54.080><c> AI</c><00:19:54.840><c> and</c><00:19:55.800><c> um</c>
+
+00:19:57.110 --> 00:19:57.120 align:start position:0%
+we're really looking at are AI and um
+ 
+
+00:19:57.120 --> 00:19:59.110 align:start position:0%
+we're really looking at are AI and um
+uh<00:19:57.320><c> AI</c><00:19:57.720><c> applications</c>
+
+00:19:59.110 --> 00:19:59.120 align:start position:0%
+uh AI applications
+ 
+
+00:19:59.120 --> 00:20:02.310 align:start position:0%
+uh AI applications
+and<00:19:59.680><c> uh</c><00:20:00.160><c> and</c><00:20:00.280><c> database.</c><00:20:01.040><c> So,</c><00:20:01.720><c> with</c><00:20:02.160><c> with</c>
+
+00:20:02.310 --> 00:20:02.320 align:start position:0%
+and uh and database. So, with with
+ 
+
+00:20:02.320 --> 00:20:04.110 align:start position:0%
+and uh and database. So, with with
+database<00:20:02.800><c> applications,</c>
+
+00:20:04.110 --> 00:20:04.120 align:start position:0%
+database applications,
+ 
+
+00:20:04.120 --> 00:20:07.550 align:start position:0%
+database applications,
+uh<00:20:04.440><c> the</c><00:20:04.600><c> retry</c><00:20:05.160><c> rate</c><00:20:05.800><c> is</c><00:20:06.240><c> is</c><00:20:06.440><c> going</c><00:20:06.600><c> to</c><00:20:06.640><c> be</c><00:20:07.480><c> you</c>
+
+00:20:07.550 --> 00:20:07.560 align:start position:0%
+uh the retry rate is is going to be you
+ 
+
+00:20:07.560 --> 00:20:10.670 align:start position:0%
+uh the retry rate is is going to be you
+know,<00:20:08.040><c> much</c><00:20:08.320><c> higher.</c><00:20:09.200><c> Uh</c><00:20:09.280><c> we're</c><00:20:09.400><c> going</c><00:20:09.680><c> to</c>
+
+00:20:10.670 --> 00:20:10.680 align:start position:0%
+know, much higher. Uh we're going to
+ 
+
+00:20:10.680 --> 00:20:12.910 align:start position:0%
+know, much higher. Uh we're going to
+have<00:20:10.840><c> a</c><00:20:10.880><c> lot</c><00:20:11.040><c> of</c><00:20:11.080><c> have</c><00:20:11.360><c> more</c><00:20:11.680><c> more</c><00:20:11.920><c> collisions.</c>
+
+00:20:12.910 --> 00:20:12.920 align:start position:0%
+have a lot of have more more collisions.
+ 
+
+00:20:12.920 --> 00:20:16.590 align:start position:0%
+have a lot of have more more collisions.
+And<00:20:13.600><c> uh</c><00:20:14.000><c> for</c><00:20:14.680><c> you</c><00:20:14.760><c> know,</c><00:20:15.080><c> AI,</c><00:20:15.480><c> it's</c><00:20:15.720><c> more</c><00:20:15.920><c> about</c>
+
+00:20:16.590 --> 00:20:16.600 align:start position:0%
+And uh for you know, AI, it's more about
+ 
+
+00:20:16.600 --> 00:20:17.710 align:start position:0%
+And uh for you know, AI, it's more about
+uh
+
+00:20:17.710 --> 00:20:17.720 align:start position:0%
+uh
+ 
+
+00:20:17.720 --> 00:20:21.230 align:start position:0%
+uh
+utilization<00:20:18.760><c> of</c><00:20:19.120><c> the</c><00:20:19.560><c> of</c><00:20:19.680><c> the</c><00:20:19.800><c> cluster.</c>
+
+00:20:21.230 --> 00:20:21.240 align:start position:0%
+utilization of the of the cluster.
+ 
+
+00:20:21.240 --> 00:20:23.630 align:start position:0%
+utilization of the of the cluster.
+&gt;&gt; Why<00:20:21.800><c> wouldn't</c><00:20:22.280><c> order</c><00:20:22.640><c> transaction</c><00:20:23.360><c> solve</c>
+
+00:20:23.630 --> 00:20:23.640 align:start position:0%
+&gt;&gt; Why wouldn't order transaction solve
+ 
+
+00:20:23.640 --> 00:20:24.990 align:start position:0%
+&gt;&gt; Why wouldn't order transaction solve
+that?
+
+00:20:24.990 --> 00:20:25.000 align:start position:0%
+that?
+ 
+
+00:20:25.000 --> 00:20:25.750 align:start position:0%
+that?
+&gt;&gt; Excuse<00:20:25.280><c> me?</c>
+
+00:20:25.750 --> 00:20:25.760 align:start position:0%
+&gt;&gt; Excuse me?
+ 
+
+00:20:25.760 --> 00:20:27.710 align:start position:0%
+&gt;&gt; Excuse me?
+&gt;&gt; Why<00:20:25.920><c> would</c><00:20:26.160><c> transaction</c><00:20:26.760><c> ordering</c><00:20:27.200><c> not</c><00:20:27.440><c> solve</c>
+
+00:20:27.710 --> 00:20:27.720 align:start position:0%
+&gt;&gt; Why would transaction ordering not solve
+ 
+
+00:20:27.720 --> 00:20:29.310 align:start position:0%
+&gt;&gt; Why would transaction ordering not solve
+it?
+
+00:20:29.310 --> 00:20:29.320 align:start position:0%
+it?
+ 
+
+00:20:29.320 --> 00:20:30.670 align:start position:0%
+it?
+&gt;&gt; Um
+
+00:20:30.670 --> 00:20:30.680 align:start position:0%
+&gt;&gt; Um
+ 
+
+00:20:30.680 --> 00:20:31.550 align:start position:0%
+&gt;&gt; Um
+well,
+
+00:20:31.550 --> 00:20:31.560 align:start position:0%
+well,
+ 
+
+00:20:31.560 --> 00:20:33.630 align:start position:0%
+well,
+that's<00:20:31.920><c> what's</c><00:20:32.640><c> that's</c><00:20:32.880><c> what</c><00:20:33.000><c> we're</c><00:20:33.120><c> getting</c>
+
+00:20:33.630 --> 00:20:33.640 align:start position:0%
+that's what's that's what we're getting
+ 
+
+00:20:33.640 --> 00:20:36.510 align:start position:0%
+that's what's that's what we're getting
+out<00:20:33.880><c> of</c><00:20:34.240><c> out</c><00:20:34.400><c> of</c><00:20:34.520><c> time.</c>
+
+00:20:36.510 --> 00:20:36.520 align:start position:0%
+out of out of time.
+ 
+
+00:20:36.520 --> 00:20:38.830 align:start position:0%
+out of out of time.
+So,<00:20:36.760><c> it's</c><00:20:37.040><c> a</c><00:20:37.080><c> it's</c><00:20:37.360><c> a</c><00:20:37.760><c> global</c><00:20:38.520><c> So,</c><00:20:38.640><c> it's</c><00:20:38.760><c> a</c>
+
+00:20:38.830 --> 00:20:38.840 align:start position:0%
+So, it's a it's a global So, it's a
+ 
+
+00:20:38.840 --> 00:20:42.630 align:start position:0%
+So, it's a it's a global So, it's a
+global<00:20:39.320><c> ordering</c><00:20:40.160><c> of</c><00:20:40.720><c> the</c><00:20:40.840><c> transactions.</c><00:20:41.920><c> So,</c>
+
+00:20:42.630 --> 00:20:42.640 align:start position:0%
+global ordering of the transactions. So,
+ 
+
+00:20:42.640 --> 00:20:45.790 align:start position:0%
+global ordering of the transactions. So,
+I<00:20:42.680><c> mean,</c><00:20:42.960><c> time</c><00:20:43.560><c> is</c>
+
+00:20:45.790 --> 00:20:45.800 align:start position:0%
+I mean, time is
+ 
+
+00:20:45.800 --> 00:20:46.790 align:start position:0%
+I mean, time is
+the<00:20:45.880><c> way</c>
+
+00:20:46.790 --> 00:20:46.800 align:start position:0%
+the way
+ 
+
+00:20:46.800 --> 00:20:49.230 align:start position:0%
+the way
+is<00:20:47.080><c> is</c><00:20:47.280><c> a</c><00:20:47.400><c> way</c><00:20:47.600><c> to</c><00:20:47.760><c> do</c><00:20:47.920><c> that.</c>
+
+00:20:49.230 --> 00:20:49.240 align:start position:0%
+is is a way to do that.
+ 
+
+00:20:49.240 --> 00:20:50.990 align:start position:0%
+is is a way to do that.
+&gt;&gt; Why<00:20:49.480><c> couldn't</c><00:20:49.880><c> you</c><00:20:49.960><c> make</c><00:20:50.200><c> it</c><00:20:50.320><c> a</c>
+
+00:20:50.990 --> 00:20:51.000 align:start position:0%
+&gt;&gt; Why couldn't you make it a
+ 
+
+00:20:51.000 --> 00:20:52.430 align:start position:0%
+&gt;&gt; Why couldn't you make it a
+you<00:20:51.120><c> know,</c><00:20:51.280><c> fake</c>
+
+00:20:52.430 --> 00:20:52.440 align:start position:0%
+you know, fake
+ 
+
+00:20:52.440 --> 00:20:53.710 align:start position:0%
+you know, fake
+um
+
+00:20:53.710 --> 00:20:53.720 align:start position:0%
+um
+ 
+
+00:20:53.720 --> 00:20:55.910 align:start position:0%
+um
+you<00:20:53.800><c> know,</c><00:20:54.040><c> any</c><00:20:54.440><c> any</c><00:20:54.680><c> source</c><00:20:55.200><c> for</c><00:20:55.400><c> anything</c>
+
+00:20:55.910 --> 00:20:55.920 align:start position:0%
+you know, any any source for anything
+ 
+
+00:20:55.920 --> 00:20:58.510 align:start position:0%
+you know, any any source for anything
+that<00:20:56.160><c> just</c><00:20:56.480><c> orders</c><00:20:56.880><c> transactions</c><00:20:58.040><c> and</c><00:20:58.200><c> time</c>
+
+00:20:58.510 --> 00:20:58.520 align:start position:0%
+that just orders transactions and time
+ 
+
+00:20:58.520 --> 00:21:00.150 align:start position:0%
+that just orders transactions and time
+is<00:20:58.720><c> not</c><00:20:58.960><c> the</c><00:20:59.040><c> source?</c>
+
+00:21:00.150 --> 00:21:00.160 align:start position:0%
+is not the source?
+ 
+
+00:21:00.160 --> 00:21:02.870 align:start position:0%
+is not the source?
+I<00:21:00.520><c> I'm</c><00:21:00.640><c> just</c><00:21:00.880><c> asking</c><00:21:01.200><c> a</c><00:21:01.240><c> very</c><00:21:01.480><c> basic</c><00:21:01.800><c> question.</c>
+
+00:21:02.870 --> 00:21:02.880 align:start position:0%
+I I'm just asking a very basic question.
+ 
+
+00:21:02.880 --> 00:21:04.230 align:start position:0%
+I I'm just asking a very basic question.
+You<00:21:03.000><c> don't</c><00:21:03.200><c> have</c><00:21:03.320><c> to</c><00:21:03.440><c> answer,</c><00:21:03.720><c> but</c><00:21:04.040><c> think</c>
+
+00:21:04.230 --> 00:21:04.240 align:start position:0%
+You don't have to answer, but think
+ 
+
+00:21:04.240 --> 00:21:05.110 align:start position:0%
+You don't have to answer, but think
+about<00:21:04.480><c> it.</c>
+
+00:21:05.110 --> 00:21:05.120 align:start position:0%
+about it.
+ 
+
+00:21:05.120 --> 00:21:09.270 align:start position:0%
+about it.
+&gt;&gt; Yes.
+
+00:21:09.270 --> 00:21:09.280 align:start position:0%
+ 
+ 
+
+00:21:09.280 --> 00:21:11.990 align:start position:0%
+ 
+&gt;&gt; Okay,<00:21:09.760><c> that's</c><00:21:10.040><c> it.</c><00:21:10.280><c> Thank</c><00:21:10.560><c> you.</c>
+
+00:21:11.990 --> 00:21:12.000 align:start position:0%
+&gt;&gt; Okay, that's it. Thank you.
+ 
+
+00:21:12.000 --> 00:21:12.550 align:start position:0%
+&gt;&gt; Okay, that's it. Thank you.
+&gt;&gt; Thank<00:21:12.200><c> you.</c>
+
+00:21:12.550 --> 00:21:12.560 align:start position:0%
+&gt;&gt; Thank you.
+ 
+
+00:21:12.560 --> 00:21:15.200 align:start position:0%
+&gt;&gt; Thank you.
+&gt;&gt; Thanks,<00:21:12.840><c> guys.</c>
+

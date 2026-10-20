@@ -1,0 +1,1927 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.929 --> 00:00:05.949
+[applause]
+
+00:00:06.160 --> 00:00:10.960
+Thank you. So this is this is perfect,
+
+00:00:09.200 --> 00:00:13.440
+right? You know, Jared talked about it
+
+00:00:10.960 --> 00:00:15.360
+at the at the rack level. Andy talked
+
+00:00:13.440 --> 00:00:17.600
+about at the tray level. I'll talk about
+
+00:00:15.360 --> 00:00:19.199
+it at the topology and component level.
+
+00:00:17.600 --> 00:00:21.359
+So it's it's perfect. We're going high
+
+00:00:19.199 --> 00:00:23.519
+level to low level here. So I'm going to
+
+00:00:21.359 --> 00:00:27.920
+talk about uh you know 800volt data
+
+00:00:23.519 --> 00:00:30.320
+center uh DCtoDC design considerations
+
+00:00:27.920 --> 00:00:33.040
+you know some topology comparisons and
+
+00:00:30.320 --> 00:00:36.160
+some tradeoffs.
+
+00:00:33.040 --> 00:00:39.200
+So let's first go over you know evolving
+
+00:00:36.160 --> 00:00:41.200
+data center power demands. So the
+
+00:00:39.200 --> 00:00:43.280
+computer has seen exponential growth in
+
+00:00:41.200 --> 00:00:45.520
+performance and the power requirements
+
+00:00:43.280 --> 00:00:47.600
+have increased. These demands are
+
+00:00:45.520 --> 00:00:50.079
+expected to continue.
+
+00:00:47.600 --> 00:00:52.160
+I wrote that in my master's thesis 20
+
+00:00:50.079 --> 00:00:55.760
+years ago.
+
+00:00:52.160 --> 00:00:57.600
+So here we are right we 20 years ago uh
+
+00:00:55.760 --> 00:01:00.719
+it was a perfect I can just copy and
+
+00:00:57.600 --> 00:01:02.719
+paste that every every five years I can
+
+00:01:00.719 --> 00:01:04.559
+repeat that statement. So 20 years ago
+
+00:01:02.719 --> 00:01:06.560
+we were we didn't know how on earth we
+
+00:01:04.559 --> 00:01:08.320
+were going to get to 200 watts right how
+
+00:01:06.560 --> 00:01:10.799
+are you going to power a 200 watt
+
+00:01:08.320 --> 00:01:12.960
+processor it was just unheard of at the
+
+00:01:10.799 --> 00:01:14.880
+time. So let's fast forward, right?
+
+00:01:12.960 --> 00:01:17.200
+Let's fast forward 20 years. Where are
+
+00:01:14.880 --> 00:01:19.520
+we now? Right? This is from OCP last
+
+00:01:17.200 --> 00:01:23.280
+year. Now we're talking about megawatt
+
+00:01:19.520 --> 00:01:25.600
+type racks, right? So you know 20 years
+
+00:01:23.280 --> 00:01:28.400
+we go from talking around 200 watt
+
+00:01:25.600 --> 00:01:30.479
+processing power to around 2 kilowatt
+
+00:01:28.400 --> 00:01:32.240
+processing power. So how are we going to
+
+00:01:30.479 --> 00:01:33.920
+get there right? You know or how have we
+
+00:01:32.240 --> 00:01:35.439
+gotten there? Right? This is reality
+
+00:01:33.920 --> 00:01:37.840
+now.
+
+00:01:35.439 --> 00:01:39.680
+So you know we've evolved the power
+
+00:01:37.840 --> 00:01:42.400
+distribution method, right? you know,
+
+00:01:39.680 --> 00:01:44.720
+started with 12volt back plane, moved to
+
+00:01:42.400 --> 00:01:47.759
+50 volt back plane. You know, on the
+
+00:01:44.720 --> 00:01:49.759
+left is your conventional, you know, uh,
+
+00:01:47.759 --> 00:01:53.119
+power rack as you see today. You've got
+
+00:01:49.759 --> 00:01:54.799
+your AC to DC power shelves, your PSU,
+
+00:01:53.119 --> 00:01:57.520
+like Andy talked about in the last
+
+00:01:54.799 --> 00:02:01.119
+presentation. Goes to your 50 volt bus
+
+00:01:57.520 --> 00:02:03.040
+bar, feeds your your IT tray, and then,
+
+00:02:01.119 --> 00:02:05.600
+you know, on the bottom, you can see
+
+00:02:03.040 --> 00:02:09.360
+you've got 50 volts that comes in. I've
+
+00:02:05.600 --> 00:02:11.520
+got my hot swap, my IBC. My IBC will
+
+00:02:09.360 --> 00:02:14.080
+take us from 50 volts to somewhere, you
+
+00:02:11.520 --> 00:02:16.239
+know, 12 or six generally. Then we have
+
+00:02:14.080 --> 00:02:17.599
+our last mile, right? Our VRs and our
+
+00:02:16.239 --> 00:02:20.959
+point of loads, they're going to take it
+
+00:02:17.599 --> 00:02:22.319
+to our subVt, you know, compute chips.
+
+00:02:20.959 --> 00:02:24.239
+So, how are we going to get to these
+
+00:02:22.319 --> 00:02:26.879
+megawatt type racks, right? We're going
+
+00:02:24.239 --> 00:02:29.280
+to go up in voltage. So, if you go up 16
+
+00:02:26.879 --> 00:02:31.520
+times in voltage, you can go down 16
+
+00:02:29.280 --> 00:02:33.920
+times in current, right? That's how we
+
+00:02:31.520 --> 00:02:36.720
+can remove and reduce the size of these
+
+00:02:33.920 --> 00:02:38.560
+massive bus bars. So you can see, you
+
+00:02:36.720 --> 00:02:41.200
+know, this is there's a lot of different
+
+00:02:38.560 --> 00:02:43.040
+implementations of this 800vt type
+
+00:02:41.200 --> 00:02:44.480
+architecture. You know, I'm just going
+
+00:02:43.040 --> 00:02:46.959
+to kind of talk about, you know, I'm
+
+00:02:44.480 --> 00:02:48.720
+talking about, you know, inside the IT
+
+00:02:46.959 --> 00:02:50.959
+rack. So we'll talk about kind of a
+
+00:02:48.720 --> 00:02:54.160
+future iteration when we get to that
+
+00:02:50.959 --> 00:02:56.480
+800vt bus bar and kind of what does the
+
+00:02:54.160 --> 00:02:58.560
+IT tray look like? What does the power
+
+00:02:56.480 --> 00:03:01.280
+conversion look like inside that IT
+
+00:02:58.560 --> 00:03:04.057
+tray? So you can see it's very similar,
+
+00:03:01.280 --> 00:03:05.680
+right? 800 volt comes in, I've got a
+
+00:03:04.057 --> 00:03:08.879
+[snorts] hot swap, I've got a high
+
+00:03:05.680 --> 00:03:12.319
+voltage IBC, then I've got a low voltage
+
+00:03:08.879 --> 00:03:14.879
+IBC, maybe uh depends on whether you do
+
+00:03:12.319 --> 00:03:17.760
+800 to 50 or there's, you know,
+
+00:03:14.879 --> 00:03:21.040
+considerations to go directly 800 to 12,
+
+00:03:17.760 --> 00:03:23.440
+800 to 6 and then I'm down to my 12 and
+
+00:03:21.040 --> 00:03:25.920
+6 volts again. And then that'll take us
+
+00:03:23.440 --> 00:03:28.640
+down to the subvolt down to the to to
+
+00:03:25.920 --> 00:03:30.720
+the processor.
+
+00:03:28.640 --> 00:03:32.959
+So what's the best way to get there?
+
+00:03:30.720 --> 00:03:35.040
+Right? Looking at, you know, Texas
+
+00:03:32.959 --> 00:03:37.200
+Instruments, we make semiconductors, we
+
+00:03:35.040 --> 00:03:38.959
+make chips for these applications. So we
+
+00:03:37.200 --> 00:03:40.560
+want to know what's the best way to get
+
+00:03:38.959 --> 00:03:42.080
+there and kind of where should we focus
+
+00:03:40.560 --> 00:03:45.040
+our efforts to kind of make the best
+
+00:03:42.080 --> 00:03:47.920
+products. So looking at, you know, this
+
+00:03:45.040 --> 00:03:49.120
+is a block diagram of inside of a tray,
+
+00:03:47.920 --> 00:03:50.799
+right? You know, like we've talked
+
+00:03:49.120 --> 00:03:53.040
+about, we've got the power distribution
+
+00:03:50.799 --> 00:03:54.720
+board. You know, inside of that, you've
+
+00:03:53.040 --> 00:03:56.560
+got a hot swap, you've got some
+
+00:03:54.720 --> 00:03:58.720
+telemetry, [snorts] and then you've got
+
+00:03:56.560 --> 00:04:00.799
+your isolation barrier. You've got your
+
+00:03:58.720 --> 00:04:02.720
+reinforced insulation, you know, your
+
+00:04:00.799 --> 00:04:05.840
+safety, right? How do I get that high
+
+00:04:02.720 --> 00:04:08.319
+voltage into the, you know, low voltage
+
+00:04:05.840 --> 00:04:11.120
+50 volt motherboard. So, the option one
+
+00:04:08.319 --> 00:04:13.680
+is essentially let's just add a stage.
+
+00:04:11.120 --> 00:04:17.120
+Let's add a high voltage intermediate
+
+00:04:13.680 --> 00:04:19.040
+bus converter. takes this 800 to50 bring
+
+00:04:17.120 --> 00:04:21.199
+that in and then you can stick with a
+
+00:04:19.040 --> 00:04:24.240
+somewhat conventional 50volt motherboard
+
+00:04:21.199 --> 00:04:26.960
+design. I can have a low voltage IBC
+
+00:04:24.240 --> 00:04:29.759
+with a 4:1 step down to 12 volts or an
+
+00:04:26.960 --> 00:04:31.919
+8:1 to get us around six. And then I can
+
+00:04:29.759 --> 00:04:34.240
+use my conventional multi-phase voltage
+
+00:04:31.919 --> 00:04:36.000
+regulators.
+
+00:04:34.240 --> 00:04:38.080
+And then let's talk about option two,
+
+00:04:36.000 --> 00:04:40.560
+right? Do we do we want to when we start
+
+00:04:38.080 --> 00:04:43.199
+to try to push density? Uh you know
+
+00:04:40.560 --> 00:04:46.240
+obviously no one wants more power on the
+
+00:04:43.199 --> 00:04:48.560
+board, right? Power costs money. GPUs
+
+00:04:46.240 --> 00:04:50.720
+make money, right? So the idea the less
+
+00:04:48.560 --> 00:04:54.160
+power conversion you have on the board,
+
+00:04:50.720 --> 00:04:56.720
+the more revenue generating uh CPU GPUs
+
+00:04:54.160 --> 00:04:59.199
+you can have. So the idea is maybe now
+
+00:04:56.720 --> 00:05:02.080
+why not take two stages and make them a
+
+00:04:59.199 --> 00:05:05.600
+single stage. So option two I'll say is
+
+00:05:02.080 --> 00:05:08.160
+an 800 to 12VT converter and then option
+
+00:05:05.600 --> 00:05:09.759
+three will be 800 to six. Right? So
+
+00:05:08.160 --> 00:05:12.320
+those are kind of the three options that
+
+00:05:09.759 --> 00:05:13.919
+we'll consider. And I'll say, you know,
+
+00:05:12.320 --> 00:05:16.000
+this is going to kind of build us into
+
+00:05:13.919 --> 00:05:18.160
+the future. You know, this is option
+
+00:05:16.000 --> 00:05:21.440
+four. You know, when we talk about do we
+
+00:05:18.160 --> 00:05:23.919
+do something like take 850 and then
+
+00:05:21.440 --> 00:05:26.000
+drive directly to like an integrated IVR
+
+00:05:23.919 --> 00:05:27.680
+or something like that. I'll say that's
+
+00:05:26.000 --> 00:05:29.600
+more forward looking. I'll say, but I'll
+
+00:05:27.680 --> 00:05:32.880
+call that option four. So those are kind
+
+00:05:29.600 --> 00:05:35.520
+of ways that you can get from 800 to one
+
+00:05:32.880 --> 00:05:37.440
+volt.
+
+00:05:35.520 --> 00:05:39.600
+So let's look at, you know, it's it's
+
+00:05:37.440 --> 00:05:41.280
+easy to look at a block diagram, but
+
+00:05:39.600 --> 00:05:43.840
+let's talk about, you know, not only is
+
+00:05:41.280 --> 00:05:46.000
+it just the stage efficiency, right? You
+
+00:05:43.840 --> 00:05:48.080
+got to look at the power distribution on
+
+00:05:46.000 --> 00:05:50.000
+the board. You know, there's a lot of
+
+00:05:48.080 --> 00:05:51.759
+losses in there. So when you look at it,
+
+00:05:50.000 --> 00:05:53.919
+there's two general ways that you can
+
+00:05:51.759 --> 00:05:56.240
+approach this. You have a laterally
+
+00:05:53.919 --> 00:05:57.759
+lateral power delivery, and that's very
+
+00:05:56.240 --> 00:05:59.759
+straightforward, right? The pattern the
+
+00:05:57.759 --> 00:06:02.560
+power delivers laterally across the
+
+00:05:59.759 --> 00:06:05.520
+motherboard, right? comes in at 800,
+
+00:06:02.560 --> 00:06:07.360
+goes in through the PDB, comes out, gets
+
+00:06:05.520 --> 00:06:09.039
+to your 50, and then that'll travel
+
+00:06:07.360 --> 00:06:11.280
+laterally to your your voltage
+
+00:06:09.039 --> 00:06:14.000
+regulators, which are on top side of the
+
+00:06:11.280 --> 00:06:16.000
+board, and then they power your load.
+
+00:06:14.000 --> 00:06:18.080
+The other option, right, is vertical
+
+00:06:16.000 --> 00:06:20.400
+power delivery. You know, you know,
+
+00:06:18.080 --> 00:06:22.960
+ultimately you say, well, if I have too
+
+00:06:20.400 --> 00:06:25.280
+much loss, too much impedance
+
+00:06:22.960 --> 00:06:27.280
+transversing that power laterally, why
+
+00:06:25.280 --> 00:06:29.120
+can't we put the last mile, that last
+
+00:06:27.280 --> 00:06:30.960
+voltage regulator on the back side of
+
+00:06:29.120 --> 00:06:33.600
+the board, right? significantly reduce
+
+00:06:30.960 --> 00:06:36.000
+the res resistance by just driving
+
+00:06:33.600 --> 00:06:37.919
+directly underneath it. Uh, and that
+
+00:06:36.000 --> 00:06:40.319
+also allows you some options, right? It
+
+00:06:37.919 --> 00:06:42.800
+changes where you're going to locate uh
+
+00:06:40.319 --> 00:06:44.720
+to be able to put your IBCs because when
+
+00:06:42.800 --> 00:06:47.039
+we're talking about these very very high
+
+00:06:44.720 --> 00:06:48.880
+powers, they have very high currents,
+
+00:06:47.039 --> 00:06:51.680
+especially as we try to reduce the
+
+00:06:48.880 --> 00:06:53.680
+voltage. So, you can see here, you know,
+
+00:06:51.680 --> 00:06:56.080
+at the top, right, this is kind of a
+
+00:06:53.680 --> 00:06:58.639
+cartoon drawing of a, you know, 4GPU
+
+00:06:56.080 --> 00:07:00.240
+type tray. you know, you have the 850
+
+00:06:58.639 --> 00:07:02.880
+kind of out to the side. You know, keep
+
+00:07:00.240 --> 00:07:05.280
+your high voltage away from your uh from
+
+00:07:02.880 --> 00:07:07.919
+your sensitive processor and then it'll
+
+00:07:05.280 --> 00:07:10.400
+go to your low voltage IBC that'll go
+
+00:07:07.919 --> 00:07:12.639
+across to your 12vt point of loads or
+
+00:07:10.400 --> 00:07:15.440
+6volt point of loads. It'll laterally
+
+00:07:12.639 --> 00:07:17.680
+power the GPU. But when you go to VPD,
+
+00:07:15.440 --> 00:07:19.280
+you don't have that last mile. You don't
+
+00:07:17.680 --> 00:07:21.840
+have those low voltage voltage
+
+00:07:19.280 --> 00:07:24.400
+regulators on the top side of the board
+
+00:07:21.840 --> 00:07:26.960
+anymore. They're underneath. So then I
+
+00:07:24.400 --> 00:07:29.440
+can move my IBC's closer, right? The
+
+00:07:26.960 --> 00:07:32.400
+idea is is you want to be able to reduce
+
+00:07:29.440 --> 00:07:35.360
+the amount of current uh required until
+
+00:07:32.400 --> 00:07:37.120
+you get directly to your load.
+
+00:07:35.360 --> 00:07:39.759
+And then you know when we look at like
+
+00:07:37.120 --> 00:07:41.919
+800 to 12 right generally what we see
+
+00:07:39.759 --> 00:07:44.639
+you know TI works a lot in low voltage
+
+00:07:41.919 --> 00:07:47.520
+type you know uh voltage voltage
+
+00:07:44.639 --> 00:07:49.360
+processors right uh we we say that you
+
+00:07:47.520 --> 00:07:51.280
+know 12 volts right now we kind of see
+
+00:07:49.360 --> 00:07:54.240
+that as a lateral power delivery type
+
+00:07:51.280 --> 00:07:55.919
+solution and then we kind of see it 6
+
+00:07:54.240 --> 00:07:58.400
+volts you can start to look at you know
+
+00:07:55.919 --> 00:08:00.800
+your vertical power delivery. So the
+
+00:07:58.400 --> 00:08:03.520
+envisionment of you know I'll say you
+
+00:08:00.800 --> 00:08:06.479
+know kind of the the end goal right the
+
+00:08:03.520 --> 00:08:09.520
+perfect power distribution is is to go
+
+00:08:06.479 --> 00:08:12.080
+straight from 800 to six and that'll go
+
+00:08:09.520 --> 00:08:14.960
+very it's it's located very close to
+
+00:08:12.080 --> 00:08:17.120
+your GPU it can drive the the the
+
+00:08:14.960 --> 00:08:19.840
+vertical power delivery you can get the
+
+00:08:17.120 --> 00:08:22.000
+highest overall efficiency uh but I'll
+
+00:08:19.840 --> 00:08:24.319
+say it's the hardest challenge right now
+
+00:08:22.000 --> 00:08:26.720
+I've got to get number one I have to get
+
+00:08:24.319 --> 00:08:28.080
+very high voltage very high efficiency
+
+00:08:26.720 --> 00:08:29.440
+very high density
+
+00:08:28.080 --> 00:08:31.919
+right? You're probably going to be
+
+00:08:29.440 --> 00:08:33.919
+sharing the same cooling plate. Uh and
+
+00:08:31.919 --> 00:08:37.360
+then also my high voltage is coming
+
+00:08:33.919 --> 00:08:39.120
+closer to the GPU CPU. So that's a
+
+00:08:37.360 --> 00:08:40.800
+challenge in itself. But you know these
+
+00:08:39.120 --> 00:08:42.959
+are kind of the options and we'll kind
+
+00:08:40.800 --> 00:08:44.159
+of show you know what what we found
+
+00:08:42.959 --> 00:08:45.839
+right you know when we've looked at
+
+00:08:44.159 --> 00:08:47.680
+these.
+
+00:08:45.839 --> 00:08:49.760
+So that's you know this is kind of
+
+00:08:47.680 --> 00:08:52.160
+practice right you know t we've built
+
+00:08:49.760 --> 00:08:54.640
+reference designs for for the various
+
+00:08:52.160 --> 00:08:57.279
+cases and let's kind of compare compare
+
+00:08:54.640 --> 00:08:59.040
+the architectures right it's very simple
+
+00:08:57.279 --> 00:09:01.200
+you know it's multiplication I think we
+
+00:08:59.040 --> 00:09:03.839
+can all do that but you know what you
+
+00:09:01.200 --> 00:09:06.720
+see is it's very easy to understand the
+
+00:09:03.839 --> 00:09:10.320
+efficiency in a given stage right in 800
+
+00:09:06.720 --> 00:09:14.480
+to 50 we can get 98% efficiency you know
+
+00:09:10.320 --> 00:09:16.880
+when you look at 50 to 12 we can get 97
+
+00:09:14.480 --> 00:09:18.720
+sometimes even higher than that now uh
+
+00:09:16.880 --> 00:09:21.680
+with a with a with a 12volt buck
+
+00:09:18.720 --> 00:09:23.920
+converter around 89 90%. Right? That's
+
+00:09:21.680 --> 00:09:25.920
+where we are. But where you see there's
+
+00:09:23.920 --> 00:09:28.080
+a whole lot of loss in that power
+
+00:09:25.920 --> 00:09:30.320
+distribution network along the way,
+
+00:09:28.080 --> 00:09:32.480
+right? To get that current to those
+
+00:09:30.320 --> 00:09:34.880
+stages. If you walked around the floor
+
+00:09:32.480 --> 00:09:37.200
+today and you looked and you said, "Hey,
+
+00:09:34.880 --> 00:09:39.040
+look, they even the 50 volt racks today.
+
+00:09:37.200 --> 00:09:40.959
+There's a 50 volt converter that
+
+00:09:39.040 --> 00:09:43.279
+converts to 12." And there's a long
+
+00:09:40.959 --> 00:09:45.920
+distance that that has to travel before
+
+00:09:43.279 --> 00:09:47.440
+you get to your voltage regulators. So
+
+00:09:45.920 --> 00:09:49.600
+when you look at today, these are kind
+
+00:09:47.440 --> 00:09:52.000
+of the building blocks. Uh hopefully you
+
+00:09:49.600 --> 00:09:53.839
+I know the show's the expo's closed now,
+
+00:09:52.000 --> 00:09:55.279
+but all these were, you know, at our
+
+00:09:53.839 --> 00:09:58.240
+booth, right? You know, this is kind of
+
+00:09:55.279 --> 00:10:00.320
+a reference design we did for 800 to 50.
+
+00:09:58.240 --> 00:10:03.040
+And then there's a lot of options from
+
+00:10:00.320 --> 00:10:05.279
+50 to 12. And then these are you can
+
+00:10:03.040 --> 00:10:08.720
+either go discrete with a chip or a
+
+00:10:05.279 --> 00:10:10.560
+power module approach from 12 to one.
+
+00:10:08.720 --> 00:10:13.600
+Now looking at the next option right
+
+00:10:10.560 --> 00:10:16.399
+let's say let's do it uh you know let's
+
+00:10:13.600 --> 00:10:18.800
+look at 800 to 50 and let's look at the
+
+00:10:16.399 --> 00:10:22.399
+sixvolt option right a higher step down
+
+00:10:18.800 --> 00:10:24.480
+going 50 to 6 and 8 to one IBC. You can
+
+00:10:22.399 --> 00:10:27.120
+see here you get some different options,
+
+00:10:24.480 --> 00:10:29.600
+right? Your 800 to50 is still 98%
+
+00:10:27.120 --> 00:10:32.160
+efficient, still very high efficiency on
+
+00:10:29.600 --> 00:10:34.399
+the PDN. And then, you know, we can
+
+00:10:32.160 --> 00:10:38.079
+still get really high efficiency. 50 to
+
+00:10:34.399 --> 00:10:39.360
+6, we can get 96 97% efficiency. And
+
+00:10:38.079 --> 00:10:41.279
+then you can kind of go with two
+
+00:10:39.360 --> 00:10:43.760
+options. Now that I have a lower voltage
+
+00:10:41.279 --> 00:10:45.519
+on my voltage regulator, I can stick
+
+00:10:43.760 --> 00:10:47.680
+with my conventional lateral power,
+
+00:10:45.519 --> 00:10:49.760
+right? There's no no problem running a a
+
+00:10:47.680 --> 00:10:52.800
+buck converter at a lower voltage. But
+
+00:10:49.760 --> 00:10:55.519
+it also opens up the opportunity to to
+
+00:10:52.800 --> 00:10:57.120
+explore VPD. And then where the real
+
+00:10:55.519 --> 00:11:00.079
+benefit comes is you kind of look at
+
+00:10:57.120 --> 00:11:02.880
+that last mile, right? The PDN loss
+
+00:11:00.079 --> 00:11:04.720
+reduction. When you go to the VPD, the
+
+00:11:02.880 --> 00:11:06.640
+VPD is going to be lower lower
+
+00:11:04.720 --> 00:11:08.720
+efficiency, right? You know, ultimately
+
+00:11:06.640 --> 00:11:10.480
+it's got to be very low profile. You
+
+00:11:08.720 --> 00:11:12.800
+have to go low profile. You have to go
+
+00:11:10.480 --> 00:11:14.000
+higher frequency. And also because, you
+
+00:11:12.800 --> 00:11:15.839
+know, you're going to need to reduce a
+
+00:11:14.000 --> 00:11:17.680
+lot of capacity. It's it's got to be
+
+00:11:15.839 --> 00:11:20.480
+again higher frequency to get higher
+
+00:11:17.680 --> 00:11:22.959
+bandwidth to to enable it to go down
+
+00:11:20.480 --> 00:11:24.959
+underneath the processor. But the but
+
+00:11:22.959 --> 00:11:27.200
+the benefit's clear, right? You can see
+
+00:11:24.959 --> 00:11:30.160
+a significant improvement and overall
+
+00:11:27.200 --> 00:11:31.519
+system efficiency.
+
+00:11:30.160 --> 00:11:34.880
+And then let's look at, you know, the
+
+00:11:31.519 --> 00:11:37.519
+800 to 12. Uh again, you know, we can do
+
+00:11:34.880 --> 00:11:40.399
+pretty good around 97% efficient is what
+
+00:11:37.519 --> 00:11:42.320
+is what we can see conversion wise. you
+
+00:11:40.399 --> 00:11:45.040
+know 12 volts you don't have a whole lot
+
+00:11:42.320 --> 00:11:47.519
+of power distribution losses and then
+
+00:11:45.040 --> 00:11:49.279
+you stick with your conventional 12vt
+
+00:11:47.519 --> 00:11:51.120
+you know buck converters but you know
+
+00:11:49.279 --> 00:11:53.360
+again it's limited again by the the
+
+00:11:51.120 --> 00:11:55.200
+lateral power delivery so that last mile
+
+00:11:53.360 --> 00:11:56.800
+is something we see as being you know
+
+00:11:55.200 --> 00:11:58.720
+making that kind of a lower overall
+
+00:11:56.800 --> 00:12:01.440
+efficiency
+
+00:11:58.720 --> 00:12:03.120
+and then you know the what we say here
+
+00:12:01.440 --> 00:12:06.320
+is this is kind of going even further
+
+00:12:03.120 --> 00:12:08.880
+right 800 to six the idea is that you
+
+00:12:06.320 --> 00:12:11.920
+know again you got this very long skinny
+
+00:12:08.880 --> 00:12:13.600
+type converter this skinny type design,
+
+00:12:11.920 --> 00:12:16.240
+you know, it's kind of bringing the high
+
+00:12:13.600 --> 00:12:17.760
+voltage into the low voltage domain, but
+
+00:12:16.240 --> 00:12:19.760
+I'm talking about from an electrical
+
+00:12:17.760 --> 00:12:21.680
+perspective here. So, electrically, it
+
+00:12:19.760 --> 00:12:25.200
+allows you, you know, you can get around
+
+00:12:21.680 --> 00:12:27.120
+95% efficiency. Uh, and again, it's got
+
+00:12:25.200 --> 00:12:29.360
+pretty low PDN losses because you're
+
+00:12:27.120 --> 00:12:31.760
+bringing that closer physically to your
+
+00:12:29.360 --> 00:12:34.880
+load. And then you can use it and drive
+
+00:12:31.760 --> 00:12:37.440
+a VPD. And overall, that gives us a, you
+
+00:12:34.880 --> 00:12:38.880
+know, around 74% into efficiency. you
+
+00:12:37.440 --> 00:12:42.240
+know, it's kind of what we expect on a
+
+00:12:38.880 --> 00:12:44.079
+20 kowatt type system input. And you can
+
+00:12:42.240 --> 00:12:45.760
+see, you know, this is the first one on
+
+00:12:44.079 --> 00:12:49.600
+the right here where we've kind of got a
+
+00:12:45.760 --> 00:12:52.800
+VPD type thing, right? A low profile uh,
+
+00:12:49.600 --> 00:12:54.800
+you know, type design.
+
+00:12:52.800 --> 00:12:57.279
+And then, you know, this one I'll I'll
+
+00:12:54.800 --> 00:12:59.440
+call this cloudy math, right? It's kind
+
+00:12:57.279 --> 00:13:01.120
+of forwardlooking, you know, where you
+
+00:12:59.440 --> 00:13:02.880
+can kind of say, well, maybe I don't
+
+00:13:01.120 --> 00:13:04.959
+want to put, you know, as a lot of us
+
+00:13:02.880 --> 00:13:08.800
+know, we don't want to put high voltage
+
+00:13:04.959 --> 00:13:11.040
+so close to our processor, right? Uh, so
+
+00:13:08.800 --> 00:13:12.800
+maybe you say we stick with our 800 to
+
+00:13:11.040 --> 00:13:15.600
+50. We can stick with our power
+
+00:13:12.800 --> 00:13:18.720
+distribution board. And then we can go
+
+00:13:15.600 --> 00:13:20.000
+50 to I'll say it's a wide range, right?
+
+00:13:18.720 --> 00:13:22.240
+There's a lot of different people
+
+00:13:20.000 --> 00:13:24.160
+working in this area, you know, TI
+
+00:13:22.240 --> 00:13:26.480
+included, where we say we're not sure
+
+00:13:24.160 --> 00:13:29.040
+the optimal bus voltage, right? it's
+
+00:13:26.480 --> 00:13:31.519
+somewhere we'll say between 1.8 and 5
+
+00:13:29.040 --> 00:13:35.279
+volts and that's going to be somewhere
+
+00:13:31.519 --> 00:13:38.079
+like a substrate embedded VR uh and then
+
+00:13:35.279 --> 00:13:40.160
+you can go to like an IVR type solution
+
+00:13:38.079 --> 00:13:42.160
+uh and that that's got promise but I'll
+
+00:13:40.160 --> 00:13:45.360
+say you know it's more further looking
+
+00:13:42.160 --> 00:13:46.959
+out. So we kind of see two leaders,
+
+00:13:45.360 --> 00:13:48.959
+right, that we from an electrical
+
+00:13:46.959 --> 00:13:51.519
+perspective that we think will be, you
+
+00:13:48.959 --> 00:13:54.720
+know, the most efficient ways to to get
+
+00:13:51.519 --> 00:13:56.800
+from 800 volts to load. And that's, you
+
+00:13:54.720 --> 00:13:58.639
+know, your conventional the divide and
+
+00:13:56.800 --> 00:14:00.320
+conquer like we're used to, right? In
+
+00:13:58.639 --> 00:14:02.560
+power electronics, we've we've been
+
+00:14:00.320 --> 00:14:04.959
+dividing and conquering and optimizing
+
+00:14:02.560 --> 00:14:07.360
+our stages. And again, adding more
+
+00:14:04.959 --> 00:14:09.519
+stages doesn't reduce your efficiency
+
+00:14:07.360 --> 00:14:11.839
+too much because again, we're getting to
+
+00:14:09.519 --> 00:14:14.320
+such high efficiency. We're we're not
+
+00:14:11.839 --> 00:14:18.240
+talking low efficiency designs anymore.
+
+00:14:14.320 --> 00:14:20.160
+We're talking 98% 97 96. They're very
+
+00:14:18.240 --> 00:14:23.199
+high efficiency these power conversion
+
+00:14:20.160 --> 00:14:25.120
+stages. Uh and then again though, but
+
+00:14:23.199 --> 00:14:29.360
+the idea of being able to reduce the
+
+00:14:25.120 --> 00:14:32.560
+stage that still has a benefit.
+
+00:14:29.360 --> 00:14:34.639
+So topologies, right? How do you how do
+
+00:14:32.560 --> 00:14:36.959
+you do this? And Andy kind of talked
+
+00:14:34.639 --> 00:14:39.760
+about the the bricks in the the previous
+
+00:14:36.959 --> 00:14:41.920
+talk. And I say at 50 volts, we've been
+
+00:14:39.760 --> 00:14:45.440
+doing this a long time, right? We've
+
+00:14:41.920 --> 00:14:48.560
+been doing 50 volt brick converters for
+
+00:14:45.440 --> 00:14:52.560
+30 plus years, right? So you got full
+
+00:14:48.560 --> 00:14:54.560
+bridges, you got LLC's, you got hybrid
+
+00:14:52.560 --> 00:14:56.880
+switch cap, right? Not hot swap
+
+00:14:54.560 --> 00:14:59.040
+controller. You got buck converters,
+
+00:14:56.880 --> 00:15:03.600
+right? There's a lot of different ways
+
+00:14:59.040 --> 00:15:05.920
+to to get this 50 volt to 12, 50 volt to
+
+00:15:03.600 --> 00:15:08.240
+six. And you can see they all have
+
+00:15:05.920 --> 00:15:10.079
+different pros and cons, right? Your
+
+00:15:08.240 --> 00:15:12.240
+full bridge, you know, it's
+
+00:15:10.079 --> 00:15:14.800
+transformerbased. You generally that
+
+00:15:12.240 --> 00:15:17.199
+that suits it towards a module. You need
+
+00:15:14.800 --> 00:15:20.880
+a lot of layers to get your transformer
+
+00:15:17.199 --> 00:15:22.880
+losses down. Uh it's a PWM controller.
+
+00:15:20.880 --> 00:15:25.040
+It's real easy to control. So
+
+00:15:22.880 --> 00:15:28.160
+regulation's not a problem. You fully
+
+00:15:25.040 --> 00:15:30.800
+regulate your your output voltage, but
+
+00:15:28.160 --> 00:15:33.680
+it's got medium efficiency, medium power
+
+00:15:30.800 --> 00:15:35.680
+density. You can, it works well at 12
+
+00:15:33.680 --> 00:15:36.959
+volts, it works well at six volts
+
+00:15:35.680 --> 00:15:39.440
+because you can just change your
+
+00:15:36.959 --> 00:15:41.120
+transformer ratio in the design and it's
+
+00:15:39.440 --> 00:15:43.600
+not that complex, right? It's a
+
+00:15:41.120 --> 00:15:46.160
+transformer-based buck converter. You
+
+00:15:43.600 --> 00:15:48.000
+got the LLC. The LLC and there's lots of
+
+00:15:46.160 --> 00:15:50.639
+variance to these topologies as well.
+
+00:15:48.000 --> 00:15:54.480
+But the LLC has clear benefits. you know
+
+00:15:50.639 --> 00:15:56.720
+it's ZVS ZCS you know very high
+
+00:15:54.480 --> 00:15:58.880
+efficiency high frequency gives it high
+
+00:15:56.720 --> 00:16:00.800
+density but because of its soft
+
+00:15:58.880 --> 00:16:02.000
+switching nature generally in these
+
+00:16:00.800 --> 00:16:04.720
+types of applications you're going to
+
+00:16:02.000 --> 00:16:07.120
+run as an unregulated converter uh it's
+
+00:16:04.720 --> 00:16:09.519
+transformer-based so again you're going
+
+00:16:07.120 --> 00:16:10.560
+to have you know generally unregulated
+
+00:16:09.519 --> 00:16:12.240
+it's going to have really high
+
+00:16:10.560 --> 00:16:14.959
+efficiency it's going to have really
+
+00:16:12.240 --> 00:16:16.480
+high density again you can scale it any
+
+00:16:14.959 --> 00:16:18.720
+way you want just change your
+
+00:16:16.480 --> 00:16:20.560
+transformer uh and it's going to be
+
+00:16:18.720 --> 00:16:22.399
+somewhat complex you You know, there's a
+
+00:16:20.560 --> 00:16:24.560
+lot that goes into those uh integrated
+
+00:16:22.399 --> 00:16:27.040
+magnetic designs. Uh that transformer
+
+00:16:24.560 --> 00:16:28.959
+design is key to that high efficiency.
+
+00:16:27.040 --> 00:16:31.120
+And then we've got, you know, flying
+
+00:16:28.959 --> 00:16:33.199
+capacitor-based circuits, right? Like a
+
+00:16:31.120 --> 00:16:35.680
+hybrid switch capacitor is a popular one
+
+00:16:33.199 --> 00:16:37.199
+today. Uh it can be module, it can be
+
+00:16:35.680 --> 00:16:39.360
+chipped down, right? It's not
+
+00:16:37.199 --> 00:16:41.680
+transformer-based. Uh it's not a high
+
+00:16:39.360 --> 00:16:44.560
+frequency transformer-based design. It
+
+00:16:41.680 --> 00:16:46.480
+can be semi-regulated. Uh I can say, you
+
+00:16:44.560 --> 00:16:48.639
+know, it it can step down, but it
+
+00:16:46.480 --> 00:16:50.160
+doesn't like to boost. And that has uh
+
+00:16:48.639 --> 00:16:52.399
+has to do with the inherent flying
+
+00:16:50.160 --> 00:16:54.560
+capacitor nature. It's got high
+
+00:16:52.399 --> 00:16:58.000
+efficiency. Uh again, when you run a
+
+00:16:54.560 --> 00:17:00.959
+switch switch capacitor uh circuit uh
+
+00:16:58.000 --> 00:17:03.839
+you use that trick to reduce the the
+
+00:17:00.959 --> 00:17:05.760
+volt on your inductor. So you don't have
+
+00:17:03.839 --> 00:17:08.720
+to use high frequency. You can avoid
+
+00:17:05.760 --> 00:17:11.520
+using brute force. Uh it's not as
+
+00:17:08.720 --> 00:17:14.720
+scalable, right? Uh you know this is a
+
+00:17:11.520 --> 00:17:16.559
+natural 4:1 step down. you know, takes a
+
+00:17:14.720 --> 00:17:19.199
+little bit more a little bit more
+
+00:17:16.559 --> 00:17:21.839
+variation to get to the the the 50 to
+
+00:17:19.199 --> 00:17:23.679
+six. Uh so I'll say and it's got high
+
+00:17:21.839 --> 00:17:26.079
+complexity. You know, you have flying
+
+00:17:23.679 --> 00:17:28.640
+capacitors, you have to have balance,
+
+00:17:26.079 --> 00:17:30.880
+you have a lot of floating switches, you
+
+00:17:28.640 --> 00:17:33.919
+know, challenges like that make it more
+
+00:17:30.880 --> 00:17:36.559
+complex. And then why not the good
+
+00:17:33.919 --> 00:17:39.600
+oldfashioned buck, right? We use it, we
+
+00:17:36.559 --> 00:17:41.760
+use it at the last stage. Uh buck's very
+
+00:17:39.600 --> 00:17:44.880
+simple. It's very straightforward. It's
+
+00:17:41.760 --> 00:17:46.799
+very low cost. no IP concerns or
+
+00:17:44.880 --> 00:17:49.039
+anything of that nature, fully
+
+00:17:46.799 --> 00:17:52.160
+regulated, you know, I'll call it medium
+
+00:17:49.039 --> 00:17:54.240
+or low efficiency and medium or low
+
+00:17:52.160 --> 00:17:55.760
+complexity, but that's because, you
+
+00:17:54.240 --> 00:17:57.200
+know, you can increase the efficiency
+
+00:17:55.760 --> 00:17:59.600
+when you use things like coupled
+
+00:17:57.200 --> 00:18:01.760
+inductors, when you use things like GAN
+
+00:17:59.600 --> 00:18:03.440
+power devices, but then that adds to the
+
+00:18:01.760 --> 00:18:05.360
+complexity, right? You have a GAN
+
+00:18:03.440 --> 00:18:06.640
+device, you have a coupled inductor.
+
+00:18:05.360 --> 00:18:09.360
+Those aren't as simple and those aren't
+
+00:18:06.640 --> 00:18:11.440
+as straightforward. uh and you know so
+
+00:18:09.360 --> 00:18:13.919
+it has a lower efficiency and a lower
+
+00:18:11.440 --> 00:18:16.400
+power density but it's very easy to
+
+00:18:13.919 --> 00:18:18.960
+multi-phase it's very scalable so we've
+
+00:18:16.400 --> 00:18:21.440
+got a lot of tradeoffs uh a lot of
+
+00:18:18.960 --> 00:18:23.760
+options at 50 volts to get you down to
+
+00:18:21.440 --> 00:18:26.640
+whatever voltage you want to so let's
+
+00:18:23.760 --> 00:18:30.160
+where do we are at 800 right so when you
+
+00:18:26.640 --> 00:18:32.160
+look at 800 right we require I I'll
+
+00:18:30.160 --> 00:18:34.240
+change this now that we've decided we're
+
+00:18:32.160 --> 00:18:35.919
+not going to call this HVDC when you
+
+00:18:34.240 --> 00:18:39.600
+when you're in a company that makes 3
+
+00:18:35.919 --> 00:18:42.960
+and 5 volt type processes 800 is HVDC to
+
+00:18:39.600 --> 00:18:45.440
+us it's high voltage but uh at 800 volts
+
+00:18:42.960 --> 00:18:48.559
+you know it requires the isolation it
+
+00:18:45.440 --> 00:18:51.200
+requires reinforced insulation so we
+
+00:18:48.559 --> 00:18:53.760
+have increased clearances and soft
+
+00:18:51.200 --> 00:18:55.360
+switching a is a much is a must right
+
+00:18:53.760 --> 00:18:57.280
+you're not going to have a hard
+
+00:18:55.360 --> 00:18:58.320
+switching buck converter at 800 volts
+
+00:18:57.280 --> 00:19:00.480
+right it's just not going to be
+
+00:18:58.320 --> 00:19:02.400
+efficient enough uh and you're going to
+
+00:19:00.480 --> 00:19:04.640
+have high current rectifiers right so
+
+00:19:02.400 --> 00:19:07.679
+what we see right now is variants of the
+
+00:19:04.640 --> 00:19:10.720
+LLC a lot of it's the stacked LLC see
+
+00:19:07.679 --> 00:19:13.200
+with GAN primary and GAN or silicon
+
+00:19:10.720 --> 00:19:15.280
+secondaries. And then, you know, since
+
+00:19:13.200 --> 00:19:17.120
+since I've submitted these slides and
+
+00:19:15.280 --> 00:19:19.760
+over the next couple years as these
+
+00:19:17.120 --> 00:19:21.440
+these systems come into come into to
+
+00:19:19.760 --> 00:19:23.600
+fruition, you're going to see that I'm
+
+00:19:21.440 --> 00:19:26.000
+sure there's a there's will be a lot
+
+00:19:23.600 --> 00:19:28.160
+more topologies, it'll the right will
+
+00:19:26.000 --> 00:19:30.160
+start to look more like the left. But
+
+00:19:28.160 --> 00:19:32.160
+right now, this is kind of the the
+
+00:19:30.160 --> 00:19:35.840
+general approach to get the efficiency
+
+00:19:32.160 --> 00:19:38.160
+and to get the density needed.
+
+00:19:35.840 --> 00:19:40.799
+So, what does it look like? Right. Uh
+
+00:19:38.160 --> 00:19:43.360
+over on the left, we'll say this is a 50
+
+00:19:40.799 --> 00:19:44.880
+volt to 6volt LLC reference design we
+
+00:19:43.360 --> 00:19:47.679
+did. You know, we can get about a
+
+00:19:44.880 --> 00:19:50.080
+kilowatt out of it. Around 96 97%
+
+00:19:47.679 --> 00:19:52.799
+efficiency at full load. It's around
+
+00:19:50.080 --> 00:19:55.039
+2,000 watts per cubic inch. And you can
+
+00:19:52.799 --> 00:19:58.720
+see it's very small, very dense, right?
+
+00:19:55.039 --> 00:20:00.080
+This is, you know, roughly 40 by 20 mm.
+
+00:19:58.720 --> 00:20:02.720
+You can see it's pretty straightforward.
+
+00:20:00.080 --> 00:20:05.679
+I have a primary side. I have 80 or
+
+00:20:02.720 --> 00:20:07.919
+100vt gan or silicon devices. I have a
+
+00:20:05.679 --> 00:20:09.600
+100volt halfbridgeidge driver. We
+
+00:20:07.919 --> 00:20:11.840
+bootstrap it, right? Everything's
+
+00:20:09.600 --> 00:20:14.240
+nonisolated below 60 volts. So
+
+00:20:11.840 --> 00:20:16.400
+everything's nonisolated here. You know,
+
+00:20:14.240 --> 00:20:18.880
+we've got a synchronous rectifier driver
+
+00:20:16.400 --> 00:20:22.160
+that's very very small, drives a large
+
+00:20:18.880 --> 00:20:24.640
+number of low voltage MOSFETs and a
+
+00:20:22.160 --> 00:20:26.559
+matrix transformer. Uh and then we have
+
+00:20:24.640 --> 00:20:29.120
+a digital controller on back. So you can
+
+00:20:26.559 --> 00:20:31.600
+see it's it's pretty simple uh from a
+
+00:20:29.120 --> 00:20:33.760
+design perspective. when we get to the
+
+00:20:31.600 --> 00:20:36.559
+higher voltage, right, this is where it
+
+00:20:33.760 --> 00:20:39.600
+becomes a bigger scale and a more
+
+00:20:36.559 --> 00:20:40.880
+challenging design. Uh you can see it,
+
+00:20:39.600 --> 00:20:43.039
+you know, we're up to around 10
+
+00:20:40.880 --> 00:20:45.679
+kilowatts now, right? You know, when you
+
+00:20:43.039 --> 00:20:48.080
+when you look at the fact that we have
+
+00:20:45.679 --> 00:20:51.039
+to add all this spacing, all of this
+
+00:20:48.080 --> 00:20:53.039
+creepage, all of this clearance. We we
+
+00:20:51.039 --> 00:20:55.840
+don't have a lot of room to add a whole
+
+00:20:53.039 --> 00:20:58.880
+bunch of primaries. Uh you know, the the
+
+00:20:55.840 --> 00:21:01.120
+primary side FETSS get much larger, too.
+
+00:20:58.880 --> 00:21:05.039
+So it's a it's a much larger and this is
+
+00:21:01.120 --> 00:21:07.360
+a series input uh parallel output type
+
+00:21:05.039 --> 00:21:09.600
+approach and you can see you know we
+
+00:21:07.360 --> 00:21:12.799
+have on the left we have you know 650
+
+00:21:09.600 --> 00:21:14.799
+volt GAN devices and we stack those and
+
+00:21:12.799 --> 00:21:16.559
+then you can see highlighted in red is
+
+00:21:14.799 --> 00:21:19.520
+kind of our high voltage creepage and
+
+00:21:16.559 --> 00:21:22.320
+clearance cutout and on the bottom we
+
+00:21:19.520 --> 00:21:24.799
+got a whole lot of telemetry a whole lot
+
+00:21:22.320 --> 00:21:26.960
+of isolation and a whole lot of bias
+
+00:21:24.799 --> 00:21:31.120
+power right you know it takes a lot to
+
+00:21:26.960 --> 00:21:32.880
+to be able to to protect to drive. You
+
+00:21:31.120 --> 00:21:35.200
+know, it's a lot more complex than a
+
+00:21:32.880 --> 00:21:37.120
+simple 50vt design. And again, you got
+
+00:21:35.200 --> 00:21:38.960
+the digital controller. And then you can
+
+00:21:37.120 --> 00:21:40.640
+see from the power perspective, it looks
+
+00:21:38.960 --> 00:21:42.559
+pretty similar. It's six-fold out for
+
+00:21:40.640 --> 00:21:44.320
+both cases, but it's a lot higher
+
+00:21:42.559 --> 00:21:47.520
+current, right? It's a lot higher,
+
+00:21:44.320 --> 00:21:49.520
+bigger module with a lot of uh parallel
+
+00:21:47.520 --> 00:21:52.240
+output matrix transformers, a lot of
+
+00:21:49.520 --> 00:21:54.159
+high current bus bars uh that are
+
+00:21:52.240 --> 00:21:56.559
+driving these synchronous rectifiers.
+
+00:21:54.159 --> 00:21:59.360
+So, you can see it's a lot more complex
+
+00:21:56.559 --> 00:22:03.799
+design. a lot more complexity to it, a
+
+00:21:59.360 --> 00:22:03.799
+lot more semiconductors required
+
+00:22:04.799 --> 00:22:09.440
+protection. Uh when we look at, you
+
+00:22:07.039 --> 00:22:11.840
+know, hot swap 50 volts, pretty
+
+00:22:09.440 --> 00:22:14.159
+straightforward, right? We've got one,
+
+00:22:11.840 --> 00:22:17.039
+we've got a single side protection, you
+
+00:22:14.159 --> 00:22:18.880
+have an 80 or 100vt FET, you know, in
+
+00:22:17.039 --> 00:22:20.320
+this case, you know, we've gotten pretty
+
+00:22:18.880 --> 00:22:21.919
+pretty good, right? You know, you can
+
+00:22:20.320 --> 00:22:23.919
+have two FETs. You can have one for
+
+00:22:21.919 --> 00:22:26.400
+that. It'll handle the inrush, a large S
+
+00:22:23.919 --> 00:22:28.320
+SOA FET, and then you can have some low
+
+00:22:26.400 --> 00:22:30.240
+onresistance FETSS that's while it's
+
+00:22:28.320 --> 00:22:32.640
+cruising along, right, to reduce your
+
+00:22:30.240 --> 00:22:36.159
+overall losses. But I have single side
+
+00:22:32.640 --> 00:22:39.120
+protection. I have 8000vt FETSS. I have
+
+00:22:36.159 --> 00:22:40.799
+no isolation barriers. When I look at
+
+00:22:39.120 --> 00:22:43.520
+800 volts, this is a lot more
+
+00:22:40.799 --> 00:22:45.760
+complicated, right? I have double-sided
+
+00:22:43.520 --> 00:22:47.919
+protection. And this is where we we'll
+
+00:22:45.760 --> 00:22:49.679
+talk about, you know, whether you have,
+
+00:22:47.919 --> 00:22:51.039
+you know, this is where we, this will
+
+00:22:49.679 --> 00:22:52.640
+come to my call to action. We have
+
+00:22:51.039 --> 00:22:54.880
+double-sided protection. You know,
+
+00:22:52.640 --> 00:22:56.720
+generally have sick FETSS. You got to
+
+00:22:54.880 --> 00:22:59.120
+coordinate the high and low side hot
+
+00:22:56.720 --> 00:23:01.200
+swaps. You need integrated, you know, we
+
+00:22:59.120 --> 00:23:04.400
+integrate a bias supply. We integrate
+
+00:23:01.200 --> 00:23:07.039
+digital isolators for the uh telemetry
+
+00:23:04.400 --> 00:23:08.880
+and control. And you can see, you know,
+
+00:23:07.039 --> 00:23:11.520
+ultimately, you know, it could work,
+
+00:23:08.880 --> 00:23:13.760
+right? You can still have a very good
+
+00:23:11.520 --> 00:23:15.600
+short circuit, good protection, but
+
+00:23:13.760 --> 00:23:17.679
+again, it's not as simple as it would be
+
+00:23:15.600 --> 00:23:20.000
+at low voltage. uh you know it's going
+
+00:23:17.679 --> 00:23:22.640
+to take some new you know better IC's to
+
+00:23:20.000 --> 00:23:25.679
+to enable these high power high voltage
+
+00:23:22.640 --> 00:23:28.880
+protection. So summarize and I'll call
+
+00:23:25.679 --> 00:23:32.159
+to action. So we know HVDC is enabling
+
+00:23:28.880 --> 00:23:35.280
+the next generation of servers.
+
+00:23:32.159 --> 00:23:37.919
+The best way to get there is not clear
+
+00:23:35.280 --> 00:23:39.600
+but from my perspective vertical power
+
+00:23:37.919 --> 00:23:41.360
+delivery is going to be the winner right
+
+00:23:39.600 --> 00:23:43.280
+you know getting that last mile. The
+
+00:23:41.360 --> 00:23:46.240
+closer you get to the processor the more
+
+00:23:43.280 --> 00:23:47.760
+important it is. uh GAN and sik are
+
+00:23:46.240 --> 00:23:49.760
+going to be even more important right
+
+00:23:47.760 --> 00:23:51.520
+wide band gap is going to be one of the
+
+00:23:49.760 --> 00:23:54.640
+key enablers as we go to this high
+
+00:23:51.520 --> 00:23:57.360
+voltage and high density but the unsung
+
+00:23:54.640 --> 00:23:59.039
+heroes uh it's going to take a lot of a
+
+00:23:57.360 --> 00:24:01.600
+lot of protection and it's got to be
+
+00:23:59.039 --> 00:24:04.000
+isolated you got to be reinforced
+
+00:24:01.600 --> 00:24:07.120
+insulation a lot of bias supplies a lot
+
+00:24:04.000 --> 00:24:10.240
+of gate drives a lot of telemetries so
+
+00:24:07.120 --> 00:24:12.640
+the call to action you know OCPdriven
+
+00:24:10.240 --> 00:24:15.039
+standards here is going to eliminate the
+
+00:24:12.640 --> 00:24:17.120
+custom engineering and shorten the
+
+00:24:15.039 --> 00:24:19.039
+supplier time to market. And I'll give
+
+00:24:17.120 --> 00:24:21.279
+some examples, right? You know, we all
+
+00:24:19.039 --> 00:24:23.279
+know the specs, the safety specs for
+
+00:24:21.279 --> 00:24:25.360
+creepage and clearances, but I can tell
+
+00:24:23.279 --> 00:24:27.120
+you when we talk to the various
+
+00:24:25.360 --> 00:24:29.600
+customers in this place, we have a
+
+00:24:27.120 --> 00:24:32.240
+different number every time. Uh, and
+
+00:24:29.600 --> 00:24:34.320
+spinning a new part every single time we
+
+00:24:32.240 --> 00:24:36.480
+need to add a millimeter or take away a
+
+00:24:34.320 --> 00:24:38.799
+millimeter, that's that takes a lot of
+
+00:24:36.480 --> 00:24:41.840
+effort. It really slows things down. So
+
+00:24:38.799 --> 00:24:44.960
+as we as we move to uh you know as we
+
+00:24:41.840 --> 00:24:46.400
+move to these these OCP driven standards
+
+00:24:44.960 --> 00:24:48.240
+you know hopefully it can you know
+
+00:24:46.400 --> 00:24:50.480
+shorten our time to market and really
+
+00:24:48.240 --> 00:24:52.720
+give us a good clear guidance on on what
+
+00:24:50.480 --> 00:24:56.320
+we need to provide here. Same goes with
+
+00:24:52.720 --> 00:24:58.400
+the DCDC converter dimensions and needs
+
+00:24:56.320 --> 00:25:00.720
+as well as the protection requirements.
+
+00:24:58.400 --> 00:25:03.440
+Do I need a single side? You know do we
+
+00:25:00.720 --> 00:25:05.200
+have two wire? Do we have three wire? Uh
+
+00:25:03.440 --> 00:25:07.520
+those types of things. So, that's my
+
+00:25:05.200 --> 00:25:12.360
+call to action and I'd like to thank
+
+00:25:07.520 --> 00:25:12.360
+everybody and thank [applause] you.
+
+00:25:16.240 --> 00:25:19.279
+Unfortunately, we don't have time for
+
+00:25:18.080 --> 00:25:22.279
+questions unless there's a quick
+
+00:25:19.279 --> 00:25:22.279
+question.
+
+00:25:24.720 --> 00:25:28.440
+All right. Thank you.
+

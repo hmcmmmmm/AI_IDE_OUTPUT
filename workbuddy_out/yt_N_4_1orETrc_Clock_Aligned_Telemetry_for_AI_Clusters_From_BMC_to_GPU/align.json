@@ -1,0 +1,114 @@
+[
+ {
+  "idx": 1,
+  "start": 0.0,
+  "end": 24.0,
+  "rep_time": 15.0,
+  "en": "All right, this is yeah, okay, cool. Okay, yeah, as as announced, or as the as the title slide says, today's talk is about like clock aligned telemetry from AI for AI clusters from BMC to GPU to fleet. And what this exactly means is that um we want to know about like certain incidents in in in our entire AI"
+ },
+ {
+  "idx": 2,
+  "start": 24.0,
+  "end": 78.0,
+  "rep_time": 50.0,
+  "en": "cluster. So, say that you you have a GPU and something's going wrong and you want to know what's what's the what's what's the issue for that, like what what events have been proceeding here. And you want to collect some evidence here. However, it's kind of hard to find out what what might be some events that might be correlating with the events that you have been observing there. And so, what we want to go for is that first of all, we want to collect some fresh data that uh that can first of all serve as a basis for analysis here. And the second thing is that um in order to find out what exactly might be correlating, you need to sort of investigate the data that you that you have. And so, this already brings us to the to the problem. So, um you will have some So, if you don't uh So, if you don't look at time, you might have some missing evidence. So, first of all, you you might be missing a host pressure"
+ },
+ {
+  "idx": 3,
+  "start": 78.0,
+  "end": 147.0,
+  "rep_time": 110.0,
+  "en": "placement, fabric behavior, power thermal state, and whatnot. If you if you if you um only look on at GPU counters, um you might be um you might be missing certain timing behavior. Um you might encounter some ambiguous absence in data sets, and you might also miss some context. So, if you don't look at the workload, a lot of the data that you have essentially becomes meaningless. And also, you need to look at the topology of a network, um cable metadata and whatnot. And also some tracing of like where you what compute has been happening might not be might not be collected. And also you might need to identify the signals if they are trustworthy or not in order to see what's happening in your data center. So, um this is further made complex by"
+ },
+ {
+  "idx": 4,
+  "start": 147.0,
+  "end": 207.0,
+  "rep_time": 175.0,
+  "en": "six evidence lanes that we have. So, first of all, on the GPU, you you might want to look at like DCGM NVML GPU stat utilization and whatnot. You might want to to collect evidence from from the host about like CPU, memory, storage, and so on and so forth. From a BMC, you can look at ref fish power, thermal stats, sensor inventory, and whatnot. You want to look at the placement of your workloads for your Kubernetes jobs and how stuff has been placed. And then the network and nickel behavior plus controlled benchmark context is something that's also something that that you might want to correlate with stuff that's happening on a timely basis. And finally, you can involve time as a as a source for certain evidence that you might want to collect. And um So, this the solution for actually"
+ },
+ {
+  "idx": 5,
+  "start": 207.0,
+  "end": 246.0,
+  "rep_time": 225.0,
+  "en": "getting some evidence about like the stuff that's that's been happening in your data center is actually to collect more more data about like the the events that you have and like the the state of your clocks. So, in this particular example, you have some stalling that you observe for for a GPU. And then you observe a network pulse somewhere on another node and you might have some certain offset for your timers and um your you might get some wrong conclusions if you if you don't account for the timing so and um so this brings us to evidence-based sampling so um you the the stuff that you saw saw before so the measures that you need to take um is to to gather more data so um"
+ },
+ {
+  "idx": 6,
+  "start": 246.0,
+  "end": 312.0,
+  "rep_time": 280.0,
+  "en": "you need to account for for the source the the host the device interface collector version and so on and so forth and regarding timing you need to look at the the time sense of when an event has been observed when has been received the the source clock the offset certain uncertainty in the sample freshness itself and then the values themselves as well and um so regarding the context again you need to look at the at the at the things that actually running your GPU cluster and you also need to account for the provenance of it so um like where where did workload come from was the command was like from an API or whatnot and um so if you collect this sort of data you can actually get some evidence about the the things that that have been happening and for that you will have two paths so"
+ },
+ {
+  "idx": 7,
+  "start": 312.0,
+  "end": 345.0,
+  "rep_time": 330.0,
+  "en": "the live path is just like pure pure data sampling on on your on your devices and the state of the network and then the second path is the forensic path and this path is a bit more uh is a bit more expensive so it needs to be triggered you need to you need to gather dig through the data what has been happening and there's some evidence that needs to be collected and so both of these paths with the same source bundle contract"
+ },
+ {
+  "idx": 8,
+  "start": 345.0,
+  "end": 390.0,
+  "rep_time": 365.0,
+  "en": "and so you can essentially try to report gas that you have in your data through through agents so that that needs to be triggered. Um so you can discover inventory GPUs with BMC endpoints and so on and so forth. You can gather the the gate credentials and you can advertise certain capabilities that you that you have on the the devices. And um also you can collect some certain data conservatively. Um you can try to emit the evidence that you through those agents and you can try to compare um those this data safely. And yeah. Furthermore, one problem that we have within within certain GPU fleets is that certain GPUs"
+ },
+ {
+  "idx": 9,
+  "start": 390.0,
+  "end": 450.0,
+  "rep_time": 420.0,
+  "en": "might or might not be the same advertised well say class class of a node. And eventually there there might be certain differences in like the qualities of those those nodes and you might want to identify that. And by gathering more data you can actually find out what what kind of class those those GPU nodes were belonging to. Um so if it's like a different production line what not and those can or cannot might might or might not expose different failure behavior. Um yeah and other things include stuff like controller appliance um as nodes and infrastructure services and you can you can also go for some validation goals. Um when it comes down to actually gathering the data and so so I'm a database major"
+ },
+ {
+  "idx": 10,
+  "start": 450.0,
+  "end": 591.0,
+  "rep_time": 520.0,
+  "en": "so this was the most interesting part of about this entire project for me um is that um, the data that you need to collect is kind of massive, right? And, um, there have been some, uh, innovations in the in the in the data processing space, or let's say like uh, data data systems uh, space in general. And, um, so when you have a data center and you want to collect a time series data, you might eventually just go for some Prometheus data database. And, um, in my opinion, that kind of works. Um, but, um, there are some certain inconveniences that you that you have for Prometheus or instance like it does not support, uh, the post uh, post SQL dialect. And, um, most of all, when you actually collect the data, it's like in the in the way that Prometheus collects it, but it's not like in an open table format. And, um, when you actually go for, uh, the collection of the data and you want to merge it down to, uh, to something that basically every everybody can understand where there's a common understanding of how the data has been structured, you might actually want to go for open table formats like, uh, Apache Iceberg. Um, that can serve for the broader part of the community actually as as some data store that, uh, that everybody can work with and that they can, um, say load to their, um, snow snow flake or data bricks pipeline. And, uh, so the whole proposal here is that, uh, for the community we would provide, um, um, some write optimized per data center storage that the that, uh, say you can you can install within your data center, and then you can periodically merge this data that you collected into, uh, a central data store like Apache Iceberg. Um, that can serve as like the basis for, uh, some open analytics for, uh, hot and cold data reads. Um, you can be engine independent, and, um, your your your whole boundary is just like this, uh, Apache Iceberg data store, um, that you have. And, this also gives you some some flexibility when it comes to like schema evolution and whatnot. Um, however, like the the biggest improvement that we would have here is to um have some uh larger collection of data where on which we could operate and where we could identify certain behavior."
+ },
+ {
+  "idx": 11,
+  "start": 591.0,
+  "end": 621.0,
+  "rep_time": 600.0,
+  "en": "So, um regarding the the evidence um you would you would essentially just um just look uh about the on the context of of of the of the data that you've been collecting. And you would essentially try to correlate that to to certain parts of your um of of your uh of your data center uh depending on the context. And so, um for instance, um you could try to look at uh the the case that uh maybe your compute is lower than uh than what you might have been expected. So, you would first try to locate where uh where the loss appears. That might be um on the GPU, the host, um uh you could try to identify via the BMC or like um could be just located on the"
+ },
+ {
+  "idx": 12,
+  "start": 621.0,
+  "end": 705.0,
+  "rep_time": 660.0,
+  "en": "fabric itself. And um then you will try to align your clocks um and check about like the freshness and certain uncertainty um in in your clocks. And then you would go over to corroborate um where you would look if you if there are some certain fields that that aren't supported. And then and then you would try to compare uh your your data for the for the evidence about like what what the event that you might think that might have happened. um is actually happening or like if it's just something that's just like a correlation but not really a causation uh thing. And then at the end you can try to act upon the uh the event that you that you saw. And um you can try to take certain measures and change um uh parameters or set up something in your data center depending on the evidence that you actually gathered. Um So regarding the validity of the signal"
+ },
+ {
+  "idx": 13,
+  "start": 705.0,
+  "end": 753.0,
+  "rep_time": 730.0,
+  "en": "you could also handle this in a stepped fashion. So you you go over to look if if a node that you you are looking at actually exposes the metric. Um you could look if the sample inside is inside precision window so if it meets your freshness criteria regarding the the time that you look at. And if if the clock state itself is is valid and acceptable. And at the end you can look if the value itself is actually traceable or not. And if you if you see all of these validity criteria being met you can actually say that okay it's safe and compare to to compare or act upon it."
+ },
+ {
+  "idx": 14,
+  "start": 753.0,
+  "end": 837.0,
+  "rep_time": 790.0,
+  "en": "So regarding the portability we have three contracts. So first of all we have a source bundle contract which is a stable envelope for identity time and type values, context, provenance, and errors. And finally we have the capability and freshness profile. And next thing is also we we have a comparison profile. And so these these contracts help us to to map and not replace things like Redfish, DCGM, and NVML, Kubernetes, and OpenTelemetry style evidence of the data that we collected from both sources. And it also sets an interchange boundary using our our our scheme our our data source that we have. So um Iceberg carries a durable open tables while the hot state store itself can remain implementation choice or not depending on what you want for your data center and how how how fast you want to actually write your durable data. And the outcome for the community of such a data store would be portable fixture and some conformance example is you know, exposes some unsupported evidence instead of hiding it. So, you'll be able to actually infer some some certain findings from the data that you're collecting. Yeah, so the call to action here is to"
+ },
+ {
+  "idx": 15,
+  "start": 837.0,
+  "end": 903.0,
+  "rep_time": 870.0,
+  "en": "to actually come together and finalize this this design. So, to to convene on DCT the hardware management the servers TAP and the AI hardware software code design and uh one proposal would be to to gather a minimum minimal working product for for the source bundle field dictionary and support state vocabulary. And within the 90 the next 90 days we could try to agree to publish the sample bundles and some clock and freshness rules. And yeah, we can also discuss further milestones about this and the most important thing is probably to prove the interoperability between different fleets and yeah. So, this would be a call to to join the community. And the OCP time appliances project committee such that this won't just fizzle out and we can actually work on on this project. So, yeah, with that I would like to thank you and yeah, we could try to go over to the discussion.  Awesome. Thanks, Lucas. Any questions from the audience?"
+ },
+ {
+  "idx": 16,
+  "start": 903.0,
+  "end": 934.278095,
+  "rep_time": 915.0,
+  "en": "Okay. Uh if not then thanks Lucas, I guess. Yeah, move to the next presentation."
+ }
+]

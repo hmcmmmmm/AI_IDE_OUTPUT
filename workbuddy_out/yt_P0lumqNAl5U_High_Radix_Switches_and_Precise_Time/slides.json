@@ -1,0 +1,133 @@
+{
+ "video": "G:\\AI_IDE_output\\workbuddy_out\\yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time\\video.mp4",
+ "info": {
+  "fps": 60.0,
+  "width": 1920,
+  "height": 1080,
+  "duration": 800.461497
+ },
+ "interval": 3.0,
+ "states": [
+  {
+   "start": 0.0,
+   "end": 33.0,
+   "duration": 33.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 20.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 33.0,
+   "end": 83.0,
+   "duration": 50.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 70.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 83.0,
+   "end": 143.0,
+   "duration": 60.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 135.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 143.0,
+   "end": 166.0,
+   "duration": 23.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 155.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 166.0,
+   "end": 214.0,
+   "duration": 48.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 195.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 214.0,
+   "end": 295.0,
+   "duration": 81.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 270.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 295.0,
+   "end": 427.0,
+   "duration": 132.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 400.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 427.0,
+   "end": 467.0,
+   "duration": 40.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 450.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 467.0,
+   "end": 537.0,
+   "duration": 70.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 520.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 537.0,
+   "end": 614.0,
+   "duration": 77.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 590.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 614.0,
+   "end": 800.4,
+   "duration": 186.39999999999998,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 700.0,
+   "samples": [],
+   "likely_slide": true
+  }
+ ]
+}

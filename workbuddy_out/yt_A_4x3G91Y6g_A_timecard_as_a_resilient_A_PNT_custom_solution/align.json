@@ -1,0 +1,107 @@
+[
+ {
+  "idx": 1,
+  "start": 6.0,
+  "end": 60.0,
+  "rep_time": 30.0,
+  "en": "Thank you. So, we'll talk in this session about the time card. We'll talk about different aspects of a time card and eventually I'll talk a little bit about what is a time card for those who are less familiar, the different standard bodies that define time card, what are the use cases to in the industry that you could use time card. I'll talk a little bit about PTM if someone didn't have enough from the previous session and then I'll hand off to Anil to talk about resiliency.  No. No, it should work. No, go one back."
+ },
+ {
+  "idx": 2,
+  "start": 60.0,
+  "end": 102.0,
+  "rep_time": 80.0,
+  "en": "Okay. So, a time card. So, if we were used to have full-blown devices for timing 1U, 2U, maybe even more, timing servers with a fixed hardware and space rack and cabling and more power. We're kind of shifting to a mode that we could use the existing hardware. We're just plugging some appliances into it. The timing source is closer to the compute with the advantages of providing very accurate time to the compute model. And it's easily scalable."
+ },
+ {
+  "idx": 3,
+  "start": 102.0,
+  "end": 165.0,
+  "rep_time": 130.0,
+  "en": "So, what are the timing standards? The timing standards initially it started from OCP TAP which it has its own specification that mainly defined an open interfaces and then open code open source for what a time card is what are the interfaces and how it would be supported on on on a server. It mainly focuses on a GNSS to the CPU delivery or not much more than that. We have also the IEEE P335 which kind of wouldn't say it doesn't obviously contradict it kind of elaborate the scope of a time card to be with more optional timing inputs timing outputs what are control interfaces and not kind of tied to a specific driver specific implementation. So what is a time card and what is the basic architecture of a time card? So a time card has obviously an oscillator could be simple oscillator like quartz"
+ },
+ {
+  "idx": 4,
+  "start": 165.0,
+  "end": 210.0,
+  "rep_time": 185.0,
+  "en": "and a nick could be I hand oscillator like a rubidium if if hold over durations longer hold over durations are needed. And it has a PLL which actually um locks to the time and maintains the time and the GNSS was usually the source of time getting from from GPS satellites. And the last mile the last things we we talked about the the last session was talked about about PTP. So what is a time card? So a time card is not necessarily a PCIE time card."
+ },
+ {
+  "idx": 5,
+  "start": 210.0,
+  "end": 261.0,
+  "rep_time": 230.0,
+  "en": "A time card could be also M.2 model also specified by OCP. Um with the advantages of not occupying slot it also could be a USB interface Um, and if you ask Ahmed, it's all his own baby. About uh how USB could um model could actually act as a time card. And hopefully soon also with PTM support. Um, and and then you kind of only need a USB connected directly to the CPU and you have your uh very miniature time card. So, PTM. So, I will not go over again what PTM is. Um, those of you who managed to go through our table in the innovation lab, we kind of showed um a time card in a system acting as a PRTCB. Um, we had a I think it the exact same setup that the previous session presented. Although we got um better results. Um, and I agree with Kevin probably the"
+ },
+ {
+  "idx": 6,
+  "start": 261.0,
+  "end": 345.0,
+  "rep_time": 300.0,
+  "en": "oscillator used um on our on the time card um managed to reduce all the noise. So, basically we had a setup. We had a time card, uh the Oscilloquartz time card. We used the NIC, the Intel I226, which supports PTM. The PCH was Intel uh Z890. Um, PTM was enabled both on the time card, the NIC, and what we compared, we compared um the output from the PHC from the time card through 1 PPS and compared it to PTP going out through the NIC. We used uh G8275.1 um through the NIC and compared the 1 PPS to the PTP. And if you can see, and we we had that also in in our table, we saw uh MTI of 7 nanoseconds for like 3 days. Um, so obviously it could be a PRTCB or maybe even better."
+ },
+ {
+  "idx": 7,
+  "start": 345.0,
+  "end": 381.0,
+  "rep_time": 360.0,
+  "en": "About time card solution. So, I'll do it quickly. Uh So time card is although it was initially aimed for data centers, but many many different verticals could use time card. So there is the data centers, financial trading, uh infrastructure, uh open ran, obviously for ODUs and or tactical 5G deployments, and also for uh defense sensors platforms, and as Ahmed the round table I mentioned also F-16s or things like that."
+ },
+ {
+  "idx": 8,
+  "start": 381.0,
+  "end": 399.0,
+  "rep_time": 390.0,
+  "en": "I'll I'll I'll do it quickly because I want to move. Those are for example in the telecom, time card could be placed in uh the the DU and actually provide time both to the DU and to the RU um through uh um the internet. And for defense system, um many many um rugged devices, rugged"
+ },
+ {
+  "idx": 9,
+  "start": 399.0,
+  "end": 429.0,
+  "rep_time": 415.0,
+  "en": "PCs have um PCI slots vacant. You can plug in a time card, and you can use the advantage of PTM to get very precise time into the CPU. And those CPU could be either um navigation systems, weather uh forecasts, um rather radar um applications, etc."
+ },
+ {
+  "idx": 10,
+  "start": 429.0,
+  "end": 651.0,
+  "rep_time": 540.0,
+  "en": "With that, I will move to another  I give it to me. Okay. Thank you. Good afternoon. Well, engineers and PLMs like Yair and rest of them believe that they built a fantastic card that can solve all the problems, but that's the beginning of the problem. Trust me. Why? Well, the card is designed to deliver accurate, precise time delivery to the appliances, but the biggest part is the source. Now, the challenges are we able to monitor the source? Do we Can we build resiliency to the source? But before I get in there, how many of us here believe that GNSS is good enough? How many of us here in the timing fraternity believe that GNSS is a good dissemination source? You believe so? At least the world believes. Doesn't matter whether we believe or not. Our world believes that yeah, GNSS is free. I'm able to build a a fantastic 10 billion timing infrastructure assuming that the GNSS is free. See? 10 billion and free. This doesn't go hand in hand. Now, the question here is how can we build resiliency to the source? Now, it is Is someone working on how to build resiliency architecture to the to the infrastructure? Yes, and there is this IEEE body that is working. It's a very very interesting uh body. If you want to join, feel free. It's IEEE 1952. It talks about few resiliency levels, how to protect the source infrastructure, uh starting with the detection alert. What does it mean? Very simple. If there's any jamming or spoofing is detected, you detect, and then you advertise. That's the first level. That means you are [clears throat] you are able to understand that you are under threat. Fine. And then and then comes the second level, you know, recover, detect, and uh and alert or announce. So, that means that you're able to uh you're able to detect, and then, you know, you sneak in and see if the if the vulnerability is still alive or not. And then, if it's alive, yeah, you shut down. If it's not alive, yeah, you recover back. So, that's the second level of resiliency that has been offered. And the third one is resist, recover, detect. So, what does this mean? Resist is a This is where the oscillators come into picture saying that, \"Okay, you found the problem. Then, okay, you shut down the port. You shut down the GNSS port, and try to hold the clock as much as you can.\" That's the second that's the third level of resiliency. Then comes the fourth level of resiliency withstand. This is this is most critical because now this is where the multiple sources come into picture. I mean you cannot rely your billion dollars of infrastructure assuming that one single source is good enough for you to deliver accurate time. Which should not be the case. So this is where alternate you know PNT sources like Leo satellite or a stream line or a stream coming from a NIST or local lab could really play a role. That's where that's how you could withstand a threat or vulnerability. And then the most important one is resiliency level five. This is where the zero trust architecture with multi-source combiner comes into picture. You will try to bring as many sources as you can. For example, the GNSS versions of multiple constellations. All of those you know five or six that are available on there. And then the Leo constellations and then the alternate source coming from the neighboring PTP then atomic clock. It's a combiner. And the zero trust is where where it validates each source and tries to provide you the relevant source that is required to meet the SLA of the end application. So that's where it gets in now. The good news is you know smart engineers like them try to build a card that is fully resilient to these vulnerabilities trying to get as"
+ },
+ {
+  "idx": 11,
+  "start": 651.0,
+  "end": 681.0,
+  "rep_time": 665.0,
+  "en": "many sources as possible then run a what run a multi-source combiner then run a validator. Then you know that build a zero trust architecture. So this is one of the strong recommendation that we would like to give given our millions of hours of experience running these tier one networks in the world. I'm going to show you a case study which is very interesting case study. What we did was we did a GNSS audit"
+ },
+ {
+  "idx": 12,
+  "start": 681.0,
+  "end": 819.0,
+  "rep_time": 750.0,
+  "en": "in 985 locations in in a in a large country. The results are very interesting and alarming. What does it mean by interesting is during the By the way, we did this audit in two periods, a period of 3 months, then we gave a gap of 6 months, and again a period of 2 months. The results are very alarming. Why? And interesting again, I'm reiterating, why? It's interesting because we saw few thousands of alarms that are very short-lived. 6 seconds to 6 minutes. 6 seconds to 6 minutes. This is a clear indication, probably most of us may know by this fact by this time, GPS signal is probably the weakest possible signal that you could ever feel. 10 ^ - 13 mW. The weak GPS or 10 ^ - 16 W. Weakest possible signal that you could receive. Of course, it's natural coming from 22,000 km up in the sky. It's natural. Now, what does that mean? A 1 W 1 W jammer or a noise can really destroy a critical infrastructure that you're trying to build. Unfortunately, the ignorance levels are very very high with a very high, you know, system architect who assumes that the GPS signal is strong. Well, no, it's Sometimes ignorance is blessing. Because you don't know the threat first. Now, the question here, coming back to this, uh, the operator really realized, uh, well, well, one good thing What is the interesting part is 90 to 95% of the alarms are not service impacting. Let's be practical. Why? Well, the oscillator Some of these nice oscillator designers 2 minutes. Okay. Some of these oscillator designers, they're able to hold the time to a substantial good level, but there are many alarms that are beyond few hours, sometimes few days. Now, that's a clear eye-opener that you cannot trust GNSS single source. Need to build build an alternate. Alternate could be There are many alternates that are available. But anyway, the point that we are trying to bring to your notice is GNSS cannot be trusted anymore. You have to build resiliency. And now when you bring that particular vulnerability to a data center environment, you know, where you see a vulnerability on the GNSS that includes jamming, spoofing. By the way, one of the most important factor that we are underestimating, undermining while receiving the GNSS is the signal interference. And this is sort of a mini jamming. I"
+ },
+ {
+  "idx": 13,
+  "start": 819.0,
+  "end": 879.0,
+  "rep_time": 850.0,
+  "en": "don't know if it's called jamming. Maybe jamming is is still an interference, but a strong interference. But the minor signal interference is really impacting the service periodically. Now, the problem is in in in in a tier one environment, any alarm is percolated down all the way. Now, there are certain appliances that can trigger the decision based on the alarms that are generated. So, even a 6 minutes or 6 seconds of of alarms that are percolated down the network have an impact, uh operational impact. So, now it's very clear that a vulnerability on the GNSS source is going to impact is going to have an operational consequence. That point needs to be made, you know, needs to be noted. So, now the recommended I mean, this is where we're trying to make the TCP the time card"
+ },
+ {
+  "idx": 14,
+  "start": 879.0,
+  "end": 954.0,
+  "rep_time": 915.0,
+  "en": "very resilient uh based on these learnings from the field. And how do we protect uh the time card in in various you know, levels. And one of the level is try to build diverse sources, as many sources as we can. And then most important is detect and validate. This is the key. Detection and validation is a key for a 59 or a 59 or 79. By the way, many of the data centers are expected to have a 79s availability, which is wow. She's as good as no failure. But in practicality, it is not yet there, but we will get there. So, in this case, you still need a in in in order to meet such a SLA, you need a detection validation mechanism that's combined with, you know, assurance. Yeah, this is very important. I mean, given an opportunity, I would definitely want to monitor every time packet that is going through the network. This will help the operator or our data center to identify the congestion points, the skew points, the many points that would really, you know, impact the performance. Okay. Now, this is one of the recommendation uh to have the functionalities inbuilt in the time card to make it resilient. And then, yeah. So, this is a proposed"
+ },
+ {
+  "idx": 15,
+  "start": 954.0,
+  "end": 1006.074195,
+  "rep_time": 980.0,
+  "en": "TAP contribution in a nutshell. We would like to bring the Genesis assurance into a time card. We want to assure the source. Uh so, feel free to, you know, get involved into this. And our proposal is mostly on the multi-source validation and integration integrate controls and yeah, open observability. Uh happy to take any questions. Okay, going once, twice,  [snorts]  thrice. No questions?  Yeah. Thank you, Anil. Thank you, Yair.  Thank you."
+ }
+]

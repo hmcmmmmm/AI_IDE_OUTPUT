@@ -1,0 +1,865 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.280 --> 00:00:07.040
+All right. So, today we're going to talk
+
+00:00:05.040 --> 00:00:09.599
+about high rate switches, what they are,
+
+00:00:07.040 --> 00:00:11.840
+and precise time.
+
+00:00:09.599 --> 00:00:14.960
+And so, just a disclaimer that a lot of
+
+00:00:11.840 --> 00:00:17.600
+these are my views and may not represent
+
+00:00:14.960 --> 00:00:19.600
+other people's views. Um, we'll talk
+
+00:00:17.600 --> 00:00:22.160
+about latency, high switches, and
+
+00:00:19.600 --> 00:00:23.840
+latency. We'll talk about high radics
+
+00:00:22.160 --> 00:00:26.160
+latency
+
+00:00:23.840 --> 00:00:27.680
+uh or high radic switches, precise time
+
+00:00:26.160 --> 00:00:30.160
+in the parking lot problem. and then
+
+00:00:27.680 --> 00:00:33.720
+we'll talk about Q&amp;A or conclusion, call
+
+00:00:30.160 --> 00:00:33.720
+to action, and Q&amp;A.
+
+00:00:34.000 --> 00:00:38.559
+So, for those of you who have known me
+
+00:00:35.920 --> 00:00:40.719
+for a while, you know that time is very,
+
+00:00:38.559 --> 00:00:43.920
+very important to me. And one of the
+
+00:00:40.719 --> 00:00:46.480
+papers that has had a big impact on my
+
+00:00:43.920 --> 00:00:49.760
+life and my career is this concept of
+
+00:00:46.480 --> 00:00:51.520
+these killer microsconds. Um, in this
+
+00:00:49.760 --> 00:00:54.719
+paper, you know, they talk about we're
+
+00:00:51.520 --> 00:00:57.280
+good at handling the, you know,
+
+00:00:54.719 --> 00:00:59.520
+millisecond problems and the nancond
+
+00:00:57.280 --> 00:01:03.039
+problems, but we're not good at handling
+
+00:00:59.520 --> 00:01:06.159
+the microscond problems. And today the
+
+00:01:03.039 --> 00:01:08.720
+AI workloads, they work in microsconds.
+
+00:01:06.159 --> 00:01:12.159
+So if we can remove those microsconds in
+
+00:01:08.720 --> 00:01:14.640
+terms of latency, we can you know reduce
+
+00:01:12.159 --> 00:01:17.759
+inference cost and training cost and the
+
+00:01:14.640 --> 00:01:20.960
+tokens per watt go up and potentially
+
+00:01:17.759 --> 00:01:24.720
+save the data center providers or the AI
+
+00:01:20.960 --> 00:01:27.680
+providers billions of dollars.
+
+00:01:24.720 --> 00:01:29.680
+And so I work for a company
+
+00:01:27.680 --> 00:01:31.759
+called Ir. And when I left my previous
+
+00:01:29.680 --> 00:01:33.280
+employer, I wanted to go somewhere where
+
+00:01:31.759 --> 00:01:35.759
+we could attack those killer
+
+00:01:33.280 --> 00:01:38.159
+microsconds. And at IDO we are attacking
+
+00:01:35.759 --> 00:01:43.200
+those killer microsconds. And I love my
+
+00:01:38.159 --> 00:01:45.200
+job. And so to show you how by itself we
+
+00:01:43.200 --> 00:01:47.759
+are attacking those killer microsconds
+
+00:01:45.200 --> 00:01:52.640
+is if you look at a hypothetical one
+
+00:01:47.759 --> 00:01:54.799
+pabit you know system with 102 t or
+
+00:01:52.640 --> 00:01:58.320
+terabits per second switches. It takes
+
+00:01:54.799 --> 00:02:01.200
+about 30 of those switches to implement
+
+00:01:58.320 --> 00:02:04.960
+uh this bandwidth this massive bandwidth
+
+00:02:01.200 --> 00:02:06.719
+that AI needs. But if we look at a
+
+00:02:04.960 --> 00:02:09.360
+hypothetical
+
+00:02:06.719 --> 00:02:12.319
+single one pedabit switch, we can do it
+
+00:02:09.360 --> 00:02:15.120
+in a single hop. And when we can reduce
+
+00:02:12.319 --> 00:02:17.360
+those hops, then the switch latency gets
+
+00:02:15.120 --> 00:02:19.599
+reduced significantly,
+
+00:02:17.360 --> 00:02:23.120
+which also has other benefits in terms
+
+00:02:19.599 --> 00:02:24.640
+of reducing jitter, congestion, and tail
+
+00:02:23.120 --> 00:02:26.720
+latency.
+
+00:02:24.640 --> 00:02:29.040
+And so
+
+00:02:26.720 --> 00:02:32.080
+a high rate switch can benefit not only
+
+00:02:29.040 --> 00:02:35.440
+scale up and scale out but also scale
+
+00:02:32.080 --> 00:02:38.640
+across the economics, the performance
+
+00:02:35.440 --> 00:02:42.239
+and the operation all will be smoother
+
+00:02:38.640 --> 00:02:45.440
+and it leads to better AI outcomes, the
+
+00:02:42.239 --> 00:02:49.680
+faster training, the lower cost per
+
+00:02:45.440 --> 00:02:51.760
+token. So let's think about this. If I
+
+00:02:49.680 --> 00:02:54.720
+think about what's in the data center
+
+00:02:51.760 --> 00:02:58.720
+today, right? I have a to a top of rack
+
+00:02:54.720 --> 00:03:03.040
+switch a leaf and a spine. And if I can
+
+00:02:58.720 --> 00:03:06.319
+compress one of those layers then I can
+
+00:03:03.040 --> 00:03:10.159
+reduce the latency. So if I can go from
+
+00:03:06.319 --> 00:03:14.319
+say two layers of switching to one layer
+
+00:03:10.159 --> 00:03:18.239
+of switching I can reduce my latency by
+
+00:03:14.319 --> 00:03:21.920
+a third. And so if you know my my
+
+00:03:18.239 --> 00:03:23.920
+latency is say a couple of microsconds
+
+00:03:21.920 --> 00:03:26.000
+right for each layer I'm going to hit
+
+00:03:23.920 --> 00:03:28.080
+that couple of microsconds
+
+00:03:26.000 --> 00:03:30.640
+but my savings
+
+00:03:28.080 --> 00:03:34.480
+will be you know onethird of that if I
+
+00:03:30.640 --> 00:03:37.360
+can compress it into a single layer
+
+00:03:34.480 --> 00:03:38.959
+and so let's talk about now precise
+
+00:03:37.360 --> 00:03:41.040
+time.
+
+00:03:38.959 --> 00:03:43.360
+So what are the characteristics of this
+
+00:03:41.040 --> 00:03:46.319
+high radic switch? Well, it's going to
+
+00:03:43.360 --> 00:03:48.000
+have hundreds to thousands of ports,
+
+00:03:46.319 --> 00:03:50.000
+right? It's not going to be tens of
+
+00:03:48.000 --> 00:03:52.159
+ports or low hundreds. It's going to be
+
+00:03:50.000 --> 00:03:54.640
+hundreds to thousands of ports, maybe
+
+00:03:52.159 --> 00:03:58.159
+even more, right? And it's going to have
+
+00:03:54.640 --> 00:04:01.519
+the same benefits as a fixed form factor
+
+00:03:58.159 --> 00:04:04.159
+switch, right? It it configured and
+
+00:04:01.519 --> 00:04:06.720
+operated like a single switch. The
+
+00:04:04.159 --> 00:04:10.080
+latency is of a single switch. There's
+
+00:04:06.720 --> 00:04:12.720
+no hidden hops inside the box.
+
+00:04:10.080 --> 00:04:16.320
+And the implications of this on precise
+
+00:04:12.720 --> 00:04:18.079
+time is huge. Most of the the precise
+
+00:04:16.320 --> 00:04:20.560
+time
+
+00:04:18.079 --> 00:04:24.400
+solutions that we have today are
+
+00:04:20.560 --> 00:04:26.560
+targeting, you know, tens of ports or
+
+00:04:24.400 --> 00:04:28.400
+maybe hundreds of ports, but now we're
+
+00:04:26.560 --> 00:04:30.560
+looking at thousands of ports and
+
+00:04:28.400 --> 00:04:32.320
+keeping the jitter
+
+00:04:30.560 --> 00:04:34.320
+all,
+
+00:04:32.320 --> 00:04:37.680
+you know, as low as possible between all
+
+00:04:34.320 --> 00:04:41.120
+the different ports. And not only that,
+
+00:04:37.680 --> 00:04:43.600
+every time aware feature needs to be
+
+00:04:41.120 --> 00:04:46.479
+have that precise time.
+
+00:04:43.600 --> 00:04:49.199
+And so on top of that is synchronous
+
+00:04:46.479 --> 00:04:51.280
+Ethernet, right? We're going to pull in
+
+00:04:49.199 --> 00:04:52.479
+a signal from one port, we're going to
+
+00:04:51.280 --> 00:04:56.000
+clean it up, and then we're going to
+
+00:04:52.479 --> 00:04:59.040
+send it to thousands of ports.
+
+00:04:56.000 --> 00:05:01.520
+And so when I think of the the the
+
+00:04:59.040 --> 00:05:04.960
+problem of a highic switch, it's
+
+00:05:01.520 --> 00:05:08.960
+physically demanding, right? It's a very
+
+00:05:04.960 --> 00:05:11.840
+large problem and you know this parking
+
+00:05:08.960 --> 00:05:15.759
+lot problem is one that we've been able
+
+00:05:11.840 --> 00:05:18.160
+to solve with precise time and the idea
+
+00:05:15.759 --> 00:05:21.840
+here is that you can use the precise
+
+00:05:18.160 --> 00:05:25.360
+arrival time at all the inputs as part
+
+00:05:21.840 --> 00:05:27.520
+of your scheduling decision right and
+
+00:05:25.360 --> 00:05:29.759
+the fairness mechanisms or metrics that
+
+00:05:27.520 --> 00:05:32.479
+you'll get out of this is you know you
+
+00:05:29.759 --> 00:05:34.639
+want to have you know arrival time and
+
+00:05:32.479 --> 00:05:37.360
+residency time considered
+
+00:05:34.639 --> 00:05:39.199
+and you want to reduce that tail latency
+
+00:05:37.360 --> 00:05:40.720
+which everybody wants to be as low as
+
+00:05:39.199 --> 00:05:43.360
+possible.
+
+00:05:40.720 --> 00:05:46.639
+And so let's go through an example.
+
+00:05:43.360 --> 00:05:48.960
+So let's say you you're in the parking
+
+00:05:46.639 --> 00:05:50.880
+lot and we are going to use the arrival
+
+00:05:48.960 --> 00:05:53.520
+time as a time where a car wants to
+
+00:05:50.880 --> 00:05:55.759
+leave. In this case the car wants the
+
+00:05:53.520 --> 00:05:58.080
+green car wants to leave at time X,
+
+00:05:55.759 --> 00:06:00.800
+right? And as it's leaving all of a
+
+00:05:58.080 --> 00:06:03.199
+sudden the yellow car wants to leave.
+
+00:06:00.800 --> 00:06:06.319
+So now we're at an intersection between
+
+00:06:03.199 --> 00:06:08.720
+the green car and the yellow car. If the
+
+00:06:06.319 --> 00:06:11.440
+yellow car wins, it adds to the tail
+
+00:06:08.720 --> 00:06:14.160
+latency of the green car, right? So if
+
+00:06:11.440 --> 00:06:17.680
+we know when the green car started to
+
+00:06:14.160 --> 00:06:19.360
+leave, to be fair, we can give,
+
+00:06:17.680 --> 00:06:21.520
+you know, preference to that green card
+
+00:06:19.360 --> 00:06:23.520
+based on its arrival time. And sure
+
+00:06:21.520 --> 00:06:26.720
+enough, we'll let the green car go
+
+00:06:23.520 --> 00:06:29.680
+ahead. Now we hit another intersection
+
+00:06:26.720 --> 00:06:32.400
+and we have the green car and the purple
+
+00:06:29.680 --> 00:06:34.240
+car. The purple car was the last car. So
+
+00:06:32.400 --> 00:06:36.560
+if it went first, it would get ahead of
+
+00:06:34.240 --> 00:06:38.800
+the green car, slowing it down, adding
+
+00:06:36.560 --> 00:06:40.800
+to its tail latency. And same for the
+
+00:06:38.800 --> 00:06:42.720
+yellow car. So we're going to let the
+
+00:06:40.800 --> 00:06:44.960
+green car go through, then the yellow
+
+00:06:42.720 --> 00:06:47.360
+car go through, and then the purple car
+
+00:06:44.960 --> 00:06:50.080
+go through. And this way they all have
+
+00:06:47.360 --> 00:06:53.840
+the lowest possible tail latency
+
+00:06:50.080 --> 00:06:56.000
+that that you know we can give them.
+
+00:06:53.840 --> 00:06:58.800
+And so you look at this and oh Dan this
+
+00:06:56.000 --> 00:07:02.240
+is easy you know this is nothing right
+
+00:06:58.800 --> 00:07:04.639
+this is you know small but when you look
+
+00:07:02.240 --> 00:07:06.560
+at things in terms of high radex all of
+
+00:07:04.639 --> 00:07:09.120
+a sudden
+
+00:07:06.560 --> 00:07:12.479
+those parking lots get a little bit
+
+00:07:09.120 --> 00:07:16.160
+bigger so now instead of you know tens
+
+00:07:12.479 --> 00:07:20.319
+of spaces now I have thousands of spaces
+
+00:07:16.160 --> 00:07:23.440
+or potentially 5,000 spaces and so
+
+00:07:20.319 --> 00:07:25.280
+precise time gives a way to give all of
+
+00:07:23.440 --> 00:07:28.319
+these different
+
+00:07:25.280 --> 00:07:30.560
+cars or inputs into a networking device,
+
+00:07:28.319 --> 00:07:33.280
+you know, a a a base that they can work
+
+00:07:30.560 --> 00:07:35.360
+off of, right? And it's not that we're
+
+00:07:33.280 --> 00:07:38.240
+all these cars are going to one exit.
+
+00:07:35.360 --> 00:07:41.440
+There's actually 5,000 exits in this
+
+00:07:38.240 --> 00:07:44.560
+system. And so we have to schedule, you
+
+00:07:41.440 --> 00:07:47.360
+know, 5,000 different entrances and
+
+00:07:44.560 --> 00:07:50.479
+5,000 different exits.
+
+00:07:47.360 --> 00:07:52.240
+And so I ran some simulations on what
+
+00:07:50.479 --> 00:07:55.280
+this would look like for a thousandport
+
+00:07:52.240 --> 00:07:58.639
+system. And I wanted to compare a
+
+00:07:55.280 --> 00:08:01.360
+roundroin, a deficit weighted roundroin
+
+00:07:58.639 --> 00:08:03.840
+and an arrival time, an ideal arrival
+
+00:08:01.360 --> 00:08:05.840
+time scheduler. And so round robin is
+
+00:08:03.840 --> 00:08:09.039
+like you're at a four-way stop sign and
+
+00:08:05.840 --> 00:08:10.800
+you rotate between the four different uh
+
+00:08:09.039 --> 00:08:13.280
+you know people at the stop sign.
+
+00:08:10.800 --> 00:08:15.360
+Whoever got there first gets to go.
+
+00:08:13.280 --> 00:08:17.680
+deficit weighted round robin is you
+
+00:08:15.360 --> 00:08:21.039
+basically try to equal it between all
+
+00:08:17.680 --> 00:08:24.319
+the different um all the different uh
+
+00:08:21.039 --> 00:08:26.479
+directions and sure enough you get a
+
+00:08:24.319 --> 00:08:28.879
+little better performance with DWRR and
+
+00:08:26.479 --> 00:08:32.159
+it's used quite commonly in industry
+
+00:08:28.879 --> 00:08:34.080
+today but if we had an ideal arrival
+
+00:08:32.159 --> 00:08:36.159
+time scheduler
+
+00:08:34.080 --> 00:08:39.519
+all of a sudden
+
+00:08:36.159 --> 00:08:43.440
+we've reduced it to about 67 you know
+
+00:08:39.519 --> 00:08:46.959
+percent of this nomal nominalized
+
+00:08:43.440 --> 00:08:51.360
+uh latency and this is your P99.99
+
+00:08:46.959 --> 00:08:54.000
+latency. So if it took you know three
+
+00:08:51.360 --> 00:08:57.560
+microsconds of latency you know I've
+
+00:08:54.000 --> 00:08:57.560
+just killed a microscond
+
+00:08:57.760 --> 00:09:03.360
+and so
+
+00:08:59.760 --> 00:09:06.000
+you know for conclusions the high rate
+
+00:09:03.360 --> 00:09:10.160
+switch you know reduces network latency
+
+00:09:06.000 --> 00:09:12.959
+and jitter it flattens minimize hops you
+
+00:09:10.160 --> 00:09:15.920
+know it's a larger single hop domain and
+
+00:09:12.959 --> 00:09:18.320
+scale up and scale out it significantly
+
+00:09:15.920 --> 00:09:21.200
+reduces the network latency
+
+00:09:18.320 --> 00:09:23.839
+and jitter versus low radex switches.
+
+00:09:21.200 --> 00:09:27.040
+And the benefits go beyond, you know,
+
+00:09:23.839 --> 00:09:29.600
+the the latency, right? There's power,
+
+00:09:27.040 --> 00:09:31.760
+there's cost, there's reliability,
+
+00:09:29.600 --> 00:09:33.760
+utilization, training, and inference
+
+00:09:31.760 --> 00:09:36.480
+costs.
+
+00:09:33.760 --> 00:09:40.160
+And precise time helps manage and
+
+00:09:36.480 --> 00:09:42.000
+contain latency through the high switch,
+
+00:09:40.160 --> 00:09:44.080
+right? So precise time measurement and I
+
+00:09:42.000 --> 00:09:46.880
+saw this today as I was looking at this
+
+00:09:44.080 --> 00:09:49.519
+not the PTM but just measuring precise
+
+00:09:46.880 --> 00:09:52.480
+time you know allows visibilities into
+
+00:09:49.519 --> 00:09:54.640
+these latencies at many different points
+
+00:09:52.480 --> 00:09:58.240
+right sinky allows you to distribute a
+
+00:09:54.640 --> 00:10:01.600
+very high quality clock and precise time
+
+00:09:58.240 --> 00:10:04.240
+enables the solution to address problems
+
+00:10:01.600 --> 00:10:06.640
+like today's parking lot problem and as
+
+00:10:04.240 --> 00:10:08.959
+you go home today when you're at that
+
+00:10:06.640 --> 00:10:11.920
+different intersections you'll see you
+
+00:10:08.959 --> 00:10:15.279
+know hey I I started first. I should
+
+00:10:11.920 --> 00:10:19.120
+have been able to go first. But anyway,
+
+00:10:15.279 --> 00:10:21.200
+call to action. So, you know, I feel my
+
+00:10:19.120 --> 00:10:23.680
+mission in life is to try and kill those
+
+00:10:21.200 --> 00:10:26.560
+killer microsconds. A customer spend a
+
+00:10:23.680 --> 00:10:29.279
+lot of time to write a paper and publish
+
+00:10:26.560 --> 00:10:32.640
+a paper on, you know, the advantages of
+
+00:10:29.279 --> 00:10:35.120
+killing those killer microsconds. And so
+
+00:10:32.640 --> 00:10:39.200
+here at Erdo we are trying to kill those
+
+00:10:35.120 --> 00:10:42.720
+killer microsconds by flattening the the
+
+00:10:39.200 --> 00:10:46.000
+AI networks. Um
+
+00:10:42.720 --> 00:10:48.480
+on top of that we look at the scaleup
+
+00:10:46.000 --> 00:10:52.079
+networks are going to grow right if I
+
+00:10:48.480 --> 00:10:54.160
+have a switch with thousands of ports
+
+00:10:52.079 --> 00:10:57.040
+then potentially I'm going to connect
+
+00:10:54.160 --> 00:11:00.640
+that to thousands of GPUs that's not
+
+00:10:57.040 --> 00:11:02.640
+going to fit in a single rack. And so
+
+00:11:00.640 --> 00:11:06.720
+earlier today, you know, there was talk
+
+00:11:02.640 --> 00:11:08.399
+about Iraq based time, right? But I
+
+00:11:06.720 --> 00:11:13.279
+think we really need to think of this in
+
+00:11:08.399 --> 00:11:15.920
+terms of the scaleup domain time. And
+
+00:11:13.279 --> 00:11:18.160
+you know, that might be one aspect of,
+
+00:11:15.920 --> 00:11:20.880
+you know, this multirack scaleup domain
+
+00:11:18.160 --> 00:11:22.880
+that a few companies including are
+
+00:11:20.880 --> 00:11:25.839
+starting to
+
+00:11:22.880 --> 00:11:27.600
+you know to to organize. And if you'd
+
+00:11:25.839 --> 00:11:31.120
+like to join that workstream, you know,
+
+00:11:27.600 --> 00:11:32.959
+you can take a picture of the the uh QR
+
+00:11:31.120 --> 00:11:36.160
+code and learn more about what we're
+
+00:11:32.959 --> 00:11:39.399
+doing. There's also a white paper there.
+
+00:11:36.160 --> 00:11:39.399
+Thank you.
+
+00:11:41.200 --> 00:11:46.399
+Thanks, Dan. Do we have any questions
+
+00:11:43.279 --> 00:11:49.399
+from the audience?
+
+00:11:46.399 --> 00:11:49.399
+Yes.
+
+00:11:49.920 --> 00:11:54.480
+Is the mic microphone on?
+
+00:11:51.920 --> 00:11:57.600
+Hello. Hello. It's working now. Good.
+
+00:11:54.480 --> 00:11:59.600
+Thank you. Anchor. Um, okay. So my
+
+00:11:57.600 --> 00:12:01.920
+question is if you're piling so many
+
+00:11:59.600 --> 00:12:04.320
+ports into a single box, what stops that
+
+00:12:01.920 --> 00:12:06.720
+being a single point failure?
+
+00:12:04.320 --> 00:12:10.560
+You're absolutely right. Right. So as we
+
+00:12:06.720 --> 00:12:13.519
+move towards multiplaner boxes, right?
+
+00:12:10.560 --> 00:12:16.000
+We will have multiple planes. So your
+
+00:12:13.519 --> 00:12:18.399
+your GPUs or your nicks will be
+
+00:12:16.000 --> 00:12:22.800
+connected to multiple planes, right? So,
+
+00:12:18.399 --> 00:12:25.360
+if I have a thousand GPUs, I may have
+
+00:12:22.800 --> 00:12:26.639
+say five or 10 switches, each one of
+
+00:12:25.360 --> 00:12:28.800
+those with a different connection, and
+
+00:12:26.639 --> 00:12:30.639
+I'm going to spray my traffic across
+
+00:12:28.800 --> 00:12:33.519
+those different ports. Right? Right now,
+
+00:12:30.639 --> 00:12:36.000
+they're talking about MRC, uh, which
+
+00:12:33.519 --> 00:12:37.760
+runs off of SRV6, where they'll
+
+00:12:36.000 --> 00:12:40.880
+basically have the nick spray the
+
+00:12:37.760 --> 00:12:43.440
+traffic across multiple planes. So, if
+
+00:12:40.880 --> 00:12:45.920
+all of a sudden your your switch dies,
+
+00:12:43.440 --> 00:12:47.360
+the blast radius is minimized, right?
+
+00:12:45.920 --> 00:12:51.120
+The effect is minimized. And there were
+
+00:12:47.360 --> 00:12:53.839
+some presentations um earlier in this uh
+
+00:12:51.120 --> 00:12:56.560
+this u summit where they talked about
+
+00:12:53.839 --> 00:12:59.519
+how MRC6 you could see a degradation and
+
+00:12:56.560 --> 00:13:02.320
+then an immediate response as bad things
+
+00:12:59.519 --> 00:13:05.560
+happened in the MRC. And so
+
+00:13:02.320 --> 00:13:05.560
+thank you.
+
+00:13:08.399 --> 00:13:11.959
+Any other questions?
+
+00:13:13.920 --> 00:13:18.920
+Okay. Uh thanks Dan. Thank you.
+

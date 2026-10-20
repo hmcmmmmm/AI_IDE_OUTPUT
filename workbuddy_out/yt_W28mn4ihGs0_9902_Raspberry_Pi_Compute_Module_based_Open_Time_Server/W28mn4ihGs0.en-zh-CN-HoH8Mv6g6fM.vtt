@@ -1,0 +1,904 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.279 --> 00:00:09.519
+Thank you so much.  Thank you for your
+
+00:00:07.120 --> 00:00:11.599
+introduction.  I'm so glad to be with you.  It was a
+
+00:00:09.519 --> 00:00:15.759
+pleasure to spend this afternoon with you all
+
+00:00:11.599 --> 00:00:17.680
+.  Respect to Mr. Ahmad, and thank you for
+
+00:00:15.759 --> 00:00:19.359
+all his efforts and work in advancing the PTP
+
+00:00:17.680 --> 00:00:21.760
+
+
+00:00:19.359 --> 00:00:23.580
+.  Well, what I want to talk about today
+
+00:00:21.760 --> 00:00:24.480
+is
+
+00:00:23.580 --> 00:00:26.800
+[clearing the throat],
+
+00:00:24.480 --> 00:00:28.960
+uh, an extended discussion about the topic of resilience.
+
+00:00:26.800 --> 00:00:30.880
+I thought the first two presentations were great.
+
+00:00:28.960 --> 00:00:32.559
+They talked about resilience, why we
+
+00:00:30.880 --> 00:00:34.800
+need resilience, and the importance of resilience
+
+00:00:32.559 --> 00:00:36.719
+.  Yes, they were mainly discussing the
+
+00:00:34.800 --> 00:00:37.840
+attendance card issue at the time.  In this
+
+00:00:36.719 --> 00:00:39.760
+special case,
+
+00:00:37.840 --> 00:00:41.040
+instead of
+
+00:00:39.760 --> 00:00:43.760
+time cards, I will introduce some technology and talk about an
+
+00:00:41.040 --> 00:00:46.320
+open time card mini version that combines
+
+00:00:43.760 --> 00:00:49.800
+some open source software to
+
+00:00:46.320 --> 00:00:49.800
+provide flexibility.
+
+00:00:51.120 --> 00:00:54.239
+Therefore,
+
+00:00:52.640 --> 00:00:56.399
+resilience is crucial in the data center field.  I think we all
+
+00:00:54.239 --> 00:00:58.879
+understand why we need
+
+00:00:56.399 --> 00:01:00.719
+atomic resilience; it's very important.
+
+00:00:58.879 --> 00:01:01.440
+Well, when it comes to time elasticity,
+
+00:01:00.719 --> 00:01:03.039
+
+
+00:01:01.440 --> 00:01:05.280
+we can
+
+00:01:03.039 --> 00:01:06.799
+explore many different applications from the perspective of data centers.
+
+00:01:05.280 --> 00:01:10.000
+In particular, applications involving
+
+00:01:06.799 --> 00:01:12.240
+artificial intelligence, 5G, and financial
+
+00:01:10.000 --> 00:01:13.920
+transactions.  Yes, so there is a motivation.
+
+00:01:12.240 --> 00:01:15.920
+This is just an overview to let
+
+00:01:13.920 --> 00:01:17.759
+you know that we certainly need
+
+00:01:15.920 --> 00:01:19.119
+time flexibility, and there are many
+
+00:01:17.759 --> 00:01:21.439
+data centers that can
+
+00:01:19.119 --> 00:01:23.119
+support this.  However,
+
+00:01:21.439 --> 00:01:25.439
+the main point of my presentation is to talk about the
+
+00:01:23.119 --> 00:01:27.200
+
+
+00:01:25.439 --> 00:01:30.320
+work the team has already done, especially the various PTP-related hardware that
+
+00:01:27.200 --> 00:01:31.680
+Ahmad and Julian have
+
+00:01:30.320 --> 00:01:33.520
+
+
+00:01:31.680 --> 00:01:36.320
+developed over the years
+
+00:01:33.520 --> 00:01:38.720
+. I want to build on that and
+
+00:01:36.320 --> 00:01:40.799
+use some interesting
+
+00:01:38.720 --> 00:01:42.799
+concepts to build on that work.  The above is
+
+00:01:40.799 --> 00:01:44.479
+just an
+
+00:01:42.799 --> 00:01:46.640
+overview of the time and equipment project.  For
+
+00:01:44.479 --> 00:01:48.159
+those unfamiliar with the Time Devices project,
+
+00:01:46.640 --> 00:01:49.520
+here's a summary of
+
+00:01:48.159 --> 00:01:51.759
+some of the things they care about, as well as what
+
+00:01:49.520 --> 00:01:53.759
+we, as a team, care about.  Yes, you
+
+00:01:51.759 --> 00:01:57.119
+know, providing a high-precision, reliable, and
+
+00:01:53.759 --> 00:01:59.119
+scalable DRO and
+
+00:01:57.119 --> 00:02:00.799
+time synchronization platform brings the
+
+00:01:59.119 --> 00:02:02.159
+community together.  Of course, in terms of applications,
+
+00:02:00.799 --> 00:02:04.479
+our target customers are data
+
+00:02:02.159 --> 00:02:06.000
+centers
+
+00:02:04.479 --> 00:02:07.840
+.  We are open to the public.
+
+00:02:06.000 --> 00:02:10.479
+Welcome everyone to
+
+00:02:07.840 --> 00:02:12.000
+participate. In this presentation, I
+
+00:02:10.479 --> 00:02:13.599
+would like to talk about how to build
+
+00:02:12.000 --> 00:02:16.239
+
+
+00:02:13.599 --> 00:02:18.239
+an open-time
+
+00:02:16.239 --> 00:02:20.959
+server cluster based on existing work.  In
+
+00:02:18.239 --> 00:02:23.200
+the context of a cluster, I mean
+
+00:02:20.959 --> 00:02:25.040
+
+
+00:02:23.200 --> 00:02:26.480
+deploying multiple master nodes at a certain location or on a node.
+
+00:02:25.040 --> 00:02:28.800
+
+
+00:02:26.480 --> 00:02:31.360
+If we want to
+
+00:02:28.800 --> 00:02:34.480
+develop a specification,
+
+00:02:31.360 --> 00:02:36.319
+what concepts can we develop around this specification?  (Coughing)
+
+00:02:34.480 --> 00:02:40.239
+This diagram roughly
+
+00:02:36.319 --> 00:02:42.480
+outlines what I mean by OTS
+
+00:02:40.239 --> 00:02:43.440
+cluster at the cluster level.  Instead of
+
+00:02:42.480 --> 00:02:44.640
+
+
+00:02:43.440 --> 00:02:46.400
+thinking about this problem from the perspective of distributed networks, because
+
+00:02:44.640 --> 00:02:48.319
+we often talk about distributed timing,
+
+00:02:46.400 --> 00:02:49.840
+we have different nodes.
+
+00:02:48.319 --> 00:02:52.560
+However, I'm referring to the site's local cluster
+
+00:02:49.840 --> 00:02:54.000
+.  Therefore,
+
+00:02:52.560 --> 00:02:55.920
+rather than being distributed, it's more accurate to say that I
+
+00:02:54.000 --> 00:02:58.480
+have multiple units, multiple computers, that
+
+00:02:55.920 --> 00:03:00.000
+possess computing power,
+
+00:02:58.480 --> 00:03:02.000
+and it's not considering a
+
+00:03:00.000 --> 00:03:03.599
+cluster of computing power, but rather a
+
+00:03:02.000 --> 00:03:05.680
+
+
+00:03:03.599 --> 00:03:07.040
+cluster of time.  Therefore, I'd like to
+
+00:03:05.680 --> 00:03:08.560
+talk about
+
+00:03:07.040 --> 00:03:10.720
+things like time sets next.
+
+00:03:08.560 --> 00:03:12.159
+If I have multiple clock
+
+00:03:10.720 --> 00:03:13.840
+sources and multiple
+
+00:03:12.159 --> 00:03:15.440
+field-available antennas, how do I
+
+00:03:13.840 --> 00:03:16.959
+combine them?  So,
+
+00:03:15.440 --> 00:03:18.560
+what unique methods can I use to achieve this?  Therefore, the
+
+00:03:16.959 --> 00:03:20.879
+problem I'm trying to solve is
+
+00:03:18.560 --> 00:03:22.640
+how to
+
+00:03:20.879 --> 00:03:24.800
+design or develop a
+
+00:03:22.640 --> 00:03:26.640
+cluster architecture that can support this.  The
+
+00:03:24.800 --> 00:03:28.480
+key point is that I
+
+00:03:26.640 --> 00:03:30.959
+assume that even if I can't
+
+00:03:28.480 --> 00:03:32.879
+spend enough time in all the different places, I will
+
+00:03:30.959 --> 00:03:34.799
+always find a way to squeeze in time.  Therefore,
+
+00:03:32.879 --> 00:03:37.120
+I have multiple sources of time.
+
+00:03:34.799 --> 00:03:39.519
+This can be a wireless input or a wired
+
+00:03:37.120 --> 00:03:41.519
+input.  But to ensure I
+
+00:03:39.519 --> 00:03:43.599
+can take all time sources into account and
+
+00:03:41.519 --> 00:03:47.840
+utilize them, this
+
+00:03:43.599 --> 00:03:49.599
+will become part of my cluster.
+
+00:03:47.840 --> 00:03:51.440
+So what did I do?  Well, I don't like just
+
+00:03:49.599 --> 00:03:53.200
+setting a standard or saying, "Hey,
+
+00:03:51.440 --> 00:03:54.959
+let's define a standard." I always prefer to
+
+00:03:53.200 --> 00:03:56.799
+create things.  That's why I enjoy developing
+
+00:03:54.959 --> 00:03:58.640
+prototypes.
+
+00:03:56.799 --> 00:04:01.120
+One thing I decided to do was create
+
+00:03:58.640 --> 00:04:04.080
+a prototype of an example system to
+
+00:04:01.120 --> 00:04:06.080
+represent the architecture of the OTSC type
+
+00:04:04.080 --> 00:04:07.840
+.  Therefore, I created
+
+00:04:06.080 --> 00:04:10.640
+what is known as the OTSC development
+
+00:04:07.840 --> 00:04:13.519
+system.  Well, this basically requires at least
+
+00:04:10.640 --> 00:04:15.760
+six GNSS receivers, six
+
+00:04:13.519 --> 00:04:20.160
+antennas, and I also need to combine them with
+
+00:04:15.760 --> 00:04:21.680
+six Open Time Card Mini cards.  So
+
+00:04:20.160 --> 00:04:23.840
+with these cards, [clears throat] I
+
+00:04:21.680 --> 00:04:25.759
+can at least come up with a preliminary idea of ​​how to
+
+00:04:23.840 --> 00:04:27.280
+
+
+00:04:25.759 --> 00:04:29.840
+
+
+00:04:27.280 --> 00:04:31.440
+combine the architecture with Crony's existing hardware.  What
+
+00:04:29.840 --> 00:04:33.840
+I like about Crony is that it has
+
+00:04:31.440 --> 00:04:35.680
+built-in
+
+00:04:33.840 --> 00:04:37.919
+
+
+00:04:35.680 --> 00:04:39.680
+methods for integrating different types of time resources.
+
+00:04:37.919 --> 00:04:42.160
+So my idea is that if I can leverage the
+
+00:04:39.680 --> 00:04:43.840
+existing NTP
+
+00:04:42.160 --> 00:04:45.759
+merger crony and combine it with
+
+00:04:43.840 --> 00:04:47.680
+some of my existing hardware, I can at least get a general
+
+00:04:45.759 --> 00:04:52.560
+idea of ​​what can be done
+
+00:04:47.680 --> 00:04:55.120
+from the OTC or OTSC
+
+00:04:52.560 --> 00:04:57.759
+type of cluster concept.  This is
+
+00:04:55.120 --> 00:04:59.600
+just
+
+00:04:57.759 --> 00:05:03.120
+a snapshot of the initial cluster.  Well, at least in this
+
+00:04:59.600 --> 00:05:05.680
+specific case, since I have six
+
+00:05:03.120 --> 00:05:08.080
+CM4s, in this particular scenario I have
+
+00:05:05.680 --> 00:05:10.560
+one CM4 used as a combiner and
+
+00:05:08.080 --> 00:05:13.120
+the other five CM4s are actually used as input
+
+00:05:10.560 --> 00:05:15.600
+signal sources.  Well, but if I want to use
+
+00:05:13.120 --> 00:05:17.360
+all six signal sources, all I need is a remote
+
+00:05:15.600 --> 00:05:19.120
+computer that can
+
+00:05:17.360 --> 00:05:23.120
+connect to this system and then combine the six
+
+00:05:19.120 --> 00:05:24.639
+signal sources.
+
+00:05:23.120 --> 00:05:26.639
+Here are some preliminary results to
+
+00:05:24.639 --> 00:05:28.400
+give you an idea of ​​what
+
+00:05:26.639 --> 00:05:30.320
+it looks like.  Now,
+
+00:05:28.400 --> 00:05:32.960
+regarding the
+
+00:05:30.320 --> 00:05:36.800
+prototype I showed earlier, what's interesting is that the
+
+00:05:32.960 --> 00:05:40.240
+Deskpie Super 6c desktop I used to do this did
+
+00:05:36.800 --> 00:05:42.240
+n't have a
+
+00:05:40.240 --> 00:05:44.240
+built-in PTP switch.  Correct?  Therefore,
+
+00:05:42.240 --> 00:05:45.680
+
+
+00:05:44.240 --> 00:05:47.440
+since it
+
+00:05:45.680 --> 00:05:50.160
+cannot transmit
+
+00:05:47.440 --> 00:05:51.759
+accurate time, some errors and related problems may occur.  However, I do
+
+00:05:50.160 --> 00:05:54.960
+want to point out that
+
+00:05:51.759 --> 00:05:57.039
+NTP can still use
+
+00:05:54.960 --> 00:05:59.039
+hardware timestamps, which is precisely
+
+00:05:57.039 --> 00:06:01.440
+where crony's strength lies.  I took advantage of this;
+
+00:05:59.039 --> 00:06:04.639
+I could get the timestamps, which
+
+00:06:01.440 --> 00:06:06.720
+NTP could use, and then use them as a
+
+00:06:04.639 --> 00:06:08.000
+
+
+00:06:06.720 --> 00:06:10.479
+reference for the combination.  But in this
+
+00:06:08.000 --> 00:06:12.319
+particular example, I just want to show that with this
+
+00:06:10.479 --> 00:06:14.160
+time source, I can obtain
+
+00:06:12.319 --> 00:06:17.199
+six clock sources with an error within ±1 microsecond before combining them with crony.
+
+00:06:14.160 --> 00:06:20.000
+
+
+00:06:17.199 --> 00:06:21.600
+
+
+00:06:20.000 --> 00:06:23.520
+This perfectly demonstrates the effect of the improvement;
+
+00:06:21.600 --> 00:06:25.280
+
+
+00:06:23.520 --> 00:06:27.600
+
+
+00:06:25.280 --> 00:06:28.639
+in this example, the accuracy is slightly higher than 1/√n.  Well,
+
+00:06:27.600 --> 00:06:30.960
+I did some extra filtering in Crony
+
+00:06:28.639 --> 00:06:33.840
+to further improve this
+
+00:06:30.960 --> 00:06:35.360
+.  Well, now that we've integrated
+
+00:06:33.840 --> 00:06:37.199
+different types of resources, we
+
+00:06:35.360 --> 00:06:39.360
+have at least a
+
+00:06:37.199 --> 00:06:41.360
+
+
+00:06:39.360 --> 00:06:43.039
+basic architecture for a cluster type, which is exactly what
+
+00:06:41.360 --> 00:06:45.520
+I
+
+00:06:43.039 --> 00:06:46.800
+was trying to accomplish in this particular project. I just want to
+
+00:06:45.520 --> 00:06:48.960
+start
+
+00:06:46.800 --> 00:06:50.960
+discussing how to build a specific cluster architecture around the work that has already been done
+
+00:06:48.960 --> 00:06:54.720
+
+
+00:06:50.960 --> 00:06:56.800
+.
+
+00:06:54.720 --> 00:06:59.280
+So, what action should we take?
+
+00:06:56.800 --> 00:07:01.039
+Basically, it's about applying the concepts
+
+00:06:59.280 --> 00:07:03.919
+about flexible PNTs that you heard before the two lectures
+
+00:07:01.039 --> 00:07:05.680
+to this topic.  This simply takes elastic PNT
+
+00:07:03.919 --> 00:07:09.520
+to another level; I'm actually on a
+
+00:07:05.680 --> 00:07:11.360
+local site now, and the goal is to define the
+
+00:07:09.520 --> 00:07:13.520
+edge characteristics of this particular architecture
+
+00:07:11.360 --> 00:07:15.280
+.  Yes, you can see that
+
+00:07:13.520 --> 00:07:17.360
+we have already started, at least we have
+
+00:07:15.280 --> 00:07:20.639
+set up a working group and developed a
+
+00:07:17.360 --> 00:07:23.039
+workflow for this.  Thank you again, Ahmed, for
+
+00:07:20.639 --> 00:07:24.720
+arranging all of this for me.  The
+
+00:07:23.039 --> 00:07:26.639
+main purpose of this presentation is to show you
+
+00:07:24.720 --> 00:07:29.360
+
+
+00:07:26.639 --> 00:07:32.080
+
+
+00:07:29.360 --> 00:07:34.000
+what you can do with a very inexpensive CS architecture in terms of timing, and what you can do
+
+00:07:32.080 --> 00:07:36.400
+if you think of it as
+
+00:07:34.000 --> 00:07:37.840
+a development system where I
+
+00:07:36.400 --> 00:07:39.680
+have multiple antennas and multiple
+
+00:07:37.840 --> 00:07:41.440
+receivers, and combine them together.  How can we
+
+00:07:39.680 --> 00:07:44.840
+propose a cluster-
+
+00:07:41.440 --> 00:07:44.840
+based architecture design?
+
+00:07:46.080 --> 00:07:51.605
+That concludes my speech.  You are welcome to
+
+00:07:48.639 --> 00:07:53.625
+ask questions.
+
+00:07:51.605 --> 00:07:53.625
+[Applause] Do any of you
+
+00:07:55.120 --> 00:07:59.160
+have any questions?
+
+00:08:01.039 --> 00:08:07.199
+Hi, I'm Novu from NICT.
+
+00:08:04.960 --> 00:08:09.360
+Thank you for your wonderful presentation.  What I mean is,
+
+00:08:07.199 --> 00:08:12.479
+I'm not very familiar with Crony, but
+
+00:08:09.360 --> 00:08:15.039
+assuming you have six GNSS receivers,
+
+00:08:12.479 --> 00:08:17.039
+how does Crony prevent them from
+
+00:08:15.039 --> 00:08:20.160
+malfunctioning?  For example, if one of the
+
+00:08:17.039 --> 00:08:23.680
+GNSS receivers fails to receive a
+
+00:08:20.160 --> 00:08:26.639
+signal and gives some strange clock readings, how does the clock
+
+00:08:23.680 --> 00:08:30.160
+
+
+00:08:26.639 --> 00:08:32.800
+
+
+00:08:30.160 --> 00:08:34.719
+combine the five normal receivers with the faulty one?
+
+00:08:32.800 --> 00:08:36.959
+That's a good question.  So Crony
+
+00:08:34.719 --> 00:08:38.240
+actually has its own algorithm. If you look at Crony's
+
+00:08:36.959 --> 00:08:40.399
+algorithm, you can actually find
+
+00:08:38.240 --> 00:08:42.719
+Crony's specification and see the
+
+00:08:40.399 --> 00:08:44.800
+underlying algorithm that supports it.  However, it has a
+
+00:08:42.719 --> 00:08:47.440
+very specific way of determining whether
+
+00:08:44.800 --> 00:08:49.360
+that signal or clock
+
+00:08:47.440 --> 00:08:51.120
+source is valid.
+
+00:08:49.360 --> 00:08:53.360
+Therefore, it has specifications.  It has an
+
+00:08:51.120 --> 00:08:54.640
+error u, which means there is a certain tolerance for the available clock source
+
+00:08:53.360 --> 00:08:56.480
+
+
+00:08:54.640 --> 00:09:00.240
+.  If you notice, at least for me,
+
+00:08:56.480 --> 00:09:02.240
+this particular version here,
+
+00:09:00.240 --> 00:09:04.320
+I will [music] go back to this particular
+
+00:09:02.240 --> 00:09:06.560
+version.   Crony noticed there was a
+
+00:09:04.320 --> 00:09:08.320
+plus sign (+es) and then an
+
+00:09:06.560 --> 00:09:10.320
+asterisk (*).  This means that these
+
+00:09:08.320 --> 00:09:12.399
+clocks all meet the tolerance level for nepotism.
+
+00:09:10.320 --> 00:09:14.000
+So the next step is the merger process.  It
+
+00:09:12.399 --> 00:09:15.920
+will actually know whether it is outside the
+
+00:09:14.000 --> 00:09:17.839
+tolerance range, or even
+
+00:09:15.920 --> 00:09:19.200
+not allow it to be included.  So
+
+00:09:17.839 --> 00:09:20.880
+this is one of the benefits of leveraging nepotism
+
+00:09:19.200 --> 00:09:22.880
+.  It actually has
+
+00:09:20.880 --> 00:09:24.640
+this function built in.  Furthermore, you can
+
+00:09:22.880 --> 00:09:26.160
+add any number of resources as needed.  However, in this
+
+00:09:24.640 --> 00:09:28.160
+particular case, I should
+
+00:09:26.160 --> 00:09:30.720
+note that they all act as
+
+00:09:28.160 --> 00:09:32.880
+NTP servers so that crony can
+
+00:09:30.720 --> 00:09:34.959
+actually use these servers.
+
+00:09:32.880 --> 00:09:39.040
+Oh, that's great.  I mean,
+
+00:09:34.959 --> 00:09:41.120
+impressive.  Regarding the
+
+00:09:39.040 --> 00:09:44.399
+group you mentioned,
+
+00:09:41.120 --> 00:09:46.959
+if possible, I would like to ask if you plan to hold a
+
+00:09:44.399 --> 00:09:49.506
+meeting. It would be great if you
+
+00:09:46.959 --> 00:09:50.160
+could schedule it at a time that is convenient for you in Japan.
+
+00:09:49.506 --> 00:09:54.399
+[Laughter]
+
+00:09:50.160 --> 00:09:56.160
+So, because NICT and universities, I mean
+
+00:09:54.399 --> 00:09:58.560
+people in control theory
+
+00:09:56.160 --> 00:10:01.519
+collaborated on this project, the
+
+00:09:58.560 --> 00:10:04.959
+project is called Cluster Clock.  Therefore, in order to
+
+00:10:01.519 --> 00:10:07.920
+
+
+00:10:04.959 --> 00:10:10.000
+
+
+00:10:07.920 --> 00:10:11.839
+learn and study the algorithm from the perspective of control theory, a group of
+
+00:10:10.000 --> 00:10:12.080
+people have been researching it.
+
+00:10:11.839 --> 00:10:15.279
+OK
+
+00:10:12.080 --> 00:10:18.880
+They have achieved remarkable results.  So
+
+00:10:15.279 --> 00:10:21.040
+I think it would be
+
+00:10:18.880 --> 00:10:22.399
+great if we could include them all.
+
+00:10:21.040 --> 00:10:23.839
+Yes, it would be great if we could
+
+00:10:22.399 --> 00:10:25.839
+include them all.  That's one of the things I've always wanted to do
+
+00:10:23.839 --> 00:10:28.000
+.  Part of the reason is that
+
+00:10:25.839 --> 00:10:29.440
+I wanted to make an appeal in order to gather
+
+00:10:28.000 --> 00:10:32.160
+other
+
+00:10:29.440 --> 00:10:33.600
+people who are also paying attention to this topic.
+
+00:10:32.160 --> 00:10:35.519
+As for how to participate, I noticed that there are
+
+00:10:33.600 --> 00:10:37.120
+no
+
+00:10:35.519 --> 00:10:37.920
+meetings for this workflow on the calendar.  Do you have
+
+00:10:37.120 --> 00:10:40.000
+any plans?  Yes
+
+00:10:37.920 --> 00:10:41.600
+, there is already a plan.  I haven't set it up yet
+
+00:10:40.000 --> 00:10:43.440
+.  One of the things I want to do is
+
+00:10:41.600 --> 00:10:44.959
+start here.  Yes.
+
+00:10:43.440 --> 00:10:46.000
+Let's see if anyone is interested.  Okay,
+
+00:10:44.959 --> 00:10:47.600
+next week.
+
+00:10:46.000 --> 00:10:48.640
+next week.  certainly.  I'm really
+
+00:10:47.600 --> 00:10:51.787
+looking forward to it.
+
+00:10:48.640 --> 00:10:51.787
+Okay, that's great.   [Laughter]
+
+00:10:52.079 --> 00:10:55.760
+Okay.  Are
+
+00:10:52.480 --> 00:10:55.760
+there any other questions?
+
+00:10:56.959 --> 00:11:03.079
+OK  Thank you, Dr. Mick, and
+
+00:10:59.920 --> 00:11:03.079
+thank you everyone.
+

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>800 V 数据中心<br>DC-DC 设计考量</title>
+<style>@page { size: A4; margin: 18mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  font-size: 10.5pt; line-height: 1.75; color: #1f2937;
+  margin: 0; padding: 0; background: #fff;
+}
+.cover {
+  height: 250mm; display: flex; flex-direction: column; justify-content: center;
+  page-break-after: always; padding-left: 4mm;
+}
+.cover .kicker { font-size: 9pt; letter-spacing: .28em; color: #0f766e; font-weight: 600; margin-bottom: 14mm; }
+.cover h1 { font-size: 30pt; line-height: 1.3; margin: 0 0 6mm 0; color: #0b1220; font-weight: 700; letter-spacing: -0.01em; border: none; padding: 0; }
+.cover .sub { font-size: 12.5pt; color: #475569; line-height: 1.9; border-left: 3px solid #0f766e; padding-left: 5mm; }
+.cover .meta { margin-top: 16mm; font-size: 9pt; color: #64748b; line-height: 2; }
+.cover .meta b { color: #334155; font-weight: 600; }
+
+h1 { font-size: 19pt; color: #0b1220; margin: 0 0 6mm 0; padding-bottom: 3mm; border-bottom: 2px solid #0f766e; page-break-after: avoid; }
+h2 { font-size: 13pt; color: #0f766e; margin: 7mm 0 3mm 0; page-break-after: avoid; font-weight: 700; }
+h3 { font-size: 11.5pt; color: #0b1220; margin: 6mm 0 2.5mm 0; page-break-after: avoid; font-weight: 700; }
+p { margin: 0 0 3mm 0; text-align: justify; }
+strong { color: #0b1220; font-weight: 700; }
+ul, ol { margin: 0 0 3.5mm 0; padding-left: 6mm; }
+li { margin-bottom: 1.6mm; }
+blockquote {
+  margin: 4mm 0 3mm 0; padding: 3mm 5mm; background: #f8fafc;
+  border-left: 3px solid #cbd5e1; color: #64748b; font-size: 9pt;
+  font-family: Georgia, "Times New Roman", serif; line-height: 1.65;
+}
+blockquote p { margin: 0; }
+
+/* 图下小结：与讲话正文明确区分 */
+.takeaway {
+  margin: 2mm 0 6mm 0; padding: 2.5mm 4mm;
+  background: #f0fdfa; border-left: 3px solid #0f766e;
+  font-size: 9.6pt; color: #334155; page-break-inside: avoid;
+}
+.takeaway b { color: #0f766e; font-weight: 700; margin-right: 2.5mm; letter-spacing: .05em; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0 5mm 0; font-size: 9.5pt; }
+tr { page-break-inside: avoid; }
+thead { display: table-header-group; }
+th { background: #0f766e; color: #fff; font-weight: 600; padding: 2.4mm 3mm; text-align: left; border: 1px solid #0f766e; }
+td { padding: 2.2mm 3mm; border: 1px solid #d7dee7; vertical-align: top; }
+tr:nth-child(even) td { background: #f8fafc; }
+figure { margin: 3mm auto 4mm auto; page-break-inside: avoid; text-align: center; }
+figure img { width: auto; max-width: 100%; max-height: 78mm; border: 1px solid #e2e8f0; border-radius: 2px; display: block; margin: 0 auto; }
+figcaption { font-size: 8.8pt; color: #64748b; margin-top: 2mm; line-height: 1.5; }
+hr { border: none; border-top: 1px solid #e2e8f0; margin: 7mm 0; }
+code { background: #f1f5f9; padding: 0.5mm 1.5mm; border-radius: 2px; font-size: 9pt; color: #0f766e; }
+em { color: #64748b; font-style: normal; font-size: 9.3pt; }
+</style></head>
+<body>
+
+<div class="cover">
+  <div class="kicker">OCP GLOBAL SUMMIT 2026 · TEXAS INSTRUMENTS</div>
+  <h1>800 V 数据中心<br>DC-DC 设计考量</h1>
+  <div class="sub">David Reusch（德州仪器 数据中心系统工程师）<br>拓扑比较、权衡与实测</div>
+  <div class="meta"><b>时长</b>　25 分 30 秒<br><b>来源</b>　youtube.com/watch?v=Qws5vRGyG7w<br></div>
+</div>
+
+<h1>800 V 数据中心 DC-DC：拓扑比较与取舍</h1>
+<p><strong>David Reusch（德州仪器 数据中心系统工程师）OCP Global Summit 2026 演讲 · 图文实录</strong></p>
+<hr>
+<h2>关于这份文档</h2>
+<p>这是一份<strong>逐段实录</strong>，不是要点综述。每一节遵循同一结构：</p>
+<ul>
+<li><strong>图片</strong>：演讲当时投影的幻灯片，按时间顺序</li>
+<li><strong>中文译文</strong>：讲者在这一页停留期间所说的话，逐句翻译，不作删减</li>
+<li><strong>英文原句</strong>：同段话的英文原文，供核对与引用</li>
+<li><strong>小结</strong>：整理者对这一段的一句话归纳，与讲话内容明确区分</li>
+</ul>
+<p>原文由 YouTube 自动字幕转写，已去除 um、uh、you know 等口头填充词，并修正明显的转写错误：<strong>800 V</strong>（字幕多次作 850）、<strong>ZVS</strong>（字幕作 ZBS）、<strong>GaN</strong>（字幕作 GAN）、<strong>VPD</strong>（字幕作 VPDI）、<strong>switched capacitor</strong>（字幕作 switch switch capacitor）、<strong>GaN or SiC secondaries</strong>（字幕作 "GAN or or for secondaries"）。</p>
+<p>凡口播数字与幻灯片标注不一致，正文采用幻灯片值，并在当节注明差异；仅存在于口播、幻灯片上无对应的数字，标注为「口头表述」。</p>
+<p>本场的幻灯片大量使用<strong>分步构建</strong>（build）：同一页在讲解过程中逐行、逐块显示。因此文中的图片取自该段讲解结束时的画面，能完整反映讲者当时指着的内容。</p>
+<hr>
+<h2>视频信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标题</td>
+<td>800V Data Center DC DC Design Considerations, Topology Comparisons, and Trade offs</td>
+</tr>
+<tr>
+<td>讲者</td>
+<td>David Reusch，德州仪器（Texas Instruments）数据中心系统工程师</td>
+</tr>
+<tr>
+<td>场合</td>
+<td>OCP Global Summit 2026 · Executive Session</td>
+</tr>
+<tr>
+<td>时间地点</td>
+<td>2026 年 10 月 12–15 日，加州圣何塞</td>
+</tr>
+<tr>
+<td>时长</td>
+<td>25 分 30 秒</td>
+</tr>
+<tr>
+<td>频道</td>
+<td>Open Compute Project（YouTube）</td>
+</tr>
+<tr>
+<td>链接</td>
+<td>https://www.youtube.com/watch?v=Qws5vRGyG7w</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1>第一部分　为什么电压必须往上走</h1>
+<h2>01　开场：从机架讲到拓扑</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/01_00m20s.jpg" alt="800V Data Center DC DC Design Considerations, Topology Comparisons, and Trade-offs：David Reusch，Texas Instruments"><figcaption>800V Data Center DC DC Design Considerations, Topology Comparisons, and Trade-offs：David Reusch，Texas Instruments</figcaption></figure>
+<p>谢谢。这个安排正好——Jared 讲的是机架层面，也讲了托盘层面；我讲的是拓扑和器件层面。所以顺序是合适的：我们从高层一路讲到低层。</p>
+<p>我今天要讲的是 800 V 数据中心的 DC-DC 设计考量、一些拓扑比较，以及一些权衡。</p>
+<blockquote>
+<p>[applause] Yeah, thank you. So, this is perfect. Jared talked about it at the rack level, and he talked about it at the tray level. I'll talk about it at the topology and component level. So, it's perfect — we're going high-level to low-level here. So, I'm going to talk about 800-V data center DC-to-DC design considerations, some topology comparisons, and some tradeoffs.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　这场演讲的定位很清楚：前面几场把 800 V 讲到机架和托盘，这一场往下钻到拓扑与器件——也就是「电到底怎么从 800 V 变成 1 V」。</div>
+
+<h2>02　一句论文里的话，用了二十年</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/02_01m25s.jpg" alt="Evolving Data Center Power Demands：左侧为 1998–2014 年处理器功耗曲线与 ITRS 趋势线，右侧「Law of Power」柱状图为 2020–2028 年 A100、H100、Blackwell Ultra、Rubin Ultra 的功耗台阶，标注 20 年从 ~200W 到 ~2000W"><figcaption>Evolving Data Center Power Demands：左侧为 1998–2014 年处理器功耗曲线与 ITRS 趋势线，右侧「Law of Power」柱状图为 2020–2028 年 A100、H100、Blackwell Ultra、Rubin Ultra 的功耗台阶，标注 20 年从 ~200W 到 ~2000W</figcaption></figure>
+<p>我们先过一遍数据中心不断变化的功率需求。计算机性能是指数级增长的，功率需求也随之上升，而且这种趋势预计会继续下去。</p>
+<p>这句话我二十年前的硕士论文里就写过——所以今天还在这儿。二十年前那句话写得完美，直接复制粘贴就行，每五年我都能重复一遍。</p>
+<p>二十年前，我们根本不知道该怎么做到 200 W。你怎么给一颗 200 W 的处理器供电？在当时简直闻所未闻。</p>
+<p>那就快进二十年。现在是什么情况？这是去年 OCP 上的内容。现在我们在谈兆瓦级的机架。二十年时间，我们从 200 W 级的处理器功率，走到了 2 kW 级。</p>
+<p>我们是怎么走到这里的？或者说，我们已经走到这里了——这就是现实。</p>
+<blockquote>
+<p>So, let's first go over evolving data center power demands. The computer has seen exponential growth in performance, and the power requirements have increased. These demands are expected to continue. I wrote that in my master's thesis 20 years ago. So, here we are. Twenty years ago, it was perfect — I can just copy and paste that. Every five years I can repeat that statement. So, 20 years ago, we didn't know how on Earth we were going to get to 200 W. How are you going to power a 200-W processor? It was just unheard of at the time. So, let's fast forward 20 years. Where are we now? This is from OCP last year. Now, we're talking about megawatt-type racks. So, in 20 years, we go from talking around 200-W processing power to around 2 kW processing power. So, how are we going to get there? Or how have we gotten there? This is reality now.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　同一句话在论文里放了二十年仍然成立，这本身就是问题所在：功率增长不是线性叠加，而是每五年换一个数量级。</div>
+
+<h2>03　从 50 V 母排到 800 V 母排</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/03_02m25s.jpg" alt="Evolving Power Distribution Methods：左侧 50V Busbar Rack（AC-DC 电源托盘、50 VDC 母排、IBC 与 IT Tray），右侧 800V Busbar Rack（+/-400V 或 800V 电源、Sidecar、SSB、800 VDC 母排），中间标注 V↑ I↓"><figcaption>Evolving Power Distribution Methods：左侧 50V Busbar Rack（AC-DC 电源托盘、50 VDC 母排、IBC 与 IT Tray），右侧 800V Busbar Rack（+/-400V 或 800V 电源、Sidecar、SSB、800 VDC 母排），中间标注 V↑ I↓</figcaption></figure>
+<p>所以配电方式也在演进：从 12 V 背板起步，走到 50 V 背板。</p>
+<p>左边是你今天看到的常规电源机架——交流转直流的电源托盘、PSU，就像上一场 Andy 讲的那样；接到 50 V 母排，再送进 IT 托盘。</p>
+<p>底部你能看到 50 V 进来，经过热插拔、经过 IBC。IBC 把 50 V 降到 12 V 或 6 V 左右，然后是最后一公里：VR 和负载点把电压降到亚伏级，送给计算芯片。</p>
+<p>那么，怎么走到兆瓦级机架？答案是提高电压。电压提高 16 倍，电流就能降到 1/16——这就是我们能去掉、能缩小那些粗大母排的办法。</p>
+<p>你可以看到，800 V 这类架构有很多种实现方式，我只讲 IT 机架内部这一段。将来真正上到 800 V 母排的时候，我们再谈下一轮迭代。</p>
+<p>那时候 IT 托盘长什么样？托盘内部的功率变换长什么样？你会发现非常相似：800 V 进来，有热插拔，有高压 IBC，然后可能还有一级低压 IBC——取决于你是走 800 转 50，还是考虑直接 800 转 12、800 转 6。然后再降到 12 V 和 6 V，最后降到亚伏级，送给处理器。</p>
+<blockquote>
+<p>So, we've evolved the power distribution method. Started with 12-V backplane, moved to 50-V backplane. On the left is your conventional power rack as you see today. You've got your AC-to-DC power shelves, your PSU, like Andy talked about in the last presentation. Goes to your 50-V bus bar, feeds your IT tray. And then, on the bottom you can see you've got 50 V that comes in. I've got my hot swap, my IBC. My IBC will take us from 50 V to somewhere 12 or 6 generally. Then we have our last mile: our VRs and our point of loads are going to take it to our sub-volt compute chips. So, how are we going to get to these megawatt-type racks? We're going to go up in voltage. So, if you go up 16 times in voltage, you can go down 16 times in current. That's how we can remove and reduce the size of these massive bus bars. So, you can see there's a lot of different implementations of this 800-V type architecture. I'm just going to talk about inside the IT rack. So, we'll talk about a future iteration when we get to that 800-V bus bar. And what does the IT tray look like? What does the power conversion look like inside that IT tray? So, you can see it's very similar. 800 V comes in. I've got a hot swap. I've got a high-voltage IBC. Then I've got a low-voltage IBC, maybe. It depends on whether you do 800 to 50, or there's considerations to go directly 800 to 12, 800 to 6. And then I'm down to my 12 and 6 V again. And then that'll take us down to the sub-volt, down to the processor.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　整张图只有一个动作：把电压抬高、把电流压下去，母排才能从「铜的重量」里解放出来；托盘内部的级数其实没变，只是最前面多了一级高压变换。</div>
+
+<hr>
+<h1>第二部分　从 800 V 到 1 V 的四条走法</h1>
+<h2>04　加一级，还是并两级</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/04_05m22s.jpg" alt="The Best Way To Get From 800VDC to &gt;1V：IT 托盘框图，800V 或 +/-400V 母线经 Hotswap 到 HV IBC，分出 Option 3（~6V，128:1）、Option 2（~12V，64:1）、Option 1（~50V，16:1 再经 LV IBC 4:1/8:1 到 12V/6V），以及 50V 稳压 DC-DC 到 1.8V-6V 的 Option 4，最终进 ASIC"><figcaption>The Best Way To Get From 800VDC to &gt;1V：IT 托盘框图，800V 或 +/-400V 母线经 Hotswap 到 HV IBC，分出 Option 3（~6V，128:1）、Option 2（~12V，64:1）、Option 1（~50V，16:1 再经 LV IBC 4:1/8:1 到 12V/6V），以及 50V 稳压 DC-DC 到 1.8V-6V 的 Option 4，最终进 ASIC</figcaption></figure>
+<p>那么，最好的路径是什么？</p>
+<p>从德州仪器的角度看——我们做半导体、做这类应用的芯片，所以我们想知道哪条路最好，力气该往哪儿使。</p>
+<p>看这张托盘内部的框图：功率分配板（PDB），上面有热插拔、有遥测，然后是隔离屏障、加强绝缘——也就是安全。怎么把高压送进低压的 50 V 主板？</p>
+<p>方案一很简单：加一级。加一个高压中间总线变换器，把 800 V 接进来，后面就能沿用相对常规的 50 V 主板设计。低压 IBC 做 4:1 降到 12 V，或 8:1 降到 6 V 左右，然后用常规的多相稳压器。</p>
+<p>方案二：当我们开始追密度的时候——显然没人希望板子上多放功率器件。功率不赚钱，GPU 才赚钱。板上做功率变换的部分越少，能放上去挣钱的 GPU 就越多。所以想法是：为什么不把两级并成一级？方案二就是 800 V 转 12 V 的变换器。</p>
+<p>方案三则是 800 V 转 6 V。这是我们考虑的三种方案。</p>
+<p>再往后是方案四——直接做到集成式 IVR 之类的东西，那个更前瞻，我把它叫作方案四。</p>
+<p>这些就是从 800 V 走到 1 V 的几条路。</p>
+<blockquote>
+<p>So, what's the best way to get there? Looking at Texas Instruments — we make semiconductors, we make chips for these applications. So, we want to know what's the best way to get there and where should we focus our efforts to make the best products. So, looking at this block diagram of inside of a tray, like we talked about, we've got the power distribution board. Inside of that, you've got a hot swap, you've got some telemetry, and then you've got your isolation barrier. You've got your reinforced insulation, your safety. How do I get that high voltage into the low-voltage 50-V motherboard? So, option one is essentially: let's just add a stage. Let's add a high-voltage intermediate bus converter, takes this 800, bring that in, and then you can stick with a somewhat conventional 50-V motherboard design. I can have a low-voltage IBC with a 4:1 step down to 12 V or an 8:1 to get us around six, and then I can use my conventional multi-phase voltage regulators. And then let's talk about option two. When we start to try to push density, obviously, no one wants more power on the board. Power costs money, GPUs make money. So, the less power conversion you have on the board, the more revenue-generating GPUs you can have. So, the idea is maybe now, why not take two stages and make them a single stage? So, option two, I'll say, is an 800-V to 12-V converter. And then option three will be 800 to six. So, those are the three options that we'll consider. And this is going to build us into the future. This is option four, when we talk about do we do something like take 800 and then derive directly to an integrated IVR or something like that. That's more forward-looking, but I'll call that option four. So, those are the ways that you can get from 800 to 1 V.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　四种走法本质是同一道算术题：级数少一点、板上功率器件少一点，就能多放一颗 GPU；代价是每一级的难度都往上跳一级。</div>
+
+<h2>05　横向送电与垂直送电</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/05_08m00s.jpg" alt="Evolving Power Distribution Networks：左侧为 LPD 与 VPD 两种路径的损耗标注（R_DC-PDN1、R_DC-PDN2、R_POL-PDN），右侧为 Option 1/2 LPD 与 Option 1/3 VPD 的托盘剖面，VPD 的稳压器在 PCB 背面"><figcaption>Evolving Power Distribution Networks：左侧为 LPD 与 VPD 两种路径的损耗标注（R_DC-PDN1、R_DC-PDN2、R_POL-PDN），右侧为 Option 1/2 LPD 与 Option 1/3 VPD 的托盘剖面，VPD 的稳压器在 PCB 背面</figcaption></figure>
+<p>我们来看看。看框图很容易，但不能只看单级效率——还要看板上配电的损耗，那里面损耗很多。</p>
+<p>大致有两种做法。</p>
+<p>一种是横向送电（LPD），非常直接：功率横着走过主板。800 V 进来，穿过 PDB，变成 50 V，然后横着走到板子正面的稳压器，再由它们给负载供电。</p>
+<p>另一种是垂直送电（VPD）。你最终会问：如果横着走损耗太大、阻抗太高，为什么不把最后一公里——最后那一级稳压器——放到板子背面去？直接贴在芯片正下方驱动，电阻会显著降低。</p>
+<p>这也给了你一些新的选择：它改变了 IBC 该放在哪里。因为我们谈的是极高的功率，电流也极高，尤其是在我们努力把电压往下压的时候。</p>
+<p>上面那张图是一个四 GPU 托盘的示意：800 V 甩在侧面，让高压远离敏感的处理器，然后接到低压 IBC，再横向送到 12 V 或 6 V 的负载点，横着给 GPU 供电。</p>
+<p>但一旦上了 VPD，就没有这最后一公里了——板子正面不再有那些低压稳压器，它们跑到背面去了。于是我可以把 IBC 挪得更近。</p>
+<p>核心思路是：在你抵达负载之前，尽可能把电流降下来。</p>
+<p>再说 800 转 12 V。德州仪器在低压处理器这块做得很多。我们的看法是：12 V 目前可以视为横向送电方案；而到了 6 V，就可以开始考虑垂直送电。</p>
+<p>所以终局图景是：最理想的配电是直接从 800 V 到 6 V，然后紧贴 GPU 放置，由它驱动垂直送电，整体效率最高。</p>
+<p>但这也是最难的挑战。首先我得做到极高的电压、极高的效率、极高的密度；你很可能还要和芯片共用同一块冷板；而且高压离 GPU、CPU 更近了。这本身就是难题。</p>
+<p>这些就是可选项。下面我给大家看我们实际测出来的结果。</p>
+<blockquote>
+<p>So, let's look at — it's easy to look at a block diagram, but let's talk about not only the stage efficiency. You've got to look at the power distribution on the board. There's a lot of losses in there. So, when you look at it, there's two general ways that you can approach this. You have lateral power delivery, and that's very straightforward. The power delivers laterally across the motherboard. Comes in at 800, goes in through the PDB, comes out, gets to your 50, and then that'll travel laterally to your voltage regulators, which are on the top side of the board, and then they power your load. The other option is vertical power delivery. Ultimately you say, well, if I have too much loss, too much impedance traversing that power laterally, why can't we put the last mile, that last voltage regulator, on the back side of the board? Significantly reduce the resistance by just driving directly underneath it. And that also allows you some options. It changes where you're going to locate your IBCs, because when we're talking about these very, very high powers, they have very high currents, especially as we try to reduce the voltage. So, you can see here at the top: this is a cartoon drawing of a four-GPU type tray. You have the 800 kind of out to the side, keep your high voltage away from your sensitive processor, and then it'll go to your low-voltage IBC. That'll go across to your 12-V point-of-loads or 6-V point-of-loads. It'll laterally power the GPU. But when you go to VPD, you don't have that last mile. You don't have those low-voltage voltage regulators on the top side of the board anymore. They're underneath. So, then I can move my IBCs closer. The idea is that you want to be able to reduce the amount of current required until you get directly to your load. And then, when we look at like 800 to 12: generally, TI works a lot in low-voltage voltage processors. We say that 12 volts right now we kind of see that as a lateral power delivery type solution. And then we kind of see at 6 volts you can start to look at vertical power delivery. So the envisionment of the end goal: the perfect power distribution is to go straight from 800 to 6. And then it's located very close to your GPU. It can derive the vertical power delivery. You get the highest overall efficiency. But it's the hardest challenge. Now I've got to get very high voltage, very high efficiency, very high density. You're probably going to be sharing the same cooling plate. And then also my high voltage is coming closer to the GPU, CPU. So that's a challenge in itself. But these are the options, and we'll show you what we found when we've looked at these.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　垂直送电省掉的是「最后一公里」的铜，代价是把开关电源挪到芯片背面——高度、频率、散热三件事同时变难，这也是为什么它效率更低却可能更划算。</div>
+
+<hr>
+<h1>第三部分　五种架构的实测效率</h1>
+<h2>06　800→50→12.5 V：67%</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/06_08m55s.jpg" alt="Comparing 800V Architectures 第一行：800VDC 20kW → HV IBC 16:1（98%）→ 50V → LV IBC 4:1（97%）→ 12.5V → 多相 Buck VRM（LPD=89.5%）→ 0.8V，整机 67%"><figcaption>Comparing 800V Architectures 第一行：800VDC 20kW → HV IBC 16:1（98%）→ 50V → LV IBC 4:1（97%）→ 12.5V → 多相 Buck VRM（LPD=89.5%）→ 0.8V，整机 67%</figcaption></figure>
+<p>所以这是实践层面。我们针对各种情况做了参考设计，现在来比较这些架构。</p>
+<p>算法很简单，就是乘法，大家都会算。但你会看到，单看某一级的效率很容易理解：800 转 50，我们能做到 98%；50 转 12，现在能做到 97%，有时还更高；12 V 的 buck，大约 89% 到 90%——目前就是这个水平。</p>
+<p>但真正损耗大的地方，是把电流送到这些级之间去的那段配电网络。</p>
+<p>如果你今天在展场里走一圈就会发现：即便是现在的 50 V 机架，也有一颗 50 V 转 12 V 的变换器，而它到稳压器之间要走很长一段距离。</p>
+<p>所以看今天的方案，这些都是积木：我们做过的 800 转 50 参考设计；50 转 12 有很多选项；12 转到 1 V，可以走分立芯片，也可以走电源模块。</p>
+<blockquote>
+<p>So, this is practice. We've built reference designs for the various cases. And let's compare the architectures. It's very simple — it's multiplication. I think we can all do that. But what you see is it's very easy to understand the efficiency in a given stage. In 800 to 50, we can get 98% efficiency. When you look at 50 to 12, we can get 97, sometimes even higher than that now. With a 12-volt buck converter, around 89, 90%. That's where we are. But where you see there's a whole lot of loss is in that power distribution network along the way, to get that current to those stages. If you walked around the floor today and you looked, you'd say, hey, look, even the 50-volt racks today, there's a 50-V converter that converts to 12 and there's a long distance that it has to travel before you get to your voltage regulators. So, when you look at today, these are the building blocks. I know the expo's closed now, but all these were at our booth. This is a reference design we did for 800 to 50. And then there's a lot of options from 50 to 12. And then these — you can either go discrete with a chip or a power module approach from 12 to 1.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　单级效率都在 97–98%，整机却只有 67%——差额全部落在「把电流送到下一级」的那段铜上，而不是落在变换器里。</div>
+
+<h2>07　800→50→6.25 V：64% 与 73%</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/07_10m15s.jpg" alt="Comparing 800V Architectures 前两行：第二行把 LV IBC 换成 8:1（96%）输出 6.25V，分别走 LPD（多相 Buck VRM 88.5%）得 64%、走 VPD（88%）得 73%"><figcaption>Comparing 800V Architectures 前两行：第二行把 LV IBC 换成 8:1（96%）输出 6.25V，分别走 LPD（多相 Buck VRM 88.5%）得 64%、走 VPD（88%）得 73%</figcaption></figure>
+<p>再看下一个选项。我们看 800 转 50，然后看 6 V 这条路：更大的降压比，50 转 6，用 8:1 的 IBC。</p>
+<p>这里你会看到几种不同的选择：800 转 50 仍然是 98%，配电网络上的效率仍然很高；50 转 6 我们也能做到 96%、97%。然后你有两条路可选。</p>
+<p>现在稳压器上的电压更低了，可以继续用常规的横向送电——低压下跑 buck 没有任何问题——但它同时打开了探索 VPD 的机会。</p>
+<p>真正的好处出现在最后一公里：走 VPD 之后配电网络损耗的下降。</p>
+<p>VPD 本身的效率会更低：它必须做得很薄，必须跑更高频率；而且因为要大幅减少电容，同样得靠更高频率来换取更高带宽，才能塞到处理器下方。</p>
+<p>但收益是清楚的：整体系统效率有明显提升。</p>
+<blockquote>
+<p>Now, looking at the next option. Let's look at 800 to 50 and let's look at the 6-V option. A higher step down going 50 to 6 and 8:1 IBC. You can see here you get some different options. 800 to 50's still 98% efficient, still very high efficiency on the PDN. And then we can still get really high efficiency: 50 to 6, we can get 96, 97% efficiency. And then you can go with two options. Now that I have a lower voltage on my voltage regulator, I can stick with my conventional lateral power — there's no problem running a buck converter at a lower voltage — but it also opens up the opportunity to explore VPD. And where the real benefit comes is when you look at that last mile: the PDN loss reduction when you go to the VPD. The VPD is going to be lower efficiency. Ultimately it's got to be very low profile, you have to go higher frequency, and because you're going to need to reduce a lot of capacitance, it's got to be higher frequency to get higher bandwidth to enable it to go down underneath the processor. But the benefit's clear: you can see a significant improvement in overall system efficiency.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　同一串变换器、同一个 6.25 V 母线，只把最后一级从正面挪到背面，整机就从 64% 变成 73%——九个百分点的差距全在 PCB 上，不在芯片里。</div>
+
+<h2>08　800→12.5 V：68%</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/08_11m40s.jpg" alt="Comparing 800V Architectures 第三行：800VDC 20kW → HV IBC 16:1（97%）直接输出 12.5V → 多相 Buck VRM（LPD=89.5%）→ 0.8V，整机 68%"><figcaption>Comparing 800V Architectures 第三行：800VDC 20kW → HV IBC 16:1（97%）直接输出 12.5V → 多相 Buck VRM（LPD=89.5%）→ 0.8V，整机 68%</figcaption></figure>
+<p>然后看 800 转 12 V。这一条我们做得也不错，变换效率大约 97%。</p>
+<p>12 V 之下，配电损耗本来就不大，后面接常规的 12 V buck 就行。</p>
+<p>但它又受限于横向送电——那最后一公里会把整体效率拉下来。</p>
+<blockquote>
+<p>And then let's look at the 800 to 12. Again, we can do pretty good. Around 97% efficient is what we can see conversion wise. 12 volts you don't have a whole lot of power distribution losses. And then you stick with your conventional 12-volt buck converters. But again it's limited by the lateral power delivery. So, that last mile is something we see as making that a lower overall efficiency.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　800→12 V 单级效率高、12 V 母线损耗也小，但它只能配横向送电——少了一级变换，却被最后一公里追平，最终 68%，卡在中间。</div>
+
+<h2>09　800→6.25 V：74%</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/09_12m00s.jpg" alt="Comparing 800V Architectures 第四行：800VDC 20kW → HV IBC 128:1（95%）直接输出 6.25V → 多相 Buck VRM（VPD=88%）→ 0.8V，整机 74%"><figcaption>Comparing 800V Architectures 第四行：800VDC 20kW → HV IBC 128:1（95%）直接输出 6.25V → 多相 Buck VRM（VPD=88%）→ 0.8V，整机 74%</figcaption></figure>
+<p>接下来这一条是走得更远的：800 转 6 V。</p>
+<p>思路是你有一颗又长又窄的变换器，这种细长形态把高压直接带进低压域。我这里讲的是电气层面。</p>
+<p>电气上它允许你——效率大约 95%。</p>
+<p>而且它的配电损耗很低，因为你把变换器物理上挪得离负载更近了。</p>
+<p>然后你可以用它驱动 VPD。整体算下来，端到端效率大约 74%。这是我们在一套 20 kW 输入的系统上预期的结果。</p>
+<p>右边第一张图就是带 VPD 的那种形态——低高度设计。</p>
+<blockquote>
+<p>And then what we say here is this is going further: 800 to 6. The idea is that you've got this very long skinny type converter, this skinny type design. It's bringing the high voltage into the low voltage domain. I'm talking about from an electrical perspective here. Electrically it allows you — and then you can get around 95% efficiency. And again it's got pretty low PDN losses because you're bringing that closer physically to your load. And then you can use it and drive a VPD. And overall that gives us around 74% end-to-end efficiency. That's kind of what we expect on a 20 kW type system input. And you can see this is the first one on the right here where we've got a VPD type thing — a low profile type design.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　800→6 V 的单级效率只有 95%，是四条路里最低的，整机 74% 却是最高——「单级效率」和「系统效率」在这里第一次分家。</div>
+
+<h2>10　800→50→1.8-5 V：73%</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/10_13m05s.jpg" alt="Comparing 800V Architectures 第五行：800VDC 20kW → HV IBC 16:1（98%）→ 50V → 高压 Buck 稳压 DC-DC（95%）→ 1.8-5V → 集成式 Buck VRM（85%）→ 0.8V，整机 73%"><figcaption>Comparing 800V Architectures 第五行：800VDC 20kW → HV IBC 16:1（98%）→ 50V → 高压 Buck 稳压 DC-DC（95%）→ 1.8-5V → 集成式 Buck VRM（85%）→ 0.8V，整机 73%</figcaption></figure>
+<p>最后这一条我称之为「糊涂账」（cloudy math），因为它更前瞻：你可以说，我们很多人其实并不想把高压放得离处理器那么近。</p>
+<p>所以你可能会说：那就守住 800 转 50，守住功率分配板，然后从 50 V 走到——我说这是个很宽的范围，这个领域有很多人在做，德州仪器也在内——我们并不确定最优母线电压是多少，大概在 1.8 V 到 5 V 之间。</p>
+<p>那会落在类似「基板内嵌 VR」的位置，再往后可以走向 IVR 那样的方案。它有前景，但更远。</p>
+<p>所以从电气角度，我们看到两条领先路线，是我们认为从 800 V 到负载最高效的方式。</p>
+<p>一条就是我们熟悉的「分而治之」：功率电子这几十年一直在分级、在把每一级优化到极致。而且多加一级并不会把效率拉低太多，因为我们已经不在低效率区间了——98%、97%、96%，这些变换级的效率非常高。</p>
+<p>但话说回来，能减少级数这件事，仍然是有价值的。</p>
+<blockquote>
+<p>And then this one I'll call this cloudy math. It's kind of forward looking, where you can say, well, maybe I don't want to put — as a lot of us know, we don't want to put high voltage so close to our processor. So, maybe you say we stick with our 800 to 50, we can stick with our power distribution board, and then we can go 50 to — I'll say it's a wide range, there's a lot of different people working in this area, TI included, where we say we're not sure the optimal bus voltage. It's somewhere between 1.8 and 5 volts. And that's going to be somewhere like a substrate-embedded VR. And then you can go to like an IVR type solution. And that's got promise, but it's further looking out. So, we kind of see two leaders from an electrical perspective that we think will be the most efficient ways to get from 800 volts to load. And that's your conventional divide and conquer, like we're used to. In power electronics, we've been dividing and conquering and optimizing our stages. And again, adding more stages doesn't reduce your efficiency too much, because we're getting to such high efficiency. We're not talking low-efficiency designs anymore. We're talking 98%, 97, 96. They're very high efficiency, these power conversion stages. But the idea of being able to reduce the stage, that still has a benefit.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　两条路线其实是同一条曲线上的两个点：级数可以加，因为每级都已是 97–98%；但只要最后一公里还在板上横着走，加级数的收益就吃不满。</div>
+
+<hr>
+<h1>第四部分　拓扑怎么选</h1>
+<h2>11　50 V 的四种拓扑</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/11_14m40s.jpg" alt="Topologies 左半：50V 下四种拓扑的原理图与对比表（Full Bridge、LLC、Hybrid Switched Capacitor、Buck），比较维度为模块/芯片化、稳压能力、效率、功率密度、输出电压可扩展性、复杂度"><figcaption>Topologies 左半：50V 下四种拓扑的原理图与对比表（Full Bridge、LLC、Hybrid Switched Capacitor、Buck），比较维度为模块/芯片化、稳压能力、效率、功率密度、输出电压可扩展性、复杂度</figcaption></figure>
+<p>接下来讲拓扑：怎么做这件事？上一场 Andy 讲了那些「砖」。</p>
+<p>在 50 V 这一级，我们做了很久——50 V 砖式变换器做了三十多年。所以你有全桥、有 LLC、有混合开关电容、有 buck。把 50 V 降到 12 V、降到 6 V，路子很多，而且各有优劣。</p>
+<p><strong>全桥</strong>：基于变压器，因此天然适合做成模块；要把变压器损耗压下来，需要很多层 PCB。它是 PWM 控制，非常好控，所以稳压不是问题，输出电压可以完全稳压。但效率和功率密度都是中等。它在 12 V 好使，在 6 V 也好使，因为改一下变压器匝比就行，复杂度不高——本质上就是一颗带变压器的 buck。</p>
+<p><strong>LLC</strong>：LLC 也有很多变体，但优势很明确——零电压开通、零电流关断，效率很高；高频带来高密度。但由于是软开关特性，在这类应用里通常做成不稳压的变换器。它基于变压器，所以一般是不稳压的；效率很高，密度很高；想怎么扩展都行，改变压器即可。它会有点复杂——那些集成磁件的设计里门道很多，变压器设计是高效的关键。</p>
+<p><strong>飞电容类电路</strong>，比如现在很流行的混合开关电容：它可以是模块，也可以芯片化；不基于变压器，不是高频变压器方案。它可以半稳压——能降压，但不擅长升压，这跟飞电容的固有特性有关。它效率高：跑开关电容电路时，用那个技巧去降低电感上的伏秒，就不必靠提高频率硬扛。但它的可扩展性不强——它天生是 4:1 的降压比，要走到 50 转 6 就得多花些变化。而且复杂度高：有飞电容就要做均压，有很多浮地开关，这类挑战让设计更复杂。</p>
+<p><strong>最后，为什么不用最老实的 buck？</strong> 我们在最后一级就用它。buck 很简单、很直接、成本很低，没有 IP 方面的顾虑，而且完全稳压。我会说它效率中等或偏低、复杂度中等或偏低。但这是有原因的：用耦合电感、用 GaN 器件可以把效率提上去，可那就增加了复杂度——有 GaN 器件、有耦合电感，就不再简单直接了。所以它效率和功率密度都偏低，但它非常容易做多相，可扩展性极好。</p>
+<p>所以在 50 V 这一级，我有很多权衡、很多选择，可以把你送到任何想要的电压。</p>
+<blockquote>
+<p>So, topologies. How do you do this? Andy talked about the bricks in the previous talk. At 50 volts, we've been doing this a long time. We've been doing 50-volt brick converters for 30-plus years. So, you got full bridges, you got LLCs, you got hybrid switched capacitor, you got buck converters. There's a lot of different ways to get this 50 volt to 12, 50 volt to 6. And you can see they all have different pros and cons. Your full bridge: it's transformer-based. That generally suits it towards a module. You need a lot of layers to get your transformer losses down. It's a PWM controller. It's really easy to control, so regulation's not a problem. You fully regulate your output voltage, but it's got medium efficiency, medium power density. It works well at 12 V, it works well at 6 V because you can just change your transformer ratio in the design, and it's not that complex. It's a transformer-based buck converter. You got the LLC. There's lots of variants to these topologies as well, but the LLC has clear benefits. It's ZVS, ZCS, very high efficiency, high frequency gives it high density. But because of its soft-switching nature, generally in these types of applications you're going to run as an unregulated converter. It's transformer-based, so again, generally unregulated. It's going to have really high efficiency, really high density. Again, you can scale it any way you want, just change your transformer. And it's going to be somewhat complex. There's a lot that goes into those integrated magnetic designs. That transformer design's key to that high efficiency. And then we've got flying-capacitor-based circuits, like a hybrid switched capacitor, which is a popular one today. It can be module, it can be chip-down. It's not transformer-based, it's not a high-frequency transformer-based design. It can be semi-regulated. It can step down, but it doesn't like to boost, and that has to do with the inherent flying-capacitor nature. It's got high efficiency. When you run a switched-capacitor circuit, you use that trick to reduce the volt-second on your inductor, so you don't have to use high frequency. You can avoid using brute force. It's not as scalable. This is a natural 4:1 step down; it takes a little bit more variation to get to the 50 to 6. And it's got high complexity. You have flying capacitors, you have to have balance, you have a lot of floating switches. Challenges like that make it more complex. And then, why not the good old-fashioned buck? We use it at the last stage. Buck's very simple, very straightforward, very low cost. No IP concerns or anything of that nature. Fully regulated. I'll call it medium or low efficiency and medium or low complexity. But that's because you can increase the efficiency when you use things like coupled inductors, when you use things like GaN power devices — but then that adds to the complexity. You have a GaN device, you have a coupled inductor; those aren't as simple and straightforward. So it has a lower efficiency and a lower power density, but it's very easy to multi-phase. It's very scalable. So, I've got a lot of trade-offs, a lot of options at 50 volts to get you down to whatever voltage you want.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　50 V 这一级的四种拓扑没有「最优」，只有「配哪种架构」：全桥要稳压、LLC 要效率、混合开关电容要固定变比、Buck 要便宜和可扩展。</div>
+
+<h2>12　800 V：只剩堆叠 LLC</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/12_18m25s.jpg" alt="Topologies 右半：800V 一侧只列出 Stacked LLC 的堆叠原理图，下方注明「HVDC 需要隔离、更大爬电距离、软开关、大电流整流」"><figcaption>Topologies 右半：800V 一侧只列出 Stacked LLC 的堆叠原理图，下方注明「HVDC 需要隔离、更大爬电距离、软开关、大电流整流」</figcaption></figure>
+<p>那么在 800 V 呢？</p>
+<p>看 800 V，它要求——这里我改个说法，既然我们已经决定不叫它 HVDC 了。不过当你在一家做 3 V、5 V 工艺的公司里，800 V 对我们来说就是 HVDC，就是高压。</p>
+<p>但在 800 V 下，它需要隔离，需要加强绝缘，所以爬电距离和电气间隙都要加大，而且<strong>软开关是必须的</strong>。你不会在 800 V 上做硬开关 buck，效率根本不够。同时你还需要大电流整流。</p>
+<p>所以我们现在看到的，是各种 LLC 的变体——主要是堆叠 LLC，原边用 GaN，副边用 GaN 或 SiC。</p>
+<p>另外，这套幻灯片提交之后，接下来几年随着这些系统落地，你们肯定会看到更多拓扑。右边会越来越像左边。但目前，这就是拿到所需效率和密度的通用做法。</p>
+<blockquote>
+<p>So, where are we at 800? When you look at 800, it requires — I'll change this now that we've decided we're not going to call this HVDC. When you're in a company that makes three and five volt type processes, 800 is HVDC to us. It's high voltage. But at 800 volts, it requires isolation. It requires reinforced insulation. So, we have increased clearances, and soft switching is a must. You're not going to have a hard-switching buck converter at 800 volts; it's just not going to be efficient enough. And you're going to have high-current rectifiers. So, what we see right now is variants of the LLC. A lot of it's the stacked LLC with GaN primary and GaN or SiC secondaries. And then, since I've submitted these slides, over the next couple years as these systems come into fruition, you're going to see a lot more topologies. The right will start to look more like the left. Right now, this is the general approach to get the efficiency and to get the density needed.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　到了 800 V，拓扑选择反而变少：隔离、加强绝缘、软开关三条硬约束一卡，能上场的只剩堆叠 LLC——左边那四种拓扑的自由度，在右边并不存在。</div>
+
+<hr>
+<h1>第五部分　两块板子与保护</h1>
+<h2>13　1 kW 与 10 kW：两块参考设计</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/13_20m40s.jpg" alt="50V And 800V LLC Designs：左侧 50V_IN-6V_OUT LLC（750-1000W、96-97%、2000W/in³）单矩阵变压器小板；右侧 800V_IN-6V_OUT 堆叠 LLC（10,000W、94-96%、2000W/in³）8 颗矩阵变压器与高压母排"><figcaption>50V And 800V LLC Designs：左侧 50V_IN-6V_OUT LLC（750-1000W、96-97%、2000W/in³）单矩阵变压器小板；右侧 800V_IN-6V_OUT 堆叠 LLC（10,000W、94-96%、2000W/in³）8 颗矩阵变压器与高压母排</figcaption></figure>
+<p>那么它长什么样？</p>
+<p>左边是我们做的 50 V 转 6 V LLC 参考设计：单模块能出大约 1 kW，满载效率 96% 到 97%，功率密度大约每立方英寸 2000 W。你可以看到它非常小、非常密——大约 40 乘 20 毫米。</p>
+<p>从设计上看相当直接：一个原边，用 80 V 或 100 V 的氮化镓或硅器件；一颗 100 V 半桥驱动，我们做自举；60 V 以下全部是非隔离的，所以这里全是非隔离的。然后有一颗非常非常小的同步整流驱动，驱动大量低压 MOSFET，配一颗矩阵变压器。背面是数字控制器。</p>
+<p>所以从设计角度，它挺简单。</p>
+<p>到了高压这一侧，规模就上去了，设计也更有挑战。现在我们在 10 kW 这个量级。</p>
+<p>当你必须加上这些间距、这些爬电距离、这些电气间隙，就没有多少空间再去堆一堆原边了；原边 FET 本身也大得多。所以它大得多，而且这是串联输入、并联输出的做法。</p>
+<p>左边是 650 V 的 GaN 器件，我们把它们堆起来。红色高亮的那块是我们的高压爬电与间隙挖空区。</p>
+<p>底部是一大堆遥测、一大堆隔离、一大堆偏置电源——要做保护、要做驱动，需要的东西很多，比简单的 50 V 设计复杂得多。同样还有数字控制器。</p>
+<p>从功率角度看两者很像：都是 6 V 输出，但电流高得多，模块大得多，有一大堆并联输出的矩阵变压器，还有很多大电流母排去驱动这些同步整流器。</p>
+<p>所以这是一个复杂得多的设计，复杂度高得多，需要的半导体也多得多。</p>
+<blockquote>
+<p>So, what does it look like? Over on the left, this is a 50-V to 6-V LLC reference design we did. We can get about a kilowatt out of it, around 96-97% efficiency at full load, around 2,000 W per cubic inch. And you can see it's very small, very dense — roughly 40 by 20 mm. It's pretty straightforward. I have a primary side. I have 80- or 100-V gallium nitride or silicon devices. I have a 100-V half-bridge driver. We bootstrap it. Everything's non-isolated below 60 V. So, everything's non-isolated here. We've got a synchronous rectifier driver that's very, very small, drives a large number of low-voltage MOSFETs, with a matrix transformer. And then we have a digital controller on back. So, it's pretty simple from a design perspective. When we get to the higher voltage, this is where it becomes a bigger scale and a more challenging design. We're up around 10 kW now. When you look at the fact that we have to add all this spacing, all of this creepage, all of this clearance, we don't have a lot of room to add a whole bunch of primaries. The primary-side FETs get much larger, too. So, it's much larger, and this is a series-input, parallel-output type approach. On the left we have 650-V GaN devices, and we stack those. And you can see highlighted in red is our high-voltage creepage and clearance cutout. And on the bottom we got a whole lot of telemetry, a whole lot of isolation, and a whole lot of bias power. It takes a lot to protect, to drive — it's a lot more complex than a simple 50-V design. And again, you got the digital controller. And from the power perspective it looks pretty similar. It's 6-V out for both cases, but it's a lot higher current. It's a lot bigger module, with a lot of parallel output matrix transformers, a lot of high-current bus bars that are driving these synchronous rectifiers. So, it's a lot more complex design, a lot more complexity to it, a lot more semiconductors required.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　两块板输出都是 6 V、密度都是 2000 W/in³，但一块 1 kW、一块 10 kW——十倍功率不是靠放大，是靠八颗矩阵变压器并联、650 V 器件堆叠和一圈隔离器件换来的。</div>
+
+<h2>14　保护：从单边到双边</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/14_23m12s.jpg" alt="Protection：左侧 50V 为单边保护（80/100V FET、无隔离屏障），中间 800V 为双边保护（+/-400V、六颗 FET、高边低边协同、隔离偏置与数字隔离器），右侧示波器为 800V 输出短路波形，短路保护 &lt;1 µs"><figcaption>Protection：左侧 50V 为单边保护（80/100V FET、无隔离屏障），中间 800V 为双边保护（+/-400V、六颗 FET、高边低边协同、隔离偏置与数字隔离器），右侧示波器为 800V 输出短路波形，短路保护 &lt;1 µs</figcaption></figure>
+<p>保护。</p>
+<p>先说热插拔。50 V 相当直接：单边保护，一颗 80 V 或 100 V 的 FET。这一块我们已经做得不错了——你可以用两颗：一颗是大 SOA 的 FET 扛浪涌，另一颗是低导通电阻的 FET 在稳态时用，把总损耗降下来。但本质上就是单边保护、80 到 100 V 的 FET、没有隔离屏障。</p>
+<p>到 800 V，这就复杂多了。双边保护——这也是我后面「呼吁」要讲的地方。一般要六颗 FET，高低边的热插拔要协同；我们集成了偏置电源，也集成了用于遥测和控制的数字隔离器。</p>
+<p>最终它是能工作的：短路保护依然可以做得很漂亮。但同样，它不像低压那么简单。要支撑这种高功率、高压的保护，还需要新的、更好的 IC。</p>
+<blockquote>
+<p>Protection. When we look at hot swap, 50 V is pretty straightforward. We've got single-side protection. You have an 80- or 100-V FET. In this case, we've gotten pretty good: you can have two FETs. You can have one that'll handle the inrush, a large SOA FET, and then you can have some low on-resistance FETs while it's cruising along, to reduce your overall losses. But I have single-side protection, 80-100 V FETs, no isolation barriers. When I look at 800 V, this is a lot more complicated. I have double-sided protection. And this is where this will come to my call to action. We have double-sided protection, generally six FETs. You got to coordinate the high and low-side hot swaps. We integrate a bias supply, we integrate digital isolators for the telemetry and control. And ultimately it could work: you can still have a very good short circuit, good protection. But again, it's not as simple as it would be at low voltage. It's going to take some new, better ICs to enable these high-power, high-voltage protection.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　保护这一页是整场最容易被低估的成本：50 V 一颗 FET 就能挡住的事，到了 800 V 要六颗、要双边协同、要隔离偏置——而短路保护仍要在 1 µs 以内完成。</div>
+
+<hr>
+<h1>第六部分　结论</h1>
+<h2>15　总结与呼吁</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/15_24m00s.jpg" alt="Summary And Call to Action：四条结论——HVDC 正在支撑下一代服务器功率需求；从 800VDC 到 &gt;1V 没有唯一答案，但 VPD 是明确的赢家；GaN 与 SiC 是关键使能技术；HVDC 的无名英雄是隔离保护、偏置电源、栅极驱动与遥测"><figcaption>Summary And Call to Action：四条结论——HVDC 正在支撑下一代服务器功率需求；从 800VDC 到 &gt;1V 没有唯一答案，但 VPD 是明确的赢家；GaN 与 SiC 是关键使能技术；HVDC 的无名英雄是隔离保护、偏置电源、栅极驱动与遥测</figcaption></figure>
+<p>总结，也是呼吁。</p>
+<p>我们知道 HVDC 正在支撑下一代服务器的功率需求。最好的实现路径并不清晰，但在我看来，垂直送电会赢——最后一公里离处理器越近，它就越重要。</p>
+<p>GaN 和 SiC 会变得更加重要。走向高压高密度，宽禁带是关键的使能技术之一。</p>
+<p>但还有一批无名英雄：需要大量的保护，而且必须是隔离的——加强绝缘、大量偏置电源、大量栅极驱动、大量遥测。</p>
+<p>所以我的呼吁是：这里由 OCP 驱动的标准，可以消除定制工程、缩短供应商的上市时间。</p>
+<p>举几个例子。爬电距离和电气间隙的安全规范我们都清楚，但我可以告诉你，跟这个圈子里的不同客户聊，我们每次拿到的数字都不一样。而每加一毫米、减一毫米就要重新开一颗料，工作量极大，真的把节奏拖慢。</p>
+<p>所以当我们走向这些 OCP 驱动的标准，希望能缩短上市时间，也给我们一个清晰的说法：到底要提供什么。DC-DC 变换器的尺寸与需求也是同理，保护要求也一样——到底需要单边还是双边？两线还是三线？诸如此类。</p>
+<p>这就是我的呼吁。谢谢大家。</p>
+<blockquote>
+<p>To summarize and a call to action. So, we know HVDC is enabling the next generation of servers. The best way to get there is not clear, but from my perspective, vertical power delivery is going to be the winner. Getting that last mile, the closer you get to the processor, the more important it is. GaN and SiC are going to be even more important. Wide band gap is going to be one of the key enablers as we go to this high voltage and high density. But the unsung heroes: it's going to take a lot of protection, and it's got to be isolated. You got to be reinforced insulation, a lot of bias supplies, a lot of gate drives, a lot of telemetries. So, the call to action: OCP-driven standards here is going to eliminate the custom engineering and shorten the supplier time to market. And I'll give some examples. We all know the specs, the safety specs for creepage and clearances, but I can tell you when we talk to the various customers in this place, we have a different number every time. And spinning a new part every single time we need to add a millimeter or take away a millimeter — that takes a lot of effort. It really slows things down. So, as we move to these OCP-driven standards, hopefully it can shorten our time to market and really give us good clear guidance on what we need to provide here. Same goes with the DC-DC converter dimensions and needs, as well as the protection requirements. Do I need a single side? Do we have two wire? Do we have three wire? Those types of things. So, that's my call to action, and I'd like to thank everybody.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　总结里最硬的一句不是「VPD 会赢」，而是「爬电距离每家客户给的数都不一样」——标准缺位，正在把功率器件开发变成一次性的定制工程。</div>
+
+<h2>16　致谢</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/images/16_25m10s.jpg" alt="Thank You! Any questions?：OCP Global Summit 2026 致谢页"><figcaption>Thank You! Any questions?：OCP Global Summit 2026 致谢页</figcaption></figure>
+<p>很遗憾，我们没有时间提问了——除非有非常简短的问题。</p>
+<blockquote>
+<p>Well, unfortunately, we don't have time for questions unless there's a quick question.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　25 分钟塞进五种架构、四种拓扑、两块参考设计和一套保护方案，没有留问答时间，内容密度可见一斑。</div>
+
+<hr>
+<h1>附录</h1>
+<h2>A. 关键数据核对表</h2>
+<table>
+<thead>
+<tr>
+<th>数据项</th>
+<th>幻灯片值</th>
+<th>口播值</th>
+<th>本文采用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>处理器功率（20 年跨度）</td>
+<td>~200W → ~2000W</td>
+<td>200 W → 2 kW</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>电压提升倍数</td>
+<td>800 V / 50 V = 16×</td>
+<td>16 倍</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>800→50 V 级效率</td>
+<td>98%</td>
+<td>98%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>50→12 V 级效率</td>
+<td>97%</td>
+<td>97%（有时更高）</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>12 V buck 效率</td>
+<td>LPD = 89.5%</td>
+<td>89–90%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>800→50→12.5 V 整机</td>
+<td>67%</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>50→6 V 级效率</td>
+<td>96%</td>
+<td>96–97%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>800→50→6.25 V 整机（LPD）</td>
+<td>64%</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>800→50→6.25 V 整机（VPD）</td>
+<td>73%</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>800→12.5 V 级效率</td>
+<td>97%</td>
+<td>约 97%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>800→12.5 V 整机</td>
+<td>68%</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>800→6.25 V 级效率</td>
+<td>95%</td>
+<td>95%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>800→6.25 V 整机</td>
+<td>74%</td>
+<td>74%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>800→50→1.8-5 V 整机</td>
+<td>73%</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>架构对比测试条件</td>
+<td>20 kW 输入</td>
+<td>20 kW 系统</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>中间母线电压范围</td>
+<td>1.8–5 V</td>
+<td>1.8–5 V</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>50V→6V LLC 功率</td>
+<td>750–1000 W</td>
+<td>约 1 kW</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>50V→6V LLC 效率</td>
+<td>96–97%</td>
+<td>96–97%</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>50V→6V LLC 密度</td>
+<td>2000 W/in³</td>
+<td>2000 W/in³</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>50V→6V LLC 尺寸</td>
+<td>—</td>
+<td>约 40×20 mm</td>
+<td>口播值</td>
+</tr>
+<tr>
+<td>800V→6V 功率</td>
+<td>10,000 W</td>
+<td>约 10 kW</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>800V→6V 效率</td>
+<td>94–96%</td>
+<td>未给具体值</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>800V→6V 密度</td>
+<td>2000 W/in³</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>800V 侧矩阵变压器数量</td>
+<td>8 颗</td>
+<td>只说「大量并联」</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>800V 保护 FET 数量</td>
+<td>一般 6 颗</td>
+<td>6 颗</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>50V 保护形态</td>
+<td>单边，80/100 V FET</td>
+<td>单边，80/100 V</td>
+<td>一致</td>
+</tr>
+<tr>
+<td>短路保护时间</td>
+<td>&lt;1 µs</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+<tr>
+<td>50 V 砖式变换器历史</td>
+<td>—</td>
+<td>30 多年</td>
+<td>口播值</td>
+</tr>
+<tr>
+<td>800 V 输入电压</td>
+<td>800 V 或 +/-400 V</td>
+<td>未给</td>
+<td>幻灯片值</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>说明：五种架构的绿色箭头数字（67% / 64% / 68% / 74% / 73%）是<strong>端到端效率</strong>，包含各级变换效率与板上配电损耗；它不等于各级效率的简单乘积，差额即为讲者反复强调的 PDN（配电网络）损耗。</p>
+</blockquote>
+<h2>B. 时间轴</h2>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00:04</td>
+<td>开场：从机架讲到拓扑</td>
+</tr>
+<tr>
+<td>00:51</td>
+<td>功率需求演进：20 年从 200 W 到 2 kW</td>
+</tr>
+<tr>
+<td>01:34</td>
+<td>配电方式演进：50 V 母排到 800 V 母排</td>
+</tr>
+<tr>
+<td>03:42</td>
+<td>从 800 V 到 1 V 的四种走法</td>
+</tr>
+<tr>
+<td>05:34</td>
+<td>横向送电与垂直送电</td>
+</tr>
+<tr>
+<td>08:45</td>
+<td>架构对比一：800→50→12.5 V</td>
+</tr>
+<tr>
+<td>10:08</td>
+<td>架构对比二：800→50→6.25 V</td>
+</tr>
+<tr>
+<td>11:29</td>
+<td>架构对比三：800→12.5 V</td>
+</tr>
+<tr>
+<td>11:58</td>
+<td>架构对比四：800→6.25 V</td>
+</tr>
+<tr>
+<td>12:51</td>
+<td>架构对比五：800→50→1.8-5 V</td>
+</tr>
+<tr>
+<td>14:37</td>
+<td>50 V 的四种拓扑</td>
+</tr>
+<tr>
+<td>18:24</td>
+<td>800 V 的堆叠 LLC</td>
+</tr>
+<tr>
+<td>19:36</td>
+<td>1 kW 与 10 kW 参考设计</td>
+</tr>
+<tr>
+<td>22:03</td>
+<td>保护：从单边到双边</td>
+</tr>
+<tr>
+<td>23:31</td>
+<td>总结与呼吁</td>
+</tr>
+<tr>
+<td>25:06</td>
+<td>致谢</td>
+</tr>
+</tbody>
+</table>
+<h2>C. 术语对照</h2>
+<table>
+<thead>
+<tr>
+<th>缩写</th>
+<th>全称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HVDC</td>
+<td>High Voltage DC</td>
+<td>高压直流；讲者戏称「在 3 V、5 V 工艺的公司里，800 V 就是高压」</td>
+</tr>
+<tr>
+<td>IBC</td>
+<td>Intermediate Bus Converter</td>
+<td>中间总线变换器，把母线电压降到下一级所需的中间电压</td>
+</tr>
+<tr>
+<td>HV IBC</td>
+<td>High Voltage IBC</td>
+<td>高压侧 IBC，800 V 进、50 V 或 12/6 V 出</td>
+</tr>
+<tr>
+<td>LV IBC</td>
+<td>Low Voltage IBC</td>
+<td>低压侧 IBC，50 V 进、12 V 或 6 V 出</td>
+</tr>
+<tr>
+<td>PDB</td>
+<td>Power Distribution Board</td>
+<td>功率分配板，含热插拔、遥测与隔离屏障</td>
+</tr>
+<tr>
+<td>PSU</td>
+<td>Power Supply Unit</td>
+<td>电源模块</td>
+</tr>
+<tr>
+<td>VR / VRM</td>
+<td>Voltage Regulator (Module)</td>
+<td>稳压器 / 稳压模块</td>
+</tr>
+<tr>
+<td>PoL</td>
+<td>Point of Load</td>
+<td>负载点变换器</td>
+</tr>
+<tr>
+<td>LPD</td>
+<td>Lateral Power Delivery</td>
+<td>横向送电，稳压器在 PCB 正面、功率横穿板面</td>
+</tr>
+<tr>
+<td>VPD</td>
+<td>Vertical Power Delivery</td>
+<td>垂直送电，稳压器置于 PCB 背面、正对芯片</td>
+</tr>
+<tr>
+<td>IVR</td>
+<td>Integrated Voltage Regulator</td>
+<td>集成稳压器，与芯片或封装集成</td>
+</tr>
+<tr>
+<td>PDN</td>
+<td>Power Distribution Network</td>
+<td>配电网络，本文损耗差额的主要来源</td>
+</tr>
+<tr>
+<td>LLC</td>
+<td>Inductor-Inductor-Capacitor 谐振变换器</td>
+<td>软开关拓扑，效率高、通常不稳压</td>
+</tr>
+<tr>
+<td>ZVS / ZCS</td>
+<td>Zero Voltage / Zero Current Switching</td>
+<td>零电压开通 / 零电流关断</td>
+</tr>
+<tr>
+<td>FB</td>
+<td>Full Bridge</td>
+<td>全桥，变压器隔离、PWM 控制、可完全稳压</td>
+</tr>
+<tr>
+<td>HSC</td>
+<td>Hybrid Switched Capacitor</td>
+<td>混合开关电容（飞电容）拓扑，天然 4:1</td>
+</tr>
+<tr>
+<td>SR</td>
+<td>Synchronous Rectifier</td>
+<td>同步整流</td>
+</tr>
+<tr>
+<td>SOA</td>
+<td>Safe Operating Area</td>
+<td>安全工作区，热插拔 FET 抗浪涌的关键指标</td>
+</tr>
+<tr>
+<td>BBU / CBU</td>
+<td>Battery / Capacitor Backup Unit</td>
+<td>电池 / 电容备电单元</td>
+</tr>
+</tbody>
+</table>
+</body></html>

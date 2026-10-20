@@ -1,0 +1,122 @@
+{
+ "video": "G:\\AI_IDE_output\\workbuddy_out\\yt_t845BOkcVcQ_Advancing_Flash_less_Boot_in_OCP_Systems_A_Streaming\\video.mp4",
+ "info": {
+  "fps": 59.94005994005994,
+  "width": 1920,
+  "height": 1080,
+  "duration": 1108.822494
+ },
+ "interval": 3.0,
+ "states": [
+  {
+   "start": 0.0,
+   "end": 53.0,
+   "duration": 53.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 45.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 53.0,
+   "end": 163.0,
+   "duration": 110.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 155.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 163.0,
+   "end": 271.0,
+   "duration": 108.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 262.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 271.0,
+   "end": 390.0,
+   "duration": 119.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 380.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 390.0,
+   "end": 554.0,
+   "duration": 164.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 545.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 554.0,
+   "end": 586.0,
+   "duration": 32.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 578.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 586.0,
+   "end": 811.0,
+   "duration": 225.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 800.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 811.0,
+   "end": 845.0,
+   "duration": 34.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 840.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 845.0,
+   "end": 919.0,
+   "duration": 74.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 910.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 919.0,
+   "end": 1108.8,
+   "duration": 189.79999999999995,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 1035.0,
+   "samples": [],
+   "likely_slide": true
+  }
+ ]
+}

@@ -1,0 +1,2712 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:06.960 --> 00:00:09.150 align:start position:0%
+ 
+Hello.<00:00:07.640><c> Okay.</c>
+
+00:00:09.150 --> 00:00:09.160 align:start position:0%
+Hello. Okay.
+ 
+
+00:00:09.160 --> 00:00:12.430 align:start position:0%
+Hello. Okay.
+Okay.<00:00:09.960><c> Hello</c><00:00:10.160><c> everyone,</c><00:00:11.120><c> and</c><00:00:11.240><c> welcome.</c>
+
+00:00:12.430 --> 00:00:12.440 align:start position:0%
+Okay. Hello everyone, and welcome.
+ 
+
+00:00:12.440 --> 00:00:14.430 align:start position:0%
+Okay. Hello everyone, and welcome.
+Uh<00:00:12.560><c> my</c><00:00:12.680><c> name</c><00:00:12.880><c> is</c><00:00:13.000><c> Chad,</c><00:00:13.880><c> and</c><00:00:14.000><c> uh</c><00:00:14.040><c> presenting</c>
+
+00:00:14.430 --> 00:00:14.440 align:start position:0%
+Uh my name is Chad, and uh presenting
+ 
+
+00:00:14.440 --> 00:00:16.750 align:start position:0%
+Uh my name is Chad, and uh presenting
+with<00:00:14.600><c> me</c><00:00:14.720><c> is</c><00:00:14.840><c> Mike.</c>
+
+00:00:16.750 --> 00:00:16.760 align:start position:0%
+with me is Mike.
+ 
+
+00:00:16.760 --> 00:00:19.270 align:start position:0%
+with me is Mike.
+And<00:00:16.880><c> we</c><00:00:16.960><c> are</c><00:00:17.000><c> from</c><00:00:17.200><c> Intel.</c><00:00:17.960><c> Okay.</c>
+
+00:00:19.270 --> 00:00:19.280 align:start position:0%
+And we are from Intel. Okay.
+ 
+
+00:00:19.280 --> 00:00:23.470 align:start position:0%
+And we are from Intel. Okay.
+And<00:00:19.600><c> um</c><00:00:20.520><c> we</c><00:00:20.640><c> are</c><00:00:20.680><c> very</c><00:00:20.880><c> excited</c><00:00:21.600><c> to</c><00:00:21.920><c> uh</c><00:00:22.080><c> discuss</c>
+
+00:00:23.470 --> 00:00:23.480 align:start position:0%
+And um we are very excited to uh discuss
+ 
+
+00:00:23.480 --> 00:00:24.710 align:start position:0%
+And um we are very excited to uh discuss
+our<00:00:23.720><c> next</c>
+
+00:00:24.710 --> 00:00:24.720 align:start position:0%
+our next
+ 
+
+00:00:24.720 --> 00:00:29.470 align:start position:0%
+our next
+uh<00:00:25.200><c> architecture</c><00:00:26.040><c> evolution</c><00:00:26.680><c> of</c><00:00:26.920><c> Intel</c><00:00:27.480><c> FSP.</c>
+
+00:00:29.470 --> 00:00:29.480 align:start position:0%
+uh architecture evolution of Intel FSP.
+ 
+
+00:00:29.480 --> 00:00:31.830 align:start position:0%
+uh architecture evolution of Intel FSP.
+Uh<00:00:29.840><c> and</c><00:00:30.000><c> that's</c><00:00:30.200><c> specifically</c><00:00:30.960><c> um</c>
+
+00:00:31.830 --> 00:00:31.840 align:start position:0%
+Uh and that's specifically um
+ 
+
+00:00:31.840 --> 00:00:34.310 align:start position:0%
+Uh and that's specifically um
+how<00:00:32.119><c> we</c><00:00:32.360><c> are</c><00:00:32.480><c> evolving</c><00:00:33.040><c> to</c><00:00:33.480><c> align</c><00:00:33.800><c> with</c><00:00:34.080><c> the</c>
+
+00:00:34.310 --> 00:00:34.320 align:start position:0%
+how we are evolving to align with the
+ 
+
+00:00:34.320 --> 00:00:36.190 align:start position:0%
+how we are evolving to align with the
+open<00:00:34.640><c> industry</c><00:00:35.080><c> standard</c>
+
+00:00:36.190 --> 00:00:36.200 align:start position:0%
+open industry standard
+ 
+
+00:00:36.200 --> 00:00:40.470 align:start position:0%
+open industry standard
+being<00:00:36.360><c> driven</c><00:00:36.720><c> here</c><00:00:37.080><c> in</c><00:00:37.240><c> OCP</c><00:00:37.680><c> OPEF</c><00:00:38.600><c> Open</c><00:00:39.120><c> SFF</c>
+
+00:00:40.470 --> 00:00:40.480 align:start position:0%
+being driven here in OCP OPEF Open SFF
+ 
+
+00:00:40.480 --> 00:00:44.670 align:start position:0%
+being driven here in OCP OPEF Open SFF
+and<00:00:40.640><c> the</c><00:00:40.720><c> UPCI.</c>
+
+00:00:44.670 --> 00:00:44.680 align:start position:0%
+ 
+ 
+
+00:00:44.680 --> 00:00:46.830 align:start position:0%
+ 
+Okay.<00:00:45.200><c> So,</c><00:00:45.480><c> before</c><00:00:45.760><c> we</c><00:00:45.840><c> jump</c><00:00:46.120><c> into</c><00:00:46.640><c> the</c>
+
+00:00:46.830 --> 00:00:46.840 align:start position:0%
+Okay. So, before we jump into the
+ 
+
+00:00:46.840 --> 00:00:49.110 align:start position:0%
+Okay. So, before we jump into the
+technical<00:00:47.360><c> details,</c><00:00:48.400><c> we</c><00:00:48.520><c> want</c><00:00:48.720><c> to</c><00:00:48.880><c> give</c>
+
+00:00:49.110 --> 00:00:49.120 align:start position:0%
+technical details, we want to give
+ 
+
+00:00:49.120 --> 00:00:52.070 align:start position:0%
+technical details, we want to give
+credit<00:00:49.600><c> to</c><00:00:49.840><c> the</c><00:00:50.160><c> key</c><00:00:50.360><c> leaders</c><00:00:50.760><c> in</c><00:00:50.920><c> Intel</c>
+
+00:00:52.070 --> 00:00:52.080 align:start position:0%
+credit to the key leaders in Intel
+ 
+
+00:00:52.080 --> 00:00:54.510 align:start position:0%
+credit to the key leaders in Intel
+who<00:00:52.160><c> contribute</c><00:00:53.000><c> to</c><00:00:53.160><c> this</c><00:00:53.360><c> work.</c>
+
+00:00:54.510 --> 00:00:54.520 align:start position:0%
+who contribute to this work.
+ 
+
+00:00:54.520 --> 00:00:55.990 align:start position:0%
+who contribute to this work.
+Um<00:00:54.760><c> Rainey,</c>
+
+00:00:55.990 --> 00:00:56.000 align:start position:0%
+Um Rainey,
+ 
+
+00:00:56.000 --> 00:00:57.430 align:start position:0%
+Um Rainey,
+Sai,
+
+00:00:57.430 --> 00:00:57.440 align:start position:0%
+Sai,
+ 
+
+00:00:57.440 --> 00:00:59.590 align:start position:0%
+Sai,
+and<00:00:57.800><c> the</c><00:00:58.040><c> Bill</c><00:00:58.240><c> Clark,</c><00:00:58.600><c> of</c><00:00:58.760><c> course,</c><00:00:59.560><c> uh</c>
+
+00:00:59.590 --> 00:00:59.600 align:start position:0%
+and the Bill Clark, of course, uh
+ 
+
+00:00:59.600 --> 00:01:04.070 align:start position:0%
+and the Bill Clark, of course, uh
+Allison.<00:01:00.200><c> Yeah.</c>
+
+00:01:04.070 --> 00:01:04.080 align:start position:0%
+ 
+ 
+
+00:01:04.080 --> 00:01:07.870 align:start position:0%
+ 
+So,<00:01:04.320><c> here's</c><00:01:04.720><c> the</c><00:01:04.839><c> road</c><00:01:05.080><c> map</c><00:01:05.440><c> for</c><00:01:06.360><c> uh</c><00:01:06.520><c> today.</c>
+
+00:01:07.870 --> 00:01:07.880 align:start position:0%
+So, here's the road map for uh today.
+ 
+
+00:01:07.880 --> 00:01:10.910 align:start position:0%
+So, here's the road map for uh today.
+Um<00:01:08.120><c> first,</c><00:01:08.880><c> we</c><00:01:09.040><c> will</c><00:01:09.160><c> begin</c><00:01:09.600><c> with</c><00:01:10.320><c> uh</c>
+
+00:01:10.910 --> 00:01:10.920 align:start position:0%
+Um first, we will begin with uh
+ 
+
+00:01:10.920 --> 00:01:14.510 align:start position:0%
+Um first, we will begin with uh
+what<00:01:11.040><c> Intel</c><00:01:11.400><c> FSP</c><00:01:11.840><c> provides</c><00:01:12.320><c> today,</c><00:01:13.320><c> and</c><00:01:13.760><c> um</c>
+
+00:01:14.510 --> 00:01:14.520 align:start position:0%
+what Intel FSP provides today, and um
+ 
+
+00:01:14.520 --> 00:01:16.910 align:start position:0%
+what Intel FSP provides today, and um
+its<00:01:14.760><c> foundational</c><00:01:15.720><c> role</c><00:01:16.280><c> uh</c>
+
+00:01:16.910 --> 00:01:16.920 align:start position:0%
+its foundational role uh
+ 
+
+00:01:16.920 --> 00:01:18.030 align:start position:0%
+its foundational role uh
+role
+
+00:01:18.030 --> 00:01:18.040 align:start position:0%
+role
+ 
+
+00:01:18.040 --> 00:01:20.030 align:start position:0%
+role
+uh<00:01:18.160><c> across</c><00:01:18.600><c> brothers.</c>
+
+00:01:20.030 --> 00:01:20.040 align:start position:0%
+uh across brothers.
+ 
+
+00:01:20.040 --> 00:01:21.830 align:start position:0%
+uh across brothers.
+And<00:01:20.200><c> then</c><00:01:20.440><c> we</c><00:01:20.560><c> will</c><00:01:20.720><c> examine</c>
+
+00:01:21.830 --> 00:01:21.840 align:start position:0%
+And then we will examine
+ 
+
+00:01:21.840 --> 00:01:25.390 align:start position:0%
+And then we will examine
+the<00:01:21.960><c> overall</c><00:01:22.960><c> data</c><00:01:23.280><c> center</c><00:01:23.640><c> Intel</c><00:01:23.960><c> FSP</c>
+
+00:01:25.390 --> 00:01:25.400 align:start position:0%
+the overall data center Intel FSP
+ 
+
+00:01:25.400 --> 00:01:28.030 align:start position:0%
+the overall data center Intel FSP
+uh<00:01:25.640><c> enhancement,</c><00:01:26.560><c> and</c><00:01:26.720><c> we'll</c><00:01:26.840><c> go</c><00:01:26.920><c> you</c><00:01:27.040><c> through</c>
+
+00:01:28.030 --> 00:01:28.040 align:start position:0%
+uh enhancement, and we'll go you through
+ 
+
+00:01:28.040 --> 00:01:30.110 align:start position:0%
+uh enhancement, and we'll go you through
+uh<00:01:28.440><c> the</c><00:01:28.880><c> high-level</c>
+
+00:01:30.110 --> 00:01:30.120 align:start position:0%
+uh the high-level
+ 
+
+00:01:30.120 --> 00:01:33.070 align:start position:0%
+uh the high-level
+architectural<00:01:31.440><c> change</c>
+
+00:01:33.070 --> 00:01:33.080 align:start position:0%
+architectural change
+ 
+
+00:01:33.080 --> 00:01:34.630 align:start position:0%
+architectural change
+uh<00:01:33.240><c> for</c><00:01:33.400><c> our</c><00:01:33.600><c> next</c><00:01:33.880><c> generation</c><00:01:34.360><c> Xeon</c>
+
+00:01:34.630 --> 00:01:34.640 align:start position:0%
+uh for our next generation Xeon
+ 
+
+00:01:34.640 --> 00:01:36.590 align:start position:0%
+uh for our next generation Xeon
+platforms.
+
+00:01:36.590 --> 00:01:36.600 align:start position:0%
+platforms.
+ 
+
+00:01:36.600 --> 00:01:39.790 align:start position:0%
+platforms.
+And<00:01:36.800><c> then</c><00:01:37.000><c> Mike</c><00:01:37.280><c> will</c><00:01:37.440><c> deep</c><00:01:37.640><c> dive</c><00:01:37.960><c> into</c><00:01:38.520><c> the</c><00:01:39.000><c> um</c>
+
+00:01:39.790 --> 00:01:39.800 align:start position:0%
+And then Mike will deep dive into the um
+ 
+
+00:01:39.800 --> 00:01:42.830 align:start position:0%
+And then Mike will deep dive into the um
+architectural<00:01:41.000><c> alignment</c><00:01:41.640><c> with</c><00:01:42.200><c> uh</c>
+
+00:01:42.830 --> 00:01:42.840 align:start position:0%
+architectural alignment with uh
+ 
+
+00:01:42.840 --> 00:01:45.590 align:start position:0%
+architectural alignment with uh
+the<00:01:43.000><c> Open</c><00:01:43.200><c> SFF,</c><00:01:44.080><c> especially</c><00:01:44.680><c> the</c><00:01:44.800><c> status</c>
+
+00:01:45.590 --> 00:01:45.600 align:start position:0%
+the Open SFF, especially the status
+ 
+
+00:01:45.600 --> 00:01:47.470 align:start position:0%
+the Open SFF, especially the status
+execution<00:01:46.040><c> model.</c>
+
+00:01:47.470 --> 00:01:47.480 align:start position:0%
+execution model.
+ 
+
+00:01:47.480 --> 00:01:49.870 align:start position:0%
+execution model.
+And<00:01:47.600><c> finally,</c><00:01:48.080><c> we</c><00:01:48.280><c> will</c><00:01:48.480><c> close</c><00:01:49.440><c> with</c><00:01:49.640><c> a</c><00:01:49.720><c> call</c>
+
+00:01:49.870 --> 00:01:49.880 align:start position:0%
+And finally, we will close with a call
+ 
+
+00:01:49.880 --> 00:01:52.230 align:start position:0%
+And finally, we will close with a call
+to<00:01:50.000><c> action</c><00:01:50.480><c> on</c><00:01:50.720><c> how</c>
+
+00:01:52.230 --> 00:01:52.240 align:start position:0%
+to action on how
+ 
+
+00:01:52.240 --> 00:01:53.950 align:start position:0%
+to action on how
+the<00:01:52.360><c> ecosystem</c><00:01:53.040><c> can</c><00:01:53.240><c> engage</c><00:01:53.720><c> these</c>
+
+00:01:53.950 --> 00:01:53.960 align:start position:0%
+the ecosystem can engage these
+ 
+
+00:01:53.960 --> 00:01:55.230 align:start position:0%
+the ecosystem can engage these
+improvements.
+
+00:01:55.230 --> 00:01:55.240 align:start position:0%
+improvements.
+ 
+
+00:01:55.240 --> 00:01:58.470 align:start position:0%
+improvements.
+Okay.
+
+00:01:58.470 --> 00:01:58.480 align:start position:0%
+ 
+ 
+
+00:01:58.480 --> 00:02:00.870 align:start position:0%
+ 
+Okay.<00:01:59.280><c> let's</c><00:01:59.600><c> start</c><00:01:59.920><c> with</c><00:02:00.160><c> a</c><00:02:00.240><c> refresh</c><00:02:00.760><c> on</c>
+
+00:02:00.870 --> 00:02:00.880 align:start position:0%
+Okay. let's start with a refresh on
+ 
+
+00:02:00.880 --> 00:02:02.310 align:start position:0%
+Okay. let's start with a refresh on
+Intel<00:02:01.120><c> FSP.</c>
+
+00:02:02.310 --> 00:02:02.320 align:start position:0%
+Intel FSP.
+ 
+
+00:02:02.320 --> 00:02:05.390 align:start position:0%
+Intel FSP.
+Intel<00:02:02.680><c> FSP</c><00:02:03.120><c> is</c><00:02:03.280><c> the</c><00:02:03.920><c> binary</c><00:02:04.320><c> encapsulation</c><00:02:05.200><c> of</c>
+
+00:02:05.390 --> 00:02:05.400 align:start position:0%
+Intel FSP is the binary encapsulation of
+ 
+
+00:02:05.400 --> 00:02:06.710 align:start position:0%
+Intel FSP is the binary encapsulation of
+Intel's
+
+00:02:06.710 --> 00:02:06.720 align:start position:0%
+Intel's
+ 
+
+00:02:06.720 --> 00:02:09.190 align:start position:0%
+Intel's
+compressed<00:02:07.520><c> silicon</c><00:02:08.160><c> in</c><00:02:08.280><c> the</c><00:02:08.520><c> initialization</c>
+
+00:02:09.190 --> 00:02:09.200 align:start position:0%
+compressed silicon in the initialization
+ 
+
+00:02:09.200 --> 00:02:11.870 align:start position:0%
+compressed silicon in the initialization
+logic.<00:02:10.160><c> It</c><00:02:10.360><c> packages</c>
+
+00:02:11.870 --> 00:02:11.880 align:start position:0%
+logic. It packages
+ 
+
+00:02:11.880 --> 00:02:14.949 align:start position:0%
+logic. It packages
+our<00:02:12.800><c> silicon</c><00:02:13.320><c> programming</c><00:02:13.720><c> IP</c><00:02:14.200><c> into</c><00:02:14.560><c> a</c>
+
+00:02:14.949 --> 00:02:14.959 align:start position:0%
+our silicon programming IP into a
+ 
+
+00:02:14.959 --> 00:02:16.230 align:start position:0%
+our silicon programming IP into a
+modular
+
+00:02:16.230 --> 00:02:16.240 align:start position:0%
+modular
+ 
+
+00:02:16.240 --> 00:02:19.190 align:start position:0%
+modular
+consumable<00:02:17.360><c> binary.</c>
+
+00:02:19.190 --> 00:02:19.200 align:start position:0%
+consumable binary.
+ 
+
+00:02:19.200 --> 00:02:20.310 align:start position:0%
+consumable binary.
+Today,
+
+00:02:20.310 --> 00:02:20.320 align:start position:0%
+Today,
+ 
+
+00:02:20.320 --> 00:02:22.550 align:start position:0%
+Today,
+the<00:02:20.440><c> Intel</c><00:02:20.720><c> FSP</c><00:02:21.120><c> specification</c><00:02:21.880><c> stands</c><00:02:22.240><c> at</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+the Intel FSP specification stands at
+ 
+
+00:02:22.560 --> 00:02:26.350 align:start position:0%
+the Intel FSP specification stands at
+version<00:02:23.000><c> 2.5</c><00:02:24.280><c> which</c><00:02:25.040><c> introduced</c><00:02:25.880><c> introduced</c>
+
+00:02:26.350 --> 00:02:26.360 align:start position:0%
+version 2.5 which introduced introduced
+ 
+
+00:02:26.360 --> 00:02:29.590 align:start position:0%
+version 2.5 which introduced introduced
+formal<00:02:27.000><c> support</c><00:02:27.600><c> on</c><00:02:28.400><c> or</c><00:02:28.680><c> for</c><00:02:28.920><c> the</c><00:02:29.080><c> native</c>
+
+00:02:29.590 --> 00:02:29.600 align:start position:0%
+formal support on or for the native
+ 
+
+00:02:29.600 --> 00:02:31.350 align:start position:0%
+formal support on or for the native
+64-bit
+
+00:02:31.350 --> 00:02:31.360 align:start position:0%
+64-bit
+ 
+
+00:02:31.360 --> 00:02:34.990 align:start position:0%
+64-bit
+execution<00:02:32.240><c> environment</c><00:02:33.120><c> and</c><00:02:33.320><c> the</c><00:02:33.400><c> SMM.</c>
+
+00:02:34.990 --> 00:02:35.000 align:start position:0%
+execution environment and the SMM.
+ 
+
+00:02:35.000 --> 00:02:39.110 align:start position:0%
+execution environment and the SMM.
+So,<00:02:35.560><c> what</c><00:02:36.440><c> makes</c><00:02:37.120><c> Intel</c><00:02:37.440><c> FSP</c>
+
+00:02:39.110 --> 00:02:39.120 align:start position:0%
+So, what makes Intel FSP
+ 
+
+00:02:39.120 --> 00:02:41.070 align:start position:0%
+So, what makes Intel FSP
+uniquely<00:02:39.680><c> powerful</c>
+
+00:02:41.070 --> 00:02:41.080 align:start position:0%
+uniquely powerful
+ 
+
+00:02:41.080 --> 00:02:44.150 align:start position:0%
+uniquely powerful
+is<00:02:41.640><c> its</c><00:02:41.880><c> flexibility</c><00:02:42.760><c> across</c><00:02:43.080><c> boot</c><00:02:43.320><c> loaders.</c>
+
+00:02:44.150 --> 00:02:44.160 align:start position:0%
+is its flexibility across boot loaders.
+ 
+
+00:02:44.160 --> 00:02:48.390 align:start position:0%
+is its flexibility across boot loaders.
+So,<00:02:44.400><c> today</c><00:02:45.400><c> whether</c><00:02:46.720><c> a</c><00:02:47.120><c> customer</c><00:02:47.920><c> boots</c><00:02:48.160><c> with</c>
+
+00:02:48.390 --> 00:02:48.400 align:start position:0%
+So, today whether a customer boots with
+ 
+
+00:02:48.400 --> 00:02:49.990 align:start position:0%
+So, today whether a customer boots with
+a<00:02:48.560><c> UEFI</c>
+
+00:02:49.990 --> 00:02:50.000 align:start position:0%
+a UEFI
+ 
+
+00:02:50.000 --> 00:02:53.510 align:start position:0%
+a UEFI
+coreboot<00:02:50.959><c> or</c><00:02:51.400><c> the</c><00:02:51.600><c> Slim</c><00:02:51.840><c> Bootloader</c><00:02:52.920><c> FSP</c>
+
+00:02:53.510 --> 00:02:53.520 align:start position:0%
+coreboot or the Slim Bootloader FSP
+ 
+
+00:02:53.520 --> 00:02:55.230 align:start position:0%
+coreboot or the Slim Bootloader FSP
+supports<00:02:54.080><c> through</c><00:02:54.360><c> the</c>
+
+00:02:55.230 --> 00:02:55.240 align:start position:0%
+supports through the
+ 
+
+00:02:55.240 --> 00:02:57.230 align:start position:0%
+supports through the
+two<00:02:55.440><c> different</c><00:02:55.840><c> boot</c><00:02:55.959><c> modes,</c><00:02:56.600><c> API</c><00:02:56.959><c> mode</c><00:02:57.120><c> and</c>
+
+00:02:57.230 --> 00:02:57.240 align:start position:0%
+two different boot modes, API mode and
+ 
+
+00:02:57.240 --> 00:02:58.630 align:start position:0%
+two different boot modes, API mode and
+dispatch<00:02:57.600><c> mode.</c>
+
+00:02:58.630 --> 00:02:58.640 align:start position:0%
+dispatch mode.
+ 
+
+00:02:58.640 --> 00:03:01.270 align:start position:0%
+dispatch mode.
+So,<00:02:59.440><c> for</c><00:02:59.800><c> API</c><00:03:00.120><c> mode</c>
+
+00:03:01.270 --> 00:03:01.280 align:start position:0%
+So, for API mode
+ 
+
+00:03:01.280 --> 00:03:03.590 align:start position:0%
+So, for API mode
+the<00:03:01.440><c> boot</c><00:03:01.600><c> loader</c><00:03:01.920><c> calls</c><00:03:02.280><c> into</c><00:03:02.720><c> discrete</c>
+
+00:03:03.590 --> 00:03:03.600 align:start position:0%
+the boot loader calls into discrete
+ 
+
+00:03:03.600 --> 00:03:06.910 align:start position:0%
+the boot loader calls into discrete
+initialization<00:03:04.320><c> phases.</c><00:03:05.440><c> For</c><00:03:05.640><c> example,</c><00:03:06.760><c> the</c>
+
+00:03:06.910 --> 00:03:06.920 align:start position:0%
+initialization phases. For example, the
+ 
+
+00:03:06.920 --> 00:03:08.509 align:start position:0%
+initialization phases. For example, the
+temporary<00:03:07.440><c> init</c>
+
+00:03:08.509 --> 00:03:08.519 align:start position:0%
+temporary init
+ 
+
+00:03:08.519 --> 00:03:13.390 align:start position:0%
+temporary init
+FSP<00:03:09.720><c> memory</c><00:03:10.080><c> init</c><00:03:10.600><c> or</c><00:03:11.040><c> the</c><00:03:11.200><c> FSP</c><00:03:11.680><c> silicon</c><00:03:12.080><c> init.</c>
+
+00:03:13.390 --> 00:03:13.400 align:start position:0%
+FSP memory init or the FSP silicon init.
+ 
+
+00:03:13.400 --> 00:03:15.990 align:start position:0%
+FSP memory init or the FSP silicon init.
+Those<00:03:13.680><c> interface</c><00:03:14.280><c> those</c><00:03:14.560><c> APIs</c><00:03:15.640><c> through</c><00:03:15.800><c> those</c>
+
+00:03:15.990 --> 00:03:16.000 align:start position:0%
+Those interface those APIs through those
+ 
+
+00:03:16.000 --> 00:03:18.630 align:start position:0%
+Those interface those APIs through those
+APIs.<00:03:16.720><c> And</c><00:03:16.880><c> then</c><00:03:16.959><c> for</c><00:03:17.120><c> dispatch</c><00:03:17.560><c> mode</c>
+
+00:03:18.630 --> 00:03:18.640 align:start position:0%
+APIs. And then for dispatch mode
+ 
+
+00:03:18.640 --> 00:03:22.630 align:start position:0%
+APIs. And then for dispatch mode
+FSP<00:03:19.600><c> integrates</c><00:03:20.760><c> directly</c><00:03:21.280><c> as</c><00:03:21.600><c> PI</c><00:03:21.959><c> M</c><00:03:22.239><c> into</c><00:03:22.519><c> the</c>
+
+00:03:22.630 --> 00:03:22.640 align:start position:0%
+FSP integrates directly as PI M into the
+ 
+
+00:03:22.640 --> 00:03:24.310 align:start position:0%
+FSP integrates directly as PI M into the
+PI<00:03:22.920><c> foundation.</c>
+
+00:03:24.310 --> 00:03:24.320 align:start position:0%
+PI foundation.
+ 
+
+00:03:24.320 --> 00:03:26.150 align:start position:0%
+PI foundation.
+This<00:03:24.600><c> is</c><00:03:24.760><c> a</c>
+
+00:03:26.150 --> 00:03:26.160 align:start position:0%
+This is a
+ 
+
+00:03:26.160 --> 00:03:31.229 align:start position:0%
+This is a
+the<00:03:26.280><c> basic</c><00:03:27.080><c> our</c><00:03:27.519><c> FSP</c><00:03:27.880><c> foundation.</c>
+
+00:03:31.229 --> 00:03:31.239 align:start position:0%
+ 
+ 
+
+00:03:31.239 --> 00:03:34.550 align:start position:0%
+ 
+Okay,<00:03:31.640><c> then</c><00:03:31.920><c> move</c><00:03:32.160><c> to</c><00:03:32.360><c> the</c><00:03:33.160><c> our</c><00:03:34.000><c> um</c>
+
+00:03:34.550 --> 00:03:34.560 align:start position:0%
+Okay, then move to the our um
+ 
+
+00:03:34.560 --> 00:03:36.070 align:start position:0%
+Okay, then move to the our um
+main
+
+00:03:36.070 --> 00:03:36.080 align:start position:0%
+main
+ 
+
+00:03:36.080 --> 00:03:38.430 align:start position:0%
+main
+topic<00:03:36.440><c> that</c><00:03:36.880><c> the</c><00:03:37.000><c> enhancement.</c><00:03:37.880><c> So,</c><00:03:38.040><c> here's</c>
+
+00:03:38.430 --> 00:03:38.440 align:start position:0%
+topic that the enhancement. So, here's
+ 
+
+00:03:38.440 --> 00:03:39.350 align:start position:0%
+topic that the enhancement. So, here's
+our
+
+00:03:39.350 --> 00:03:39.360 align:start position:0%
+our
+ 
+
+00:03:39.360 --> 00:03:40.229 align:start position:0%
+our
+the
+
+00:03:40.229 --> 00:03:40.239 align:start position:0%
+the
+ 
+
+00:03:40.239 --> 00:03:43.710 align:start position:0%
+the
+here<00:03:40.640><c> are</c><00:03:41.280><c> the</c><00:03:41.440><c> four</c><00:03:42.000><c> primary</c><00:03:42.400><c> pillars</c><00:03:42.920><c> of</c><00:03:43.160><c> our</c>
+
+00:03:43.710 --> 00:03:43.720 align:start position:0%
+here are the four primary pillars of our
+ 
+
+00:03:43.720 --> 00:03:46.430 align:start position:0%
+here are the four primary pillars of our
+Intel<00:03:44.000><c> FSP</c><00:03:44.800><c> enhancement.</c>
+
+00:03:46.430 --> 00:03:46.440 align:start position:0%
+Intel FSP enhancement.
+ 
+
+00:03:46.440 --> 00:03:48.190 align:start position:0%
+Intel FSP enhancement.
+You<00:03:46.600><c> can</c><00:03:46.760><c> add</c><00:03:46.920><c> the</c><00:03:47.080><c> first</c><00:03:47.360><c> one</c><00:03:47.480><c> is</c><00:03:47.600><c> the</c><00:03:48.040><c> we</c>
+
+00:03:48.190 --> 00:03:48.200 align:start position:0%
+You can add the first one is the we
+ 
+
+00:03:48.200 --> 00:03:50.750 align:start position:0%
+You can add the first one is the we
+simplify<00:03:48.959><c> FSP</c><00:03:49.440><c> M.</c>
+
+00:03:50.750 --> 00:03:50.760 align:start position:0%
+simplify FSP M.
+ 
+
+00:03:50.760 --> 00:03:54.470 align:start position:0%
+simplify FSP M.
+We<00:03:51.200><c> make</c><00:03:51.440><c> the</c><00:03:51.560><c> FSP</c><00:03:52.000><c> M</c><00:03:52.760><c> independent</c><00:03:53.480><c> of</c><00:03:53.720><c> EDK</c><00:03:54.120><c> II</c>
+
+00:03:54.470 --> 00:03:54.480 align:start position:0%
+We make the FSP M independent of EDK II
+ 
+
+00:03:54.480 --> 00:03:56.350 align:start position:0%
+We make the FSP M independent of EDK II
+PE<00:03:54.760><c> mode.</c>
+
+00:03:56.350 --> 00:03:56.360 align:start position:0%
+PE mode.
+ 
+
+00:03:56.360 --> 00:03:58.990 align:start position:0%
+PE mode.
+And<00:03:56.520><c> second</c><00:03:56.760><c> one</c><00:03:56.880><c> is</c><00:03:57.040><c> the</c><00:03:57.400><c> we</c><00:03:57.520><c> do</c><00:03:57.720><c> the</c><00:03:57.920><c> FSPS</c>
+
+00:03:58.990 --> 00:03:59.000 align:start position:0%
+And second one is the we do the FSPS
+ 
+
+00:03:59.000 --> 00:04:02.510 align:start position:0%
+And second one is the we do the FSPS
+decoupling.<00:04:00.200><c> Which</c><00:04:00.440><c> is</c><00:04:00.600><c> the</c><00:04:00.960><c> FST</c>
+
+00:04:02.510 --> 00:04:02.520 align:start position:0%
+decoupling. Which is the FST
+ 
+
+00:04:02.520 --> 00:04:05.550 align:start position:0%
+decoupling. Which is the FST
+runs<00:04:03.520><c> independent</c><00:04:04.120><c> of</c><00:04:04.320><c> the</c><00:04:04.640><c> independently</c><00:04:05.200><c> of</c>
+
+00:04:05.550 --> 00:04:05.560 align:start position:0%
+runs independent of the independently of
+ 
+
+00:04:05.560 --> 00:04:08.110 align:start position:0%
+runs independent of the independently of
+FSPM.
+
+00:04:08.110 --> 00:04:08.120 align:start position:0%
+FSPM.
+ 
+
+00:04:08.120 --> 00:04:10.150 align:start position:0%
+FSPM.
+We<00:04:08.320><c> eliminating</c><00:04:09.080><c> also</c><00:04:09.320><c> eliminating</c><00:04:09.880><c> the</c>
+
+00:04:10.150 --> 00:04:10.160 align:start position:0%
+We eliminating also eliminating the
+ 
+
+00:04:10.160 --> 00:04:12.949 align:start position:0%
+We eliminating also eliminating the
+across<00:04:10.520><c> phase</c><00:04:10.840><c> dependencies.</c>
+
+00:04:12.949 --> 00:04:12.959 align:start position:0%
+across phase dependencies.
+ 
+
+00:04:12.959 --> 00:04:16.430 align:start position:0%
+across phase dependencies.
+And<00:04:13.160><c> third</c><00:04:13.320><c> one</c><00:04:13.480><c> is</c><00:04:13.640><c> the</c><00:04:14.280><c> AP</c><00:04:14.560><c> mode</c><00:04:14.760><c> by</c><00:04:14.880><c> default.</c>
+
+00:04:16.430 --> 00:04:16.440 align:start position:0%
+And third one is the AP mode by default.
+ 
+
+00:04:16.440 --> 00:04:18.590 align:start position:0%
+And third one is the AP mode by default.
+We<00:04:16.600><c> standardize</c><00:04:17.160><c> on</c><00:04:17.359><c> API</c><00:04:17.760><c> mode</c><00:04:18.079><c> as</c><00:04:18.280><c> our</c>
+
+00:04:18.590 --> 00:04:18.600 align:start position:0%
+We standardize on API mode as our
+ 
+
+00:04:18.600 --> 00:04:22.350 align:start position:0%
+We standardize on API mode as our
+primary<00:04:19.280><c> native</c><00:04:20.400><c> uh,</c><00:04:20.640><c> execution</c><00:04:21.079><c> flow.</c>
+
+00:04:22.350 --> 00:04:22.360 align:start position:0%
+primary native uh, execution flow.
+ 
+
+00:04:22.360 --> 00:04:24.990 align:start position:0%
+primary native uh, execution flow.
+Uh,<00:04:22.840><c> at</c><00:04:22.919><c> the</c><00:04:23.000><c> same</c><00:04:23.200><c> time</c><00:04:23.680><c> we</c><00:04:23.800><c> still</c><00:04:24.280><c> um,</c><00:04:24.680><c> while</c>
+
+00:04:24.990 --> 00:04:25.000 align:start position:0%
+Uh, at the same time we still um, while
+ 
+
+00:04:25.000 --> 00:04:28.790 align:start position:0%
+Uh, at the same time we still um, while
+we<00:04:25.120><c> still</c><00:04:25.840><c> retaining</c><00:04:26.680><c> uh,</c><00:04:26.720><c> remaining</c><00:04:27.280><c> the</c>
+
+00:04:28.790 --> 00:04:28.800 align:start position:0%
+we still retaining uh, remaining the
+ 
+
+00:04:28.800 --> 00:04:31.070 align:start position:0%
+we still retaining uh, remaining the
+retaining<00:04:29.240><c> the</c><00:04:29.520><c> um,</c>
+
+00:04:31.070 --> 00:04:31.080 align:start position:0%
+retaining the um,
+ 
+
+00:04:31.080 --> 00:04:33.350 align:start position:0%
+retaining the um,
+um,
+
+00:04:33.350 --> 00:04:33.360 align:start position:0%
+um,
+ 
+
+00:04:33.360 --> 00:04:34.150 align:start position:0%
+um,
+the
+
+00:04:34.150 --> 00:04:34.160 align:start position:0%
+the
+ 
+
+00:04:34.160 --> 00:04:36.590 align:start position:0%
+the
+capability<00:04:35.200><c> uh,</c><00:04:35.320><c> to</c><00:04:35.480><c> launch</c><00:04:35.840><c> the</c><00:04:36.200><c> dispatch</c>
+
+00:04:36.590 --> 00:04:36.600 align:start position:0%
+capability uh, to launch the dispatch
+ 
+
+00:04:36.600 --> 00:04:39.110 align:start position:0%
+capability uh, to launch the dispatch
+mode<00:04:37.120><c> opportunity</c><00:04:37.880><c> distically</c>
+
+00:04:39.110 --> 00:04:39.120 align:start position:0%
+mode opportunity distically
+ 
+
+00:04:39.120 --> 00:04:41.230 align:start position:0%
+mode opportunity distically
+when<00:04:39.320><c> needed.</c>
+
+00:04:41.230 --> 00:04:41.240 align:start position:0%
+when needed.
+ 
+
+00:04:41.240 --> 00:04:43.510 align:start position:0%
+when needed.
+So,<00:04:42.200><c> and</c><00:04:42.360><c> also</c>
+
+00:04:43.510 --> 00:04:43.520 align:start position:0%
+So, and also
+ 
+
+00:04:43.520 --> 00:04:45.510 align:start position:0%
+So, and also
+at<00:04:43.640><c> the</c><00:04:43.720><c> same</c><00:04:43.919><c> time</c><00:04:44.160><c> we're</c><00:04:44.320><c> also</c><00:04:44.840><c> um,</c><00:04:45.040><c> actively</c>
+
+00:04:45.510 --> 00:04:45.520 align:start position:0%
+at the same time we're also um, actively
+ 
+
+00:04:45.520 --> 00:04:49.270 align:start position:0%
+at the same time we're also um, actively
+engaging<00:04:46.080><c> with</c><00:04:46.320><c> the</c><00:04:46.560><c> OSPi</c><00:04:47.440><c> definition.</c>
+
+00:04:49.270 --> 00:04:49.280 align:start position:0%
+engaging with the OSPi definition.
+ 
+
+00:04:49.280 --> 00:04:50.870 align:start position:0%
+engaging with the OSPi definition.
+So,<00:04:49.880><c> um,</c>
+
+00:04:50.870 --> 00:04:50.880 align:start position:0%
+So, um,
+ 
+
+00:04:50.880 --> 00:04:53.670 align:start position:0%
+So, um,
+but<00:04:51.160><c> the</c><00:04:51.280><c> most</c><00:04:51.520><c> importantly</c>
+
+00:04:53.670 --> 00:04:53.680 align:start position:0%
+but the most importantly
+ 
+
+00:04:53.680 --> 00:04:55.950 align:start position:0%
+but the most importantly
+uh,<00:04:54.120><c> all</c><00:04:54.360><c> the</c><00:04:54.560><c> FSP</c><00:04:55.040><c> enhancement</c><00:04:55.600><c> I</c><00:04:55.680><c> just</c>
+
+00:04:55.950 --> 00:04:55.960 align:start position:0%
+uh, all the FSP enhancement I just
+ 
+
+00:04:55.960 --> 00:04:57.670 align:start position:0%
+uh, all the FSP enhancement I just
+mentioned
+
+00:04:57.670 --> 00:04:57.680 align:start position:0%
+mentioned
+ 
+
+00:04:57.680 --> 00:05:00.070 align:start position:0%
+mentioned
+didn't<00:04:58.040><c> result</c><00:04:58.480><c> in</c><00:04:58.800><c> changes</c><00:04:59.400><c> to</c><00:04:59.600><c> our</c><00:04:59.800><c> inter</c>
+
+00:05:00.070 --> 00:05:00.080 align:start position:0%
+didn't result in changes to our inter
+ 
+
+00:05:00.080 --> 00:05:02.390 align:start position:0%
+didn't result in changes to our inter
+FSP<00:05:00.480><c> specification.</c>
+
+00:05:02.390 --> 00:05:02.400 align:start position:0%
+FSP specification.
+ 
+
+00:05:02.400 --> 00:05:04.710 align:start position:0%
+FSP specification.
+And<00:05:02.560><c> also</c><00:05:02.960><c> your</c><00:05:03.160><c> boot</c><00:05:03.400><c> loader</c><00:05:03.680><c> code</c>
+
+00:05:04.710 --> 00:05:04.720 align:start position:0%
+And also your boot loader code
+ 
+
+00:05:04.720 --> 00:05:07.670 align:start position:0%
+And also your boot loader code
+required<00:05:05.320><c> no</c><00:05:05.560><c> breaking</c><00:05:06.240><c> rewrites</c><00:05:07.120><c> to</c><00:05:07.360><c> take</c>
+
+00:05:07.670 --> 00:05:07.680 align:start position:0%
+required no breaking rewrites to take
+ 
+
+00:05:07.680 --> 00:05:13.750 align:start position:0%
+required no breaking rewrites to take
+advantage<00:05:08.360><c> of</c><00:05:08.520><c> these</c><00:05:08.880><c> improvements.</c>
+
+00:05:13.750 --> 00:05:13.760 align:start position:0%
+ 
+ 
+
+00:05:13.760 --> 00:05:14.830 align:start position:0%
+ 
+Okay.
+
+00:05:14.830 --> 00:05:14.840 align:start position:0%
+Okay.
+ 
+
+00:05:14.840 --> 00:05:16.750 align:start position:0%
+Okay.
+So,<00:05:15.200><c> let's</c><00:05:15.480><c> understand</c><00:05:16.280><c> how</c><00:05:16.520><c> this</c>
+
+00:05:16.750 --> 00:05:16.760 align:start position:0%
+So, let's understand how this
+ 
+
+00:05:16.760 --> 00:05:20.030 align:start position:0%
+So, let's understand how this
+architecture<00:05:17.360><c> shift</c><00:05:17.840><c> looks.</c>
+
+00:05:20.030 --> 00:05:20.040 align:start position:0%
+architecture shift looks.
+ 
+
+00:05:20.040 --> 00:05:23.350 align:start position:0%
+architecture shift looks.
+Okay.<00:05:20.640><c> So,</c><00:05:21.280><c> uh,</c><00:05:21.480><c> begin</c><00:05:21.760><c> with</c><00:05:21.960><c> the</c><00:05:22.600><c> uh,</c><00:05:23.000><c> in</c><00:05:23.160><c> the</c>
+
+00:05:23.350 --> 00:05:23.360 align:start position:0%
+Okay. So, uh, begin with the uh, in the
+ 
+
+00:05:23.360 --> 00:05:24.350 align:start position:0%
+Okay. So, uh, begin with the uh, in the
+Xeon
+
+00:05:24.350 --> 00:05:24.360 align:start position:0%
+Xeon
+ 
+
+00:05:24.360 --> 00:05:27.310 align:start position:0%
+Xeon
+our<00:05:24.600><c> Xeon</c><00:05:25.000><c> Intel</c><00:05:25.240><c> Xeon</c><00:05:25.520><c> 6</c><00:05:26.160><c> uh,</c><00:05:26.520><c> architecture</c>
+
+00:05:27.310 --> 00:05:27.320 align:start position:0%
+our Xeon Intel Xeon 6 uh, architecture
+ 
+
+00:05:27.320 --> 00:05:29.590 align:start position:0%
+our Xeon Intel Xeon 6 uh, architecture
+shown<00:05:27.600><c> on</c><00:05:27.680><c> the</c><00:05:27.760><c> left.</c>
+
+00:05:29.590 --> 00:05:29.600 align:start position:0%
+shown on the left.
+ 
+
+00:05:29.600 --> 00:05:31.070 align:start position:0%
+shown on the left.
+Uh,
+
+00:05:31.070 --> 00:05:31.080 align:start position:0%
+Uh,
+ 
+
+00:05:31.080 --> 00:05:32.750 align:start position:0%
+Uh,
+let's<00:05:31.320><c> talk</c><00:05:31.480><c> about</c><00:05:31.720><c> AP</c><00:05:31.919><c> mode</c><00:05:32.080><c> first.</c><00:05:32.560><c> In</c><00:05:32.680><c> the</c>
+
+00:05:32.750 --> 00:05:32.760 align:start position:0%
+let's talk about AP mode first. In the
+ 
+
+00:05:32.760 --> 00:05:35.190 align:start position:0%
+let's talk about AP mode first. In the
+API<00:05:33.120><c> mode</c><00:05:33.720><c> when</c><00:05:33.919><c> the</c><00:05:33.960><c> boot</c><00:05:34.200><c> loader</c><00:05:34.440><c> calls</c><00:05:35.000><c> uh,</c>
+
+00:05:35.190 --> 00:05:35.200 align:start position:0%
+API mode when the boot loader calls uh,
+ 
+
+00:05:35.200 --> 00:05:36.590 align:start position:0%
+API mode when the boot loader calls uh,
+FSPM
+
+00:05:36.590 --> 00:05:36.600 align:start position:0%
+FSPM
+ 
+
+00:05:36.600 --> 00:05:39.390 align:start position:0%
+FSPM
+as<00:05:36.720><c> you</c><00:05:36.800><c> can</c><00:05:37.000><c> see,</c><00:05:37.680><c> FSP</c><00:05:38.520><c> uh,</c><00:05:38.680><c> will</c><00:05:38.880><c> use</c><00:05:39.200><c> an</c>
+
+00:05:39.390 --> 00:05:39.400 align:start position:0%
+as you can see, FSP uh, will use an
+ 
+
+00:05:39.400 --> 00:05:41.470 align:start position:0%
+as you can see, FSP uh, will use an
+embedded<00:05:39.880><c> PI</c><00:05:40.160><c> core</c>
+
+00:05:41.470 --> 00:05:41.480 align:start position:0%
+embedded PI core
+ 
+
+00:05:41.480 --> 00:05:44.390 align:start position:0%
+embedded PI core
+uh,<00:05:41.919><c> to</c><00:05:42.240><c> dispatch</c><00:05:42.760><c> PIMs.</c>
+
+00:05:44.390 --> 00:05:44.400 align:start position:0%
+uh, to dispatch PIMs.
+ 
+
+00:05:44.400 --> 00:05:47.630 align:start position:0%
+uh, to dispatch PIMs.
+When<00:05:44.560><c> transition</c><00:05:45.200><c> to</c><00:05:45.440><c> the</c><00:05:45.600><c> FSPS</c>
+
+00:05:47.630 --> 00:05:47.640 align:start position:0%
+When transition to the FSPS
+ 
+
+00:05:47.640 --> 00:05:49.630 align:start position:0%
+When transition to the FSPS
+you<00:05:47.800><c> again</c><00:05:48.080><c> reacts</c><00:05:48.480><c> on</c><00:05:48.640><c> the</c><00:05:48.800><c> PI</c>
+
+00:05:49.630 --> 00:05:49.640 align:start position:0%
+you again reacts on the PI
+ 
+
+00:05:49.640 --> 00:05:51.870 align:start position:0%
+you again reacts on the PI
+infrastructure<00:05:50.280><c> and</c><00:05:50.440><c> services.</c>
+
+00:05:51.870 --> 00:05:51.880 align:start position:0%
+infrastructure and services.
+ 
+
+00:05:51.880 --> 00:05:53.630 align:start position:0%
+infrastructure and services.
+This<00:05:52.000><c> is</c><00:05:52.120><c> our</c><00:05:52.960><c> um</c>
+
+00:05:53.630 --> 00:05:53.640 align:start position:0%
+This is our um
+ 
+
+00:05:53.640 --> 00:05:55.150 align:start position:0%
+This is our um
+original<00:05:54.160><c> model.</c>
+
+00:05:55.150 --> 00:05:55.160 align:start position:0%
+original model.
+ 
+
+00:05:55.160 --> 00:05:56.430 align:start position:0%
+original model.
+And<00:05:55.360><c> the</c><00:05:55.760><c> um</c>
+
+00:05:56.430 --> 00:05:56.440 align:start position:0%
+And the um
+ 
+
+00:05:56.440 --> 00:05:59.230 align:start position:0%
+And the um
+now<00:05:56.680><c> look</c><00:05:56.880><c> at</c><00:05:57.000><c> the</c>
+
+00:05:59.230 --> 00:05:59.240 align:start position:0%
+now look at the
+ 
+
+00:05:59.240 --> 00:06:01.750 align:start position:0%
+now look at the
+uh
+
+00:06:01.750 --> 00:06:01.760 align:start position:0%
+ 
+ 
+
+00:06:01.760 --> 00:06:03.230 align:start position:0%
+ 
+dispatch<00:06:02.160><c> mode.</c>
+
+00:06:03.230 --> 00:06:03.240 align:start position:0%
+dispatch mode.
+ 
+
+00:06:03.240 --> 00:06:05.710 align:start position:0%
+dispatch mode.
+The<00:06:03.320><c> bootloader</c><00:06:04.280><c> um</c>
+
+00:06:05.710 --> 00:06:05.720 align:start position:0%
+The bootloader um
+ 
+
+00:06:05.720 --> 00:06:08.750 align:start position:0%
+The bootloader um
+uh<00:06:05.960><c> the</c><00:06:06.080><c> bootloader's</c><00:06:06.600><c> outer</c><00:06:07.120><c> PI</c><00:06:07.480><c> code</c><00:06:08.480><c> will</c>
+
+00:06:08.750 --> 00:06:08.760 align:start position:0%
+uh the bootloader's outer PI code will
+ 
+
+00:06:08.760 --> 00:06:11.950 align:start position:0%
+uh the bootloader's outer PI code will
+directly<00:06:09.280><c> invoke</c><00:06:09.680><c> the</c><00:06:09.800><c> FSPM</c><00:06:10.720><c> and</c><00:06:11.200><c> FSPS</c>
+
+00:06:11.950 --> 00:06:11.960 align:start position:0%
+directly invoke the FSPM and FSPS
+ 
+
+00:06:11.960 --> 00:06:13.190 align:start position:0%
+directly invoke the FSPM and FSPS
+directly.
+
+00:06:13.190 --> 00:06:13.200 align:start position:0%
+directly.
+ 
+
+00:06:13.200 --> 00:06:14.750 align:start position:0%
+directly.
+Uh
+
+00:06:14.750 --> 00:06:14.760 align:start position:0%
+Uh
+ 
+
+00:06:14.760 --> 00:06:17.390 align:start position:0%
+Uh
+So,<00:06:15.480><c> as</c><00:06:15.640><c> you</c><00:06:15.720><c> can</c><00:06:15.920><c> see,</c><00:06:16.160><c> these</c><00:06:16.400><c> two</c><00:06:16.600><c> different</c>
+
+00:06:17.390 --> 00:06:17.400 align:start position:0%
+So, as you can see, these two different
+ 
+
+00:06:17.400 --> 00:06:19.230 align:start position:0%
+So, as you can see, these two different
+execution<00:06:17.880><c> flow</c>
+
+00:06:19.230 --> 00:06:19.240 align:start position:0%
+execution flow
+ 
+
+00:06:19.240 --> 00:06:21.190 align:start position:0%
+execution flow
+highly<00:06:19.520><c> depending</c><00:06:20.080><c> on</c><00:06:20.440><c> whether</c><00:06:20.720><c> you</c><00:06:20.880><c> choose</c>
+
+00:06:21.190 --> 00:06:21.200 align:start position:0%
+highly depending on whether you choose
+ 
+
+00:06:21.200 --> 00:06:23.710 align:start position:0%
+highly depending on whether you choose
+AP<00:06:21.400><c> mode</c><00:06:21.680><c> or</c><00:06:21.720><c> dispatch</c><00:06:22.080><c> mode.</c>
+
+00:06:23.710 --> 00:06:23.720 align:start position:0%
+AP mode or dispatch mode.
+ 
+
+00:06:23.720 --> 00:06:26.190 align:start position:0%
+AP mode or dispatch mode.
+And<00:06:23.880><c> now</c><00:06:24.200><c> look</c><00:06:24.440><c> at</c><00:06:24.560><c> the</c><00:06:24.760><c> architecture</c><00:06:25.360><c> on</c><00:06:25.600><c> the</c>
+
+00:06:26.190 --> 00:06:26.200 align:start position:0%
+And now look at the architecture on the
+ 
+
+00:06:26.200 --> 00:06:27.870 align:start position:0%
+And now look at the architecture on the
+um<00:06:26.280><c> right-hand</c><00:06:26.640><c> side</c><00:06:27.280><c> for</c><00:06:27.480><c> our</c><00:06:27.640><c> next</c>
+
+00:06:27.870 --> 00:06:27.880 align:start position:0%
+um right-hand side for our next
+ 
+
+00:06:27.880 --> 00:06:30.590 align:start position:0%
+um right-hand side for our next
+generation<00:06:28.440><c> Xeon</c><00:06:28.720><c> platform.</c>
+
+00:06:30.590 --> 00:06:30.600 align:start position:0%
+generation Xeon platform.
+ 
+
+00:06:30.600 --> 00:06:31.670 align:start position:0%
+generation Xeon platform.
+Um
+
+00:06:31.670 --> 00:06:31.680 align:start position:0%
+Um
+ 
+
+00:06:31.680 --> 00:06:34.150 align:start position:0%
+Um
+we<00:06:31.880><c> have</c><00:06:32.240><c> three</c><00:06:32.520><c> major</c><00:06:33.000><c> updates.</c><00:06:33.760><c> So,</c><00:06:34.000><c> the</c>
+
+00:06:34.150 --> 00:06:34.160 align:start position:0%
+we have three major updates. So, the
+ 
+
+00:06:34.160 --> 00:06:37.510 align:start position:0%
+we have three major updates. So, the
+first<00:06:34.400><c> one</c><00:06:34.560><c> is</c><00:06:34.680><c> that</c><00:06:35.280><c> um</c>
+
+00:06:37.510 --> 00:06:37.520 align:start position:0%
+ 
+ 
+
+00:06:37.520 --> 00:06:40.270 align:start position:0%
+ 
+converged<00:06:38.360><c> execution</c><00:06:38.800><c> flow.</c>
+
+00:06:40.270 --> 00:06:40.280 align:start position:0%
+converged execution flow.
+ 
+
+00:06:40.280 --> 00:06:43.790 align:start position:0%
+converged execution flow.
+How<00:06:40.400><c> we're</c><00:06:40.520><c> doing</c><00:06:40.760><c> it</c><00:06:40.919><c> is</c><00:06:41.080><c> that</c><00:06:41.600><c> um</c>
+
+00:06:43.790 --> 00:06:43.800 align:start position:0%
+How we're doing it is that um
+ 
+
+00:06:43.800 --> 00:06:47.909 align:start position:0%
+How we're doing it is that um
+we<00:06:44.160><c> have</c><00:06:44.440><c> unified</c><00:06:45.680><c> uh</c><00:06:45.760><c> the</c><00:06:45.919><c> execution</c><00:06:46.640><c> flow</c>
+
+00:06:47.909 --> 00:06:47.919 align:start position:0%
+we have unified uh the execution flow
+ 
+
+00:06:47.919 --> 00:06:49.710 align:start position:0%
+we have unified uh the execution flow
+uh
+
+00:06:49.710 --> 00:06:49.720 align:start position:0%
+uh
+ 
+
+00:06:49.720 --> 00:06:52.310 align:start position:0%
+uh
+and<00:06:49.960><c> the</c><00:06:50.160><c> um</c>
+
+00:06:52.310 --> 00:06:52.320 align:start position:0%
+and the um
+ 
+
+00:06:52.320 --> 00:06:53.790 align:start position:0%
+and the um
+we<00:06:52.960><c> um</c>
+
+00:06:53.790 --> 00:06:53.800 align:start position:0%
+we um
+ 
+
+00:06:53.800 --> 00:06:56.590 align:start position:0%
+we um
+instead<00:06:54.080><c> of</c><00:06:54.280><c> two</c><00:06:54.600><c> distinct</c><00:06:55.280><c> disjointed</c><00:06:56.240><c> um</c>
+
+00:06:56.590 --> 00:06:56.600 align:start position:0%
+instead of two distinct disjointed um
+ 
+
+00:06:56.600 --> 00:06:57.790 align:start position:0%
+instead of two distinct disjointed um
+code<00:06:56.800><c> flow</c>
+
+00:06:57.790 --> 00:06:57.800 align:start position:0%
+code flow
+ 
+
+00:06:57.800 --> 00:06:59.710 align:start position:0%
+code flow
+the<00:06:57.919><c> AP</c><00:06:58.200><c> mode</c><00:06:58.400><c> and</c><00:06:58.520><c> the</c><00:06:58.640><c> dispatch</c><00:06:59.160><c> mode</c><00:06:59.360><c> share</c>
+
+00:06:59.710 --> 00:06:59.720 align:start position:0%
+the AP mode and the dispatch mode share
+ 
+
+00:06:59.720 --> 00:07:00.909 align:start position:0%
+the AP mode and the dispatch mode share
+the<00:06:59.840><c> same</c>
+
+00:07:00.909 --> 00:07:00.919 align:start position:0%
+the same
+ 
+
+00:07:00.919 --> 00:07:03.350 align:start position:0%
+the same
+silicon<00:07:01.840><c> initialization</c>
+
+00:07:03.350 --> 00:07:03.360 align:start position:0%
+silicon initialization
+ 
+
+00:07:03.360 --> 00:07:05.270 align:start position:0%
+silicon initialization
+logic.
+
+00:07:05.270 --> 00:07:05.280 align:start position:0%
+logic.
+ 
+
+00:07:05.280 --> 00:07:06.670 align:start position:0%
+logic.
+This<00:07:05.440><c> is</c><00:07:05.520><c> the</c><00:07:05.600><c> first</c><00:07:05.840><c> one</c><00:07:06.040><c> and</c><00:07:06.200><c> second</c><00:07:06.440><c> one</c><00:07:06.560><c> is</c>
+
+00:07:06.670 --> 00:07:06.680 align:start position:0%
+This is the first one and second one is
+ 
+
+00:07:06.680 --> 00:07:07.830 align:start position:0%
+This is the first one and second one is
+that<00:07:07.160><c> um</c>
+
+00:07:07.830 --> 00:07:07.840 align:start position:0%
+that um
+ 
+
+00:07:07.840 --> 00:07:09.870 align:start position:0%
+that um
+it's<00:07:08.000><c> the</c><00:07:08.320><c> PI</c><00:07:08.760><c> uh</c>
+
+00:07:09.870 --> 00:07:09.880 align:start position:0%
+it's the PI uh
+ 
+
+00:07:09.880 --> 00:07:13.030 align:start position:0%
+it's the PI uh
+FSPM.
+
+00:07:13.030 --> 00:07:13.040 align:start position:0%
+ 
+ 
+
+00:07:13.040 --> 00:07:15.990 align:start position:0%
+ 
+Um
+
+00:07:15.990 --> 00:07:16.000 align:start position:0%
+ 
+ 
+
+00:07:16.000 --> 00:07:20.550 align:start position:0%
+ 
+uh<00:07:16.400><c> so</c><00:07:17.040><c> we</c><00:07:17.680><c> make</c><00:07:18.000><c> the</c><00:07:18.560><c> uh</c><00:07:18.760><c> FSPM</c><00:07:19.919><c> um</c>
+
+00:07:20.550 --> 00:07:20.560 align:start position:0%
+uh so we make the uh FSPM um
+ 
+
+00:07:20.560 --> 00:07:23.550 align:start position:0%
+uh so we make the uh FSPM um
+we<00:07:20.680><c> do</c><00:07:21.120><c> remove</c><00:07:21.480><c> the</c><00:07:21.640><c> older</c><00:07:21.880><c> dependency</c><00:07:22.720><c> PI</c><00:07:23.280><c> PI</c>
+
+00:07:23.550 --> 00:07:23.560 align:start position:0%
+we do remove the older dependency PI PI
+ 
+
+00:07:23.560 --> 00:07:26.510 align:start position:0%
+we do remove the older dependency PI PI
+code<00:07:23.800><c> dependency</c><00:07:24.320><c> from</c><00:07:24.760><c> FSPM.</c>
+
+00:07:26.510 --> 00:07:26.520 align:start position:0%
+code dependency from FSPM.
+ 
+
+00:07:26.520 --> 00:07:28.150 align:start position:0%
+code dependency from FSPM.
+And<00:07:26.680><c> so</c>
+
+00:07:28.150 --> 00:07:28.160 align:start position:0%
+And so
+ 
+
+00:07:28.160 --> 00:07:31.230 align:start position:0%
+And so
+uh<00:07:28.560><c> and</c><00:07:28.760><c> the</c><00:07:29.200><c> we</c><00:07:29.960><c> have</c><00:07:30.280><c> all</c><00:07:30.440><c> the</c><00:07:30.720><c> silicon</c>
+
+00:07:31.230 --> 00:07:31.240 align:start position:0%
+uh and the we have all the silicon
+ 
+
+00:07:31.240 --> 00:07:32.670 align:start position:0%
+uh and the we have all the silicon
+libraries
+
+00:07:32.670 --> 00:07:32.680 align:start position:0%
+libraries
+ 
+
+00:07:32.680 --> 00:07:34.710 align:start position:0%
+libraries
+silicon<00:07:33.040><c> core</c><00:07:33.160><c> libraries</c><00:07:33.800><c> uh</c><00:07:34.000><c> linked</c><00:07:34.280><c> into</c><00:07:34.640><c> a</c>
+
+00:07:34.710 --> 00:07:34.720 align:start position:0%
+silicon core libraries uh linked into a
+ 
+
+00:07:34.720 --> 00:07:36.350 align:start position:0%
+silicon core libraries uh linked into a
+single<00:07:35.040><c> module.</c>
+
+00:07:36.350 --> 00:07:36.360 align:start position:0%
+single module.
+ 
+
+00:07:36.360 --> 00:07:37.390 align:start position:0%
+single module.
+Okay?
+
+00:07:37.390 --> 00:07:37.400 align:start position:0%
+Okay?
+ 
+
+00:07:37.400 --> 00:07:40.230 align:start position:0%
+Okay?
+So,<00:07:38.000><c> with</c><00:07:38.200><c> this</c>
+
+00:07:40.230 --> 00:07:40.240 align:start position:0%
+So, with this
+ 
+
+00:07:40.240 --> 00:07:41.630 align:start position:0%
+So, with this
+uh
+
+00:07:41.630 --> 00:07:41.640 align:start position:0%
+uh
+ 
+
+00:07:41.640 --> 00:07:44.390 align:start position:0%
+uh
+because<00:07:42.040><c> this</c><00:07:42.200><c> is</c><00:07:42.360><c> a</c><00:07:42.400><c> single</c><00:07:42.720><c> module</c><00:07:43.160><c> it</c><00:07:43.440><c> is</c><00:07:43.640><c> a</c>
+
+00:07:44.390 --> 00:07:44.400 align:start position:0%
+because this is a single module it is a
+ 
+
+00:07:44.400 --> 00:07:47.670 align:start position:0%
+because this is a single module it is a
+code<00:07:44.920><c> code</c><00:07:45.120><c> table</c><00:07:45.400><c> based</c>
+
+00:07:47.670 --> 00:07:47.680 align:start position:0%
+code code table based
+ 
+
+00:07:47.680 --> 00:07:50.230 align:start position:0%
+code code table based
+format.<00:07:48.560><c> So,</c>
+
+00:07:50.230 --> 00:07:50.240 align:start position:0%
+format. So,
+ 
+
+00:07:50.240 --> 00:07:51.230 align:start position:0%
+format. So,
+uh,
+
+00:07:51.230 --> 00:07:51.240 align:start position:0%
+uh,
+ 
+
+00:07:51.240 --> 00:07:52.750 align:start position:0%
+uh,
+so<00:07:51.600><c> it</c><00:07:51.760><c> will</c>
+
+00:07:52.750 --> 00:07:52.760 align:start position:0%
+so it will
+ 
+
+00:07:52.760 --> 00:07:53.990 align:start position:0%
+so it will
+match<00:07:53.080><c> the</c>
+
+00:07:53.990 --> 00:07:54.000 align:start position:0%
+match the
+ 
+
+00:07:54.000 --> 00:07:55.270 align:start position:0%
+match the
+this
+
+00:07:55.270 --> 00:07:55.280 align:start position:0%
+this
+ 
+
+00:07:55.280 --> 00:07:59.870 align:start position:0%
+this
+this<00:07:56.120><c> very</c><00:07:56.320><c> makes</c><00:07:56.560><c> users</c><00:07:57.000><c> to</c><00:07:57.640><c> be</c><00:07:57.920><c> easy</c><00:07:58.280><c> to</c>
+
+00:07:59.870 --> 00:07:59.880 align:start position:0%
+this very makes users to be easy to
+ 
+
+00:07:59.880 --> 00:08:02.590 align:start position:0%
+this very makes users to be easy to
+read<00:08:00.440><c> and</c><00:08:00.760><c> simple</c><00:08:01.040><c> to</c><00:08:01.160><c> debug.</c>
+
+00:08:02.590 --> 00:08:02.600 align:start position:0%
+read and simple to debug.
+ 
+
+00:08:02.600 --> 00:08:04.870 align:start position:0%
+read and simple to debug.
+And<00:08:02.840><c> the</c><00:08:02.920><c> third</c><00:08:03.160><c> one</c><00:08:03.320><c> is</c><00:08:03.440><c> the</c><00:08:04.080><c> um</c>
+
+00:08:04.870 --> 00:08:04.880 align:start position:0%
+And the third one is the um
+ 
+
+00:08:04.880 --> 00:08:07.990 align:start position:0%
+And the third one is the um
+we<00:08:05.120><c> are</c><00:08:05.240><c> separating</c><00:08:05.840><c> FSPM</c><00:08:06.600><c> and</c><00:08:07.040><c> FSCS</c>
+
+00:08:07.990 --> 00:08:08.000 align:start position:0%
+we are separating FSPM and FSCS
+ 
+
+00:08:08.000 --> 00:08:10.230 align:start position:0%
+we are separating FSPM and FSCS
+execution.
+
+00:08:10.230 --> 00:08:10.240 align:start position:0%
+execution.
+ 
+
+00:08:10.240 --> 00:08:14.390 align:start position:0%
+execution.
+Okay.<00:08:11.240><c> Uh,</c><00:08:11.600><c> we</c><00:08:11.720><c> make</c><00:08:11.920><c> the</c><00:08:12.480><c> FSPM</c><00:08:13.040><c> runs</c><00:08:13.400><c> on</c><00:08:13.760><c> NEM</c>
+
+00:08:14.390 --> 00:08:14.400 align:start position:0%
+Okay. Uh, we make the FSPM runs on NEM
+ 
+
+00:08:14.400 --> 00:08:15.630 align:start position:0%
+Okay. Uh, we make the FSPM runs on NEM
+which<00:08:14.600><c> is</c><00:08:14.800><c> a</c>
+
+00:08:15.630 --> 00:08:15.640 align:start position:0%
+which is a
+ 
+
+00:08:15.640 --> 00:08:18.830 align:start position:0%
+which is a
+cache<00:08:15.919><c> as</c><00:08:16.040><c> a</c><00:08:16.120><c> RAM</c><00:08:16.520><c> only</c><00:08:17.240><c> and</c><00:08:17.440><c> the</c><00:08:17.560><c> FSCS</c><00:08:18.440><c> runs</c><00:08:18.720><c> on</c>
+
+00:08:18.830 --> 00:08:18.840 align:start position:0%
+cache as a RAM only and the FSCS runs on
+ 
+
+00:08:18.840 --> 00:08:20.950 align:start position:0%
+cache as a RAM only and the FSCS runs on
+physical<00:08:19.240><c> memory</c><00:08:19.600><c> only.</c>
+
+00:08:20.950 --> 00:08:20.960 align:start position:0%
+physical memory only.
+ 
+
+00:08:20.960 --> 00:08:24.510 align:start position:0%
+physical memory only.
+And<00:08:21.160><c> we</c><00:08:21.360><c> also</c><00:08:21.680><c> move</c><00:08:21.960><c> the</c><00:08:22.640><c> PI</c><00:08:22.960><c> code</c><00:08:23.240><c> from</c><00:08:23.720><c> FSPM</c>
+
+00:08:24.510 --> 00:08:24.520 align:start position:0%
+And we also move the PI code from FSPM
+ 
+
+00:08:24.520 --> 00:08:26.550 align:start position:0%
+And we also move the PI code from FSPM
+to<00:08:24.800><c> FSPS.</c>
+
+00:08:26.550 --> 00:08:26.560 align:start position:0%
+to FSPS.
+ 
+
+00:08:26.560 --> 00:08:27.950 align:start position:0%
+to FSPS.
+With<00:08:26.840><c> this,</c>
+
+00:08:27.950 --> 00:08:27.960 align:start position:0%
+With this,
+ 
+
+00:08:27.960 --> 00:08:31.550 align:start position:0%
+With this,
+um<00:08:28.800><c> we</c><00:08:28.960><c> don't</c><00:08:29.240><c> need</c><00:08:29.520><c> a</c><00:08:29.720><c> complicated</c><00:08:30.440><c> code</c><00:08:30.800><c> to</c>
+
+00:08:31.550 --> 00:08:31.560 align:start position:0%
+um we don't need a complicated code to
+ 
+
+00:08:31.560 --> 00:08:35.190 align:start position:0%
+um we don't need a complicated code to
+fix<00:08:31.840><c> up</c><00:08:32.000><c> the</c><00:08:32.120><c> pointer</c><00:08:32.760><c> from</c><00:08:33.360><c> name</c><00:08:33.680><c> to</c><00:08:34.000><c> memory.</c>
+
+00:08:35.190 --> 00:08:35.200 align:start position:0%
+fix up the pointer from name to memory.
+ 
+
+00:08:35.200 --> 00:08:36.750 align:start position:0%
+fix up the pointer from name to memory.
+And<00:08:35.400><c> also,</c>
+
+00:08:36.750 --> 00:08:36.760 align:start position:0%
+And also,
+ 
+
+00:08:36.760 --> 00:08:39.310 align:start position:0%
+And also,
+there<00:08:37.000><c> will</c><00:08:37.159><c> be</c><00:08:37.320><c> no</c><00:08:38.000><c> function</c><00:08:38.680><c> function</c>
+
+00:08:39.310 --> 00:08:39.320 align:start position:0%
+there will be no function function
+ 
+
+00:08:39.320 --> 00:08:43.709 align:start position:0%
+there will be no function function
+callback<00:08:40.280><c> from</c><00:08:41.000><c> FSCS</c><00:08:42.000><c> to</c><00:08:42.280><c> FSPM.</c>
+
+00:08:43.709 --> 00:08:43.719 align:start position:0%
+callback from FSCS to FSPM.
+ 
+
+00:08:43.719 --> 00:08:46.190 align:start position:0%
+callback from FSCS to FSPM.
+The<00:08:43.960><c> only</c>
+
+00:08:46.190 --> 00:08:46.200 align:start position:0%
+The only
+ 
+
+00:08:46.200 --> 00:08:48.870 align:start position:0%
+The only
+one<00:08:46.520><c> thing</c><00:08:46.760><c> is</c><00:08:46.880><c> that</c><00:08:47.520><c> the</c><00:08:47.680><c> output</c><00:08:47.960><c> data</c><00:08:48.520><c> from</c>
+
+00:08:48.870 --> 00:08:48.880 align:start position:0%
+one thing is that the output data from
+ 
+
+00:08:48.880 --> 00:08:51.829 align:start position:0%
+one thing is that the output data from
+FSPM<00:08:49.560><c> to</c><00:08:49.760><c> FSCS.</c>
+
+00:08:51.829 --> 00:08:51.839 align:start position:0%
+FSPM to FSCS.
+ 
+
+00:08:51.839 --> 00:08:52.630 align:start position:0%
+FSPM to FSCS.
+It's
+
+00:08:52.630 --> 00:08:52.640 align:start position:0%
+It's
+ 
+
+00:08:52.640 --> 00:08:55.070 align:start position:0%
+It's
+those<00:08:52.880><c> are</c><00:08:53.080><c> what</c><00:08:53.240><c> do</c><00:08:53.320><c> we</c><00:08:53.520><c> change</c><00:08:53.880><c> it</c><00:08:54.040><c> in</c>
+
+00:08:55.070 --> 00:08:55.080 align:start position:0%
+those are what do we change it in
+ 
+
+00:08:55.080 --> 00:08:57.829 align:start position:0%
+those are what do we change it in
+our<00:08:55.600><c> next</c><00:08:55.839><c> generation</c><00:08:56.280><c> Xeon</c><00:08:56.480><c> platform.</c><00:08:57.120><c> So,</c>
+
+00:08:57.829 --> 00:08:57.839 align:start position:0%
+our next generation Xeon platform. So,
+ 
+
+00:08:57.839 --> 00:09:01.350 align:start position:0%
+our next generation Xeon platform. So,
+and<00:08:58.120><c> I</c><00:08:58.200><c> will</c><00:08:58.360><c> hand</c><00:08:58.600><c> it</c><00:08:58.680><c> over</c><00:08:58.960><c> to</c><00:08:59.360><c> Mike</c><00:09:00.320><c> to</c><00:09:01.200><c> talk</c>
+
+00:09:01.350 --> 00:09:01.360 align:start position:0%
+and I will hand it over to Mike to talk
+ 
+
+00:09:01.360 --> 00:09:02.590 align:start position:0%
+and I will hand it over to Mike to talk
+about<00:09:01.720><c> the</c>
+
+00:09:02.590 --> 00:09:02.600 align:start position:0%
+about the
+ 
+
+00:09:02.600 --> 00:09:05.310 align:start position:0%
+about the
+the<00:09:03.240><c> architecture</c><00:09:03.720><c> alignment</c><00:09:04.560><c> with</c><00:09:04.800><c> the</c><00:09:05.120><c> Open</c>
+
+00:09:05.310 --> 00:09:05.320 align:start position:0%
+the architecture alignment with the Open
+ 
+
+00:09:05.320 --> 00:09:07.510 align:start position:0%
+the architecture alignment with the Open
+SFI.<00:09:06.240><c> Mike</c><00:09:06.520><c> is</c><00:09:06.680><c> our</c>
+
+00:09:07.510 --> 00:09:07.520 align:start position:0%
+SFI. Mike is our
+ 
+
+00:09:07.520 --> 00:09:08.990 align:start position:0%
+SFI. Mike is our
+Open<00:09:07.760><c> SFI</c>
+
+00:09:08.990 --> 00:09:09.000 align:start position:0%
+Open SFI
+ 
+
+00:09:09.000 --> 00:09:11.150 align:start position:0%
+Open SFI
+Intel<00:09:09.480><c> representative.</c>
+
+00:09:11.150 --> 00:09:11.160 align:start position:0%
+Intel representative.
+ 
+
+00:09:11.160 --> 00:09:12.150 align:start position:0%
+Intel representative.
+So,<00:09:11.440><c> welcome</c><00:09:11.720><c> Mike.</c>
+
+00:09:12.150 --> 00:09:12.160 align:start position:0%
+So, welcome Mike.
+ 
+
+00:09:12.160 --> 00:09:13.230 align:start position:0%
+So, welcome Mike.
+&gt;&gt; All<00:09:12.200><c> right.</c><00:09:12.640><c> Thank</c><00:09:12.839><c> you,</c><00:09:12.880><c> Chad.</c>
+
+00:09:13.230 --> 00:09:13.240 align:start position:0%
+&gt;&gt; All right. Thank you, Chad.
+ 
+
+00:09:13.240 --> 00:09:14.430 align:start position:0%
+&gt;&gt; All right. Thank you, Chad.
+&gt;&gt; Yeah.
+
+00:09:14.430 --> 00:09:14.440 align:start position:0%
+&gt;&gt; Yeah.
+ 
+
+00:09:14.440 --> 00:09:18.310 align:start position:0%
+&gt;&gt; Yeah.
+&gt;&gt; Thank<00:09:14.640><c> you,</c><00:09:14.720><c> Chad.</c>
+
+00:09:18.310 --> 00:09:18.320 align:start position:0%
+ 
+ 
+
+00:09:18.320 --> 00:09:20.070 align:start position:0%
+ 
+So,<00:09:18.600><c> the</c><00:09:18.680><c> first</c><00:09:18.920><c> thing</c><00:09:19.040><c> I</c><00:09:19.080><c> want</c><00:09:19.240><c> to</c><00:09:19.560><c> talk</c><00:09:19.760><c> about</c>
+
+00:09:20.070 --> 00:09:20.080 align:start position:0%
+So, the first thing I want to talk about
+ 
+
+00:09:20.080 --> 00:09:21.750 align:start position:0%
+So, the first thing I want to talk about
+is<00:09:20.240><c> that,</c><00:09:20.480><c> you</c><00:09:20.560><c> know,</c><00:09:20.640><c> we've</c><00:09:20.760><c> done</c><00:09:20.960><c> this</c>
+
+00:09:21.750 --> 00:09:21.760 align:start position:0%
+is that, you know, we've done this
+ 
+
+00:09:21.760 --> 00:09:23.670 align:start position:0%
+is that, you know, we've done this
+interesting<00:09:22.839><c> different</c><00:09:23.080><c> changes</c><00:09:23.440><c> to</c><00:09:23.560><c> our</c>
+
+00:09:23.670 --> 00:09:23.680 align:start position:0%
+interesting different changes to our
+ 
+
+00:09:23.680 --> 00:09:25.829 align:start position:0%
+interesting different changes to our
+implementation<00:09:24.360><c> of</c><00:09:24.480><c> FSP</c>
+
+00:09:25.829 --> 00:09:25.839 align:start position:0%
+implementation of FSP
+ 
+
+00:09:25.839 --> 00:09:28.150 align:start position:0%
+implementation of FSP
+that<00:09:26.080><c> have</c><00:09:26.320><c> a</c><00:09:26.360><c> number</c><00:09:26.640><c> of</c><00:09:26.760><c> advantages.</c><00:09:27.960><c> Some</c>
+
+00:09:28.150 --> 00:09:28.160 align:start position:0%
+that have a number of advantages. Some
+ 
+
+00:09:28.160 --> 00:09:29.550 align:start position:0%
+that have a number of advantages. Some
+of<00:09:28.240><c> them</c><00:09:28.440><c> are</c>
+
+00:09:29.550 --> 00:09:29.560 align:start position:0%
+of them are
+ 
+
+00:09:29.560 --> 00:09:31.390 align:start position:0%
+of them are
+you<00:09:29.680><c> know,</c><00:09:29.800><c> some</c><00:09:30.000><c> reduced</c><00:09:30.400><c> use</c><00:09:30.640><c> of</c><00:09:30.960><c> temporary</c>
+
+00:09:31.390 --> 00:09:31.400 align:start position:0%
+you know, some reduced use of temporary
+ 
+
+00:09:31.400 --> 00:09:33.150 align:start position:0%
+you know, some reduced use of temporary
+RAM<00:09:31.800><c> and</c><00:09:31.920><c> things</c><00:09:32.120><c> like</c><00:09:32.320><c> that</c><00:09:32.520><c> that</c><00:09:32.720><c> make</c><00:09:32.880><c> it</c><00:09:33.000><c> so</c>
+
+00:09:33.150 --> 00:09:33.160 align:start position:0%
+RAM and things like that that make it so
+ 
+
+00:09:33.160 --> 00:09:34.190 align:start position:0%
+RAM and things like that that make it so
+it's
+
+00:09:34.190 --> 00:09:34.200 align:start position:0%
+it's
+ 
+
+00:09:34.200 --> 00:09:35.829 align:start position:0%
+it's
+easier.<00:09:34.440><c> But</c><00:09:34.640><c> the</c><00:09:35.040><c> one</c><00:09:35.160><c> of</c><00:09:35.240><c> the</c><00:09:35.320><c> things</c><00:09:35.560><c> that's</c>
+
+00:09:35.829 --> 00:09:35.839 align:start position:0%
+easier. But the one of the things that's
+ 
+
+00:09:35.839 --> 00:09:37.630 align:start position:0%
+easier. But the one of the things that's
+one<00:09:35.960><c> of</c><00:09:36.040><c> the</c><00:09:36.120><c> principles</c><00:09:36.720><c> from</c><00:09:36.880><c> the</c><00:09:37.000><c> Open</c><00:09:37.240><c> SFI</c>
+
+00:09:37.630 --> 00:09:37.640 align:start position:0%
+one of the principles from the Open SFI
+ 
+
+00:09:37.640 --> 00:09:39.550 align:start position:0%
+one of the principles from the Open SFI
+spec<00:09:38.000><c> is</c><00:09:38.080><c> about</c><00:09:38.400><c> the</c><00:09:38.520><c> stateless</c><00:09:39.000><c> execution</c>
+
+00:09:39.550 --> 00:09:39.560 align:start position:0%
+spec is about the stateless execution
+ 
+
+00:09:39.560 --> 00:09:41.710 align:start position:0%
+spec is about the stateless execution
+model.<00:09:40.360><c> And</c><00:09:40.640><c> really</c><00:09:40.920><c> some</c><00:09:41.120><c> of</c><00:09:41.200><c> these</c><00:09:41.400><c> changes</c>
+
+00:09:41.710 --> 00:09:41.720 align:start position:0%
+model. And really some of these changes
+ 
+
+00:09:41.720 --> 00:09:44.150 align:start position:0%
+model. And really some of these changes
+we've<00:09:41.920><c> made</c><00:09:42.200><c> to</c><00:09:42.320><c> our</c><00:09:42.480><c> FSP</c><00:09:43.000><c> implementation</c>
+
+00:09:44.150 --> 00:09:44.160 align:start position:0%
+we've made to our FSP implementation
+ 
+
+00:09:44.160 --> 00:09:45.870 align:start position:0%
+we've made to our FSP implementation
+align<00:09:44.640><c> very</c><00:09:44.840><c> closely</c><00:09:45.240><c> now</c><00:09:45.480><c> with</c><00:09:45.640><c> that</c>
+
+00:09:45.870 --> 00:09:45.880 align:start position:0%
+align very closely now with that
+ 
+
+00:09:45.880 --> 00:09:47.430 align:start position:0%
+align very closely now with that
+stateless<00:09:46.240><c> execution</c><00:09:46.800><c> model</c><00:09:47.080><c> because</c>
+
+00:09:47.430 --> 00:09:47.440 align:start position:0%
+stateless execution model because
+ 
+
+00:09:47.440 --> 00:09:50.550 align:start position:0%
+stateless execution model because
+previously<00:09:48.720><c> when</c><00:09:48.920><c> we</c><00:09:49.040><c> had</c><00:09:49.360><c> the</c><00:09:49.480><c> PEI</c><00:09:49.960><c> core</c><00:09:50.400><c> and</c>
+
+00:09:50.550 --> 00:09:50.560 align:start position:0%
+previously when we had the PEI core and
+ 
+
+00:09:50.560 --> 00:09:54.550 align:start position:0%
+previously when we had the PEI core and
+FSPM<00:09:51.680><c> and</c><00:09:51.840><c> then</c><00:09:52.000><c> we</c><00:09:52.160><c> had</c><00:09:53.080><c> PIMs</c><00:09:53.600><c> in</c><00:09:53.720><c> both</c><00:09:53.960><c> FSPM</c>
+
+00:09:54.550 --> 00:09:54.560 align:start position:0%
+FSPM and then we had PIMs in both FSPM
+ 
+
+00:09:54.560 --> 00:09:56.550 align:start position:0%
+FSPM and then we had PIMs in both FSPM
+and<00:09:54.680><c> FSPS,</c><00:09:55.280><c> there</c><00:09:55.400><c> was</c><00:09:55.520><c> shared</c><00:09:55.840><c> state</c><00:09:56.240><c> between</c>
+
+00:09:56.550 --> 00:09:56.560 align:start position:0%
+and FSPS, there was shared state between
+ 
+
+00:09:56.560 --> 00:09:58.630 align:start position:0%
+and FSPS, there was shared state between
+those<00:09:56.760><c> execution</c><00:09:57.360><c> environments.</c>
+
+00:09:58.630 --> 00:09:58.640 align:start position:0%
+those execution environments.
+ 
+
+00:09:58.640 --> 00:10:01.390 align:start position:0%
+those execution environments.
+Just<00:09:58.960><c> for</c><00:09:59.080><c> like</c><00:09:59.240><c> the</c><00:09:59.360><c> PEI</c><00:09:59.760><c> core</c><00:10:00.080><c> things</c><00:10:00.440><c> like</c>
+
+00:10:01.390 --> 00:10:01.400 align:start position:0%
+Just for like the PEI core things like
+ 
+
+00:10:01.400 --> 00:10:03.590 align:start position:0%
+Just for like the PEI core things like
+the<00:10:01.560><c> dispatcher,</c><00:10:02.240><c> the</c><00:10:02.400><c> FVs,</c><00:10:03.120><c> the</c>
+
+00:10:03.590 --> 00:10:03.600 align:start position:0%
+the dispatcher, the FVs, the
+ 
+
+00:10:03.600 --> 00:10:06.590 align:start position:0%
+the dispatcher, the FVs, the
+notifications<00:10:04.960><c> and</c><00:10:05.160><c> and</c><00:10:05.280><c> things</c><00:10:05.520><c> like</c><00:10:05.760><c> that.</c>
+
+00:10:06.590 --> 00:10:06.600 align:start position:0%
+notifications and and things like that.
+ 
+
+00:10:06.600 --> 00:10:10.510 align:start position:0%
+notifications and and things like that.
+With<00:10:07.360><c> changing</c><00:10:07.760><c> FSPM</c><00:10:08.440><c> to</c><00:10:08.560><c> be</c><00:10:09.400><c> not</c><00:10:10.160><c> dependent</c>
+
+00:10:10.510 --> 00:10:10.520 align:start position:0%
+With changing FSPM to be not dependent
+ 
+
+00:10:10.520 --> 00:10:13.150 align:start position:0%
+With changing FSPM to be not dependent
+upon<00:10:10.760><c> PEI</c><00:10:11.280><c> at</c><00:10:11.440><c> all</c><00:10:11.880><c> and</c><00:10:12.040><c> it</c><00:10:12.120><c> just</c><00:10:12.360><c> being</c><00:10:12.640><c> a</c><00:10:12.760><c> pure</c>
+
+00:10:13.150 --> 00:10:13.160 align:start position:0%
+upon PEI at all and it just being a pure
+ 
+
+00:10:13.160 --> 00:10:15.590 align:start position:0%
+upon PEI at all and it just being a pure
+let's<00:10:13.400><c> go</c><00:10:13.560><c> turn</c><00:10:13.800><c> on</c><00:10:13.960><c> memory</c><00:10:14.320><c> in</c><00:10:14.400><c> the</c><00:10:14.520><c> platform</c>
+
+00:10:15.590 --> 00:10:15.600 align:start position:0%
+let's go turn on memory in the platform
+ 
+
+00:10:15.600 --> 00:10:19.190 align:start position:0%
+let's go turn on memory in the platform
+without<00:10:16.800><c> the</c><00:10:17.600><c> PEI</c><00:10:18.000><c> core</c><00:10:18.200><c> dependency,</c><00:10:19.080><c> we're</c>
+
+00:10:19.190 --> 00:10:19.200 align:start position:0%
+without the PEI core dependency, we're
+ 
+
+00:10:19.200 --> 00:10:20.990 align:start position:0%
+without the PEI core dependency, we're
+now<00:10:19.440><c> very</c><00:10:19.880><c> very</c><00:10:20.120><c> clean</c><00:10:20.440><c> in</c><00:10:20.520><c> that</c><00:10:20.800><c> that</c>
+
+00:10:20.990 --> 00:10:21.000 align:start position:0%
+now very very clean in that that
+ 
+
+00:10:21.000 --> 00:10:23.190 align:start position:0%
+now very very clean in that that
+respect.<00:10:22.160><c> So</c><00:10:22.360><c> this</c><00:10:22.600><c> idea</c><00:10:22.880><c> of</c><00:10:22.960><c> being</c>
+
+00:10:23.190 --> 00:10:23.200 align:start position:0%
+respect. So this idea of being
+ 
+
+00:10:23.200 --> 00:10:25.190 align:start position:0%
+respect. So this idea of being
+stateless,<00:10:24.160><c> what</c><00:10:24.280><c> that</c><00:10:24.480><c> means</c><00:10:24.760><c> is</c><00:10:24.840><c> that</c><00:10:25.080><c> the</c>
+
+00:10:25.190 --> 00:10:25.200 align:start position:0%
+stateless, what that means is that the
+ 
+
+00:10:25.200 --> 00:10:27.510 align:start position:0%
+stateless, what that means is that the
+host<00:10:25.480><c> firmware</c><00:10:25.760><c> is</c><00:10:25.840><c> responsible</c><00:10:26.440><c> for</c><00:10:26.920><c> all</c>
+
+00:10:27.510 --> 00:10:27.520 align:start position:0%
+host firmware is responsible for all
+ 
+
+00:10:27.520 --> 00:10:29.310 align:start position:0%
+host firmware is responsible for all
+resource<00:10:28.000><c> management</c><00:10:28.560><c> and</c><00:10:28.680><c> that</c><00:10:28.800><c> includes</c>
+
+00:10:29.310 --> 00:10:29.320 align:start position:0%
+resource management and that includes
+ 
+
+00:10:29.320 --> 00:10:30.830 align:start position:0%
+resource management and that includes
+all<00:10:29.560><c> allocation</c><00:10:30.080><c> of</c><00:10:30.200><c> all</c><00:10:30.320><c> memory</c><00:10:30.720><c> and</c>
+
+00:10:30.830 --> 00:10:30.840 align:start position:0%
+all allocation of all memory and
+ 
+
+00:10:30.840 --> 00:10:34.150 align:start position:0%
+all allocation of all memory and
+buffers.<00:10:31.680><c> So</c><00:10:31.880><c> when</c><00:10:32.080><c> we</c><00:10:32.200><c> make</c><00:10:32.680><c> Open</c><00:10:32.920><c> SFI</c><00:10:33.440><c> calls,</c>
+
+00:10:34.150 --> 00:10:34.160 align:start position:0%
+buffers. So when we make Open SFI calls,
+ 
+
+00:10:34.160 --> 00:10:35.510 align:start position:0%
+buffers. So when we make Open SFI calls,
+it's<00:10:34.360><c> responsible</c><00:10:34.920><c> for</c><00:10:35.040><c> allocating</c><00:10:35.480><c> the</c>
+
+00:10:35.510 --> 00:10:35.520 align:start position:0%
+it's responsible for allocating the
+ 
+
+00:10:35.520 --> 00:10:37.270 align:start position:0%
+it's responsible for allocating the
+buffers<00:10:35.960><c> for</c><00:10:36.120><c> the</c><00:10:36.240><c> buffers</c><00:10:36.600><c> passed</c><00:10:36.960><c> in</c><00:10:37.160><c> and</c>
+
+00:10:37.270 --> 00:10:37.280 align:start position:0%
+buffers for the buffers passed in and
+ 
+
+00:10:37.280 --> 00:10:39.110 align:start position:0%
+buffers for the buffers passed in and
+for<00:10:37.400><c> the</c><00:10:37.480><c> buffers</c><00:10:37.840><c> passed</c><00:10:38.200><c> out</c><00:10:38.760><c> and</c><00:10:39.000><c> and</c>
+
+00:10:39.110 --> 00:10:39.120 align:start position:0%
+for the buffers passed out and and
+ 
+
+00:10:39.120 --> 00:10:41.110 align:start position:0%
+for the buffers passed out and and
+managing<00:10:39.560><c> those.</c><00:10:40.200><c> These</c><00:10:40.400><c> changes</c><00:10:40.720><c> we've</c><00:10:40.880><c> made</c>
+
+00:10:41.110 --> 00:10:41.120 align:start position:0%
+managing those. These changes we've made
+ 
+
+00:10:41.120 --> 00:10:43.270 align:start position:0%
+managing those. These changes we've made
+to<00:10:41.200><c> the</c><00:10:41.320><c> FSP</c><00:10:41.880><c> very</c><00:10:42.080><c> closely</c><00:10:42.480><c> align</c><00:10:42.800><c> with</c><00:10:43.000><c> those</c>
+
+00:10:43.270 --> 00:10:43.280 align:start position:0%
+to the FSP very closely align with those
+ 
+
+00:10:43.280 --> 00:10:45.270 align:start position:0%
+to the FSP very closely align with those
+requirements<00:10:43.960><c> and</c><00:10:44.120><c> that</c><00:10:44.320><c> principle</c><00:10:44.760><c> from</c><00:10:45.040><c> the</c>
+
+00:10:45.270 --> 00:10:45.280 align:start position:0%
+requirements and that principle from the
+ 
+
+00:10:45.280 --> 00:10:48.310 align:start position:0%
+requirements and that principle from the
+the<00:10:45.400><c> Open</c><00:10:45.640><c> SFI</c><00:10:46.040><c> spec.</c>
+
+00:10:48.310 --> 00:10:48.320 align:start position:0%
+the Open SFI spec.
+ 
+
+00:10:48.320 --> 00:10:51.430 align:start position:0%
+the Open SFI spec.
+And<00:10:48.480><c> if</c><00:10:48.560><c> we</c><00:10:48.640><c> look</c><00:10:48.880><c> at</c><00:10:49.080><c> the</c><00:10:49.560><c> the</c><00:10:49.680><c> next</c><00:10:50.560><c> picture</c>
+
+00:10:51.430 --> 00:10:51.440 align:start position:0%
+And if we look at the the next picture
+ 
+
+00:10:51.440 --> 00:10:53.590 align:start position:0%
+And if we look at the the next picture
+here,<00:10:52.080><c> this</c><00:10:52.280><c> one</c><00:10:52.440><c> shows</c><00:10:52.760><c> on</c><00:10:52.920><c> the</c><00:10:53.040><c> left</c><00:10:53.520><c> the</c>
+
+00:10:53.590 --> 00:10:53.600 align:start position:0%
+here, this one shows on the left the
+ 
+
+00:10:53.600 --> 00:10:55.910 align:start position:0%
+here, this one shows on the left the
+previous<00:10:54.160><c> FSP</c><00:10:54.680><c> design</c><00:10:55.480><c> where</c><00:10:55.600><c> it</c><00:10:55.720><c> goes</c>
+
+00:10:55.910 --> 00:10:55.920 align:start position:0%
+previous FSP design where it goes
+ 
+
+00:10:55.920 --> 00:10:59.110 align:start position:0%
+previous FSP design where it goes
+through<00:10:56.160><c> a</c><00:10:56.560><c> sequence</c><00:10:57.080><c> of</c><00:10:57.320><c> of</c><00:10:57.480><c> calls</c><00:10:57.960><c> with</c><00:10:58.160><c> FSPT</c>
+
+00:10:59.110 --> 00:10:59.120 align:start position:0%
+through a sequence of of calls with FSPT
+ 
+
+00:10:59.120 --> 00:11:02.750 align:start position:0%
+through a sequence of of calls with FSPT
+to<00:10:59.280><c> turn</c><00:10:59.520><c> on</c><00:11:00.200><c> temporary</c><00:11:00.640><c> memory</c><00:11:01.120><c> and</c><00:11:01.280><c> FSPM</c><00:11:02.600><c> and</c>
+
+00:11:02.750 --> 00:11:02.760 align:start position:0%
+to turn on temporary memory and FSPM and
+ 
+
+00:11:02.760 --> 00:11:04.310 align:start position:0%
+to turn on temporary memory and FSPM and
+goes<00:11:03.040><c> through</c><00:11:03.200><c> that</c><00:11:03.440><c> that</c><00:11:03.600><c> sequence</c><00:11:03.920><c> of</c><00:11:04.000><c> calls</c>
+
+00:11:04.310 --> 00:11:04.320 align:start position:0%
+goes through that that sequence of calls
+ 
+
+00:11:04.320 --> 00:11:06.070 align:start position:0%
+goes through that that sequence of calls
+with<00:11:04.520><c> the</c><00:11:04.920><c> the</c><00:11:05.000><c> middle</c><00:11:05.440><c> there</c><00:11:05.760><c> with</c><00:11:05.960><c> the</c>
+
+00:11:06.070 --> 00:11:06.080 align:start position:0%
+with the the middle there with the
+ 
+
+00:11:06.080 --> 00:11:07.750 align:start position:0%
+with the the middle there with the
+yellow<00:11:06.360><c> and</c><00:11:06.440><c> the</c><00:11:06.520><c> green</c><00:11:06.760><c> is</c><00:11:06.920><c> the</c><00:11:07.320><c> represents</c>
+
+00:11:07.750 --> 00:11:07.760 align:start position:0%
+yellow and the green is the represents
+ 
+
+00:11:07.760 --> 00:11:09.510 align:start position:0%
+yellow and the green is the represents
+the<00:11:07.839><c> host</c><00:11:08.160><c> firmware</c><00:11:09.000><c> as</c><00:11:09.160><c> it</c><00:11:09.240><c> goes</c><00:11:09.400><c> through</c>
+
+00:11:09.510 --> 00:11:09.520 align:start position:0%
+the host firmware as it goes through
+ 
+
+00:11:09.520 --> 00:11:11.670 align:start position:0%
+the host firmware as it goes through
+that<00:11:09.680><c> sequence</c><00:11:10.000><c> of</c><00:11:10.120><c> calls.</c><00:11:11.000><c> And</c><00:11:11.480><c> that</c>
+
+00:11:11.670 --> 00:11:11.680 align:start position:0%
+that sequence of calls. And that
+ 
+
+00:11:11.680 --> 00:11:13.910 align:start position:0%
+that sequence of calls. And that
+sequence<00:11:11.960><c> of</c><00:11:12.080><c> calls</c><00:11:12.480><c> is,</c><00:11:13.080><c> you</c><00:11:13.200><c> know,</c><00:11:13.360><c> invoking</c>
+
+00:11:13.910 --> 00:11:13.920 align:start position:0%
+sequence of calls is, you know, invoking
+ 
+
+00:11:13.920 --> 00:11:16.230 align:start position:0%
+sequence of calls is, you know, invoking
+the<00:11:14.200><c> services</c><00:11:14.880><c> that</c><00:11:15.080><c> are</c><00:11:15.200><c> produced</c><00:11:15.680><c> by</c><00:11:15.920><c> the</c>
+
+00:11:16.230 --> 00:11:16.240 align:start position:0%
+the services that are produced by the
+ 
+
+00:11:16.240 --> 00:11:19.190 align:start position:0%
+the services that are produced by the
+combination<00:11:16.839><c> of</c><00:11:16.960><c> FSPM</c><00:11:17.800><c> and</c><00:11:17.960><c> T</c><00:11:18.280><c> with</c><00:11:18.520><c> the</c>
+
+00:11:19.190 --> 00:11:19.200 align:start position:0%
+combination of FSPM and T with the
+ 
+
+00:11:19.200 --> 00:11:21.510 align:start position:0%
+combination of FSPM and T with the
+shared<00:11:19.560><c> PEI</c><00:11:20.000><c> core.</c><00:11:20.960><c> If</c><00:11:21.120><c> we</c><00:11:21.200><c> look</c><00:11:21.360><c> at</c><00:11:21.440><c> the</c>
+
+00:11:21.510 --> 00:11:21.520 align:start position:0%
+shared PEI core. If we look at the
+ 
+
+00:11:21.520 --> 00:11:23.750 align:start position:0%
+shared PEI core. If we look at the
+picture<00:11:21.880><c> on</c><00:11:22.000><c> the</c><00:11:22.120><c> right,</c><00:11:23.000><c> this</c><00:11:23.200><c> once</c><00:11:23.400><c> again</c>
+
+00:11:23.750 --> 00:11:23.760 align:start position:0%
+picture on the right, this once again
+ 
+
+00:11:23.760 --> 00:11:24.950 align:start position:0%
+picture on the right, this once again
+more<00:11:23.960><c> closely</c><00:11:24.320><c> aligns</c><00:11:24.640><c> with</c><00:11:24.800><c> what's</c>
+
+00:11:24.950 --> 00:11:24.960 align:start position:0%
+more closely aligns with what's
+ 
+
+00:11:24.960 --> 00:11:27.350 align:start position:0%
+more closely aligns with what's
+happening<00:11:25.280><c> in</c><00:11:25.400><c> Open</c><00:11:25.640><c> SFI</c><00:11:26.320><c> where</c>
+
+00:11:27.350 --> 00:11:27.360 align:start position:0%
+happening in Open SFI where
+ 
+
+00:11:27.360 --> 00:11:29.270 align:start position:0%
+happening in Open SFI where
+the<00:11:27.520><c> yellow</c><00:11:27.880><c> area</c><00:11:28.320><c> there</c><00:11:28.600><c> where</c><00:11:28.760><c> it</c><00:11:28.839><c> invokes</c>
+
+00:11:29.270 --> 00:11:29.280 align:start position:0%
+the yellow area there where it invokes
+ 
+
+00:11:29.280 --> 00:11:31.990 align:start position:0%
+the yellow area there where it invokes
+FSPT<00:11:30.080><c> for</c><00:11:30.240><c> temporary</c><00:11:30.640><c> AM</c><00:11:30.760><c> and</c><00:11:30.839><c> FSPM</c><00:11:31.640><c> to</c><00:11:31.760><c> turn</c>
+
+00:11:31.990 --> 00:11:32.000 align:start position:0%
+FSPT for temporary AM and FSPM to turn
+ 
+
+00:11:32.000 --> 00:11:34.150 align:start position:0%
+FSPT for temporary AM and FSPM to turn
+on<00:11:32.240><c> memory.</c><00:11:33.080><c> That</c><00:11:33.240><c> aligns</c><00:11:33.680><c> with</c><00:11:33.800><c> the</c><00:11:33.920><c> PEP</c>
+
+00:11:34.150 --> 00:11:34.160 align:start position:0%
+on memory. That aligns with the PEP
+ 
+
+00:11:34.160 --> 00:11:35.790 align:start position:0%
+on memory. That aligns with the PEP
+stage<00:11:34.520><c> inside</c><00:11:34.840><c> of</c><00:11:34.920><c> the</c><00:11:35.040><c> open</c><00:11:35.280><c> SFI</c>
+
+00:11:35.790 --> 00:11:35.800 align:start position:0%
+stage inside of the open SFI
+ 
+
+00:11:35.800 --> 00:11:37.990 align:start position:0%
+stage inside of the open SFI
+specification.<00:11:37.080><c> And</c><00:11:37.200><c> then</c><00:11:37.320><c> if</c><00:11:37.440><c> you</c><00:11:37.560><c> look</c><00:11:37.760><c> down</c>
+
+00:11:37.990 --> 00:11:38.000 align:start position:0%
+specification. And then if you look down
+ 
+
+00:11:38.000 --> 00:11:40.190 align:start position:0%
+specification. And then if you look down
+below<00:11:38.480><c> where</c><00:11:38.640><c> it</c><00:11:38.760><c> starts</c><00:11:39.080><c> invoking</c><00:11:39.600><c> the</c>
+
+00:11:40.190 --> 00:11:40.200 align:start position:0%
+below where it starts invoking the
+ 
+
+00:11:40.200 --> 00:11:42.910 align:start position:0%
+below where it starts invoking the
+initialize<00:11:40.760><c> silicon</c><00:11:41.120><c> calls</c><00:11:41.560><c> for</c>
+
+00:11:42.910 --> 00:11:42.920 align:start position:0%
+initialize silicon calls for
+ 
+
+00:11:42.920 --> 00:11:44.950 align:start position:0%
+initialize silicon calls for
+the<00:11:43.040><c> FSP</c><00:11:43.880><c> initialize</c><00:11:44.200><c> silicon</c><00:11:44.480><c> calls</c><00:11:44.760><c> into</c>
+
+00:11:44.950 --> 00:11:44.960 align:start position:0%
+the FSP initialize silicon calls into
+ 
+
+00:11:44.960 --> 00:11:47.150 align:start position:0%
+the FSP initialize silicon calls into
+FSPS,<00:11:46.000><c> that's</c><00:11:46.280><c> where</c><00:11:46.400><c> it's</c><00:11:46.520><c> completing</c><00:11:47.080><c> the</c>
+
+00:11:47.150 --> 00:11:47.160 align:start position:0%
+FSPS, that's where it's completing the
+ 
+
+00:11:47.160 --> 00:11:50.430 align:start position:0%
+FSPS, that's where it's completing the
+rest<00:11:47.520><c> of</c><00:11:47.720><c> the</c><00:11:48.200><c> SOC</c><00:11:48.640><c> initialization</c><00:11:49.440><c> sequence</c>
+
+00:11:50.430 --> 00:11:50.440 align:start position:0%
+rest of the SOC initialization sequence
+ 
+
+00:11:50.440 --> 00:11:52.950 align:start position:0%
+rest of the SOC initialization sequence
+through<00:11:50.680><c> the</c><00:11:50.800><c> FSP</c><00:11:51.280><c> service</c><00:11:51.640><c> calls.</c><00:11:52.520><c> And</c><00:11:52.720><c> so</c>
+
+00:11:52.950 --> 00:11:52.960 align:start position:0%
+through the FSP service calls. And so
+ 
+
+00:11:52.960 --> 00:11:55.070 align:start position:0%
+through the FSP service calls. And so
+that's<00:11:53.320><c> a</c><00:11:53.840><c> you</c><00:11:53.960><c> know,</c><00:11:54.120><c> shows</c><00:11:54.400><c> that</c><00:11:54.640><c> that</c><00:11:54.880><c> in</c>
+
+00:11:55.070 --> 00:11:55.080 align:start position:0%
+that's a you know, shows that that in
+ 
+
+00:11:55.080 --> 00:11:57.230 align:start position:0%
+that's a you know, shows that that in
+API<00:11:55.520><c> mode</c><00:11:55.840><c> that's</c><00:11:56.080><c> there.</c><00:11:56.800><c> And</c><00:11:56.880><c> this</c><00:11:57.040><c> is</c><00:11:57.160><c> one</c>
+
+00:11:57.230 --> 00:11:57.240 align:start position:0%
+API mode that's there. And this is one
+ 
+
+00:11:57.240 --> 00:11:59.390 align:start position:0%
+API mode that's there. And this is one
+of<00:11:57.320><c> the</c><00:11:57.400><c> reasons</c><00:11:57.680><c> we're</c><00:11:57.840><c> moving</c><00:11:58.240><c> to</c><00:11:58.680><c> a</c><00:11:59.320><c> you</c>
+
+00:11:59.390 --> 00:11:59.400 align:start position:0%
+of the reasons we're moving to a you
+ 
+
+00:11:59.400 --> 00:12:01.750 align:start position:0%
+of the reasons we're moving to a you
+know,<00:12:00.000><c> API</c><00:12:00.200><c> mode</c><00:12:00.520><c> first</c><00:12:00.880><c> cuz</c><00:12:01.080><c> once</c><00:12:01.320><c> again</c><00:12:01.640><c> to</c>
+
+00:12:01.750 --> 00:12:01.760 align:start position:0%
+know, API mode first cuz once again to
+ 
+
+00:12:01.760 --> 00:12:04.110 align:start position:0%
+know, API mode first cuz once again to
+align<00:12:02.120><c> with</c><00:12:02.280><c> open</c><00:12:02.560><c> SFI,</c>
+
+00:12:04.110 --> 00:12:04.120 align:start position:0%
+align with open SFI,
+ 
+
+00:12:04.120 --> 00:12:06.310 align:start position:0%
+align with open SFI,
+one<00:12:04.360><c> of</c><00:12:04.440><c> the</c><00:12:05.240><c> items</c><00:12:05.560><c> that's</c><00:12:05.800><c> mentioned</c><00:12:06.120><c> in</c><00:12:06.200><c> the</c>
+
+00:12:06.310 --> 00:12:06.320 align:start position:0%
+one of the items that's mentioned in the
+ 
+
+00:12:06.320 --> 00:12:08.510 align:start position:0%
+one of the items that's mentioned in the
+open<00:12:06.480><c> SFI</c><00:12:06.920><c> spec</c><00:12:07.240><c> is</c><00:12:07.360><c> the</c><00:12:07.440><c> concept</c><00:12:08.000><c> of</c><00:12:08.120><c> a</c><00:12:08.160><c> valve</c>
+
+00:12:08.510 --> 00:12:08.520 align:start position:0%
+open SFI spec is the concept of a valve
+ 
+
+00:12:08.520 --> 00:12:11.430 align:start position:0%
+open SFI spec is the concept of a valve
+layer,<00:12:09.120><c> a</c><00:12:09.560><c> vendor</c><00:12:09.880><c> abstraction</c><00:12:10.520><c> layer.</c><00:12:11.320><c> So</c>
+
+00:12:11.430 --> 00:12:11.440 align:start position:0%
+layer, a vendor abstraction layer. So
+ 
+
+00:12:11.440 --> 00:12:12.830 align:start position:0%
+layer, a vendor abstraction layer. So
+you<00:12:11.520><c> can</c><00:12:11.640><c> see</c><00:12:11.880><c> that</c><00:12:12.200><c> after</c><00:12:12.480><c> we</c><00:12:12.560><c> get</c><00:12:12.720><c> through</c>
+
+00:12:12.830 --> 00:12:12.840 align:start position:0%
+you can see that after we get through
+ 
+
+00:12:12.840 --> 00:12:15.630 align:start position:0%
+you can see that after we get through
+the<00:12:12.960><c> PEP</c><00:12:13.200><c> stage</c><00:12:13.600><c> with</c><00:12:13.760><c> FSP</c><00:12:14.280><c> and</c><00:12:14.400><c> FSPM</c><00:12:15.400><c> both</c>
+
+00:12:15.630 --> 00:12:15.640 align:start position:0%
+the PEP stage with FSP and FSPM both
+ 
+
+00:12:15.640 --> 00:12:18.310 align:start position:0%
+the PEP stage with FSP and FSPM both
+executed,<00:12:16.560><c> we</c><00:12:16.680><c> now</c><00:12:16.920><c> have</c><00:12:17.160><c> that</c><00:12:17.840><c> sequence</c><00:12:18.200><c> of</c>
+
+00:12:18.310 --> 00:12:18.320 align:start position:0%
+executed, we now have that sequence of
+ 
+
+00:12:18.320 --> 00:12:21.270 align:start position:0%
+executed, we now have that sequence of
+calls<00:12:18.640><c> through</c><00:12:18.840><c> FSPS.</c><00:12:19.920><c> Those</c><00:12:20.080><c> existing</c><00:12:20.680><c> FSP</c>
+
+00:12:21.270 --> 00:12:21.280 align:start position:0%
+calls through FSPS. Those existing FSP
+ 
+
+00:12:21.280 --> 00:12:23.750 align:start position:0%
+calls through FSPS. Those existing FSP
+APIs<00:12:22.240><c> and</c><00:12:22.400><c> the</c><00:12:22.560><c> APIs</c><00:12:23.080><c> that</c><00:12:23.200><c> are</c><00:12:23.280><c> defined</c><00:12:23.680><c> in</c>
+
+00:12:23.750 --> 00:12:23.760 align:start position:0%
+APIs and the APIs that are defined in
+ 
+
+00:12:23.760 --> 00:12:25.870 align:start position:0%
+APIs and the APIs that are defined in
+the<00:12:23.880><c> open</c><00:12:24.120><c> SFI</c><00:12:24.560><c> spec,</c><00:12:25.240><c> there's</c><00:12:25.440><c> a</c><00:12:25.520><c> pretty</c>
+
+00:12:25.870 --> 00:12:25.880 align:start position:0%
+the open SFI spec, there's a pretty
+ 
+
+00:12:25.880 --> 00:12:28.190 align:start position:0%
+the open SFI spec, there's a pretty
+close<00:12:26.240><c> relationship</c><00:12:26.920><c> between</c><00:12:27.360><c> those</c><00:12:27.640><c> two</c><00:12:28.000><c> two</c>
+
+00:12:28.190 --> 00:12:28.200 align:start position:0%
+close relationship between those two two
+ 
+
+00:12:28.200 --> 00:12:30.190 align:start position:0%
+close relationship between those two two
+sets<00:12:28.480><c> of</c><00:12:28.560><c> APIs.</c><00:12:29.440><c> So</c><00:12:29.520><c> we</c><00:12:29.600><c> expect</c><00:12:30.120><c> that</c><00:12:30.120><c> the</c>
+
+00:12:30.190 --> 00:12:30.200 align:start position:0%
+sets of APIs. So we expect that the
+ 
+
+00:12:30.200 --> 00:12:32.870 align:start position:0%
+sets of APIs. So we expect that the
+valve<00:12:30.560><c> layer</c><00:12:30.840><c> that</c><00:12:31.520><c> that</c><00:12:31.720><c> can</c><00:12:31.840><c> be</c><00:12:31.960><c> implemented</c>
+
+00:12:32.870 --> 00:12:32.880 align:start position:0%
+valve layer that that can be implemented
+ 
+
+00:12:32.880 --> 00:12:35.030 align:start position:0%
+valve layer that that can be implemented
+to<00:12:33.080><c> produce</c><00:12:33.560><c> the</c><00:12:33.680><c> open</c><00:12:33.880><c> SFI</c><00:12:34.400><c> interfaces</c><00:12:34.920><c> on</c>
+
+00:12:35.030 --> 00:12:35.040 align:start position:0%
+to produce the open SFI interfaces on
+ 
+
+00:12:35.040 --> 00:12:38.550 align:start position:0%
+to produce the open SFI interfaces on
+top<00:12:35.360><c> of</c><00:12:35.520><c> FSP</c><00:12:36.680><c> will</c><00:12:36.839><c> hopefully</c><00:12:37.160><c> be</c><00:12:37.480><c> a</c><00:12:37.720><c> fairly</c>
+
+00:12:38.550 --> 00:12:38.560 align:start position:0%
+top of FSP will hopefully be a fairly
+ 
+
+00:12:38.560 --> 00:12:41.150 align:start position:0%
+top of FSP will hopefully be a fairly
+thin<00:12:38.880><c> layer,</c><00:12:39.560><c> maybe</c><00:12:39.960><c> focused</c><00:12:40.400><c> on</c><00:12:40.839><c> some</c><00:12:41.000><c> of</c><00:12:41.040><c> the</c>
+
+00:12:41.150 --> 00:12:41.160 align:start position:0%
+thin layer, maybe focused on some of the
+ 
+
+00:12:41.160 --> 00:12:43.190 align:start position:0%
+thin layer, maybe focused on some of the
+data<00:12:41.440><c> manipulation</c><00:12:42.040><c> that</c><00:12:42.160><c> has</c><00:12:42.320><c> to</c><00:12:42.440><c> occur</c><00:12:43.080><c> to</c>
+
+00:12:43.190 --> 00:12:43.200 align:start position:0%
+data manipulation that has to occur to
+ 
+
+00:12:43.200 --> 00:12:45.350 align:start position:0%
+data manipulation that has to occur to
+conform<00:12:43.640><c> with</c><00:12:43.760><c> the</c><00:12:43.880><c> open</c><00:12:44.120><c> SFI</c><00:12:45.080><c> data</c>
+
+00:12:45.350 --> 00:12:45.360 align:start position:0%
+conform with the open SFI data
+ 
+
+00:12:45.360 --> 00:12:47.829 align:start position:0%
+conform with the open SFI data
+structures<00:12:46.120><c> and</c><00:12:46.280><c> translations</c><00:12:46.960><c> to</c><00:12:47.080><c> the</c><00:12:47.200><c> FSP</c>
+
+00:12:47.829 --> 00:12:47.839 align:start position:0%
+structures and translations to the FSP
+ 
+
+00:12:47.839 --> 00:12:50.030 align:start position:0%
+structures and translations to the FSP
+ones.<00:12:48.680><c> So</c><00:12:48.760><c> that's</c><00:12:49.040><c> where</c><00:12:49.200><c> we're</c><00:12:49.560><c> we're</c><00:12:49.760><c> headed</c>
+
+00:12:50.030 --> 00:12:50.040 align:start position:0%
+ones. So that's where we're we're headed
+ 
+
+00:12:50.040 --> 00:12:51.829 align:start position:0%
+ones. So that's where we're we're headed
+and<00:12:50.160><c> we</c><00:12:50.240><c> think</c><00:12:50.480><c> that</c><00:12:51.000><c> as</c><00:12:51.160><c> far</c><00:12:51.280><c> as</c><00:12:51.360><c> we</c><00:12:51.400><c> get</c><00:12:51.600><c> going</c>
+
+00:12:51.829 --> 00:12:51.839 align:start position:0%
+and we think that as far as we get going
+ 
+
+00:12:51.839 --> 00:12:54.310 align:start position:0%
+and we think that as far as we get going
+on<00:12:51.920><c> the</c><00:12:52.000><c> POC</c><00:12:52.520><c> work</c><00:12:53.160><c> here</c><00:12:53.480><c> in</c><00:12:53.600><c> the</c><00:12:54.000><c> the</c><00:12:54.080><c> next</c>
+
+00:12:54.310 --> 00:12:54.320 align:start position:0%
+on the POC work here in the the next
+ 
+
+00:12:54.320 --> 00:12:55.790 align:start position:0%
+on the POC work here in the the next
+quarter<00:12:54.600><c> or</c><00:12:54.720><c> two,</c><00:12:55.360><c> we'll</c><00:12:55.480><c> be</c><00:12:55.560><c> able</c><00:12:55.720><c> to</c>
+
+00:12:55.790 --> 00:12:55.800 align:start position:0%
+quarter or two, we'll be able to
+ 
+
+00:12:55.800 --> 00:12:57.750 align:start position:0%
+quarter or two, we'll be able to
+demonstrate<00:12:56.400><c> that</c><00:12:56.560><c> that</c><00:12:56.920><c> is</c><00:12:57.120><c> a</c><00:12:57.360><c> a</c><00:12:57.440><c> natural</c>
+
+00:12:57.750 --> 00:12:57.760 align:start position:0%
+demonstrate that that is a a natural
+ 
+
+00:12:57.760 --> 00:13:02.070 align:start position:0%
+demonstrate that that is a a natural
+transition<00:12:58.360><c> from</c><00:12:58.520><c> FSP</c><00:12:59.040><c> to</c><00:12:59.160><c> open</c><00:12:59.440><c> SFI.</c>
+
+00:13:02.070 --> 00:13:02.080 align:start position:0%
+ 
+ 
+
+00:13:02.080 --> 00:13:03.950 align:start position:0%
+ 
+So<00:13:02.160><c> as</c><00:13:02.280><c> far</c><00:13:02.440><c> as</c><00:13:02.520><c> call</c><00:13:02.720><c> to</c><00:13:02.839><c> action,</c><00:13:03.640><c> you</c><00:13:03.760><c> know,</c>
+
+00:13:03.950 --> 00:13:03.960 align:start position:0%
+So as far as call to action, you know,
+ 
+
+00:13:03.960 --> 00:13:07.310 align:start position:0%
+So as far as call to action, you know,
+the<00:13:04.480><c> the</c><00:13:04.720><c> the</c><00:13:05.080><c> items</c><00:13:05.400><c> here</c><00:13:05.680><c> are</c><00:13:05.880><c> the</c><00:13:06.520><c> FSP</c><00:13:07.000><c> spec</c>
+
+00:13:07.310 --> 00:13:07.320 align:start position:0%
+the the the items here are the FSP spec
+ 
+
+00:13:07.320 --> 00:13:10.190 align:start position:0%
+the the the items here are the FSP spec
+is<00:13:07.440><c> a</c><00:13:07.520><c> public</c><00:13:07.839><c> spec</c><00:13:08.200><c> on</c><00:13:08.400><c> the</c><00:13:08.800><c> Intel</c><00:13:09.120><c> website.</c>
+
+00:13:10.190 --> 00:13:10.200 align:start position:0%
+is a public spec on the Intel website.
+ 
+
+00:13:10.200 --> 00:13:11.310 align:start position:0%
+is a public spec on the Intel website.
+You<00:13:10.280><c> can</c><00:13:10.440><c> prepare</c><00:13:10.839><c> your</c><00:13:11.200><c> your</c>
+
+00:13:11.310 --> 00:13:11.320 align:start position:0%
+You can prepare your your
+ 
+
+00:13:11.320 --> 00:13:13.910 align:start position:0%
+You can prepare your your
+implementations<00:13:12.080><c> around</c><00:13:12.880><c> FSP</c><00:13:13.400><c> today</c><00:13:13.800><c> and</c>
+
+00:13:13.910 --> 00:13:13.920 align:start position:0%
+implementations around FSP today and
+ 
+
+00:13:13.920 --> 00:13:15.829 align:start position:0%
+implementations around FSP today and
+then<00:13:14.200><c> and</c><00:13:14.400><c> have</c><00:13:14.600><c> this</c><00:13:14.760><c> transition</c><00:13:15.440><c> to</c><00:13:15.600><c> open</c>
+
+00:13:15.829 --> 00:13:15.839 align:start position:0%
+then and have this transition to open
+ 
+
+00:13:15.839 --> 00:13:19.470 align:start position:0%
+then and have this transition to open
+SFI<00:13:16.400><c> in</c><00:13:16.520><c> the</c><00:13:16.800><c> in</c><00:13:16.920><c> the</c><00:13:17.000><c> future.</c><00:13:18.040><c> Intel</c>
+
+00:13:19.470 --> 00:13:19.480 align:start position:0%
+SFI in the in the future. Intel
+ 
+
+00:13:19.480 --> 00:13:21.030 align:start position:0%
+SFI in the in the future. Intel
+collaborates<00:13:20.080><c> with</c><00:13:20.240><c> many</c><00:13:20.520><c> open</c><00:13:20.760><c> source</c>
+
+00:13:21.030 --> 00:13:21.040 align:start position:0%
+collaborates with many open source
+ 
+
+00:13:21.040 --> 00:13:23.310 align:start position:0%
+collaborates with many open source
+projects<00:13:21.640><c> around</c><00:13:22.120><c> things</c><00:13:22.400><c> like</c><00:13:22.600><c> TianoCore</c>
+
+00:13:23.310 --> 00:13:23.320 align:start position:0%
+projects around things like TianoCore
+ 
+
+00:13:23.320 --> 00:13:26.110 align:start position:0%
+projects around things like TianoCore
+for<00:13:23.560><c> the</c><00:13:23.960><c> UEFI</c><00:13:24.440><c> boot,</c><00:13:25.120><c> core</c><00:13:25.400><c> boot</c><00:13:25.680><c> and</c><00:13:25.880><c> slim</c>
+
+00:13:26.110 --> 00:13:26.120 align:start position:0%
+for the UEFI boot, core boot and slim
+ 
+
+00:13:26.120 --> 00:13:28.310 align:start position:0%
+for the UEFI boot, core boot and slim
+boot.<00:13:26.480><c> The</c><00:13:26.800><c> the</c><00:13:26.920><c> links</c><00:13:27.240><c> are</c><00:13:27.360><c> there.</c><00:13:28.040><c> And</c><00:13:28.200><c> if</c>
+
+00:13:28.310 --> 00:13:28.320 align:start position:0%
+boot. The the links are there. And if
+ 
+
+00:13:28.320 --> 00:13:30.070 align:start position:0%
+boot. The the links are there. And if
+you<00:13:28.360><c> need</c><00:13:28.560><c> details</c><00:13:29.000><c> about</c><00:13:29.280><c> FSP</c><00:13:29.840><c> for</c><00:13:30.000><c> a</c>
+
+00:13:30.070 --> 00:13:30.080 align:start position:0%
+you need details about FSP for a
+ 
+
+00:13:30.080 --> 00:13:31.470 align:start position:0%
+you need details about FSP for a
+specific
+
+00:13:31.470 --> 00:13:31.480 align:start position:0%
+specific
+ 
+
+00:13:31.480 --> 00:13:33.350 align:start position:0%
+specific
+you<00:13:31.560><c> know</c><00:13:31.720><c> Intel</c><00:13:32.040><c> SOC</c><00:13:32.520><c> implementation,</c><00:13:33.280><c> you</c>
+
+00:13:33.350 --> 00:13:33.360 align:start position:0%
+you know Intel SOC implementation, you
+ 
+
+00:13:33.360 --> 00:13:35.790 align:start position:0%
+you know Intel SOC implementation, you
+can<00:13:33.480><c> contact</c><00:13:33.960><c> your</c><00:13:34.080><c> Intel</c><00:13:34.480><c> support</c><00:13:34.880><c> for</c><00:13:35.000><c> that.</c>
+
+00:13:35.790 --> 00:13:35.800 align:start position:0%
+can contact your Intel support for that.
+ 
+
+00:13:35.800 --> 00:13:38.350 align:start position:0%
+can contact your Intel support for that.
+Um<00:13:36.240><c> so,</c><00:13:36.880><c> with</c><00:13:37.040><c> that,</c><00:13:37.280><c> that's</c><00:13:37.520><c> the</c><00:13:37.920><c> the</c><00:13:38.120><c> end.</c>
+
+00:13:38.350 --> 00:13:38.360 align:start position:0%
+Um so, with that, that's the the end.
+ 
+
+00:13:38.360 --> 00:13:42.120 align:start position:0%
+Um so, with that, that's the the end.
+Are<00:13:38.480><c> there</c><00:13:38.720><c> there</c><00:13:38.920><c> any</c><00:13:39.080><c> questions</c><00:13:39.640><c> for</c><00:13:39.760><c> today?</c>
+

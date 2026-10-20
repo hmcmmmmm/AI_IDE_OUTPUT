@@ -1,0 +1,80 @@
+{
+ "info": {
+  "duration": 830.229478
+ },
+ "interval": 3.0,
+ "states": [
+  {
+   "start": 0.0,
+   "end": 45.0,
+   "rep_time": 30.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 45.0,
+   "end": 63.0,
+   "rep_time": 55.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 63.0,
+   "end": 120.0,
+   "rep_time": 100.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 120.0,
+   "end": 210.0,
+   "rep_time": 170.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 210.0,
+   "end": 312.0,
+   "rep_time": 270.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 312.0,
+   "end": 558.0,
+   "rep_time": 500.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 558.0,
+   "end": 648.0,
+   "rep_time": 600.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 648.0,
+   "end": 780.0,
+   "rep_time": 720.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 780.0,
+   "end": 830.229478,
+   "rep_time": 800.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  }
+ ]
+}

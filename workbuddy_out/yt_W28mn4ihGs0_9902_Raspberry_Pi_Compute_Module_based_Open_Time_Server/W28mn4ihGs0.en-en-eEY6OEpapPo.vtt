@@ -1,0 +1,904 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.279 --> 00:00:09.519
+Thank you very much. I appreciate that
+
+00:00:07.120 --> 00:00:11.599
+introduction. I'm glad to be with you.
+
+00:00:09.519 --> 00:00:15.759
+Um glad to be here with you uh this
+
+00:00:11.599 --> 00:00:17.680
+afternoon. Uh kudos to um Ahmad for all
+
+00:00:15.759 --> 00:00:19.359
+the pushing and the working that he's
+
+00:00:17.680 --> 00:00:21.760
+been working on with respect to pushing
+
+00:00:19.359 --> 00:00:23.580
+PTP. Um what I want to talk to you about
+
+00:00:21.760 --> 00:00:24.480
+today is mainly discussing
+
+00:00:23.580 --> 00:00:26.800
+[clears throat]
+
+00:00:24.480 --> 00:00:28.960
+uh extending on the topic of resiliency.
+
+00:00:26.800 --> 00:00:30.880
+I think it was a great uh two talks ago
+
+00:00:28.960 --> 00:00:32.559
+where they talked about resiliency, why
+
+00:00:30.880 --> 00:00:34.800
+you need resiliency, the importance of
+
+00:00:32.559 --> 00:00:36.719
+it. Um and they were talking about in
+
+00:00:34.800 --> 00:00:37.840
+particular the time card. In this
+
+00:00:36.719 --> 00:00:39.760
+particular case, I'm going to bring
+
+00:00:37.840 --> 00:00:41.040
+about some technology uh rather than
+
+00:00:39.760 --> 00:00:43.760
+time card, I'm going to talk about the
+
+00:00:41.040 --> 00:00:46.320
+open time card mini uh combined with
+
+00:00:43.760 --> 00:00:49.800
+some uh open- source software to then
+
+00:00:46.320 --> 00:00:49.800
+provide the resiliency.
+
+00:00:51.120 --> 00:00:54.239
+So the need for at time of resiliency
+
+00:00:52.640 --> 00:00:56.399
+with respect to data centers. I think we
+
+00:00:54.239 --> 00:00:58.879
+all sort of understand why we need
+
+00:00:56.399 --> 00:01:00.719
+atomic resiliency uh is very important.
+
+00:00:58.879 --> 00:01:01.440
+Uh when you talk about time resiliency
+
+00:01:00.719 --> 00:01:03.039
+there are a lot of different
+
+00:01:01.440 --> 00:01:05.280
+applications that one could look at with
+
+00:01:03.039 --> 00:01:06.799
+respect to data centers. Uh in
+
+00:01:05.280 --> 00:01:10.000
+particular there's things involving
+
+00:01:06.799 --> 00:01:12.240
+applications for AI, 5G, financial
+
+00:01:10.000 --> 00:01:13.920
+trading. Um so the motivation is there
+
+00:01:12.240 --> 00:01:15.920
+and this was just an overview to just
+
+00:01:13.920 --> 00:01:17.759
+let you know sure we definitely need
+
+00:01:15.920 --> 00:01:19.119
+time resiliency and there are a lot of
+
+00:01:17.759 --> 00:01:21.439
+data centers out there that could
+
+00:01:19.119 --> 00:01:23.119
+support that
+
+00:01:21.439 --> 00:01:25.439
+primarily I wanted to talk about though
+
+00:01:23.119 --> 00:01:27.200
+for this talk is extending on what
+
+00:01:25.439 --> 00:01:30.320
+pretty much the team has already done
+
+00:01:27.200 --> 00:01:31.680
+for what Ahmad has done Julian all the
+
+00:01:30.320 --> 00:01:33.520
+different kind of hardware that they've
+
+00:01:31.680 --> 00:01:36.320
+developed over the years with respect to
+
+00:01:33.520 --> 00:01:38.720
+PTP I wanted to extend on that and
+
+00:01:36.320 --> 00:01:40.799
+leverage um some some some interesting
+
+00:01:38.720 --> 00:01:42.799
+concepts that will build on that. So
+
+00:01:40.799 --> 00:01:44.479
+this is just an overview of the time
+
+00:01:42.799 --> 00:01:46.640
+appliances project. For those who don't
+
+00:01:44.479 --> 00:01:48.159
+know about the time appliances project,
+
+00:01:46.640 --> 00:01:49.520
+this is gives you a summary of some of
+
+00:01:48.159 --> 00:01:51.759
+the things that they care about and what
+
+00:01:49.520 --> 00:01:53.759
+what we care about as a group. Um you
+
+00:01:51.759 --> 00:01:57.119
+know providing high accuracy, reliable,
+
+00:01:53.759 --> 00:01:59.119
+scalable uh you know DRO and the
+
+00:01:57.119 --> 00:02:00.799
+synchronization of time platform to
+
+00:01:59.119 --> 00:02:02.159
+bring together the community. Um you
+
+00:02:00.799 --> 00:02:04.479
+know of course we're targeting data
+
+00:02:02.159 --> 00:02:06.000
+centers as far as the uh apps are
+
+00:02:04.479 --> 00:02:07.840
+concerned. We're open to the public.
+
+00:02:06.000 --> 00:02:10.479
+welcome to you know those who want to be
+
+00:02:07.840 --> 00:02:12.000
+involved and for this particular talk I
+
+00:02:10.479 --> 00:02:13.599
+want to talk about building on what
+
+00:02:12.000 --> 00:02:16.239
+they've already done with respect to the
+
+00:02:13.599 --> 00:02:18.239
+open time server instead an open time
+
+00:02:16.239 --> 00:02:20.959
+server cluster and in the cluster
+
+00:02:18.239 --> 00:02:23.200
+context is saying let me have multiple
+
+00:02:20.959 --> 00:02:25.040
+um grandmasters you know at a at a at a
+
+00:02:23.200 --> 00:02:26.480
+place or at a node what could I do with
+
+00:02:25.040 --> 00:02:28.800
+those what are kind of the concepts that
+
+00:02:26.480 --> 00:02:31.360
+one could develop if once if one was to
+
+00:02:28.800 --> 00:02:34.480
+develop a spec um that that that will
+
+00:02:31.360 --> 00:02:36.319
+actually be around that [cough]
+
+00:02:34.480 --> 00:02:40.239
+so this diagram sort of gives an
+
+00:02:36.319 --> 00:02:42.480
+overview of what I mean by the OTS uh C
+
+00:02:40.239 --> 00:02:43.440
+cluster in terms of a cluster. Uh rather
+
+00:02:42.480 --> 00:02:44.640
+than thinking about it from a
+
+00:02:43.440 --> 00:02:46.400
+distributed network because a lot of
+
+00:02:44.640 --> 00:02:48.319
+times we talk about distributed timing
+
+00:02:46.400 --> 00:02:49.840
+and we have different nodes. What I'm
+
+00:02:48.319 --> 00:02:52.560
+talking about though is a cluster that's
+
+00:02:49.840 --> 00:02:54.000
+actually local uh to the site. So rather
+
+00:02:52.560 --> 00:02:55.920
+than having it distributed, I actually
+
+00:02:54.000 --> 00:02:58.480
+have multiple units, multiple computers
+
+00:02:55.920 --> 00:03:00.000
+that available to me with compute power
+
+00:02:58.480 --> 00:03:02.000
+and is thinking about instead of
+
+00:03:00.000 --> 00:03:03.599
+clustering for the compute power, it's
+
+00:03:02.000 --> 00:03:05.680
+clustering clustering with respect to
+
+00:03:03.599 --> 00:03:07.040
+time. And with that, that means I want
+
+00:03:05.680 --> 00:03:08.560
+to actually now talk about time
+
+00:03:07.040 --> 00:03:10.720
+ensembles and things like that. What
+
+00:03:08.560 --> 00:03:12.159
+could I do if I have multiple clock
+
+00:03:10.720 --> 00:03:13.840
+sources, multiple antennas that
+
+00:03:12.159 --> 00:03:15.440
+available at the site, how could I
+
+00:03:13.840 --> 00:03:16.959
+combine them? And what's what's a a
+
+00:03:15.440 --> 00:03:18.560
+unique way that I could do that? And so
+
+00:03:16.959 --> 00:03:20.879
+this is what I'm sort of motivating or
+
+00:03:18.560 --> 00:03:22.640
+trying to get around is figuring out how
+
+00:03:20.879 --> 00:03:24.800
+I would design or develop a cluster
+
+00:03:22.640 --> 00:03:26.640
+architecture that would support that.
+
+00:03:24.800 --> 00:03:28.480
+And one of the key things here is I'm
+
+00:03:26.640 --> 00:03:30.959
+assuming that even though I don't have
+
+00:03:28.480 --> 00:03:32.879
+time at all different locations, um
+
+00:03:30.959 --> 00:03:34.799
+there's always a way to get time in. So
+
+00:03:32.879 --> 00:03:37.120
+I have multiple sources of time. And
+
+00:03:34.799 --> 00:03:39.519
+this could be either wireless or wired
+
+00:03:37.120 --> 00:03:41.519
+that's coming in. But making sure that I
+
+00:03:39.519 --> 00:03:43.599
+can account for all sources of time and
+
+00:03:41.519 --> 00:03:47.840
+leaving that uh or leveraging that that
+
+00:03:43.599 --> 00:03:49.599
+will be part of my uh cluster.
+
+00:03:47.840 --> 00:03:51.440
+So what did I do? Well, instead of just
+
+00:03:49.599 --> 00:03:53.200
+coming up with a spec or saying hey
+
+00:03:51.440 --> 00:03:54.959
+let's just define a spec, I always like
+
+00:03:53.200 --> 00:03:56.799
+to create things. So I like to develop
+
+00:03:54.959 --> 00:03:58.640
+prototypes. And one of the things I just
+
+00:03:56.799 --> 00:04:01.120
+decided to do was let's just create a
+
+00:03:58.640 --> 00:04:04.080
+prototype of an example system that will
+
+00:04:01.120 --> 00:04:06.080
+be representative of an OTSC type of
+
+00:04:04.080 --> 00:04:07.840
+architecture. And so what I created is
+
+00:04:06.080 --> 00:04:10.640
+what I'm calling the OTSC development
+
+00:04:07.840 --> 00:04:13.519
+system. Um that pretty much brings in at
+
+00:04:10.640 --> 00:04:15.760
+least uh six GNSS receivers, six
+
+00:04:13.519 --> 00:04:20.160
+antennas, and I'm combining that with
+
+00:04:15.760 --> 00:04:21.680
+six open time card mini um cards. So
+
+00:04:20.160 --> 00:04:23.840
+with those cards, [clears throat] I'm
+
+00:04:21.680 --> 00:04:25.759
+able to develop at least an initial
+
+00:04:23.840 --> 00:04:27.280
+concept of combining the the
+
+00:04:25.759 --> 00:04:29.840
+architecture with the hardware that's
+
+00:04:27.280 --> 00:04:31.440
+already there with Crony. Um the reason
+
+00:04:29.840 --> 00:04:33.840
+why I like crony is because crony
+
+00:04:31.440 --> 00:04:35.680
+already has built in it uh ways of
+
+00:04:33.840 --> 00:04:37.919
+ensembling or ways of actually bringing
+
+00:04:35.680 --> 00:04:39.680
+together different type of time sources.
+
+00:04:37.919 --> 00:04:42.160
+So the idea was if I could take crony
+
+00:04:39.680 --> 00:04:43.840
+that's already available uh as an NTP
+
+00:04:42.160 --> 00:04:45.759
+combiner and combine that with some
+
+00:04:43.840 --> 00:04:47.680
+existing hardware that I have, I can at
+
+00:04:45.759 --> 00:04:52.560
+least give a rough idea of what could be
+
+00:04:47.680 --> 00:04:55.120
+done from an OTC uh from from an OTSC
+
+00:04:52.560 --> 00:04:57.759
+type of cluster uh concept. And this is
+
+00:04:55.120 --> 00:04:59.600
+just a snapshot that I had um of an
+
+00:04:57.759 --> 00:05:03.120
+initial cluster. Well, at least for this
+
+00:04:59.600 --> 00:05:05.680
+particular case, since I had six uh CM
+
+00:05:03.120 --> 00:05:08.080
+4s uh in this particular scenario, I had
+
+00:05:05.680 --> 00:05:10.560
+one of the CM4s that act as the combiner
+
+00:05:08.080 --> 00:05:13.120
+and the other five to actually bring in
+
+00:05:10.560 --> 00:05:15.600
+the sources. Um but if I wanted to use
+
+00:05:13.120 --> 00:05:17.360
+all six, I would just have a remote um
+
+00:05:15.600 --> 00:05:19.120
+computer that would actually be be able
+
+00:05:17.360 --> 00:05:23.120
+to tie into this and then use those six
+
+00:05:19.120 --> 00:05:24.639
+sources to actually do the combining.
+
+00:05:23.120 --> 00:05:26.639
+So here's some initial results that I
+
+00:05:24.639 --> 00:05:28.400
+wanted to provide to give you an idea of
+
+00:05:26.639 --> 00:05:30.320
+what it looks like. Now the interesting
+
+00:05:28.400 --> 00:05:32.960
+thing about that particular uh prototype
+
+00:05:30.320 --> 00:05:36.800
+that I showed you earlier that's a desk
+
+00:05:32.960 --> 00:05:40.240
+uh deskpie super 6c that I used uh to do
+
+00:05:36.800 --> 00:05:42.240
+that that inherently does not have a PTP
+
+00:05:40.240 --> 00:05:44.240
+uh switch built in it. Right? So I'm
+
+00:05:42.240 --> 00:05:45.680
+going to have some errors and things
+
+00:05:44.240 --> 00:05:47.440
+associated with that because it's it's
+
+00:05:45.680 --> 00:05:50.160
+not it's not transferring the the
+
+00:05:47.440 --> 00:05:51.759
+precise time that's there. But I will
+
+00:05:50.160 --> 00:05:54.960
+want to I I do want to make the note
+
+00:05:51.759 --> 00:05:57.039
+though that NTP can still consume um
+
+00:05:54.960 --> 00:05:59.039
+hardware timestamps and that's the one
+
+00:05:57.039 --> 00:06:01.440
+powerful things about crony is I'm using
+
+00:05:59.039 --> 00:06:04.639
+the fact that um I can get time stamps
+
+00:06:01.440 --> 00:06:06.720
+and NTP can can consume them and then
+
+00:06:04.639 --> 00:06:08.000
+potentially use that as of course a
+
+00:06:06.720 --> 00:06:10.479
+source of combining but in this
+
+00:06:08.000 --> 00:06:12.319
+particular case I just want to show that
+
+00:06:10.479 --> 00:06:14.160
+over this source of time I can get you
+
+00:06:12.319 --> 00:06:17.199
+know six clock sources within a plus or
+
+00:06:14.160 --> 00:06:20.000
+one minus microcond um before uh
+
+00:06:17.199 --> 00:06:21.600
+combining with crony
+
+00:06:20.000 --> 00:06:23.520
+And this just shows the impact of the
+
+00:06:21.600 --> 00:06:25.280
+improvement that's there a little bit
+
+00:06:23.520 --> 00:06:27.600
+better than one over square root of n in
+
+00:06:25.280 --> 00:06:28.639
+this case of six. Uh but there is some
+
+00:06:27.600 --> 00:06:30.960
+additional filtering that I'm doing
+
+00:06:28.639 --> 00:06:33.840
+within crony to actually improve upon
+
+00:06:30.960 --> 00:06:35.360
+that. Um so now with the combining and
+
+00:06:33.840 --> 00:06:37.199
+with the different kind of sources at
+
+00:06:35.360 --> 00:06:39.360
+least have a baseline architecture of
+
+00:06:37.199 --> 00:06:41.360
+what could be done in terms of a cluster
+
+00:06:39.360 --> 00:06:43.039
+type of construct and that's what pretty
+
+00:06:41.360 --> 00:06:45.520
+much I was trying to get done for for
+
+00:06:43.039 --> 00:06:46.800
+for for this particular project and
+
+00:06:45.520 --> 00:06:48.960
+wanted to just sort of start the
+
+00:06:46.800 --> 00:06:50.960
+discussion of how one could then build
+
+00:06:48.960 --> 00:06:54.720
+uh a specific cluster architecture
+
+00:06:50.960 --> 00:06:56.800
+around what's already been done.
+
+00:06:54.720 --> 00:06:59.280
+So what's the call for action? Pretty
+
+00:06:56.800 --> 00:07:01.039
+much is taking the concept you heard
+
+00:06:59.280 --> 00:07:03.919
+earlier two talks ago about resilient
+
+00:07:01.039 --> 00:07:05.680
+pnt. This is just taking resilient pnt
+
+00:07:03.919 --> 00:07:09.520
+to another level where I'm actually at
+
+00:07:05.680 --> 00:07:11.360
+the local site and the idea is to define
+
+00:07:09.520 --> 00:07:13.520
+the edge characteristics of this
+
+00:07:11.360 --> 00:07:15.280
+particular architecture. Um you can see
+
+00:07:13.520 --> 00:07:17.360
+that we've already um started at least
+
+00:07:15.280 --> 00:07:20.639
+initiated a working group for that a
+
+00:07:17.360 --> 00:07:23.039
+workflow. Again uh thanks to Ahmad for
+
+00:07:20.639 --> 00:07:24.720
+uh helping me set that up. And primarily
+
+00:07:23.039 --> 00:07:26.639
+this talk was to just let everyone you
+
+00:07:24.720 --> 00:07:29.360
+know be aware of what can be done with
+
+00:07:26.639 --> 00:07:32.080
+very inexpensive CS uh type of
+
+00:07:29.360 --> 00:07:34.000
+architectures with respect to timing and
+
+00:07:32.080 --> 00:07:36.400
+then what could be combined if you think
+
+00:07:34.000 --> 00:07:37.840
+of it as a development system where I
+
+00:07:36.400 --> 00:07:39.680
+have multiple antennas and multiple
+
+00:07:37.840 --> 00:07:41.440
+receivers available. How could one
+
+00:07:39.680 --> 00:07:44.840
+potentially come up with the cluster
+
+00:07:41.440 --> 00:07:44.840
+type of architecture?
+
+00:07:46.080 --> 00:07:51.605
+So that's it for my talk. Um open for
+
+00:07:48.639 --> 00:07:53.625
+any questions.
+
+00:07:51.605 --> 00:07:53.625
+[applause]
+
+00:07:55.120 --> 00:07:59.160
+Any questions from the audience?
+
+00:08:01.039 --> 00:08:07.199
+Hey, hi, my name is Novu from NICT and
+
+00:08:04.960 --> 00:08:09.360
+thanks for the great talk. And I mean
+
+00:08:07.199 --> 00:08:12.479
+I'm not so familiar with Crony, but
+
+00:08:09.360 --> 00:08:15.039
+suppose you have six GNSS receivers and
+
+00:08:12.479 --> 00:08:17.039
+how does Crony works against
+
+00:08:15.039 --> 00:08:20.160
+malfunctioning? Like for example, one of
+
+00:08:17.039 --> 00:08:23.680
+the GNSS receiver failed to receive the
+
+00:08:20.160 --> 00:08:26.639
+signal and give some weird clock and how
+
+00:08:23.680 --> 00:08:30.160
+does the clock uh crony make the
+
+00:08:26.639 --> 00:08:32.800
+ensemble out of those five healthy ones
+
+00:08:30.160 --> 00:08:34.719
+plus one bad one?
+
+00:08:32.800 --> 00:08:36.959
+That's a great question. So crony has
+
+00:08:34.719 --> 00:08:38.240
+actually a it's if you look at the
+
+00:08:36.959 --> 00:08:40.399
+algorithms, you can actually look up the
+
+00:08:38.240 --> 00:08:42.719
+specs on Crony and see the underlying
+
+00:08:40.399 --> 00:08:44.800
+algorithms that support it. But it has a
+
+00:08:42.719 --> 00:08:47.440
+very specific way of determining whether
+
+00:08:44.800 --> 00:08:49.360
+or not that um signal or that clock
+
+00:08:47.440 --> 00:08:51.120
+source is is going to be valid or not.
+
+00:08:49.360 --> 00:08:53.360
+So it has a specification. It has an
+
+00:08:51.120 --> 00:08:54.640
+error u where it has a tolerance about
+
+00:08:53.360 --> 00:08:56.480
+what clock sources are going to be
+
+00:08:54.640 --> 00:09:00.240
+available. If you notice at least for
+
+00:08:56.480 --> 00:09:02.240
+that particular um um version I had here
+
+00:09:00.240 --> 00:09:04.320
+I'll [music] go back for this particular
+
+00:09:02.240 --> 00:09:06.560
+one. Crony has it notice that there's a
+
+00:09:04.320 --> 00:09:08.320
+plus+es and then there's a there's an
+
+00:09:06.560 --> 00:09:10.320
+asterk there. That means that those
+
+00:09:08.320 --> 00:09:12.399
+clocks all met the tolerance for crony.
+
+00:09:10.320 --> 00:09:14.000
+So then it will be the combining. It
+
+00:09:12.399 --> 00:09:15.920
+will actually know whether or not it is
+
+00:09:14.000 --> 00:09:17.839
+outside of tolerance and it won't even
+
+00:09:15.920 --> 00:09:19.200
+allow it to actually be included. So
+
+00:09:17.839 --> 00:09:20.880
+that's one of the benefits of using
+
+00:09:19.200 --> 00:09:22.880
+crony. It already sort of has that built
+
+00:09:20.880 --> 00:09:24.640
+in. And then for that you can add as
+
+00:09:22.880 --> 00:09:26.160
+many sources as you want to. But in this
+
+00:09:24.640 --> 00:09:28.160
+particular case I should have uh made
+
+00:09:26.160 --> 00:09:30.720
+the note that they were all acting as
+
+00:09:28.160 --> 00:09:32.880
+NTP servers uh for crony to be able to
+
+00:09:30.720 --> 00:09:34.959
+actually consume that.
+
+00:09:32.880 --> 00:09:39.040
+Oh well yeah that's great. I mean
+
+00:09:34.959 --> 00:09:41.120
+impressive. As for the uh this subgroup
+
+00:09:39.040 --> 00:09:44.399
+that you mentioned,
+
+00:09:41.120 --> 00:09:46.959
+if I could ask request if you plan to
+
+00:09:44.399 --> 00:09:49.506
+have a meeting, it would be nice if you
+
+00:09:46.959 --> 00:09:50.160
+can make it to Japan friendly time.
+
+00:09:49.506 --> 00:09:54.399
+[laughter]
+
+00:09:50.160 --> 00:09:56.160
+So because uh NICT and university I mean
+
+00:09:54.399 --> 00:09:58.560
+the control theory people have
+
+00:09:56.160 --> 00:10:01.519
+collaborated to make the I mean the
+
+00:09:58.560 --> 00:10:04.959
+project name is cluster clock. So just
+
+00:10:01.519 --> 00:10:07.920
+to make uh to learn and study about the
+
+00:10:04.959 --> 00:10:10.000
+algorithm from the control theory
+
+00:10:07.920 --> 00:10:11.839
+perspective and so there are group of
+
+00:10:10.000 --> 00:10:12.080
+people who have been working on it.
+
+00:10:11.839 --> 00:10:15.279
+Okay.
+
+00:10:12.080 --> 00:10:18.880
+And they have great results already. So
+
+00:10:15.279 --> 00:10:21.040
+I mean I thought that if you include
+
+00:10:18.880 --> 00:10:22.399
+them then it will be great.
+
+00:10:21.040 --> 00:10:23.839
+Yeah it would be great to definitely
+
+00:10:22.399 --> 00:10:25.839
+include them. That's one of the things I
+
+00:10:23.839 --> 00:10:28.000
+wanted to do. Part of this was to call
+
+00:10:25.839 --> 00:10:29.440
+out so I could gather gather the
+
+00:10:28.000 --> 00:10:32.160
+community of others that are also
+
+00:10:29.440 --> 00:10:33.600
+looking at this this topic.
+
+00:10:32.160 --> 00:10:35.519
+As far as getting involved, I noticed
+
+00:10:33.600 --> 00:10:37.120
+the calendar doesn't have any meetings
+
+00:10:35.519 --> 00:10:37.920
+for this workstream. Is there are there
+
+00:10:37.120 --> 00:10:40.000
+any plans?
+
+00:10:37.920 --> 00:10:41.600
+Yeah, there are plans. I have not set it
+
+00:10:40.000 --> 00:10:43.440
+up yet. One of one of the things I want
+
+00:10:41.600 --> 00:10:44.959
+to do is sort of kick it off here. Yeah.
+
+00:10:43.440 --> 00:10:46.000
+To see if there's interest. Um,
+
+00:10:44.959 --> 00:10:47.600
+so next week.
+
+00:10:46.000 --> 00:10:48.640
+Next week. Sure.
+
+00:10:47.600 --> 00:10:51.787
+Looking forward to it.
+
+00:10:48.640 --> 00:10:51.787
+Okay, great. [laughter]
+
+00:10:52.079 --> 00:10:55.760
+Okay.
+
+00:10:52.480 --> 00:10:55.760
+Any other questions?
+
+00:10:56.959 --> 00:11:03.079
+All right. Well, thank Dr. Mik and
+
+00:10:59.920 --> 00:11:03.079
+thank you
+

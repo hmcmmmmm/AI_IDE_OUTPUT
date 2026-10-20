@@ -1,0 +1,122 @@
+{
+ "video": "G:\\AI_IDE_output\\workbuddy_out\\yt_W28mn4ihGs0_9902_Raspberry_Pi_Compute_Module_based_Open_Time_Server\\video.mp4",
+ "info": {
+  "fps": 60.0,
+  "width": 1920,
+  "height": 1080,
+  "duration": 664.555102
+ },
+ "interval": 3.0,
+ "states": [
+  {
+   "start": 0.0,
+   "end": 50.0,
+   "duration": 50.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 30.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 50.0,
+   "end": 80.0,
+   "duration": 30.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 68.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 80.0,
+   "end": 153.0,
+   "duration": 73.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 140.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 153.0,
+   "end": 227.0,
+   "duration": 74.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 210.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 227.0,
+   "end": 322.0,
+   "duration": 95.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 300.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 322.0,
+   "end": 379.0,
+   "duration": 57.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 360.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 379.0,
+   "end": 414.0,
+   "duration": 35.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 400.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 414.0,
+   "end": 466.0,
+   "duration": 52.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 450.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 466.0,
+   "end": 540.0,
+   "duration": 74.0,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 500.0,
+   "samples": [],
+   "likely_slide": true
+  },
+  {
+   "start": 540.0,
+   "end": 664.5,
+   "duration": 124.5,
+   "internal_motion": 0.004,
+   "edge_density": 0.09,
+   "rep_frame": 0,
+   "rep_time": 620.0,
+   "samples": [],
+   "likely_slide": true
+  }
+ ]
+}

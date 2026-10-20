@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>高基数交换机<br>与精确时间</title>
+<style>@page { size: A4; margin: 18mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  font-size: 10.5pt; line-height: 1.75; color: #1f2937;
+  margin: 0; padding: 0; background: #fff;
+}
+.cover {
+  height: 250mm; display: flex; flex-direction: column; justify-content: center;
+  page-break-after: always; padding-left: 4mm;
+}
+.cover .kicker { font-size: 9pt; letter-spacing: .28em; color: #0f766e; font-weight: 600; margin-bottom: 14mm; }
+.cover h1 { font-size: 30pt; line-height: 1.3; margin: 0 0 6mm 0; color: #0b1220; font-weight: 700; letter-spacing: -0.01em; border: none; padding: 0; }
+.cover .sub { font-size: 12.5pt; color: #475569; line-height: 1.9; border-left: 3px solid #0f766e; padding-left: 5mm; }
+.cover .meta { margin-top: 16mm; font-size: 9pt; color: #64748b; line-height: 2; }
+.cover .meta b { color: #334155; font-weight: 600; }
+
+h1 { font-size: 19pt; color: #0b1220; margin: 0 0 6mm 0; padding-bottom: 3mm; border-bottom: 2px solid #0f766e; page-break-after: avoid; }
+h2 { font-size: 13pt; color: #0f766e; margin: 7mm 0 3mm 0; page-break-after: avoid; font-weight: 700; }
+h3 { font-size: 11.5pt; color: #0b1220; margin: 6mm 0 2.5mm 0; page-break-after: avoid; font-weight: 700; }
+p { margin: 0 0 3mm 0; text-align: justify; }
+strong { color: #0b1220; font-weight: 700; }
+ul, ol { margin: 0 0 3.5mm 0; padding-left: 6mm; }
+li { margin-bottom: 1.6mm; }
+blockquote {
+  margin: 4mm 0 3mm 0; padding: 3mm 5mm; background: #f8fafc;
+  border-left: 3px solid #cbd5e1; color: #64748b; font-size: 9pt;
+  font-family: Georgia, "Times New Roman", serif; line-height: 1.65;
+}
+blockquote p { margin: 0; }
+
+/* 图下小结：与讲话正文明确区分 */
+.takeaway {
+  margin: 2mm 0 6mm 0; padding: 2.5mm 4mm;
+  background: #f0fdfa; border-left: 3px solid #0f766e;
+  font-size: 9.6pt; color: #334155; page-break-inside: avoid;
+}
+.takeaway b { color: #0f766e; font-weight: 700; margin-right: 2.5mm; letter-spacing: .05em; }
+table { width: 100%; border-collapse: collapse; margin: 4mm 0 5mm 0; font-size: 9.5pt; }
+tr { page-break-inside: avoid; }
+thead { display: table-header-group; }
+th { background: #0f766e; color: #fff; font-weight: 600; padding: 2.4mm 3mm; text-align: left; border: 1px solid #0f766e; }
+td { padding: 2.2mm 3mm; border: 1px solid #d7dee7; vertical-align: top; }
+tr:nth-child(even) td { background: #f8fafc; }
+figure { margin: 3mm auto 4mm auto; page-break-inside: avoid; text-align: center; }
+figure img { width: auto; max-width: 100%; max-height: 78mm; border: 1px solid #e2e8f0; border-radius: 2px; display: block; margin: 0 auto; }
+figcaption { font-size: 8.8pt; color: #64748b; margin-top: 2mm; line-height: 1.5; }
+hr { border: none; border-top: 1px solid #e2e8f0; margin: 7mm 0; }
+code { background: #f1f5f9; padding: 0.5mm 1.5mm; border-radius: 2px; font-size: 9pt; color: #0f766e; }
+em { color: #64748b; font-style: normal; font-size: 9.3pt; }
+</style></head>
+<body>
+
+<div class="cover">
+  <div class="kicker">OCP GLOBAL SUMMIT 2026 · ERIDU AI</div>
+  <h1>高基数交换机<br>与精确时间</h1>
+  <div class="sub">Dan Biederman（Eridu AI 首席技术专家）<br>用单跳拓扑与到达时间调度压缩微秒级延迟</div>
+  <div class="meta"><b>时长</b>　13 分 20 秒<br><b>来源</b>　youtube.com/watch?v=P0lumqNAl5U<br></div>
+</div>
+
+<h1>高基数交换机与精确时间</h1>
+<blockquote>
+<p><strong>整理说明</strong>　本文是 OCP Global Summit 2026 一场 13 分 20 秒演讲的图文实录。体例为：每页幻灯片 → 该页停留期间的<strong>完整中文译文</strong>（逐句对应，不删减、不概括）→ 英文原句 → 图下一句小结。分节按幻灯片切换顺序，标题不含时间戳。</p>
+</blockquote>
+<p><strong>讲者</strong>　<strong>Dan Biederman</strong> — Principal Technologist, Eridu AI（首席技术专家）</p>
+<p><strong>这场演讲的位置</strong>　这是整场 TAP（时间设备项目）议程里唯一一场把"网络架构"和"精确时间"绑在一起讲的演讲。论点很集中：AI 负载的时间尺度是微秒，而今天的交换机把微秒耗在了<strong>跳数</strong>和<strong>调度</strong>上；高基数交换机消灭跳数，精确时间消灭调度不公，两者合起来才能把微秒拿回来。讲者开场即声明"这些主要是我的观点，不代表其他人"。</p>
+<p><strong>关于自动字幕的更正</strong></p>
+<table>
+<thead>
+<tr>
+<th>字幕原文</th>
+<th>更正为</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>high rate / high radic / high radex / highic</td>
+<td>high-radix</td>
+<td>高基数（端口数极多）交换机</td>
+</tr>
+<tr>
+<td>microscond / microsconds / nancond</td>
+<td>microsecond / nanosecond</td>
+<td>微秒 / 纳秒</td>
+</tr>
+<tr>
+<td>Ir / IDO / Irdo / Erdo</td>
+<td>Eridu</td>
+<td>讲者所属公司 Eridu AI</td>
+</tr>
+<tr>
+<td>one pabit / pedabit</td>
+<td>one petabit</td>
+<td>1 Pbps</td>
+</tr>
+<tr>
+<td>102 t or terabits</td>
+<td>102T（102 Tbps）</td>
+<td>幻灯片标注</td>
+</tr>
+<tr>
+<td>roundroin</td>
+<td>round-robin</td>
+<td>轮询调度</td>
+</tr>
+<tr>
+<td>deficit weighted roundroin</td>
+<td>deficit weighted round-robin（DWRR）</td>
+<td>亏空加权轮询</td>
+</tr>
+<tr>
+<td>nomalized</td>
+<td>normalized</td>
+<td>归一化</td>
+</tr>
+<tr>
+<td>sinky</td>
+<td>SyncE</td>
+<td>Synchronous Ethernet，同步以太网</td>
+</tr>
+<tr>
+<td>Iraq based time</td>
+<td>rack-based time</td>
+<td>机架级时间</td>
+</tr>
+<tr>
+<td>nicks</td>
+<td>NICs</td>
+<td>网卡</td>
+</tr>
+<tr>
+<td>multiplaner</td>
+<td>multi-plane</td>
+<td>多平面</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>01　议程：从延迟到停车场</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/01_00m20s.jpg" alt="Agenda：Latency、High-radix switching and latency、High-radix switches, precise time and the parking lot problem、Conclusion、Call to Action and Q&amp;A"><figcaption>Agenda：Latency、High-radix switching and latency、High-radix switches, precise time and the parking lot problem、Conclusion、Call to Action and Q&amp;A</figcaption></figure>
+<p>好，今天我们要讲的是高基数交换机——它是什么——以及精确时间。先声明一下：这里面很多是我的观点，可能不代表其他人的观点。我们会讲延迟、高基数交换机与延迟，会讲高基数交换机、精确时间以及"停车场问题"，然后是结论、行动号召和问答。</p>
+<blockquote>
+<p>All right. So, today we're going to talk about high rate switches, what they are, and precise time. And so, just a disclaimer that a lot of these are my views and may not represent other people's views. Um, we'll talk about latency, high switches, and latency. We'll talk about high radics latency uh or high radic switches, precise time in the parking lot problem. and then we'll talk about Q&amp;A or conclusion, call to action, and Q&amp;A.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　议程页把"停车场"和"精确时间"并列，说明这不是一个比喻修辞，而是他真正要论证的调度模型——后面会用仿真数据来支撑。</div>
+
+<h2>02　延迟决定 AI 性能</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/02_01m10s.jpg" alt="Latency Drives AI Performance：AI 负载需要低且可预测的延迟；去掉一微秒延迟可降低推理成本与训练成本、提升每瓦 token 数，可能省下数十亿美元；右侧为 CACM 论文《Attack of the Killer Microseconds》"><figcaption>Latency Drives AI Performance：AI 负载需要低且可预测的延迟；去掉一微秒延迟可降低推理成本与训练成本、提升每瓦 token 数，可能省下数十亿美元；右侧为 CACM 论文《Attack of the Killer Microseconds》</figcaption></figure>
+<p>对认识我一段时间的人来说，你们知道时间对我非常重要。对我的生活和职业影响最大的一篇论文，就是"致命微秒"（killer microseconds）这个概念。那篇论文讲的是：我们很擅长处理毫秒级问题，也很擅长处理纳秒级问题，但我们不擅长处理微秒级问题。而今天 AI 负载恰恰工作在微秒尺度上。所以如果我们能把这些微秒从延迟里拿掉，我们就能降低推理成本和训练成本、提升每瓦 token 数，并有可能为数据中心提供商或 AI 提供商省下数十亿美元。</p>
+<blockquote>
+<p>So, for those of you who have known me for a while, you know that time is very, very important to me. And one of the papers that has had a big impact on my life and my career is this concept of these killer microsconds. Um, in this paper, you know, they talk about we're good at handling the, you know, millisecond problems and the nancond problems, but we're not good at handling the microscond problems. And today the AI workloads, they work in microsconds. So if we can remove those microsconds in terms of latency, we can you know reduce inference cost and training cost and the tokens per watt go up and potentially save the data center providers or the AI providers billions of dollars.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　"致命微秒"这个提法的关键不在"微秒很小"，而在"工程投入的分布恰好绕开了它"——毫秒有操作系统管，纳秒有电路设计管，微秒落在两者之间的空白带。</div>
+
+<h2>03　高基数把网络拍平</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/03_02m15s.jpg" alt="High Radix Switching Flattens Networks and Delivers Massive Latency Benefits：左侧 30 台 102T 交换机、640 个 1.6T 端口的多跳拓扑，右侧假想的单台 1P 交换机单跳，下方列出延迟收益"><figcaption>High Radix Switching Flattens Networks and Delivers Massive Latency Benefits：左侧 30 台 102T 交换机、640 个 1.6T 端口的多跳拓扑，右侧假想的单台 1P 交换机单跳，下方列出延迟收益</figcaption></figure>
+<p>我在一家叫 Eridu 的公司工作。离开上一家雇主时，我想去一个能攻击这些"致命微秒"的地方。在 Eridu，我们就在攻击这些致命微秒，我很喜欢我的工作。要说明我们如何攻击这些致命微秒，可以看一个假想的 1 Pbps 系统：用 102T（太比特每秒）的交换机，需要大约 30 台这样的交换机才能实现 AI 所需的这个巨大带宽。但如果我们看一台假想的、单一 1 Pbps 的交换机，我们一跳就能做到。而当我们能减少这些跳数，交换延迟就会显著下降，同时还带来其他好处——减少抖动、减少拥塞、减少尾延迟。</p>
+<blockquote>
+<p>And so I work for a company called Ir. And when I left my previous employer, I wanted to go somewhere where we could attack those killer microsconds. And at IDO we are attacking those killer microsconds. And I love my job. And so to show you how by itself we are attacking those killer microsconds is if you look at a hypothetical one pabit you know system with 102 t or terabits per second switches. It takes about 30 of those switches to implement uh this bandwidth this massive bandwidth that AI needs. But if we look at a hypothetical single one pedabit switch, we can do it in a single hop. And when we can reduce those hops, then the switch latency gets reduced significantly, which also has other benefits in terms of reducing jitter, congestion, and tail</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　这张图的对比是"30 台设备 + 多层互联"对"1 台设备 + 640 个 1.6T 端口"：总带宽相同，差别全在跳数上——而跳数正是那几微秒的来源。</div>
+
+<h2>04　高基数带来的三重收益</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/04_02m35s.jpg" alt="Benefits of High-Radix Switching：更大的 scale-out/scale-across 集群与更平的单一跳数 scale-up 域，进而带来经济性、性能、运维三方面改善，最终是更好的 AI 结果"><figcaption>Benefits of High-Radix Switching：更大的 scale-out/scale-across 集群与更平的单一跳数 scale-up 域，进而带来经济性、性能、运维三方面改善，最终是更好的 AI 结果</figcaption></figure>
+<p>……尾延迟。所以高基数交换机不仅有利于 scale-up 和 scale-out，也有利于 scale-across：经济性、性能、运维都会更顺，最终带来更好的 AI 结果——更快的训练、更低的每 token 成本。那我们想想这件事。如果我……</p>
+<blockquote>
+<p>latency. And so a high rate switch can benefit not only scale up and scale out but also scale across the economics, the performance and the operation all will be smoother and it leads to better AI outcomes, the faster training, the lower cost per token. So let's think about this. If I</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　这页把收益拆成三层：拓扑层（更平）、运营层（经济性/性能/运维）、结果层（模型能力/训练速度/每 token 成本）——注意最上层写的是"更多模型智能"，这是网络演讲里少见的表述。</div>
+
+<h2>05　多跳延迟的账：每多一层约 10 倍</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/05_03m15s.jpg" alt="Hypothetical Multi-Hop Latency：交换机延迟 T，标称 X 微秒、实际约 5X；跳数 1–5 层对应实际延迟 5X / 15X / 25X / 35X / 45X，标注 &quot;Each extra level adds ~10X!&quot;"><figcaption>Hypothetical Multi-Hop Latency：交换机延迟 T，标称 X 微秒、实际约 5X；跳数 1–5 层对应实际延迟 5X / 15X / 25X / 35X / 45X，标注 &quot;Each extra level adds ~10X!&quot;</figcaption></figure>
+<p>想想今天数据中心里有什么：我有 top-of-rack 交换机、leaf、spine。如果我能压缩掉其中一层，我就能降低延迟。所以如果我能从两层的交换变成一层的交换，我就能把延迟降低三分之一。所以如果每一层的延迟是几微秒，我每层都要付这几微秒，而如果我能压缩成单层，我节省的就是其中三分之一。</p>
+<blockquote>
+<p>think about what's in the data center today, right? I have a to a top of rack switch a leaf and a spine. And if I can compress one of those layers then I can reduce the latency. So if I can go from say two layers of switching to one layer of switching I can reduce my latency by a third. And so if you know my my latency is say a couple of microsconds right for each layer I'm going to hit that couple of microsconds but my savings will be you know onethird of that if I can compress it into a single layer</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　幻灯片右上的标注是全场最尖锐的一句：标称延迟和实际延迟差 5 倍，而"每多一层还要再乘约 10 倍"——这意味着多跳网络的真实成本远比标称值难估算。</div>
+
+<h2>06　高基数交换机与精确时间</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/06_04m30s.jpg" alt="High-radix Switches and Precise Time：左侧高基数交换机特征（数百到数千端口、像单台交换机一样配置运行、无隐藏跳数）与精确时间含义（每个端口、每个时间感知特性），右侧同步以太网（SyncE）的要求与局限"><figcaption>High-radix Switches and Precise Time：左侧高基数交换机特征（数百到数千端口、像单台交换机一样配置运行、无隐藏跳数）与精确时间含义（每个端口、每个时间感知特性），右侧同步以太网（SyncE）的要求与局限</figcaption></figure>
+<p>那我们现在谈精确时间。这种高基数交换机的特征是什么？它会有几百到几千个端口，不是几十个端口或一百出头，而是几百到几千个，甚至更多。而且它具备固定形态交换机的全部好处：它像单台交换机一样被配置和运行，延迟就是单台交换机的延迟，机箱内部没有隐藏的跳数。而这对精确时间的影响是巨大的。今天大多数精确时间方案面向的是几十个端口，也许几百个端口，但现在我们要面对几千个端口，并且要让所有不同端口之间的抖动尽可能低。不仅如此，每一个时间感知特性都需要那个精确时间。在此之上还有同步以太网：我们要从一个端口引入信号，把它净化，然后送到几千个端口去。</p>
+<blockquote>
+<p>and so let's talk about now precise time. So what are the characteristics of this high radic switch? Well, it's going to have hundreds to thousands of ports, right? It's not going to be tens of ports or low hundreds. It's going to be hundreds to thousands of ports, maybe even more, right? And it's going to have the same benefits as a fixed form factor switch, right? It it configured and operated like a single switch. The latency is of a single switch. There's no hidden hops inside the box. And the implications of this on precise time is huge. Most of the the precise time solutions that we have today are targeting, you know, tens of ports or maybe hundreds of ports, but now we're looking at thousands of ports and keeping the jitter all, you know, as low as possible between all the different ports. And not only that, every time aware feature needs to be have that precise time. And so on top of that is synchronous Ethernet, right? We're going to pull in a signal from one port, we're going to clean it up, and then we're going to send it to thousands of ports.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　这页提出了一个容易被忽略的量化要求：精确时间不是"整机对准一次"，而是"每个端口、每个时间感知特性都对准"，端口数从百级跳到千级，意味着同步树的分支数也跳了一个量级。</div>
+
+<h2>07　精确时间解决停车场问题</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/07_06m40s.jpg" alt="Precise Time Solves the Parking Lot Problem：绿车在时刻 X 想离开，黄车也要离开，路口只能过一辆，先到的赢；右侧为 A/B/C 三排停车位示意"><figcaption>Precise Time Solves the Parking Lot Problem：绿车在时刻 X 想离开，黄车也要离开，路口只能过一辆，先到的赢；右侧为 A/B/C 三排停车位示意</figcaption></figure>
+<p>所以当我思考高基数交换机的问题时，它是很有物理挑战性的，是个非常大的问题。而这个"停车场问题"是我们已经能用精确时间解决的一个问题。这里的想法是：你可以把所有输入端口的精确到达时间作为调度决策的一部分。你由此得到的公平机制或度量是——你要把到达时间和驻留时间考虑进去，并且你要降低尾延迟，而所有人都希望尾延迟尽可能低。我们走一个例子。假设你在停车场，我们把到达时间当作一辆车想离开的时间。在这个例子里，绿车想在时刻 X 离开。当它正往外开的时候，突然黄车也想离开。现在我们处在绿车和黄车的路口。如果黄车赢了，它就增加了绿车的尾延迟。所以如果我们知道绿车是什么时候开始走的，为了公平，我们可以基于到达时间给绿车优先权。果然，我们让绿车先走。现在我们到了另一个路口，有绿车和紫车。紫车是最后一辆到的，所以如果它先走，它就会超过绿车，让绿车慢下来，增加它的尾延迟。黄车同理。所以我们会让绿车先通过，然后黄车通过，然后紫车通过。这样它们都获得我们能给的最低尾延迟。你看着这个会说，Dan，这很简单，这没什么，这是小事。但当你从高基数的角度看，这些停车场一下就变大了：现在不是几十个车位……</p>
+<blockquote>
+<p>And so when I think of the the the problem of a highic switch, it's physically demanding, right? It's a very large problem and you know this parking lot problem is one that we've been able to solve with precise time and the idea here is that you can use the precise arrival time at all the inputs as part of your scheduling decision right and the fairness mechanisms or metrics that you'll get out of this is you know you want to have you know arrival time and residency time considered and you want to reduce that tail latency which everybody wants to be as low as possible. And so let's go through an example. So let's say you you're in the parking lot and we are going to use the arrival time as a time where a car wants to leave. In this case the car wants the green car wants to leave at time X, right? And as it's leaving all of a sudden the yellow car wants to leave. So now we're at an intersection between the green car and the yellow car. If the yellow car wins, it adds to the tail latency of the green car, right? So if we know when the green car started to leave, to be fair, we can give, you know, preference to that green card based on its arrival time. And sure enough, we'll let the green car go ahead. Now we hit another intersection and we have the green car and the purple car. The purple car was the last car. So if it went first, it would get ahead of the green car, slowing it down, adding to its tail latency. And same for the yellow car. So we're going to let the green car go through, then the yellow car go through, and then the purple car go through. And this way they all have the lowest possible tail latency that that you know we can give them. And so you look at this and oh Dan this is easy you know this is nothing right this is you know small but when you look at things in terms of high radex all of a sudden those parking lots get a little bit bigger so now instead of you know tens</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　"先到先走"听起来是常识，但要执行它，交换机必须知道每个包**何时到达**——这个时间戳的精度直接决定了调度是否真的公平，这也是精确时间与交换芯片的接合点。</div>
+
+<h2>08　当停车场有 5000 个车位</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/08_07m30s.jpg" alt="~5000 Spaces：一张密密麻麻的停车场示意图，数千个车位与出口"><figcaption>~5000 Spaces：一张密密麻麻的停车场示意图，数千个车位与出口</figcaption></figure>
+<p>……个车位，现在我有几千个车位，或者可能有 5000 个车位。所以精确时间提供了一种方式，让所有这些不同的"车"、也就是进入网络设备的各个输入，有一个共同的基础可以依据。而且并不是所有这些车都去一个出口——这个系统里其实有 5000 个出口。所以我们必须调度 5000 个不同的入口和 5000 个不同的出口。于是我做了一些仿真，看……</p>
+<blockquote>
+<p>of spaces now I have thousands of spaces or potentially 5,000 spaces and so precise time gives a way to give all of these different cars or inputs into a networking device, you know, a a a base that they can work off of, right? And it's not that we're all these cars are going to one exit. There's actually 5,000 exits in this system. And so we have to schedule, you know, 5,000 different entrances and 5,000 different exits. And so I ran some simulations on what</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　这张图的作用是把直觉撞碎：小停车场里"先到先走"靠人眼就能判断，5000 个车位 × 5000 个出口时，公平性只能靠硬件时间戳和调度算法来保证。</div>
+
+<h2>09　理想到达时间调度器的尾延迟最短</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/09_08m40s.jpg" alt="Ideal Arrival-Time Scheduler Has the Shortest Tail：p99.99 延迟随负载变化，Round-robin 1.00、DWRR 0.95、Arrival time 0.67；脚注 P99.99 相比 DWRR 在 50% 负载降 17%、90% 负载降 31%"><figcaption>Ideal Arrival-Time Scheduler Has the Shortest Tail：p99.99 延迟随负载变化，Round-robin 1.00、DWRR 0.95、Arrival time 0.67；脚注 P99.99 相比 DWRR 在 50% 负载降 17%、90% 负载降 31%</figcaption></figure>
+<p>……一个 1000 端口系统会是什么样。我想比较轮询（round-robin）、亏空加权轮询（DWRR）和一个到达时间调度器，也就是理想的到达时间调度器。轮询就像你在一个四向停车标志前，在四个方向之间轮转，谁先到谁先走。亏空加权轮询基本上是在所有方向之间尽量均等，果然 DWRR 的性能会好一点，它在今天的产业里用得相当普遍。但如果我们有一个理想的到达时间调度器，我们一下就把延迟降到大约 67%——这是归一化延迟，而且这是你的 P99.99 延迟。所以如果原来是 3 微秒延迟，我就这样干掉了一微秒。</p>
+<blockquote>
+<p>this would look like for a thousandport system. And I wanted to compare a roundroin, a deficit weighted roundroin and an arrival time, an ideal arrival time scheduler. And so round robin is like you're at a four-way stop sign and you rotate between the four different uh you know people at the stop sign. Whoever got there first gets to go. deficit weighted round robin is you basically try to equal it between all the different um all the different uh directions and sure enough you get a little better performance with DWRR and it's used quite commonly in industry today but if we had an ideal arrival time scheduler all of a sudden we've reduced it to about 67 you know percent of this nomal nominalized uh latency and this is your P99.99 latency. So if it took you know three microsconds of latency you know I've just killed a microscond</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　这是全场唯一的实测（仿真）数据：DWRR 相对轮询只改善 5%，而到达时间调度相对 DWRR 在 90% 负载下改善 31%——说明调度策略的收益远大于同策略内的微调。</div>
+
+<h2>10　结论：两条腿</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/10_09m50s.jpg" alt="Conclusions：高基数交换降低网络延迟与抖动；精确时间帮助管理并约束高基数交换机内的延迟（精确时间测量带来可见性、SyncE 分发高质量时钟、精确时间使停车场问题可解）"><figcaption>Conclusions：高基数交换降低网络延迟与抖动；精确时间帮助管理并约束高基数交换机内的延迟（精确时间测量带来可见性、SyncE 分发高质量时钟、精确时间使停车场问题可解）</figcaption></figure>
+<p>所以结论是：高基数交换机降低网络延迟与抖动，它把网络拍平、最小化跳数，在 scale-up 和 scale-out 中形成更大的单跳域，相对低基数交换机显著降低网络延迟与抖动。而且收益不止于延迟——还有功耗、成本、可靠性、利用率、训练和推理成本。而精确时间帮助管理并约束穿过高基数交换机的延迟。精确时间测量——我今天看这个的时候注意到，不是 PTM，而只是测量精确时间——让你在许多不同点上获得对这些延迟的可见性。SyncE 让你分发一个非常高质量的时钟。而精确时间让方案能够解决像今天这个停车场问题的问题。所以你今天回家路上经过那些路口时会想：嘿，我先到的，本来应该我先走。总之……</p>
+<blockquote>
+<p>and so you know for conclusions the high rate switch you know reduces network latency and jitter it flattens minimize hops you know it's a larger single hop domain and scale up and scale out it significantly reduces the network latency and jitter versus low radex switches. And the benefits go beyond, you know, the the latency, right? There's power, there's cost, there's reliability, utilization, training, and inference costs. And precise time helps manage and contain latency through the high switch, right? So precise time measurement and I saw this today as I was looking at this not the PTM but just measuring precise time you know allows visibilities into these latencies at many different points right sinky allows you to distribute a very high quality clock and precise time enables the solution to address problems like today's parking lot problem and as you go home today when you're at that different intersections you'll see you know hey I I started first. I should have been able to go first. But anyway,</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　结论页把两件事明确分工：高基数负责"减少延迟的来源"（跳数），精确时间负责"让剩下的延迟可管理"（调度与可见性）——缺一条腿都不成立。</div>
+
+<h2>11　行动号召与问答：单点故障怎么办</h2>
+<figure><img src="file:///G:/AI_IDE_output/workbuddy_out/yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/images/11_11m40s.jpg" alt="Call to Action：一是推动数据中心内的精确时间、避开&quot;致命微秒&quot;，二是推动开放的多机架 scale-up 域（OCP 新工作流），附白皮书封面、工作流页面与二维码"><figcaption>Call to Action：一是推动数据中心内的精确时间、避开&quot;致命微秒&quot;，二是推动开放的多机架 scale-up 域（OCP 新工作流），附白皮书封面、工作流页面与二维码</figcaption></figure>
+<p>行动号召。我觉得我这辈子的使命就是试着干掉那些"致命微秒"。客户花了很多时间写论文、发表论文，讲干掉致命微秒的好处。所以在 Eridu，我们正通过把 AI 网络拍平来干掉这些致命微秒。在此之上，我们认为 scale-up 网络会增长：如果我有一台几千个端口的交换机，那我可能会把它连到几千个 GPU 上，那不可能装进一个机架。所以今天早些时候有人谈到"机架级时间"。但我认为我们真的需要从 <strong>scale-up 域时间</strong>的角度来思考这件事。而这可能只是这个多机架 scale-up 域的一个方面——已经有一些公司（包括我们）开始组织这件事。如果你想加入这个工作流，可以拍一下二维码，了解我们在做什么。那里还有一份白皮书。谢谢。</p>
+<p><strong>主持人</strong>：谢谢 Dan。观众有问题吗？好。</p>
+<p><strong>提问者</strong>：麦克风开了吗？喂？现在能用了。好，谢谢。我的问题是：如果你把这么多端口塞进一个机箱，什么能阻止它变成单点故障？</p>
+<p><strong>Dan Biederman</strong>：你完全说对了。所以当我们走向多平面（multi-plane）机箱时，我们会有多个平面。你的 GPU 或网卡会连接到多个平面。所以如果我有 1000 个 GPU，我可能有比如 5 台或 10 台交换机，每台建立不同的连接，然后我把流量喷洒到这些不同的端口上。现在他们在谈 MRC，它跑在 SRv6 之上，基本上就是让网卡把流量喷洒到多个平面上。所以如果突然有一台交换机挂了，爆炸半径被最小化，影响被最小化。这次峰会上早些时候也有一些演讲谈到 MRC：你可以看到性能下降，然后在 MRC 里出问题时立即响应。谢谢。</p>
+<p><strong>主持人</strong>：还有别的问题吗？好。谢谢 Dan。谢谢。</p>
+<blockquote>
+<p>call to action. So, you know, I feel my mission in life is to try and kill those killer microsconds. A customer spend a lot of time to write a paper and publish a paper on, you know, the advantages of killing those killer microsconds. And so here at Erdo we are trying to kill those killer microsconds by flattening the the AI networks. Um on top of that we look at the scaleup networks are going to grow right if I have a switch with thousands of ports then potentially I'm going to connect that to thousands of GPUs that's not going to fit in a single rack. And so earlier today, you know, there was talk about Iraq based time, right? But I think we really need to think of this in terms of the scaleup domain time. And you know, that might be one aspect of, you know, this multirack scaleup domain that a few companies including are starting to you know to to organize. And if you'd like to join that workstream, you know, you can take a picture of the the uh QR code and learn more about what we're doing. There's also a white paper there. Thank you. Thanks, Dan. Do we have any questions from the audience? Yes. Is the mic microphone on? Hello. Hello. It's working now. Good. Thank you. Anchor. Um, okay. So my question is if you're piling so many ports into a single box, what stops that being a single point failure? You're absolutely right. Right. So as we move towards multiplaner boxes, right? We will have multiple planes. So your your GPUs or your nicks will be connected to multiple planes, right? So, if I have a thousand GPUs, I may have say five or 10 switches, each one of those with a different connection, and I'm going to spray my traffic across those different ports. Right? Right now, they're talking about MRC, uh, which runs off of SRV6, where they'll basically have the nick spray the traffic across multiple planes. So, if all of a sudden your your switch dies, the blast radius is minimized, right? The effect is minimized. And there were some presentations um earlier in this uh this u summit where they talked about how MRC6 you could see a degradation and then an immediate response as bad things happened in the MRC. And so thank you. Any other questions? Okay. Uh thanks Dan. Thank you.</p>
+</blockquote>
+<div class="takeaway"><b>小结</b>　问答暴露了这场论证的薄弱环节：整场讲"更大的单跳域"，但单机箱端口数越多，单点故障的爆炸半径越大；他的答案是靠多平面加流量喷洒，也就是用外部冗余来补内部集中的风险。</div>
+
+<hr>
+<h1>附录</h1>
+<h2>附录 A　数据核对表</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值 / 结论</th>
+<th>来源</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>演讲时长</td>
+<td>13 分 20 秒（800.5 s）</td>
+<td>视频元数据</td>
+<td>—</td>
+</tr>
+<tr>
+<td>对比拓扑</td>
+<td>30 台 102T 交换机、640 个 1.6T 端口 vs 1 台假想 1P 交换机、640 个 1.6T 端口</td>
+<td>幻灯片 03</td>
+<td>640 × 1.6T ≈ 1.02P</td>
+</tr>
+<tr>
+<td>多跳延迟（1–5 层）</td>
+<td>标称 X / 3X / 5X / 7X / 9X；实际 5X / 15X / 25X / 35X / 45X</td>
+<td>幻灯片 05</td>
+<td>幻灯片标注 "Each extra level adds ~10X!"</td>
+</tr>
+<tr>
+<td>单层压缩收益</td>
+<td>两层压成一层，延迟降约三分之一</td>
+<td>口播</td>
+<td>—</td>
+</tr>
+<tr>
+<td>仿真规模</td>
+<td>1000 端口系统</td>
+<td>口播</td>
+<td>—</td>
+</tr>
+<tr>
+<td>p99.99 延迟（90% 负载，归一化）</td>
+<td>Round-robin 1.00 / DWRR 0.95 / Arrival time 0.67</td>
+<td>幻灯片 09</td>
+<td>与口播"降到约 67%"一致</td>
+</tr>
+<tr>
+<td>到达时间调度 vs DWRR</td>
+<td>50% 负载 −17%，90% 负载 −31%</td>
+<td>幻灯片 09 脚注</td>
+<td>—</td>
+</tr>
+<tr>
+<td>停车场规模</td>
+<td>~5000 个车位、5000 个出口</td>
+<td>幻灯片 08</td>
+<td>—</td>
+</tr>
+<tr>
+<td>引用论文</td>
+<td>Attack of the Killer Microseconds，DOI 10.1145/3015146</td>
+<td>幻灯片 02</td>
+<td>Patterson &amp; Hanrahan，CACM</td>
+</tr>
+<tr>
+<td>新工作流</td>
+<td>Open Multi-Rack Scale-up Domains（OCP）</td>
+<td>幻灯片 11</td>
+<td>附二维码与白皮书</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>一处需要说明的算术</strong>　幻灯片 03 左侧写"30 × 102T switches / 640 × 1.6T ports"。若按每台 102T 计，30 台合计约 3.07P，与口播的"1 Pbps 系统"不符；而 640 × 1.6T = 1024T ≈ 1P，与"1 Pbps"吻合。因此更合理的读法是：<strong>640 个 1.6T 端口是整个 fabric 的总端口数，1P 是总带宽</strong>，30 台是把这个带宽拆成多跳的方式。正文按幻灯片原文陈述，此处标注差异。</p>
+</blockquote>
+<h2>附录 B　时间轴</h2>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00:00</td>
+<td>议程与免责声明</td>
+</tr>
+<tr>
+<td>00:33</td>
+<td>致命微秒：AI 负载工作在微秒尺度</td>
+</tr>
+<tr>
+<td>01:23</td>
+<td>30 台 102T 交换机 vs 单台 1P 交换机</td>
+</tr>
+<tr>
+<td>02:23</td>
+<td>高基数对 scale-up / scale-out / scale-across 的收益</td>
+</tr>
+<tr>
+<td>02:46</td>
+<td>从两层交换压到一层，延迟降三分之一</td>
+</tr>
+<tr>
+<td>03:34</td>
+<td>高基数交换机的特征与对精确时间的含义</td>
+</tr>
+<tr>
+<td>04:55</td>
+<td>停车场问题：用到达时间做调度</td>
+</tr>
+<tr>
+<td>07:07</td>
+<td>5000 个车位与 5000 个出口</td>
+</tr>
+<tr>
+<td>07:47</td>
+<td>仿真：轮询 / DWRR / 到达时间调度</td>
+</tr>
+<tr>
+<td>08:57</td>
+<td>结论：高基数 + 精确时间</td>
+</tr>
+<tr>
+<td>10:14</td>
+<td>行动号召、多机架 scale-up 工作流、问答</td>
+</tr>
+<tr>
+<td>13:08</td>
+<td>结束</td>
+</tr>
+</tbody>
+</table>
+<h2>附录 C　术语表</h2>
+<table>
+<thead>
+<tr>
+<th>缩写</th>
+<th>全称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radix</td>
+<td>—</td>
+<td>交换机端口数量级；高基数指数百至数千端口</td>
+</tr>
+<tr>
+<td>Scale-up</td>
+<td>—</td>
+<td>纵向扩展，单域内更多加速器互联</td>
+</tr>
+<tr>
+<td>Scale-out</td>
+<td>—</td>
+<td>横向扩展，更多节点组成集群</td>
+</tr>
+<tr>
+<td>Scale-across</td>
+<td>—</td>
+<td>跨域扩展，多个集群互联</td>
+</tr>
+<tr>
+<td>DWRR</td>
+<td>Deficit Weighted Round-Robin</td>
+<td>亏空加权轮询调度</td>
+</tr>
+<tr>
+<td>p99.99</td>
+<td>—</td>
+<td>99.99 分位延迟，尾延迟指标</td>
+</tr>
+<tr>
+<td>SyncE</td>
+<td>Synchronous Ethernet</td>
+<td>同步以太网，从线路恢复频率</td>
+</tr>
+<tr>
+<td>PTM</td>
+<td>Precision Time Measurement</td>
+<td>PCIe 精确定时机制</td>
+</tr>
+<tr>
+<td>MRC</td>
+<td>—</td>
+<td>多平面流量喷洒机制，运行于 SRv6 之上</td>
+</tr>
+<tr>
+<td>SRv6</td>
+<td>Segment Routing over IPv6</td>
+<td>IPv6 分段路由</td>
+</tr>
+<tr>
+<td>NIC</td>
+<td>Network Interface Card</td>
+<td>网卡</td>
+</tr>
+</tbody>
+</table>
+</body></html>

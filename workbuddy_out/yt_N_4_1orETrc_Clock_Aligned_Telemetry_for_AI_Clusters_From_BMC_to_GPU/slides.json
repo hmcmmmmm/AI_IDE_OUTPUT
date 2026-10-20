@@ -1,0 +1,136 @@
+{
+ "info": {
+  "duration": 934.278095
+ },
+ "interval": 3.0,
+ "states": [
+  {
+   "start": 0.0,
+   "end": 24.0,
+   "rep_time": 15.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 24.0,
+   "end": 78.0,
+   "rep_time": 50.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 78.0,
+   "end": 147.0,
+   "rep_time": 110.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 147.0,
+   "end": 207.0,
+   "rep_time": 175.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 207.0,
+   "end": 246.0,
+   "rep_time": 225.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 246.0,
+   "end": 312.0,
+   "rep_time": 280.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 312.0,
+   "end": 345.0,
+   "rep_time": 330.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 345.0,
+   "end": 390.0,
+   "rep_time": 365.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 390.0,
+   "end": 450.0,
+   "rep_time": 420.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 450.0,
+   "end": 591.0,
+   "rep_time": 520.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 591.0,
+   "end": 621.0,
+   "rep_time": 600.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 621.0,
+   "end": 705.0,
+   "rep_time": 660.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 705.0,
+   "end": 753.0,
+   "rep_time": 730.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 753.0,
+   "end": 837.0,
+   "rep_time": 790.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 837.0,
+   "end": 903.0,
+   "rep_time": 870.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 903.0,
+   "end": 934.278095,
+   "rep_time": 915.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  }
+ ]
+}

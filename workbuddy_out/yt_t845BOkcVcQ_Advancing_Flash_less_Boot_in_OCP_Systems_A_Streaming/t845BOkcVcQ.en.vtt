@@ -1,0 +1,3616 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.760 --> 00:00:06.710 align:start position:0%
+ 
+Okay.<00:00:04.240><c> Thank</c><00:00:04.400><c> you.</c><00:00:05.359><c> Is</c><00:00:05.520><c> that</c><00:00:05.759><c> okay?</c><00:00:06.240><c> Yeah.</c>
+
+00:00:06.710 --> 00:00:06.720 align:start position:0%
+Okay. Thank you. Is that okay? Yeah.
+ 
+
+00:00:06.720 --> 00:00:08.310 align:start position:0%
+Okay. Thank you. Is that okay? Yeah.
+&gt;&gt; Yeah.<00:00:06.960><c> Hi.</c><00:00:07.200><c> Uh</c><00:00:07.520><c> today</c><00:00:07.680><c> we're</c><00:00:07.919><c> going</c><00:00:08.000><c> to</c><00:00:08.160><c> talk</c>
+
+00:00:08.310 --> 00:00:08.320 align:start position:0%
+&gt;&gt; Yeah. Hi. Uh today we're going to talk
+ 
+
+00:00:08.320 --> 00:00:10.950 align:start position:0%
+&gt;&gt; Yeah. Hi. Uh today we're going to talk
+about<00:00:08.960><c> uh</c><00:00:09.200><c> the</c><00:00:09.440><c> streaming</c><00:00:09.840><c> boot</c><00:00:10.160><c> flash</c><00:00:10.639><c> boot</c>
+
+00:00:10.950 --> 00:00:10.960 align:start position:0%
+about uh the streaming boot flash boot
+ 
+
+00:00:10.960 --> 00:00:13.350 align:start position:0%
+about uh the streaming boot flash boot
+concept<00:00:11.360><c> that</c><00:00:11.840><c> u</c><00:00:12.400><c> we</c><00:00:12.639><c> have</c><00:00:12.800><c> been</c><00:00:12.960><c> talking</c><00:00:13.120><c> for</c>
+
+00:00:13.350 --> 00:00:13.360 align:start position:0%
+concept that u we have been talking for
+ 
+
+00:00:13.360 --> 00:00:16.390 align:start position:0%
+concept that u we have been talking for
+several<00:00:13.840><c> in</c><00:00:14.000><c> a</c><00:00:14.160><c> few</c><00:00:14.320><c> times</c><00:00:14.559><c> so</c><00:00:14.799><c> far.</c><00:00:15.679><c> Um</c><00:00:16.160><c> you</c>
+
+00:00:16.390 --> 00:00:16.400 align:start position:0%
+several in a few times so far. Um you
+ 
+
+00:00:16.400 --> 00:00:19.029 align:start position:0%
+several in a few times so far. Um you
+know<00:00:16.640><c> it's</c><00:00:16.960><c> a</c><00:00:17.440><c> there's</c><00:00:17.920><c> lot</c><00:00:18.080><c> of</c><00:00:18.160><c> talks</c><00:00:18.560><c> about</c>
+
+00:00:19.029 --> 00:00:19.039 align:start position:0%
+know it's a there's lot of talks about
+ 
+
+00:00:19.039 --> 00:00:21.029 align:start position:0%
+know it's a there's lot of talks about
+what<00:00:19.439><c> needs</c><00:00:19.680><c> to</c><00:00:19.760><c> be</c><00:00:19.920><c> done</c><00:00:20.240><c> when</c><00:00:20.480><c> you</c><00:00:20.640><c> look</c><00:00:20.800><c> at</c>
+
+00:00:21.029 --> 00:00:21.039 align:start position:0%
+what needs to be done when you look at
+ 
+
+00:00:21.039 --> 00:00:24.150 align:start position:0%
+what needs to be done when you look at
+in<00:00:21.359><c> a</c><00:00:22.080><c> uh</c><00:00:22.240><c> totally</c><00:00:22.720><c> autonomous</c><00:00:23.359><c> system</c><00:00:23.600><c> level.</c>
+
+00:00:24.150 --> 00:00:24.160 align:start position:0%
+in a uh totally autonomous system level.
+ 
+
+00:00:24.160 --> 00:00:26.870 align:start position:0%
+in a uh totally autonomous system level.
+If<00:00:24.400><c> you</c><00:00:24.480><c> look</c><00:00:24.640><c> at</c><00:00:25.039><c> a</c><00:00:25.439><c> complete</c><00:00:25.840><c> control</c><00:00:26.480><c> within</c>
+
+00:00:26.870 --> 00:00:26.880 align:start position:0%
+If you look at a complete control within
+ 
+
+00:00:26.880 --> 00:00:29.509 align:start position:0%
+If you look at a complete control within
+the<00:00:27.039><c> platform</c><00:00:27.359><c> itself</c><00:00:28.160><c> itself</c><00:00:28.880><c> not</c><00:00:29.119><c> dependent</c>
+
+00:00:29.509 --> 00:00:29.519 align:start position:0%
+the platform itself itself not dependent
+ 
+
+00:00:29.519 --> 00:00:32.150 align:start position:0%
+the platform itself itself not dependent
+on<00:00:29.679><c> ODM</c><00:00:30.160><c> or</c><00:00:30.240><c> OEM</c><00:00:30.720><c> to</c><00:00:30.880><c> load</c><00:00:31.039><c> the</c><00:00:31.199><c> firmware.</c><00:00:32.000><c> So</c>
+
+00:00:32.150 --> 00:00:32.160 align:start position:0%
+on ODM or OEM to load the firmware. So
+ 
+
+00:00:32.160 --> 00:00:33.190 align:start position:0%
+on ODM or OEM to load the firmware. So
+we're<00:00:32.239><c> going</c><00:00:32.399><c> to</c><00:00:32.480><c> talk</c><00:00:32.640><c> about</c><00:00:32.880><c> some</c><00:00:33.040><c> of</c><00:00:33.120><c> the</c>
+
+00:00:33.190 --> 00:00:33.200 align:start position:0%
+we're going to talk about some of the
+ 
+
+00:00:33.200 --> 00:00:34.549 align:start position:0%
+we're going to talk about some of the
+things<00:00:33.360><c> that</c><00:00:33.520><c> we</c><00:00:33.680><c> have</c><00:00:33.760><c> been</c><00:00:33.920><c> experimenting.</c>
+
+00:00:34.549 --> 00:00:34.559 align:start position:0%
+things that we have been experimenting.
+ 
+
+00:00:34.559 --> 00:00:36.069 align:start position:0%
+things that we have been experimenting.
+We<00:00:34.640><c> have</c><00:00:34.800><c> been</c><00:00:34.960><c> sending</c><00:00:35.280><c> these</c><00:00:35.520><c> issues</c><00:00:35.840><c> on</c>
+
+00:00:36.069 --> 00:00:36.079 align:start position:0%
+We have been sending these issues on
+ 
+
+00:00:36.079 --> 00:00:38.470 align:start position:0%
+We have been sending these issues on
+those<00:00:36.320><c> things.</c><00:00:37.040><c> So</c><00:00:37.280><c> today</c><00:00:37.760><c> u</c><00:00:37.840><c> I'm</c><00:00:38.079><c> presenting</c>
+
+00:00:38.470 --> 00:00:38.480 align:start position:0%
+those things. So today u I'm presenting
+ 
+
+00:00:38.480 --> 00:00:41.190 align:start position:0%
+those things. So today u I'm presenting
+with<00:00:38.719><c> myself</c><00:00:39.120><c> Mon.</c><00:00:39.600><c> I'm</c><00:00:39.760><c> from</c><00:00:39.840><c> Lattis</c>
+
+00:00:41.190 --> 00:00:41.200 align:start position:0%
+with myself Mon. I'm from Lattis
+ 
+
+00:00:41.200 --> 00:00:44.069 align:start position:0%
+with myself Mon. I'm from Lattis
+&gt;&gt; and<00:00:41.440><c> I'm</c><00:00:41.600><c> Alex</c><00:00:41.840><c> Arvantes.</c><00:00:42.320><c> I'm</c><00:00:42.480><c> from</c><00:00:42.640><c> Intel.</c>
+
+00:00:44.069 --> 00:00:44.079 align:start position:0%
+&gt;&gt; and I'm Alex Arvantes. I'm from Intel.
+ 
+
+00:00:44.079 --> 00:00:46.389 align:start position:0%
+&gt;&gt; and I'm Alex Arvantes. I'm from Intel.
+So<00:00:44.320><c> yeah</c><00:00:44.480><c> we're</c><00:00:44.719><c> going</c><00:00:44.879><c> to</c><00:00:45.360><c> start</c><00:00:45.600><c> with</c><00:00:45.760><c> the</c>
+
+00:00:46.389 --> 00:00:46.399 align:start position:0%
+So yeah we're going to start with the
+ 
+
+00:00:46.399 --> 00:00:48.229 align:start position:0%
+So yeah we're going to start with the
+differences<00:00:46.879><c> on</c><00:00:47.120><c> the</c><00:00:47.440><c> flashless</c><00:00:47.840><c> boot</c><00:00:48.079><c> and</c>
+
+00:00:48.229 --> 00:00:48.239 align:start position:0%
+differences on the flashless boot and
+ 
+
+00:00:48.239 --> 00:00:52.389 align:start position:0%
+differences on the flashless boot and
+streaming<00:00:48.559><c> boot.</c><00:00:49.760><c> So</c><00:00:50.160><c> pretty</c><00:00:50.399><c> much</c><00:00:50.640><c> is</c>
+
+00:00:52.389 --> 00:00:52.399 align:start position:0%
+streaming boot. So pretty much is
+ 
+
+00:00:52.399 --> 00:00:53.670 align:start position:0%
+streaming boot. So pretty much is
+why<00:00:53.280><c> yeah</c>
+
+00:00:53.670 --> 00:00:53.680 align:start position:0%
+why yeah
+ 
+
+00:00:53.680 --> 00:00:57.430 align:start position:0%
+why yeah
+&gt;&gt; why<00:00:54.000><c> it's</c><00:00:54.480><c> needed</c><00:00:55.520><c> why</c><00:00:56.320><c> we</c><00:00:56.640><c> don't</c><00:00:56.800><c> think</c><00:00:57.039><c> on</c><00:00:57.199><c> a</c>
+
+00:00:57.430 --> 00:00:57.440 align:start position:0%
+&gt;&gt; why it's needed why we don't think on a
+ 
+
+00:00:57.440 --> 00:00:59.750 align:start position:0%
+&gt;&gt; why it's needed why we don't think on a
+different<00:00:57.920><c> boot</c><00:00:58.320><c> solution</c><00:00:58.640><c> that</c><00:00:58.960><c> the</c><00:00:59.359><c> current</c>
+
+00:00:59.750 --> 00:00:59.760 align:start position:0%
+different boot solution that the current
+ 
+
+00:00:59.760 --> 00:01:01.910 align:start position:0%
+different boot solution that the current
+solution<00:01:00.079><c> that</c><00:01:00.320><c> we</c><00:01:00.559><c> have</c><00:01:00.879><c> but</c><00:01:01.199><c> pretty</c><00:01:01.440><c> much</c><00:01:01.600><c> is</c>
+
+00:01:01.910 --> 00:01:01.920 align:start position:0%
+solution that we have but pretty much is
+ 
+
+00:01:01.920 --> 00:01:05.509 align:start position:0%
+solution that we have but pretty much is
+we<00:01:02.239><c> can</c><00:01:03.280><c> talk</c><00:01:03.600><c> about</c><00:01:03.760><c> the</c><00:01:04.000><c> different</c><00:01:04.960><c> for</c><00:01:05.280><c> uh</c>
+
+00:01:05.509 --> 00:01:05.519 align:start position:0%
+we can talk about the different for uh
+ 
+
+00:01:05.519 --> 00:01:08.390 align:start position:0%
+we can talk about the different for uh
+vectors<00:01:06.640><c> uh</c><00:01:06.799><c> one</c><00:01:07.119><c> is</c><00:01:07.200><c> like</c><00:01:07.360><c> the</c><00:01:07.520><c> supply</c><00:01:07.840><c> chain</c>
+
+00:01:08.390 --> 00:01:08.400 align:start position:0%
+vectors uh one is like the supply chain
+ 
+
+00:01:08.400 --> 00:01:10.950 align:start position:0%
+vectors uh one is like the supply chain
+uh<00:01:08.640><c> attack</c><00:01:08.960><c> surfaces</c><00:01:09.680><c> we</c><00:01:09.920><c> can</c><00:01:10.080><c> have</c><00:01:10.240><c> a</c><00:01:10.479><c> control</c>
+
+00:01:10.950 --> 00:01:10.960 align:start position:0%
+uh attack surfaces we can have a control
+ 
+
+00:01:10.960 --> 00:01:12.310 align:start position:0%
+uh attack surfaces we can have a control
+environment<00:01:11.520><c> when</c><00:01:11.760><c> we</c><00:01:11.920><c> have</c><00:01:12.080><c> all</c><00:01:12.159><c> the</c>
+
+00:01:12.310 --> 00:01:12.320 align:start position:0%
+environment when we have all the
+ 
+
+00:01:12.320 --> 00:01:15.750 align:start position:0%
+environment when we have all the
+firmware<00:01:12.799><c> all</c><00:01:12.960><c> the</c><00:01:13.119><c> recipe</c><00:01:13.840><c> and</c><00:01:14.320><c> the</c><00:01:14.720><c> nodes</c><00:01:15.119><c> or</c>
+
+00:01:15.750 --> 00:01:15.760 align:start position:0%
+firmware all the recipe and the nodes or
+ 
+
+00:01:15.760 --> 00:01:19.670 align:start position:0%
+firmware all the recipe and the nodes or
+the<00:01:16.080><c> computes</c><00:01:16.960><c> systems</c><00:01:17.920><c> will</c><00:01:18.240><c> have</c><00:01:18.400><c> that</c><00:01:18.960><c> and</c>
+
+00:01:19.670 --> 00:01:19.680 align:start position:0%
+the computes systems will have that and
+ 
+
+00:01:19.680 --> 00:01:22.310 align:start position:0%
+the computes systems will have that and
+all<00:01:20.320><c> when</c><00:01:20.640><c> they</c><00:01:20.960><c> are</c><00:01:21.280><c> installed</c><00:01:21.759><c> on</c><00:01:21.920><c> the</c><00:01:22.080><c> data</c>
+
+00:01:22.310 --> 00:01:22.320 align:start position:0%
+all when they are installed on the data
+ 
+
+00:01:22.320 --> 00:01:26.230 align:start position:0%
+all when they are installed on the data
+center.<00:01:23.040><c> So</c><00:01:23.759><c> we</c><00:01:24.080><c> remove</c><00:01:24.479><c> that</c><00:01:25.040><c> from</c><00:01:25.360><c> the</c><00:01:25.920><c> chip</c>
+
+00:01:26.230 --> 00:01:26.240 align:start position:0%
+center. So we remove that from the chip
+ 
+
+00:01:26.240 --> 00:01:28.310 align:start position:0%
+center. So we remove that from the chip
+and<00:01:26.640><c> etc.</c><00:01:27.439><c> Another</c><00:01:27.759><c> thing</c><00:01:27.920><c> is</c><00:01:28.080><c> the</c>
+
+00:01:28.310 --> 00:01:28.320 align:start position:0%
+and etc. Another thing is the
+ 
+
+00:01:28.320 --> 00:01:30.789 align:start position:0%
+and etc. Another thing is the
+verification<00:01:28.960><c> granularity.</c><00:01:30.159><c> So</c><00:01:30.479><c> on</c><00:01:30.640><c> the</c>
+
+00:01:30.789 --> 00:01:30.799 align:start position:0%
+verification granularity. So on the
+ 
+
+00:01:30.799 --> 00:01:32.789 align:start position:0%
+verification granularity. So on the
+traditional<00:01:31.200><c> flashes</c><00:01:31.680><c> the</c><00:01:31.920><c> verification</c><00:01:32.479><c> is</c>
+
+00:01:32.789 --> 00:01:32.799 align:start position:0%
+traditional flashes the verification is
+ 
+
+00:01:32.799 --> 00:01:35.350 align:start position:0%
+traditional flashes the verification is
+not<00:01:33.119><c> as</c><00:01:33.439><c> easy</c><00:01:33.680><c> to</c><00:01:33.920><c> be</c><00:01:34.079><c> done.</c><00:01:34.479><c> In</c><00:01:34.720><c> this</c><00:01:34.880><c> way</c><00:01:35.119><c> we</c>
+
+00:01:35.350 --> 00:01:35.360 align:start position:0%
+not as easy to be done. In this way we
+ 
+
+00:01:35.360 --> 00:01:39.190 align:start position:0%
+not as easy to be done. In this way we
+can<00:01:35.520><c> verify</c><00:01:36.479><c> the</c><00:01:36.720><c> image</c><00:01:37.520><c> from</c><00:01:38.079><c> from</c><00:01:38.560><c> the</c>
+
+00:01:39.190 --> 00:01:39.200 align:start position:0%
+can verify the image from from the
+ 
+
+00:01:39.200 --> 00:01:40.789 align:start position:0%
+can verify the image from from the
+wireless<00:01:39.600><c> streamer</c><00:01:39.920><c> or</c><00:01:40.079><c> flagless</c><00:01:40.560><c> boot</c>
+
+00:01:40.789 --> 00:01:40.799 align:start position:0%
+wireless streamer or flagless boot
+ 
+
+00:01:40.799 --> 00:01:43.590 align:start position:0%
+wireless streamer or flagless boot
+depending<00:01:41.040><c> on</c><00:01:41.280><c> where</c><00:01:41.920><c> we</c><00:01:42.079><c> had</c><00:01:42.320><c> it.</c><00:01:43.119><c> And</c><00:01:43.360><c> the</c>
+
+00:01:43.590 --> 00:01:43.600 align:start position:0%
+depending on where we had it. And the
+ 
+
+00:01:43.600 --> 00:01:46.149 align:start position:0%
+depending on where we had it. And the
+neck<00:01:43.920><c> which</c><00:01:44.079><c> is</c><00:01:44.240><c> like</c><00:01:44.720><c> kind</c><00:01:44.960><c> of</c><00:01:45.040><c> my</c><00:01:45.360><c> favorite</c>
+
+00:01:46.149 --> 00:01:46.159 align:start position:0%
+neck which is like kind of my favorite
+ 
+
+00:01:46.159 --> 00:01:49.030 align:start position:0%
+neck which is like kind of my favorite
+on<00:01:46.399><c> the</c><00:01:46.640><c> firmware</c><00:01:46.960><c> update</c><00:01:47.360><c> complexity.</c><00:01:48.560><c> H</c><00:01:48.880><c> if</c>
+
+00:01:49.030 --> 00:01:49.040 align:start position:0%
+on the firmware update complexity. H if
+ 
+
+00:01:49.040 --> 00:01:51.190 align:start position:0%
+on the firmware update complexity. H if
+you<00:01:49.280><c> have</c><00:01:49.680><c> experience</c><00:01:50.240><c> on</c><00:01:50.479><c> trying</c><00:01:50.720><c> to</c><00:01:50.880><c> update</c>
+
+00:01:51.190 --> 00:01:51.200 align:start position:0%
+you have experience on trying to update
+ 
+
+00:01:51.200 --> 00:01:54.389 align:start position:0%
+you have experience on trying to update
+several<00:01:51.600><c> nodes</c><00:01:51.840><c> on</c><00:01:52.000><c> a</c><00:01:52.159><c> cluster</c><00:01:52.880><c> uh</c><00:01:53.040><c> it</c><00:01:53.360><c> takes</c>
+
+00:01:54.389 --> 00:01:54.399 align:start position:0%
+several nodes on a cluster uh it takes
+ 
+
+00:01:54.399 --> 00:01:57.429 align:start position:0%
+several nodes on a cluster uh it takes
+sometimes<00:01:54.799><c> and</c><00:01:55.040><c> takes</c><00:01:55.280><c> an</c><00:01:55.439><c> effort</c><00:01:56.320><c> mainly</c><00:01:57.119><c> the</c>
+
+00:01:57.429 --> 00:01:57.439 align:start position:0%
+sometimes and takes an effort mainly the
+ 
+
+00:01:57.439 --> 00:02:00.310 align:start position:0%
+sometimes and takes an effort mainly the
+downtime<00:01:58.079><c> in</c><00:01:58.399><c> order</c><00:01:58.560><c> to</c><00:01:58.960><c> properly</c><00:01:59.759><c> reflash</c>
+
+00:02:00.310 --> 00:02:00.320 align:start position:0%
+downtime in order to properly reflash
+ 
+
+00:02:00.320 --> 00:02:03.590 align:start position:0%
+downtime in order to properly reflash
+and<00:02:00.960><c> have</c><00:02:01.200><c> every</c><00:02:01.680><c> ingredient</c><00:02:02.240><c> up</c><00:02:02.479><c> to</c><00:02:02.719><c> date</c><00:02:03.280><c> and</c>
+
+00:02:03.590 --> 00:02:03.600 align:start position:0%
+and have every ingredient up to date and
+ 
+
+00:02:03.600 --> 00:02:05.830 align:start position:0%
+and have every ingredient up to date and
+it's<00:02:03.920><c> just</c><00:02:04.560><c> downtimes</c><00:02:05.119><c> that</c><00:02:05.360><c> are</c><00:02:05.520><c> not</c>
+
+00:02:05.830 --> 00:02:05.840 align:start position:0%
+it's just downtimes that are not
+ 
+
+00:02:05.840 --> 00:02:07.830 align:start position:0%
+it's just downtimes that are not
+necessarily<00:02:06.399><c> desirable.</c><00:02:07.280><c> Sometimes</c><00:02:07.600><c> it</c>
+
+00:02:07.830 --> 00:02:07.840 align:start position:0%
+necessarily desirable. Sometimes it
+ 
+
+00:02:07.840 --> 00:02:11.430 align:start position:0%
+necessarily desirable. Sometimes it
+fails.<00:02:08.239><c> Sometimes</c><00:02:09.200><c> a</c><00:02:09.440><c> node</c><00:02:10.160><c> may</c><00:02:10.640><c> break</c><00:02:10.879><c> in</c><00:02:11.120><c> the</c>
+
+00:02:11.430 --> 00:02:11.440 align:start position:0%
+fails. Sometimes a node may break in the
+ 
+
+00:02:11.440 --> 00:02:13.990 align:start position:0%
+fails. Sometimes a node may break in the
+middle<00:02:11.760><c> of</c><00:02:11.920><c> the</c><00:02:12.160><c> process</c><00:02:13.040><c> which</c><00:02:13.360><c> increases</c>
+
+00:02:13.990 --> 00:02:14.000 align:start position:0%
+middle of the process which increases
+ 
+
+00:02:14.000 --> 00:02:16.550 align:start position:0%
+middle of the process which increases
+the<00:02:14.160><c> the</c><00:02:14.720><c> concerns</c><00:02:15.200><c> and</c><00:02:15.360><c> the</c><00:02:15.760><c> challenges</c><00:02:16.239><c> to</c>
+
+00:02:16.550 --> 00:02:16.560 align:start position:0%
+the the concerns and the challenges to
+ 
+
+00:02:16.560 --> 00:02:19.190 align:start position:0%
+the the concerns and the challenges to
+continue<00:02:16.879><c> operating.</c><00:02:18.239><c> And</c><00:02:18.480><c> the</c><00:02:18.720><c> last</c><00:02:18.879><c> is</c><00:02:19.040><c> like</c>
+
+00:02:19.190 --> 00:02:19.200 align:start position:0%
+continue operating. And the last is like
+ 
+
+00:02:19.200 --> 00:02:21.750 align:start position:0%
+continue operating. And the last is like
+no<00:02:19.440><c> central</c><00:02:19.840><c> policy</c><00:02:20.319><c> like</c><00:02:20.959><c> yeah</c><00:02:21.200><c> at</c><00:02:21.360><c> the</c><00:02:21.520><c> end</c>
+
+00:02:21.750 --> 00:02:21.760 align:start position:0%
+no central policy like yeah at the end
+ 
+
+00:02:21.760 --> 00:02:24.949 align:start position:0%
+no central policy like yeah at the end
+the<00:02:22.000><c> idea</c><00:02:22.319><c> is</c><00:02:23.440><c> to</c><00:02:23.760><c> have</c><00:02:24.000><c> pretty</c><00:02:24.239><c> much</c><00:02:24.560><c> all</c><00:02:24.800><c> the</c>
+
+00:02:24.949 --> 00:02:24.959 align:start position:0%
+the idea is to have pretty much all the
+ 
+
+00:02:24.959 --> 00:02:28.309 align:start position:0%
+the idea is to have pretty much all the
+nodes<00:02:25.840><c> uh</c><00:02:26.720><c> going</c><00:02:27.040><c> into</c><00:02:27.360><c> the</c><00:02:27.520><c> same</c><00:02:27.760><c> place</c><00:02:28.080><c> in</c>
+
+00:02:28.309 --> 00:02:28.319 align:start position:0%
+nodes uh going into the same place in
+ 
+
+00:02:28.319 --> 00:02:32.229 align:start position:0%
+nodes uh going into the same place in
+order<00:02:28.480><c> to</c><00:02:28.800><c> reach</c><00:02:29.040><c> or</c><00:02:29.360><c> have</c><00:02:29.599><c> the</c><00:02:30.319><c> hware</c>
+
+00:02:32.229 --> 00:02:32.239 align:start position:0%
+order to reach or have the hware
+ 
+
+00:02:32.239 --> 00:02:35.270 align:start position:0%
+order to reach or have the hware
+version<00:02:32.720><c> fware</c><00:02:33.200><c> recipe</c><00:02:33.760><c> etc</c><00:02:34.400><c> without</c>
+
+00:02:35.270 --> 00:02:35.280 align:start position:0%
+version fware recipe etc without
+ 
+
+00:02:35.280 --> 00:02:37.190 align:start position:0%
+version fware recipe etc without
+intervention<00:02:36.000><c> directly</c><00:02:36.400><c> on</c><00:02:36.640><c> any</c><00:02:36.879><c> of</c><00:02:36.959><c> the</c>
+
+00:02:37.190 --> 00:02:37.200 align:start position:0%
+intervention directly on any of the
+ 
+
+00:02:37.200 --> 00:02:39.190 align:start position:0%
+intervention directly on any of the
+devices<00:02:38.080><c> because</c><00:02:38.480><c> pretty</c><00:02:38.720><c> much</c><00:02:38.879><c> everything</c>
+
+00:02:39.190 --> 00:02:39.200 align:start position:0%
+devices because pretty much everything
+ 
+
+00:02:39.200 --> 00:02:43.750 align:start position:0%
+devices because pretty much everything
+is<00:02:39.599><c> like</c><00:02:39.760><c> a</c><00:02:40.239><c> centralized.</c>
+
+00:02:43.750 --> 00:02:43.760 align:start position:0%
+ 
+ 
+
+00:02:43.760 --> 00:02:47.750 align:start position:0%
+ 
+So<00:02:44.000><c> going</c><00:02:44.239><c> into</c><00:02:45.120><c> a</c><00:02:45.360><c> little</c><00:02:45.519><c> bit</c><00:02:45.760><c> more</c><00:02:46.319><c> on</c><00:02:46.720><c> the</c>
+
+00:02:47.750 --> 00:02:47.760 align:start position:0%
+So going into a little bit more on the
+ 
+
+00:02:47.760 --> 00:02:50.390 align:start position:0%
+So going into a little bit more on the
+two<00:02:48.080><c> approaches</c><00:02:49.280><c> the</c><00:02:49.599><c> differences.</c><00:02:50.160><c> So</c><00:02:50.239><c> on</c>
+
+00:02:50.390 --> 00:02:50.400 align:start position:0%
+two approaches the differences. So on
+ 
+
+00:02:50.400 --> 00:02:51.910 align:start position:0%
+two approaches the differences. So on
+the<00:02:50.560><c> on</c><00:02:50.720><c> the</c><00:02:50.879><c> left</c><00:02:51.040><c> we</c><00:02:51.200><c> have</c><00:02:51.360><c> the</c><00:02:51.519><c> streaming</c>
+
+00:02:51.910 --> 00:02:51.920 align:start position:0%
+the on the left we have the streaming
+ 
+
+00:02:51.920 --> 00:02:54.070 align:start position:0%
+the on the left we have the streaming
+boot.<00:02:52.400><c> Pretty</c><00:02:52.640><c> much</c><00:02:52.800><c> the</c><00:02:53.040><c> streaming</c><00:02:53.360><c> boot</c><00:02:53.680><c> is</c>
+
+00:02:54.070 --> 00:02:54.080 align:start position:0%
+boot. Pretty much the streaming boot is
+ 
+
+00:02:54.080 --> 00:02:58.229 align:start position:0%
+boot. Pretty much the streaming boot is
+a<00:02:54.560><c> way</c><00:02:54.800><c> of</c><00:02:56.000><c> providing</c><00:02:56.560><c> the</c><00:02:57.280><c> firmware</c><00:02:57.760><c> to</c><00:02:58.000><c> the</c>
+
+00:02:58.229 --> 00:02:58.239 align:start position:0%
+a way of providing the firmware to the
+ 
+
+00:02:58.239 --> 00:03:03.110 align:start position:0%
+a way of providing the firmware to the
+node<00:02:58.879><c> via</c><00:02:59.440><c> network</c><00:02:59.840><c> stream</c><00:03:00.800><c> like</c><00:03:01.440><c> um</c><00:03:02.400><c> uh</c><00:03:02.879><c> you</c>
+
+00:03:03.110 --> 00:03:03.120 align:start position:0%
+node via network stream like um uh you
+ 
+
+00:03:03.120 --> 00:03:04.630 align:start position:0%
+node via network stream like um uh you
+have<00:03:03.280><c> your</c><00:03:03.519><c> infrastructure</c><00:03:04.080><c> where</c><00:03:04.319><c> you</c><00:03:04.480><c> have</c>
+
+00:03:04.630 --> 00:03:04.640 align:start position:0%
+have your infrastructure where you have
+ 
+
+00:03:04.640 --> 00:03:07.830 align:start position:0%
+have your infrastructure where you have
+all<00:03:04.800><c> your</c><00:03:05.040><c> your</c><00:03:05.760><c> firmware</c><00:03:06.640><c> residing</c><00:03:07.120><c> on</c><00:03:07.599><c> and</c>
+
+00:03:07.830 --> 00:03:07.840 align:start position:0%
+all your your firmware residing on and
+ 
+
+00:03:07.840 --> 00:03:11.030 align:start position:0%
+all your your firmware residing on and
+then<00:03:08.159><c> on</c><00:03:08.400><c> the</c><00:03:08.800><c> system</c><00:03:09.360><c> the</c><00:03:09.599><c> system</c><00:03:09.840><c> will</c><00:03:10.159><c> start</c>
+
+00:03:11.030 --> 00:03:11.040 align:start position:0%
+then on the system the system will start
+ 
+
+00:03:11.040 --> 00:03:13.750 align:start position:0%
+then on the system the system will start
+by<00:03:11.280><c> itself</c><00:03:11.760><c> from</c><00:03:11.920><c> a</c><00:03:12.080><c> immutable</c><00:03:12.720><c> ROM.</c><00:03:13.440><c> So</c><00:03:13.599><c> the</c>
+
+00:03:13.750 --> 00:03:13.760 align:start position:0%
+by itself from a immutable ROM. So the
+ 
+
+00:03:13.760 --> 00:03:16.869 align:start position:0%
+by itself from a immutable ROM. So the
+it<00:03:14.080><c> system</c><00:03:14.319><c> will</c><00:03:14.560><c> know</c><00:03:15.440><c> uh</c><00:03:15.840><c> let's</c><00:03:16.080><c> say</c><00:03:16.159><c> the</c><00:03:16.319><c> BMC</c>
+
+00:03:16.869 --> 00:03:16.879 align:start position:0%
+it system will know uh let's say the BMC
+ 
+
+00:03:16.879 --> 00:03:19.430 align:start position:0%
+it system will know uh let's say the BMC
+or<00:03:17.040><c> the</c><00:03:17.200><c> PA</c><00:03:17.599><c> will</c><00:03:17.760><c> know</c><00:03:17.920><c> where</c><00:03:18.159><c> to</c><00:03:18.400><c> go</c><00:03:18.720><c> and</c><00:03:19.040><c> get</c>
+
+00:03:19.430 --> 00:03:19.440 align:start position:0%
+or the PA will know where to go and get
+ 
+
+00:03:19.440 --> 00:03:21.910 align:start position:0%
+or the PA will know where to go and get
+the<00:03:19.760><c> data</c><00:03:20.000><c> and</c><00:03:20.239><c> it</c><00:03:20.480><c> start</c><00:03:20.720><c> like</c><00:03:20.959><c> a</c><00:03:21.440><c> grabbing</c>
+
+00:03:21.910 --> 00:03:21.920 align:start position:0%
+the data and it start like a grabbing
+ 
+
+00:03:21.920 --> 00:03:24.710 align:start position:0%
+the data and it start like a grabbing
+that<00:03:22.159><c> data</c><00:03:22.720><c> and</c><00:03:23.200><c> start</c><00:03:23.760><c> loading</c><00:03:24.159><c> the</c><00:03:24.319><c> data</c><00:03:24.480><c> in</c>
+
+00:03:24.710 --> 00:03:24.720 align:start position:0%
+that data and start loading the data in
+ 
+
+00:03:24.720 --> 00:03:27.350 align:start position:0%
+that data and start loading the data in
+the<00:03:24.879><c> SRAMM</c><00:03:25.440><c> on</c><00:03:25.680><c> the</c><00:03:26.319><c> on</c><00:03:26.480><c> the</c><00:03:26.640><c> SRAMM</c><00:03:27.040><c> of</c><00:03:27.200><c> the</c>
+
+00:03:27.350 --> 00:03:27.360 align:start position:0%
+the SRAMM on the on the SRAMM of the
+ 
+
+00:03:27.360 --> 00:03:29.670 align:start position:0%
+the SRAMM on the on the SRAMM of the
+system.<00:03:27.760><c> So</c><00:03:27.840><c> that</c><00:03:28.080><c> can</c><00:03:28.319><c> be</c><00:03:28.560><c> then</c><00:03:29.040><c> translated</c>
+
+00:03:29.670 --> 00:03:29.680 align:start position:0%
+system. So that can be then translated
+ 
+
+00:03:29.680 --> 00:03:33.430 align:start position:0%
+system. So that can be then translated
+and<00:03:29.760><c> and</c><00:03:30.159><c> present</c><00:03:30.720><c> as</c><00:03:31.200><c> stated</c><00:03:31.680><c> to</c><00:03:31.920><c> the</c><00:03:32.080><c> CPU.</c><00:03:33.120><c> So</c>
+
+00:03:33.430 --> 00:03:33.440 align:start position:0%
+and and present as stated to the CPU. So
+ 
+
+00:03:33.440 --> 00:03:35.430 align:start position:0%
+and and present as stated to the CPU. So
+pretty<00:03:33.599><c> much</c><00:03:33.760><c> on</c><00:03:34.000><c> this</c><00:03:34.400><c> streaming</c><00:03:34.959><c> portion</c>
+
+00:03:35.430 --> 00:03:35.440 align:start position:0%
+pretty much on this streaming portion
+ 
+
+00:03:35.440 --> 00:03:38.630 align:start position:0%
+pretty much on this streaming portion
+there<00:03:35.599><c> is</c><00:03:35.760><c> no</c><00:03:35.920><c> need</c><00:03:36.080><c> to</c><00:03:36.319><c> have</c><00:03:37.040><c> a</c><00:03:37.440><c> flash</c><00:03:38.080><c> device</c>
+
+00:03:38.630 --> 00:03:38.640 align:start position:0%
+there is no need to have a flash device
+ 
+
+00:03:38.640 --> 00:03:42.309 align:start position:0%
+there is no need to have a flash device
+on<00:03:38.959><c> the</c><00:03:39.200><c> systems.</c><00:03:39.840><c> Pretty</c><00:03:40.080><c> much</c><00:03:40.480><c> just</c><00:03:41.280><c> a</c><00:03:42.080><c> way</c>
+
+00:03:42.309 --> 00:03:42.319 align:start position:0%
+on the systems. Pretty much just a way
+ 
+
+00:03:42.319 --> 00:03:46.070 align:start position:0%
+on the systems. Pretty much just a way
+to<00:03:42.560><c> know</c><00:03:42.799><c> where</c><00:03:43.519><c> where</c><00:03:43.920><c> to</c><00:03:44.239><c> get</c><00:03:44.560><c> h</c><00:03:45.680><c> where</c><00:03:45.920><c> to</c>
+
+00:03:46.070 --> 00:03:46.080 align:start position:0%
+to know where where to get h where to
+ 
+
+00:03:46.080 --> 00:03:49.030 align:start position:0%
+to know where where to get h where to
+get<00:03:46.239><c> the</c><00:03:46.400><c> the</c><00:03:46.879><c> images</c><00:03:47.599><c> where</c><00:03:47.760><c> to</c><00:03:47.920><c> get</c><00:03:48.080><c> the</c><00:03:48.239><c> the</c>
+
+00:03:49.030 --> 00:03:49.040 align:start position:0%
+get the the images where to get the the
+ 
+
+00:03:49.040 --> 00:03:51.509 align:start position:0%
+get the the images where to get the the
+firmware<00:03:49.440><c> for</c><00:03:49.680><c> the</c><00:03:49.840><c> devices.</c>
+
+00:03:51.509 --> 00:03:51.519 align:start position:0%
+firmware for the devices.
+ 
+
+00:03:51.519 --> 00:03:54.390 align:start position:0%
+firmware for the devices.
+On<00:03:51.760><c> the</c><00:03:52.239><c> right</c><00:03:52.480><c> side</c><00:03:52.879><c> we</c><00:03:53.200><c> have</c><00:03:53.519><c> the</c><00:03:53.840><c> flashless</c>
+
+00:03:54.390 --> 00:03:54.400 align:start position:0%
+On the right side we have the flashless
+ 
+
+00:03:54.400 --> 00:03:57.670 align:start position:0%
+On the right side we have the flashless
+boot<00:03:54.959><c> which</c><00:03:55.200><c> is</c><00:03:55.519><c> quite</c><00:03:55.920><c> similar</c><00:03:56.879><c> but</c><00:03:57.200><c> the</c><00:03:57.439><c> main</c>
+
+00:03:57.670 --> 00:03:57.680 align:start position:0%
+boot which is quite similar but the main
+ 
+
+00:03:57.680 --> 00:03:59.429 align:start position:0%
+boot which is quite similar but the main
+difference<00:03:58.000><c> is</c><00:03:58.239><c> that</c><00:03:58.400><c> on</c><00:03:58.640><c> the</c><00:03:58.720><c> flashless</c><00:03:59.200><c> boot</c>
+
+00:03:59.429 --> 00:03:59.439 align:start position:0%
+difference is that on the flashless boot
+ 
+
+00:03:59.439 --> 00:04:02.470 align:start position:0%
+difference is that on the flashless boot
+we<00:03:59.680><c> have</c><00:04:00.080><c> something</c><00:04:00.879><c> a</c><00:04:01.200><c> small</c><00:04:01.439><c> portion</c><00:04:02.000><c> in</c><00:04:02.239><c> the</c>
+
+00:04:02.470 --> 00:04:02.480 align:start position:0%
+we have something a small portion in the
+ 
+
+00:04:02.480 --> 00:04:04.550 align:start position:0%
+we have something a small portion in the
+system<00:04:03.040><c> small</c><00:04:03.360><c> portion</c><00:04:03.680><c> to</c><00:04:04.000><c> have</c><00:04:04.159><c> like</c><00:04:04.319><c> an</c>
+
+00:04:04.550 --> 00:04:04.560 align:start position:0%
+system small portion to have like an
+ 
+
+00:04:04.560 --> 00:04:06.470 align:start position:0%
+system small portion to have like an
+early<00:04:04.799><c> firmware</c><00:04:05.200><c> boot</c><00:04:05.519><c> that's</c><00:04:05.840><c> called</c><00:04:06.239><c> in</c>
+
+00:04:06.470 --> 00:04:06.480 align:start position:0%
+early firmware boot that's called in
+ 
+
+00:04:06.480 --> 00:04:09.509 align:start position:0%
+early firmware boot that's called in
+order<00:04:06.640><c> to</c><00:04:06.959><c> kind</c><00:04:07.120><c> of</c><00:04:07.760><c> tell</c><00:04:08.000><c> the</c><00:04:08.319><c> system</c><00:04:08.879><c> where</c>
+
+00:04:09.509 --> 00:04:09.519 align:start position:0%
+order to kind of tell the system where
+ 
+
+00:04:09.519 --> 00:04:13.350 align:start position:0%
+order to kind of tell the system where
+to<00:04:09.760><c> look</c><00:04:10.319><c> for</c><00:04:10.640><c> the</c><00:04:11.840><c> rest</c><00:04:12.159><c> of</c><00:04:12.319><c> the</c><00:04:12.560><c> firmware</c>
+
+00:04:13.350 --> 00:04:13.360 align:start position:0%
+to look for the rest of the firmware
+ 
+
+00:04:13.360 --> 00:04:15.910 align:start position:0%
+to look for the rest of the firmware
+which<00:04:13.840><c> uh</c><00:04:14.000><c> which</c><00:04:14.239><c> is</c><00:04:14.400><c> the</c><00:04:14.480><c> the</c><00:04:14.879><c> other</c><00:04:15.519><c> portion</c>
+
+00:04:15.910 --> 00:04:15.920 align:start position:0%
+which uh which is the the other portion
+ 
+
+00:04:15.920 --> 00:04:20.710 align:start position:0%
+which uh which is the the other portion
+like<00:04:16.160><c> early</c><00:04:16.400><c> firmware</c><00:04:16.799><c> only</c><00:04:17.040><c> has</c><00:04:18.320><c> minor</c><00:04:19.519><c> minor</c>
+
+00:04:20.710 --> 00:04:20.720 align:start position:0%
+like early firmware only has minor minor
+ 
+
+00:04:20.720 --> 00:04:21.509 align:start position:0%
+like early firmware only has minor minor
+instruction
+
+00:04:21.509 --> 00:04:21.519 align:start position:0%
+instruction
+ 
+
+00:04:21.519 --> 00:04:24.230 align:start position:0%
+instruction
+on<00:04:22.000><c> where</c><00:04:22.320><c> where</c><00:04:22.639><c> to</c><00:04:22.880><c> get</c><00:04:23.120><c> stuff</c><00:04:23.600><c> and</c><00:04:23.840><c> then</c><00:04:24.000><c> the</c>
+
+00:04:24.230 --> 00:04:24.240 align:start position:0%
+on where where to get stuff and then the
+ 
+
+00:04:24.240 --> 00:04:26.469 align:start position:0%
+on where where to get stuff and then the
+rest<00:04:24.400><c> of</c><00:04:24.479><c> the</c><00:04:24.639><c> fware</c><00:04:25.199><c> contains</c><00:04:25.600><c> the</c><00:04:25.840><c> actual</c>
+
+00:04:26.469 --> 00:04:26.479 align:start position:0%
+rest of the fware contains the actual
+ 
+
+00:04:26.479 --> 00:04:31.909 align:start position:0%
+rest of the fware contains the actual
+BIOS<00:04:26.880><c> and</c><00:04:27.120><c> executables</c><00:04:27.840><c> and</c><00:04:28.160><c> etc.</c>
+
+00:04:31.909 --> 00:04:31.919 align:start position:0%
+ 
+ 
+
+00:04:31.919 --> 00:04:35.270 align:start position:0%
+ 
+So<00:04:33.120><c> continuing</c><00:04:33.520><c> with</c><00:04:33.680><c> the</c><00:04:34.560><c> kind</c><00:04:34.720><c> of</c><00:04:34.880><c> like</c><00:04:35.040><c> the</c>
+
+00:04:35.270 --> 00:04:35.280 align:start position:0%
+So continuing with the kind of like the
+ 
+
+00:04:35.280 --> 00:04:40.070 align:start position:0%
+So continuing with the kind of like the
+differences<00:04:35.840><c> on</c><00:04:36.080><c> both</c><00:04:37.280><c> uh</c><00:04:38.080><c> on</c><00:04:38.320><c> the</c>
+
+00:04:40.070 --> 00:04:40.080 align:start position:0%
+differences on both uh on the
+ 
+
+00:04:40.080 --> 00:04:42.230 align:start position:0%
+differences on both uh on the
+lock<00:04:40.560><c> locus</c><00:04:41.040><c> of</c><00:04:41.199><c> control</c><00:04:41.520><c> for</c><00:04:41.759><c> the</c><00:04:41.919><c> different</c>
+
+00:04:42.230 --> 00:04:42.240 align:start position:0%
+lock locus of control for the different
+ 
+
+00:04:42.240 --> 00:04:44.629 align:start position:0%
+lock locus of control for the different
+for<00:04:42.479><c> the</c><00:04:42.639><c> both</c><00:04:42.960><c> alternatives</c><00:04:44.160><c> pretty</c><00:04:44.320><c> much</c><00:04:44.479><c> on</c>
+
+00:04:44.629 --> 00:04:44.639 align:start position:0%
+for the both alternatives pretty much on
+ 
+
+00:04:44.639 --> 00:04:47.110 align:start position:0%
+for the both alternatives pretty much on
+the<00:04:44.720><c> fly</c><00:04:45.199><c> boot</c><00:04:45.520><c> we</c><00:04:45.680><c> have</c><00:04:45.840><c> a</c><00:04:46.000><c> BMC</c><00:04:46.560><c> which</c><00:04:46.800><c> is</c><00:04:46.960><c> like</c>
+
+00:04:47.110 --> 00:04:47.120 align:start position:0%
+the fly boot we have a BMC which is like
+ 
+
+00:04:47.120 --> 00:04:51.350 align:start position:0%
+the fly boot we have a BMC which is like
+the<00:04:47.600><c> main</c><00:04:48.160><c> main</c><00:04:48.639><c> driver</c><00:04:49.199><c> or</c><00:04:49.440><c> who</c><00:04:49.680><c> is</c><00:04:50.240><c> is</c><00:04:51.040><c> is</c>
+
+00:04:51.350 --> 00:04:51.360 align:start position:0%
+the main main driver or who is is is
+ 
+
+00:04:51.360 --> 00:04:53.590 align:start position:0%
+the main main driver or who is is is
+orchestrating<00:04:52.080><c> how</c><00:04:52.400><c> or</c><00:04:52.639><c> where</c><00:04:52.880><c> to</c><00:04:53.120><c> get</c><00:04:53.280><c> the</c>
+
+00:04:53.590 --> 00:04:53.600 align:start position:0%
+orchestrating how or where to get the
+ 
+
+00:04:53.600 --> 00:04:56.070 align:start position:0%
+orchestrating how or where to get the
+information<00:04:54.560><c> and</c><00:04:54.720><c> on</c><00:04:54.880><c> the</c><00:04:55.040><c> streaming</c><00:04:55.360><c> boot</c><00:04:55.680><c> is</c>
+
+00:04:56.070 --> 00:04:56.080 align:start position:0%
+information and on the streaming boot is
+ 
+
+00:04:56.080 --> 00:04:58.950 align:start position:0%
+information and on the streaming boot is
+like<00:04:56.320><c> a</c><00:04:56.880><c> we</c><00:04:57.120><c> have</c><00:04:57.199><c> a</c><00:04:57.440><c> hardware</c><00:04:57.919><c> portion</c><00:04:58.560><c> that</c>
+
+00:04:58.950 --> 00:04:58.960 align:start position:0%
+like a we have a hardware portion that
+ 
+
+00:04:58.960 --> 00:05:01.510 align:start position:0%
+like a we have a hardware portion that
+tells<00:04:59.680><c> where</c><00:04:59.919><c> to</c><00:05:00.160><c> go,</c><00:05:00.400><c> where</c><00:05:00.639><c> to</c><00:05:00.800><c> fetch,</c><00:05:01.280><c> where</c>
+
+00:05:01.510 --> 00:05:01.520 align:start position:0%
+tells where to go, where to fetch, where
+ 
+
+00:05:01.520 --> 00:05:04.469 align:start position:0%
+tells where to go, where to fetch, where
+to<00:05:01.680><c> start</c><00:05:02.240><c> h</c><00:05:02.560><c> getting</c><00:05:02.960><c> all</c><00:05:03.199><c> that</c><00:05:03.840><c> details,</c><00:05:04.320><c> all</c>
+
+00:05:04.469 --> 00:05:04.479 align:start position:0%
+to start h getting all that details, all
+ 
+
+00:05:04.479 --> 00:05:09.510 align:start position:0%
+to start h getting all that details, all
+that<00:05:05.040><c> uh</c><00:05:05.600><c> the</c><00:05:05.840><c> fware</c><00:05:06.720><c> uh</c><00:05:07.520><c> of</c><00:05:07.840><c> the</c><00:05:08.080><c> fware</c><00:05:08.479><c> needed</c>
+
+00:05:09.510 --> 00:05:09.520 align:start position:0%
+that uh the fware uh of the fware needed
+ 
+
+00:05:09.520 --> 00:05:12.150 align:start position:0%
+that uh the fware uh of the fware needed
+on<00:05:09.759><c> the</c><00:05:09.919><c> verification</c><00:05:10.479><c> granularity.</c>
+
+00:05:12.150 --> 00:05:12.160 align:start position:0%
+on the verification granularity.
+ 
+
+00:05:12.160 --> 00:05:14.790 align:start position:0%
+on the verification granularity.
+Yeah.<00:05:12.720><c> The</c><00:05:12.960><c> on</c><00:05:13.199><c> the</c><00:05:13.520><c> flashes</c><00:05:14.000><c> boot</c><00:05:14.560><c> the</c>
+
+00:05:14.790 --> 00:05:14.800 align:start position:0%
+Yeah. The on the flashes boot the
+ 
+
+00:05:14.800 --> 00:05:17.830 align:start position:0%
+Yeah. The on the flashes boot the
+completed<00:05:15.280><c> match</c><00:05:15.520><c> is</c><00:05:15.759><c> like</c><00:05:15.919><c> a</c><00:05:16.880><c> download</c><00:05:17.520><c> and</c>
+
+00:05:17.830 --> 00:05:17.840 align:start position:0%
+completed match is like a download and
+ 
+
+00:05:17.840 --> 00:05:21.029 align:start position:0%
+completed match is like a download and
+check<00:05:18.320><c> and</c><00:05:18.639><c> then</c><00:05:18.960><c> provided</c><00:05:19.520><c> to</c><00:05:19.680><c> the</c><00:05:20.000><c> device.</c>
+
+00:05:21.029 --> 00:05:21.039 align:start position:0%
+check and then provided to the device.
+ 
+
+00:05:21.039 --> 00:05:23.510 align:start position:0%
+check and then provided to the device.
+In<00:05:21.280><c> comparison</c><00:05:21.759><c> with</c><00:05:22.000><c> the</c><00:05:22.320><c> streaming</c><00:05:22.720><c> boot</c><00:05:23.199><c> is</c>
+
+00:05:23.510 --> 00:05:23.520 align:start position:0%
+In comparison with the streaming boot is
+ 
+
+00:05:23.520 --> 00:05:26.710 align:start position:0%
+In comparison with the streaming boot is
+like<00:05:23.680><c> a</c><00:05:23.919><c> per</c><00:05:24.240><c> page</c><00:05:24.800><c> or</c><00:05:25.120><c> per</c><00:05:25.440><c> chunks</c><00:05:25.919><c> per</c><00:05:26.160><c> blocks</c>
+
+00:05:26.710 --> 00:05:26.720 align:start position:0%
+like a per page or per chunks per blocks
+ 
+
+00:05:26.720 --> 00:05:29.749 align:start position:0%
+like a per page or per chunks per blocks
+where<00:05:26.960><c> the</c><00:05:27.199><c> data</c><00:05:27.600><c> is</c><00:05:28.320><c> been</c><00:05:28.639><c> being</c><00:05:29.039><c> fetched</c><00:05:29.440><c> or</c>
+
+00:05:29.749 --> 00:05:29.759 align:start position:0%
+where the data is been being fetched or
+ 
+
+00:05:29.759 --> 00:05:32.230 align:start position:0%
+where the data is been being fetched or
+being<00:05:30.240><c> uh</c><00:05:30.479><c> obtained</c><00:05:31.199><c> and</c><00:05:31.520><c> being</c><00:05:31.759><c> checked.</c>
+
+00:05:32.230 --> 00:05:32.240 align:start position:0%
+being uh obtained and being checked.
+ 
+
+00:05:32.240 --> 00:05:34.390 align:start position:0%
+being uh obtained and being checked.
+After<00:05:32.560><c> that</c><00:05:32.880><c> it's</c><00:05:33.199><c> that</c><00:05:33.520><c> is</c><00:05:33.840><c> transferred</c><00:05:34.240><c> to</c>
+
+00:05:34.390 --> 00:05:34.400 align:start position:0%
+After that it's that is transferred to
+ 
+
+00:05:34.400 --> 00:05:37.110 align:start position:0%
+After that it's that is transferred to
+the<00:05:34.560><c> to</c><00:05:34.800><c> the</c><00:05:34.960><c> CPU</c><00:05:36.240><c> on</c><00:05:36.479><c> the</c><00:05:36.639><c> transport</c>
+
+00:05:37.110 --> 00:05:37.120 align:start position:0%
+the to the CPU on the transport
+ 
+
+00:05:37.120 --> 00:05:40.230 align:start position:0%
+the to the CPU on the transport
+dependency<00:05:38.160><c> uh</c><00:05:39.039><c> pretty</c><00:05:39.280><c> much</c><00:05:39.440><c> on</c><00:05:39.680><c> the</c><00:05:39.759><c> flashes</c>
+
+00:05:40.230 --> 00:05:40.240 align:start position:0%
+dependency uh pretty much on the flashes
+ 
+
+00:05:40.240 --> 00:05:42.230 align:start position:0%
+dependency uh pretty much on the flashes
+boot<00:05:40.479><c> option</c><00:05:40.960><c> it</c><00:05:41.199><c> is</c><00:05:41.440><c> depending</c><00:05:41.840><c> on</c><00:05:42.000><c> the</c>
+
+00:05:42.230 --> 00:05:42.240 align:start position:0%
+boot option it is depending on the
+ 
+
+00:05:42.240 --> 00:05:46.310 align:start position:0%
+boot option it is depending on the
+network<00:05:43.120><c> erh</c><00:05:44.479><c> it's</c><00:05:44.720><c> it's</c><00:05:45.199><c> as</c><00:05:45.440><c> it</c><00:05:45.680><c> relies</c><00:05:46.080><c> on</c>
+
+00:05:46.310 --> 00:05:46.320 align:start position:0%
+network erh it's it's as it relies on
+ 
+
+00:05:46.320 --> 00:05:50.070 align:start position:0%
+network erh it's it's as it relies on
+the<00:05:46.560><c> network</c><00:05:46.960><c> path</c><00:05:47.280><c> to</c><00:05:47.680><c> obtain</c><00:05:48.160><c> the</c><00:05:48.320><c> the</c><00:05:48.400><c> the</c>
+
+00:05:50.070 --> 00:05:50.080 align:start position:0%
+the network path to obtain the the the
+ 
+
+00:05:50.080 --> 00:05:53.430 align:start position:0%
+the network path to obtain the the the
+data<00:05:51.120><c> it's</c><00:05:51.360><c> it's</c><00:05:51.600><c> a</c><00:05:51.840><c> requirement</c><00:05:52.320><c> for</c><00:05:52.560><c> that</c>
+
+00:05:53.430 --> 00:05:53.440 align:start position:0%
+data it's it's a requirement for that
+ 
+
+00:05:53.440 --> 00:05:56.550 align:start position:0%
+data it's it's a requirement for that
+and<00:05:53.680><c> on</c><00:05:53.919><c> the</c><00:05:54.240><c> streaming</c><00:05:54.639><c> boot</c><00:05:54.960><c> it's</c><00:05:55.199><c> like</c><00:05:55.440><c> a</c>
+
+00:05:56.550 --> 00:05:56.560 align:start position:0%
+and on the streaming boot it's like a
+ 
+
+00:05:56.560 --> 00:05:59.029 align:start position:0%
+and on the streaming boot it's like a
+similarly<00:05:57.199><c> but</c><00:05:57.680><c> also</c><00:05:58.000><c> including</c><00:05:58.479><c> that</c><00:05:58.720><c> the</c>
+
+00:05:59.029 --> 00:05:59.039 align:start position:0%
+similarly but also including that the
+ 
+
+00:05:59.039 --> 00:06:02.150 align:start position:0%
+similarly but also including that the
+internal<00:05:59.680><c> patch</c><00:06:00.000><c> is</c><00:06:00.320><c> where</c><00:06:00.639><c> the</c><00:06:01.600><c> interaction</c>
+
+00:06:02.150 --> 00:06:02.160 align:start position:0%
+internal patch is where the interaction
+ 
+
+00:06:02.160 --> 00:06:04.309 align:start position:0%
+internal patch is where the interaction
+on<00:06:02.320><c> the</c><00:06:02.479><c> different</c><00:06:02.800><c> early</c><00:06:03.280><c> and</c><00:06:03.360><c> and</c><00:06:03.520><c> and</c><00:06:04.080><c> the</c>
+
+00:06:04.309 --> 00:06:04.319 align:start position:0%
+on the different early and and and the
+ 
+
+00:06:04.319 --> 00:06:06.390 align:start position:0%
+on the different early and and and the
+rest<00:06:04.479><c> of</c><00:06:04.560><c> the</c><00:06:04.720><c> fware</c>
+
+00:06:06.390 --> 00:06:06.400 align:start position:0%
+rest of the fware
+ 
+
+00:06:06.400 --> 00:06:10.230 align:start position:0%
+rest of the fware
+behaves<00:06:07.759><c> for</c><00:06:08.000><c> the</c><00:06:08.240><c> complimentary.</c><00:06:09.360><c> Yeah,</c><00:06:09.759><c> the</c>
+
+00:06:10.230 --> 00:06:10.240 align:start position:0%
+behaves for the complimentary. Yeah, the
+ 
+
+00:06:10.240 --> 00:06:15.110 align:start position:0%
+behaves for the complimentary. Yeah, the
+flyless<00:06:10.639><c> boot</c><00:06:11.039><c> is</c><00:06:11.280><c> a</c><00:06:12.240><c> BMC</c><00:06:12.880><c> like</c><00:06:13.120><c> a</c><00:06:13.600><c> BMC</c>
+
+00:06:15.110 --> 00:06:15.120 align:start position:0%
+flyless boot is a BMC like a BMC
+ 
+
+00:06:15.120 --> 00:06:18.550 align:start position:0%
+flyless boot is a BMC like a BMC
+main<00:06:15.520><c> main</c><00:06:15.919><c> device</c><00:06:16.240><c> or</c><00:06:16.400><c> or</c><00:06:16.479><c> or</c><00:06:17.520><c> ingredient</c><00:06:18.400><c> and</c>
+
+00:06:18.550 --> 00:06:18.560 align:start position:0%
+main main device or or or ingredient and
+ 
+
+00:06:18.560 --> 00:06:20.070 align:start position:0%
+main main device or or or ingredient and
+for<00:06:18.720><c> the</c><00:06:18.960><c> streaming</c><00:06:19.280><c> boot</c><00:06:19.520><c> pretty</c><00:06:19.680><c> much</c><00:06:19.840><c> is</c>
+
+00:06:20.070 --> 00:06:20.080 align:start position:0%
+for the streaming boot pretty much is
+ 
+
+00:06:20.080 --> 00:06:24.150 align:start position:0%
+for the streaming boot pretty much is
+like<00:06:20.160><c> an</c><00:06:20.400><c> FPGA</c><00:06:21.280><c> or</c><00:06:21.680><c> it's</c><00:06:22.720><c> like</c><00:06:22.960><c> a</c><00:06:23.360><c> FPJ</c><00:06:23.919><c> trying</c>
+
+00:06:24.150 --> 00:06:24.160 align:start position:0%
+like an FPGA or it's like a FPJ trying
+ 
+
+00:06:24.160 --> 00:06:26.390 align:start position:0%
+like an FPGA or it's like a FPJ trying
+to<00:06:24.319><c> do</c><00:06:24.479><c> kind</c><00:06:24.720><c> of</c><00:06:24.800><c> like</c><00:06:24.960><c> a</c><00:06:25.520><c> emulation</c><00:06:26.080><c> of</c><00:06:26.319><c> the</c>
+
+00:06:26.390 --> 00:06:26.400 align:start position:0%
+to do kind of like a emulation of the
+ 
+
+00:06:26.400 --> 00:06:30.390 align:start position:0%
+to do kind of like a emulation of the
+API<00:06:26.800><c> but</c><00:06:27.280><c> I</c><00:06:27.520><c> think</c><00:06:27.680><c> it's</c><00:06:28.639><c> clearer</c><00:06:29.039><c> on</c><00:06:29.199><c> the</c><00:06:30.160><c> on</c>
+
+00:06:30.390 --> 00:06:30.400 align:start position:0%
+API but I think it's clearer on the on
+ 
+
+00:06:30.400 --> 00:06:32.550 align:start position:0%
+API but I think it's clearer on the on
+the<00:06:30.639><c> next.</c>
+
+00:06:32.550 --> 00:06:32.560 align:start position:0%
+the next.
+ 
+
+00:06:32.560 --> 00:06:34.550 align:start position:0%
+the next.
+So<00:06:33.199><c> this</c><00:06:33.360><c> is</c><00:06:33.440><c> a</c><00:06:33.680><c> block</c><00:06:33.840><c> diagram</c><00:06:34.240><c> of</c><00:06:34.400><c> the</c>
+
+00:06:34.550 --> 00:06:34.560 align:start position:0%
+So this is a block diagram of the
+ 
+
+00:06:34.560 --> 00:06:36.710 align:start position:0%
+So this is a block diagram of the
+flashless<00:06:34.960><c> boot</c><00:06:35.280><c> implementation.</c><00:06:36.319><c> We</c><00:06:36.560><c> can</c>
+
+00:06:36.710 --> 00:06:36.720 align:start position:0%
+flashless boot implementation. We can
+ 
+
+00:06:36.720 --> 00:06:39.670 align:start position:0%
+flashless boot implementation. We can
+see<00:06:36.800><c> the</c><00:06:37.039><c> different</c><00:06:37.520><c> devices</c><00:06:38.080><c> that</c><00:06:38.639><c> are</c><00:06:39.360><c> part</c>
+
+00:06:39.670 --> 00:06:39.680 align:start position:0%
+see the different devices that are part
+ 
+
+00:06:39.680 --> 00:06:44.230 align:start position:0%
+see the different devices that are part
+of<00:06:40.000><c> this.</c><00:06:40.960><c> On</c><00:06:41.280><c> the</c><00:06:41.919><c> top</c><00:06:42.720><c> we</c><00:06:43.039><c> have</c><00:06:43.840><c> uh</c><00:06:44.000><c> the</c>
+
+00:06:44.230 --> 00:06:44.240 align:start position:0%
+of this. On the top we have uh the
+ 
+
+00:06:44.240 --> 00:06:46.629 align:start position:0%
+of this. On the top we have uh the
+infrastructure<00:06:44.960><c> portion</c><00:06:45.280><c> of</c><00:06:45.600><c> of</c><00:06:45.759><c> of</c><00:06:46.240><c> things</c>
+
+00:06:46.629 --> 00:06:46.639 align:start position:0%
+infrastructure portion of of of things
+ 
+
+00:06:46.639 --> 00:06:50.309 align:start position:0%
+infrastructure portion of of of things
+where<00:06:47.360><c> pretty</c><00:06:47.600><c> much</c><00:06:47.919><c> the</c><00:06:49.199><c> image</c><00:06:49.520><c> is</c><00:06:49.840><c> stored</c><00:06:50.080><c> or</c>
+
+00:06:50.309 --> 00:06:50.319 align:start position:0%
+where pretty much the image is stored or
+ 
+
+00:06:50.319 --> 00:06:52.550 align:start position:0%
+where pretty much the image is stored or
+the<00:06:50.479><c> networking</c><00:06:51.120><c> the</c><00:06:51.440><c> control</c><00:06:52.000><c> networking</c>
+
+00:06:52.550 --> 00:06:52.560 align:start position:0%
+the networking the control networking
+ 
+
+00:06:52.560 --> 00:06:56.230 align:start position:0%
+the networking the control networking
+side<00:06:52.800><c> of</c><00:06:52.960><c> the</c><00:06:53.199><c> data</c><00:06:53.520><c> center.</c><00:06:54.479><c> And</c><00:06:55.280><c> below</c><00:06:55.680><c> that</c>
+
+00:06:56.230 --> 00:06:56.240 align:start position:0%
+side of the data center. And below that
+ 
+
+00:06:56.240 --> 00:07:00.150 align:start position:0%
+side of the data center. And below that
+we<00:06:56.479><c> have</c><00:06:56.800><c> the</c><00:06:57.120><c> chassis</c><00:06:57.680><c> portion</c><00:06:58.240><c> and</c><00:06:58.639><c> the</c><00:06:58.800><c> the</c>
+
+00:07:00.150 --> 00:07:00.160 align:start position:0%
+we have the chassis portion and the the
+ 
+
+00:07:00.160 --> 00:07:02.550 align:start position:0%
+we have the chassis portion and the the
+device<00:07:00.479><c> on</c><00:07:00.639><c> the</c><00:07:00.720><c> left</c><00:07:00.960><c> is</c><00:07:01.199><c> the</c><00:07:01.280><c> BMC</c><00:07:01.840><c> which</c><00:07:02.240><c> is</c>
+
+00:07:02.550 --> 00:07:02.560 align:start position:0%
+device on the left is the BMC which is
+ 
+
+00:07:02.560 --> 00:07:04.629 align:start position:0%
+device on the left is the BMC which is
+the<00:07:02.720><c> one</c><00:07:02.880><c> that</c><00:07:03.039><c> is</c><00:07:03.280><c> communicating</c><00:07:03.840><c> to</c><00:07:04.080><c> the</c><00:07:04.319><c> to</c>
+
+00:07:04.629 --> 00:07:04.639 align:start position:0%
+the one that is communicating to the to
+ 
+
+00:07:04.639 --> 00:07:08.309 align:start position:0%
+the one that is communicating to the to
+the<00:07:04.960><c> infrastructure</c><00:07:05.759><c> server.</c><00:07:06.560><c> From</c><00:07:06.800><c> that</c><00:07:08.080><c> on</c>
+
+00:07:08.309 --> 00:07:08.319 align:start position:0%
+the infrastructure server. From that on
+ 
+
+00:07:08.319 --> 00:07:11.110 align:start position:0%
+the infrastructure server. From that on
+the<00:07:08.479><c> boot</c><00:07:08.720><c> process</c><00:07:09.199><c> the</c><00:07:09.520><c> BMC</c><00:07:10.080><c> starts</c><00:07:10.720><c> starts</c>
+
+00:07:11.110 --> 00:07:11.120 align:start position:0%
+the boot process the BMC starts starts
+ 
+
+00:07:11.120 --> 00:07:13.110 align:start position:0%
+the boot process the BMC starts starts
+the<00:07:11.280><c> the</c><00:07:11.440><c> the</c>
+
+00:07:13.110 --> 00:07:13.120 align:start position:0%
+the the the
+ 
+
+00:07:13.120 --> 00:07:16.150 align:start position:0%
+the the the
+power<00:07:13.440><c> sequence</c><00:07:13.840><c> let's</c><00:07:14.080><c> say</c><00:07:14.800><c> and</c><00:07:15.120><c> it</c><00:07:15.520><c> loads</c>
+
+00:07:16.150 --> 00:07:16.160 align:start position:0%
+power sequence let's say and it loads
+ 
+
+00:07:16.160 --> 00:07:19.670 align:start position:0%
+power sequence let's say and it loads
+the<00:07:17.440><c> minimum</c><00:07:18.160><c> requirement</c>
+
+00:07:19.670 --> 00:07:19.680 align:start position:0%
+the minimum requirement
+ 
+
+00:07:19.680 --> 00:07:22.710 align:start position:0%
+the minimum requirement
+data<00:07:20.479><c> as</c><00:07:21.039><c> to</c><00:07:21.199><c> to</c><00:07:21.520><c> know</c><00:07:21.680><c> what</c><00:07:21.919><c> to</c><00:07:22.160><c> do</c><00:07:22.319><c> to</c><00:07:22.560><c> know</c>
+
+00:07:22.710 --> 00:07:22.720 align:start position:0%
+data as to to know what to do to know
+ 
+
+00:07:22.720 --> 00:07:24.469 align:start position:0%
+data as to to know what to do to know
+where<00:07:22.880><c> to</c><00:07:23.039><c> get</c><00:07:23.199><c> the</c><00:07:23.440><c> rest</c><00:07:23.599><c> of</c><00:07:23.759><c> the</c><00:07:23.919><c> ingredients</c>
+
+00:07:24.469 --> 00:07:24.479 align:start position:0%
+where to get the rest of the ingredients
+ 
+
+00:07:24.479 --> 00:07:26.710 align:start position:0%
+where to get the rest of the ingredients
+which<00:07:24.639><c> is</c><00:07:24.800><c> the</c><00:07:25.280><c> early</c><00:07:25.599><c> firmware.</c><00:07:26.240><c> That</c><00:07:26.479><c> early</c>
+
+00:07:26.710 --> 00:07:26.720 align:start position:0%
+which is the early firmware. That early
+ 
+
+00:07:26.720 --> 00:07:28.629 align:start position:0%
+which is the early firmware. That early
+firmware<00:07:27.039><c> is</c><00:07:27.360><c> stored</c><00:07:27.520><c> on</c><00:07:27.680><c> a</c><00:07:27.840><c> local</c><00:07:28.000><c> flash</c><00:07:28.400><c> a</c>
+
+00:07:28.629 --> 00:07:28.639 align:start position:0%
+firmware is stored on a local flash a
+ 
+
+00:07:28.639 --> 00:07:30.629 align:start position:0%
+firmware is stored on a local flash a
+small<00:07:28.880><c> local</c><00:07:29.120><c> flash</c><00:07:29.440><c> just</c><00:07:29.680><c> to</c><00:07:29.840><c> have</c><00:07:30.000><c> a</c><00:07:30.240><c> minimum</c>
+
+00:07:30.629 --> 00:07:30.639 align:start position:0%
+small local flash just to have a minimum
+ 
+
+00:07:30.639 --> 00:07:34.070 align:start position:0%
+small local flash just to have a minimum
+minimum<00:07:31.759><c> idea</c><00:07:32.479><c> where</c><00:07:32.720><c> where</c><00:07:33.039><c> to</c><00:07:33.199><c> do</c><00:07:33.360><c> that.</c>
+
+00:07:34.070 --> 00:07:34.080 align:start position:0%
+minimum idea where where to do that.
+ 
+
+00:07:34.080 --> 00:07:38.309 align:start position:0%
+minimum idea where where to do that.
+After<00:07:34.319><c> that</c><00:07:34.560><c> the</c><00:07:34.800><c> BMC</c><00:07:36.000><c> erh</c><00:07:37.199><c> boots</c><00:07:37.599><c> by</c><00:07:37.759><c> itself,</c>
+
+00:07:38.309 --> 00:07:38.319 align:start position:0%
+After that the BMC erh boots by itself,
+ 
+
+00:07:38.319 --> 00:07:41.029 align:start position:0%
+After that the BMC erh boots by itself,
+checks<00:07:38.639><c> its</c><00:07:39.520><c> early</c><00:07:39.840><c> firmware</c><00:07:40.319><c> and</c><00:07:40.560><c> then</c><00:07:40.800><c> it</c>
+
+00:07:41.029 --> 00:07:41.039 align:start position:0%
+checks its early firmware and then it
+ 
+
+00:07:41.039 --> 00:07:42.950 align:start position:0%
+checks its early firmware and then it
+knows<00:07:41.360><c> and</c><00:07:41.520><c> goes</c><00:07:41.759><c> to</c><00:07:41.919><c> the</c><00:07:42.080><c> infrastructure</c><00:07:42.720><c> to</c>
+
+00:07:42.950 --> 00:07:42.960 align:start position:0%
+knows and goes to the infrastructure to
+ 
+
+00:07:42.960 --> 00:07:45.510 align:start position:0%
+knows and goes to the infrastructure to
+get<00:07:43.120><c> the</c><00:07:43.280><c> rest</c><00:07:43.440><c> of</c><00:07:43.680><c> the</c><00:07:44.160><c> of</c><00:07:44.400><c> the</c><00:07:44.560><c> firmware.</c><00:07:45.360><c> So</c>
+
+00:07:45.510 --> 00:07:45.520 align:start position:0%
+get the rest of the of the firmware. So
+ 
+
+00:07:45.520 --> 00:07:48.629 align:start position:0%
+get the rest of the of the firmware. So
+that<00:07:45.840><c> is</c><00:07:46.080><c> then</c><00:07:46.560><c> trans</c><00:07:47.199><c> transport</c><00:07:47.840><c> or</c><00:07:48.240><c> shared</c>
+
+00:07:48.629 --> 00:07:48.639 align:start position:0%
+that is then trans transport or shared
+ 
+
+00:07:48.639 --> 00:07:51.670 align:start position:0%
+that is then trans transport or shared
+to<00:07:48.880><c> the</c><00:07:49.039><c> FPA</c><00:07:49.599><c> which</c><00:07:49.840><c> is</c><00:07:50.479><c> checking</c><00:07:50.960><c> is</c><00:07:51.120><c> checking</c>
+
+00:07:51.670 --> 00:07:51.680 align:start position:0%
+to the FPA which is checking is checking
+ 
+
+00:07:51.680 --> 00:07:54.550 align:start position:0%
+to the FPA which is checking is checking
+like<00:07:51.840><c> the</c><00:07:52.000><c> grularity</c><00:07:53.039><c> in</c><00:07:53.360><c> chunks</c><00:07:53.840><c> and</c><00:07:54.080><c> then</c>
+
+00:07:54.550 --> 00:07:54.560 align:start position:0%
+like the grularity in chunks and then
+ 
+
+00:07:54.560 --> 00:07:56.950 align:start position:0%
+like the grularity in chunks and then
+for<00:07:55.039><c> the</c><00:07:55.120><c> stationation</c><00:07:55.440><c> on</c><00:07:55.680><c> the</c><00:07:55.759><c> TPM</c><00:07:56.479><c> etc.</c>
+
+00:07:56.950 --> 00:07:56.960 align:start position:0%
+for the stationation on the TPM etc.
+ 
+
+00:07:56.960 --> 00:07:59.670 align:start position:0%
+for the stationation on the TPM etc.
+then<00:07:57.360><c> at</c><00:07:57.599><c> the</c><00:07:57.759><c> end</c><00:07:57.919><c> it</c><00:07:58.080><c> goes</c><00:07:58.240><c> to</c><00:07:58.400><c> the</c><00:07:58.560><c> CPU.</c><00:07:59.440><c> The</c>
+
+00:07:59.670 --> 00:07:59.680 align:start position:0%
+then at the end it goes to the CPU. The
+ 
+
+00:07:59.680 --> 00:08:02.309 align:start position:0%
+then at the end it goes to the CPU. The
+thing<00:07:59.919><c> here</c><00:08:00.240><c> or</c><00:08:00.479><c> the</c><00:08:01.039><c> main</c><00:08:01.280><c> difference</c><00:08:01.680><c> with</c><00:08:01.919><c> a</c>
+
+00:08:02.309 --> 00:08:02.319 align:start position:0%
+thing here or the main difference with a
+ 
+
+00:08:02.319 --> 00:08:04.869 align:start position:0%
+thing here or the main difference with a
+regular<00:08:02.800><c> bootflow</c><00:08:03.440><c> or</c><00:08:03.680><c> a</c><00:08:03.919><c> regular</c><00:08:04.479><c> server</c>
+
+00:08:04.869 --> 00:08:04.879 align:start position:0%
+regular bootflow or a regular server
+ 
+
+00:08:04.879 --> 00:08:07.189 align:start position:0%
+regular bootflow or a regular server
+without<00:08:05.199><c> this</c><00:08:05.520><c> is</c><00:08:05.759><c> that</c><00:08:06.479><c> in</c><00:08:06.720><c> this</c><00:08:06.879><c> case</c><00:08:07.039><c> the</c>
+
+00:08:07.189 --> 00:08:07.199 align:start position:0%
+without this is that in this case the
+ 
+
+00:08:07.199 --> 00:08:10.550 align:start position:0%
+without this is that in this case the
+FPGA<00:08:07.759><c> is</c><00:08:07.840><c> like</c><00:08:08.080><c> the</c><00:08:08.240><c> main</c><00:08:08.560><c> main</c><00:08:09.360><c> how</c><00:08:09.599><c> to</c><00:08:09.840><c> say</c>
+
+00:08:10.550 --> 00:08:10.560 align:start position:0%
+FPGA is like the main main how to say
+ 
+
+00:08:10.560 --> 00:08:14.869 align:start position:0%
+FPGA is like the main main how to say
+differentiator<00:08:11.840><c> as</c><00:08:12.720><c> the</c><00:08:13.039><c> CPU</c><00:08:14.160><c> will</c><00:08:14.479><c> try</c><00:08:14.720><c> to</c>
+
+00:08:14.869 --> 00:08:14.879 align:start position:0%
+differentiator as the CPU will try to
+ 
+
+00:08:14.879 --> 00:08:18.790 align:start position:0%
+differentiator as the CPU will try to
+boot<00:08:15.440><c> via</c><00:08:15.840><c> espy</c><00:08:16.560><c> or</c><00:08:16.879><c> kind</c><00:08:17.120><c> of</c><00:08:17.280><c> like</c><00:08:17.440><c> a</c><00:08:17.919><c> eaf</c><00:08:18.319><c> mode</c>
+
+00:08:18.790 --> 00:08:18.800 align:start position:0%
+boot via espy or kind of like a eaf mode
+ 
+
+00:08:18.800 --> 00:08:22.629 align:start position:0%
+boot via espy or kind of like a eaf mode
+and<00:08:19.039><c> the</c><00:08:19.280><c> PGA</c><00:08:19.680><c> will</c><00:08:20.160><c> do</c><00:08:20.400><c> all</c><00:08:20.639><c> the</c><00:08:20.800><c> handling</c><00:08:21.680><c> at</c>
+
+00:08:22.629 --> 00:08:22.639 align:start position:0%
+and the PGA will do all the handling at
+ 
+
+00:08:22.639 --> 00:08:24.309 align:start position:0%
+and the PGA will do all the handling at
+all<00:08:22.879><c> the</c><00:08:23.039><c> handling</c><00:08:23.360><c> to</c><00:08:23.599><c> provide</c><00:08:23.840><c> the</c><00:08:24.000><c> data</c><00:08:24.240><c> to</c>
+
+00:08:24.309 --> 00:08:24.319 align:start position:0%
+all the handling to provide the data to
+ 
+
+00:08:24.319 --> 00:08:26.390 align:start position:0%
+all the handling to provide the data to
+the<00:08:24.479><c> CPU</c><00:08:24.720><c> and</c><00:08:24.879><c> the</c><00:08:24.960><c> CPU</c><00:08:25.360><c> will</c><00:08:25.680><c> will</c><00:08:26.000><c> not</c><00:08:26.160><c> know</c>
+
+00:08:26.390 --> 00:08:26.400 align:start position:0%
+the CPU and the CPU will will not know
+ 
+
+00:08:26.400 --> 00:08:29.749 align:start position:0%
+the CPU and the CPU will will not know
+exactly<00:08:26.720><c> where</c><00:08:26.960><c> it</c><00:08:27.199><c> came</c><00:08:27.919><c> but</c>
+
+00:08:29.749 --> 00:08:29.759 align:start position:0%
+exactly where it came but
+ 
+
+00:08:29.759 --> 00:08:32.949 align:start position:0%
+exactly where it came but
+The<00:08:30.000><c> FPJ</c><00:08:30.639><c> will</c><00:08:31.280><c> emulate</c><00:08:31.840><c> or</c><00:08:32.159><c> is</c><00:08:32.320><c> simulating</c>
+
+00:08:32.949 --> 00:08:32.959 align:start position:0%
+The FPJ will emulate or is simulating
+ 
+
+00:08:32.959 --> 00:08:38.630 align:start position:0%
+The FPJ will emulate or is simulating
+how<00:08:33.200><c> the</c><00:08:33.360><c> the</c><00:08:34.560><c> any</c><00:08:35.839><c> is</c><00:08:35.919><c> spy</c><00:08:36.240><c> device</c><00:08:36.959><c> erh</c><00:08:38.320><c> how</c>
+
+00:08:38.630 --> 00:08:38.640 align:start position:0%
+how the the any is spy device erh how
+ 
+
+00:08:38.640 --> 00:08:41.029 align:start position:0%
+how the the any is spy device erh how
+how<00:08:38.880><c> the</c><00:08:39.039><c> isy</c><00:08:39.519><c> device</c><00:08:39.839><c> provides</c><00:08:40.399><c> how</c><00:08:40.560><c> the</c><00:08:40.800><c> spy</c>
+
+00:08:41.029 --> 00:08:41.039 align:start position:0%
+how the isy device provides how the spy
+ 
+
+00:08:41.039 --> 00:08:43.430 align:start position:0%
+how the isy device provides how the spy
+device<00:08:41.279><c> has</c><00:08:41.519><c> the</c><00:08:41.680><c> data</c><00:08:42.320><c> and</c><00:08:42.479><c> and</c><00:08:42.959><c> ready</c><00:08:43.279><c> for</c>
+
+00:08:43.430 --> 00:08:43.440 align:start position:0%
+device has the data and and ready for
+ 
+
+00:08:43.440 --> 00:08:45.190 align:start position:0%
+device has the data and and ready for
+the<00:08:43.680><c> CPU.</c>
+
+00:08:45.190 --> 00:08:45.200 align:start position:0%
+the CPU.
+ 
+
+00:08:45.200 --> 00:08:47.829 align:start position:0%
+the CPU.
+And<00:08:45.440><c> on</c><00:08:45.680><c> the</c><00:08:45.839><c> right</c><00:08:46.000><c> we</c><00:08:46.240><c> have</c><00:08:46.320><c> just</c><00:08:46.480><c> a</c><00:08:46.640><c> a</c><00:08:47.440><c> simple</c>
+
+00:08:47.829 --> 00:08:47.839 align:start position:0%
+And on the right we have just a a simple
+ 
+
+00:08:47.839 --> 00:08:50.630 align:start position:0%
+And on the right we have just a a simple
+timing<00:08:48.880><c> diagram</c><00:08:49.440><c> sequence</c><00:08:49.760><c> on</c><00:08:50.000><c> the</c><00:08:50.160><c> different</c>
+
+00:08:50.630 --> 00:08:50.640 align:start position:0%
+timing diagram sequence on the different
+ 
+
+00:08:50.640 --> 00:08:54.790 align:start position:0%
+timing diagram sequence on the different
+main<00:08:51.040><c> main</c>
+
+00:08:54.790 --> 00:08:54.800 align:start position:0%
+ 
+ 
+
+00:08:54.800 --> 00:08:57.590 align:start position:0%
+ 
+stuff<00:08:55.120><c> that</c><00:08:55.440><c> are</c><00:08:55.760><c> happening</c><00:08:56.240><c> like</c><00:08:56.640><c> BMC</c>
+
+00:08:57.590 --> 00:08:57.600 align:start position:0%
+stuff that are happening like BMC
+ 
+
+00:08:57.600 --> 00:08:59.430 align:start position:0%
+stuff that are happening like BMC
+starting<00:08:58.080><c> to</c><00:08:58.320><c> fetch</c><00:08:58.640><c> the</c><00:08:58.800><c> early</c><00:08:59.040><c> firmware</c>
+
+00:08:59.430 --> 00:08:59.440 align:start position:0%
+starting to fetch the early firmware
+ 
+
+00:08:59.440 --> 00:09:01.750 align:start position:0%
+starting to fetch the early firmware
+then<00:08:59.680><c> it</c><00:08:59.839><c> boots</c><00:09:00.320><c> then</c><00:09:00.560><c> when</c><00:09:00.720><c> it's</c><00:09:00.959><c> ready</c><00:09:01.440><c> it</c>
+
+00:09:01.750 --> 00:09:01.760 align:start position:0%
+then it boots then when it's ready it
+ 
+
+00:09:01.760 --> 00:09:04.630 align:start position:0%
+then it boots then when it's ready it
+has<00:09:01.920><c> that</c><00:09:02.240><c> provided</c><00:09:02.720><c> to</c><00:09:02.800><c> the</c><00:09:03.120><c> PA</c><00:09:03.440><c> then</c><00:09:03.600><c> the</c><00:09:03.839><c> PGA</c>
+
+00:09:04.630 --> 00:09:04.640 align:start position:0%
+has that provided to the PA then the PGA
+ 
+
+00:09:04.640 --> 00:09:06.630 align:start position:0%
+has that provided to the PA then the PGA
+provide<00:09:04.959><c> to</c><00:09:05.040><c> the</c><00:09:05.200><c> CPU</c><00:09:05.600><c> and</c><00:09:05.760><c> then</c><00:09:06.080><c> yeah</c><00:09:06.320><c> it</c>
+
+00:09:06.630 --> 00:09:06.640 align:start position:0%
+provide to the CPU and then yeah it
+ 
+
+00:09:06.640 --> 00:09:09.829 align:start position:0%
+provide to the CPU and then yeah it
+continues.<00:09:07.760><c> It's</c><00:09:08.000><c> a</c><00:09:08.160><c> lot</c><00:09:08.560><c> a</c><00:09:08.800><c> rough</c><00:09:09.200><c> idea</c><00:09:09.600><c> just</c>
+
+00:09:09.829 --> 00:09:09.839 align:start position:0%
+continues. It's a lot a rough idea just
+ 
+
+00:09:09.839 --> 00:09:12.230 align:start position:0%
+continues. It's a lot a rough idea just
+to<00:09:09.920><c> to</c><00:09:10.240><c> have</c><00:09:10.800><c> uh</c><00:09:11.200><c> something</c><00:09:11.519><c> visually</c><00:09:12.000><c> to</c>
+
+00:09:12.230 --> 00:09:12.240 align:start position:0%
+to to have uh something visually to
+ 
+
+00:09:12.240 --> 00:09:14.150 align:start position:0%
+to to have uh something visually to
+understand.
+
+00:09:14.150 --> 00:09:14.160 align:start position:0%
+understand.
+ 
+
+00:09:14.160 --> 00:09:16.470 align:start position:0%
+understand.
+And<00:09:14.399><c> next</c><00:09:14.640><c> is</c><00:09:14.800><c> the</c><00:09:15.040><c> streaming</c><00:09:15.440><c> boot</c><00:09:15.760><c> which</c><00:09:16.000><c> is</c>
+
+00:09:16.470 --> 00:09:16.480 align:start position:0%
+And next is the streaming boot which is
+ 
+
+00:09:16.480 --> 00:09:18.949 align:start position:0%
+And next is the streaming boot which is
+quite<00:09:16.880><c> similar</c>
+
+00:09:18.949 --> 00:09:18.959 align:start position:0%
+quite similar
+ 
+
+00:09:18.959 --> 00:09:21.590 align:start position:0%
+quite similar
+to<00:09:19.279><c> the</c><00:09:20.000><c> previous</c><00:09:20.480><c> in</c><00:09:20.720><c> the</c><00:09:20.880><c> difference</c><00:09:21.200><c> that</c>
+
+00:09:21.590 --> 00:09:21.600 align:start position:0%
+to the previous in the difference that
+ 
+
+00:09:21.600 --> 00:09:25.590 align:start position:0%
+to the previous in the difference that
+now<00:09:22.320><c> uh</c><00:09:23.200><c> the</c><00:09:23.360><c> the</c><00:09:24.160><c> image</c><00:09:24.480><c> is</c><00:09:24.640><c> load</c><00:09:24.959><c> like</c><00:09:25.200><c> at</c><00:09:25.360><c> the</c>
+
+00:09:25.590 --> 00:09:25.600 align:start position:0%
+now uh the the image is load like at the
+ 
+
+00:09:25.600 --> 00:09:28.470 align:start position:0%
+now uh the the image is load like at the
+whole<00:09:25.760><c> image</c><00:09:26.880><c> in</c><00:09:27.120><c> the</c><00:09:27.200><c> BMC</c><00:09:27.680><c> and</c><00:09:27.839><c> then</c><00:09:27.920><c> the</c><00:09:28.000><c> BMC</c>
+
+00:09:28.470 --> 00:09:28.480 align:start position:0%
+whole image in the BMC and then the BMC
+ 
+
+00:09:28.480 --> 00:09:31.110 align:start position:0%
+whole image in the BMC and then the BMC
+translate<00:09:28.880><c> that</c><00:09:29.040><c> to</c><00:09:29.200><c> the</c><00:09:29.360><c> PJ</c><00:09:30.080><c> the</c><00:09:30.320><c> PJ</c><00:09:30.720><c> present</c>
+
+00:09:31.110 --> 00:09:31.120 align:start position:0%
+translate that to the PJ the PJ present
+ 
+
+00:09:31.120 --> 00:09:34.310 align:start position:0%
+translate that to the PJ the PJ present
+that<00:09:31.440><c> to</c><00:09:31.680><c> the</c><00:09:32.080><c> CPU</c><00:09:32.480><c> in</c><00:09:32.720><c> the</c><00:09:32.880><c> same</c><00:09:33.040><c> sense</c><00:09:33.440><c> as</c><00:09:34.080><c> an</c>
+
+00:09:34.310 --> 00:09:34.320 align:start position:0%
+that to the CPU in the same sense as an
+ 
+
+00:09:34.320 --> 00:09:39.110 align:start position:0%
+that to the CPU in the same sense as an
+is<00:09:34.560><c> by</c><00:09:35.120><c> type</c><00:09:35.360><c> of</c><00:09:35.600><c> device.</c>
+
+00:09:39.110 --> 00:09:39.120 align:start position:0%
+ 
+ 
+
+00:09:39.120 --> 00:09:40.630 align:start position:0%
+ 
+&gt;&gt; So
+
+00:09:40.630 --> 00:09:40.640 align:start position:0%
+&gt;&gt; So
+ 
+
+00:09:40.640 --> 00:09:42.470 align:start position:0%
+&gt;&gt; So
+&gt;&gt; so<00:09:40.959><c> I</c><00:09:41.200><c> yeah</c><00:09:41.440><c> so</c><00:09:41.519><c> I</c><00:09:41.680><c> think</c><00:09:41.760><c> let</c><00:09:42.000><c> me</c><00:09:42.080><c> go</c><00:09:42.240><c> to</c><00:09:42.320><c> the</c>
+
+00:09:42.470 --> 00:09:42.480 align:start position:0%
+&gt;&gt; so I yeah so I think let me go to the
+ 
+
+00:09:42.480 --> 00:09:44.710 align:start position:0%
+&gt;&gt; so I yeah so I think let me go to the
+next<00:09:42.640><c> slide.</c><00:09:43.040><c> Um</c><00:09:43.600><c> so</c><00:09:43.760><c> I</c><00:09:43.920><c> think</c><00:09:44.160><c> u</c><00:09:44.320><c> thanks</c>
+
+00:09:44.710 --> 00:09:44.720 align:start position:0%
+next slide. Um so I think u thanks
+ 
+
+00:09:44.720 --> 00:09:47.430 align:start position:0%
+next slide. Um so I think u thanks
+thanks<00:09:45.200><c> u</c><00:09:45.440><c> Alex</c><00:09:45.920><c> I</c><00:09:46.080><c> think</c><00:09:46.640><c> I</c><00:09:46.880><c> think</c><00:09:46.959><c> in</c><00:09:47.120><c> a</c><00:09:47.279><c> high</c>
+
+00:09:47.430 --> 00:09:47.440 align:start position:0%
+thanks u Alex I think I think in a high
+ 
+
+00:09:47.440 --> 00:09:48.949 align:start position:0%
+thanks u Alex I think I think in a high
+level<00:09:47.839><c> you</c><00:09:48.000><c> know</c><00:09:48.080><c> there</c><00:09:48.320><c> is</c><00:09:48.480><c> no</c><00:09:48.720><c> difference</c>
+
+00:09:48.949 --> 00:09:48.959 align:start position:0%
+level you know there is no difference
+ 
+
+00:09:48.959 --> 00:09:50.710 align:start position:0%
+level you know there is no difference
+between<00:09:49.360><c> a</c><00:09:49.600><c> you</c><00:09:49.680><c> know</c><00:09:49.839><c> well</c><00:09:50.160><c> there's</c><00:09:50.560><c> some</c>
+
+00:09:50.710 --> 00:09:50.720 align:start position:0%
+between a you know well there's some
+ 
+
+00:09:50.720 --> 00:09:51.910 align:start position:0%
+between a you know well there's some
+difference<00:09:50.959><c> the</c><00:09:51.200><c> streaming</c><00:09:51.440><c> boot</c><00:09:51.680><c> is</c>
+
+00:09:51.910 --> 00:09:51.920 align:start position:0%
+difference the streaming boot is
+ 
+
+00:09:51.920 --> 00:09:54.150 align:start position:0%
+difference the streaming boot is
+basically<00:09:52.800><c> uh</c><00:09:52.959><c> looking</c><00:09:53.200><c> at</c><00:09:53.360><c> the</c><00:09:53.600><c> mechanism</c>
+
+00:09:54.150 --> 00:09:54.160 align:start position:0%
+basically uh looking at the mechanism
+ 
+
+00:09:54.160 --> 00:09:56.389 align:start position:0%
+basically uh looking at the mechanism
+how<00:09:54.399><c> you</c><00:09:54.560><c> deliver</c><00:09:54.880><c> the</c><00:09:55.519><c> image</c><00:09:55.839><c> and</c><00:09:56.000><c> whereas</c>
+
+00:09:56.389 --> 00:09:56.399 align:start position:0%
+how you deliver the image and whereas
+ 
+
+00:09:56.399 --> 00:09:58.630 align:start position:0%
+how you deliver the image and whereas
+flashless<00:09:56.880><c> boot</c><00:09:57.120><c> is</c><00:09:57.360><c> basically</c><00:09:57.600><c> a</c><00:09:57.839><c> mechanism</c>
+
+00:09:58.630 --> 00:09:58.640 align:start position:0%
+flashless boot is basically a mechanism
+ 
+
+00:09:58.640 --> 00:10:00.070 align:start position:0%
+flashless boot is basically a mechanism
+where<00:09:58.959><c> you</c><00:09:59.120><c> going</c><00:09:59.279><c> to</c><00:09:59.360><c> put</c><00:09:59.519><c> this</c><00:09:59.760><c> initial</c>
+
+00:10:00.070 --> 00:10:00.080 align:start position:0%
+where you going to put this initial
+ 
+
+00:10:00.080 --> 00:10:01.990 align:start position:0%
+where you going to put this initial
+image<00:10:00.320><c> so</c><00:10:00.480><c> that's</c><00:10:00.720><c> at</c><00:10:00.880><c> a</c><00:10:01.040><c> high</c><00:10:01.279><c> level</c><00:10:01.519><c> very</c><00:10:01.760><c> and</c>
+
+00:10:01.990 --> 00:10:02.000 align:start position:0%
+image so that's at a high level very and
+ 
+
+00:10:02.000 --> 00:10:04.389 align:start position:0%
+image so that's at a high level very and
+we<00:10:02.080><c> did</c><00:10:02.240><c> some</c><00:10:02.480><c> experimentation</c><00:10:03.519><c> as</c><00:10:03.600><c> as</c><00:10:04.080><c> Alex</c>
+
+00:10:04.389 --> 00:10:04.399 align:start position:0%
+we did some experimentation as as Alex
+ 
+
+00:10:04.399 --> 00:10:05.829 align:start position:0%
+we did some experimentation as as Alex
+was<00:10:04.640><c> showing</c><00:10:05.040><c> of</c><00:10:05.200><c> some</c><00:10:05.360><c> of</c><00:10:05.360><c> the</c><00:10:05.519><c> timing</c>
+
+00:10:05.829 --> 00:10:05.839 align:start position:0%
+was showing of some of the timing
+ 
+
+00:10:05.839 --> 00:10:07.350 align:start position:0%
+was showing of some of the timing
+sequence<00:10:06.240><c> because</c><00:10:06.399><c> this</c><00:10:06.560><c> is</c><00:10:06.640><c> the</c><00:10:06.880><c> important</c>
+
+00:10:07.350 --> 00:10:07.360 align:start position:0%
+sequence because this is the important
+ 
+
+00:10:07.360 --> 00:10:08.949 align:start position:0%
+sequence because this is the important
+but<00:10:07.519><c> the</c><00:10:07.680><c> hardest</c><00:10:08.000><c> part</c><00:10:08.160><c> of</c><00:10:08.320><c> this</c><00:10:08.560><c> whole</c><00:10:08.800><c> thing</c>
+
+00:10:08.949 --> 00:10:08.959 align:start position:0%
+but the hardest part of this whole thing
+ 
+
+00:10:08.959 --> 00:10:10.949 align:start position:0%
+but the hardest part of this whole thing
+is<00:10:09.200><c> to</c><00:10:09.440><c> have</c><00:10:09.920><c> you</c><00:10:10.000><c> know</c><00:10:10.399><c> no</c><00:10:10.480><c> matter</c><00:10:10.720><c> what</c>
+
+00:10:10.949 --> 00:10:10.959 align:start position:0%
+is to have you know no matter what
+ 
+
+00:10:10.959 --> 00:10:12.870 align:start position:0%
+is to have you know no matter what
+mechanism<00:10:11.440><c> you</c><00:10:11.600><c> go</c><00:10:11.839><c> there</c><00:10:12.080><c> is</c><00:10:12.240><c> there</c><00:10:12.399><c> is</c><00:10:12.560><c> to</c><00:10:12.800><c> is</c>
+
+00:10:12.870 --> 00:10:12.880 align:start position:0%
+mechanism you go there is there is to is
+ 
+
+00:10:12.880 --> 00:10:15.030 align:start position:0%
+mechanism you go there is there is to is
+some<00:10:13.040><c> kind</c><00:10:13.120><c> of</c><00:10:13.279><c> early</c><00:10:13.600><c> firmware</c><00:10:14.399><c> and</c><00:10:14.720><c> there's</c>
+
+00:10:15.030 --> 00:10:15.040 align:start position:0%
+some kind of early firmware and there's
+ 
+
+00:10:15.040 --> 00:10:16.310 align:start position:0%
+some kind of early firmware and there's
+going<00:10:15.120><c> to</c><00:10:15.200><c> be</c><00:10:15.360><c> some</c><00:10:15.519><c> kind</c><00:10:15.680><c> of</c><00:10:15.839><c> secondary</c>
+
+00:10:16.310 --> 00:10:16.320 align:start position:0%
+going to be some kind of secondary
+ 
+
+00:10:16.320 --> 00:10:18.150 align:start position:0%
+going to be some kind of secondary
+firmware<00:10:16.640><c> that</c><00:10:16.880><c> you</c><00:10:17.120><c> need</c><00:10:17.200><c> to</c><00:10:17.360><c> have</c><00:10:17.600><c> an</c><00:10:17.839><c> some</c>
+
+00:10:18.150 --> 00:10:18.160 align:start position:0%
+firmware that you need to have an some
+ 
+
+00:10:18.160 --> 00:10:20.310 align:start position:0%
+firmware that you need to have an some
+way<00:10:18.320><c> of</c><00:10:18.480><c> somewhat</c><00:10:18.959><c> working</c><00:10:19.440><c> right</c><00:10:20.000><c> what</c><00:10:20.160><c> I</c>
+
+00:10:20.310 --> 00:10:20.320 align:start position:0%
+way of somewhat working right what I
+ 
+
+00:10:20.320 --> 00:10:22.150 align:start position:0%
+way of somewhat working right what I
+mean<00:10:20.480><c> by</c><00:10:20.640><c> early</c><00:10:20.959><c> firmware</c><00:10:21.279><c> is</c><00:10:21.440><c> that</c><00:10:21.839><c> in</c><00:10:21.839><c> in</c><00:10:22.000><c> a</c>
+
+00:10:22.150 --> 00:10:22.160 align:start position:0%
+mean by early firmware is that in in a
+ 
+
+00:10:22.160 --> 00:10:24.150 align:start position:0%
+mean by early firmware is that in in a
+CPU<00:10:22.480><c> without</c><00:10:22.800><c> anything</c><00:10:23.120><c> it</c><00:10:23.360><c> doesn't</c><00:10:23.519><c> have</c><00:10:23.839><c> any</c>
+
+00:10:24.150 --> 00:10:24.160 align:start position:0%
+CPU without anything it doesn't have any
+ 
+
+00:10:24.160 --> 00:10:26.630 align:start position:0%
+CPU without anything it doesn't have any
+any<00:10:24.560><c> way</c><00:10:24.800><c> to</c><00:10:25.519><c> download</c><00:10:26.000><c> anything</c><00:10:26.240><c> that</c><00:10:26.480><c> is</c>
+
+00:10:26.630 --> 00:10:26.640 align:start position:0%
+any way to download anything that is
+ 
+
+00:10:26.640 --> 00:10:28.470 align:start position:0%
+any way to download anything that is
+high<00:10:26.880><c> volume</c><00:10:27.279><c> right</c><00:10:27.440><c> so</c><00:10:27.600><c> the</c><00:10:27.760><c> early</c><00:10:28.079><c> firmware</c>
+
+00:10:28.470 --> 00:10:28.480 align:start position:0%
+high volume right so the early firmware
+ 
+
+00:10:28.480 --> 00:10:30.790 align:start position:0%
+high volume right so the early firmware
+is<00:10:28.640><c> a</c><00:10:28.800><c> concept</c><00:10:29.120><c> of</c><00:10:29.279><c> it</c><00:10:29.440><c> is</c><00:10:29.680><c> that</c><00:10:30.320><c> the</c><00:10:30.560><c> early</c>
+
+00:10:30.790 --> 00:10:30.800 align:start position:0%
+is a concept of it is that the early
+ 
+
+00:10:30.800 --> 00:10:33.750 align:start position:0%
+is a concept of it is that the early
+firmware<00:10:31.279><c> will</c><00:10:31.760><c> makes</c><00:10:32.160><c> the</c><00:10:32.480><c> CPU</c><00:10:33.200><c> ready</c><00:10:33.519><c> for</c>
+
+00:10:33.750 --> 00:10:33.760 align:start position:0%
+firmware will makes the CPU ready for
+ 
+
+00:10:33.760 --> 00:10:35.990 align:start position:0%
+firmware will makes the CPU ready for
+taking<00:10:34.160><c> images</c><00:10:34.560><c> from</c><00:10:34.800><c> the</c><00:10:34.959><c> DM</c><00:10:35.440><c> or</c><00:10:35.519><c> some</c><00:10:35.680><c> other</c>
+
+00:10:35.990 --> 00:10:36.000 align:start position:0%
+taking images from the DM or some other
+ 
+
+00:10:36.000 --> 00:10:38.230 align:start position:0%
+taking images from the DM or some other
+stages<00:10:36.399><c> where</c><00:10:36.959><c> basically</c><00:10:37.360><c> it</c><00:10:37.440><c> can</c><00:10:37.760><c> do</c><00:10:37.920><c> huge</c>
+
+00:10:38.230 --> 00:10:38.240 align:start position:0%
+stages where basically it can do huge
+ 
+
+00:10:38.240 --> 00:10:41.030 align:start position:0%
+stages where basically it can do huge
+volume<00:10:38.480><c> of</c><00:10:38.720><c> data</c><00:10:39.200><c> right</c><00:10:39.760><c> so</c><00:10:40.160><c> ideally</c><00:10:40.560><c> the</c>
+
+00:10:41.030 --> 00:10:41.040 align:start position:0%
+volume of data right so ideally the
+ 
+
+00:10:41.040 --> 00:10:43.350 align:start position:0%
+volume of data right so ideally the
+early<00:10:41.600><c> is</c><00:10:41.760><c> supposed</c><00:10:41.920><c> to</c><00:10:42.000><c> be</c><00:10:42.160><c> very</c><00:10:42.480><c> small</c><00:10:42.720><c> one.</c>
+
+00:10:43.350 --> 00:10:43.360 align:start position:0%
+early is supposed to be very small one.
+ 
+
+00:10:43.360 --> 00:10:45.829 align:start position:0%
+early is supposed to be very small one.
+U<00:10:43.839><c> you</c><00:10:44.000><c> know</c><00:10:44.160><c> you</c><00:10:44.320><c> want</c><00:10:44.399><c> to</c><00:10:44.560><c> keep</c><00:10:44.720><c> it</c><00:10:45.120><c> as</c><00:10:45.519><c> simple</c>
+
+00:10:45.829 --> 00:10:45.839 align:start position:0%
+U you know you want to keep it as simple
+ 
+
+00:10:45.839 --> 00:10:48.150 align:start position:0%
+U you know you want to keep it as simple
+as<00:10:46.079><c> possible</c><00:10:46.560><c> as</c><00:10:46.880><c> small</c><00:10:47.040><c> as</c><00:10:47.279><c> possible.</c><00:10:47.920><c> It</c>
+
+00:10:48.150 --> 00:10:48.160 align:start position:0%
+as possible as small as possible. It
+ 
+
+00:10:48.160 --> 00:10:49.829 align:start position:0%
+as possible as small as possible. It
+should<00:10:48.320><c> have</c><00:10:48.480><c> the</c><00:10:48.640><c> DM</c><00:10:49.040><c> training</c><00:10:49.360><c> sequencing</c>
+
+00:10:49.829 --> 00:10:49.839 align:start position:0%
+should have the DM training sequencing
+ 
+
+00:10:49.839 --> 00:10:51.030 align:start position:0%
+should have the DM training sequencing
+and<00:10:50.000><c> all</c><00:10:50.160><c> those</c><00:10:50.320><c> thing</c><00:10:50.399><c> that</c><00:10:50.640><c> needs</c><00:10:50.800><c> to</c><00:10:50.959><c> be</c>
+
+00:10:51.030 --> 00:10:51.040 align:start position:0%
+and all those thing that needs to be
+ 
+
+00:10:51.040 --> 00:10:53.590 align:start position:0%
+and all those thing that needs to be
+done<00:10:51.200><c> there.</c><00:10:51.839><c> Uh</c><00:10:52.160><c> and</c><00:10:52.399><c> also</c><00:10:52.720><c> I</c><00:10:53.040><c> think</c><00:10:53.120><c> there</c><00:10:53.279><c> is</c>
+
+00:10:53.590 --> 00:10:53.600 align:start position:0%
+done there. Uh and also I think there is
+ 
+
+00:10:53.600 --> 00:10:55.509 align:start position:0%
+done there. Uh and also I think there is
+also<00:10:54.000><c> an</c><00:10:54.240><c> another</c><00:10:54.480><c> caveat</c><00:10:54.880><c> there</c><00:10:55.040><c> that</c><00:10:55.360><c> you</c>
+
+00:10:55.509 --> 00:10:55.519 align:start position:0%
+also an another caveat there that you
+ 
+
+00:10:55.519 --> 00:10:57.430 align:start position:0%
+also an another caveat there that you
+may<00:10:55.680><c> want</c><00:10:55.839><c> to</c><00:10:56.079><c> have</c><00:10:56.399><c> some</c><00:10:56.640><c> kind</c><00:10:56.800><c> of</c><00:10:56.959><c> security</c>
+
+00:10:57.430 --> 00:10:57.440 align:start position:0%
+may want to have some kind of security
+ 
+
+00:10:57.440 --> 00:10:58.790 align:start position:0%
+may want to have some kind of security
+checklist<00:10:57.920><c> there</c><00:10:58.160><c> because</c><00:10:58.399><c> once</c><00:10:58.640><c> you</c>
+
+00:10:58.790 --> 00:10:58.800 align:start position:0%
+checklist there because once you
+ 
+
+00:10:58.800 --> 00:11:00.790 align:start position:0%
+checklist there because once you
+validate<00:10:59.120><c> the</c><00:10:59.279><c> AI</c><00:10:59.600><c> firmware</c><00:11:00.240><c> then</c><00:11:00.480><c> Ali</c>
+
+00:11:00.790 --> 00:11:00.800 align:start position:0%
+validate the AI firmware then Ali
+ 
+
+00:11:00.800 --> 00:11:03.350 align:start position:0%
+validate the AI firmware then Ali
+firmware<00:11:01.120><c> can</c><00:11:01.760><c> excuse</c><00:11:02.079><c> me</c><00:11:02.560><c> can</c><00:11:02.800><c> validate</c><00:11:03.200><c> the</c>
+
+00:11:03.350 --> 00:11:03.360 align:start position:0%
+firmware can excuse me can validate the
+ 
+
+00:11:03.360 --> 00:11:04.870 align:start position:0%
+firmware can excuse me can validate the
+secondary<00:11:03.839><c> firmware</c><00:11:04.240><c> if</c><00:11:04.480><c> you</c><00:11:04.560><c> want</c><00:11:04.720><c> to</c><00:11:04.800><c> do</c>
+
+00:11:04.870 --> 00:11:04.880 align:start position:0%
+secondary firmware if you want to do
+ 
+
+00:11:04.880 --> 00:11:06.550 align:start position:0%
+secondary firmware if you want to do
+that<00:11:05.120><c> way.</c><00:11:05.360><c> That's</c><00:11:05.519><c> another</c><00:11:05.839><c> caveat</c><00:11:06.240><c> that</c><00:11:06.399><c> you</c>
+
+00:11:06.550 --> 00:11:06.560 align:start position:0%
+that way. That's another caveat that you
+ 
+
+00:11:06.560 --> 00:11:08.630 align:start position:0%
+that way. That's another caveat that you
+can<00:11:06.720><c> do.</c><00:11:07.200><c> So</c><00:11:07.600><c> having</c><00:11:07.839><c> the</c><00:11:08.000><c> early</c><00:11:08.240><c> formula</c><00:11:08.560><c> is</c>
+
+00:11:08.630 --> 00:11:08.640 align:start position:0%
+can do. So having the early formula is
+ 
+
+00:11:08.640 --> 00:11:10.949 align:start position:0%
+can do. So having the early formula is
+the<00:11:08.800><c> is</c><00:11:09.120><c> probably</c><00:11:09.279><c> the</c><00:11:09.600><c> toughest</c><00:11:10.079><c> one</c><00:11:10.640><c> because</c>
+
+00:11:10.949 --> 00:11:10.959 align:start position:0%
+the is probably the toughest one because
+ 
+
+00:11:10.959 --> 00:11:12.389 align:start position:0%
+the is probably the toughest one because
+there's<00:11:11.360><c> a</c><00:11:11.519><c> lot</c><00:11:11.680><c> of</c><00:11:11.760><c> things</c><00:11:11.920><c> that</c><00:11:12.160><c> early</c>
+
+00:11:12.389 --> 00:11:12.399 align:start position:0%
+there's a lot of things that early
+ 
+
+00:11:12.399 --> 00:11:14.630 align:start position:0%
+there's a lot of things that early
+formula<00:11:12.800><c> is</c><00:11:12.959><c> a</c><00:11:13.120><c> very</c><00:11:13.360><c> very</c><00:11:13.600><c> tight</c><00:11:14.000><c> time</c><00:11:14.320><c> con</c>
+
+00:11:14.630 --> 00:11:14.640 align:start position:0%
+formula is a very very tight time con
+ 
+
+00:11:14.640 --> 00:11:16.710 align:start position:0%
+formula is a very very tight time con
+you<00:11:14.880><c> know</c><00:11:15.279><c> time</c><00:11:15.600><c> constraint</c><00:11:16.160><c> right</c><00:11:16.320><c> you</c><00:11:16.640><c> have</c>
+
+00:11:16.710 --> 00:11:16.720 align:start position:0%
+you know time constraint right you have
+ 
+
+00:11:16.720 --> 00:11:18.389 align:start position:0%
+you know time constraint right you have
+to<00:11:16.880><c> make</c><00:11:17.040><c> sure</c><00:11:17.200><c> that</c><00:11:17.440><c> it</c><00:11:17.600><c> responds</c><00:11:18.079><c> in</c><00:11:18.240><c> a</c>
+
+00:11:18.389 --> 00:11:18.399 align:start position:0%
+to make sure that it responds in a
+ 
+
+00:11:18.399 --> 00:11:21.030 align:start position:0%
+to make sure that it responds in a
+certain<00:11:18.720><c> time</c><00:11:19.440><c> because</c><00:11:19.760><c> of</c><00:11:20.000><c> that</c><00:11:20.480><c> you</c><00:11:20.640><c> know</c><00:11:20.880><c> uh</c>
+
+00:11:21.030 --> 00:11:21.040 align:start position:0%
+certain time because of that you know uh
+ 
+
+00:11:21.040 --> 00:11:23.269 align:start position:0%
+certain time because of that you know uh
+the<00:11:21.200><c> CPU</c><00:11:21.600><c> requirement</c><00:11:22.079><c> right</c><00:11:22.560><c> it</c><00:11:22.880><c> has</c><00:11:23.040><c> to</c><00:11:23.120><c> be</c>
+
+00:11:23.269 --> 00:11:23.279 align:start position:0%
+the CPU requirement right it has to be
+ 
+
+00:11:23.279 --> 00:11:26.310 align:start position:0%
+the CPU requirement right it has to be
+like<00:11:23.760><c> um</c><00:11:24.320><c> you</c><00:11:24.480><c> know</c>
+
+00:11:26.310 --> 00:11:26.320 align:start position:0%
+like um you know
+ 
+
+00:11:26.320 --> 00:11:27.430 align:start position:0%
+like um you know
+so<00:11:26.447><c> [clears throat]</c><00:11:26.640><c> that's</c><00:11:26.880><c> the</c><00:11:27.040><c> one</c><00:11:27.200><c> if</c><00:11:27.360><c> you</c>
+
+00:11:27.430 --> 00:11:27.440 align:start position:0%
+so [clears throat] that's the one if you
+ 
+
+00:11:27.440 --> 00:11:29.030 align:start position:0%
+so [clears throat] that's the one if you
+look<00:11:27.519><c> at</c><00:11:27.760><c> the</c><00:11:27.920><c> left</c><00:11:28.079><c> side</c><00:11:28.320><c> we're</c><00:11:28.640><c> suggesting</c>
+
+00:11:29.030 --> 00:11:29.040 align:start position:0%
+look at the left side we're suggesting
+ 
+
+00:11:29.040 --> 00:11:31.190 align:start position:0%
+look at the left side we're suggesting
+that<00:11:29.200><c> Ali</c><00:11:29.519><c> firmware</c><00:11:29.920><c> can</c><00:11:30.079><c> be</c><00:11:30.560><c> should</c><00:11:30.800><c> be</c><00:11:30.959><c> less</c>
+
+00:11:31.190 --> 00:11:31.200 align:start position:0%
+that Ali firmware can be should be less
+ 
+
+00:11:31.200 --> 00:11:33.030 align:start position:0%
+that Ali firmware can be should be less
+than<00:11:31.600><c> you</c><00:11:31.760><c> know</c><00:11:31.920><c> whatever</c><00:11:32.240><c> the</c><00:11:32.480><c> size</c><00:11:32.720><c> I</c><00:11:32.880><c> think</c>
+
+00:11:33.030 --> 00:11:33.040 align:start position:0%
+than you know whatever the size I think
+ 
+
+00:11:33.040 --> 00:11:35.670 align:start position:0%
+than you know whatever the size I think
+they<00:11:33.279><c> have</c><00:11:33.600><c> I</c><00:11:33.839><c> saw</c><00:11:34.079><c> CPSS</c><00:11:34.640><c> about</c><00:11:34.800><c> 6</c><00:11:35.040><c> megaby</c><00:11:35.519><c> but</c>
+
+00:11:35.670 --> 00:11:35.680 align:start position:0%
+they have I saw CPSS about 6 megaby but
+ 
+
+00:11:35.680 --> 00:11:37.670 align:start position:0%
+they have I saw CPSS about 6 megaby but
+I<00:11:35.839><c> think</c><00:11:36.480><c> uh</c><00:11:36.720><c> We</c><00:11:36.880><c> we</c><00:11:37.120><c> saw</c><00:11:37.279><c> something</c><00:11:37.519><c> like</c>
+
+00:11:37.670 --> 00:11:37.680 align:start position:0%
+I think uh We we saw something like
+ 
+
+00:11:37.680 --> 00:11:41.430 align:start position:0%
+I think uh We we saw something like
+coming<00:11:37.839><c> at</c><00:11:38.160><c> 4</c><00:11:38.320><c> megabyte</c><00:11:39.440><c> u</c><00:11:39.680><c> and</c><00:11:39.920><c> also</c><00:11:40.959><c> that</c>
+
+00:11:41.430 --> 00:11:41.440 align:start position:0%
+coming at 4 megabyte u and also that
+ 
+
+00:11:41.440 --> 00:11:42.790 align:start position:0%
+coming at 4 megabyte u and also that
+there<00:11:41.920><c> there'll</c><00:11:42.160><c> be</c><00:11:42.320><c> needs</c><00:11:42.480><c> to</c><00:11:42.560><c> be</c><00:11:42.640><c> some</c>
+
+00:11:42.790 --> 00:11:42.800 align:start position:0%
+there there'll be needs to be some
+ 
+
+00:11:42.800 --> 00:11:44.550 align:start position:0%
+there there'll be needs to be some
+verification<00:11:43.360><c> ali</c><00:11:43.680><c> firmware</c><00:11:44.079><c> because</c><00:11:44.320><c> you're</c>
+
+00:11:44.550 --> 00:11:44.560 align:start position:0%
+verification ali firmware because you're
+ 
+
+00:11:44.560 --> 00:11:46.870 align:start position:0%
+verification ali firmware because you're
+basing<00:11:44.880><c> Ali</c><00:11:45.200><c> format</c><00:11:45.519><c> to</c><00:11:45.680><c> be</c><00:11:45.760><c> the</c><00:11:46.320><c> uh</c><00:11:46.480><c> security</c>
+
+00:11:46.870 --> 00:11:46.880 align:start position:0%
+basing Ali format to be the uh security
+ 
+
+00:11:46.880 --> 00:11:48.790 align:start position:0%
+basing Ali format to be the uh security
+base<00:11:47.120><c> for</c><00:11:47.279><c> the</c><00:11:47.440><c> secondary</c><00:11:47.920><c> firmware</c><00:11:48.399><c> right</c>
+
+00:11:48.790 --> 00:11:48.800 align:start position:0%
+base for the secondary firmware right
+ 
+
+00:11:48.800 --> 00:11:50.230 align:start position:0%
+base for the secondary firmware right
+and<00:11:48.959><c> the</c><00:11:49.200><c> secondary</c><00:11:49.600><c> firmware</c><00:11:50.000><c> will</c>
+
+00:11:50.230 --> 00:11:50.240 align:start position:0%
+and the secondary firmware will
+ 
+
+00:11:50.240 --> 00:11:51.910 align:start position:0%
+and the secondary firmware will
+basically<00:11:50.640><c> be</c><00:11:50.880><c> when</c><00:11:51.040><c> the</c><00:11:51.120><c> DM</c><00:11:51.519><c> train</c><00:11:51.760><c> is</c>
+
+00:11:51.910 --> 00:11:51.920 align:start position:0%
+basically be when the DM train is
+ 
+
+00:11:51.920 --> 00:11:54.550 align:start position:0%
+basically be when the DM train is
+completed<00:11:52.800><c> CPU</c><00:11:53.279><c> can</c><00:11:53.760><c> put</c><00:11:53.920><c> the</c><00:11:54.079><c> image</c><00:11:54.320><c> from</c><00:11:54.480><c> the</c>
+
+00:11:54.550 --> 00:11:54.560 align:start position:0%
+completed CPU can put the image from the
+ 
+
+00:11:54.560 --> 00:11:56.550 align:start position:0%
+completed CPU can put the image from the
+DM<00:11:54.959><c> perspective</c><00:11:55.600><c> so</c><00:11:55.760><c> that</c><00:11:56.079><c> will</c><00:11:56.160><c> be</c><00:11:56.320><c> much</c>
+
+00:11:56.550 --> 00:11:56.560 align:start position:0%
+DM perspective so that will be much
+ 
+
+00:11:56.560 --> 00:11:58.710 align:start position:0%
+DM perspective so that will be much
+faster<00:11:56.880><c> in</c><00:11:57.040><c> the</c><00:11:57.200><c> secondary</c><00:11:58.079><c> uh</c><00:11:58.240><c> firmware</c>
+
+00:11:58.710 --> 00:11:58.720 align:start position:0%
+faster in the secondary uh firmware
+ 
+
+00:11:58.720 --> 00:12:00.710 align:start position:0%
+faster in the secondary uh firmware
+right<00:11:58.880><c> and</c><00:11:59.120><c> then</c><00:11:59.200><c> you</c><00:11:59.360><c> can</c><00:11:59.519><c> do</c><00:12:00.000><c> also</c><00:12:00.320><c> the</c><00:12:00.560><c> some</c>
+
+00:12:00.710 --> 00:12:00.720 align:start position:0%
+right and then you can do also the some
+ 
+
+00:12:00.720 --> 00:12:03.670 align:start position:0%
+right and then you can do also the some
+kind<00:12:00.800><c> of</c><00:12:00.959><c> security</c><00:12:01.360><c> check</c><00:12:01.600><c> there</c><00:12:03.040><c> so</c><00:12:03.360><c> biggest</c>
+
+00:12:03.670 --> 00:12:03.680 align:start position:0%
+kind of security check there so biggest
+ 
+
+00:12:03.680 --> 00:12:05.350 align:start position:0%
+kind of security check there so biggest
+challenge<00:12:04.079><c> the</c><00:12:04.320><c> early</c><00:12:04.560><c> firmware</c><00:12:04.959><c> is</c><00:12:05.200><c> that</c>
+
+00:12:05.350 --> 00:12:05.360 align:start position:0%
+challenge the early firmware is that
+ 
+
+00:12:05.360 --> 00:12:07.269 align:start position:0%
+challenge the early firmware is that
+there<00:12:05.519><c> is</c><00:12:05.760><c> pretty</c><00:12:05.920><c> much</c><00:12:06.399><c> zero</c><00:12:06.800><c> latency</c>
+
+00:12:07.269 --> 00:12:07.279 align:start position:0%
+there is pretty much zero latency
+ 
+
+00:12:07.279 --> 00:12:09.750 align:start position:0%
+there is pretty much zero latency
+tolerance<00:12:07.680><c> at</c><00:12:07.920><c> the</c><00:12:08.079><c> early</c><00:12:08.320><c> stage</c><00:12:08.639><c> because</c><00:12:09.040><c> CPU</c>
+
+00:12:09.750 --> 00:12:09.760 align:start position:0%
+tolerance at the early stage because CPU
+ 
+
+00:12:09.760 --> 00:12:11.590 align:start position:0%
+tolerance at the early stage because CPU
+start<00:12:10.000><c> immediately</c><00:12:10.560><c> fetching</c><00:12:11.040><c> any</c><00:12:11.279><c> kind</c><00:12:11.440><c> of</c>
+
+00:12:11.590 --> 00:12:11.600 align:start position:0%
+start immediately fetching any kind of
+ 
+
+00:12:11.600 --> 00:12:13.030 align:start position:0%
+start immediately fetching any kind of
+delay<00:12:11.839><c> you</c><00:12:12.079><c> see</c><00:12:12.160><c> in</c><00:12:12.320><c> the</c><00:12:12.399><c> fetching</c><00:12:12.800><c> can</c>
+
+00:12:13.030 --> 00:12:13.040 align:start position:0%
+delay you see in the fetching can
+ 
+
+00:12:13.040 --> 00:12:15.030 align:start position:0%
+delay you see in the fetching can
+basically<00:12:13.600><c> put</c><00:12:13.680><c> the</c><00:12:13.839><c> CPU</c><00:12:14.079><c> in</c><00:12:14.240><c> the</c><00:12:14.399><c> hung</c><00:12:14.800><c> no</c>
+
+00:12:15.030 --> 00:12:15.040 align:start position:0%
+basically put the CPU in the hung no
+ 
+
+00:12:15.040 --> 00:12:16.870 align:start position:0%
+basically put the CPU in the hung no
+boot<00:12:15.279><c> up</c><00:12:15.519><c> is</c><00:12:15.680><c> possible</c><00:12:16.079><c> right</c><00:12:16.240><c> that's</c><00:12:16.399><c> a</c><00:12:16.560><c> very</c>
+
+00:12:16.870 --> 00:12:16.880 align:start position:0%
+boot up is possible right that's a very
+ 
+
+00:12:16.880 --> 00:12:19.190 align:start position:0%
+boot up is possible right that's a very
+critical<00:12:17.360><c> stage</c><00:12:18.000><c> because</c><00:12:18.240><c> that</c><00:12:18.480><c> how</c><00:12:18.639><c> the</c><00:12:18.800><c> CPU</c>
+
+00:12:19.190 --> 00:12:19.200 align:start position:0%
+critical stage because that how the CPU
+ 
+
+00:12:19.200 --> 00:12:21.269 align:start position:0%
+critical stage because that how the CPU
+works<00:12:19.440><c> like</c><00:12:19.600><c> we</c><00:12:19.839><c> had</c><00:12:20.000><c> some</c><00:12:20.399><c> experimentation</c>
+
+00:12:21.269 --> 00:12:21.279 align:start position:0%
+works like we had some experimentation
+ 
+
+00:12:21.279 --> 00:12:23.269 align:start position:0%
+works like we had some experimentation
+done<00:12:21.440><c> with</c><00:12:21.680><c> Intel</c><00:12:22.079><c> CPU</c><00:12:22.560><c> and</c><00:12:22.800><c> that's</c><00:12:23.040><c> something</c>
+
+00:12:23.269 --> 00:12:23.279 align:start position:0%
+done with Intel CPU and that's something
+ 
+
+00:12:23.279 --> 00:12:25.509 align:start position:0%
+done with Intel CPU and that's something
+that<00:12:23.519><c> we</c><00:12:23.760><c> found</c><00:12:23.920><c> out</c><00:12:24.079><c> that</c><00:12:24.800><c> uh</c><00:12:24.880><c> and</c><00:12:25.120><c> now</c><00:12:25.360><c> right</c>
+
+00:12:25.509 --> 00:12:25.519 align:start position:0%
+that we found out that uh and now right
+ 
+
+00:12:25.519 --> 00:12:27.509 align:start position:0%
+that we found out that uh and now right
+now<00:12:25.680><c> I</c><00:12:25.920><c> don't</c><00:12:26.000><c> think</c><00:12:26.079><c> there</c><00:12:26.480><c> is</c><00:12:26.639><c> a</c><00:12:27.120><c> you</c><00:12:27.360><c> know</c>
+
+00:12:27.509 --> 00:12:27.519 align:start position:0%
+now I don't think there is a you know
+ 
+
+00:12:27.519 --> 00:12:29.509 align:start position:0%
+now I don't think there is a you know
+there<00:12:27.760><c> is</c><00:12:27.920><c> some</c><00:12:28.079><c> experimental</c><00:12:28.560><c> way</c><00:12:28.800><c> of</c><00:12:28.880><c> PC</c>
+
+00:12:29.509 --> 00:12:29.519 align:start position:0%
+there is some experimental way of PC
+ 
+
+00:12:29.519 --> 00:12:31.190 align:start position:0%
+there is some experimental way of PC
+working<00:12:30.160><c> but</c><00:12:30.399><c> I</c><00:12:30.560><c> don't</c><00:12:30.639><c> think</c><00:12:30.720><c> there</c><00:12:30.880><c> is</c><00:12:31.040><c> any</c>
+
+00:12:31.190 --> 00:12:31.200 align:start position:0%
+working but I don't think there is any
+ 
+
+00:12:31.200 --> 00:12:32.790 align:start position:0%
+working but I don't think there is any
+production<00:12:31.600><c> level</c><00:12:31.839><c> work</c><00:12:32.000><c> that</c><00:12:32.240><c> has</c><00:12:32.480><c> been</c><00:12:32.639><c> done</c>
+
+00:12:32.790 --> 00:12:32.800 align:start position:0%
+production level work that has been done
+ 
+
+00:12:32.800 --> 00:12:35.910 align:start position:0%
+production level work that has been done
+so<00:12:33.040><c> far</c><00:12:33.200><c> yet</c><00:12:34.480><c> u</c><00:12:34.639><c> also</c><00:12:34.959><c> the</c><00:12:35.200><c> early</c><00:12:35.360><c> farmer</c><00:12:35.760><c> there</c>
+
+00:12:35.910 --> 00:12:35.920 align:start position:0%
+so far yet u also the early farmer there
+ 
+
+00:12:35.920 --> 00:12:37.990 align:start position:0%
+so far yet u also the early farmer there
+no<00:12:36.079><c> DM</c><00:12:36.480><c> buffer.</c><00:12:36.959><c> So</c><00:12:37.360><c> you</c><00:12:37.440><c> know</c><00:12:37.519><c> I</c><00:12:37.680><c> think</c><00:12:37.760><c> the</c>
+
+00:12:37.990 --> 00:12:38.000 align:start position:0%
+no DM buffer. So you know I think the
+ 
+
+00:12:38.000 --> 00:12:40.310 align:start position:0%
+no DM buffer. So you know I think the
+only<00:12:38.160><c> option</c><00:12:38.320><c> that</c><00:12:38.560><c> we</c><00:12:38.720><c> used</c><00:12:38.880><c> is</c><00:12:39.040><c> APGS</c><00:12:39.680><c> RAM</c>
+
+00:12:40.310 --> 00:12:40.320 align:start position:0%
+only option that we used is APGS RAM
+ 
+
+00:12:40.320 --> 00:12:43.190 align:start position:0%
+only option that we used is APGS RAM
+basically<00:12:40.720><c> to</c><00:12:40.959><c> hold</c><00:12:41.200><c> this</c><00:12:41.839><c> you</c><00:12:42.000><c> know</c><00:12:42.399><c> 4</c><00:12:42.639><c> megab</c>
+
+00:12:43.190 --> 00:12:43.200 align:start position:0%
+basically to hold this you know 4 megab
+ 
+
+00:12:43.200 --> 00:12:45.910 align:start position:0%
+basically to hold this you know 4 megab
+data<00:12:43.360><c> as</c><00:12:43.519><c> an</c><00:12:43.680><c> R</c><00:12:44.000><c> firmware</c><00:12:44.959><c> and</c><00:12:45.279><c> the</c><00:12:45.519><c> one</c><00:12:45.680><c> of</c><00:12:45.760><c> the</c>
+
+00:12:45.910 --> 00:12:45.920 align:start position:0%
+data as an R firmware and the one of the
+ 
+
+00:12:45.920 --> 00:12:47.190 align:start position:0%
+data as an R firmware and the one of the
+key<00:12:46.079><c> problem</c><00:12:46.240><c> that</c><00:12:46.480><c> we</c><00:12:46.639><c> are</c><00:12:46.720><c> trying</c><00:12:46.880><c> to</c><00:12:46.959><c> solve</c>
+
+00:12:47.190 --> 00:12:47.200 align:start position:0%
+key problem that we are trying to solve
+ 
+
+00:12:47.200 --> 00:12:48.949 align:start position:0%
+key problem that we are trying to solve
+is<00:12:47.360><c> that</c><00:12:47.680><c> because</c><00:12:48.079><c> that</c><00:12:48.399><c> you</c><00:12:48.480><c> know</c><00:12:48.639><c> because</c><00:12:48.880><c> of</c>
+
+00:12:48.949 --> 00:12:48.959 align:start position:0%
+is that because that you know because of
+ 
+
+00:12:48.959 --> 00:12:51.190 align:start position:0%
+is that because that you know because of
+the<00:12:49.120><c> reset</c><00:12:49.839><c> because</c><00:12:50.079><c> of</c><00:12:50.240><c> the</c><00:12:50.720><c> timing</c>
+
+00:12:51.190 --> 00:12:51.200 align:start position:0%
+the reset because of the timing
+ 
+
+00:12:51.200 --> 00:12:53.430 align:start position:0%
+the reset because of the timing
+requirement<00:12:51.600><c> of</c><00:12:51.760><c> this</c><00:12:52.000><c> kind</c><00:12:52.160><c> of</c><00:12:52.320><c> signals</c><00:12:53.120><c> you</c>
+
+00:12:53.430 --> 00:12:53.440 align:start position:0%
+requirement of this kind of signals you
+ 
+
+00:12:53.440 --> 00:12:55.509 align:start position:0%
+requirement of this kind of signals you
+want<00:12:53.600><c> to</c><00:12:53.839><c> have</c><00:12:53.920><c> a</c><00:12:54.240><c> very</c><00:12:54.480><c> sequential</c><00:12:55.040><c> image</c><00:12:55.360><c> of</c>
+
+00:12:55.509 --> 00:12:55.519 align:start position:0%
+want to have a very sequential image of
+ 
+
+00:12:55.519 --> 00:12:57.670 align:start position:0%
+want to have a very sequential image of
+the<00:12:55.600><c> early</c><00:12:55.839><c> firmware</c><00:12:56.320><c> right</c><00:12:56.800><c> so</c><00:12:57.120><c> it's</c><00:12:57.519><c> it's</c>
+
+00:12:57.670 --> 00:12:57.680 align:start position:0%
+the early firmware right so it's it's
+ 
+
+00:12:57.680 --> 00:12:59.269 align:start position:0%
+the early firmware right so it's it's
+not<00:12:57.839><c> only</c><00:12:58.160><c> firmware</c><00:12:58.560><c> because</c><00:12:58.800><c> but</c><00:12:59.040><c> there</c><00:12:59.200><c> is</c>
+
+00:12:59.269 --> 00:12:59.279 align:start position:0%
+not only firmware because but there is
+ 
+
+00:12:59.279 --> 00:13:01.030 align:start position:0%
+not only firmware because but there is
+some<00:12:59.519><c> also</c><00:12:59.839><c> other</c><00:13:00.160><c> kind</c><00:13:00.320><c> of</c><00:13:00.399><c> signals</c><00:13:00.880><c> going</c>
+
+00:13:01.030 --> 00:13:01.040 align:start position:0%
+some also other kind of signals going
+ 
+
+00:13:01.040 --> 00:13:03.110 align:start position:0%
+some also other kind of signals going
+back<00:13:01.200><c> and</c><00:13:01.360><c> forth</c><00:13:01.600><c> on</c><00:13:01.760><c> east</c><00:13:02.000><c> by</c><00:13:02.240><c> channels</c><00:13:02.880><c> of</c>
+
+00:13:03.110 --> 00:13:03.120 align:start position:0%
+back and forth on east by channels of
+ 
+
+00:13:03.120 --> 00:13:06.310 align:start position:0%
+back and forth on east by channels of
+Intel<00:13:03.600><c> has</c><00:13:03.839><c> like</c><00:13:04.000><c> some</c><00:13:04.240><c> kind</c><00:13:04.320><c> of</c><00:13:04.800><c> um</c><00:13:05.760><c> so</c><00:13:06.000><c> anyway</c>
+
+00:13:06.310 --> 00:13:06.320 align:start position:0%
+Intel has like some kind of um so anyway
+ 
+
+00:13:06.320 --> 00:13:08.629 align:start position:0%
+Intel has like some kind of um so anyway
+I<00:13:06.639><c> the</c><00:13:06.959><c> so</c><00:13:07.120><c> this</c><00:13:07.360><c> has</c><00:13:07.519><c> to</c><00:13:07.680><c> be</c><00:13:07.839><c> very</c><00:13:08.079><c> predictable</c>
+
+00:13:08.629 --> 00:13:08.639 align:start position:0%
+I the so this has to be very predictable
+ 
+
+00:13:08.639 --> 00:13:10.150 align:start position:0%
+I the so this has to be very predictable
+today<00:13:08.880><c> it's</c><00:13:09.120><c> not</c><00:13:09.200><c> predictable</c><00:13:09.680><c> so</c><00:13:09.839><c> this</c><00:13:10.000><c> is</c>
+
+00:13:10.150 --> 00:13:10.160 align:start position:0%
+today it's not predictable so this is
+ 
+
+00:13:10.160 --> 00:13:11.350 align:start position:0%
+today it's not predictable so this is
+one<00:13:10.240><c> of</c><00:13:10.320><c> the</c><00:13:10.480><c> challenges</c><00:13:10.800><c> we</c><00:13:11.040><c> are</c><00:13:11.200><c> still</c>
+
+00:13:11.350 --> 00:13:11.360 align:start position:0%
+one of the challenges we are still
+ 
+
+00:13:11.360 --> 00:13:13.750 align:start position:0%
+one of the challenges we are still
+facing<00:13:12.160><c> um</c><00:13:12.320><c> it's</c><00:13:12.560><c> not</c><00:13:12.720><c> say</c><00:13:13.040><c> sequential</c><00:13:13.600><c> I'm</c>
+
+00:13:13.750 --> 00:13:13.760 align:start position:0%
+facing um it's not say sequential I'm
+ 
+
+00:13:13.760 --> 00:13:15.269 align:start position:0%
+facing um it's not say sequential I'm
+saying<00:13:14.000><c> so</c><00:13:14.160><c> that's</c><00:13:14.480><c> another</c><00:13:14.800><c> challenge</c><00:13:15.040><c> we're</c>
+
+00:13:15.269 --> 00:13:15.279 align:start position:0%
+saying so that's another challenge we're
+ 
+
+00:13:15.279 --> 00:13:17.350 align:start position:0%
+saying so that's another challenge we're
+facing<00:13:16.079><c> a</c><00:13:16.240><c> couple</c><00:13:16.480><c> I</c><00:13:16.720><c> think</c><00:13:16.880><c> three</c><00:13:17.120><c> message</c>
+
+00:13:17.350 --> 00:13:17.360 align:start position:0%
+facing a couple I think three message
+ 
+
+00:13:17.360 --> 00:13:19.110 align:start position:0%
+facing a couple I think three message
+here<00:13:17.600><c> I</c><00:13:17.760><c> know</c><00:13:17.920><c> I</c><00:13:18.000><c> have</c><00:13:18.399><c> a</c><00:13:18.560><c> little</c><00:13:18.639><c> bit</c><00:13:18.800><c> time</c><00:13:18.959><c> but</c>
+
+00:13:19.110 --> 00:13:19.120 align:start position:0%
+here I know I have a little bit time but
+ 
+
+00:13:19.120 --> 00:13:20.870 align:start position:0%
+here I know I have a little bit time but
+I<00:13:19.200><c> just</c><00:13:19.360><c> going</c><00:13:19.519><c> to</c><00:13:19.600><c> show</c><00:13:19.839><c> three</c><00:13:20.079><c> messages</c>
+
+00:13:20.870 --> 00:13:20.880 align:start position:0%
+I just going to show three messages
+ 
+
+00:13:20.880 --> 00:13:22.550 align:start position:0%
+I just going to show three messages
+where<00:13:21.040><c> the</c><00:13:21.120><c> early</c><00:13:21.440><c> farmer</c><00:13:21.760><c> going</c><00:13:21.920><c> to</c><00:13:22.079><c> stay</c><00:13:22.399><c> I</c>
+
+00:13:22.550 --> 00:13:22.560 align:start position:0%
+where the early farmer going to stay I
+ 
+
+00:13:22.560 --> 00:13:24.550 align:start position:0%
+where the early farmer going to stay I
+think<00:13:22.639><c> in</c><00:13:22.800><c> a</c><00:13:22.959><c> very</c><00:13:23.120><c> high</c><00:13:23.360><c> level</c><00:13:23.920><c> we</c><00:13:24.160><c> can</c><00:13:24.320><c> have</c>
+
+00:13:24.550 --> 00:13:24.560 align:start position:0%
+think in a very high level we can have
+ 
+
+00:13:24.560 --> 00:13:27.030 align:start position:0%
+think in a very high level we can have
+early<00:13:24.880><c> farming</c><00:13:25.200><c> state</c><00:13:25.440><c> in</c><00:13:25.600><c> the</c><00:13:25.680><c> BMC</c><00:13:26.399><c> you</c><00:13:26.560><c> know</c>
+
+00:13:27.030 --> 00:13:27.040 align:start position:0%
+early farming state in the BMC you know
+ 
+
+00:13:27.040 --> 00:13:30.949 align:start position:0%
+early farming state in the BMC you know
+you<00:13:27.200><c> know</c><00:13:27.600><c> BMC</c><00:13:28.000><c> inside</c><00:13:28.639><c> oh</c><00:13:28.880><c> sorry</c><00:13:30.320><c> okay</c><00:13:30.639><c> yeah</c>
+
+00:13:30.949 --> 00:13:30.959 align:start position:0%
+you know BMC inside oh sorry okay yeah
+ 
+
+00:13:30.959 --> 00:13:32.949 align:start position:0%
+you know BMC inside oh sorry okay yeah
+thank<00:13:31.120><c> you</c><00:13:31.600><c> yeah</c><00:13:31.760><c> so</c><00:13:32.079><c> there's</c><00:13:32.320><c> three</c><00:13:32.480><c> matches</c>
+
+00:13:32.949 --> 00:13:32.959 align:start position:0%
+thank you yeah so there's three matches
+ 
+
+00:13:32.959 --> 00:13:35.269 align:start position:0%
+thank you yeah so there's three matches
+here<00:13:33.200><c> so</c><00:13:33.519><c> you</c><00:13:33.680><c> can</c><00:13:33.760><c> have</c><00:13:34.000><c> BMC</c><00:13:34.480><c> spy</c><00:13:34.800><c> flash</c><00:13:35.120><c> can</c>
+
+00:13:35.269 --> 00:13:35.279 align:start position:0%
+here so you can have BMC spy flash can
+ 
+
+00:13:35.279 --> 00:13:36.629 align:start position:0%
+here so you can have BMC spy flash can
+hold<00:13:35.519><c> the</c><00:13:35.839><c> firmware</c>
+
+00:13:36.629 --> 00:13:36.639 align:start position:0%
+hold the firmware
+ 
+
+00:13:36.639 --> 00:13:38.629 align:start position:0%
+hold the firmware
+And<00:13:36.959><c> the</c><00:13:37.120><c> secondary</c><00:13:37.600><c> you</c><00:13:37.760><c> can</c><00:13:37.839><c> have</c><00:13:38.000><c> the</c><00:13:38.160><c> PO</c>
+
+00:13:38.629 --> 00:13:38.639 align:start position:0%
+And the secondary you can have the PO
+ 
+
+00:13:38.639 --> 00:13:40.870 align:start position:0%
+And the secondary you can have the PO
+flash<00:13:39.040><c> holding</c><00:13:39.360><c> the</c><00:13:39.519><c> Ali</c><00:13:39.839><c> firmware.</c><00:13:40.560><c> You</c><00:13:40.720><c> can</c>
+
+00:13:40.870 --> 00:13:40.880 align:start position:0%
+flash holding the Ali firmware. You can
+ 
+
+00:13:40.880 --> 00:13:43.030 align:start position:0%
+flash holding the Ali firmware. You can
+also<00:13:41.120><c> just</c><00:13:41.440><c> make</c><00:13:41.839><c> uh</c><00:13:42.000><c> everything</c><00:13:42.399><c> inside</c><00:13:42.800><c> the</c>
+
+00:13:43.030 --> 00:13:43.040 align:start position:0%
+also just make uh everything inside the
+ 
+
+00:13:43.040 --> 00:13:45.509 align:start position:0%
+also just make uh everything inside the
+PO<00:13:43.680><c> or</c><00:13:43.920><c> if</c><00:13:44.160><c> you</c><00:13:44.240><c> want</c><00:13:44.320><c> to</c><00:13:44.480><c> do</c><00:13:44.800><c> more</c><00:13:45.120><c> than</c><00:13:45.279><c> one</c>
+
+00:13:45.509 --> 00:13:45.519 align:start position:0%
+PO or if you want to do more than one
+ 
+
+00:13:45.519 --> 00:13:46.949 align:start position:0%
+PO or if you want to do more than one
+firmware<00:13:45.920><c> image.</c><00:13:46.240><c> If</c><00:13:46.320><c> you</c><00:13:46.480><c> have</c><00:13:46.560><c> like</c>
+
+00:13:46.949 --> 00:13:46.959 align:start position:0%
+firmware image. If you have like
+ 
+
+00:13:46.959 --> 00:13:48.470 align:start position:0%
+firmware image. If you have like
+partition<00:13:47.440><c> system</c><00:13:47.680><c> or</c><00:13:47.920><c> anything</c><00:13:48.160><c> like</c><00:13:48.320><c> that,</c>
+
+00:13:48.470 --> 00:13:48.480 align:start position:0%
+partition system or anything like that,
+ 
+
+00:13:48.480 --> 00:13:50.470 align:start position:0%
+partition system or anything like that,
+you<00:13:48.639><c> can</c><00:13:48.800><c> add</c><00:13:49.040><c> additional</c><00:13:49.360><c> eMMC</c><00:13:50.079><c> that</c><00:13:50.320><c> only</c>
+
+00:13:50.470 --> 00:13:50.480 align:start position:0%
+you can add additional eMMC that only
+ 
+
+00:13:50.480 --> 00:13:52.629 align:start position:0%
+you can add additional eMMC that only
+talk<00:13:50.720><c> to</c><00:13:50.880><c> the</c><00:13:51.279><c> PO.</c><00:13:51.760><c> So</c><00:13:51.839><c> there</c><00:13:52.000><c> is</c><00:13:52.079><c> no</c><00:13:52.240><c> security</c>
+
+00:13:52.629 --> 00:13:52.639 align:start position:0%
+talk to the PO. So there is no security
+ 
+
+00:13:52.639 --> 00:13:54.470 align:start position:0%
+talk to the PO. So there is no security
+hack<00:13:52.959><c> there.</c><00:13:53.440><c> It</c><00:13:53.600><c> can</c><00:13:53.680><c> be</c><00:13:53.839><c> like</c><00:13:54.079><c> that.</c><00:13:54.240><c> Right?</c>
+
+00:13:54.470 --> 00:13:54.480 align:start position:0%
+hack there. It can be like that. Right?
+ 
+
+00:13:54.480 --> 00:13:56.150 align:start position:0%
+hack there. It can be like that. Right?
+So<00:13:54.560><c> there's</c><00:13:54.800><c> these</c><00:13:54.959><c> three</c><00:13:55.200><c> proposals</c><00:13:55.600><c> we</c><00:13:55.839><c> did.</c>
+
+00:13:56.150 --> 00:13:56.160 align:start position:0%
+So there's these three proposals we did.
+ 
+
+00:13:56.160 --> 00:13:58.150 align:start position:0%
+So there's these three proposals we did.
+We<00:13:56.399><c> implemented</c><00:13:56.959><c> one</c><00:13:57.199><c> of</c><00:13:57.279><c> them</c><00:13:57.519><c> in</c><00:13:57.760><c> last</c><00:13:57.920><c> year</c>
+
+00:13:58.150 --> 00:13:58.160 align:start position:0%
+We implemented one of them in last year
+ 
+
+00:13:58.160 --> 00:14:00.069 align:start position:0%
+We implemented one of them in last year
+OCP<00:13:58.720><c> just</c><00:13:58.880><c> to</c><00:13:59.040><c> show</c><00:13:59.120><c> the</c><00:13:59.360><c> proof</c><00:13:59.519><c> of</c><00:13:59.760><c> concept</c>
+
+00:14:00.069 --> 00:14:00.079 align:start position:0%
+OCP just to show the proof of concept
+ 
+
+00:14:00.079 --> 00:14:02.629 align:start position:0%
+OCP just to show the proof of concept
+with<00:14:00.320><c> Intel.</c><00:14:01.279><c> Uh</c><00:14:01.760><c> but</c><00:14:02.000><c> this</c><00:14:02.240><c> is</c><00:14:02.320><c> just</c><00:14:02.480><c> a</c>
+
+00:14:02.629 --> 00:14:02.639 align:start position:0%
+with Intel. Uh but this is just a
+ 
+
+00:14:02.639 --> 00:14:05.189 align:start position:0%
+with Intel. Uh but this is just a
+proposal<00:14:03.040><c> from</c><00:14:03.279><c> our</c><00:14:03.519><c> side</c><00:14:03.680><c> at</c><00:14:03.920><c> this</c><00:14:04.079><c> time.</c><00:14:05.120><c> uh</c>
+
+00:14:05.189 --> 00:14:05.199 align:start position:0%
+proposal from our side at this time. uh
+ 
+
+00:14:05.199 --> 00:14:06.710 align:start position:0%
+proposal from our side at this time. uh
+I<00:14:05.360><c> know</c><00:14:05.600><c> time</c><00:14:05.839><c> is</c><00:14:06.000><c> pretty</c><00:14:06.240><c> short</c><00:14:06.399><c> so</c><00:14:06.560><c> I'm</c><00:14:06.720><c> going</c>
+
+00:14:06.710 --> 00:14:06.720 align:start position:0%
+I know time is pretty short so I'm going
+ 
+
+00:14:06.720 --> 00:14:08.389 align:start position:0%
+I know time is pretty short so I'm going
+to<00:14:06.880><c> go</c><00:14:06.959><c> quickly</c><00:14:08.160><c> I</c><00:14:08.234><c> [clears throat]</c><00:14:08.320><c> think</c>
+
+00:14:08.389 --> 00:14:08.399 align:start position:0%
+to go quickly I [clears throat] think
+ 
+
+00:14:08.399 --> 00:14:10.069 align:start position:0%
+to go quickly I [clears throat] think
+it's<00:14:08.639><c> one</c><00:14:08.800><c> minute</c><00:14:09.040><c> so</c><00:14:09.279><c> the</c><00:14:09.440><c> conclusion</c><00:14:09.839><c> is</c>
+
+00:14:10.069 --> 00:14:10.079 align:start position:0%
+it's one minute so the conclusion is
+ 
+
+00:14:10.079 --> 00:14:12.629 align:start position:0%
+it's one minute so the conclusion is
+that<00:14:11.279><c> uh</c><00:14:11.440><c> if</c><00:14:11.680><c> you</c><00:14:11.760><c> look</c><00:14:11.920><c> at</c><00:14:12.000><c> that</c><00:14:12.320><c> everything</c>
+
+00:14:12.629 --> 00:14:12.639 align:start position:0%
+that uh if you look at that everything
+ 
+
+00:14:12.639 --> 00:14:14.629 align:start position:0%
+that uh if you look at that everything
+that<00:14:12.800><c> we're</c><00:14:13.040><c> doing</c><00:14:13.279><c> today</c><00:14:13.839><c> is</c><00:14:14.160><c> that</c><00:14:14.480><c> uh</c>
+
+00:14:14.629 --> 00:14:14.639 align:start position:0%
+that we're doing today is that uh
+ 
+
+00:14:14.639 --> 00:14:16.150 align:start position:0%
+that we're doing today is that uh
+there's<00:14:14.880><c> so</c><00:14:15.040><c> much</c><00:14:15.199><c> dependency</c><00:14:15.760><c> here</c><00:14:16.000><c> right</c>
+
+00:14:16.150 --> 00:14:16.160 align:start position:0%
+there's so much dependency here right
+ 
+
+00:14:16.160 --> 00:14:18.230 align:start position:0%
+there's so much dependency here right
+you<00:14:16.320><c> have</c><00:14:16.399><c> node</c><00:14:16.720><c> level</c><00:14:17.040><c> there's</c><00:14:17.360><c> multiple</c><00:14:17.760><c> L1</c>
+
+00:14:18.230 --> 00:14:18.240 align:start position:0%
+you have node level there's multiple L1
+ 
+
+00:14:18.240 --> 00:14:20.870 align:start position:0%
+you have node level there's multiple L1
+to<00:14:18.399><c> L2</c><00:14:18.720><c> L</c><00:14:18.720><c> L12</c><00:14:19.199><c> level</c><00:14:19.440><c> of</c><00:14:19.600><c> all</c><00:14:19.760><c> the</c><00:14:19.920><c> deployment</c>
+
+00:14:20.870 --> 00:14:20.880 align:start position:0%
+to L2 L L12 level of all the deployment
+ 
+
+00:14:20.880 --> 00:14:23.269 align:start position:0%
+to L2 L L12 level of all the deployment
+and<00:14:21.120><c> this</c><00:14:21.360><c> is</c><00:14:21.600><c> what</c><00:14:21.839><c> what</c><00:14:22.320><c> streaming</c><00:14:22.720><c> boot</c><00:14:22.959><c> or</c>
+
+00:14:23.269 --> 00:14:23.279 align:start position:0%
+and this is what what streaming boot or
+ 
+
+00:14:23.279 --> 00:14:25.670 align:start position:0%
+and this is what what streaming boot or
+flash<00:14:23.839><c> wood</c><00:14:24.000><c> is</c><00:14:24.160><c> solving</c><00:14:24.720><c> is</c><00:14:24.959><c> the</c><00:14:25.199><c> deployment</c>
+
+00:14:25.670 --> 00:14:25.680 align:start position:0%
+flash wood is solving is the deployment
+ 
+
+00:14:25.680 --> 00:14:27.350 align:start position:0%
+flash wood is solving is the deployment
+at<00:14:25.920><c> the</c><00:14:26.079><c> point</c><00:14:26.240><c> of</c><00:14:26.399><c> need</c><00:14:26.800><c> right</c><00:14:27.040><c> you</c><00:14:27.199><c> don't</c>
+
+00:14:27.350 --> 00:14:27.360 align:start position:0%
+at the point of need right you don't
+ 
+
+00:14:27.360 --> 00:14:29.110 align:start position:0%
+at the point of need right you don't
+need<00:14:27.440><c> to</c><00:14:27.600><c> have</c><00:14:27.760><c> deployment</c><00:14:28.320><c> keeping</c><00:14:28.720><c> multiple</c>
+
+00:14:29.110 --> 00:14:29.120 align:start position:0%
+need to have deployment keeping multiple
+ 
+
+00:14:29.120 --> 00:14:31.670 align:start position:0%
+need to have deployment keeping multiple
+versions<00:14:29.440><c> of</c><00:14:29.680><c> this</c><00:14:29.920><c> thing</c><00:14:30.480><c> so</c><00:14:30.880><c> so</c><00:14:31.199><c> flashless</c>
+
+00:14:31.670 --> 00:14:31.680 align:start position:0%
+versions of this thing so so flashless
+ 
+
+00:14:31.680 --> 00:14:34.790 align:start position:0%
+versions of this thing so so flashless
+boot<00:14:32.480><c> um</c><00:14:32.560><c> I</c><00:14:32.800><c> think</c><00:14:32.959><c> the</c><00:14:33.120><c> DCSM</c><00:14:33.920><c> and</c><00:14:34.079><c> root</c><00:14:34.480><c> trust</c>
+
+00:14:34.790 --> 00:14:34.800 align:start position:0%
+boot um I think the DCSM and root trust
+ 
+
+00:14:34.800 --> 00:14:38.150 align:start position:0%
+boot um I think the DCSM and root trust
+can<00:14:35.040><c> play</c><00:14:35.120><c> a</c><00:14:35.279><c> very</c><00:14:36.320><c> important</c><00:14:36.720><c> role</c><00:14:37.040><c> here.</c><00:14:37.760><c> Um</c>
+
+00:14:38.150 --> 00:14:38.160 align:start position:0%
+can play a very important role here. Um
+ 
+
+00:14:38.160 --> 00:14:41.509 align:start position:0%
+can play a very important role here. Um
+and<00:14:38.399><c> then</c><00:14:38.959><c> uh</c><00:14:39.920><c> security</c><00:14:40.480><c> standards</c><00:14:40.959><c> must</c><00:14:41.279><c> be</c>
+
+00:14:41.509 --> 00:14:41.519 align:start position:0%
+and then uh security standards must be
+ 
+
+00:14:41.519 --> 00:14:43.590 align:start position:0%
+and then uh security standards must be
+an<00:14:41.760><c> anchor.</c><00:14:42.560><c> I</c><00:14:42.720><c> think</c><00:14:42.880><c> that's</c><00:14:43.120><c> something</c><00:14:43.360><c> is</c>
+
+00:14:43.590 --> 00:14:43.600 align:start position:0%
+an anchor. I think that's something is
+ 
+
+00:14:43.600 --> 00:14:45.670 align:start position:0%
+an anchor. I think that's something is
+very<00:14:43.839><c> important</c><00:14:44.240><c> and</c><00:14:44.560><c> there</c><00:14:44.800><c> is</c><00:14:45.120><c> some</c><00:14:45.519><c> you</c>
+
+00:14:45.670 --> 00:14:45.680 align:start position:0%
+very important and there is some you
+ 
+
+00:14:45.680 --> 00:14:48.230 align:start position:0%
+very important and there is some you
+know<00:14:45.839><c> use</c><00:14:46.079><c> cases</c><00:14:46.720><c> some</c><00:14:47.199><c> uh</c><00:14:47.360><c> use</c><00:14:47.600><c> not</c><00:14:47.760><c> use</c><00:14:47.920><c> cases</c>
+
+00:14:48.230 --> 00:14:48.240 align:start position:0%
+know use cases some uh use not use cases
+ 
+
+00:14:48.240 --> 00:14:50.069 align:start position:0%
+know use cases some uh use not use cases
+some<00:14:48.399><c> examples</c><00:14:48.720><c> you</c><00:14:48.880><c> have</c><00:14:49.040><c> seen</c><00:14:49.199><c> like</c><00:14:49.360><c> HP</c><00:14:49.839><c> gen</c>
+
+00:14:50.069 --> 00:14:50.079 align:start position:0%
+some examples you have seen like HP gen
+ 
+
+00:14:50.079 --> 00:14:52.310 align:start position:0%
+some examples you have seen like HP gen
+111<00:14:50.720><c> and</c><00:14:50.880><c> they</c><00:14:51.199><c> showed</c><00:14:51.600><c> about</c><00:14:51.760><c> a</c><00:14:51.920><c> year</c><00:14:52.079><c> ago</c>
+
+00:14:52.310 --> 00:14:52.320 align:start position:0%
+111 and they showed about a year ago
+ 
+
+00:14:52.320 --> 00:14:54.710 align:start position:0%
+111 and they showed about a year ago
+they<00:14:52.560><c> showed</c><00:14:52.800><c> only</c><00:14:53.040><c> the</c><00:14:53.199><c> BMC</c><00:14:53.839><c> you</c><00:14:54.000><c> know</c><00:14:54.320><c> image</c>
+
+00:14:54.710 --> 00:14:54.720 align:start position:0%
+they showed only the BMC you know image
+ 
+
+00:14:54.720 --> 00:14:56.790 align:start position:0%
+they showed only the BMC you know image
+also<00:14:55.199><c> not</c><00:14:55.360><c> the</c><00:14:55.600><c> boot</c><00:14:55.920><c> CPU</c><00:14:56.320><c> side</c><00:14:56.480><c> but</c><00:14:56.639><c> they</c>
+
+00:14:56.790 --> 00:14:56.800 align:start position:0%
+also not the boot CPU side but they
+ 
+
+00:14:56.800 --> 00:14:58.949 align:start position:0%
+also not the boot CPU side but they
+showed<00:14:57.040><c> some</c><00:14:57.279><c> kind</c><00:14:57.440><c> of</c><00:14:58.000><c> u</c><00:14:58.160><c> you</c><00:14:58.320><c> know</c><00:14:58.480><c> flashless</c>
+
+00:14:58.949 --> 00:14:58.959 align:start position:0%
+showed some kind of u you know flashless
+ 
+
+00:14:58.959 --> 00:15:02.550 align:start position:0%
+showed some kind of u you know flashless
+boot<00:14:59.199><c> there.</c><00:14:59.519><c> as</c><00:14:59.760><c> also</c><00:15:00.639><c> uh</c><00:15:00.800><c> OV</c><00:15:01.600><c> obf</c><00:15:02.079><c> cloud</c><00:15:02.399><c> they</c>
+
+00:15:02.550 --> 00:15:02.560 align:start position:0%
+boot there. as also uh OV obf cloud they
+ 
+
+00:15:02.560 --> 00:15:04.389 align:start position:0%
+boot there. as also uh OV obf cloud they
+showed<00:15:02.800><c> something</c><00:15:03.040><c> like</c><00:15:03.199><c> that</c><00:15:03.680><c> we</c><00:15:03.920><c> had</c><00:15:04.079><c> one</c><00:15:04.320><c> of</c>
+
+00:15:04.389 --> 00:15:04.399 align:start position:0%
+showed something like that we had one of
+ 
+
+00:15:04.399 --> 00:15:06.629 align:start position:0%
+showed something like that we had one of
+the<00:15:04.560><c> demo</c><00:15:04.880><c> that</c><00:15:05.040><c> you're</c><00:15:05.279><c> showing</c><00:15:05.519><c> a</c><00:15:06.079><c> espy</c>
+
+00:15:06.629 --> 00:15:06.639 align:start position:0%
+the demo that you're showing a espy
+ 
+
+00:15:06.639 --> 00:15:08.870 align:start position:0%
+the demo that you're showing a espy
+based<00:15:06.800><c> boot</c><00:15:07.120><c> from</c><00:15:07.279><c> the</c><00:15:07.519><c> CPU</c><00:15:07.920><c> at</c><00:15:08.079><c> a</c><00:15:08.240><c> flashless</c>
+
+00:15:08.870 --> 00:15:08.880 align:start position:0%
+based boot from the CPU at a flashless
+ 
+
+00:15:08.880 --> 00:15:10.790 align:start position:0%
+based boot from the CPU at a flashless
+not<00:15:09.040><c> the</c><00:15:09.199><c> flash</c><00:15:09.680><c> streaming</c><00:15:10.000><c> boot</c><00:15:10.399><c> so</c><00:15:10.560><c> you're</c>
+
+00:15:10.790 --> 00:15:10.800 align:start position:0%
+not the flash streaming boot so you're
+ 
+
+00:15:10.800 --> 00:15:13.110 align:start position:0%
+not the flash streaming boot so you're
+showing<00:15:10.959><c> that</c><00:15:11.279><c> feel</c><00:15:11.440><c> free</c><00:15:11.600><c> to</c><00:15:11.680><c> check</c><00:15:11.920><c> it</c><00:15:12.079><c> on</c><00:15:12.959><c> uh</c>
+
+00:15:13.110 --> 00:15:13.120 align:start position:0%
+showing that feel free to check it on uh
+ 
+
+00:15:13.120 --> 00:15:15.910 align:start position:0%
+showing that feel free to check it on uh
+and<00:15:13.360><c> then</c><00:15:13.680><c> the</c>
+
+00:15:15.910 --> 00:15:15.920 align:start position:0%
+and then the
+ 
+
+00:15:15.920 --> 00:15:18.470 align:start position:0%
+and then the
+so<00:15:16.160><c> call</c><00:15:16.399><c> to</c><00:15:16.639><c> action</c><00:15:17.279><c> is</c><00:15:17.600><c> basically</c><00:15:18.079><c> we</c><00:15:18.320><c> have</c>
+
+00:15:18.470 --> 00:15:18.480 align:start position:0%
+so call to action is basically we have
+ 
+
+00:15:18.480 --> 00:15:19.990 align:start position:0%
+so call to action is basically we have
+been<00:15:18.639><c> asking</c><00:15:19.120><c> uh</c><00:15:19.279><c> you</c><00:15:19.440><c> know</c><00:15:19.519><c> we</c><00:15:19.760><c> have</c><00:15:19.839><c> been</c>
+
+00:15:19.990 --> 00:15:20.000 align:start position:0%
+been asking uh you know we have been
+ 
+
+00:15:20.000 --> 00:15:22.310 align:start position:0%
+been asking uh you know we have been
+working<00:15:20.160><c> with</c><00:15:20.399><c> OCP</c><00:15:21.279><c> there's</c><00:15:21.519><c> a</c><00:15:21.680><c> new</c><00:15:21.839><c> work</c><00:15:22.160><c> team</c>
+
+00:15:22.310 --> 00:15:22.320 align:start position:0%
+working with OCP there's a new work team
+ 
+
+00:15:22.320 --> 00:15:24.230 align:start position:0%
+working with OCP there's a new work team
+that<00:15:22.480><c> we</c><00:15:22.720><c> just</c><00:15:22.880><c> opened</c><00:15:23.440><c> uh</c><00:15:23.519><c> that's</c><00:15:23.839><c> one</c><00:15:24.000><c> of</c><00:15:24.079><c> the</c>
+
+00:15:24.230 --> 00:15:24.240 align:start position:0%
+that we just opened uh that's one of the
+ 
+
+00:15:24.240 --> 00:15:25.750 align:start position:0%
+that we just opened uh that's one of the
+fundamental<00:15:24.639><c> requirements</c><00:15:25.120><c> to</c><00:15:25.360><c> define</c><00:15:25.600><c> the</c>
+
+00:15:25.750 --> 00:15:25.760 align:start position:0%
+fundamental requirements to define the
+ 
+
+00:15:25.760 --> 00:15:27.509 align:start position:0%
+fundamental requirements to define the
+boot<00:15:26.079><c> structure</c><00:15:26.800><c> and</c><00:15:27.040><c> when</c><00:15:27.199><c> you</c><00:15:27.360><c> talk</c><00:15:27.440><c> about</c>
+
+00:15:27.509 --> 00:15:27.519 align:start position:0%
+boot structure and when you talk about
+ 
+
+00:15:27.519 --> 00:15:29.670 align:start position:0%
+boot structure and when you talk about
+the<00:15:27.680><c> rack</c><00:15:28.000><c> level</c><00:15:28.320><c> right</c><00:15:28.560><c> now</c><00:15:29.040><c> The</c><00:15:29.120><c> rack</c><00:15:29.440><c> level</c>
+
+00:15:29.670 --> 00:15:29.680 align:start position:0%
+the rack level right now The rack level
+ 
+
+00:15:29.680 --> 00:15:31.430 align:start position:0%
+the rack level right now The rack level
+means<00:15:30.000><c> right</c><00:15:30.160><c> now</c><00:15:30.399><c> today</c><00:15:30.720><c> your</c><00:15:30.959><c> workload</c>
+
+00:15:31.430 --> 00:15:31.440 align:start position:0%
+means right now today your workload
+ 
+
+00:15:31.440 --> 00:15:33.590 align:start position:0%
+means right now today your workload
+comprises<00:15:32.000><c> multiple</c><00:15:32.399><c> racks</c><00:15:32.800><c> together.</c><00:15:33.440><c> So</c>
+
+00:15:33.590 --> 00:15:33.600 align:start position:0%
+comprises multiple racks together. So
+ 
+
+00:15:33.600 --> 00:15:35.110 align:start position:0%
+comprises multiple racks together. So
+you<00:15:33.760><c> need</c><00:15:33.839><c> to</c><00:15:34.000><c> have</c><00:15:34.160><c> all</c><00:15:34.320><c> those</c><00:15:34.560><c> have</c><00:15:34.800><c> the</c><00:15:34.959><c> same</c>
+
+00:15:35.110 --> 00:15:35.120 align:start position:0%
+you need to have all those have the same
+ 
+
+00:15:35.120 --> 00:15:36.870 align:start position:0%
+you need to have all those have the same
+version.<00:15:35.600><c> So</c><00:15:35.680><c> the</c><00:15:35.920><c> only</c><00:15:36.000><c> option</c><00:15:36.320><c> is</c><00:15:36.480><c> to</c><00:15:36.639><c> have</c><00:15:36.720><c> a</c>
+
+00:15:36.870 --> 00:15:36.880 align:start position:0%
+version. So the only option is to have a
+ 
+
+00:15:36.880 --> 00:15:39.110 align:start position:0%
+version. So the only option is to have a
+network<00:15:37.199><c> boot</c><00:15:37.440><c> or</c><00:15:37.680><c> something</c><00:15:38.320><c> flash</c><00:15:38.720><c> boot</c><00:15:38.959><c> or</c>
+
+00:15:39.110 --> 00:15:39.120 align:start position:0%
+network boot or something flash boot or
+ 
+
+00:15:39.120 --> 00:15:40.870 align:start position:0%
+network boot or something flash boot or
+something.<00:15:39.360><c> So</c><00:15:39.440><c> we</c><00:15:39.600><c> have</c><00:15:39.760><c> an</c><00:15:40.000><c> open</c><00:15:40.240><c> work</c><00:15:40.560><c> team.</c>
+
+00:15:40.870 --> 00:15:40.880 align:start position:0%
+something. So we have an open work team.
+ 
+
+00:15:40.880 --> 00:15:43.670 align:start position:0%
+something. So we have an open work team.
+Feel<00:15:40.959><c> free</c><00:15:41.120><c> to</c><00:15:41.279><c> join</c><00:15:41.519><c> there.</c><00:15:42.320><c> Um</c><00:15:42.639><c> I</c><00:15:42.959><c> have</c><00:15:43.040><c> some</c>
+
+00:15:43.670 --> 00:15:43.680 align:start position:0%
+Feel free to join there. Um I have some
+ 
+
+00:15:43.680 --> 00:15:45.269 align:start position:0%
+Feel free to join there. Um I have some
+I<00:15:43.839><c> think</c><00:15:44.000><c> this</c><00:15:44.160><c> will</c><00:15:44.320><c> be</c><00:15:44.399><c> the</c><00:15:44.560><c> available.</c><00:15:44.959><c> So</c><00:15:45.120><c> I</c>
+
+00:15:45.269 --> 00:15:45.279 align:start position:0%
+I think this will be the available. So I
+ 
+
+00:15:45.279 --> 00:15:47.030 align:start position:0%
+I think this will be the available. So I
+have<00:15:45.360><c> some</c><00:15:45.680><c> the</c><00:15:45.920><c> link</c><00:15:46.160><c> is</c><00:15:46.320><c> not</c><00:15:46.480><c> working</c><00:15:46.800><c> by</c><00:15:46.959><c> the</c>
+
+00:15:47.030 --> 00:15:47.040 align:start position:0%
+have some the link is not working by the
+ 
+
+00:15:47.040 --> 00:15:49.110 align:start position:0%
+have some the link is not working by the
+way.<00:15:47.199><c> The</c><00:15:47.360><c> OCP</c><00:15:47.839><c> recently</c><00:15:48.240><c> changed</c><00:15:48.560><c> their</c>
+
+00:15:49.110 --> 00:15:49.120 align:start position:0%
+way. The OCP recently changed their
+ 
+
+00:15:49.120 --> 00:15:50.949 align:start position:0%
+way. The OCP recently changed their
+location<00:15:49.440><c> of</c><00:15:49.680><c> G</c><00:15:49.920><c> drive</c><00:15:50.160><c> on</c><00:15:50.399><c> those</c><00:15:50.560><c> things.</c><00:15:50.800><c> So</c>
+
+00:15:50.949 --> 00:15:50.959 align:start position:0%
+location of G drive on those things. So
+ 
+
+00:15:50.959 --> 00:15:53.430 align:start position:0%
+location of G drive on those things. So
+when<00:15:51.199><c> we</c><00:15:51.600><c> yeah</c><00:15:51.839><c> wrote</c><00:15:52.160><c> out</c><00:15:52.560><c> myself</c><00:15:52.880><c> and</c><00:15:53.040><c> Alec</c>
+
+00:15:53.430 --> 00:15:53.440 align:start position:0%
+when we yeah wrote out myself and Alec
+ 
+
+00:15:53.440 --> 00:15:55.269 align:start position:0%
+when we yeah wrote out myself and Alec
+that<00:15:53.600><c> the</c><00:15:53.839><c> link</c><00:15:54.079><c> was</c><00:15:54.320><c> working</c><00:15:54.560><c> but</c><00:15:54.880><c> it's</c><00:15:55.040><c> not</c>
+
+00:15:55.269 --> 00:15:55.279 align:start position:0%
+that the link was working but it's not
+ 
+
+00:15:55.279 --> 00:15:57.590 align:start position:0%
+that the link was working but it's not
+working.<00:15:56.160><c> uh</c><00:15:56.240><c> but</c><00:15:56.480><c> yeah</c><00:15:56.720><c> that's</c><00:15:56.959><c> something</c><00:15:57.440><c> uh</c>
+
+00:15:57.590 --> 00:15:57.600 align:start position:0%
+working. uh but yeah that's something uh
+ 
+
+00:15:57.600 --> 00:15:59.749 align:start position:0%
+working. uh but yeah that's something uh
+we<00:15:57.839><c> need</c><00:15:57.920><c> to</c><00:15:58.399><c> uh</c><00:15:58.480><c> but</c><00:15:58.959><c> uh</c><00:15:59.120><c> I</c><00:15:59.360><c> think</c><00:15:59.440><c> this</c><00:15:59.680><c> is</c>
+
+00:15:59.749 --> 00:15:59.759 align:start position:0%
+we need to uh but uh I think this is
+ 
+
+00:15:59.759 --> 00:16:01.269 align:start position:0%
+we need to uh but uh I think this is
+what<00:15:59.920><c> the</c><00:16:00.160><c> message</c><00:16:00.399><c> is</c><00:16:00.560><c> today</c><00:16:00.800><c> that</c><00:16:01.040><c> we</c><00:16:01.199><c> need</c>
+
+00:16:01.269 --> 00:16:01.279 align:start position:0%
+what the message is today that we need
+ 
+
+00:16:01.279 --> 00:16:03.350 align:start position:0%
+what the message is today that we need
+to<00:16:01.440><c> work</c><00:16:01.600><c> together</c><00:16:02.320><c> on</c><00:16:02.560><c> the</c><00:16:02.720><c> streaming</c><00:16:03.040><c> boot</c>
+
+00:16:03.350 --> 00:16:03.360 align:start position:0%
+to work together on the streaming boot
+ 
+
+00:16:03.360 --> 00:16:05.670 align:start position:0%
+to work together on the streaming boot
+because<00:16:03.920><c> um</c><00:16:04.160><c> or</c><00:16:04.399><c> flashless</c><00:16:04.880><c> boot</c><00:16:05.120><c> and</c><00:16:05.360><c> this</c><00:16:05.519><c> is</c>
+
+00:16:05.670 --> 00:16:05.680 align:start position:0%
+because um or flashless boot and this is
+ 
+
+00:16:05.680 --> 00:16:08.310 align:start position:0%
+because um or flashless boot and this is
+very<00:16:05.920><c> close</c><00:16:06.240><c> right</c><00:16:07.120><c> um</c><00:16:07.360><c> so</c><00:16:07.680><c> any</c><00:16:07.920><c> question</c><00:16:08.160><c> I</c>
+
+00:16:08.310 --> 00:16:08.320 align:start position:0%
+very close right um so any question I
+ 
+
+00:16:08.320 --> 00:16:09.990 align:start position:0%
+very close right um so any question I
+know<00:16:08.560><c> my</c><00:16:08.720><c> time</c><00:16:08.880><c> is</c><00:16:09.040><c> up</c><00:16:09.199><c> but</c><00:16:09.440><c> any</c><00:16:09.680><c> question</c>
+
+00:16:09.990 --> 00:16:10.000 align:start position:0%
+know my time is up but any question
+ 
+
+00:16:10.000 --> 00:16:18.470 align:start position:0%
+know my time is up but any question
+please
+
+00:16:18.470 --> 00:16:18.480 align:start position:0%
+ 
+ 
+
+00:16:18.480 --> 00:16:21.350 align:start position:0%
+ 
+so<00:16:18.720><c> so</c><00:16:18.959><c> my</c><00:16:19.199><c> question</c><00:16:19.360><c> is</c><00:16:19.759><c> uh</c><00:16:19.920><c> PLDM</c><00:16:20.560><c> being</c><00:16:20.800><c> a</c>
+
+00:16:21.350 --> 00:16:21.360 align:start position:0%
+so so my question is uh PLDM being a
+ 
+
+00:16:21.360 --> 00:16:23.749 align:start position:0%
+so so my question is uh PLDM being a
+SRAM<00:16:21.839><c> heavy</c><00:16:22.160><c> application</c><00:16:22.800><c> can</c><00:16:23.120><c> can</c><00:16:23.360><c> this</c><00:16:23.600><c> be</c>
+
+00:16:23.749 --> 00:16:23.759 align:start position:0%
+SRAM heavy application can can this be
+ 
+
+00:16:23.759 --> 00:16:26.230 align:start position:0%
+SRAM heavy application can can this be
+done<00:16:24.079><c> can</c><00:16:24.480><c> can</c><00:16:25.040><c> one</c><00:16:25.279><c> of</c><00:16:25.360><c> these</c><00:16:25.680><c> be</c><00:16:25.839><c> achieved</c>
+
+00:16:26.230 --> 00:16:26.240 align:start position:0%
+done can can one of these be achieved
+ 
+
+00:16:26.240 --> 00:16:28.790 align:start position:0%
+done can can one of these be achieved
+without<00:16:26.480><c> using</c><00:16:26.800><c> PLDM.</c>
+
+00:16:28.790 --> 00:16:28.800 align:start position:0%
+without using PLDM.
+ 
+
+00:16:28.800 --> 00:16:31.030 align:start position:0%
+without using PLDM.
+&gt;&gt; So<00:16:29.040><c> PLDM</c><00:16:29.600><c> is</c><00:16:29.759><c> basically</c><00:16:30.240><c> when</c><00:16:30.560><c> you</c><00:16:30.720><c> want</c><00:16:30.880><c> to</c>
+
+00:16:31.030 --> 00:16:31.040 align:start position:0%
+&gt;&gt; So PLDM is basically when you want to
+ 
+
+00:16:31.040 --> 00:16:32.470 align:start position:0%
+&gt;&gt; So PLDM is basically when you want to
+deliver<00:16:31.360><c> the</c><00:16:31.519><c> format.</c><00:16:32.000><c> That's</c><00:16:32.160><c> what</c><00:16:32.320><c> you're</c>
+
+00:16:32.470 --> 00:16:32.480 align:start position:0%
+deliver the format. That's what you're
+ 
+
+00:16:32.480 --> 00:16:33.590 align:start position:0%
+deliver the format. That's what you're
+saying,<00:16:32.639><c> right?</c><00:16:32.800><c> You</c><00:16:32.959><c> want</c><00:16:33.040><c> to</c><00:16:33.199><c> deliver</c><00:16:33.440><c> the</c>
+
+00:16:33.590 --> 00:16:33.600 align:start position:0%
+saying, right? You want to deliver the
+ 
+
+00:16:33.600 --> 00:16:34.629 align:start position:0%
+saying, right? You want to deliver the
+format<00:16:33.839><c> through</c><00:16:34.000><c> the</c><00:16:34.079><c> PLDM.</c>
+
+00:16:34.629 --> 00:16:34.639 align:start position:0%
+format through the PLDM.
+ 
+
+00:16:34.639 --> 00:16:36.870 align:start position:0%
+format through the PLDM.
+&gt;&gt; If<00:16:34.720><c> I</c><00:16:34.880><c> don't</c><00:16:34.959><c> want</c><00:16:35.040><c> to</c><00:16:35.199><c> run</c><00:16:35.279><c> the</c><00:16:35.440><c> PLDM</c><00:16:36.000><c> snapshot</c>
+
+00:16:36.870 --> 00:16:36.880 align:start position:0%
+&gt;&gt; If I don't want to run the PLDM snapshot
+ 
+
+00:16:36.880 --> 00:16:39.269 align:start position:0%
+&gt;&gt; If I don't want to run the PLDM snapshot
+in<00:16:37.199><c> both</c><00:16:37.360><c> the</c><00:16:37.759><c> peers</c>
+
+00:16:39.269 --> 00:16:39.279 align:start position:0%
+in both the peers
+ 
+
+00:16:39.279 --> 00:16:41.269 align:start position:0%
+in both the peers
+&gt;&gt; typically<00:16:39.759><c> when</c><00:16:40.000><c> you</c><00:16:40.160><c> have</c><00:16:40.320><c> this</c><00:16:40.880><c> situation</c>
+
+00:16:41.269 --> 00:16:41.279 align:start position:0%
+&gt;&gt; typically when you have this situation
+ 
+
+00:16:41.279 --> 00:16:44.310 align:start position:0%
+&gt;&gt; typically when you have this situation
+of<00:16:41.440><c> the</c><00:16:41.680><c> boot</c><00:16:41.839><c> up</c><00:16:42.160><c> that</c><00:16:42.959><c> uh</c><00:16:43.199><c> you</c><00:16:43.360><c> know</c><00:16:44.000><c> with</c><00:16:44.160><c> the</c>
+
+00:16:44.310 --> 00:16:44.320 align:start position:0%
+of the boot up that uh you know with the
+ 
+
+00:16:44.320 --> 00:16:46.470 align:start position:0%
+of the boot up that uh you know with the
+C<00:16:44.959><c> you</c><00:16:45.199><c> were</c><00:16:45.279><c> talking</c><00:16:45.440><c> about</c><00:16:45.600><c> PLM</c><00:16:46.079><c> when</c><00:16:46.160><c> you</c><00:16:46.399><c> do</c>
+
+00:16:46.470 --> 00:16:46.480 align:start position:0%
+C you were talking about PLM when you do
+ 
+
+00:16:46.480 --> 00:16:48.150 align:start position:0%
+C you were talking about PLM when you do
+a<00:16:46.560><c> format</c><00:16:46.959><c> update</c><00:16:47.279><c> but</c><00:16:47.440><c> that</c><00:16:47.680><c> means</c><00:16:47.839><c> that</c><00:16:48.000><c> you</c>
+
+00:16:48.150 --> 00:16:48.160 align:start position:0%
+a format update but that means that you
+ 
+
+00:16:48.160 --> 00:16:49.749 align:start position:0%
+a format update but that means that you
+already<00:16:48.399><c> have</c><00:16:48.480><c> a</c><00:16:48.639><c> format</c><00:16:49.040><c> available</c><00:16:49.360><c> on</c><00:16:49.519><c> this</c>
+
+00:16:49.749 --> 00:16:49.759 align:start position:0%
+already have a format available on this
+ 
+
+00:16:49.759 --> 00:16:50.629 align:start position:0%
+already have a format available on this
+on<00:16:50.000><c> the</c><00:16:50.160><c> device.</c>
+
+00:16:50.629 --> 00:16:50.639 align:start position:0%
+on the device.
+ 
+
+00:16:50.639 --> 00:16:51.110 align:start position:0%
+on the device.
+&gt;&gt; Yeah.
+
+00:16:51.110 --> 00:16:51.120 align:start position:0%
+&gt;&gt; Yeah.
+ 
+
+00:16:51.120 --> 00:16:52.949 align:start position:0%
+&gt;&gt; Yeah.
+&gt;&gt; Right.<00:16:51.600><c> In</c><00:16:51.839><c> this</c><00:16:52.000><c> situation</c><00:16:52.399><c> you</c><00:16:52.639><c> don't</c><00:16:52.800><c> have</c>
+
+00:16:52.949 --> 00:16:52.959 align:start position:0%
+&gt;&gt; Right. In this situation you don't have
+ 
+
+00:16:52.959 --> 00:16:54.870 align:start position:0%
+&gt;&gt; Right. In this situation you don't have
+anything<00:16:53.199><c> there.</c><00:16:54.240><c> Right.</c><00:16:54.480><c> you</c><00:16:54.720><c> don't</c><00:16:54.800><c> have</c>
+
+00:16:54.870 --> 00:16:54.880 align:start position:0%
+anything there. Right. you don't have
+ 
+
+00:16:54.880 --> 00:16:56.550 align:start position:0%
+anything there. Right. you don't have
+any<00:16:55.120><c> firmware</c><00:16:55.600><c> nothing</c><00:16:55.759><c> there</c><00:16:55.920><c> that</c><00:16:56.000><c> is</c><00:16:56.160><c> just</c>
+
+00:16:56.550 --> 00:16:56.560 align:start position:0%
+any firmware nothing there that is just
+ 
+
+00:16:56.560 --> 00:17:00.389 align:start position:0%
+any firmware nothing there that is just
+some<00:16:56.800><c> microode</c><00:16:57.360><c> and</c><00:16:57.440><c> the</c><00:16:57.519><c> CPU</c><00:16:58.320><c> or</c><00:16:58.880><c> BMC</c><00:16:59.519><c> right</c>
+
+00:17:00.389 --> 00:17:00.399 align:start position:0%
+some microode and the CPU or BMC right
+ 
+
+00:17:00.399 --> 00:17:02.710 align:start position:0%
+some microode and the CPU or BMC right
+so<00:17:01.120><c> yeah</c><00:17:01.360><c> I</c><00:17:01.519><c> think</c><00:17:01.680><c> once</c><00:17:01.920><c> you</c><00:17:02.079><c> boot</c><00:17:02.240><c> it</c><00:17:02.399><c> up</c><00:17:02.560><c> then</c>
+
+00:17:02.710 --> 00:17:02.720 align:start position:0%
+so yeah I think once you boot it up then
+ 
+
+00:17:02.720 --> 00:17:04.390 align:start position:0%
+so yeah I think once you boot it up then
+you<00:17:02.800><c> can</c><00:17:02.880><c> always</c><00:17:03.120><c> use</c><00:17:03.279><c> PLDM</c><00:17:03.920><c> right</c><00:17:04.079><c> once</c><00:17:04.319><c> you</c>
+
+00:17:04.390 --> 00:17:04.400 align:start position:0%
+you can always use PLDM right once you
+ 
+
+00:17:04.400 --> 00:17:06.230 align:start position:0%
+you can always use PLDM right once you
+boot<00:17:04.559><c> it</c><00:17:04.720><c> up</c><00:17:04.880><c> you</c><00:17:05.039><c> can</c><00:17:05.120><c> always</c><00:17:05.360><c> PLDM</c><00:17:05.919><c> and</c>
+
+00:17:06.230 --> 00:17:06.240 align:start position:0%
+boot it up you can always PLDM and
+ 
+
+00:17:06.240 --> 00:17:07.829 align:start position:0%
+boot it up you can always PLDM and
+something<00:17:06.480><c> to</c><00:17:06.720><c> update</c><00:17:07.039><c> the</c><00:17:07.199><c> firmware</c><00:17:07.520><c> if</c><00:17:07.760><c> you</c>
+
+00:17:07.829 --> 00:17:07.839 align:start position:0%
+something to update the firmware if you
+ 
+
+00:17:07.839 --> 00:17:10.230 align:start position:0%
+something to update the firmware if you
+want<00:17:07.919><c> to</c><00:17:08.079><c> do</c><00:17:08.160><c> that</c><00:17:08.880><c> but</c><00:17:09.520><c> I</c><00:17:09.760><c> think</c><00:17:09.839><c> the</c><00:17:10.079><c> whole</c>
+
+00:17:10.230 --> 00:17:10.240 align:start position:0%
+want to do that but I think the whole
+ 
+
+00:17:10.240 --> 00:17:12.309 align:start position:0%
+want to do that but I think the whole
+idea<00:17:10.480><c> here</c><00:17:10.640><c> is</c><00:17:10.799><c> the</c><00:17:10.959><c> moment</c><00:17:11.199><c> you</c><00:17:11.679><c> involve</c><00:17:12.079><c> all</c>
+
+00:17:12.309 --> 00:17:12.319 align:start position:0%
+idea here is the moment you involve all
+ 
+
+00:17:12.319 --> 00:17:14.230 align:start position:0%
+idea here is the moment you involve all
+those<00:17:12.480><c> kind</c><00:17:12.640><c> of</c><00:17:12.799><c> you</c><00:17:12.959><c> know</c><00:17:13.199><c> things</c><00:17:13.839><c> then</c><00:17:14.079><c> now</c>
+
+00:17:14.230 --> 00:17:14.240 align:start position:0%
+those kind of you know things then now
+ 
+
+00:17:14.240 --> 00:17:17.270 align:start position:0%
+those kind of you know things then now
+you're<00:17:15.039><c> um</c><00:17:15.919><c> I</c><00:17:16.160><c> can</c><00:17:16.240><c> I</c><00:17:16.480><c> can</c><00:17:16.559><c> do</c><00:17:16.640><c> it</c><00:17:16.799><c> I</c><00:17:16.959><c> think</c><00:17:17.039><c> if</c>
+
+00:17:17.270 --> 00:17:17.280 align:start position:0%
+you're um I can I can do it I think if
+ 
+
+00:17:17.280 --> 00:17:18.870 align:start position:0%
+you're um I can I can do it I think if
+you<00:17:17.360><c> have</c><00:17:17.439><c> an</c><00:17:17.520><c> inter</c><00:17:17.919><c> source</c><00:17:18.079><c> through</c><00:17:18.240><c> the</c><00:17:18.319><c> PLM</c>
+
+00:17:18.870 --> 00:17:18.880 align:start position:0%
+you have an inter source through the PLM
+ 
+
+00:17:18.880 --> 00:17:20.870 align:start position:0%
+you have an inter source through the PLM
+you<00:17:18.959><c> can</c><00:17:19.039><c> do</c><00:17:19.120><c> it</c><00:17:19.280><c> yeah</c><00:17:20.240><c> but</c><00:17:20.480><c> that's</c><00:17:20.640><c> for</c><00:17:20.799><c> the</c>
+
+00:17:20.870 --> 00:17:20.880 align:start position:0%
+you can do it yeah but that's for the
+ 
+
+00:17:20.880 --> 00:17:22.630 align:start position:0%
+you can do it yeah but that's for the
+format<00:17:21.280><c> update</c><00:17:21.679><c> not</c><00:17:21.760><c> for</c><00:17:21.919><c> the</c><00:17:22.160><c> from</c><00:17:22.400><c> the</c>
+
+00:17:22.630 --> 00:17:22.640 align:start position:0%
+format update not for the from the
+ 
+
+00:17:22.640 --> 00:17:29.190 align:start position:0%
+format update not for the from the
+starting<00:17:22.880><c> from</c><00:17:23.039><c> zero</c><00:17:23.280><c> to</c><00:17:23.439><c> up</c>
+
+00:17:29.190 --> 00:17:29.200 align:start position:0%
+ 
+ 
+
+00:17:29.200 --> 00:17:31.430 align:start position:0%
+ 
+Is<00:17:29.440><c> there</c><00:17:29.600><c> any</c><00:17:29.840><c> expected</c><00:17:30.640><c> speed</c><00:17:30.960><c> differences</c>
+
+00:17:31.430 --> 00:17:31.440 align:start position:0%
+Is there any expected speed differences
+ 
+
+00:17:31.440 --> 00:17:34.070 align:start position:0%
+Is there any expected speed differences
+between<00:17:31.840><c> today's</c><00:17:32.880><c> spy</c><00:17:33.280><c> based</c><00:17:33.679><c> versus</c>
+
+00:17:34.070 --> 00:17:34.080 align:start position:0%
+between today's spy based versus
+ 
+
+00:17:34.080 --> 00:17:34.470 align:start position:0%
+between today's spy based versus
+flashes?
+
+00:17:34.470 --> 00:17:34.480 align:start position:0%
+flashes?
+ 
+
+00:17:34.480 --> 00:17:36.070 align:start position:0%
+flashes?
+&gt;&gt; It'll<00:17:34.799><c> be</c><00:17:34.880><c> slower.</c><00:17:35.200><c> I</c><00:17:35.440><c> would</c><00:17:35.600><c> say</c><00:17:35.679><c> that</c><00:17:35.919><c> it</c>
+
+00:17:36.070 --> 00:17:36.080 align:start position:0%
+&gt;&gt; It'll be slower. I would say that it
+ 
+
+00:17:36.080 --> 00:17:37.990 align:start position:0%
+&gt;&gt; It'll be slower. I would say that it
+will<00:17:36.160><c> be</c><00:17:36.320><c> slower</c><00:17:36.640><c> obviously</c><00:17:37.120><c> because</c>
+
+00:17:37.990 --> 00:17:38.000 align:start position:0%
+will be slower obviously because
+ 
+
+00:17:38.000 --> 00:17:41.190 align:start position:0%
+will be slower obviously because
+&gt;&gt; spy<00:17:38.400><c> based</c><00:17:38.559><c> is</c><00:17:38.799><c> you</c><00:17:38.960><c> know</c><00:17:39.039><c> it's</c><00:17:40.240><c> yeah</c>
+
+00:17:41.190 --> 00:17:41.200 align:start position:0%
+&gt;&gt; spy based is you know it's yeah
+ 
+
+00:17:41.200 --> 00:17:43.350 align:start position:0%
+&gt;&gt; spy based is you know it's yeah
+&gt;&gt; significantly<00:17:42.480><c> seconds</c>
+
+00:17:43.350 --> 00:17:43.360 align:start position:0%
+&gt;&gt; significantly seconds
+ 
+
+00:17:43.360 --> 00:17:45.510 align:start position:0%
+&gt;&gt; significantly seconds
+&gt;&gt; we<00:17:43.760><c> I</c><00:17:44.000><c> think</c><00:17:44.799><c> it</c><00:17:44.880><c> is</c><00:17:45.039><c> just</c><00:17:45.200><c> kind</c><00:17:45.280><c> of</c><00:17:45.360><c> the</c>
+
+00:17:45.510 --> 00:17:45.520 align:start position:0%
+&gt;&gt; we I think it is just kind of the
+ 
+
+00:17:45.520 --> 00:17:46.150 align:start position:0%
+&gt;&gt; we I think it is just kind of the
+loading<00:17:45.840><c> right</c>
+
+00:17:46.150 --> 00:17:46.160 align:start position:0%
+loading right
+ 
+
+00:17:46.160 --> 00:17:47.830 align:start position:0%
+loading right
+&gt;&gt; yeah<00:17:46.320><c> we</c><00:17:46.480><c> have</c><00:17:46.559><c> seen</c><00:17:46.720><c> on</c><00:17:46.880><c> the</c><00:17:46.960><c> PC</c><00:17:47.360><c> level</c><00:17:47.600><c> it's</c>
+
+00:17:47.830 --> 00:17:47.840 align:start position:0%
+&gt;&gt; yeah we have seen on the PC level it's
+ 
+
+00:17:47.840 --> 00:17:49.990 align:start position:0%
+&gt;&gt; yeah we have seen on the PC level it's
+almost<00:17:48.080><c> doubled</c><00:17:49.200><c> uh</c><00:17:49.280><c> but</c><00:17:49.520><c> that's</c><00:17:49.760><c> something</c>
+
+00:17:49.990 --> 00:17:50.000 align:start position:0%
+almost doubled uh but that's something
+ 
+
+00:17:50.000 --> 00:17:51.830 align:start position:0%
+almost doubled uh but that's something
+optimization<00:17:50.640><c> that</c><00:17:50.880><c> we</c><00:17:51.039><c> need</c><00:17:51.120><c> to</c><00:17:51.280><c> do</c><00:17:51.440><c> because</c>
+
+00:17:51.830 --> 00:17:51.840 align:start position:0%
+optimization that we need to do because
+ 
+
+00:17:51.840 --> 00:17:54.549 align:start position:0%
+optimization that we need to do because
+lot<00:17:52.000><c> of</c><00:17:52.160><c> signals</c><00:17:52.480><c> that</c><00:17:53.440><c> um</c><00:17:53.679><c> because</c><00:17:54.000><c> CPU</c>
+
+00:17:54.549 --> 00:17:54.559 align:start position:0%
+lot of signals that um because CPU
+ 
+
+00:17:54.559 --> 00:17:55.830 align:start position:0%
+lot of signals that um because CPU
+doesn't<00:17:54.799><c> just</c><00:17:54.960><c> take</c><00:17:55.039><c> the</c><00:17:55.200><c> firmware</c><00:17:55.600><c> they</c><00:17:55.760><c> have</c>
+
+00:17:55.830 --> 00:17:55.840 align:start position:0%
+doesn't just take the firmware they have
+ 
+
+00:17:55.840 --> 00:17:57.510 align:start position:0%
+doesn't just take the firmware they have
+a<00:17:55.919><c> lot</c><00:17:56.000><c> of</c><00:17:56.080><c> handshaking</c><00:17:56.640><c> happens</c><00:17:56.960><c> in</c><00:17:57.120><c> the</c><00:17:57.280><c> same</c>
+
+00:17:57.510 --> 00:17:57.520 align:start position:0%
+a lot of handshaking happens in the same
+ 
+
+00:17:57.520 --> 00:17:58.390 align:start position:0%
+a lot of handshaking happens in the same
+time<00:17:57.760><c> right</c>
+
+00:17:58.390 --> 00:17:58.400 align:start position:0%
+time right
+ 
+
+00:17:58.400 --> 00:17:59.990 align:start position:0%
+time right
+&gt;&gt; and<00:17:58.640><c> those</c><00:17:58.799><c> handshake</c><00:17:59.200><c> we</c><00:17:59.360><c> have</c><00:17:59.440><c> to</c><00:17:59.520><c> simulate</c>
+
+00:17:59.990 --> 00:18:00.000 align:start position:0%
+&gt;&gt; and those handshake we have to simulate
+ 
+
+00:18:00.000 --> 00:18:02.062 align:start position:0%
+&gt;&gt; and those handshake we have to simulate
+today<00:18:00.799><c> uh</c><00:18:00.960><c> because</c><00:18:01.679><c> we</c><00:18:01.919><c> don't</c>
+
+00:18:02.062 --> 00:18:02.072 align:start position:0%
+today uh because we don't
+ 
+
+00:18:02.072 --> 00:18:02.789 align:start position:0%
+today uh because we don't
+[clears throat]<00:18:02.160><c> understand</c><00:18:02.400><c> the</c><00:18:02.640><c> full</c>
+
+00:18:02.789 --> 00:18:02.799 align:start position:0%
+[clears throat] understand the full
+ 
+
+00:18:02.799 --> 00:18:04.150 align:start position:0%
+[clears throat] understand the full
+process<00:18:03.039><c> yet</c><00:18:03.360><c> right</c><00:18:03.600><c> you</c><00:18:03.760><c> know</c><00:18:03.840><c> because</c>
+
+00:18:04.150 --> 00:18:04.160 align:start position:0%
+process yet right you know because
+ 
+
+00:18:04.160 --> 00:18:06.470 align:start position:0%
+process yet right you know because
+there's<00:18:04.880><c> you</c><00:18:05.039><c> know</c><00:18:05.120><c> there's</c><00:18:05.280><c> a</c><00:18:05.440><c> lot</c><00:18:05.520><c> of</c><00:18:05.600><c> legacy</c>
+
+00:18:06.470 --> 00:18:06.480 align:start position:0%
+there's you know there's a lot of legacy
+ 
+
+00:18:06.480 --> 00:18:08.070 align:start position:0%
+there's you know there's a lot of legacy
+you<00:18:06.640><c> know</c><00:18:06.720><c> interfaces</c><00:18:07.200><c> that</c><00:18:07.360><c> Intel</c><00:18:07.760><c> has</c><00:18:07.919><c> or</c>
+
+00:18:08.070 --> 00:18:08.080 align:start position:0%
+you know interfaces that Intel has or
+ 
+
+00:18:08.080 --> 00:18:10.390 align:start position:0%
+you know interfaces that Intel has or
+AMD<00:18:08.559><c> has.</c><00:18:09.200><c> So</c><00:18:09.520><c> we</c><00:18:09.679><c> have</c><00:18:09.840><c> been</c><00:18:10.000><c> I</c><00:18:10.160><c> think</c><00:18:10.240><c> our</c>
+
+00:18:10.390 --> 00:18:10.400 align:start position:0%
+AMD has. So we have been I think our
+ 
+
+00:18:10.400 --> 00:18:11.990 align:start position:0%
+AMD has. So we have been I think our
+experimental<00:18:10.880><c> shows</c><00:18:11.120><c> is</c><00:18:11.360><c> almost</c><00:18:11.520><c> double</c><00:18:11.840><c> but</c>
+
+00:18:11.990 --> 00:18:12.000 align:start position:0%
+experimental shows is almost double but
+ 
+
+00:18:12.000 --> 00:18:18.230 align:start position:0%
+experimental shows is almost double but
+I<00:18:12.160><c> think</c><00:18:12.240><c> we're</c><00:18:12.480><c> trying</c><00:18:12.559><c> to</c><00:18:12.720><c> do</c><00:18:12.799><c> it.</c><00:18:12.960><c> Yeah.</c>
+
+00:18:18.230 --> 00:18:18.240 align:start position:0%
+ 
+ 
+
+00:18:18.240 --> 00:18:20.310 align:start position:0%
+ 
+&gt;&gt; Okay.<00:18:18.640><c> I</c><00:18:18.880><c> will</c><00:18:19.039><c> I</c><00:18:19.200><c> will</c><00:18:19.440><c> uh</c><00:18:19.600><c> I</c><00:18:19.840><c> will</c><00:18:20.000><c> definitely</c>
+
+00:18:20.310 --> 00:18:20.320 align:start position:0%
+&gt;&gt; Okay. I will I will uh I will definitely
+ 
+
+00:18:20.320 --> 00:18:22.230 align:start position:0%
+&gt;&gt; Okay. I will I will uh I will definitely
+take<00:18:20.480><c> the</c><00:18:20.799><c> Yeah,</c><00:18:21.120><c> please.</c><00:18:21.600><c> Thank</c><00:18:21.760><c> you</c><00:18:21.919><c> guys.</c>
+
+00:18:22.230 --> 00:18:22.240 align:start position:0%
+take the Yeah, please. Thank you guys.
+ 
+
+00:18:22.240 --> 00:18:25.400 align:start position:0%
+take the Yeah, please. Thank you guys.
+&gt;&gt; Thank<00:18:22.400><c> you.</c>
+

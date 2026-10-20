@@ -1,0 +1,65 @@
+[
+ {
+  "idx": 1,
+  "start": 0.0,
+  "end": 45.0,
+  "rep_time": 30.0,
+  "en": "Hello. Okay. Okay. Hello everyone, and welcome. Uh my name is Chad, and uh presenting with me is Mike. And we are from Intel. Okay. And um we are very excited to uh discuss our next uh architecture evolution of Intel FSP. Uh and that's specifically um how we are evolving to align with the open industry standard being driven here in OCP OPEF Open SFF and the UPCI."
+ },
+ {
+  "idx": 2,
+  "start": 45.0,
+  "end": 63.0,
+  "rep_time": 55.0,
+  "en": "Okay. So, before we jump into the technical details, we want to give credit to the key leaders in Intel who contribute to this work. Um Rainey, Sai, and the Bill Clark, of course, uh Allison. Yeah."
+ },
+ {
+  "idx": 3,
+  "start": 63.0,
+  "end": 120.0,
+  "rep_time": 100.0,
+  "en": "So, here's the road map for uh today. Um first, we will begin with uh what Intel FSP provides today, and um its foundational role uh role uh across brothers. And then we will examine the overall data center Intel FSP uh enhancement, and we'll go you through uh the high-level architectural change uh for our next generation Xeon platforms. And then Mike will deep dive into the um architectural alignment with uh the Open SFF, especially the status execution model. And finally, we will close with a call to action on how the ecosystem can engage these improvements. Okay. let's start with a refresh on"
+ },
+ {
+  "idx": 4,
+  "start": 120.0,
+  "end": 210.0,
+  "rep_time": 170.0,
+  "en": "Intel FSP. Intel FSP is the binary encapsulation of Intel's compressed silicon in the initialization logic. It packages our silicon programming IP into a modular consumable binary. Today, the Intel FSP specification stands at version 2.5 which introduced introduced formal support on or for the native 64-bit execution environment and the SMM. So, what makes Intel FSP uniquely powerful is its flexibility across boot loaders. So, today whether a customer boots with a UEFI coreboot or the Slim Bootloader FSP supports through the two different boot modes, API mode and dispatch mode. So, for API mode the boot loader calls into discrete initialization phases. For example, the temporary init FSP memory init or the FSP silicon init. Those interface those APIs through those APIs. And then for dispatch mode FSP integrates directly as PI M into the PI foundation. This is a the basic our FSP foundation."
+ },
+ {
+  "idx": 5,
+  "start": 210.0,
+  "end": 312.0,
+  "rep_time": 270.0,
+  "en": "Okay, then move to the our um main topic that the enhancement. So, here's our the here are the four primary pillars of our Intel FSP enhancement. You can add the first one is the we simplify FSP M. We make the FSP M independent of EDK II PE mode. And second one is the we do the FSPS decoupling. Which is the FST runs independent of the independently of FSPM. We eliminating also eliminating the across phase dependencies. And third one is the AP mode by default. We standardize on API mode as our primary native uh, execution flow. Uh, at the same time we still um, while we still retaining uh, remaining the retaining the um, the capability uh, to launch the dispatch mode opportunity distically when needed. So, and also at the same time we're also um, actively engaging with the OSPi definition. So, um, but the most importantly uh, all the FSP enhancement I just mentioned didn't result in changes to our inter FSP specification. And also your boot loader code required no breaking rewrites to take advantage of these improvements."
+ },
+ {
+  "idx": 6,
+  "start": 312.0,
+  "end": 558.0,
+  "rep_time": 500.0,
+  "en": "Okay. So, let's understand how this architecture shift looks. Okay. So, uh, begin with the uh, in the Xeon our Xeon Intel Xeon 6 uh, architecture shown on the left. Uh, let's talk about AP mode first. In the API mode when the boot loader calls uh, FSPM as you can see, FSP uh, will use an embedded PI core uh, to dispatch PIMs. When transition to the FSPS you again reacts on the PI infrastructure and services. This is our um original model. And the um now look at the uh dispatch mode. The bootloader um uh the bootloader's outer PI code will directly invoke the FSPM and FSPS directly. Uh So, as you can see, these two different execution flow highly depending on whether you choose AP mode or dispatch mode. And now look at the architecture on the um right-hand side for our next generation Xeon platform. Um we have three major updates. So, the first one is that um converged execution flow. How we're doing it is that um we have unified uh the execution flow uh and the um we um instead of two distinct disjointed um code flow the AP mode and the dispatch mode share the same silicon initialization logic. This is the first one and second one is that um it's the PI uh FSPM. uh so we make the uh FSPM um we do remove the older dependency PI PI code dependency from FSPM. And so uh and the we have all the silicon libraries silicon core libraries uh linked into a single module. Okay? So, with this uh because this is a single module it is a code code table based format. So, uh, so it will match the this very makes users to be easy to read and simple to debug. And the third one is the um we are separating FSPM and FSCS execution. Okay. Uh, we make the FSPM runs on NEM which is a cache as a RAM only and the FSCS runs on physical memory only. And we also move the PI code from FSPM to FSPS. With this, um we don't need a complicated code to fix up the pointer from name to memory. And also, there will be no function function callback from FSCS to FSPM. The only one thing is that the output data from FSPM to FSCS. It's those are what do we change it in our next generation Xeon platform. So, and I will hand it over to Mike to talk about the the architecture alignment with the Open SFI. Mike is our Open SFI Intel representative. So, welcome Mike.  All right. Thank you, Chad.  Yeah.  Thank you, Chad."
+ },
+ {
+  "idx": 7,
+  "start": 558.0,
+  "end": 648.0,
+  "rep_time": 600.0,
+  "en": "So, the first thing I want to talk about is that, you know, we've done this interesting different changes to our implementation of FSP that have a number of advantages. Some of them are you know, some reduced use of temporary RAM and things like that that make it so it's easier. But the one of the things that's one of the principles from the Open SFI spec is about the stateless execution model. And really some of these changes we've made to our FSP implementation align very closely now with that stateless execution model because previously when we had the PEI core and FSPM and then we had PIMs in both FSPM and FSPS, there was shared state between those execution environments. Just for like the PEI core things like the dispatcher, the FVs, the notifications and and things like that. With changing FSPM to be not dependent upon PEI at all and it just being a pure let's go turn on memory in the platform without the PEI core dependency, we're now very very clean in that that respect. So this idea of being stateless, what that means is that the host firmware is responsible for all resource management and that includes all allocation of all memory and buffers. So when we make Open SFI calls, it's responsible for allocating the buffers for the buffers passed in and for the buffers passed out and and managing those. These changes we've made to the FSP very closely align with those requirements and that principle from the the Open SFI spec."
+ },
+ {
+  "idx": 8,
+  "start": 648.0,
+  "end": 780.0,
+  "rep_time": 720.0,
+  "en": "And if we look at the the next picture here, this one shows on the left the previous FSP design where it goes through a sequence of of calls with FSPT to turn on temporary memory and FSPM and goes through that that sequence of calls with the the middle there with the yellow and the green is the represents the host firmware as it goes through that sequence of calls. And that sequence of calls is, you know, invoking the services that are produced by the combination of FSPM and T with the shared PEI core. If we look at the picture on the right, this once again more closely aligns with what's happening in Open SFI where the yellow area there where it invokes FSPT for temporary AM and FSPM to turn on memory. That aligns with the PEP stage inside of the open SFI specification. And then if you look down below where it starts invoking the initialize silicon calls for the FSP initialize silicon calls into FSPS, that's where it's completing the rest of the SOC initialization sequence through the FSP service calls. And so that's a you know, shows that that in API mode that's there. And this is one of the reasons we're moving to a you know, API mode first cuz once again to align with open SFI, one of the items that's mentioned in the open SFI spec is the concept of a valve layer, a vendor abstraction layer. So you can see that after we get through the PEP stage with FSP and FSPM both executed, we now have that sequence of calls through FSPS. Those existing FSP APIs and the APIs that are defined in the open SFI spec, there's a pretty close relationship between those two two sets of APIs. So we expect that the valve layer that that can be implemented to produce the open SFI interfaces on top of FSP will hopefully be a fairly thin layer, maybe focused on some of the data manipulation that has to occur to conform with the open SFI data structures and translations to the FSP ones. So that's where we're we're headed and we think that as far as we get going on the POC work here in the the next quarter or two, we'll be able to demonstrate that that is a a natural transition from FSP to open SFI."
+ },
+ {
+  "idx": 9,
+  "start": 780.0,
+  "end": 830.229478,
+  "rep_time": 800.0,
+  "en": "So as far as call to action, you know, the the the items here are the FSP spec is a public spec on the Intel website. You can prepare your your implementations around FSP today and then and have this transition to open SFI in the in the future. Intel collaborates with many open source projects around things like TianoCore for the UEFI boot, core boot and slim boot. The the links are there. And if you need details about FSP for a specific you know Intel SOC implementation, you can contact your Intel support for that. Um so, with that, that's the the end. Are there there any questions for today?"
+ }
+]
