@@ -1,0 +1,96 @@
+{
+ "info": {
+  "duration": 793.65805
+ },
+ "interval": 3.0,
+ "states": [
+  {
+   "start": 36.0,
+   "end": 54.0,
+   "rep_time": 45.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 54.0,
+   "end": 132.0,
+   "rep_time": 90.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 132.0,
+   "end": 204.0,
+   "rep_time": 165.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 204.0,
+   "end": 315.0,
+   "rep_time": 260.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 315.0,
+   "end": 450.0,
+   "rep_time": 380.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 450.0,
+   "end": 507.0,
+   "rep_time": 480.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 507.0,
+   "end": 594.0,
+   "rep_time": 550.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 594.0,
+   "end": 663.0,
+   "rep_time": 630.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 663.0,
+   "end": 705.0,
+   "rep_time": 685.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 705.0,
+   "end": 771.0,
+   "rep_time": 740.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  },
+  {
+   "start": 771.0,
+   "end": 793.65805,
+   "rep_time": 780.0,
+   "likely_slide": true,
+   "internal_motion": 0.0,
+   "edge_density": 0.0
+  }
+ ]
+}
