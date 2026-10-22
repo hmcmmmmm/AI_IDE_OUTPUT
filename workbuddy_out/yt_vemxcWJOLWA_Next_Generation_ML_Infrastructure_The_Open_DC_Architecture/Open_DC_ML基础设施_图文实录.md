@@ -4,6 +4,12 @@
 > 讲者：Ayan Majumdar（Google）· Paul Artman（AMD）· Mike Edie（Meta）· Maureen Tate（NVIDIA）
 > 全长 13 分 14 秒　|　共 11 页幻灯片
 
+```wechat-intro
+2027–2028 年的 AI 机房，瓶颈已经不在芯片，而在厂房。Google、AMD、Meta、NVIDIA 四家把各自的数据中心需求合成了一份公开的《Open DC》最小标准：功率密度从 125 kW/ft 抬到 350 kW/ft，集群规模从 12 MW 抬到 24 MW，机架做到 100 英寸高、71 英寸深、15,000 磅重。
+
+这份实录保留了全部 11 页幻灯片与现场原话（中英对照），每一页配一句小结。如果你在做机房规划，或者在做机架、母排、液冷选型，第 02、04、05 三节是最硬的数字，第 06–09 节是两套可以直接对照的参考实现。
+```
+
 ---
 
 ## 01　下一代 ML 基础设施与 Open DC 工作组
@@ -35,6 +41,8 @@ Mike，抱歉。那么，正如我提到的，数据中心的最小规模是 12�
 > "level, there are different rack form factors, different rack uh configurations. So, um for 2027 and 2028 plus, we've published values for um uh DC capacity uh in a at a kilowatt per foot. I think that's the language sort of that's applicable to most uh deployments. Um and we're also kind of aligning on how to present the peak IT density, which represents, you know, the actual IT that'll get deployed. Um and then the other thing that I think we're kind of finding common that, uh you know, is is is in alignment across the board is the minimum cluster size and and what are those minimum values that we prefer. I think 12 MW for 2027 uh is sort of a minimum baseline for 2028 plus. 12 is still recommended as a minimum baseline, but the preference would be to increase to 24 as we start seeing these um higher density racks get deployed. So, you know, more details are in the spec as well, but those are kind of the highlights.  Mike, excuse me. So, as I mentioned, the minimum data center size is is at 12"
 
 <div class="takeaway"><b>小结</b>　三个指标一次性立起来：混合 DC 容量（12 → 25 kW/ft）、峰值 IT 密度（125 → 350 kW/ft）、集群规模（12 MW 最低 → 24 MW 首选）。用"每英尺"而不是"每机架"，是为了让不同机架形态换算到同一把尺子上；峰值与混合两个口径并存，是因为散热设备要按峰值选型，而配电与网络可以按混合值规划——混用这两个口径会把冷源无谓放大。</div>
+
+<div class="insight"><b>想法</b>　"每英尺"这个口径值得多想一层。它把功率密度从"每机架"里解耦出来，好处是不同机架形态能换算比较；代价是它默认了行是连续填满的。现实里更常见的情况是一行里混着满配计算架和半配网络架，按英尺算出来的数字会和实际配电容量对不上。规范给的是规划用的上界，不是验收标准。</div>
 
 ---
 
@@ -90,6 +98,8 @@ Paul。好，我来谈一点——呃，散热。呃，就像我一开始说的�
 
 <div class="takeaway"><b>小结</b>　这页把"选型口径"和"输运口径"分开：ML 机架按峰值 335 kW/ft 液冷 + 15 kW/ft 风冷选散热设备，而网络、存储、xPU 按混合值 25 + 15 kW/ft，避免为瞬时峰值把整个冷源放大。流速锁在 ASHRAE 的 3 m/s，理由是防冲蚀——这是当前唯一"不可谈"的硬约束，因为冲蚀是管壁的长期损伤，事后无法补救。管径表的关键读法是"管径 × ΔT 共同决定单路能力"：同样 1″ 管，ΔT 15℃ 能给 91 kW，ΔT 10℃ 只有 61 kW；4″ 管则到 1459/972 kW。1.5 lpm/kW 对应 ΔT 10℃，流量大但能力反而低约三分之一，取舍在泵功与温差之间。</div>
 
+<div class="insight"><b>想法</b>　3 m/s 这条线，本质是"管壁寿命"与"散热能力"之间的一次行业级妥协。提高流速能带走更多热量，但冲蚀速率大致随流速的高次方上升，铜管几年就会被冲薄。真正值得留意的是页脚那行小字——"多个行业工作流正在测试更高流速"。这意味着下一版规范很可能要动这条线；而今天按 3 m/s 选的管径，届时得靠提高 ΔT 而不是加大管径来吃下增量。</div>
+
 ---
 
 ## 06　参考实现：Google 版配置
@@ -121,6 +131,8 @@ Paul。好，我来谈一点——呃，散热。呃，就像我一开始说的�
 > "Next slide. Marie?  Yeah, so specifically kind of looking at the NVIDIA recommendation, we're we're kind of looking at this in the 12 MW block. And what you're seeing here is a four row, so you're getting about 4 MW of cooling capacity per your row. Uh, these are fed off of four different busways in order to enable that four to make three, 5,000, um, 5,000 amp, uh, busways themselves. And the nice thing about the this design that I'd really like to emphasize is, uh, flexibility in the design. So, uh, first and foremost, the this particular recommendation supports both the 24-in pitch rack plus larger as needed. Uh, the drops are also to the from the liquid cooling down to the racks themselves can be configurable in different sizes. There's potential for 4-in down to reducing to to 2-in. So, the nice thing about this, uh, kind of design is it works well within the ecosystem that's being enabled now and also looks forward, uh, towards the future. So, the current configuration that we're seeing on screen right now is the the AC delivery to the rack itself for power distribution, the 415 to 480 V, but however, this is enabled that in the future as that ecosystem matures, we're going to be looking towards 800 V distribution for sure. And this is a flexible design that helps enable that into the future."
 
 <div class="takeaway"><b>小结</b>　NVIDIA 参考实现的关键数字：4 行一个 12.5 MW 块，每行 4 MW 制冷、四条 5,000 A 母线槽做"4 取 3"、行长 68′、单块占地 98′×48′（5,000 平方英尺）、最多 120 个 24″ 机架或 96 个 32″ 机架。设计意图是"不锁死"：机架宽度 24″/32″ 皆可、液冷支路 4″→2″ 可缩、配电当前 415–480 V 交流但预留 800 VDC 过渡路径。这类预留决定了今天建的厂房能否在下一代电源架构下复用——母线槽与馈线容量是唯一不好事后改的部分。</div>
+
+<div class="insight"><b>想法</b>　这份 NVIDIA 参考实现最容易被忽略的一句话是"4 条 5,000 A 母线槽（向 800 VDC 过渡）"。母线槽和馈线是整份规范里唯一不好事后改的部分——层高可以加吊顶、管径可以换接头，但母排容量埋在里面。"预留"在这里不是营销词，而是给 2028 年之后的电源架构留的一条物理通路；反过来，如果今天按 415–480 V 建满，将来改 800 VDC 就要停机重排。</div>
 
 ---
 
@@ -187,6 +199,25 @@ Paul。好，我来谈一点——呃，散热。呃，就像我一开始说的�
 > "Okay. We're quite a liberal Yeah? Thank you. Thank you."
 
 <div class="takeaway"><b>小结</b>　本场无观众提问，直接结束。整场的主张可以压缩成一句：AI 工厂的瓶颈已经从"芯片能不能买到"转到"厂房能不能装得下"。350 kW/ft 的峰值密度、100″ 高 71″ 深 15,000 磅的机架、18 英尺层高、3 m/s 流速、24 英尺行距——这些数字一旦定下，就是混凝土、钢结构与管径，改起来以年计。所以四家选择在 2028 年产品出来之前两年，先把土建与机电的边界锁死。</div>
+
+---
+
+## 结语
+
+把这场 13 分钟的演讲压缩成一句话：**AI 工厂的瓶颈，已经从"芯片能不能买到"转到"厂房能不能装得下"。**
+
+这不是修辞。350 kW/ft 的峰值密度、100 英寸高 71 英寸深的机架、15,000 磅的单柜重量、18 英尺层高、3 m/s 的流速上限——这些数字一旦落成混凝土、钢结构和管径，改动周期以年计。四家选择在 2028 年产品面世之前两年先把土建与机电的边界锁死，原因就在这里；这份文档被明确定义为 v0.7 的中间态而非终稿，原因也在这里。
+
+<div class="recap"><b>数字速览</b><br>
+功率密度　125 → 350 kW/ft（2027 → 2028+）<br>
+集群规模　12 MW 最低 / 24 MW 首选<br>
+机架　　　高 100″、深 71″、重 15,000 磅<br>
+通道　　　冷 82″、热 54″、行距 24′<br>
+层高　　　18 ft（两母线槽配置）<br>
+流速上限　3 m/s（ASHRAE，防冲蚀）<br>
+单块容量　NVIDIA 12.5 MW / 4 行 / 每行 4 MW</div>
+
+<div class="outro">本文依据 OCP Global Summit 2026 现场录像整理，数字以幻灯片标注为准；口述与幻灯片不一致之处，已在对应小节注明。原片：youtube.com/watch?v=vemxcWJOLWA（13 分 14 秒）。如果你正在做机房规划或液冷选型，欢迎留言说说你所在的机房现在卡在哪一步——配电、承重，还是层高。</div>
 
 ---
 
