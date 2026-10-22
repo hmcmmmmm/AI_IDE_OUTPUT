@@ -1,0 +1,3960 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.920 --> 00:00:05.150 align:start position:0%
+ 
+Okay.
+
+00:00:05.150 --> 00:00:05.160 align:start position:0%
+Okay.
+ 
+
+00:00:05.160 --> 00:00:07.350 align:start position:0%
+Okay.
+Good<00:00:05.280><c> afternoon,</c><00:00:05.680><c> folks,</c><00:00:06.520><c> and</c><00:00:06.840><c> welcome</c><00:00:07.200><c> to</c>
+
+00:00:07.350 --> 00:00:07.360 align:start position:0%
+Good afternoon, folks, and welcome to
+ 
+
+00:00:07.360 --> 00:00:09.590 align:start position:0%
+Good afternoon, folks, and welcome to
+OCP<00:00:07.880><c> 2026.</c>
+
+00:00:09.590 --> 00:00:09.600 align:start position:0%
+OCP 2026.
+ 
+
+00:00:09.600 --> 00:00:11.630 align:start position:0%
+OCP 2026.
+Super<00:00:09.880><c> excited</c><00:00:10.440><c> to</c><00:00:10.520><c> be</c><00:00:10.680><c> here.</c>
+
+00:00:11.630 --> 00:00:11.640 align:start position:0%
+Super excited to be here.
+ 
+
+00:00:11.640 --> 00:00:14.550 align:start position:0%
+Super excited to be here.
+And<00:00:11.840><c> what</c><00:00:12.040><c> you'll</c><00:00:12.240><c> hear</c><00:00:12.520><c> from</c><00:00:13.160><c> Intel</c><00:00:13.640><c> today,</c>
+
+00:00:14.550 --> 00:00:14.560 align:start position:0%
+And what you'll hear from Intel today,
+ 
+
+00:00:14.560 --> 00:00:16.910 align:start position:0%
+And what you'll hear from Intel today,
+along<00:00:14.880><c> with</c><00:00:15.080><c> some</c><00:00:15.520><c> exciting</c><00:00:16.080><c> guests</c><00:00:16.560><c> from</c><00:00:16.800><c> our</c>
+
+00:00:16.910 --> 00:00:16.920 align:start position:0%
+along with some exciting guests from our
+ 
+
+00:00:16.920 --> 00:00:18.710 align:start position:0%
+along with some exciting guests from our
+partners<00:00:17.480><c> that</c><00:00:17.600><c> we</c><00:00:17.760><c> have,</c>
+
+00:00:18.710 --> 00:00:18.720 align:start position:0%
+partners that we have,
+ 
+
+00:00:18.720 --> 00:00:20.750 align:start position:0%
+partners that we have,
+is<00:00:18.880><c> around</c><00:00:19.560><c> what's</c><00:00:19.880><c> happening</c><00:00:20.280><c> in</c><00:00:20.440><c> AI</c>
+
+00:00:20.750 --> 00:00:20.760 align:start position:0%
+is around what's happening in AI
+ 
+
+00:00:20.760 --> 00:00:22.150 align:start position:0%
+is around what's happening in AI
+inference.
+
+00:00:22.150 --> 00:00:22.160 align:start position:0%
+inference.
+ 
+
+00:00:22.160 --> 00:00:24.950 align:start position:0%
+inference.
+And<00:00:22.360><c> how</c><00:00:23.080><c> heterogeneous</c><00:00:23.880><c> systems</c><00:00:24.640><c> are</c><00:00:24.800><c> going</c>
+
+00:00:24.950 --> 00:00:24.960 align:start position:0%
+And how heterogeneous systems are going
+ 
+
+00:00:24.960 --> 00:00:27.910 align:start position:0%
+And how heterogeneous systems are going
+to<00:00:25.040><c> be</c><00:00:25.320><c> the</c><00:00:25.480><c> foundation</c><00:00:26.720><c> for</c><00:00:27.000><c> making</c><00:00:27.680><c> these</c>
+
+00:00:27.910 --> 00:00:27.920 align:start position:0%
+to be the foundation for making these
+ 
+
+00:00:27.920 --> 00:00:29.950 align:start position:0%
+to be the foundation for making these
+inference<00:00:28.360><c> workloads,</c><00:00:29.200><c> which</c><00:00:29.400><c> are</c><00:00:29.480><c> becoming</c>
+
+00:00:29.950 --> 00:00:29.960 align:start position:0%
+inference workloads, which are becoming
+ 
+
+00:00:29.960 --> 00:00:31.510 align:start position:0%
+inference workloads, which are becoming
+more<00:00:30.120><c> and</c><00:00:30.240><c> more</c><00:00:30.440><c> heterogeneous</c><00:00:31.240><c> in</c><00:00:31.400><c> the</c>
+
+00:00:31.510 --> 00:00:31.520 align:start position:0%
+more and more heterogeneous in the
+ 
+
+00:00:31.520 --> 00:00:33.190 align:start position:0%
+more and more heterogeneous in the
+agentic<00:00:32.080><c> world.</c>
+
+00:00:33.190 --> 00:00:33.200 align:start position:0%
+agentic world.
+ 
+
+00:00:33.200 --> 00:00:35.990 align:start position:0%
+agentic world.
+What<00:00:33.400><c> is</c><00:00:33.520><c> Intel</c><00:00:33.920><c> delivering</c><00:00:34.720><c> solutions</c><00:00:35.800><c> for</c>
+
+00:00:35.990 --> 00:00:36.000 align:start position:0%
+What is Intel delivering solutions for
+ 
+
+00:00:36.000 --> 00:00:38.830 align:start position:0%
+What is Intel delivering solutions for
+this<00:00:36.520><c> capability</c><00:00:37.200><c> that</c><00:00:37.360><c> is</c><00:00:37.520><c> required?</c>
+
+00:00:38.830 --> 00:00:38.840 align:start position:0%
+this capability that is required?
+ 
+
+00:00:38.840 --> 00:00:41.470 align:start position:0%
+this capability that is required?
+And<00:00:39.000><c> what</c><00:00:39.200><c> are</c><00:00:39.280><c> we</c><00:00:39.400><c> doing</c><00:00:40.120><c> with</c><00:00:40.320><c> our</c><00:00:40.440><c> partners</c>
+
+00:00:41.470 --> 00:00:41.480 align:start position:0%
+And what are we doing with our partners
+ 
+
+00:00:41.480 --> 00:00:44.270 align:start position:0%
+And what are we doing with our partners
+in<00:00:41.640><c> the</c><00:00:41.920><c> open</c><00:00:42.200><c> ecosystem</c><00:00:43.360><c> in</c><00:00:43.560><c> enabling</c><00:00:44.120><c> you</c>
+
+00:00:44.270 --> 00:00:44.280 align:start position:0%
+in the open ecosystem in enabling you
+ 
+
+00:00:44.280 --> 00:00:46.470 align:start position:0%
+in the open ecosystem in enabling you
+all<00:00:44.840><c> in</c><00:00:45.000><c> building</c><00:00:45.320><c> solutions</c><00:00:46.200><c> for</c><00:00:46.320><c> this</c>
+
+00:00:46.470 --> 00:00:46.480 align:start position:0%
+all in building solutions for this
+ 
+
+00:00:46.480 --> 00:00:50.190 align:start position:0%
+all in building solutions for this
+exciting<00:00:46.920><c> future?</c>
+
+00:00:50.190 --> 00:00:50.200 align:start position:0%
+ 
+ 
+
+00:00:50.200 --> 00:00:51.670 align:start position:0%
+ 
+As<00:00:50.400><c> you</c><00:00:50.520><c> all</c><00:00:50.640><c> know,</c>
+
+00:00:51.670 --> 00:00:51.680 align:start position:0%
+As you all know,
+ 
+
+00:00:51.680 --> 00:00:55.190 align:start position:0%
+As you all know,
+OCP<00:00:52.840><c> is</c><00:00:53.120><c> anchored</c><00:00:53.520><c> on</c><00:00:53.680><c> being</c><00:00:53.920><c> open.</c>
+
+00:00:55.190 --> 00:00:55.200 align:start position:0%
+OCP is anchored on being open.
+ 
+
+00:00:55.200 --> 00:00:57.350 align:start position:0%
+OCP is anchored on being open.
+Open<00:00:55.520><c> standards</c><00:00:56.320><c> to</c><00:00:56.440><c> move</c><00:00:56.680><c> an</c><00:00:56.800><c> entire</c>
+
+00:00:57.350 --> 00:00:57.360 align:start position:0%
+Open standards to move an entire
+ 
+
+00:00:57.360 --> 00:00:58.950 align:start position:0%
+Open standards to move an entire
+industry<00:00:57.800><c> forward.</c>
+
+00:00:58.950 --> 00:00:58.960 align:start position:0%
+industry forward.
+ 
+
+00:00:58.960 --> 00:01:01.030 align:start position:0%
+industry forward.
+We<00:00:59.200><c> Intel</c><00:00:59.760><c> have</c><00:01:00.000><c> been</c><00:01:00.280><c> part</c><00:01:00.520><c> of</c><00:01:00.600><c> this</c>
+
+00:01:01.030 --> 00:01:01.040 align:start position:0%
+We Intel have been part of this
+ 
+
+00:01:01.040 --> 00:01:03.830 align:start position:0%
+We Intel have been part of this
+community<00:01:01.840><c> since</c><00:01:02.160><c> its</c><00:01:02.360><c> founding</c><00:01:02.720><c> days.</c>
+
+00:01:03.830 --> 00:01:03.840 align:start position:0%
+community since its founding days.
+ 
+
+00:01:03.840 --> 00:01:06.830 align:start position:0%
+community since its founding days.
+We've<00:01:04.040><c> had</c><00:01:04.239><c> over</c><00:01:04.440><c> 116</c><00:01:05.320><c> contributions.</c>
+
+00:01:06.830 --> 00:01:06.840 align:start position:0%
+We've had over 116 contributions.
+ 
+
+00:01:06.840 --> 00:01:10.630 align:start position:0%
+We've had over 116 contributions.
+And<00:01:06.960><c> at</c><00:01:07.120><c> this</c><00:01:07.520><c> year</c><00:01:08.120><c> in</c><00:01:08.360><c> OCP,</c><00:01:09.280><c> we</c><00:01:09.480><c> have</c><00:01:09.720><c> over</c><00:01:10.040><c> 33</c>
+
+00:01:10.630 --> 00:01:10.640 align:start position:0%
+And at this year in OCP, we have over 33
+ 
+
+00:01:10.640 --> 00:01:14.030 align:start position:0%
+And at this year in OCP, we have over 33
+sessions<00:01:11.360><c> across</c><00:01:12.240><c> 16</c><00:01:12.680><c> tracks</c><00:01:13.680><c> uh</c><00:01:13.800><c> being</c>
+
+00:01:14.030 --> 00:01:14.040 align:start position:0%
+sessions across 16 tracks uh being
+ 
+
+00:01:14.040 --> 00:01:17.110 align:start position:0%
+sessions across 16 tracks uh being
+presented.
+
+00:01:17.110 --> 00:01:17.120 align:start position:0%
+ 
+ 
+
+00:01:17.120 --> 00:01:19.830 align:start position:0%
+ 
+Now,<00:01:17.720><c> let's</c><00:01:17.920><c> jump</c><00:01:18.160><c> straight</c><00:01:18.480><c> into</c><00:01:18.760><c> it.</c>
+
+00:01:19.830 --> 00:01:19.840 align:start position:0%
+Now, let's jump straight into it.
+ 
+
+00:01:19.840 --> 00:01:22.350 align:start position:0%
+Now, let's jump straight into it.
+As<00:01:20.040><c> you</c><00:01:20.160><c> all</c><00:01:20.360><c> know,</c><00:01:21.080><c> AI</c><00:01:21.360><c> is</c><00:01:21.560><c> booming.</c><00:01:22.040><c> I</c><00:01:22.120><c> don't</c>
+
+00:01:22.350 --> 00:01:22.360 align:start position:0%
+As you all know, AI is booming. I don't
+ 
+
+00:01:22.360 --> 00:01:24.470 align:start position:0%
+As you all know, AI is booming. I don't
+have<00:01:22.480><c> to</c><00:01:22.560><c> say</c><00:01:22.760><c> much.</c><00:01:23.720><c> But</c><00:01:23.880><c> what's</c><00:01:24.160><c> really</c>
+
+00:01:24.470 --> 00:01:24.480 align:start position:0%
+have to say much. But what's really
+ 
+
+00:01:24.480 --> 00:01:27.430 align:start position:0%
+have to say much. But what's really
+happening<00:01:24.920><c> there</c><00:01:25.520><c> is</c><00:01:25.720><c> the</c><00:01:25.880><c> rise</c><00:01:26.200><c> of</c><00:01:26.400><c> agents</c><00:01:27.240><c> is</c>
+
+00:01:27.430 --> 00:01:27.440 align:start position:0%
+happening there is the rise of agents is
+ 
+
+00:01:27.440 --> 00:01:30.030 align:start position:0%
+happening there is the rise of agents is
+causing<00:01:28.400><c> a</c><00:01:28.520><c> different</c><00:01:29.040><c> problem</c><00:01:29.640><c> into</c><00:01:29.960><c> the</c>
+
+00:01:30.030 --> 00:01:30.040 align:start position:0%
+causing a different problem into the
+ 
+
+00:01:30.040 --> 00:01:31.390 align:start position:0%
+causing a different problem into the
+ecosystem.
+
+00:01:31.390 --> 00:01:31.400 align:start position:0%
+ecosystem.
+ 
+
+00:01:31.400 --> 00:01:33.350 align:start position:0%
+ecosystem.
+The<00:01:31.560><c> amount</c><00:01:31.880><c> of</c><00:01:32.000><c> tokens</c><00:01:32.400><c> that</c><00:01:32.560><c> are</c><00:01:32.640><c> needed</c><00:01:33.200><c> is</c>
+
+00:01:33.350 --> 00:01:33.360 align:start position:0%
+The amount of tokens that are needed is
+ 
+
+00:01:33.360 --> 00:01:34.590 align:start position:0%
+The amount of tokens that are needed is
+exploding.
+
+00:01:34.590 --> 00:01:34.600 align:start position:0%
+exploding.
+ 
+
+00:01:34.600 --> 00:01:37.110 align:start position:0%
+exploding.
+While<00:01:34.920><c> at</c><00:01:35.040><c> the</c><00:01:35.120><c> same</c><00:01:35.440><c> time,</c><00:01:36.280><c> the</c><00:01:36.400><c> cost</c><00:01:36.960><c> of</c>
+
+00:01:37.110 --> 00:01:37.120 align:start position:0%
+While at the same time, the cost of
+ 
+
+00:01:37.120 --> 00:01:38.950 align:start position:0%
+While at the same time, the cost of
+delivering<00:01:37.600><c> these</c><00:01:37.840><c> agents</c><00:01:38.440><c> is</c><00:01:38.640><c> also</c>
+
+00:01:38.950 --> 00:01:38.960 align:start position:0%
+delivering these agents is also
+ 
+
+00:01:38.960 --> 00:01:40.310 align:start position:0%
+delivering these agents is also
+exploding.
+
+00:01:40.310 --> 00:01:40.320 align:start position:0%
+exploding.
+ 
+
+00:01:40.320 --> 00:01:42.990 align:start position:0%
+exploding.
+So,<00:01:40.520><c> the</c><00:01:40.720><c> economics</c><00:01:41.680><c> of</c><00:01:42.160><c> delivering</c><00:01:42.680><c> AI</c>
+
+00:01:42.990 --> 00:01:43.000 align:start position:0%
+So, the economics of delivering AI
+ 
+
+00:01:43.000 --> 00:01:46.070 align:start position:0%
+So, the economics of delivering AI
+inference<00:01:43.720><c> at</c><00:01:43.960><c> scale</c><00:01:44.800><c> needs</c><00:01:45.120><c> to</c><00:01:45.200><c> be</c><00:01:45.320><c> looked</c><00:01:45.640><c> at</c>
+
+00:01:46.070 --> 00:01:46.080 align:start position:0%
+inference at scale needs to be looked at
+ 
+
+00:01:46.080 --> 00:01:47.590 align:start position:0%
+inference at scale needs to be looked at
+if<00:01:46.280><c> you</c><00:01:46.400><c> want</c><00:01:46.600><c> to</c><00:01:46.680><c> kind</c><00:01:46.880><c> of</c><00:01:47.000><c> feed</c><00:01:47.360><c> this</c>
+
+00:01:47.590 --> 00:01:47.600 align:start position:0%
+if you want to kind of feed this
+ 
+
+00:01:47.600 --> 00:01:50.190 align:start position:0%
+if you want to kind of feed this
+ecosystem<00:01:48.560><c> forward.</c>
+
+00:01:50.190 --> 00:01:50.200 align:start position:0%
+ecosystem forward.
+ 
+
+00:01:50.200 --> 00:01:52.670 align:start position:0%
+ecosystem forward.
+The<00:01:50.400><c> other</c><00:01:50.640><c> trend</c><00:01:51.200><c> that</c><00:01:51.320><c> is</c><00:01:51.480><c> happening</c><00:01:52.320><c> is</c><00:01:52.560><c> the</c>
+
+00:01:52.670 --> 00:01:52.680 align:start position:0%
+The other trend that is happening is the
+ 
+
+00:01:52.680 --> 00:01:54.310 align:start position:0%
+The other trend that is happening is the
+frontier<00:01:53.080><c> models</c><00:01:53.520><c> versus</c><00:01:53.800><c> open</c><00:01:54.080><c> weight</c>
+
+00:01:54.310 --> 00:01:54.320 align:start position:0%
+frontier models versus open weight
+ 
+
+00:01:54.320 --> 00:01:55.430 align:start position:0%
+frontier models versus open weight
+models.
+
+00:01:55.430 --> 00:01:55.440 align:start position:0%
+models.
+ 
+
+00:01:55.440 --> 00:01:58.190 align:start position:0%
+models.
+More<00:01:55.720><c> and</c><00:01:55.840><c> more</c><00:01:56.400><c> models</c><00:01:57.200><c> are</c><00:01:57.360><c> becoming</c><00:01:57.880><c> open</c>
+
+00:01:58.190 --> 00:01:58.200 align:start position:0%
+More and more models are becoming open
+ 
+
+00:01:58.200 --> 00:02:00.550 align:start position:0%
+More and more models are becoming open
+weight<00:01:58.800><c> and</c><00:01:58.960><c> the</c><00:01:59.080><c> ratio</c><00:01:59.800><c> of</c><00:02:00.040><c> open</c><00:02:00.320><c> weight</c>
+
+00:02:00.550 --> 00:02:00.560 align:start position:0%
+weight and the ratio of open weight
+ 
+
+00:02:00.560 --> 00:02:02.630 align:start position:0%
+weight and the ratio of open weight
+models<00:02:00.960><c> being</c><00:02:01.200><c> used</c><00:02:01.840><c> is</c><00:02:02.040><c> increasing</c>
+
+00:02:02.630 --> 00:02:02.640 align:start position:0%
+models being used is increasing
+ 
+
+00:02:02.640 --> 00:02:05.310 align:start position:0%
+models being used is increasing
+dramatically<00:02:03.720><c> as</c><00:02:03.880><c> the</c><00:02:04.040><c> capabilities</c><00:02:04.800><c> of</c><00:02:05.040><c> open</c>
+
+00:02:05.310 --> 00:02:05.320 align:start position:0%
+dramatically as the capabilities of open
+ 
+
+00:02:05.320 --> 00:02:07.469 align:start position:0%
+dramatically as the capabilities of open
+weight<00:02:05.520><c> models</c><00:02:06.240><c> get</c><00:02:06.440><c> closer</c><00:02:06.840><c> to</c><00:02:07.080><c> frontier</c>
+
+00:02:07.469 --> 00:02:07.479 align:start position:0%
+weight models get closer to frontier
+ 
+
+00:02:07.479 --> 00:02:08.630 align:start position:0%
+weight models get closer to frontier
+models.
+
+00:02:08.630 --> 00:02:08.640 align:start position:0%
+models.
+ 
+
+00:02:08.640 --> 00:02:11.870 align:start position:0%
+models.
+In<00:02:08.800><c> fact,</c><00:02:09.360><c> for</c><00:02:09.600><c> enterprises,</c><00:02:10.759><c> more</c><00:02:11.040><c> and</c><00:02:11.200><c> more</c>
+
+00:02:11.870 --> 00:02:11.880 align:start position:0%
+In fact, for enterprises, more and more
+ 
+
+00:02:11.880 --> 00:02:14.710 align:start position:0%
+In fact, for enterprises, more and more
+significant<00:02:12.480><c> amount</c><00:02:12.800><c> of</c><00:02:12.920><c> the</c><00:02:13.560><c> basic</c><00:02:14.120><c> AI</c><00:02:14.400><c> work</c>
+
+00:02:14.710 --> 00:02:14.720 align:start position:0%
+significant amount of the basic AI work
+ 
+
+00:02:14.720 --> 00:02:16.550 align:start position:0%
+significant amount of the basic AI work
+that<00:02:14.880><c> they</c><00:02:15.000><c> need</c><00:02:15.200><c> to</c><00:02:15.280><c> do</c><00:02:15.760><c> can</c><00:02:15.959><c> actually</c><00:02:16.320><c> be</c>
+
+00:02:16.550 --> 00:02:16.560 align:start position:0%
+that they need to do can actually be
+ 
+
+00:02:16.560 --> 00:02:19.630 align:start position:0%
+that they need to do can actually be
+handled<00:02:17.400><c> by</c><00:02:17.680><c> open</c><00:02:17.959><c> weight</c><00:02:18.160><c> models,</c><00:02:19.160><c> whereas</c>
+
+00:02:19.630 --> 00:02:19.640 align:start position:0%
+handled by open weight models, whereas
+ 
+
+00:02:19.640 --> 00:02:22.110 align:start position:0%
+handled by open weight models, whereas
+the<00:02:20.080><c> higher</c><00:02:20.440><c> end</c><00:02:20.600><c> of</c><00:02:20.720><c> the</c><00:02:20.800><c> models</c><00:02:21.480><c> need</c><00:02:21.760><c> the</c>
+
+00:02:22.110 --> 00:02:22.120 align:start position:0%
+the higher end of the models need the
+ 
+
+00:02:22.120 --> 00:02:24.990 align:start position:0%
+the higher end of the models need the
+frontier<00:02:22.480><c> models.</c>
+
+00:02:24.990 --> 00:02:25.000 align:start position:0%
+frontier models.
+ 
+
+00:02:25.000 --> 00:02:27.790 align:start position:0%
+frontier models.
+Now,<00:02:25.240><c> not</c><00:02:25.560><c> all</c><00:02:25.800><c> tokens</c><00:02:26.560><c> in</c><00:02:26.680><c> this</c><00:02:26.880><c> AI</c><00:02:27.160><c> ecosystem</c>
+
+00:02:27.790 --> 00:02:27.800 align:start position:0%
+Now, not all tokens in this AI ecosystem
+ 
+
+00:02:27.800 --> 00:02:29.350 align:start position:0%
+Now, not all tokens in this AI ecosystem
+are<00:02:27.920><c> same.</c>
+
+00:02:29.350 --> 00:02:29.360 align:start position:0%
+are same.
+ 
+
+00:02:29.360 --> 00:02:31.670 align:start position:0%
+are same.
+Based<00:02:29.680><c> on</c><00:02:29.800><c> the</c><00:02:29.920><c> model</c><00:02:30.240><c> size,</c>
+
+00:02:31.670 --> 00:02:31.680 align:start position:0%
+Based on the model size,
+ 
+
+00:02:31.680 --> 00:02:34.390 align:start position:0%
+Based on the model size,
+based<00:02:31.959><c> on</c><00:02:32.080><c> the</c><00:02:32.200><c> latency,</c><00:02:33.400><c> or</c><00:02:33.560><c> based</c><00:02:33.880><c> on</c><00:02:34.000><c> the</c><00:02:34.080><c> KV</c>
+
+00:02:34.390 --> 00:02:34.400 align:start position:0%
+based on the latency, or based on the KV
+ 
+
+00:02:34.400 --> 00:02:36.870 align:start position:0%
+based on the latency, or based on the KV
+cache,<00:02:35.320><c> the</c><00:02:35.440><c> computational</c><00:02:36.160><c> requirements</c><00:02:36.760><c> to</c>
+
+00:02:36.870 --> 00:02:36.880 align:start position:0%
+cache, the computational requirements to
+ 
+
+00:02:36.880 --> 00:02:38.990 align:start position:0%
+cache, the computational requirements to
+deliver<00:02:37.320><c> that</c><00:02:37.640><c> efficiently</c><00:02:38.520><c> is</c><00:02:38.680><c> going</c><00:02:38.840><c> to</c><00:02:38.880><c> be</c>
+
+00:02:38.990 --> 00:02:39.000 align:start position:0%
+deliver that efficiently is going to be
+ 
+
+00:02:39.000 --> 00:02:40.710 align:start position:0%
+deliver that efficiently is going to be
+very<00:02:39.240><c> different.</c>
+
+00:02:40.710 --> 00:02:40.720 align:start position:0%
+very different.
+ 
+
+00:02:40.720 --> 00:02:42.430 align:start position:0%
+very different.
+And<00:02:41.000><c> all</c><00:02:41.240><c> three</c><00:02:41.480><c> variables</c><00:02:42.080><c> have</c><00:02:42.240><c> been</c>
+
+00:02:42.430 --> 00:02:42.440 align:start position:0%
+And all three variables have been
+ 
+
+00:02:42.440 --> 00:02:45.310 align:start position:0%
+And all three variables have been
+factored<00:02:43.080><c> in</c><00:02:43.640><c> to</c><00:02:43.800><c> figure</c><00:02:44.160><c> out</c><00:02:44.600><c> how</c><00:02:44.760><c> do</c><00:02:44.880><c> you</c><00:02:45.000><c> get</c>
+
+00:02:45.310 --> 00:02:45.320 align:start position:0%
+factored in to figure out how do you get
+ 
+
+00:02:45.320 --> 00:02:50.910 align:start position:0%
+factored in to figure out how do you get
+efficiency<00:02:46.320><c> at</c><00:02:46.520><c> scale.</c>
+
+00:02:50.910 --> 00:02:50.920 align:start position:0%
+ 
+ 
+
+00:02:50.920 --> 00:02:52.350 align:start position:0%
+ 
+Now,<00:02:51.120><c> when</c><00:02:51.280><c> you</c><00:02:51.360><c> look</c><00:02:51.560><c> at</c><00:02:51.640><c> the</c><00:02:51.800><c> agentic</c>
+
+00:02:52.350 --> 00:02:52.360 align:start position:0%
+Now, when you look at the agentic
+ 
+
+00:02:52.360 --> 00:02:54.590 align:start position:0%
+Now, when you look at the agentic
+architecture,<00:02:53.600><c> there's</c><00:02:53.800><c> something</c><00:02:54.320><c> very</c>
+
+00:02:54.590 --> 00:02:54.600 align:start position:0%
+architecture, there's something very
+ 
+
+00:02:54.600 --> 00:02:56.270 align:start position:0%
+architecture, there's something very
+interesting<00:02:55.120><c> happening.</c>
+
+00:02:56.270 --> 00:02:56.280 align:start position:0%
+interesting happening.
+ 
+
+00:02:56.280 --> 00:02:59.350 align:start position:0%
+interesting happening.
+How<00:02:56.440><c> do</c><00:02:56.560><c> you</c><00:02:56.760><c> write</c><00:02:57.280><c> uh</c><00:02:57.480><c> route</c><00:02:58.280><c> the</c><00:02:58.440><c> workloads</c>
+
+00:02:59.350 --> 00:02:59.360 align:start position:0%
+How do you write uh route the workloads
+ 
+
+00:02:59.360 --> 00:03:01.350 align:start position:0%
+How do you write uh route the workloads
+to<00:02:59.480><c> run</c><00:02:59.720><c> at</c><00:02:59.840><c> the</c><00:02:59.920><c> right</c><00:03:00.160><c> hardware?</c>
+
+00:03:01.350 --> 00:03:01.360 align:start position:0%
+to run at the right hardware?
+ 
+
+00:03:01.360 --> 00:03:03.870 align:start position:0%
+to run at the right hardware?
+More<00:03:01.600><c> and</c><00:03:01.720><c> more,</c><00:03:02.239><c> up</c><00:03:02.440><c> until</c><00:03:02.720><c> now,</c><00:03:03.320><c> we</c><00:03:03.440><c> were</c><00:03:03.640><c> all</c>
+
+00:03:03.870 --> 00:03:03.880 align:start position:0%
+More and more, up until now, we were all
+ 
+
+00:03:03.880 --> 00:03:06.630 align:start position:0%
+More and more, up until now, we were all
+looking<00:03:04.239><c> about</c><00:03:04.800><c> how</c><00:03:04.959><c> to</c><00:03:05.160><c> run</c><00:03:05.400><c> tokens</c><00:03:05.840><c> faster.</c>
+
+00:03:06.630 --> 00:03:06.640 align:start position:0%
+looking about how to run tokens faster.
+ 
+
+00:03:06.640 --> 00:03:08.990 align:start position:0%
+looking about how to run tokens faster.
+How<00:03:06.760><c> do</c><00:03:06.880><c> you</c><00:03:07.000><c> create</c><00:03:07.360><c> faster</c><00:03:07.760><c> tokens,</c><00:03:08.600><c> slower</c>
+
+00:03:08.990 --> 00:03:09.000 align:start position:0%
+How do you create faster tokens, slower
+ 
+
+00:03:09.000 --> 00:03:11.350 align:start position:0%
+How do you create faster tokens, slower
+to<00:03:09.239><c> I</c><00:03:09.360><c> mean</c><00:03:09.600><c> lower</c><00:03:09.880><c> latency</c><00:03:10.360><c> tokens,</c><00:03:11.160><c> and</c>
+
+00:03:11.350 --> 00:03:11.360 align:start position:0%
+to I mean lower latency tokens, and
+ 
+
+00:03:11.360 --> 00:03:14.630 align:start position:0%
+to I mean lower latency tokens, and
+generate<00:03:12.000><c> a</c><00:03:12.080><c> huge</c><00:03:12.480><c> interactivity</c><00:03:13.680><c> per</c><00:03:13.880><c> user</c>
+
+00:03:14.630 --> 00:03:14.640 align:start position:0%
+generate a huge interactivity per user
+ 
+
+00:03:14.640 --> 00:03:16.390 align:start position:0%
+generate a huge interactivity per user
+for<00:03:14.800><c> those</c><00:03:15.000><c> tokens.</c>
+
+00:03:16.390 --> 00:03:16.400 align:start position:0%
+for those tokens.
+ 
+
+00:03:16.400 --> 00:03:17.870 align:start position:0%
+for those tokens.
+But<00:03:16.600><c> more</c><00:03:16.840><c> and</c><00:03:16.959><c> more</c><00:03:17.160><c> in</c><00:03:17.239><c> the</c><00:03:17.400><c> agentic</c>
+
+00:03:17.870 --> 00:03:17.880 align:start position:0%
+But more and more in the agentic
+ 
+
+00:03:17.880 --> 00:03:20.830 align:start position:0%
+But more and more in the agentic
+architecture,<00:03:18.840><c> the</c><00:03:18.959><c> CPU</c><00:03:19.800><c> plays</c><00:03:20.080><c> a</c><00:03:20.160><c> very,</c><00:03:20.560><c> very</c>
+
+00:03:20.830 --> 00:03:20.840 align:start position:0%
+architecture, the CPU plays a very, very
+ 
+
+00:03:20.840 --> 00:03:22.229 align:start position:0%
+architecture, the CPU plays a very, very
+important<00:03:21.360><c> role</c>
+
+00:03:22.229 --> 00:03:22.239 align:start position:0%
+important role
+ 
+
+00:03:22.239 --> 00:03:24.270 align:start position:0%
+important role
+in<00:03:22.600><c> couple</c><00:03:22.920><c> of</c><00:03:23.160><c> areas.</c>
+
+00:03:24.270 --> 00:03:24.280 align:start position:0%
+in couple of areas.
+ 
+
+00:03:24.280 --> 00:03:26.110 align:start position:0%
+in couple of areas.
+First,<00:03:25.080><c> the</c><00:03:25.200><c> decision</c><00:03:25.680><c> tree,</c><00:03:26.000><c> the</c>
+
+00:03:26.110 --> 00:03:26.120 align:start position:0%
+First, the decision tree, the
+ 
+
+00:03:26.120 --> 00:03:27.509 align:start position:0%
+First, the decision tree, the
+quarterback.
+
+00:03:27.509 --> 00:03:27.519 align:start position:0%
+quarterback.
+ 
+
+00:03:27.519 --> 00:03:29.910 align:start position:0%
+quarterback.
+How<00:03:27.640><c> am</c><00:03:27.800><c> I</c><00:03:27.880><c> going</c><00:03:28.120><c> to</c><00:03:28.280><c> route,</c><00:03:28.920><c> orchestrate,</c>
+
+00:03:29.910 --> 00:03:29.920 align:start position:0%
+How am I going to route, orchestrate,
+ 
+
+00:03:29.920 --> 00:03:32.350 align:start position:0%
+How am I going to route, orchestrate,
+and<00:03:30.120><c> deliver</c><00:03:30.519><c> the</c><00:03:30.760><c> agentic</c><00:03:31.280><c> workflow?</c><00:03:32.239><c> The</c>
+
+00:03:32.350 --> 00:03:32.360 align:start position:0%
+and deliver the agentic workflow? The
+ 
+
+00:03:32.360 --> 00:03:34.870 align:start position:0%
+and deliver the agentic workflow? The
+security,<00:03:33.040><c> the</c><00:03:33.239><c> harness</c><00:03:34.040><c> that</c><00:03:34.200><c> needs</c><00:03:34.400><c> to</c><00:03:34.480><c> be</c>
+
+00:03:34.870 --> 00:03:34.880 align:start position:0%
+security, the harness that needs to be
+ 
+
+00:03:34.880 --> 00:03:36.270 align:start position:0%
+security, the harness that needs to be
+built<00:03:35.120><c> on</c><00:03:35.280><c> it.</c>
+
+00:03:36.270 --> 00:03:36.280 align:start position:0%
+built on it.
+ 
+
+00:03:36.280 --> 00:03:39.550 align:start position:0%
+built on it.
+How<00:03:36.400><c> do</c><00:03:36.600><c> I</c><00:03:36.959><c> able</c><00:03:37.280><c> to</c><00:03:37.400><c> then</c><00:03:37.959><c> handle</c><00:03:38.800><c> the</c><00:03:39.239><c> token</c>
+
+00:03:39.550 --> 00:03:39.560 align:start position:0%
+How do I able to then handle the token
+ 
+
+00:03:39.560 --> 00:03:41.350 align:start position:0%
+How do I able to then handle the token
+generation<00:03:40.200><c> and</c><00:03:40.320><c> the</c><00:03:40.440><c> API</c><00:03:40.800><c> calls</c><00:03:41.080><c> that</c><00:03:41.200><c> need</c>
+
+00:03:41.350 --> 00:03:41.360 align:start position:0%
+generation and the API calls that need
+ 
+
+00:03:41.360 --> 00:03:43.870 align:start position:0%
+generation and the API calls that need
+to<00:03:41.440><c> be</c><00:03:41.600><c> happening?</c><00:03:42.519><c> And</c><00:03:42.680><c> then,</c><00:03:43.239><c> the</c><00:03:43.480><c> outcome</c>
+
+00:03:43.870 --> 00:03:43.880 align:start position:0%
+to be happening? And then, the outcome
+ 
+
+00:03:43.880 --> 00:03:46.270 align:start position:0%
+to be happening? And then, the outcome
+of<00:03:44.000><c> those</c><00:03:44.239><c> API</c><00:03:44.560><c> call</c><00:03:44.840><c> of</c><00:03:45.000><c> the</c><00:03:45.160><c> tokens</c><00:03:46.000><c> have</c><00:03:46.160><c> to</c>
+
+00:03:46.270 --> 00:03:46.280 align:start position:0%
+of those API call of the tokens have to
+ 
+
+00:03:46.280 --> 00:03:49.390 align:start position:0%
+of those API call of the tokens have to
+be<00:03:46.400><c> executed,</c><00:03:47.320><c> sandboxed,</c><00:03:48.200><c> verified.</c><00:03:49.200><c> And</c>
+
+00:03:49.390 --> 00:03:49.400 align:start position:0%
+be executed, sandboxed, verified. And
+ 
+
+00:03:49.400 --> 00:03:52.070 align:start position:0%
+be executed, sandboxed, verified. And
+CPUs<00:03:49.880><c> are</c><00:03:50.040><c> more</c><00:03:50.280><c> and</c><00:03:50.440><c> more</c><00:03:51.200><c> in</c><00:03:51.360><c> the</c><00:03:51.519><c> agentic</c>
+
+00:03:52.070 --> 00:03:52.080 align:start position:0%
+CPUs are more and more in the agentic
+ 
+
+00:03:52.080 --> 00:03:54.670 align:start position:0%
+CPUs are more and more in the agentic
+loop<00:03:52.640><c> executing</c><00:03:53.320><c> to</c><00:03:53.560><c> all</c><00:03:53.840><c> the</c><00:03:54.040><c> outcomes</c><00:03:54.560><c> that</c>
+
+00:03:54.670 --> 00:03:54.680 align:start position:0%
+loop executing to all the outcomes that
+ 
+
+00:03:54.680 --> 00:03:56.950 align:start position:0%
+loop executing to all the outcomes that
+are<00:03:54.760><c> coming</c><00:03:55.080><c> from</c><00:03:55.320><c> these</c><00:03:55.600><c> LLMs.</c>
+
+00:03:56.950 --> 00:03:56.960 align:start position:0%
+are coming from these LLMs.
+ 
+
+00:03:56.960 --> 00:04:00.150 align:start position:0%
+are coming from these LLMs.
+So,<00:03:57.120><c> this</c><00:03:57.440><c> is</c><00:03:58.120><c> increasing</c><00:03:58.720><c> the</c><00:03:58.800><c> demand</c><00:03:59.520><c> on</c><00:03:59.680><c> CPU</c>
+
+00:04:00.150 --> 00:04:00.160 align:start position:0%
+So, this is increasing the demand on CPU
+ 
+
+00:04:00.160 --> 00:04:02.670 align:start position:0%
+So, this is increasing the demand on CPU
+significantly<00:04:01.360><c> that</c><00:04:01.520><c> the</c><00:04:01.640><c> ratio</c><00:04:02.080><c> of</c><00:04:02.200><c> CPU</c><00:04:02.560><c> to</c>
+
+00:04:02.670 --> 00:04:02.680 align:start position:0%
+significantly that the ratio of CPU to
+ 
+
+00:04:02.680 --> 00:04:05.070 align:start position:0%
+significantly that the ratio of CPU to
+GPU<00:04:03.400><c> is</c><00:04:03.560><c> also</c><00:04:03.840><c> going</c><00:04:04.200><c> up.</c>
+
+00:04:05.070 --> 00:04:05.080 align:start position:0%
+GPU is also going up.
+ 
+
+00:04:05.080 --> 00:04:08.030 align:start position:0%
+GPU is also going up.
+In<00:04:05.200><c> fact,</c><00:04:05.520><c> it</c><00:04:05.600><c> used</c><00:04:05.800><c> to</c><00:04:05.880><c> be</c><00:04:06.320><c> about</c><00:04:06.880><c> 2:8,</c><00:04:07.840><c> now</c>
+
+00:04:08.030 --> 00:04:08.040 align:start position:0%
+In fact, it used to be about 2:8, now
+ 
+
+00:04:08.040 --> 00:04:12.870 align:start position:0%
+In fact, it used to be about 2:8, now
+going<00:04:08.360><c> to</c><00:04:08.520><c> 1:4,</c><00:04:09.880><c> 1:2,</c><00:04:10.840><c> and</c><00:04:11.120><c> even</c><00:04:11.640><c> in</c><00:04:11.920><c> 1:1</c><00:04:12.720><c> in</c>
+
+00:04:12.870 --> 00:04:12.880 align:start position:0%
+going to 1:4, 1:2, and even in 1:1 in
+ 
+
+00:04:12.880 --> 00:04:15.390 align:start position:0%
+going to 1:4, 1:2, and even in 1:1 in
+some<00:04:13.080><c> scenarios.</c>
+
+00:04:15.390 --> 00:04:15.400 align:start position:0%
+some scenarios.
+ 
+
+00:04:15.400 --> 00:04:19.310 align:start position:0%
+some scenarios.
+Now,<00:04:15.560><c> we</c><00:04:15.760><c> at</c><00:04:15.880><c> Intel</c><00:04:16.840><c> have</c><00:04:17.079><c> been</c><00:04:17.680><c> huge</c>
+
+00:04:19.310 --> 00:04:19.320 align:start position:0%
+Now, we at Intel have been huge
+ 
+
+00:04:19.320 --> 00:04:21.509 align:start position:0%
+Now, we at Intel have been huge
+builder<00:04:20.079><c> of</c><00:04:20.280><c> systems</c><00:04:20.840><c> for</c><00:04:21.000><c> the</c><00:04:21.120><c> CPU</c>
+
+00:04:21.509 --> 00:04:21.519 align:start position:0%
+builder of systems for the CPU
+ 
+
+00:04:21.519 --> 00:04:22.790 align:start position:0%
+builder of systems for the CPU
+workloads.
+
+00:04:22.790 --> 00:04:22.800 align:start position:0%
+workloads.
+ 
+
+00:04:22.800 --> 00:04:25.430 align:start position:0%
+workloads.
+And<00:04:22.960><c> we</c><00:04:23.320><c> start</c><00:04:23.680><c> with</c><00:04:23.800><c> the</c><00:04:23.919><c> CPU</c><00:04:24.760><c> as</c><00:04:25.000><c> being</c><00:04:25.320><c> the</c>
+
+00:04:25.430 --> 00:04:25.440 align:start position:0%
+And we start with the CPU as being the
+ 
+
+00:04:25.440 --> 00:04:27.950 align:start position:0%
+And we start with the CPU as being the
+quarterback<00:04:26.080><c> for</c><00:04:26.240><c> this</c><00:04:26.440><c> agentic</c><00:04:26.919><c> era.</c>
+
+00:04:27.950 --> 00:04:27.960 align:start position:0%
+quarterback for this agentic era.
+ 
+
+00:04:27.960 --> 00:04:29.990 align:start position:0%
+quarterback for this agentic era.
+This<00:04:28.120><c> is</c><00:04:28.280><c> where</c><00:04:28.400><c> the</c><00:04:28.520><c> control</c><00:04:28.960><c> plane</c><00:04:29.240><c> is.</c><00:04:29.880><c> The</c>
+
+00:04:29.990 --> 00:04:30.000 align:start position:0%
+This is where the control plane is. The
+ 
+
+00:04:30.000 --> 00:04:32.550 align:start position:0%
+This is where the control plane is. The
+Xeon<00:04:30.880><c> has</c><00:04:31.160><c> all</c><00:04:31.360><c> the</c><00:04:31.480><c> capabilities</c><00:04:32.280><c> that</c><00:04:32.480><c> are</c>
+
+00:04:32.550 --> 00:04:32.560 align:start position:0%
+Xeon has all the capabilities that are
+ 
+
+00:04:32.560 --> 00:04:34.950 align:start position:0%
+Xeon has all the capabilities that are
+needed<00:04:33.240><c> for</c><00:04:33.400><c> these</c><00:04:33.640><c> workloads</c><00:04:34.160><c> to</c><00:04:34.280><c> be</c><00:04:34.520><c> running</c>
+
+00:04:34.950 --> 00:04:34.960 align:start position:0%
+needed for these workloads to be running
+ 
+
+00:04:34.960 --> 00:04:36.630 align:start position:0%
+needed for these workloads to be running
+efficiently,<00:04:35.640><c> to</c><00:04:35.760><c> be</c><00:04:35.960><c> orchestrated</c>
+
+00:04:36.630 --> 00:04:36.640 align:start position:0%
+efficiently, to be orchestrated
+ 
+
+00:04:36.640 --> 00:04:40.150 align:start position:0%
+efficiently, to be orchestrated
+efficiently,<00:04:37.520><c> and</c><00:04:37.720><c> sandboxed</c><00:04:38.320><c> efficiently.</c>
+
+00:04:40.150 --> 00:04:40.160 align:start position:0%
+efficiently, and sandboxed efficiently.
+ 
+
+00:04:40.160 --> 00:04:43.030 align:start position:0%
+efficiently, and sandboxed efficiently.
+And<00:04:40.320><c> for</c><00:04:40.880><c> from</c><00:04:41.120><c> Intel,</c><00:04:42.000><c> we</c><00:04:42.160><c> have</c><00:04:42.360><c> significant</c>
+
+00:04:43.030 --> 00:04:43.040 align:start position:0%
+And for from Intel, we have significant
+ 
+
+00:04:43.040 --> 00:04:45.870 align:start position:0%
+And for from Intel, we have significant
+number<00:04:43.240><c> of</c><00:04:43.360><c> choices</c><00:04:44.280><c> for</c><00:04:44.480><c> our</c><00:04:44.640><c> customers</c><00:04:45.640><c> and</c>
+
+00:04:45.870 --> 00:04:45.880 align:start position:0%
+number of choices for our customers and
+ 
+
+00:04:45.880 --> 00:04:48.750 align:start position:0%
+number of choices for our customers and
+to<00:04:46.080><c> you</c><00:04:46.360><c> in</c><00:04:46.480><c> the</c><00:04:46.600><c> ecosystem</c><00:04:47.560><c> to</c><00:04:47.720><c> build</c><00:04:47.960><c> upon.</c>
+
+00:04:48.750 --> 00:04:48.760 align:start position:0%
+to you in the ecosystem to build upon.
+ 
+
+00:04:48.760 --> 00:04:51.030 align:start position:0%
+to you in the ecosystem to build upon.
+We<00:04:48.880><c> have</c><00:04:49.040><c> a</c><00:04:49.120><c> rich</c><00:04:49.440><c> history</c><00:04:50.080><c> of</c><00:04:50.240><c> delivering,</c>
+
+00:04:51.030 --> 00:04:51.040 align:start position:0%
+We have a rich history of delivering,
+ 
+
+00:04:51.040 --> 00:04:53.230 align:start position:0%
+We have a rich history of delivering,
+you<00:04:51.160><c> know,</c><00:04:51.240><c> leadership</c><00:04:51.800><c> products</c><00:04:52.480><c> in</c><00:04:52.640><c> these</c>
+
+00:04:53.230 --> 00:04:53.240 align:start position:0%
+you know, leadership products in these
+ 
+
+00:04:53.240 --> 00:04:55.070 align:start position:0%
+you know, leadership products in these
+aspects.
+
+00:04:55.070 --> 00:04:55.080 align:start position:0%
+aspects.
+ 
+
+00:04:55.080 --> 00:04:57.790 align:start position:0%
+aspects.
+For<00:04:55.240><c> the</c><00:04:55.360><c> CPUs</c><00:04:55.919><c> in</c><00:04:56.000><c> the</c><00:04:56.120><c> agentic</c><00:04:56.600><c> era,</c><00:04:57.360><c> we</c><00:04:57.520><c> have</c>
+
+00:04:57.790 --> 00:04:57.800 align:start position:0%
+For the CPUs in the agentic era, we have
+ 
+
+00:04:57.800 --> 00:05:00.990 align:start position:0%
+For the CPUs in the agentic era, we have
+our<00:04:57.919><c> Xeon</c><00:04:58.320><c> 6</c><00:04:58.640><c> Plus,</c><00:04:59.560><c> the</c><00:04:59.760><c> E-core</c><00:05:00.520><c> with</c><00:05:00.760><c> up</c><00:05:00.880><c> to</c>
+
+00:05:00.990 --> 00:05:01.000 align:start position:0%
+our Xeon 6 Plus, the E-core with up to
+ 
+
+00:05:01.000 --> 00:05:02.750 align:start position:0%
+our Xeon 6 Plus, the E-core with up to
+288<00:05:01.680><c> cores.</c>
+
+00:05:02.750 --> 00:05:02.760 align:start position:0%
+288 cores.
+ 
+
+00:05:02.760 --> 00:05:04.990 align:start position:0%
+288 cores.
+We<00:05:02.880><c> have</c><00:05:03.120><c> our</c><00:05:03.520><c> Xeon</c><00:05:03.880><c> 6</c>
+
+00:05:04.990 --> 00:05:05.000 align:start position:0%
+We have our Xeon 6
+ 
+
+00:05:05.000 --> 00:05:07.270 align:start position:0%
+We have our Xeon 6
+with<00:05:05.160><c> the</c><00:05:05.680><c> the</c><00:05:06.280><c> cores</c><00:05:06.720><c> needed</c><00:05:07.080><c> for</c>
+
+00:05:07.270 --> 00:05:07.280 align:start position:0%
+with the the cores needed for
+ 
+
+00:05:07.280 --> 00:05:09.350 align:start position:0%
+with the the cores needed for
+orchestration<00:05:08.360><c> and</c><00:05:08.520><c> for</c><00:05:08.680><c> different</c><00:05:09.000><c> kinds</c><00:05:09.240><c> of</c>
+
+00:05:09.350 --> 00:05:09.360 align:start position:0%
+orchestration and for different kinds of
+ 
+
+00:05:09.360 --> 00:05:12.470 align:start position:0%
+orchestration and for different kinds of
+workloads,<00:05:10.400><c> and</c><00:05:10.600><c> our</c><00:05:10.800><c> soon</c><00:05:11.240><c> upcoming</c><00:05:12.080><c> Diamond</c>
+
+00:05:12.470 --> 00:05:12.480 align:start position:0%
+workloads, and our soon upcoming Diamond
+ 
+
+00:05:12.480 --> 00:05:15.350 align:start position:0%
+workloads, and our soon upcoming Diamond
+Rapids<00:05:12.880><c> CPU,</c><00:05:13.640><c> which</c><00:05:13.800><c> will</c><00:05:13.919><c> give</c><00:05:14.080><c> you</c><00:05:14.200><c> 250</c><00:05:14.720><c> core</c>
+
+00:05:15.350 --> 00:05:15.360 align:start position:0%
+Rapids CPU, which will give you 250 core
+ 
+
+00:05:15.360 --> 00:05:18.030 align:start position:0%
+Rapids CPU, which will give you 250 core
+256<00:05:16.080><c> cores</c><00:05:16.760><c> to</c><00:05:16.880><c> give</c><00:05:17.080><c> you</c><00:05:17.520><c> the</c><00:05:17.640><c> one</c><00:05:17.880><c> of</c><00:05:17.960><c> the</c>
+
+00:05:18.030 --> 00:05:18.040 align:start position:0%
+256 cores to give you the one of the
+ 
+
+00:05:18.040 --> 00:05:20.950 align:start position:0%
+256 cores to give you the one of the
+best<00:05:18.440><c> agentic</c><00:05:18.960><c> performance</c><00:05:20.120><c> you</c><00:05:20.280><c> can</c><00:05:20.680><c> in</c><00:05:20.880><c> the</c>
+
+00:05:20.950 --> 00:05:20.960 align:start position:0%
+best agentic performance you can in the
+ 
+
+00:05:20.960 --> 00:05:24.710 align:start position:0%
+best agentic performance you can in the
+market.
+
+00:05:24.710 --> 00:05:24.720 align:start position:0%
+ 
+ 
+
+00:05:24.720 --> 00:05:27.830 align:start position:0%
+ 
+Now,<00:05:24.840><c> it's</c><00:05:25.000><c> not</c><00:05:25.240><c> just</c><00:05:25.840><c> us</c><00:05:26.640><c> building</c><00:05:27.000><c> these.</c>
+
+00:05:27.830 --> 00:05:27.840 align:start position:0%
+Now, it's not just us building these.
+ 
+
+00:05:27.840 --> 00:05:30.310 align:start position:0%
+Now, it's not just us building these.
+Our<00:05:28.040><c> partners</c><00:05:28.520><c> in</c><00:05:28.600><c> the</c><00:05:28.720><c> ecosystem,</c><00:05:29.880><c> we</c><00:05:30.040><c> showed</c>
+
+00:05:30.310 --> 00:05:30.320 align:start position:0%
+Our partners in the ecosystem, we showed
+ 
+
+00:05:30.320 --> 00:05:32.590 align:start position:0%
+Our partners in the ecosystem, we showed
+this<00:05:30.520><c> at</c><00:05:30.680><c> Computex,</c><00:05:31.680><c> a</c><00:05:31.760><c> wide</c><00:05:32.160><c> range</c><00:05:32.480><c> of</c>
+
+00:05:32.590 --> 00:05:32.600 align:start position:0%
+this at Computex, a wide range of
+ 
+
+00:05:32.600 --> 00:05:35.870 align:start position:0%
+this at Computex, a wide range of
+partners<00:05:33.440><c> building</c><00:05:34.160><c> Xeon</c><00:05:34.560><c> servers</c><00:05:35.040><c> and</c><00:05:35.240><c> racks</c>
+
+00:05:35.870 --> 00:05:35.880 align:start position:0%
+partners building Xeon servers and racks
+ 
+
+00:05:35.880 --> 00:05:38.070 align:start position:0%
+partners building Xeon servers and racks
+for<00:05:36.120><c> this</c><00:05:36.400><c> agentic</c><00:05:36.880><c> era.</c>
+
+00:05:38.070 --> 00:05:38.080 align:start position:0%
+for this agentic era.
+ 
+
+00:05:38.080 --> 00:05:40.909 align:start position:0%
+for this agentic era.
+But<00:05:38.240><c> more</c><00:05:38.440><c> importantly,</c><00:05:39.480><c> today</c><00:05:40.520><c> we</c><00:05:40.680><c> have</c>
+
+00:05:40.909 --> 00:05:40.919 align:start position:0%
+But more importantly, today we have
+ 
+
+00:05:40.919 --> 00:05:43.470 align:start position:0%
+But more importantly, today we have
+actually<00:05:41.240><c> racks</c><00:05:41.919><c> available</c><00:05:42.919><c> to</c><00:05:43.080><c> meet</c><00:05:43.360><c> the</c>
+
+00:05:43.470 --> 00:05:43.480 align:start position:0%
+actually racks available to meet the
+ 
+
+00:05:43.480 --> 00:05:45.670 align:start position:0%
+actually racks available to meet the
+computational<00:05:44.200><c> needs</c><00:05:44.840><c> of</c><00:05:45.000><c> these</c><00:05:45.280><c> large</c>
+
+00:05:45.670 --> 00:05:45.680 align:start position:0%
+computational needs of these large
+ 
+
+00:05:45.680 --> 00:05:47.510 align:start position:0%
+computational needs of these large
+volume<00:05:46.040><c> of</c><00:05:46.200><c> tokens</c><00:05:46.960><c> that</c><00:05:47.160><c> need</c><00:05:47.320><c> to</c><00:05:47.400><c> be</c>
+
+00:05:47.510 --> 00:05:47.520 align:start position:0%
+volume of tokens that need to be
+ 
+
+00:05:47.520 --> 00:05:49.670 align:start position:0%
+volume of tokens that need to be
+sandboxed<00:05:48.080><c> and</c><00:05:48.200><c> executed.</c>
+
+00:05:49.670 --> 00:05:49.680 align:start position:0%
+sandboxed and executed.
+ 
+
+00:05:49.680 --> 00:05:52.550 align:start position:0%
+sandboxed and executed.
+These<00:05:49.920><c> Xeon</c><00:05:50.400><c> agentic</c><00:05:50.920><c> AI</c><00:05:51.320><c> rack</c><00:05:51.560><c> systems</c><00:05:52.400><c> are</c>
+
+00:05:52.550 --> 00:05:52.560 align:start position:0%
+These Xeon agentic AI rack systems are
+ 
+
+00:05:52.560 --> 00:05:55.470 align:start position:0%
+These Xeon agentic AI rack systems are
+being<00:05:53.280><c> deployed</c><00:05:54.000><c> by</c><00:05:54.200><c> our</c><00:05:54.360><c> partners.</c><00:05:55.320><c> There</c>
+
+00:05:55.470 --> 00:05:55.480 align:start position:0%
+being deployed by our partners. There
+ 
+
+00:05:55.480 --> 00:05:57.590 align:start position:0%
+being deployed by our partners. There
+are<00:05:55.560><c> QR</c><00:05:55.960><c> codes</c><00:05:56.240><c> up</c><00:05:56.400><c> there.</c><00:05:56.960><c> They</c><00:05:57.080><c> can</c><00:05:57.240><c> take</c><00:05:57.480><c> you</c>
+
+00:05:57.590 --> 00:05:57.600 align:start position:0%
+are QR codes up there. They can take you
+ 
+
+00:05:57.600 --> 00:05:59.390 align:start position:0%
+are QR codes up there. They can take you
+to<00:05:57.720><c> the</c><00:05:57.840><c> product</c><00:05:58.200><c> pages,</c><00:05:58.920><c> and</c><00:05:59.080><c> you</c><00:05:59.200><c> can</c>
+
+00:05:59.390 --> 00:05:59.400 align:start position:0%
+to the product pages, and you can
+ 
+
+00:05:59.400 --> 00:06:01.710 align:start position:0%
+to the product pages, and you can
+actually<00:05:59.760><c> see</c><00:06:00.240><c> the</c><00:06:00.360><c> capabilities</c><00:06:01.160><c> of</c><00:06:01.400><c> each</c><00:06:01.600><c> of</c>
+
+00:06:01.710 --> 00:06:01.720 align:start position:0%
+actually see the capabilities of each of
+ 
+
+00:06:01.720 --> 00:06:03.550 align:start position:0%
+actually see the capabilities of each of
+these<00:06:01.960><c> racks</c><00:06:02.680><c> with</c>
+
+00:06:03.550 --> 00:06:03.560 align:start position:0%
+these racks with
+ 
+
+00:06:03.560 --> 00:06:05.710 align:start position:0%
+these racks with
+tens<00:06:03.840><c> of</c><00:06:03.960><c> thousands</c><00:06:04.360><c> of</c><00:06:04.480><c> cores,</c><00:06:05.200><c> even</c><00:06:05.520><c> more</c>
+
+00:06:05.710 --> 00:06:05.720 align:start position:0%
+tens of thousands of cores, even more
+ 
+
+00:06:05.720 --> 00:06:07.470 align:start position:0%
+tens of thousands of cores, even more
+than<00:06:05.880><c> 50,000</c><00:06:06.480><c> cores,</c>
+
+00:06:07.470 --> 00:06:07.480 align:start position:0%
+than 50,000 cores,
+ 
+
+00:06:07.480 --> 00:06:17.390 align:start position:0%
+than 50,000 cores,
+and<00:06:07.680><c> many</c><00:06:07.920><c> of</c><00:06:08.080><c> them</c><00:06:08.560><c> in</c><00:06:08.720><c> a</c><00:06:08.840><c> ORV3</c><00:06:09.720><c> form</c><00:06:09.920><c> factor.</c>
+
+00:06:17.390 --> 00:06:17.400 align:start position:0%
+ 
+ 
+
+00:06:17.400 --> 00:06:19.310 align:start position:0%
+ 
+Now,<00:06:17.560><c> let's</c><00:06:17.760><c> get</c><00:06:17.919><c> to</c><00:06:18.040><c> the</c><00:06:18.440><c> token</c><00:06:18.800><c> generation</c>
+
+00:06:19.310 --> 00:06:19.320 align:start position:0%
+Now, let's get to the token generation
+ 
+
+00:06:19.320 --> 00:06:22.190 align:start position:0%
+Now, let's get to the token generation
+side<00:06:19.560><c> of</c><00:06:19.680><c> it.</c><00:06:20.440><c> As</c><00:06:20.640><c> you</c><00:06:20.760><c> all</c><00:06:20.880><c> know,</c><00:06:21.440><c> GPUs</c><00:06:22.040><c> have</c>
+
+00:06:22.190 --> 00:06:22.200 align:start position:0%
+side of it. As you all know, GPUs have
+ 
+
+00:06:22.200 --> 00:06:24.470 align:start position:0%
+side of it. As you all know, GPUs have
+been<00:06:22.360><c> the</c><00:06:22.480><c> foundation</c><00:06:23.440><c> for</c><00:06:23.600><c> creating</c><00:06:24.320><c> and</c>
+
+00:06:24.470 --> 00:06:24.480 align:start position:0%
+been the foundation for creating and
+ 
+
+00:06:24.480 --> 00:06:26.950 align:start position:0%
+been the foundation for creating and
+running<00:06:24.800><c> LLMs</c><00:06:25.280><c> at</c><00:06:25.400><c> scale.</c>
+
+00:06:26.950 --> 00:06:26.960 align:start position:0%
+running LLMs at scale.
+ 
+
+00:06:26.960 --> 00:06:30.030 align:start position:0%
+running LLMs at scale.
+Today,<00:06:27.720><c> we</c><00:06:27.840><c> are</c><00:06:27.960><c> excited</c><00:06:28.760><c> to</c><00:06:28.880><c> talk</c><00:06:29.160><c> about</c><00:06:29.960><c> a</c>
+
+00:06:30.030 --> 00:06:30.040 align:start position:0%
+Today, we are excited to talk about a
+ 
+
+00:06:30.040 --> 00:06:32.870 align:start position:0%
+Today, we are excited to talk about a
+new<00:06:30.360><c> product,</c><00:06:31.160><c> Crescent</c><00:06:31.560><c> Island,</c><00:06:32.520><c> which</c><00:06:32.720><c> was</c>
+
+00:06:32.870 --> 00:06:32.880 align:start position:0%
+new product, Crescent Island, which was
+ 
+
+00:06:32.880 --> 00:06:34.950 align:start position:0%
+new product, Crescent Island, which was
+the<00:06:32.960><c> code</c><00:06:33.200><c> name</c><00:06:33.400><c> we've</c><00:06:33.560><c> been</c><00:06:33.720><c> using</c><00:06:34.040><c> so</c><00:06:34.200><c> far,</c>
+
+00:06:34.950 --> 00:06:34.960 align:start position:0%
+the code name we've been using so far,
+ 
+
+00:06:34.960 --> 00:06:37.270 align:start position:0%
+the code name we've been using so far,
+and<00:06:35.120><c> the</c><00:06:35.240><c> product</c><00:06:35.640><c> name</c><00:06:36.000><c> officially</c><00:06:36.880><c> is</c><00:06:37.080><c> our</c>
+
+00:06:37.270 --> 00:06:37.280 align:start position:0%
+and the product name officially is our
+ 
+
+00:06:37.280 --> 00:06:40.790 align:start position:0%
+and the product name officially is our
+Intel<00:06:37.720><c> GPU</c><00:06:38.560><c> D-series.</c>
+
+00:06:40.790 --> 00:06:40.800 align:start position:0%
+Intel GPU D-series.
+ 
+
+00:06:40.800 --> 00:06:43.550 align:start position:0%
+Intel GPU D-series.
+Now,<00:06:41.000><c> this</c><00:06:41.640><c> GPU</c>
+
+00:06:43.550 --> 00:06:43.560 align:start position:0%
+Now, this GPU
+ 
+
+00:06:43.560 --> 00:06:46.590 align:start position:0%
+Now, this GPU
+is<00:06:44.520><c> come</c><00:06:44.720><c> back</c><00:06:45.080><c> from</c><00:06:45.200><c> the</c><00:06:45.320><c> fabs.</c>
+
+00:06:46.590 --> 00:06:46.600 align:start position:0%
+is come back from the fabs.
+ 
+
+00:06:46.600 --> 00:06:49.150 align:start position:0%
+is come back from the fabs.
+This<00:06:46.840><c> is</c><00:06:47.280><c> Crescent</c><00:06:47.680><c> Island</c><00:06:48.080><c> in</c><00:06:48.240><c> my</c><00:06:48.400><c> hand,</c><00:06:49.040><c> the</c>
+
+00:06:49.150 --> 00:06:49.160 align:start position:0%
+This is Crescent Island in my hand, the
+ 
+
+00:06:49.160 --> 00:06:51.270 align:start position:0%
+This is Crescent Island in my hand, the
+SOC.
+
+00:06:51.270 --> 00:06:51.280 align:start position:0%
+SOC.
+ 
+
+00:06:51.280 --> 00:06:53.870 align:start position:0%
+SOC.
+It<00:06:51.440><c> is</c><00:06:51.600><c> built</c><00:06:52.080><c> for</c><00:06:52.280><c> the</c><00:06:52.480><c> agentic</c><00:06:53.000><c> inference</c>
+
+00:06:53.870 --> 00:06:53.880 align:start position:0%
+It is built for the agentic inference
+ 
+
+00:06:53.880 --> 00:06:55.990 align:start position:0%
+It is built for the agentic inference
+with<00:06:54.280><c> low</c><00:06:54.520><c> power,</c>
+
+00:06:55.990 --> 00:06:56.000 align:start position:0%
+with low power,
+ 
+
+00:06:56.000 --> 00:06:58.630 align:start position:0%
+with low power,
+significant<00:06:56.600><c> amount</c><00:06:56.840><c> of</c><00:06:56.919><c> memory</c><00:06:57.200><c> capacity,</c>
+
+00:06:58.630 --> 00:06:58.640 align:start position:0%
+significant amount of memory capacity,
+ 
+
+00:06:58.640 --> 00:07:01.590 align:start position:0%
+significant amount of memory capacity,
+extremely<00:06:59.240><c> good</c><00:06:59.480><c> bandwidth,</c><00:07:00.600><c> and</c><00:07:00.800><c> actually,</c>
+
+00:07:01.590 --> 00:07:01.600 align:start position:0%
+extremely good bandwidth, and actually,
+ 
+
+00:07:01.600 --> 00:07:03.670 align:start position:0%
+extremely good bandwidth, and actually,
+why<00:07:01.760><c> don't</c><00:07:02.000><c> we</c><00:07:02.120><c> see</c><00:07:02.320><c> this</c><00:07:02.960><c> working?</c><00:07:03.440><c> How</c><00:07:03.520><c> many</c>
+
+00:07:03.670 --> 00:07:03.680 align:start position:0%
+why don't we see this working? How many
+ 
+
+00:07:03.680 --> 00:07:06.950 align:start position:0%
+why don't we see this working? How many
+of<00:07:03.760><c> you</c><00:07:03.880><c> want</c><00:07:04.000><c> to</c><00:07:04.080><c> see</c><00:07:04.160><c> it</c><00:07:04.280><c> working?</c>
+
+00:07:06.950 --> 00:07:06.960 align:start position:0%
+ 
+ 
+
+00:07:06.960 --> 00:07:09.750 align:start position:0%
+ 
+Okay.<00:07:07.720><c> So,</c><00:07:07.919><c> what</c><00:07:08.120><c> we</c><00:07:08.240><c> are</c><00:07:08.320><c> running</c><00:07:08.640><c> here</c>
+
+00:07:09.750 --> 00:07:09.760 align:start position:0%
+Okay. So, what we are running here
+ 
+
+00:07:09.760 --> 00:07:12.110 align:start position:0%
+Okay. So, what we are running here
+is<00:07:10.400><c> the</c><00:07:10.520><c> VAE</c><00:07:10.840><c> model.</c><00:07:11.520><c> It's</c><00:07:11.720><c> a</c><00:07:11.760><c> video</c>
+
+00:07:12.110 --> 00:07:12.120 align:start position:0%
+is the VAE model. It's a video
+ 
+
+00:07:12.120 --> 00:07:14.390 align:start position:0%
+is the VAE model. It's a video
+generation<00:07:12.640><c> model.</c><00:07:13.360><c> It's</c><00:07:13.520><c> a</c><00:07:13.560><c> 27</c><00:07:14.120><c> billion</c>
+
+00:07:14.390 --> 00:07:14.400 align:start position:0%
+generation model. It's a 27 billion
+ 
+
+00:07:14.400 --> 00:07:16.950 align:start position:0%
+generation model. It's a 27 billion
+parameter<00:07:14.880><c> model</c><00:07:15.680><c> that</c><00:07:15.880><c> basically</c><00:07:16.720><c> is</c><00:07:16.880><c> a</c>
+
+00:07:16.950 --> 00:07:16.960 align:start position:0%
+parameter model that basically is a
+ 
+
+00:07:16.960 --> 00:07:20.150 align:start position:0%
+parameter model that basically is a
+text-to-video.<00:07:18.360><c> It's</c><00:07:18.640><c> kicked</c><00:07:18.960><c> off,</c><00:07:19.840><c> and</c><00:07:20.040><c> it's</c>
+
+00:07:20.150 --> 00:07:20.160 align:start position:0%
+text-to-video. It's kicked off, and it's
+ 
+
+00:07:20.160 --> 00:07:22.030 align:start position:0%
+text-to-video. It's kicked off, and it's
+going<00:07:20.280><c> to</c><00:07:20.360><c> be</c><00:07:20.480><c> running</c><00:07:21.200><c> and</c><00:07:21.360><c> creating</c><00:07:21.919><c> a</c>
+
+00:07:22.030 --> 00:07:22.040 align:start position:0%
+going to be running and creating a
+ 
+
+00:07:22.040 --> 00:07:24.590 align:start position:0%
+going to be running and creating a
+5-second<00:07:22.720><c> video</c><00:07:23.360><c> out</c><00:07:23.520><c> of</c><00:07:23.640><c> this.</c>
+
+00:07:24.590 --> 00:07:24.600 align:start position:0%
+5-second video out of this.
+ 
+
+00:07:24.600 --> 00:07:27.110 align:start position:0%
+5-second video out of this.
+Now,<00:07:24.760><c> what</c><00:07:25.000><c> makes</c><00:07:25.280><c> Crescent</c><00:07:25.640><c> Island</c><00:07:25.960><c> great</c><00:07:26.919><c> is</c>
+
+00:07:27.110 --> 00:07:27.120 align:start position:0%
+Now, what makes Crescent Island great is
+ 
+
+00:07:27.120 --> 00:07:30.830 align:start position:0%
+Now, what makes Crescent Island great is
+that<00:07:27.360><c> it</c><00:07:27.480><c> has</c><00:07:28.040><c> support</c><00:07:28.440><c> for</c><00:07:28.600><c> up</c><00:07:28.720><c> to</c><00:07:28.880><c> 480</c><00:07:29.640><c> GB</c><00:07:30.600><c> of</c>
+
+00:07:30.830 --> 00:07:30.840 align:start position:0%
+that it has support for up to 480 GB of
+ 
+
+00:07:30.840 --> 00:07:34.270 align:start position:0%
+that it has support for up to 480 GB of
+LPDDR5X<00:07:32.120><c> memory</c><00:07:32.800><c> with</c><00:07:33.040><c> ECC.</c>
+
+00:07:34.270 --> 00:07:34.280 align:start position:0%
+LPDDR5X memory with ECC.
+ 
+
+00:07:34.280 --> 00:07:36.430 align:start position:0%
+LPDDR5X memory with ECC.
+This<00:07:34.520><c> card</c><00:07:34.840><c> here</c><00:07:35.240><c> that</c><00:07:35.440><c> we</c><00:07:35.560><c> are</c><00:07:35.800><c> using</c><00:07:36.200><c> for</c><00:07:36.360><c> the</c>
+
+00:07:36.430 --> 00:07:36.440 align:start position:0%
+This card here that we are using for the
+ 
+
+00:07:36.440 --> 00:07:40.590 align:start position:0%
+This card here that we are using for the
+demo<00:07:37.080><c> has</c><00:07:37.240><c> 160</c><00:07:37.960><c> GB</c><00:07:38.480><c> of</c><00:07:38.640><c> memory.</c>
+
+00:07:40.590 --> 00:07:40.600 align:start position:0%
+demo has 160 GB of memory.
+ 
+
+00:07:40.600 --> 00:07:41.710 align:start position:0%
+demo has 160 GB of memory.
+Now,
+
+00:07:41.710 --> 00:07:41.720 align:start position:0%
+Now,
+ 
+
+00:07:41.720 --> 00:07:44.070 align:start position:0%
+Now,
+with<00:07:42.240><c> deep</c><00:07:42.800><c> amount</c><00:07:43.160><c> of</c>
+
+00:07:44.070 --> 00:07:44.080 align:start position:0%
+with deep amount of
+ 
+
+00:07:44.080 --> 00:07:46.830 align:start position:0%
+with deep amount of
+support<00:07:44.520><c> for</c><00:07:44.760><c> all</c><00:07:44.960><c> kinds</c><00:07:45.200><c> of</c><00:07:45.280><c> data</c><00:07:45.560><c> types,</c>
+
+00:07:46.830 --> 00:07:46.840 align:start position:0%
+support for all kinds of data types,
+ 
+
+00:07:46.840 --> 00:07:50.510 align:start position:0%
+support for all kinds of data types,
+with<00:07:47.040><c> 1.5</c><00:07:47.720><c> TB</c><00:07:48.240><c> per</c><00:07:48.440><c> second</c><00:07:48.800><c> memory</c><00:07:49.120><c> bandwidth,</c>
+
+00:07:50.510 --> 00:07:50.520 align:start position:0%
+with 1.5 TB per second memory bandwidth,
+ 
+
+00:07:50.520 --> 00:07:53.590 align:start position:0%
+with 1.5 TB per second memory bandwidth,
+this<00:07:51.120><c> is</c><00:07:51.360><c> a</c><00:07:51.440><c> very</c><00:07:51.760><c> flexible</c><00:07:52.800><c> PCI</c><00:07:53.200><c> Express</c>
+
+00:07:53.590 --> 00:07:53.600 align:start position:0%
+this is a very flexible PCI Express
+ 
+
+00:07:53.600 --> 00:07:55.030 align:start position:0%
+this is a very flexible PCI Express
+based<00:07:53.840><c> solution</c>
+
+00:07:55.030 --> 00:07:55.040 align:start position:0%
+based solution
+ 
+
+00:07:55.040 --> 00:07:58.710 align:start position:0%
+based solution
+that<00:07:55.240><c> enables</c><00:07:56.120><c> form</c><00:07:56.400><c> factors</c><00:07:57.280><c> from</c><00:07:57.800><c> small</c><00:07:58.560><c> to</c>
+
+00:07:58.710 --> 00:07:58.720 align:start position:0%
+that enables form factors from small to
+ 
+
+00:07:58.720 --> 00:08:00.390 align:start position:0%
+that enables form factors from small to
+large,<00:07:59.240><c> and</c><00:07:59.400><c> I'll</c><00:07:59.560><c> show</c><00:07:59.720><c> you</c><00:07:59.880><c> more</c><00:08:00.120><c> about</c>
+
+00:08:00.390 --> 00:08:00.400 align:start position:0%
+large, and I'll show you more about
+ 
+
+00:08:00.400 --> 00:08:01.470 align:start position:0%
+large, and I'll show you more about
+that.
+
+00:08:01.470 --> 00:08:01.480 align:start position:0%
+that.
+ 
+
+00:08:01.480 --> 00:08:04.270 align:start position:0%
+that.
+As<00:08:01.640><c> you</c><00:08:01.760><c> can</c><00:08:01.920><c> see,</c><00:08:02.600><c> that's</c><00:08:03.200><c> a</c><00:08:03.280><c> video</c><00:08:03.640><c> generated</c>
+
+00:08:04.270 --> 00:08:04.280 align:start position:0%
+As you can see, that's a video generated
+ 
+
+00:08:04.280 --> 00:08:06.590 align:start position:0%
+As you can see, that's a video generated
+on<00:08:04.480><c> Crescent</c><00:08:04.880><c> Island.</c><00:08:05.520><c> You</c><00:08:05.640><c> can</c><00:08:05.800><c> see</c><00:08:06.000><c> more</c><00:08:06.440><c> at</c>
+
+00:08:06.590 --> 00:08:06.600 align:start position:0%
+on Crescent Island. You can see more at
+ 
+
+00:08:06.600 --> 00:08:08.390 align:start position:0%
+on Crescent Island. You can see more at
+the<00:08:06.720><c> booth,</c><00:08:07.320><c> and</c><00:08:07.520><c> you</c><00:08:07.600><c> can</c><00:08:07.760><c> try</c><00:08:08.000><c> your</c><00:08:08.280><c> own</c>
+
+00:08:08.390 --> 00:08:08.400 align:start position:0%
+the booth, and you can try your own
+ 
+
+00:08:08.400 --> 00:08:11.070 align:start position:0%
+the booth, and you can try your own
+prompts<00:08:09.080><c> and</c><00:08:09.240><c> create</c><00:08:09.560><c> videos</c><00:08:10.400><c> at</c><00:08:10.560><c> the</c><00:08:10.720><c> Intel</c>
+
+00:08:11.070 --> 00:08:11.080 align:start position:0%
+prompts and create videos at the Intel
+ 
+
+00:08:11.080 --> 00:08:15.630 align:start position:0%
+prompts and create videos at the Intel
+booth<00:08:11.600><c> later</c><00:08:12.080><c> during</c><00:08:12.360><c> this</c><00:08:12.520><c> conference.</c>
+
+00:08:15.630 --> 00:08:15.640 align:start position:0%
+ 
+ 
+
+00:08:15.640 --> 00:08:18.390 align:start position:0%
+ 
+It's<00:08:15.800><c> not</c><00:08:16.000><c> just</c><00:08:16.240><c> that.</c>
+
+00:08:18.390 --> 00:08:18.400 align:start position:0%
+It's not just that.
+ 
+
+00:08:18.400 --> 00:08:21.390 align:start position:0%
+It's not just that.
+That<00:08:18.919><c> SOC</c><00:08:19.400><c> that</c><00:08:19.600><c> I</c><00:08:19.840><c> raised</c><00:08:20.160><c> in</c><00:08:20.240><c> my</c><00:08:20.400><c> hand,</c><00:08:21.200><c> this</c>
+
+00:08:21.390 --> 00:08:21.400 align:start position:0%
+That SOC that I raised in my hand, this
+ 
+
+00:08:21.400 --> 00:08:24.790 align:start position:0%
+That SOC that I raised in my hand, this
+is<00:08:21.520><c> the</c><00:08:21.640><c> PCI</c><00:08:22.560><c> Express</c><00:08:23.000><c> form</c><00:08:23.280><c> factor.</c>
+
+00:08:24.790 --> 00:08:24.800 align:start position:0%
+is the PCI Express form factor.
+ 
+
+00:08:24.800 --> 00:08:27.310 align:start position:0%
+is the PCI Express form factor.
+This<00:08:25.000><c> is</c><00:08:25.120><c> only</c><00:08:25.360><c> 350</c><00:08:26.080><c> W.</c>
+
+00:08:27.310 --> 00:08:27.320 align:start position:0%
+This is only 350 W.
+ 
+
+00:08:27.320 --> 00:08:29.550 align:start position:0%
+This is only 350 W.
+It's<00:08:27.560><c> very</c><00:08:27.840><c> flexible</c><00:08:28.680><c> and</c><00:08:28.880><c> scales</c><00:08:29.280><c> into</c>
+
+00:08:29.550 --> 00:08:29.560 align:start position:0%
+It's very flexible and scales into
+ 
+
+00:08:29.560 --> 00:08:31.870 align:start position:0%
+It's very flexible and scales into
+multiple<00:08:30.160><c> OEM</c><00:08:30.480><c> designs.</c>
+
+00:08:31.870 --> 00:08:31.880 align:start position:0%
+multiple OEM designs.
+ 
+
+00:08:31.880 --> 00:08:33.709 align:start position:0%
+multiple OEM designs.
+But,<00:08:32.039><c> we're</c><00:08:32.159><c> not</c><00:08:32.360><c> stopping</c><00:08:32.760><c> there.</c>
+
+00:08:33.709 --> 00:08:33.719 align:start position:0%
+But, we're not stopping there.
+ 
+
+00:08:33.719 --> 00:08:36.430 align:start position:0%
+But, we're not stopping there.
+This<00:08:33.880><c> is</c><00:08:34.000><c> OCP,</c><00:08:34.560><c> after</c><00:08:34.880><c> all.</c><00:08:35.599><c> And</c><00:08:35.760><c> OCP</c><00:08:36.280><c> is</c>
+
+00:08:36.430 --> 00:08:36.440 align:start position:0%
+This is OCP, after all. And OCP is
+ 
+
+00:08:36.440 --> 00:08:38.230 align:start position:0%
+This is OCP, after all. And OCP is
+innovating<00:08:37.120><c> on</c><00:08:37.280><c> this</c><00:08:37.440><c> new</c><00:08:37.680><c> form</c><00:08:37.919><c> factor</c>
+
+00:08:38.230 --> 00:08:38.240 align:start position:0%
+innovating on this new form factor
+ 
+
+00:08:38.240 --> 00:08:39.750 align:start position:0%
+innovating on this new form factor
+called<00:08:38.560><c> OAC.</c>
+
+00:08:39.750 --> 00:08:39.760 align:start position:0%
+called OAC.
+ 
+
+00:08:39.760 --> 00:08:42.350 align:start position:0%
+called OAC.
+And<00:08:39.880><c> what</c><00:08:40.120><c> we</c><00:08:40.280><c> have</c><00:08:40.599><c> here</c><00:08:41.360><c> is</c><00:08:41.719><c> two</c><00:08:41.919><c> Crescent</c>
+
+00:08:42.350 --> 00:08:42.360 align:start position:0%
+And what we have here is two Crescent
+ 
+
+00:08:42.360 --> 00:08:45.270 align:start position:0%
+And what we have here is two Crescent
+Islands<00:08:43.080><c> on</c><00:08:43.240><c> an</c><00:08:43.400><c> OAC</c><00:08:43.880><c> form</c><00:08:44.160><c> factor</c><00:08:45.000><c> that</c><00:08:45.160><c> we</c>
+
+00:08:45.270 --> 00:08:45.280 align:start position:0%
+Islands on an OAC form factor that we
+ 
+
+00:08:45.280 --> 00:08:48.630 align:start position:0%
+Islands on an OAC form factor that we
+are<00:08:45.440><c> innovating</c><00:08:46.320><c> with</c><00:08:46.520><c> the</c><00:08:46.760><c> OCP</c><00:08:47.280><c> ecosystem.</c>
+
+00:08:48.630 --> 00:08:48.640 align:start position:0%
+are innovating with the OCP ecosystem.
+ 
+
+00:08:48.640 --> 00:08:50.470 align:start position:0%
+are innovating with the OCP ecosystem.
+And<00:08:48.760><c> this</c><00:08:48.920><c> is</c><00:08:49.080><c> one</c><00:08:49.200><c> of</c><00:08:49.280><c> the</c><00:08:49.400><c> first</c><00:08:50.080><c> OAC</c>
+
+00:08:50.470 --> 00:08:50.480 align:start position:0%
+And this is one of the first OAC
+ 
+
+00:08:50.480 --> 00:08:55.950 align:start position:0%
+And this is one of the first OAC
+versions<00:08:51.240><c> we</c><00:08:51.360><c> are</c><00:08:51.440><c> demonstrating.</c>
+
+00:08:55.950 --> 00:08:55.960 align:start position:0%
+ 
+ 
+
+00:08:55.960 --> 00:08:58.190 align:start position:0%
+ 
+Now,<00:08:56.120><c> this</c><00:08:56.400><c> enables</c><00:08:57.120><c> a</c><00:08:57.240><c> whole</c><00:08:57.560><c> range</c><00:08:57.839><c> of</c><00:08:57.960><c> form</c>
+
+00:08:58.190 --> 00:08:58.200 align:start position:0%
+Now, this enables a whole range of form
+ 
+
+00:08:58.200 --> 00:08:59.510 align:start position:0%
+Now, this enables a whole range of form
+factors.
+
+00:08:59.510 --> 00:08:59.520 align:start position:0%
+factors.
+ 
+
+00:08:59.520 --> 00:09:02.470 align:start position:0%
+factors.
+Our<00:08:59.680><c> partners</c><00:09:00.680><c> can</c><00:09:00.920><c> take</c><00:09:01.120><c> the</c><00:09:01.280><c> SOC</c><00:09:02.080><c> and</c><00:09:02.280><c> build</c>
+
+00:09:02.470 --> 00:09:02.480 align:start position:0%
+Our partners can take the SOC and build
+ 
+
+00:09:02.480 --> 00:09:04.150 align:start position:0%
+Our partners can take the SOC and build
+form<00:09:02.720><c> factors.</c>
+
+00:09:04.150 --> 00:09:04.160 align:start position:0%
+form factors.
+ 
+
+00:09:04.160 --> 00:09:06.430 align:start position:0%
+form factors.
+Our<00:09:04.400><c> server</c><00:09:04.800><c> partners</c><00:09:05.560><c> can</c><00:09:05.760><c> take</c><00:09:06.000><c> the</c><00:09:06.120><c> PCI</c>
+
+00:09:06.430 --> 00:09:06.440 align:start position:0%
+Our server partners can take the PCI
+ 
+
+00:09:06.440 --> 00:09:09.710 align:start position:0%
+Our server partners can take the PCI
+Express<00:09:06.839><c> card</c><00:09:07.440><c> and</c><00:09:07.680><c> build</c><00:09:08.120><c> by</c><00:09:08.360><c> eight,</c><00:09:09.080><c> uh,</c><00:09:09.600><c> you</c>
+
+00:09:09.710 --> 00:09:09.720 align:start position:0%
+Express card and build by eight, uh, you
+ 
+
+00:09:09.720 --> 00:09:12.950 align:start position:0%
+Express card and build by eight, uh, you
+know,<00:09:10.160><c> config</c><00:09:11.160><c> or</c><00:09:11.320><c> by</c><00:09:11.520><c> 16</c><00:09:11.960><c> config</c><00:09:12.640><c> server</c>
+
+00:09:12.950 --> 00:09:12.960 align:start position:0%
+know, config or by 16 config server
+ 
+
+00:09:12.960 --> 00:09:14.150 align:start position:0%
+know, config or by 16 config server
+designs.
+
+00:09:14.150 --> 00:09:14.160 align:start position:0%
+designs.
+ 
+
+00:09:14.160 --> 00:09:15.870 align:start position:0%
+designs.
+And<00:09:14.280><c> there</c><00:09:14.400><c> are</c><00:09:14.520><c> even</c><00:09:14.800><c> partners</c><00:09:15.520><c> who</c><00:09:15.600><c> going</c><00:09:15.800><c> to</c>
+
+00:09:15.870 --> 00:09:15.880 align:start position:0%
+And there are even partners who going to
+ 
+
+00:09:15.880 --> 00:09:18.990 align:start position:0%
+And there are even partners who going to
+take<00:09:16.120><c> this</c><00:09:16.560><c> and</c><00:09:16.720><c> build</c><00:09:17.120><c> rack</c><00:09:17.400><c> scale</c><00:09:18.040><c> solutions</c>
+
+00:09:18.990 --> 00:09:19.000 align:start position:0%
+take this and build rack scale solutions
+ 
+
+00:09:19.000 --> 00:09:22.950 align:start position:0%
+take this and build rack scale solutions
+with<00:09:19.480><c> Crescent</c><00:09:19.839><c> Island.</c>
+
+00:09:22.950 --> 00:09:22.960 align:start position:0%
+ 
+ 
+
+00:09:22.960 --> 00:09:24.590 align:start position:0%
+ 
+To<00:09:23.080><c> talk</c><00:09:23.360><c> more</c><00:09:23.560><c> about</c><00:09:23.880><c> this,</c><00:09:24.320><c> I</c><00:09:24.400><c> want</c><00:09:24.560><c> to</c>
+
+00:09:24.590 --> 00:09:24.600 align:start position:0%
+To talk more about this, I want to
+ 
+
+00:09:24.600 --> 00:09:27.070 align:start position:0%
+To talk more about this, I want to
+introduce<00:09:25.000><c> some</c><00:09:25.160><c> partners</c><00:09:25.640><c> on</c><00:09:25.760><c> stage.</c>
+
+00:09:27.070 --> 00:09:27.080 align:start position:0%
+introduce some partners on stage.
+ 
+
+00:09:27.080 --> 00:09:29.270 align:start position:0%
+introduce some partners on stage.
+I'd<00:09:27.200><c> like</c><00:09:27.400><c> to</c><00:09:27.520><c> introduce</c>
+
+00:09:29.270 --> 00:09:29.280 align:start position:0%
+I'd like to introduce
+ 
+
+00:09:29.280 --> 00:09:32.430 align:start position:0%
+I'd like to introduce
+Praveen<00:09:29.600><c> Patel</c><00:09:30.280><c> from</c><00:09:30.480><c> Astera</c><00:09:30.880><c> Labs</c>
+
+00:09:32.430 --> 00:09:32.440 align:start position:0%
+Praveen Patel from Astera Labs
+ 
+
+00:09:32.440 --> 00:09:34.990 align:start position:0%
+Praveen Patel from Astera Labs
+and<00:09:32.600><c> Neil</c><00:09:32.839><c> Mowar</c><00:09:33.560><c> from</c><00:09:33.800><c> Sale</c><00:09:34.120><c> Research,</c><00:09:34.880><c> the</c>
+
+00:09:34.990 --> 00:09:35.000 align:start position:0%
+and Neil Mowar from Sale Research, the
+ 
+
+00:09:35.000 --> 00:09:38.150 align:start position:0%
+and Neil Mowar from Sale Research, the
+the<00:09:35.560><c> of</c><00:09:35.800><c> say</c><00:09:36.120><c> CEO</c><00:09:36.640><c> of</c><00:09:36.760><c> Sale</c><00:09:37.120><c> Research.</c>
+
+00:09:38.150 --> 00:09:38.160 align:start position:0%
+the of say CEO of Sale Research.
+ 
+
+00:09:38.160 --> 00:09:45.030 align:start position:0%
+the of say CEO of Sale Research.
+Let's<00:09:38.360><c> please</c><00:09:38.600><c> give</c><00:09:38.760><c> them</c><00:09:38.920><c> a</c><00:09:38.960><c> broad</c><00:09:39.240><c> welcome.</c>
+
+00:09:45.030 --> 00:09:45.040 align:start position:0%
+ 
+ 
+
+00:09:45.040 --> 00:09:47.150 align:start position:0%
+ 
+Hi<00:09:45.120><c> Praveen,</c><00:09:45.840><c> how</c><00:09:45.960><c> are</c><00:09:46.000><c> you</c><00:09:46.080><c> doing?</c>
+
+00:09:47.150 --> 00:09:47.160 align:start position:0%
+Hi Praveen, how are you doing?
+ 
+
+00:09:47.160 --> 00:09:48.790 align:start position:0%
+Hi Praveen, how are you doing?
+&gt;&gt; Nice<00:09:47.320><c> to</c><00:09:47.400><c> meet</c><00:09:47.600><c> you</c><00:09:47.960><c> again,</c><00:09:48.440><c> you</c><00:09:48.520><c> know,</c>
+
+00:09:48.790 --> 00:09:48.800 align:start position:0%
+&gt;&gt; Nice to meet you again, you know,
+ 
+
+00:09:48.800 --> 00:09:50.750 align:start position:0%
+&gt;&gt; Nice to meet you again, you know,
+&gt;&gt; Hi<00:09:48.880><c> Neil,</c><00:09:49.320><c> great</c><00:09:49.560><c> to</c><00:09:49.640><c> see</c><00:09:49.760><c> you</c><00:09:49.840><c> again.</c>
+
+00:09:50.750 --> 00:09:50.760 align:start position:0%
+&gt;&gt; Hi Neil, great to see you again.
+ 
+
+00:09:50.760 --> 00:09:53.110 align:start position:0%
+&gt;&gt; Hi Neil, great to see you again.
+Um<00:09:51.520><c> so</c><00:09:51.680><c> Praveen,</c><00:09:52.120><c> you</c><00:09:52.240><c> have</c><00:09:52.400><c> some</c><00:09:52.640><c> exciting</c>
+
+00:09:53.110 --> 00:09:53.120 align:start position:0%
+Um so Praveen, you have some exciting
+ 
+
+00:09:53.120 --> 00:09:55.510 align:start position:0%
+Um so Praveen, you have some exciting
+news<00:09:53.440><c> for</c><00:09:53.560><c> this</c><00:09:53.760><c> audience</c><00:09:54.120><c> today.</c>
+
+00:09:55.510 --> 00:09:55.520 align:start position:0%
+news for this audience today.
+ 
+
+00:09:55.520 --> 00:09:55.750 align:start position:0%
+news for this audience today.
+&gt;&gt; Yes,<00:09:55.680><c> sir.</c>
+
+00:09:55.750 --> 00:09:55.760 align:start position:0%
+&gt;&gt; Yes, sir.
+ 
+
+00:09:55.760 --> 00:09:56.670 align:start position:0%
+&gt;&gt; Yes, sir.
+&gt;&gt; You<00:09:55.800><c> want</c><00:09:55.920><c> to</c><00:09:56.000><c> tell</c><00:09:56.160><c> us</c><00:09:56.280><c> more?</c>
+
+00:09:56.670 --> 00:09:56.680 align:start position:0%
+&gt;&gt; You want to tell us more?
+ 
+
+00:09:56.680 --> 00:09:59.630 align:start position:0%
+&gt;&gt; You want to tell us more?
+&gt;&gt; Yes,<00:09:56.960><c> so</c><00:09:57.200><c> I</c><00:09:57.280><c> mean</c><00:09:57.880><c> um</c><00:09:58.080><c> what</c><00:09:58.280><c> you</c><00:09:58.520><c> saw</c><00:09:58.920><c> today</c><00:09:59.320><c> was</c>
+
+00:09:59.630 --> 00:09:59.640 align:start position:0%
+&gt;&gt; Yes, so I mean um what you saw today was
+ 
+
+00:09:59.640 --> 00:10:01.070 align:start position:0%
+&gt;&gt; Yes, so I mean um what you saw today was
+like
+
+00:10:01.070 --> 00:10:01.080 align:start position:0%
+like
+ 
+
+00:10:01.080 --> 00:10:03.110 align:start position:0%
+like
+the<00:10:01.240><c> new</c><00:10:01.680><c> GPU</c><00:10:02.080><c> introductions,</c><00:10:02.720><c> right,</c><00:10:02.960><c> from</c>
+
+00:10:03.110 --> 00:10:03.120 align:start position:0%
+the new GPU introductions, right, from
+ 
+
+00:10:03.120 --> 00:10:05.910 align:start position:0%
+the new GPU introductions, right, from
+Intel.<00:10:03.840><c> And</c><00:10:03.960><c> now</c><00:10:04.560><c> you</c><00:10:04.720><c> got</c><00:10:04.920><c> to</c><00:10:05.000><c> have</c><00:10:05.200><c> a</c><00:10:05.280><c> home</c>
+
+00:10:05.910 --> 00:10:05.920 align:start position:0%
+Intel. And now you got to have a home
+ 
+
+00:10:05.920 --> 00:10:07.630 align:start position:0%
+Intel. And now you got to have a home
+where<00:10:06.200><c> you</c><00:10:06.280><c> could</c><00:10:06.520><c> take</c><00:10:06.760><c> that</c><00:10:06.960><c> advantage</c><00:10:07.560><c> of</c>
+
+00:10:07.630 --> 00:10:07.640 align:start position:0%
+where you could take that advantage of
+ 
+
+00:10:07.640 --> 00:10:10.550 align:start position:0%
+where you could take that advantage of
+the<00:10:07.720><c> GPU</c><00:10:08.520><c> and</c><00:10:08.760><c> create</c><00:10:09.120><c> a</c><00:10:09.200><c> big</c><00:10:09.400><c> cluster.</c>
+
+00:10:10.550 --> 00:10:10.560 align:start position:0%
+the GPU and create a big cluster.
+ 
+
+00:10:10.560 --> 00:10:13.350 align:start position:0%
+the GPU and create a big cluster.
+So<00:10:10.680><c> today</c><00:10:11.200><c> ESTRA-LAB</c><00:10:11.920><c> announced</c><00:10:13.040><c> product</c>
+
+00:10:13.350 --> 00:10:13.360 align:start position:0%
+So today ESTRA-LAB announced product
+ 
+
+00:10:13.360 --> 00:10:16.550 align:start position:0%
+So today ESTRA-LAB announced product
+called<00:10:13.600><c> Orion.</c><00:10:14.520><c> Orion</c><00:10:14.960><c> is</c><00:10:15.280><c> the</c><00:10:15.400><c> product</c><00:10:15.840><c> where</c>
+
+00:10:16.550 --> 00:10:16.560 align:start position:0%
+called Orion. Orion is the product where
+ 
+
+00:10:16.560 --> 00:10:19.110 align:start position:0%
+called Orion. Orion is the product where
+we<00:10:16.720><c> take</c><00:10:17.040><c> our</c><00:10:17.240><c> Scorpio</c><00:10:17.720><c> 2</c><00:10:17.880><c> design</c>
+
+00:10:19.110 --> 00:10:19.120 align:start position:0%
+we take our Scorpio 2 design
+ 
+
+00:10:19.120 --> 00:10:22.190 align:start position:0%
+we take our Scorpio 2 design
+that<00:10:19.280><c> has</c><00:10:19.480><c> a</c><00:10:19.560><c> 320</c><00:10:20.440><c> lane</c><00:10:20.800><c> biggest</c><00:10:21.320><c> radix</c><00:10:21.920><c> in</c><00:10:22.120><c> the</c>
+
+00:10:22.190 --> 00:10:22.200 align:start position:0%
+that has a 320 lane biggest radix in the
+ 
+
+00:10:22.200 --> 00:10:23.510 align:start position:0%
+that has a 320 lane biggest radix in the
+industry
+
+00:10:23.510 --> 00:10:23.520 align:start position:0%
+industry
+ 
+
+00:10:23.520 --> 00:10:26.670 align:start position:0%
+industry
+and<00:10:23.760><c> create</c><00:10:24.160><c> the</c><00:10:24.280><c> PCI</c><00:10:24.880><c> cluster.</c>
+
+00:10:26.670 --> 00:10:26.680 align:start position:0%
+and create the PCI cluster.
+ 
+
+00:10:26.680 --> 00:10:27.870 align:start position:0%
+and create the PCI cluster.
+So<00:10:26.760><c> now</c>
+
+00:10:27.870 --> 00:10:27.880 align:start position:0%
+So now
+ 
+
+00:10:27.880 --> 00:10:29.830 align:start position:0%
+So now
+you<00:10:28.320><c> used</c><00:10:28.560><c> to</c><00:10:28.680><c> you</c><00:10:28.800><c> are</c><00:10:28.920><c> limited</c><00:10:29.440><c> to</c><00:10:29.560><c> have</c>
+
+00:10:29.830 --> 00:10:29.840 align:start position:0%
+you used to you are limited to have
+ 
+
+00:10:29.840 --> 00:10:32.710 align:start position:0%
+you used to you are limited to have
+eight<00:10:30.040><c> GPU</c><00:10:30.400><c> cluster</c><00:10:30.920><c> or</c><00:10:31.120><c> maybe</c><00:10:31.400><c> 16</c><00:10:32.080><c> by</c><00:10:32.320><c> putting</c>
+
+00:10:32.710 --> 00:10:32.720 align:start position:0%
+eight GPU cluster or maybe 16 by putting
+ 
+
+00:10:32.720 --> 00:10:34.670 align:start position:0%
+eight GPU cluster or maybe 16 by putting
+X<00:10:33.040><c> number</c><00:10:33.400><c> of</c><00:10:33.560><c> switches.</c>
+
+00:10:34.670 --> 00:10:34.680 align:start position:0%
+X number of switches.
+ 
+
+00:10:34.680 --> 00:10:37.750 align:start position:0%
+X number of switches.
+Now<00:10:34.960><c> with</c><00:10:35.160><c> the</c><00:10:35.280><c> single</c><00:10:35.680><c> switch</c><00:10:36.120><c> in</c><00:10:36.360><c> the</c><00:10:36.480><c> server</c>
+
+00:10:37.750 --> 00:10:37.760 align:start position:0%
+Now with the single switch in the server
+ 
+
+00:10:37.760 --> 00:10:42.070 align:start position:0%
+Now with the single switch in the server
+you<00:10:37.880><c> could</c><00:10:38.400><c> scale</c><00:10:38.760><c> up</c><00:10:39.000><c> to</c><00:10:39.440><c> 160</c><00:10:40.680><c> GPU</c>
+
+00:10:42.070 --> 00:10:42.080 align:start position:0%
+you could scale up to 160 GPU
+ 
+
+00:10:42.080 --> 00:10:45.350 align:start position:0%
+you could scale up to 160 GPU
+full<00:10:42.320><c> bandwidth</c><00:10:43.040><c> in</c><00:10:43.160><c> the</c><00:10:43.280><c> PCI</c><00:10:43.720><c> mode.</c>
+
+00:10:45.350 --> 00:10:45.360 align:start position:0%
+full bandwidth in the PCI mode.
+ 
+
+00:10:45.360 --> 00:10:47.829 align:start position:0%
+full bandwidth in the PCI mode.
+What<00:10:45.520><c> you</c><00:10:45.640><c> see</c><00:10:45.880><c> that</c><00:10:46.160><c> Intel</c><00:10:46.920><c> announced</c><00:10:47.440><c> today</c>
+
+00:10:47.829 --> 00:10:47.839 align:start position:0%
+What you see that Intel announced today
+ 
+
+00:10:47.839 --> 00:10:50.910 align:start position:0%
+What you see that Intel announced today
+with<00:10:48.040><c> their</c><00:10:48.200><c> GPU,</c><00:10:48.920><c> you</c><00:10:49.080><c> can</c><00:10:49.280><c> do</c><00:10:49.600><c> 80</c><00:10:50.080><c> GPU</c><00:10:50.680><c> in</c><00:10:50.800><c> the</c>
+
+00:10:50.910 --> 00:10:50.920 align:start position:0%
+with their GPU, you can do 80 GPU in the
+ 
+
+00:10:50.920 --> 00:10:52.750 align:start position:0%
+with their GPU, you can do 80 GPU in the
+single<00:10:51.280><c> rack.</c>
+
+00:10:52.750 --> 00:10:52.760 align:start position:0%
+single rack.
+ 
+
+00:10:52.760 --> 00:10:54.310 align:start position:0%
+single rack.
+And<00:10:52.880><c> still</c><00:10:53.120><c> you</c><00:10:53.200><c> don't</c><00:10:53.360><c> have</c><00:10:53.520><c> to</c><00:10:53.600><c> worry</c><00:10:53.800><c> about</c>
+
+00:10:54.310 --> 00:10:54.320 align:start position:0%
+And still you don't have to worry about
+ 
+
+00:10:54.320 --> 00:10:56.430 align:start position:0%
+And still you don't have to worry about
+that<00:10:54.560><c> power</c>
+
+00:10:56.430 --> 00:10:56.440 align:start position:0%
+that power
+ 
+
+00:10:56.440 --> 00:11:01.310 align:start position:0%
+that power
+problem<00:10:56.920><c> because</c><00:10:57.400><c> that</c><00:10:57.600><c> GPU</c><00:10:58.560><c> only</c><00:10:58.800><c> 350</c><00:11:00.120><c> watt.</c>
+
+00:11:01.310 --> 00:11:01.320 align:start position:0%
+problem because that GPU only 350 watt.
+ 
+
+00:11:01.320 --> 00:11:03.350 align:start position:0%
+problem because that GPU only 350 watt.
+&gt;&gt; And<00:11:01.440><c> Praveen,</c><00:11:01.880><c> we've</c><00:11:02.120><c> been</c><00:11:02.440><c> working</c><00:11:02.839><c> closely</c>
+
+00:11:03.350 --> 00:11:03.360 align:start position:0%
+&gt;&gt; And Praveen, we've been working closely
+ 
+
+00:11:03.360 --> 00:11:06.750 align:start position:0%
+&gt;&gt; And Praveen, we've been working closely
+on<00:11:03.520><c> this</c><00:11:04.280><c> and</c><00:11:04.680><c> we</c><00:11:04.839><c> have</c><00:11:05.080><c> some</c><00:11:05.800><c> things</c><00:11:06.160><c> running</c>
+
+00:11:06.750 --> 00:11:06.760 align:start position:0%
+on this and we have some things running
+ 
+
+00:11:06.760 --> 00:11:08.750 align:start position:0%
+on this and we have some things running
+and<00:11:06.960><c> there's</c><00:11:07.120><c> some</c><00:11:07.320><c> data</c><00:11:07.680><c> from</c><00:11:07.880><c> the</c><00:11:08.480><c> from</c><00:11:08.680><c> the</c>
+
+00:11:08.750 --> 00:11:08.760 align:start position:0%
+and there's some data from the from the
+ 
+
+00:11:08.760 --> 00:11:10.870 align:start position:0%
+and there's some data from the from the
+technical<00:11:09.520><c> work</c><00:11:09.800><c> that</c><00:11:10.000><c> we've</c><00:11:10.160><c> done.</c><00:11:10.640><c> Do</c><00:11:10.760><c> we</c>
+
+00:11:10.870 --> 00:11:10.880 align:start position:0%
+technical work that we've done. Do we
+ 
+
+00:11:10.880 --> 00:11:12.270 align:start position:0%
+technical work that we've done. Do we
+want<00:11:11.080><c> to</c><00:11:11.160><c> share</c><00:11:11.320><c> it</c><00:11:11.440><c> with</c><00:11:11.600><c> the</c><00:11:11.680><c> team?</c>
+
+00:11:12.270 --> 00:11:12.280 align:start position:0%
+want to share it with the team?
+ 
+
+00:11:12.280 --> 00:11:14.150 align:start position:0%
+want to share it with the team?
+&gt;&gt; I<00:11:12.520><c> think</c><00:11:12.800><c> so.</c><00:11:12.920><c> This</c><00:11:13.160><c> is</c><00:11:13.280><c> the</c><00:11:13.360><c> perfect</c><00:11:13.760><c> timing</c>
+
+00:11:14.150 --> 00:11:14.160 align:start position:0%
+&gt;&gt; I think so. This is the perfect timing
+ 
+
+00:11:14.160 --> 00:11:16.630 align:start position:0%
+&gt;&gt; I think so. This is the perfect timing
+because<00:11:14.520><c> we</c><00:11:14.640><c> want</c><00:11:14.920><c> to</c><00:11:15.000><c> make</c><00:11:15.240><c> sure</c><00:11:15.480><c> that</c><00:11:16.440><c> team</c>
+
+00:11:16.630 --> 00:11:16.640 align:start position:0%
+because we want to make sure that team
+ 
+
+00:11:16.640 --> 00:11:18.790 align:start position:0%
+because we want to make sure that team
+understands<00:11:17.280><c> the</c><00:11:17.400><c> value</c><00:11:17.960><c> of</c><00:11:18.160><c> this</c><00:11:18.440><c> new</c>
+
+00:11:18.790 --> 00:11:18.800 align:start position:0%
+understands the value of this new
+ 
+
+00:11:18.800 --> 00:11:21.070 align:start position:0%
+understands the value of this new
+announcement<00:11:19.520><c> from</c><00:11:19.680><c> ESTRA-LAB</c>
+
+00:11:21.070 --> 00:11:21.080 align:start position:0%
+announcement from ESTRA-LAB
+ 
+
+00:11:21.080 --> 00:11:24.270 align:start position:0%
+announcement from ESTRA-LAB
+along<00:11:21.680><c> with</c><00:11:21.960><c> Intel</c><00:11:22.760><c> as</c><00:11:22.960><c> a</c><00:11:23.040><c> complete</c><00:11:23.560><c> product</c>
+
+00:11:24.270 --> 00:11:24.280 align:start position:0%
+along with Intel as a complete product
+ 
+
+00:11:24.280 --> 00:11:27.070 align:start position:0%
+along with Intel as a complete product
+along<00:11:24.640><c> with</c><00:11:24.839><c> the</c><00:11:25.160><c> our</c><00:11:25.800><c> customer</c><00:11:26.400><c> from</c><00:11:26.720><c> Scale</c>
+
+00:11:27.070 --> 00:11:27.080 align:start position:0%
+along with the our customer from Scale
+ 
+
+00:11:27.080 --> 00:11:31.030 align:start position:0%
+along with the our customer from Scale
+Research<00:11:27.520><c> also.</c><00:11:27.960><c> So</c><00:11:28.839><c> as</c><00:11:29.040><c> you</c><00:11:29.120><c> can</c><00:11:29.320><c> see</c><00:11:29.560><c> that</c>
+
+00:11:31.030 --> 00:11:31.040 align:start position:0%
+Research also. So as you can see that
+ 
+
+00:11:31.040 --> 00:11:33.670 align:start position:0%
+Research also. So as you can see that
+we<00:11:31.200><c> ran</c><00:11:31.760><c> this</c><00:11:32.000><c> is</c><00:11:32.240><c> the</c><00:11:32.400><c> real</c><00:11:33.000><c> measurement</c>
+
+00:11:33.670 --> 00:11:33.680 align:start position:0%
+we ran this is the real measurement
+ 
+
+00:11:33.680 --> 00:11:35.910 align:start position:0%
+we ran this is the real measurement
+data.<00:11:34.000><c> It's</c><00:11:34.240><c> not</c><00:11:34.640><c> something</c><00:11:35.200><c> that</c><00:11:35.560><c> hey,</c><00:11:35.760><c> we</c>
+
+00:11:35.910 --> 00:11:35.920 align:start position:0%
+data. It's not something that hey, we
+ 
+
+00:11:35.920 --> 00:11:38.150 align:start position:0%
+data. It's not something that hey, we
+did<00:11:36.120><c> the</c><00:11:36.200><c> analytics.</c><00:11:37.480><c> It's</c><00:11:37.720><c> the</c><00:11:37.800><c> real</c>
+
+00:11:38.150 --> 00:11:38.160 align:start position:0%
+did the analytics. It's the real
+ 
+
+00:11:38.160 --> 00:11:41.750 align:start position:0%
+did the analytics. It's the real
+measurement<00:11:38.680><c> data</c><00:11:39.520><c> by</c><00:11:39.680><c> using</c><00:11:40.200><c> all</c><00:11:40.440><c> radios</c>
+
+00:11:41.750 --> 00:11:41.760 align:start position:0%
+measurement data by using all radios
+ 
+
+00:11:41.760 --> 00:11:44.670 align:start position:0%
+measurement data by using all radios
+all<00:11:42.320><c> all</c><00:11:42.560><c> to</c><00:11:42.760><c> all</c><00:11:42.960><c> communications.</c><00:11:44.400><c> And</c><00:11:44.560><c> as</c>
+
+00:11:44.670 --> 00:11:44.680 align:start position:0%
+all all to all communications. And as
+ 
+
+00:11:44.680 --> 00:11:47.790 align:start position:0%
+all all to all communications. And as
+you<00:11:44.760><c> can</c><00:11:44.920><c> see</c><00:11:45.080><c> that</c><00:11:45.560><c> you</c><00:11:45.840><c> can</c><00:11:46.080><c> get</c><00:11:46.360><c> 45%</c>
+
+00:11:47.790 --> 00:11:47.800 align:start position:0%
+you can see that you can get 45%
+ 
+
+00:11:47.800 --> 00:11:51.110 align:start position:0%
+you can see that you can get 45%
+improvement<00:11:49.120><c> by</c><00:11:49.240><c> utilizing</c><00:11:50.080><c> this</c><00:11:50.320><c> new</c>
+
+00:11:51.110 --> 00:11:51.120 align:start position:0%
+improvement by utilizing this new
+ 
+
+00:11:51.120 --> 00:11:54.230 align:start position:0%
+improvement by utilizing this new
+architecture<00:11:52.240><c> with</c><00:11:52.600><c> Intel</c><00:11:53.000><c> GPU.</c>
+
+00:11:54.230 --> 00:11:54.240 align:start position:0%
+architecture with Intel GPU.
+ 
+
+00:11:54.240 --> 00:11:56.910 align:start position:0%
+architecture with Intel GPU.
+&gt;&gt; So<00:11:54.440><c> PCI</c><00:11:54.840><c> Express</c><00:11:55.280><c> gives</c><00:11:55.560><c> us</c><00:11:55.720><c> a</c><00:11:55.800><c> scalability</c>
+
+00:11:56.910 --> 00:11:56.920 align:start position:0%
+&gt;&gt; So PCI Express gives us a scalability
+ 
+
+00:11:56.920 --> 00:12:00.950 align:start position:0%
+&gt;&gt; So PCI Express gives us a scalability
+and<00:11:57.280><c> flexibility</c><00:11:58.680><c> that's</c><00:11:58.920><c> so</c><00:11:59.160><c> easy</c><00:11:59.480><c> to</c><00:11:59.640><c> adopt</c>
+
+00:12:00.950 --> 00:12:00.960 align:start position:0%
+and flexibility that's so easy to adopt
+ 
+
+00:12:00.960 --> 00:12:03.670 align:start position:0%
+and flexibility that's so easy to adopt
+that<00:12:01.160><c> this</c><00:12:01.360><c> becomes</c><00:12:01.800><c> a</c><00:12:01.880><c> very</c><00:12:02.240><c> low</c><00:12:02.440><c> friction.</c>
+
+00:12:03.670 --> 00:12:03.680 align:start position:0%
+that this becomes a very low friction.
+ 
+
+00:12:03.680 --> 00:12:05.150 align:start position:0%
+that this becomes a very low friction.
+Now<00:12:03.880><c> Neil,</c>
+
+00:12:05.150 --> 00:12:05.160 align:start position:0%
+Now Neil,
+ 
+
+00:12:05.160 --> 00:12:08.190 align:start position:0%
+Now Neil,
+you've<00:12:05.440><c> been</c><00:12:05.880><c> at</c><00:12:06.040><c> the</c><00:12:06.240><c> spearhead</c><00:12:07.200><c> of</c><00:12:07.400><c> some</c><00:12:07.920><c> Neo</c>
+
+00:12:08.190 --> 00:12:08.200 align:start position:0%
+you've been at the spearhead of some Neo
+ 
+
+00:12:08.200 --> 00:12:10.910 align:start position:0%
+you've been at the spearhead of some Neo
+Cloud,<00:12:08.840><c> you</c><00:12:08.920><c> know,</c><00:12:09.080><c> deployments</c><00:12:10.280><c> and</c>
+
+00:12:10.910 --> 00:12:10.920 align:start position:0%
+Cloud, you know, deployments and
+ 
+
+00:12:10.920 --> 00:12:13.150 align:start position:0%
+Cloud, you know, deployments and
+building<00:12:11.240><c> some</c><00:12:11.560><c> very</c><00:12:11.880><c> very</c><00:12:12.200><c> innovative</c>
+
+00:12:13.150 --> 00:12:13.160 align:start position:0%
+building some very very innovative
+ 
+
+00:12:13.160 --> 00:12:14.870 align:start position:0%
+building some very very innovative
+stuff.<00:12:13.520><c> I've</c><00:12:13.760><c> read</c><00:12:13.960><c> your</c><00:12:14.120><c> article</c><00:12:14.600><c> where</c><00:12:14.760><c> you</c>
+
+00:12:14.870 --> 00:12:14.880 align:start position:0%
+stuff. I've read your article where you
+ 
+
+00:12:14.880 --> 00:12:16.350 align:start position:0%
+stuff. I've read your article where you
+want<00:12:15.000><c> to</c><00:12:15.080><c> bring</c><00:12:15.240><c> the</c><00:12:15.360><c> cost</c><00:12:15.720><c> of</c><00:12:15.840><c> inferencing</c>
+
+00:12:16.350 --> 00:12:16.360 align:start position:0%
+want to bring the cost of inferencing
+ 
+
+00:12:16.360 --> 00:12:18.230 align:start position:0%
+want to bring the cost of inferencing
+down<00:12:16.600><c> by</c><00:12:16.760><c> 1,000</c><00:12:17.320><c> X.</c>
+
+00:12:18.230 --> 00:12:18.240 align:start position:0%
+down by 1,000 X.
+ 
+
+00:12:18.240 --> 00:12:20.110 align:start position:0%
+down by 1,000 X.
+Now<00:12:18.440><c> how</c><00:12:18.600><c> do</c><00:12:18.760><c> these</c><00:12:18.960><c> solutions</c><00:12:19.560><c> help</c><00:12:19.800><c> you</c><00:12:19.960><c> in</c>
+
+00:12:20.110 --> 00:12:20.120 align:start position:0%
+Now how do these solutions help you in
+ 
+
+00:12:20.120 --> 00:12:21.470 align:start position:0%
+Now how do these solutions help you in
+that<00:12:20.320><c> journey?</c>
+
+00:12:21.470 --> 00:12:21.480 align:start position:0%
+that journey?
+ 
+
+00:12:21.480 --> 00:12:23.310 align:start position:0%
+that journey?
+&gt;&gt; Yeah,<00:12:21.760><c> I</c><00:12:21.840><c> mean,</c><00:12:22.240><c> that's</c><00:12:22.400><c> a</c><00:12:22.440><c> very</c><00:12:22.640><c> tall</c><00:12:22.880><c> order.</c>
+
+00:12:23.310 --> 00:12:23.320 align:start position:0%
+&gt;&gt; Yeah, I mean, that's a very tall order.
+ 
+
+00:12:23.320 --> 00:12:25.430 align:start position:0%
+&gt;&gt; Yeah, I mean, that's a very tall order.
+We<00:12:23.560><c> have</c><00:12:23.720><c> a</c><00:12:23.760><c> lot</c><00:12:24.000><c> of</c><00:12:24.120><c> room</c><00:12:24.440><c> to</c><00:12:24.560><c> improve</c><00:12:25.080><c> on</c><00:12:25.240><c> the</c>
+
+00:12:25.430 --> 00:12:25.440 align:start position:0%
+We have a lot of room to improve on the
+ 
+
+00:12:25.440 --> 00:12:28.310 align:start position:0%
+We have a lot of room to improve on the
+cost<00:12:25.800><c> and</c><00:12:25.880><c> tokenomics</c><00:12:26.760><c> of</c><00:12:27.160><c> inference</c><00:12:27.600><c> today.</c>
+
+00:12:28.310 --> 00:12:28.320 align:start position:0%
+cost and tokenomics of inference today.
+ 
+
+00:12:28.320 --> 00:12:29.790 align:start position:0%
+cost and tokenomics of inference today.
+And<00:12:28.760><c> of</c><00:12:28.920><c> course,</c><00:12:29.160><c> we've</c><00:12:29.280><c> been</c><00:12:29.360><c> very</c><00:12:29.520><c> lucky</c><00:12:29.720><c> to</c>
+
+00:12:29.790 --> 00:12:29.800 align:start position:0%
+And of course, we've been very lucky to
+ 
+
+00:12:29.800 --> 00:12:31.350 align:start position:0%
+And of course, we've been very lucky to
+work<00:12:29.960><c> with</c><00:12:30.080><c> Intel</c><00:12:30.520><c> on</c><00:12:30.680><c> the</c><00:12:30.760><c> chip</c><00:12:30.960><c> itself.</c>
+
+00:12:31.350 --> 00:12:31.360 align:start position:0%
+work with Intel on the chip itself.
+ 
+
+00:12:31.360 --> 00:12:32.990 align:start position:0%
+work with Intel on the chip itself.
+Crescent<00:12:31.720><c> Island</c><00:12:32.040><c> we're</c><00:12:32.240><c> big</c><00:12:32.440><c> fans</c><00:12:32.760><c> of</c><00:12:32.880><c> and</c>
+
+00:12:32.990 --> 00:12:33.000 align:start position:0%
+Crescent Island we're big fans of and
+ 
+
+00:12:33.000 --> 00:12:34.790 align:start position:0%
+Crescent Island we're big fans of and
+we're<00:12:33.160><c> excited</c><00:12:33.600><c> to</c><00:12:33.680><c> be</c><00:12:34.120><c> a</c><00:12:34.200><c> launch</c><00:12:34.480><c> partner</c>
+
+00:12:34.790 --> 00:12:34.800 align:start position:0%
+we're excited to be a launch partner
+ 
+
+00:12:34.800 --> 00:12:37.110 align:start position:0%
+we're excited to be a launch partner
+customer<00:12:35.480><c> for</c><00:12:35.600><c> Crescent</c><00:12:35.880><c> Island.</c><00:12:36.520><c> But</c><00:12:36.960><c> as</c>
+
+00:12:37.110 --> 00:12:37.120 align:start position:0%
+customer for Crescent Island. But as
+ 
+
+00:12:37.120 --> 00:12:39.070 align:start position:0%
+customer for Crescent Island. But as
+we've<00:12:37.280><c> said</c><00:12:37.600><c> earlier</c><00:12:37.880><c> in</c><00:12:37.960><c> this</c><00:12:38.120><c> talk,</c><00:12:38.720><c> it's</c><00:12:38.920><c> no</c>
+
+00:12:39.070 --> 00:12:39.080 align:start position:0%
+we've said earlier in this talk, it's no
+ 
+
+00:12:39.080 --> 00:12:40.790 align:start position:0%
+we've said earlier in this talk, it's no
+longer<00:12:39.440><c> our</c><00:12:39.560><c> job</c><00:12:39.880><c> to</c><00:12:39.960><c> program</c><00:12:40.280><c> one</c><00:12:40.480><c> chip</c><00:12:40.680><c> at</c><00:12:40.760><c> a</c>
+
+00:12:40.790 --> 00:12:40.800 align:start position:0%
+longer our job to program one chip at a
+ 
+
+00:12:40.800 --> 00:12:41.790 align:start position:0%
+longer our job to program one chip at a
+time.
+
+00:12:41.790 --> 00:12:41.800 align:start position:0%
+time.
+ 
+
+00:12:41.800 --> 00:12:43.950 align:start position:0%
+time.
+The<00:12:41.960><c> job</c><00:12:42.360><c> of</c><00:12:42.680><c> a</c><00:12:42.800><c> chip</c><00:12:43.040><c> architect</c><00:12:43.560><c> and</c><00:12:43.680><c> the</c><00:12:43.720><c> job</c>
+
+00:12:43.950 --> 00:12:43.960 align:start position:0%
+The job of a chip architect and the job
+ 
+
+00:12:43.960 --> 00:12:46.150 align:start position:0%
+The job of a chip architect and the job
+of<00:12:44.080><c> a</c><00:12:44.160><c> model</c><00:12:45.040><c> mapping</c><00:12:45.640><c> from</c><00:12:45.839><c> a</c><00:12:45.880><c> software</c>
+
+00:12:46.150 --> 00:12:46.160 align:start position:0%
+of a model mapping from a software
+ 
+
+00:12:46.160 --> 00:12:48.110 align:start position:0%
+of a model mapping from a software
+company<00:12:46.400><c> like</c><00:12:46.600><c> ours</c><00:12:47.200><c> is</c><00:12:47.400><c> to</c><00:12:47.520><c> scale</c><00:12:47.960><c> up</c>
+
+00:12:48.110 --> 00:12:48.120 align:start position:0%
+company like ours is to scale up
+ 
+
+00:12:48.120 --> 00:12:51.390 align:start position:0%
+company like ours is to scale up
+efficiently<00:12:48.880><c> to</c><00:12:49.000><c> use</c><00:12:49.400><c> eight</c><00:12:49.560><c> GPUs,</c><00:12:50.480><c> 64</c><00:12:50.960><c> GPUs,</c>
+
+00:12:51.390 --> 00:12:51.400 align:start position:0%
+efficiently to use eight GPUs, 64 GPUs,
+ 
+
+00:12:51.400 --> 00:12:53.630 align:start position:0%
+efficiently to use eight GPUs, 64 GPUs,
+even<00:12:51.640><c> 80</c><00:12:51.839><c> GPUs.</c><00:12:52.839><c> And</c><00:12:52.960><c> that's</c><00:12:53.200><c> where</c><00:12:53.440><c> we've</c>
+
+00:12:53.630 --> 00:12:53.640 align:start position:0%
+even 80 GPUs. And that's where we've
+ 
+
+00:12:53.640 --> 00:12:56.110 align:start position:0%
+even 80 GPUs. And that's where we've
+been<00:12:53.760><c> working</c><00:12:54.000><c> with</c><00:12:54.120><c> Astera</c><00:12:54.880><c> to</c><00:12:55.040><c> get</c><00:12:55.320><c> PCIE</c><00:12:56.000><c> to</c>
+
+00:12:56.110 --> 00:12:56.120 align:start position:0%
+been working with Astera to get PCIE to
+ 
+
+00:12:56.120 --> 00:12:58.270 align:start position:0%
+been working with Astera to get PCIE to
+be<00:12:56.560><c> the</c><00:12:56.680><c> great</c><00:12:56.960><c> scale</c><00:12:57.200><c> of</c><00:12:57.280><c> domain</c><00:12:57.600><c> we</c><00:12:57.720><c> need</c><00:12:58.160><c> for</c>
+
+00:12:58.270 --> 00:12:58.280 align:start position:0%
+be the great scale of domain we need for
+ 
+
+00:12:58.280 --> 00:12:59.430 align:start position:0%
+be the great scale of domain we need for
+inference.
+
+00:12:59.430 --> 00:12:59.440 align:start position:0%
+inference.
+ 
+
+00:12:59.440 --> 00:13:00.950 align:start position:0%
+inference.
+Now<00:12:59.800><c> there's</c><00:12:59.960><c> a</c><00:13:00.000><c> couple</c><00:13:00.240><c> factors</c><00:13:00.640><c> here</c><00:13:00.800><c> that</c>
+
+00:13:00.950 --> 00:13:00.960 align:start position:0%
+Now there's a couple factors here that
+ 
+
+00:13:00.960 --> 00:13:02.950 align:start position:0%
+Now there's a couple factors here that
+really<00:13:01.200><c> make</c><00:13:01.680><c> the</c><00:13:01.880><c> partnership</c><00:13:02.280><c> between</c><00:13:02.600><c> us,</c>
+
+00:13:02.950 --> 00:13:02.960 align:start position:0%
+really make the partnership between us,
+ 
+
+00:13:02.960 --> 00:13:04.829 align:start position:0%
+really make the partnership between us,
+Intel,<00:13:03.320><c> and</c><00:13:03.520><c> Astera</c><00:13:03.920><c> work</c><00:13:04.240><c> extraordinarily</c>
+
+00:13:04.829 --> 00:13:04.839 align:start position:0%
+Intel, and Astera work extraordinarily
+ 
+
+00:13:04.839 --> 00:13:07.030 align:start position:0%
+Intel, and Astera work extraordinarily
+well.<00:13:05.440><c> The</c><00:13:05.520><c> first</c><00:13:05.960><c> is</c><00:13:06.080><c> that</c><00:13:06.280><c> scale</c><00:13:06.520><c> up</c><00:13:06.600><c> domains</c>
+
+00:13:07.030 --> 00:13:07.040 align:start position:0%
+well. The first is that scale up domains
+ 
+
+00:13:07.040 --> 00:13:09.470 align:start position:0%
+well. The first is that scale up domains
+often<00:13:07.440><c> discuss</c><00:13:08.000><c> bandwidth,</c><00:13:08.600><c> meaning</c><00:13:08.960><c> peak</c>
+
+00:13:09.470 --> 00:13:09.480 align:start position:0%
+often discuss bandwidth, meaning peak
+ 
+
+00:13:09.480 --> 00:13:11.590 align:start position:0%
+often discuss bandwidth, meaning peak
+data<00:13:09.720><c> movement</c><00:13:10.040><c> between</c><00:13:10.640><c> our</c><00:13:10.720><c> accelerators</c>
+
+00:13:11.590 --> 00:13:11.600 align:start position:0%
+data movement between our accelerators
+ 
+
+00:13:11.600 --> 00:13:13.390 align:start position:0%
+data movement between our accelerators
+as<00:13:11.760><c> the</c><00:13:11.880><c> primary</c><00:13:12.200><c> metric</c><00:13:12.520><c> of</c><00:13:12.640><c> interest.</c><00:13:13.280><c> But</c>
+
+00:13:13.390 --> 00:13:13.400 align:start position:0%
+as the primary metric of interest. But
+ 
+
+00:13:13.400 --> 00:13:14.670 align:start position:0%
+as the primary metric of interest. But
+for<00:13:13.560><c> inference,</c><00:13:14.040><c> it's</c><00:13:14.200><c> actually</c><00:13:14.440><c> quite</c>
+
+00:13:14.670 --> 00:13:14.680 align:start position:0%
+for inference, it's actually quite
+ 
+
+00:13:14.680 --> 00:13:16.670 align:start position:0%
+for inference, it's actually quite
+different.<00:13:15.240><c> We</c><00:13:15.360><c> care</c><00:13:15.560><c> quite</c><00:13:15.760><c> a</c><00:13:15.800><c> bit</c><00:13:15.920><c> about</c><00:13:16.520><c> the</c>
+
+00:13:16.670 --> 00:13:16.680 align:start position:0%
+different. We care quite a bit about the
+ 
+
+00:13:16.680 --> 00:13:18.790 align:start position:0%
+different. We care quite a bit about the
+latency<00:13:17.200><c> of</c><00:13:17.360><c> small</c><00:13:17.640><c> messages.</c><00:13:18.480><c> And</c><00:13:18.600><c> this</c><00:13:18.720><c> is</c>
+
+00:13:18.790 --> 00:13:18.800 align:start position:0%
+latency of small messages. And this is
+ 
+
+00:13:18.800 --> 00:13:20.190 align:start position:0%
+latency of small messages. And this is
+one<00:13:18.880><c> of</c><00:13:18.960><c> the</c><00:13:19.000><c> areas</c><00:13:19.320><c> where</c><00:13:19.440><c> Astera's</c><00:13:19.920><c> switch</c>
+
+00:13:20.190 --> 00:13:20.200 align:start position:0%
+one of the areas where Astera's switch
+ 
+
+00:13:20.200 --> 00:13:22.870 align:start position:0%
+one of the areas where Astera's switch
+design<00:13:21.000><c> is</c><00:13:21.160><c> able</c><00:13:21.320><c> to</c><00:13:21.400><c> shave</c><00:13:21.720><c> off</c><00:13:22.280><c> microseconds</c>
+
+00:13:22.870 --> 00:13:22.880 align:start position:0%
+design is able to shave off microseconds
+ 
+
+00:13:22.880 --> 00:13:24.910 align:start position:0%
+design is able to shave off microseconds
+and<00:13:23.040><c> even</c><00:13:23.240><c> nanoseconds</c><00:13:23.839><c> in</c><00:13:23.920><c> some</c><00:13:24.080><c> cases</c><00:13:24.800><c> to</c>
+
+00:13:24.910 --> 00:13:24.920 align:start position:0%
+and even nanoseconds in some cases to
+ 
+
+00:13:24.920 --> 00:13:26.710 align:start position:0%
+and even nanoseconds in some cases to
+make<00:13:25.080><c> sure</c><00:13:25.280><c> that</c><00:13:25.640><c> small</c><00:13:25.920><c> messages,</c><00:13:26.440><c> which</c><00:13:26.600><c> we</c>
+
+00:13:26.710 --> 00:13:26.720 align:start position:0%
+make sure that small messages, which we
+ 
+
+00:13:26.720 --> 00:13:28.430 align:start position:0%
+make sure that small messages, which we
+send<00:13:27.040><c> all</c><00:13:27.240><c> the</c><00:13:27.360><c> time</c><00:13:27.560><c> in</c><00:13:27.680><c> inference,</c><00:13:28.240><c> can</c>
+
+00:13:28.430 --> 00:13:28.440 align:start position:0%
+send all the time in inference, can
+ 
+
+00:13:28.440 --> 00:13:30.710 align:start position:0%
+send all the time in inference, can
+happen<00:13:28.800><c> quickly,</c><00:13:29.200><c> reliably,</c><00:13:30.280><c> and</c><00:13:30.400><c> allow</c><00:13:30.600><c> us</c>
+
+00:13:30.710 --> 00:13:30.720 align:start position:0%
+happen quickly, reliably, and allow us
+ 
+
+00:13:30.720 --> 00:13:33.230 align:start position:0%
+happen quickly, reliably, and allow us
+to<00:13:30.800><c> scale</c><00:13:31.160><c> up</c><00:13:31.640><c> modern</c><00:13:32.040><c> large</c><00:13:32.320><c> models</c><00:13:32.920><c> like</c><00:13:33.080><c> Kim</c>
+
+00:13:33.230 --> 00:13:33.240 align:start position:0%
+to scale up modern large models like Kim
+ 
+
+00:13:33.240 --> 00:13:35.390 align:start position:0%
+to scale up modern large models like Kim
+K3,<00:13:33.720><c> a</c><00:13:33.800><c> huge</c><00:13:34.080><c> mixture</c><00:13:34.360><c> of</c><00:13:34.440><c> experts</c><00:13:34.720><c> model.</c><00:13:35.320><c> We</c>
+
+00:13:35.390 --> 00:13:35.400 align:start position:0%
+K3, a huge mixture of experts model. We
+ 
+
+00:13:35.400 --> 00:13:36.990 align:start position:0%
+K3, a huge mixture of experts model. We
+can<00:13:35.520><c> scale</c><00:13:35.760><c> that</c><00:13:35.880><c> really</c><00:13:36.080><c> efficiently</c><00:13:36.760><c> on</c><00:13:36.880><c> the</c>
+
+00:13:36.990 --> 00:13:37.000 align:start position:0%
+can scale that really efficiently on the
+ 
+
+00:13:37.000 --> 00:13:38.750 align:start position:0%
+can scale that really efficiently on the
+Astera<00:13:37.320><c> Labs</c><00:13:37.560><c> fabric.</c>
+
+00:13:38.750 --> 00:13:38.760 align:start position:0%
+Astera Labs fabric.
+ 
+
+00:13:38.760 --> 00:13:40.150 align:start position:0%
+Astera Labs fabric.
+In<00:13:38.840><c> addition</c><00:13:39.120><c> to</c><00:13:39.200><c> that,</c><00:13:39.760><c> Astera</c><00:13:40.040><c> has</c>
+
+00:13:40.150 --> 00:13:40.160 align:start position:0%
+In addition to that, Astera has
+ 
+
+00:13:40.160 --> 00:13:42.390 align:start position:0%
+In addition to that, Astera has
+innovated<00:13:40.520><c> even</c><00:13:40.720><c> further</c><00:13:41.160><c> and</c><00:13:41.320><c> brought</c><00:13:41.600><c> some</c>
+
+00:13:42.390 --> 00:13:42.400 align:start position:0%
+innovated even further and brought some
+ 
+
+00:13:42.400 --> 00:13:43.990 align:start position:0%
+innovated even further and brought some
+really<00:13:42.640><c> critical</c><00:13:42.920><c> new</c><00:13:43.040><c> features</c><00:13:43.480><c> such</c><00:13:43.680><c> as</c><00:13:43.920><c> the</c>
+
+00:13:43.990 --> 00:13:44.000 align:start position:0%
+really critical new features such as the
+ 
+
+00:13:44.000 --> 00:13:46.070 align:start position:0%
+really critical new features such as the
+ability<00:13:44.720><c> to</c>
+
+00:13:46.070 --> 00:13:46.080 align:start position:0%
+ability to
+ 
+
+00:13:46.080 --> 00:13:48.550 align:start position:0%
+ability to
+cast<00:13:46.520><c> data</c><00:13:46.880><c> from</c><00:13:47.120><c> one</c><00:13:47.240><c> accelerator</c><00:13:47.760><c> to</c><00:13:48.120><c> other</c>
+
+00:13:48.550 --> 00:13:48.560 align:start position:0%
+cast data from one accelerator to other
+ 
+
+00:13:48.560 --> 00:13:50.390 align:start position:0%
+cast data from one accelerator to other
+accelerators<00:13:49.040><c> in</c><00:13:49.120><c> the</c><00:13:49.200><c> same</c><00:13:49.400><c> domain</c><00:13:50.120><c> really</c>
+
+00:13:50.390 --> 00:13:50.400 align:start position:0%
+accelerators in the same domain really
+ 
+
+00:13:50.400 --> 00:13:52.190 align:start position:0%
+accelerators in the same domain really
+efficiently<00:13:50.800><c> without</c><00:13:51.200><c> amplifying</c><00:13:51.680><c> data.</c>
+
+00:13:52.190 --> 00:13:52.200 align:start position:0%
+efficiently without amplifying data.
+ 
+
+00:13:52.200 --> 00:13:53.670 align:start position:0%
+efficiently without amplifying data.
+They<00:13:52.280><c> call</c><00:13:52.440><c> it</c><00:13:52.560><c> HyperCast,</c><00:13:53.160><c> and</c><00:13:53.280><c> we're</c><00:13:53.440><c> really</c>
+
+00:13:53.670 --> 00:13:53.680 align:start position:0%
+They call it HyperCast, and we're really
+ 
+
+00:13:53.680 --> 00:13:55.150 align:start position:0%
+They call it HyperCast, and we're really
+excited<00:13:53.920><c> to</c><00:13:53.960><c> be</c><00:13:54.040><c> working</c><00:13:54.320><c> with</c><00:13:54.440><c> them</c><00:13:54.840><c> on</c><00:13:55.000><c> this</c>
+
+00:13:55.150 --> 00:13:55.160 align:start position:0%
+excited to be working with them on this
+ 
+
+00:13:55.160 --> 00:13:57.110 align:start position:0%
+excited to be working with them on this
+new<00:13:55.280><c> feature.</c><00:13:56.040><c> PCIe</c><00:13:56.520><c> is</c><00:13:56.640><c> going</c><00:13:56.760><c> to</c><00:13:56.800><c> be</c><00:13:56.880><c> a</c><00:13:56.920><c> great</c>
+
+00:13:57.110 --> 00:13:57.120 align:start position:0%
+new feature. PCIe is going to be a great
+ 
+
+00:13:57.120 --> 00:13:58.590 align:start position:0%
+new feature. PCIe is going to be a great
+scale<00:13:57.360><c> of</c><00:13:57.440><c> domain</c><00:13:57.800><c> for</c><00:13:57.920><c> the</c><00:13:58.040><c> inference</c><00:13:58.440><c> that</c>
+
+00:13:58.590 --> 00:13:58.600 align:start position:0%
+scale of domain for the inference that
+ 
+
+00:13:58.600 --> 00:13:59.670 align:start position:0%
+scale of domain for the inference that
+we<00:13:58.680><c> do.</c>
+
+00:13:59.670 --> 00:13:59.680 align:start position:0%
+we do.
+ 
+
+00:13:59.680 --> 00:14:01.310 align:start position:0%
+we do.
+&gt;&gt; So,<00:13:59.840><c> Neil,</c>
+
+00:14:01.310 --> 00:14:01.320 align:start position:0%
+&gt;&gt; So, Neil,
+ 
+
+00:14:01.320 --> 00:14:03.390 align:start position:0%
+&gt;&gt; So, Neil,
+is<00:14:01.480><c> it</c><00:14:01.600><c> fair</c><00:14:01.800><c> to</c><00:14:01.920><c> say</c><00:14:02.160><c> that</c><00:14:02.480><c> agentic</c><00:14:03.000><c> inference</c>
+
+00:14:03.390 --> 00:14:03.400 align:start position:0%
+is it fair to say that agentic inference
+ 
+
+00:14:03.400 --> 00:14:05.830 align:start position:0%
+is it fair to say that agentic inference
+is<00:14:03.560><c> actually</c><00:14:03.880><c> a</c><00:14:03.960><c> heterogeneous</c><00:14:04.600><c> workload?</c>
+
+00:14:05.830 --> 00:14:05.840 align:start position:0%
+is actually a heterogeneous workload?
+ 
+
+00:14:05.840 --> 00:14:08.310 align:start position:0%
+is actually a heterogeneous workload?
+&gt;&gt; Absolutely.<00:14:06.600><c> The</c><00:14:06.720><c> work</c><00:14:07.240><c> can</c><00:14:07.440><c> change</c><00:14:08.120><c> on</c><00:14:08.280><c> a</c>
+
+00:14:08.310 --> 00:14:08.320 align:start position:0%
+&gt;&gt; Absolutely. The work can change on a
+ 
+
+00:14:08.320 --> 00:14:10.790 align:start position:0%
+&gt;&gt; Absolutely. The work can change on a
+dime<00:14:08.720><c> from</c><00:14:09.280><c> massive</c><00:14:09.840><c> pre-fills,</c><00:14:10.440><c> meaning</c>
+
+00:14:10.790 --> 00:14:10.800 align:start position:0%
+dime from massive pre-fills, meaning
+ 
+
+00:14:10.800 --> 00:14:12.990 align:start position:0%
+dime from massive pre-fills, meaning
+lots<00:14:11.080><c> and</c><00:14:11.160><c> lots</c><00:14:11.360><c> of</c><00:14:11.440><c> tokens</c><00:14:11.800><c> being</c><00:14:12.000><c> sent</c><00:14:12.280><c> in</c><00:14:12.560><c> by</c>
+
+00:14:12.990 --> 00:14:13.000 align:start position:0%
+lots and lots of tokens being sent in by
+ 
+
+00:14:13.000 --> 00:14:15.150 align:start position:0%
+lots and lots of tokens being sent in by
+a<00:14:13.040><c> user</c><00:14:13.320><c> prompt,</c><00:14:13.920><c> or</c><00:14:14.120><c> maybe</c><00:14:14.480><c> a</c><00:14:14.560><c> large</c><00:14:14.880><c> tool</c>
+
+00:14:15.150 --> 00:14:15.160 align:start position:0%
+a user prompt, or maybe a large tool
+ 
+
+00:14:15.160 --> 00:14:16.350 align:start position:0%
+a user prompt, or maybe a large tool
+call,
+
+00:14:16.350 --> 00:14:16.360 align:start position:0%
+call,
+ 
+
+00:14:16.360 --> 00:14:18.470 align:start position:0%
+call,
+suddenly<00:14:16.800><c> to</c><00:14:17.480><c> the</c><00:14:17.640><c> agent</c><00:14:17.880><c> now</c><00:14:18.040><c> decoding</c>
+
+00:14:18.470 --> 00:14:18.480 align:start position:0%
+suddenly to the agent now decoding
+ 
+
+00:14:18.480 --> 00:14:20.230 align:start position:0%
+suddenly to the agent now decoding
+thousands<00:14:18.840><c> of</c><00:14:18.920><c> tokens</c><00:14:19.280><c> to</c><00:14:19.440><c> reason</c><00:14:19.800><c> for</c><00:14:19.960><c> a</c><00:14:20.000><c> long</c>
+
+00:14:20.230 --> 00:14:20.240 align:start position:0%
+thousands of tokens to reason for a long
+ 
+
+00:14:20.240 --> 00:14:22.070 align:start position:0%
+thousands of tokens to reason for a long
+time<00:14:20.520><c> on</c><00:14:20.600><c> a</c><00:14:20.640><c> hard</c><00:14:20.880><c> problem.</c><00:14:21.640><c> These</c><00:14:21.840><c> are</c>
+
+00:14:22.070 --> 00:14:22.080 align:start position:0%
+time on a hard problem. These are
+ 
+
+00:14:22.080 --> 00:14:23.670 align:start position:0%
+time on a hard problem. These are
+entirely<00:14:22.680><c> opposite</c><00:14:22.960><c> ends</c><00:14:23.080><c> of</c><00:14:23.120><c> the</c><00:14:23.200><c> spectrum</c>
+
+00:14:23.670 --> 00:14:23.680 align:start position:0%
+entirely opposite ends of the spectrum
+ 
+
+00:14:23.680 --> 00:14:25.230 align:start position:0%
+entirely opposite ends of the spectrum
+in<00:14:23.760><c> terms</c><00:14:24.000><c> of</c><00:14:24.120><c> compute</c><00:14:24.800><c> and</c><00:14:25.000><c> memory</c>
+
+00:14:25.230 --> 00:14:25.240 align:start position:0%
+in terms of compute and memory
+ 
+
+00:14:25.240 --> 00:14:27.150 align:start position:0%
+in terms of compute and memory
+intensity,<00:14:25.960><c> and</c><00:14:26.120><c> it's</c><00:14:26.360><c> the</c><00:14:26.520><c> flexibility</c><00:14:27.040><c> we</c>
+
+00:14:27.150 --> 00:14:27.160 align:start position:0%
+intensity, and it's the flexibility we
+ 
+
+00:14:27.160 --> 00:14:29.150 align:start position:0%
+intensity, and it's the flexibility we
+get<00:14:27.440><c> from</c><00:14:28.040><c> a</c><00:14:28.200><c> scale</c><00:14:28.480><c> of</c><00:14:28.560><c> domain</c><00:14:28.840><c> that's</c><00:14:29.000><c> as</c>
+
+00:14:29.150 --> 00:14:29.160 align:start position:0%
+get from a scale of domain that's as
+ 
+
+00:14:29.160 --> 00:14:32.270 align:start position:0%
+get from a scale of domain that's as
+large<00:14:29.480><c> as</c><00:14:29.720><c> Astera's,</c><00:14:30.480><c> plus</c><00:14:31.120><c> the</c><00:14:31.839><c> custom</c><00:14:32.120><c> tile</c>
+
+00:14:32.270 --> 00:14:32.280 align:start position:0%
+large as Astera's, plus the custom tile
+ 
+
+00:14:32.280 --> 00:14:34.350 align:start position:0%
+large as Astera's, plus the custom tile
+and<00:14:32.400><c> chip</c><00:14:32.720><c> that</c><00:14:32.960><c> allows</c><00:14:33.280><c> us</c><00:14:33.440><c> to</c><00:14:34.000><c> have</c><00:14:34.160><c> great</c>
+
+00:14:34.350 --> 00:14:34.360 align:start position:0%
+and chip that allows us to have great
+ 
+
+00:14:34.360 --> 00:14:35.870 align:start position:0%
+and chip that allows us to have great
+compute<00:14:35.000><c> as</c><00:14:35.160><c> well</c><00:14:35.360><c> as</c><00:14:35.480><c> great</c><00:14:35.640><c> memory</c>
+
+00:14:35.870 --> 00:14:35.880 align:start position:0%
+compute as well as great memory
+ 
+
+00:14:35.880 --> 00:14:37.470 align:start position:0%
+compute as well as great memory
+bandwidth<00:14:36.320><c> on</c><00:14:36.440><c> one</c><00:14:36.600><c> platform</c><00:14:37.280><c> that</c><00:14:37.400><c> we're</c>
+
+00:14:37.470 --> 00:14:37.480 align:start position:0%
+bandwidth on one platform that we're
+ 
+
+00:14:37.480 --> 00:14:39.030 align:start position:0%
+bandwidth on one platform that we're
+super<00:14:37.680><c> excited</c><00:14:37.960><c> about.</c>
+
+00:14:39.030 --> 00:14:39.040 align:start position:0%
+super excited about.
+ 
+
+00:14:39.040 --> 00:14:40.950 align:start position:0%
+super excited about.
+&gt;&gt; Uh<00:14:39.240><c> thank</c><00:14:39.520><c> you,</c><00:14:39.640><c> Neil.</c><00:14:40.240><c> Uh</c><00:14:40.400><c> we</c><00:14:40.560><c> are</c><00:14:40.680><c> super</c>
+
+00:14:40.950 --> 00:14:40.960 align:start position:0%
+&gt;&gt; Uh thank you, Neil. Uh we are super
+ 
+
+00:14:40.960 --> 00:14:43.150 align:start position:0%
+&gt;&gt; Uh thank you, Neil. Uh we are super
+excited<00:14:41.520><c> to</c><00:14:41.640><c> making</c><00:14:42.000><c> sure</c><00:14:42.320><c> that</c><00:14:42.520><c> we</c><00:14:42.640><c> deliver</c>
+
+00:14:43.150 --> 00:14:43.160 align:start position:0%
+excited to making sure that we deliver
+ 
+
+00:14:43.160 --> 00:14:45.110 align:start position:0%
+excited to making sure that we deliver
+the<00:14:43.320><c> solutions</c><00:14:43.920><c> to</c><00:14:44.080><c> you,</c><00:14:44.640><c> so</c><00:14:44.800><c> you</c><00:14:44.960><c> can</c>
+
+00:14:45.110 --> 00:14:45.120 align:start position:0%
+the solutions to you, so you can
+ 
+
+00:14:45.120 --> 00:14:47.390 align:start position:0%
+the solutions to you, so you can
+actually<00:14:45.400><c> deploy</c><00:14:45.839><c> it.</c><00:14:46.400><c> And</c><00:14:46.680><c> Praveen,</c>
+
+00:14:47.390 --> 00:14:47.400 align:start position:0%
+actually deploy it. And Praveen,
+ 
+
+00:14:47.400 --> 00:14:49.870 align:start position:0%
+actually deploy it. And Praveen,
+wonderful<00:14:47.920><c> partnership.</c><00:14:48.920><c> Uh</c><00:14:49.080><c> we</c><00:14:49.240><c> are</c><00:14:49.360><c> excited</c>
+
+00:14:49.870 --> 00:14:49.880 align:start position:0%
+wonderful partnership. Uh we are excited
+ 
+
+00:14:49.880 --> 00:14:53.230 align:start position:0%
+wonderful partnership. Uh we are excited
+to<00:14:50.120><c> have</c><00:14:50.400><c> this</c><00:14:50.920><c> ecosystem,</c><00:14:51.960><c> and</c><00:14:52.120><c> truly</c><00:14:53.040><c> kind</c>
+
+00:14:53.230 --> 00:14:53.240 align:start position:0%
+to have this ecosystem, and truly kind
+ 
+
+00:14:53.240 --> 00:14:55.550 align:start position:0%
+to have this ecosystem, and truly kind
+of,<00:14:53.560><c> you</c><00:14:53.640><c> know,</c><00:14:53.839><c> emulates</c><00:14:54.520><c> what</c><00:14:54.839><c> OCP</c><00:14:55.320><c> is</c><00:14:55.440><c> all</c>
+
+00:14:55.550 --> 00:14:55.560 align:start position:0%
+of, you know, emulates what OCP is all
+ 
+
+00:14:55.560 --> 00:14:57.950 align:start position:0%
+of, you know, emulates what OCP is all
+about,<00:14:56.240><c> uh</c><00:14:56.440><c> bringing</c><00:14:56.760><c> this</c><00:14:57.280><c> partnerships</c>
+
+00:14:57.950 --> 00:14:57.960 align:start position:0%
+about, uh bringing this partnerships
+ 
+
+00:14:57.960 --> 00:14:59.950 align:start position:0%
+about, uh bringing this partnerships
+into<00:14:58.200><c> the</c><00:14:58.320><c> ecosystem</c><00:14:59.360><c> and</c><00:14:59.640><c> building</c>
+
+00:14:59.950 --> 00:14:59.960 align:start position:0%
+into the ecosystem and building
+ 
+
+00:14:59.960 --> 00:15:02.430 align:start position:0%
+into the ecosystem and building
+solutions<00:15:00.800><c> so</c><00:15:00.960><c> we</c><00:15:01.080><c> can</c><00:15:01.320><c> reduce</c><00:15:01.680><c> costs,</c>
+
+00:15:02.430 --> 00:15:02.440 align:start position:0%
+solutions so we can reduce costs,
+ 
+
+00:15:02.440 --> 00:15:04.790 align:start position:0%
+solutions so we can reduce costs,
+improve<00:15:02.800><c> efficiency,</c><00:15:03.800><c> and</c><00:15:03.960><c> be</c><00:15:04.120><c> able</c><00:15:04.360><c> to</c><00:15:04.480><c> bring</c>
+
+00:15:04.790 --> 00:15:04.800 align:start position:0%
+improve efficiency, and be able to bring
+ 
+
+00:15:04.800 --> 00:15:09.150 align:start position:0%
+improve efficiency, and be able to bring
+solutions<00:15:05.880><c> uh</c><00:15:06.160><c> that</c><00:15:06.680><c> give</c><00:15:07.080><c> customers</c><00:15:07.600><c> choice.</c>
+
+00:15:09.150 --> 00:15:09.160 align:start position:0%
+solutions uh that give customers choice.
+ 
+
+00:15:09.160 --> 00:15:11.390 align:start position:0%
+solutions uh that give customers choice.
+&gt;&gt; Thank<00:15:09.760><c> you.</c><00:15:09.880><c> Thank</c><00:15:10.160><c> you,</c><00:15:10.280><c> Anil.</c><00:15:10.640><c> I</c><00:15:10.720><c> mean,</c><00:15:11.040><c> you</c>
+
+00:15:11.390 --> 00:15:11.400 align:start position:0%
+&gt;&gt; Thank you. Thank you, Anil. I mean, you
+ 
+
+00:15:11.400 --> 00:15:13.510 align:start position:0%
+&gt;&gt; Thank you. Thank you, Anil. I mean, you
+you<00:15:11.520><c> gave</c><00:15:11.760><c> us</c><00:15:11.880><c> actually</c><00:15:12.200><c> chance</c><00:15:12.560><c> to</c><00:15:12.680><c> work</c><00:15:13.360><c> on</c>
+
+00:15:13.510 --> 00:15:13.520 align:start position:0%
+you gave us actually chance to work on
+ 
+
+00:15:13.520 --> 00:15:15.710 align:start position:0%
+you gave us actually chance to work on
+your<00:15:13.720><c> new</c><00:15:13.960><c> design</c><00:15:14.440><c> and</c><00:15:14.760><c> how</c><00:15:15.040><c> we</c><00:15:15.200><c> can</c><00:15:15.400><c> show</c><00:15:15.600><c> the</c>
+
+00:15:15.710 --> 00:15:15.720 align:start position:0%
+your new design and how we can show the
+ 
+
+00:15:15.720 --> 00:15:18.030 align:start position:0%
+your new design and how we can show the
+performance<00:15:16.280><c> with</c><00:15:16.440><c> our</c><00:15:16.600><c> devices.</c><00:15:17.720><c> And</c><00:15:17.880><c> we</c>
+
+00:15:18.030 --> 00:15:18.040 align:start position:0%
+performance with our devices. And we
+ 
+
+00:15:18.040 --> 00:15:19.910 align:start position:0%
+performance with our devices. And we
+have<00:15:18.240><c> actually</c><00:15:18.560><c> proof</c><00:15:18.839><c> over</c><00:15:19.040><c> here</c><00:15:19.360><c> where</c><00:15:19.760><c> he</c>
+
+00:15:19.910 --> 00:15:19.920 align:start position:0%
+have actually proof over here where he
+ 
+
+00:15:19.920 --> 00:15:21.430 align:start position:0%
+have actually proof over here where he
+can<00:15:20.120><c> see</c><00:15:20.320><c> that</c><00:15:20.520><c> there</c><00:15:20.640><c> is</c><00:15:20.720><c> a</c><00:15:20.760><c> value</c><00:15:21.120><c> added</c><00:15:21.360><c> in</c>
+
+00:15:21.430 --> 00:15:21.440 align:start position:0%
+can see that there is a value added in
+ 
+
+00:15:21.440 --> 00:15:23.830 align:start position:0%
+can see that there is a value added in
+the<00:15:21.560><c> PCI</c><00:15:21.880><c> domain</c><00:15:22.280><c> because</c><00:15:23.000><c> as</c><00:15:23.280><c> we</c><00:15:23.440><c> all</c><00:15:23.640><c> know</c>
+
+00:15:23.830 --> 00:15:23.840 align:start position:0%
+the PCI domain because as we all know
+ 
+
+00:15:23.840 --> 00:15:25.710 align:start position:0%
+the PCI domain because as we all know
+PCI<00:15:24.320><c> has</c><00:15:24.520><c> been</c>
+
+00:15:25.710 --> 00:15:25.720 align:start position:0%
+PCI has been
+ 
+
+00:15:25.720 --> 00:15:27.630 align:start position:0%
+PCI has been
+there<00:15:25.960><c> for</c><00:15:26.200><c> years,</c><00:15:26.720><c> right?</c><00:15:27.080><c> So</c><00:15:27.200><c> now</c><00:15:27.520><c> you're</c>
+
+00:15:27.630 --> 00:15:27.640 align:start position:0%
+there for years, right? So now you're
+ 
+
+00:15:27.640 --> 00:15:29.270 align:start position:0%
+there for years, right? So now you're
+just<00:15:27.880><c> creating</c><00:15:28.280><c> the</c><00:15:28.400><c> scale</c><00:15:28.640><c> up</c><00:15:28.880><c> within</c><00:15:29.200><c> the</c>
+
+00:15:29.270 --> 00:15:29.280 align:start position:0%
+just creating the scale up within the
+ 
+
+00:15:29.280 --> 00:15:33.110 align:start position:0%
+just creating the scale up within the
+PCI,<00:15:30.360><c> it</c><00:15:30.480><c> just</c><00:15:31.160><c> change</c><00:15:31.600><c> the</c><00:15:32.400><c> game</c><00:15:32.680><c> completely</c>
+
+00:15:33.110 --> 00:15:33.120 align:start position:0%
+PCI, it just change the game completely
+ 
+
+00:15:33.120 --> 00:15:34.390 align:start position:0%
+PCI, it just change the game completely
+different.
+
+00:15:34.390 --> 00:15:34.400 align:start position:0%
+different.
+ 
+
+00:15:34.400 --> 00:15:34.750 align:start position:0%
+different.
+&gt;&gt; Thank<00:15:34.560><c> you.</c>
+
+00:15:34.750 --> 00:15:34.760 align:start position:0%
+&gt;&gt; Thank you.
+ 
+
+00:15:34.760 --> 00:15:35.470 align:start position:0%
+&gt;&gt; Thank you.
+&gt;&gt; to<00:15:34.840><c> the</c><00:15:34.960><c> internet.</c>
+
+00:15:35.470 --> 00:15:35.480 align:start position:0%
+&gt;&gt; to the internet.
+ 
+
+00:15:35.480 --> 00:15:36.710 align:start position:0%
+&gt;&gt; to the internet.
+&gt;&gt; Yeah.
+
+00:15:36.710 --> 00:15:36.720 align:start position:0%
+&gt;&gt; Yeah.
+ 
+
+00:15:36.720 --> 00:15:37.150 align:start position:0%
+&gt;&gt; Yeah.
+Thank<00:15:36.920><c> you.</c>
+
+00:15:37.150 --> 00:15:37.160 align:start position:0%
+Thank you.
+ 
+
+00:15:37.160 --> 00:15:37.590 align:start position:0%
+Thank you.
+&gt;&gt; coming<00:15:37.360><c> to</c><00:15:37.400><c> be</c><00:15:37.480><c> here.</c>
+
+00:15:37.590 --> 00:15:37.600 align:start position:0%
+&gt;&gt; coming to be here.
+ 
+
+00:15:37.600 --> 00:15:41.070 align:start position:0%
+&gt;&gt; coming to be here.
+&gt;&gt; Thank<00:15:37.680><c> you.</c><00:15:37.760><c> Yes.</c><00:15:38.240><c> Look</c><00:15:38.440><c> forward</c><00:15:38.800><c> to</c><00:15:39.000><c> exciting</c>
+
+00:15:41.070 --> 00:15:41.080 align:start position:0%
+&gt;&gt; Thank you. Yes. Look forward to exciting
+ 
+
+00:15:41.080 --> 00:15:43.200 align:start position:0%
+&gt;&gt; Thank you. Yes. Look forward to exciting
+solutions<00:15:41.600><c> from</c><00:15:41.760><c> our</c><00:15:41.840><c> partners.</c>
+
+00:15:43.200 --> 00:15:43.210 align:start position:0%
+solutions from our partners.
+ 
+
+00:15:43.210 --> 00:15:44.430 align:start position:0%
+solutions from our partners.
+&gt;&gt; [applause]
+
+00:15:44.430 --> 00:15:44.440 align:start position:0%
+&gt;&gt; [applause]
+ 
+
+00:15:44.440 --> 00:15:47.430 align:start position:0%
+&gt;&gt; [applause]
+&gt;&gt; Now<00:15:44.640><c> as</c><00:15:44.840><c> you</c><00:15:44.960><c> know,</c><00:15:45.480><c> it</c><00:15:45.680><c> doesn't</c><00:15:46.080><c> take</c><00:15:46.520><c> just</c><00:15:46.840><c> us</c>
+
+00:15:47.430 --> 00:15:47.440 align:start position:0%
+&gt;&gt; Now as you know, it doesn't take just us
+ 
+
+00:15:47.440 --> 00:15:49.470 align:start position:0%
+&gt;&gt; Now as you know, it doesn't take just us
+to<00:15:47.560><c> bring</c><00:15:47.800><c> this</c><00:15:47.960><c> to</c><00:15:48.120><c> market.</c><00:15:48.960><c> It</c><00:15:49.120><c> takes</c><00:15:49.360><c> an</c>
+
+00:15:49.470 --> 00:15:49.480 align:start position:0%
+to bring this to market. It takes an
+ 
+
+00:15:49.480 --> 00:15:51.750 align:start position:0%
+to bring this to market. It takes an
+ecosystem<00:15:50.320><c> to</c><00:15:50.440><c> build</c><00:15:50.640><c> around</c><00:15:51.000><c> that.</c>
+
+00:15:51.750 --> 00:15:51.760 align:start position:0%
+ecosystem to build around that.
+ 
+
+00:15:51.760 --> 00:15:54.590 align:start position:0%
+ecosystem to build around that.
+We've<00:15:51.960><c> been</c><00:15:52.160><c> partnering</c><00:15:53.000><c> with</c><00:15:53.240><c> AI</c><00:15:53.480><c> natives,</c>
+
+00:15:54.590 --> 00:15:54.600 align:start position:0%
+We've been partnering with AI natives,
+ 
+
+00:15:54.600 --> 00:15:56.150 align:start position:0%
+We've been partnering with AI natives,
+Neo<00:15:54.920><c> clouds,</c>
+
+00:15:56.150 --> 00:15:56.160 align:start position:0%
+Neo clouds,
+ 
+
+00:15:56.160 --> 00:16:00.470 align:start position:0%
+Neo clouds,
+ecosystem<00:15:56.800><c> partners,</c><00:15:57.800><c> OEMs,</c><00:15:58.840><c> ODMs,</c><00:16:00.040><c> across</c>
+
+00:16:00.470 --> 00:16:00.480 align:start position:0%
+ecosystem partners, OEMs, ODMs, across
+ 
+
+00:16:00.480 --> 00:16:03.790 align:start position:0%
+ecosystem partners, OEMs, ODMs, across
+the<00:16:00.600><c> board</c><00:16:01.280><c> helping</c><00:16:02.320><c> bring</c><00:16:02.880><c> Crest</c><00:16:03.120><c> and</c><00:16:03.280><c> Island</c>
+
+00:16:03.790 --> 00:16:03.800 align:start position:0%
+the board helping bring Crest and Island
+ 
+
+00:16:03.800 --> 00:16:06.390 align:start position:0%
+the board helping bring Crest and Island
+to<00:16:03.960><c> market.</c><00:16:04.440><c> So</c><00:16:04.800><c> I'm</c><00:16:05.040><c> super</c><00:16:05.440><c> excited</c><00:16:06.240><c> and</c>
+
+00:16:06.390 --> 00:16:06.400 align:start position:0%
+to market. So I'm super excited and
+ 
+
+00:16:06.400 --> 00:16:08.590 align:start position:0%
+to market. So I'm super excited and
+can't<00:16:06.680><c> wait</c><00:16:06.880><c> to</c><00:16:07.000><c> see</c><00:16:07.200><c> this</c><00:16:07.760><c> in</c><00:16:07.920><c> the</c><00:16:08.080><c> hands</c><00:16:08.440><c> of</c>
+
+00:16:08.590 --> 00:16:08.600 align:start position:0%
+can't wait to see this in the hands of
+ 
+
+00:16:08.600 --> 00:16:11.030 align:start position:0%
+can't wait to see this in the hands of
+both<00:16:08.800><c> developers</c><00:16:09.720><c> and</c><00:16:10.240><c> to</c><00:16:10.360><c> customers</c><00:16:10.920><c> who</c>
+
+00:16:11.030 --> 00:16:11.040 align:start position:0%
+both developers and to customers who
+ 
+
+00:16:11.040 --> 00:16:12.870 align:start position:0%
+both developers and to customers who
+will<00:16:11.160><c> actually</c><00:16:11.520><c> use</c><00:16:12.040><c> the</c><00:16:12.120><c> compute</c><00:16:12.520><c> from</c><00:16:12.720><c> these</c>
+
+00:16:12.870 --> 00:16:12.880 align:start position:0%
+will actually use the compute from these
+ 
+
+00:16:12.880 --> 00:16:15.590 align:start position:0%
+will actually use the compute from these
+systems.
+
+00:16:15.590 --> 00:16:15.600 align:start position:0%
+ 
+ 
+
+00:16:15.600 --> 00:16:17.390 align:start position:0%
+ 
+Now<00:16:15.720><c> like</c><00:16:16.000><c> I</c><00:16:16.080><c> said</c><00:16:16.320><c> earlier,</c>
+
+00:16:17.390 --> 00:16:17.400 align:start position:0%
+Now like I said earlier,
+ 
+
+00:16:17.400 --> 00:16:20.630 align:start position:0%
+Now like I said earlier,
+AI<00:16:17.800><c> agent</c><00:16:18.400><c> and</c><00:16:18.680><c> AI</c><00:16:19.000><c> inference</c><00:16:19.840><c> is</c><00:16:20.120><c> not</c><00:16:20.520><c> a</c>
+
+00:16:20.630 --> 00:16:20.640 align:start position:0%
+AI agent and AI inference is not a
+ 
+
+00:16:20.640 --> 00:16:22.350 align:start position:0%
+AI agent and AI inference is not a
+homogeneous<00:16:21.320><c> workload.</c><00:16:22.080><c> It's</c><00:16:22.280><c> a</c>
+
+00:16:22.350 --> 00:16:22.360 align:start position:0%
+homogeneous workload. It's a
+ 
+
+00:16:22.360 --> 00:16:24.430 align:start position:0%
+homogeneous workload. It's a
+heterogeneous<00:16:23.000><c> workload.</c><00:16:23.880><c> It's</c><00:16:24.120><c> not</c><00:16:24.360><c> a</c>
+
+00:16:24.430 --> 00:16:24.440 align:start position:0%
+heterogeneous workload. It's not a
+ 
+
+00:16:24.440 --> 00:16:26.070 align:start position:0%
+heterogeneous workload. It's not a
+one-size-fits-all.
+
+00:16:26.070 --> 00:16:26.080 align:start position:0%
+one-size-fits-all.
+ 
+
+00:16:26.080 --> 00:16:28.470 align:start position:0%
+one-size-fits-all.
+Not<00:16:26.400><c> all</c><00:16:26.560><c> tokens</c><00:16:26.960><c> are</c><00:16:27.040><c> going</c><00:16:27.200><c> to</c><00:16:27.280><c> be</c><00:16:27.360><c> the</c><00:16:27.480><c> same.</c>
+
+00:16:28.470 --> 00:16:28.480 align:start position:0%
+Not all tokens are going to be the same.
+ 
+
+00:16:28.480 --> 00:16:30.230 align:start position:0%
+Not all tokens are going to be the same.
+Not<00:16:28.800><c> all</c><00:16:29.000><c> token</c><00:16:29.360><c> requirements</c><00:16:29.960><c> are</c><00:16:30.040><c> going</c><00:16:30.160><c> to</c>
+
+00:16:30.230 --> 00:16:30.240 align:start position:0%
+Not all token requirements are going to
+ 
+
+00:16:30.240 --> 00:16:31.550 align:start position:0%
+Not all token requirements are going to
+be<00:16:30.320><c> the</c><00:16:30.440><c> same.</c><00:16:31.080><c> There</c><00:16:31.200><c> are</c><00:16:31.280><c> going</c><00:16:31.400><c> to</c><00:16:31.480><c> be</c>
+
+00:16:31.550 --> 00:16:31.560 align:start position:0%
+be the same. There are going to be
+ 
+
+00:16:31.560 --> 00:16:33.870 align:start position:0%
+be the same. There are going to be
+different<00:16:31.960><c> kinds</c><00:16:32.280><c> of</c><00:16:32.400><c> compute</c><00:16:33.120><c> enabled</c>
+
+00:16:33.870 --> 00:16:33.880 align:start position:0%
+different kinds of compute enabled
+ 
+
+00:16:33.880 --> 00:16:36.230 align:start position:0%
+different kinds of compute enabled
+depending<00:16:34.640><c> on</c><00:16:34.880><c> what</c><00:16:35.120><c> kind</c><00:16:35.320><c> of</c><00:16:35.680><c> volume</c><00:16:36.080><c> of</c>
+
+00:16:36.230 --> 00:16:36.240 align:start position:0%
+depending on what kind of volume of
+ 
+
+00:16:36.240 --> 00:16:38.270 align:start position:0%
+depending on what kind of volume of
+interactivity<00:16:36.920><c> you</c><00:16:37.040><c> need,</c><00:16:37.480><c> what</c><00:16:37.680><c> latencies</c>
+
+00:16:38.270 --> 00:16:38.280 align:start position:0%
+interactivity you need, what latencies
+ 
+
+00:16:38.280 --> 00:16:40.550 align:start position:0%
+interactivity you need, what latencies
+you<00:16:38.400><c> need,</c><00:16:38.880><c> and</c><00:16:39.080><c> what</c><00:16:39.520><c> model</c><00:16:39.839><c> sizes</c><00:16:40.280><c> you</c><00:16:40.360><c> need</c>
+
+00:16:40.550 --> 00:16:40.560 align:start position:0%
+you need, and what model sizes you need
+ 
+
+00:16:40.560 --> 00:16:41.870 align:start position:0%
+you need, and what model sizes you need
+to<00:16:40.680><c> build</c><00:16:40.920><c> on.</c>
+
+00:16:41.870 --> 00:16:41.880 align:start position:0%
+to build on.
+ 
+
+00:16:41.880 --> 00:16:44.910 align:start position:0%
+to build on.
+So<00:16:42.040><c> we've</c><00:16:42.240><c> been</c><00:16:42.440><c> partnering</c><00:16:43.200><c> with</c><00:16:43.400><c> SambaNova.</c>
+
+00:16:44.910 --> 00:16:44.920 align:start position:0%
+So we've been partnering with SambaNova.
+ 
+
+00:16:44.920 --> 00:16:47.670 align:start position:0%
+So we've been partnering with SambaNova.
+SambaNova<00:16:45.839><c> has</c><00:16:46.040><c> a</c><00:16:46.120><c> data</c><00:16:46.360><c> flow</c><00:16:46.600><c> architecture</c>
+
+00:16:47.670 --> 00:16:47.680 align:start position:0%
+SambaNova has a data flow architecture
+ 
+
+00:16:47.680 --> 00:16:50.310 align:start position:0%
+SambaNova has a data flow architecture
+that<00:16:47.880><c> helps</c><00:16:48.240><c> bring</c><00:16:48.800><c> low</c><00:16:49.000><c> latency,</c><00:16:50.080><c> you</c><00:16:50.200><c> know,</c>
+
+00:16:50.310 --> 00:16:50.320 align:start position:0%
+that helps bring low latency, you know,
+ 
+
+00:16:50.320 --> 00:16:52.270 align:start position:0%
+that helps bring low latency, you know,
+high<00:16:50.800><c> token</c><00:16:51.320><c> throughput,</c><00:16:52.080><c> high</c>
+
+00:16:52.270 --> 00:16:52.280 align:start position:0%
+high token throughput, high
+ 
+
+00:16:52.280 --> 00:16:55.990 align:start position:0%
+high token throughput, high
+interactivity<00:16:53.440><c> use</c><00:16:53.680><c> cases</c><00:16:54.520><c> for</c><00:16:55.120><c> the</c><00:16:55.480><c> agentic</c>
+
+00:16:55.990 --> 00:16:56.000 align:start position:0%
+interactivity use cases for the agentic
+ 
+
+00:16:56.000 --> 00:16:57.350 align:start position:0%
+interactivity use cases for the agentic
+era.
+
+00:16:57.350 --> 00:16:57.360 align:start position:0%
+era.
+ 
+
+00:16:57.360 --> 00:16:59.350 align:start position:0%
+era.
+The<00:16:57.480><c> SambaNova's</c>
+
+00:16:59.350 --> 00:16:59.360 align:start position:0%
+The SambaNova's
+ 
+
+00:16:59.360 --> 00:17:03.350 align:start position:0%
+The SambaNova's
+um<00:16:59.880><c> chip</c><00:17:00.600><c> which</c><00:17:00.839><c> is</c><00:17:01.280><c> can</c><00:17:01.440><c> give</c><00:17:01.640><c> you</c><00:17:01.800><c> up</c><00:17:01.960><c> to</c><00:17:02.200><c> 820</c>
+
+00:17:03.350 --> 00:17:03.360 align:start position:0%
+um chip which is can give you up to 820
+ 
+
+00:17:03.360 --> 00:17:06.630 align:start position:0%
+um chip which is can give you up to 820
+tokens<00:17:03.760><c> per</c><00:17:03.920><c> second.</c><00:17:04.839><c> It's</c><00:17:05.120><c> 4x</c><00:17:05.640><c> faster</c><00:17:06.400><c> on</c><00:17:06.560><c> the</c>
+
+00:17:06.630 --> 00:17:06.640 align:start position:0%
+tokens per second. It's 4x faster on the
+ 
+
+00:17:06.640 --> 00:17:09.189 align:start position:0%
+tokens per second. It's 4x faster on the
+SambaNova<00:17:07.280><c> 50</c><00:17:07.640><c> series</c><00:17:08.439><c> which</c><00:17:08.600><c> they</c><00:17:08.760><c> recently</c>
+
+00:17:09.189 --> 00:17:09.199 align:start position:0%
+SambaNova 50 series which they recently
+ 
+
+00:17:09.199 --> 00:17:11.230 align:start position:0%
+SambaNova 50 series which they recently
+announced.<00:17:10.240><c> We've</c><00:17:10.439><c> been</c><00:17:10.640><c> partnering</c><00:17:11.079><c> with</c>
+
+00:17:11.230 --> 00:17:11.240 align:start position:0%
+announced. We've been partnering with
+ 
+
+00:17:11.240 --> 00:17:14.030 align:start position:0%
+announced. We've been partnering with
+them<00:17:11.760><c> to</c><00:17:11.920><c> bring</c><00:17:12.199><c> this</c><00:17:12.400><c> heterogeneity</c><00:17:13.640><c> along</c>
+
+00:17:14.030 --> 00:17:14.040 align:start position:0%
+them to bring this heterogeneity along
+ 
+
+00:17:14.040 --> 00:17:15.750 align:start position:0%
+them to bring this heterogeneity along
+with<00:17:14.280><c> our</c><00:17:14.439><c> Intel</c><00:17:14.720><c> Xeon,</c>
+
+00:17:15.750 --> 00:17:15.760 align:start position:0%
+with our Intel Xeon,
+ 
+
+00:17:15.760 --> 00:17:18.750 align:start position:0%
+with our Intel Xeon,
+with<00:17:15.880><c> the</c><00:17:15.959><c> SambaNova</c><00:17:16.680><c> RDUs,</c><00:17:17.839><c> and</c><00:17:18.439><c> with</c><00:17:18.600><c> our</c>
+
+00:17:18.750 --> 00:17:18.760 align:start position:0%
+with the SambaNova RDUs, and with our
+ 
+
+00:17:18.760 --> 00:17:21.710 align:start position:0%
+with the SambaNova RDUs, and with our
+upcoming<00:17:19.640><c> s-</c><00:17:20.120><c> Crescent</c><00:17:20.480><c> Island</c><00:17:21.040><c> Intel</c>
+
+00:17:21.710 --> 00:17:21.720 align:start position:0%
+upcoming s- Crescent Island Intel
+ 
+
+00:17:21.720 --> 00:17:26.270 align:start position:0%
+upcoming s- Crescent Island Intel
+D-Series<00:17:22.360><c> GPUs.</c>
+
+00:17:26.270 --> 00:17:26.280 align:start position:0%
+ 
+ 
+
+00:17:26.280 --> 00:17:28.990 align:start position:0%
+ 
+These<00:17:27.240><c> will</c><00:17:27.439><c> not</c><00:17:27.720><c> just</c><00:17:27.920><c> come</c><00:17:28.400><c> as</c><00:17:28.640><c> single</c>
+
+00:17:28.990 --> 00:17:29.000 align:start position:0%
+These will not just come as single
+ 
+
+00:17:29.000 --> 00:17:32.550 align:start position:0%
+These will not just come as single
+chips.<00:17:29.840><c> At</c><00:17:30.040><c> rack-scale</c><00:17:30.680><c> inferencing</c><00:17:31.560><c> grows,</c>
+
+00:17:32.550 --> 00:17:32.560 align:start position:0%
+chips. At rack-scale inferencing grows,
+ 
+
+00:17:32.560 --> 00:17:35.830 align:start position:0%
+chips. At rack-scale inferencing grows,
+their<00:17:32.720><c> solutions</c><00:17:33.840><c> in</c><00:17:34.480><c> both</c><00:17:35.080><c> the</c><00:17:35.240><c> brownfield</c>
+
+00:17:35.830 --> 00:17:35.840 align:start position:0%
+their solutions in both the brownfield
+ 
+
+00:17:35.840 --> 00:17:38.030 align:start position:0%
+their solutions in both the brownfield
+data<00:17:36.080><c> centers</c><00:17:36.920><c> as</c><00:17:37.120><c> well</c><00:17:37.280><c> as</c><00:17:37.400><c> the</c><00:17:37.480><c> greenfield</c>
+
+00:17:38.030 --> 00:17:38.040 align:start position:0%
+data centers as well as the greenfield
+ 
+
+00:17:38.040 --> 00:17:40.510 align:start position:0%
+data centers as well as the greenfield
+data<00:17:38.240><c> centers</c><00:17:39.040><c> give</c><00:17:39.280><c> you</c><00:17:39.720><c> flexibility</c><00:17:40.360><c> of</c>
+
+00:17:40.510 --> 00:17:40.520 align:start position:0%
+data centers give you flexibility of
+ 
+
+00:17:40.520 --> 00:17:42.830 align:start position:0%
+data centers give you flexibility of
+choice<00:17:41.320><c> in</c><00:17:41.480><c> a</c><00:17:41.560><c> range</c><00:17:41.880><c> of</c><00:17:42.000><c> capabilities</c><00:17:42.760><c> of</c>
+
+00:17:42.830 --> 00:17:42.840 align:start position:0%
+choice in a range of capabilities of
+ 
+
+00:17:42.840 --> 00:17:45.190 align:start position:0%
+choice in a range of capabilities of
+compute<00:17:43.520><c> that</c><00:17:43.680><c> you</c><00:17:43.800><c> can</c><00:17:43.960><c> deploy.</c>
+
+00:17:45.190 --> 00:17:45.200 align:start position:0%
+compute that you can deploy.
+ 
+
+00:17:45.200 --> 00:17:47.990 align:start position:0%
+compute that you can deploy.
+So,<00:17:45.560><c> as</c><00:17:46.360><c> in</c><00:17:46.640><c> inference</c><00:17:47.080><c> also</c><00:17:47.360><c> becomes</c><00:17:47.760><c> more</c>
+
+00:17:47.990 --> 00:17:48.000 align:start position:0%
+So, as in inference also becomes more
+ 
+
+00:17:48.000 --> 00:17:50.310 align:start position:0%
+So, as in inference also becomes more
+distributed,<00:17:49.120><c> you're</c><00:17:49.280><c> going</c><00:17:49.480><c> to</c><00:17:49.560><c> need</c>
+
+00:17:50.310 --> 00:17:50.320 align:start position:0%
+distributed, you're going to need
+ 
+
+00:17:50.320 --> 00:17:52.830 align:start position:0%
+distributed, you're going to need
+different<00:17:50.680><c> kinds</c><00:17:51.120><c> of</c><00:17:51.240><c> computing</c><00:17:51.800><c> solutions</c>
+
+00:17:52.830 --> 00:17:52.840 align:start position:0%
+different kinds of computing solutions
+ 
+
+00:17:52.840 --> 00:17:55.630 align:start position:0%
+different kinds of computing solutions
+from<00:17:53.360><c> the</c><00:17:53.480><c> cloud</c><00:17:54.160><c> going</c><00:17:54.480><c> towards</c><00:17:55.160><c> the</c><00:17:55.400><c> edge</c>
+
+00:17:55.630 --> 00:17:55.640 align:start position:0%
+from the cloud going towards the edge
+ 
+
+00:17:55.640 --> 00:17:56.830 align:start position:0%
+from the cloud going towards the edge
+servers.
+
+00:17:56.830 --> 00:17:56.840 align:start position:0%
+servers.
+ 
+
+00:17:56.840 --> 00:17:58.910 align:start position:0%
+servers.
+And<00:17:57.040><c> with</c><00:17:57.240><c> PCI</c><00:17:57.680><c> Express</c><00:17:58.320><c> for</c><00:17:58.520><c> Crescent</c>
+
+00:17:58.910 --> 00:17:58.920 align:start position:0%
+And with PCI Express for Crescent
+ 
+
+00:17:58.920 --> 00:18:01.830 align:start position:0%
+And with PCI Express for Crescent
+Island,<00:17:59.520><c> the</c><00:17:59.640><c> Intel</c><00:18:00.360><c> D-Series,</c><00:18:01.520><c> you're</c><00:18:01.680><c> going</c>
+
+00:18:01.830 --> 00:18:01.840 align:start position:0%
+Island, the Intel D-Series, you're going
+ 
+
+00:18:01.840 --> 00:18:03.990 align:start position:0%
+Island, the Intel D-Series, you're going
+to<00:18:01.920><c> have</c><00:18:02.160><c> that</c><00:18:02.360><c> flexibility</c><00:18:03.680><c> and</c><00:18:03.880><c> the</c>
+
+00:18:03.990 --> 00:18:04.000 align:start position:0%
+to have that flexibility and the
+ 
+
+00:18:04.000 --> 00:18:06.310 align:start position:0%
+to have that flexibility and the
+capability<00:18:04.720><c> to</c><00:18:04.840><c> scale</c><00:18:05.240><c> this</c><00:18:05.880><c> without</c><00:18:06.240><c> a</c>
+
+00:18:06.310 --> 00:18:06.320 align:start position:0%
+capability to scale this without a
+ 
+
+00:18:06.320 --> 00:18:09.430 align:start position:0%
+capability to scale this without a
+friction<00:18:07.200><c> because</c><00:18:07.520><c> a</c><00:18:07.600><c> broad</c><00:18:08.120><c> amount</c><00:18:08.520><c> of</c><00:18:08.960><c> OEM</c>
+
+00:18:09.430 --> 00:18:09.440 align:start position:0%
+friction because a broad amount of OEM
+ 
+
+00:18:09.440 --> 00:18:11.870 align:start position:0%
+friction because a broad amount of OEM
+and<00:18:09.600><c> ODM</c><00:18:09.960><c> designs</c><00:18:10.680><c> will</c><00:18:10.880><c> be</c><00:18:11.040><c> supporting</c>
+
+00:18:11.870 --> 00:18:11.880 align:start position:0%
+and ODM designs will be supporting
+ 
+
+00:18:11.880 --> 00:18:14.430 align:start position:0%
+and ODM designs will be supporting
+Crescent<00:18:12.280><c> Island</c><00:18:12.640><c> straight</c><00:18:12.960><c> off</c><00:18:13.080><c> the</c><00:18:13.200><c> bat.</c>
+
+00:18:14.430 --> 00:18:14.440 align:start position:0%
+Crescent Island straight off the bat.
+ 
+
+00:18:14.440 --> 00:18:16.990 align:start position:0%
+Crescent Island straight off the bat.
+On<00:18:14.560><c> top</c><00:18:14.880><c> of</c><00:18:15.040><c> it,</c><00:18:15.480><c> with</c><00:18:15.640><c> Crescent</c><00:18:16.040><c> Island,</c><00:18:16.840><c> we</c>
+
+00:18:16.990 --> 00:18:17.000 align:start position:0%
+On top of it, with Crescent Island, we
+ 
+
+00:18:17.000 --> 00:18:19.230 align:start position:0%
+On top of it, with Crescent Island, we
+are<00:18:17.120><c> committing</c><00:18:17.880><c> to,</c><00:18:18.480><c> you</c><00:18:18.560><c> know,</c><00:18:18.680><c> day</c><00:18:18.920><c> zero</c>
+
+00:18:19.230 --> 00:18:19.240 align:start position:0%
+are committing to, you know, day zero
+ 
+
+00:18:19.240 --> 00:18:21.390 align:start position:0%
+are committing to, you know, day zero
+support<00:18:19.760><c> for</c><00:18:19.960><c> mainstream</c><00:18:20.520><c> models</c><00:18:21.160><c> in</c><00:18:21.240><c> the</c>
+
+00:18:21.390 --> 00:18:21.400 align:start position:0%
+support for mainstream models in the
+ 
+
+00:18:21.400 --> 00:18:23.390 align:start position:0%
+support for mainstream models in the
+Open<00:18:21.680><c> VET</c><00:18:21.920><c> ecosystem.</c>
+
+00:18:23.390 --> 00:18:23.400 align:start position:0%
+Open VET ecosystem.
+ 
+
+00:18:23.400 --> 00:18:24.470 align:start position:0%
+Open VET ecosystem.
+We'll<00:18:23.600><c> be</c>
+
+00:18:24.470 --> 00:18:24.480 align:start position:0%
+We'll be
+ 
+
+00:18:24.480 --> 00:18:26.510 align:start position:0%
+We'll be
+working<00:18:24.840><c> towards</c><00:18:25.280><c> the</c><00:18:25.400><c> frameworks</c><00:18:26.240><c> to</c><00:18:26.400><c> be</c>
+
+00:18:26.510 --> 00:18:26.520 align:start position:0%
+working towards the frameworks to be
+ 
+
+00:18:26.520 --> 00:18:29.710 align:start position:0%
+working towards the frameworks to be
+scaling<00:18:27.000><c> up</c><00:18:27.480><c> with</c><00:18:27.680><c> VLLM,</c><00:18:28.480><c> SG</c><00:18:28.800><c> Lang,</c><00:18:29.240><c> and</c><00:18:29.480><c> all</c>
+
+00:18:29.710 --> 00:18:29.720 align:start position:0%
+scaling up with VLLM, SG Lang, and all
+ 
+
+00:18:29.720 --> 00:18:31.630 align:start position:0%
+scaling up with VLLM, SG Lang, and all
+the<00:18:29.840><c> industry</c><00:18:30.320><c> frameworks</c><00:18:31.040><c> that</c><00:18:31.240><c> need</c><00:18:31.400><c> to</c><00:18:31.480><c> be</c>
+
+00:18:31.630 --> 00:18:31.640 align:start position:0%
+the industry frameworks that need to be
+ 
+
+00:18:31.640 --> 00:18:34.150 align:start position:0%
+the industry frameworks that need to be
+supported<00:18:32.520><c> upstreamed</c><00:18:33.480><c> so</c><00:18:33.640><c> that</c><00:18:33.880><c> you</c><00:18:33.960><c> don't</c>
+
+00:18:34.150 --> 00:18:34.160 align:start position:0%
+supported upstreamed so that you don't
+ 
+
+00:18:34.160 --> 00:18:37.070 align:start position:0%
+supported upstreamed so that you don't
+need<00:18:34.360><c> any</c><00:18:34.560><c> extensions</c><00:18:35.160><c> to</c><00:18:35.240><c> be</c><00:18:35.360><c> downloaded.</c>
+
+00:18:37.070 --> 00:18:37.080 align:start position:0%
+need any extensions to be downloaded.
+ 
+
+00:18:37.080 --> 00:18:40.110 align:start position:0%
+need any extensions to be downloaded.
+We're<00:18:37.240><c> partnering</c><00:18:37.760><c> with</c><00:18:38.240><c> our</c><00:18:38.920><c> Sambanova</c><00:18:40.000><c> to</c>
+
+00:18:40.110 --> 00:18:40.120 align:start position:0%
+We're partnering with our Sambanova to
+ 
+
+00:18:40.120 --> 00:18:42.230 align:start position:0%
+We're partnering with our Sambanova to
+build<00:18:40.600><c> racks</c><00:18:41.280><c> that</c><00:18:41.520><c> they</c><00:18:41.720><c> are</c><00:18:41.840><c> building</c><00:18:42.160><c> the</c>
+
+00:18:42.230 --> 00:18:42.240 align:start position:0%
+build racks that they are building the
+ 
+
+00:18:42.240 --> 00:18:45.630 align:start position:0%
+build racks that they are building the
+racks<00:18:42.600><c> on</c><00:18:43.160><c> to</c><00:18:43.400><c> work</c><00:18:43.720><c> efficiently</c><00:18:44.760><c> for</c><00:18:45.200><c> decode</c>
+
+00:18:45.630 --> 00:18:45.640 align:start position:0%
+racks on to work efficiently for decode
+ 
+
+00:18:45.640 --> 00:18:48.430 align:start position:0%
+racks on to work efficiently for decode
+solutions<00:18:46.200><c> on</c><00:18:46.320><c> Sambanova</c><00:18:47.360><c> with</c><00:18:47.600><c> people</c><00:18:48.040><c> like,</c>
+
+00:18:48.430 --> 00:18:48.440 align:start position:0%
+solutions on Sambanova with people like,
+ 
+
+00:18:48.440 --> 00:18:50.830 align:start position:0%
+solutions on Sambanova with people like,
+you<00:18:48.520><c> know,</c><00:18:48.680><c> capability</c><00:18:49.400><c> on</c><00:18:49.560><c> Crescent</c><00:18:49.960><c> Island.</c>
+
+00:18:50.830 --> 00:18:50.840 align:start position:0%
+you know, capability on Crescent Island.
+ 
+
+00:18:50.840 --> 00:18:53.110 align:start position:0%
+you know, capability on Crescent Island.
+And<00:18:51.040><c> of</c><00:18:51.200><c> course,</c><00:18:52.000><c> what</c><00:18:52.280><c> runs</c><00:18:52.600><c> all</c><00:18:52.760><c> of</c><00:18:52.880><c> this</c>
+
+00:18:53.110 --> 00:18:53.120 align:start position:0%
+And of course, what runs all of this
+ 
+
+00:18:53.120 --> 00:18:56.390 align:start position:0%
+And of course, what runs all of this
+ecosystem,<00:18:54.280><c> what</c><00:18:54.560><c> runs</c><00:18:54.880><c> the</c><00:18:55.080><c> orchestration,</c>
+
+00:18:56.390 --> 00:18:56.400 align:start position:0%
+ecosystem, what runs the orchestration,
+ 
+
+00:18:56.400 --> 00:18:59.350 align:start position:0%
+ecosystem, what runs the orchestration,
+is<00:18:56.600><c> going</c><00:18:56.760><c> to</c><00:18:56.840><c> be</c><00:18:57.360><c> the</c><00:18:57.520><c> CPU.</c><00:18:58.600><c> With</c><00:18:58.800><c> our</c><00:18:59.000><c> Intel</c>
+
+00:18:59.350 --> 00:18:59.360 align:start position:0%
+is going to be the CPU. With our Intel
+ 
+
+00:18:59.360 --> 00:19:01.990 align:start position:0%
+is going to be the CPU. With our Intel
+Xeon<00:18:59.720><c> portfolio,</c><00:19:00.800><c> we</c><00:19:00.920><c> have</c><00:19:01.320><c> wide</c><00:19:01.640><c> range</c><00:19:01.880><c> of</c>
+
+00:19:01.990 --> 00:19:02.000 align:start position:0%
+Xeon portfolio, we have wide range of
+ 
+
+00:19:02.000 --> 00:19:05.270 align:start position:0%
+Xeon portfolio, we have wide range of
+capabilities<00:19:03.200><c> and</c><00:19:03.480><c> choice</c><00:19:04.080><c> and</c><00:19:04.320><c> skills</c><00:19:05.040><c> for</c>
+
+00:19:05.270 --> 00:19:05.280 align:start position:0%
+capabilities and choice and skills for
+ 
+
+00:19:05.280 --> 00:19:07.950 align:start position:0%
+capabilities and choice and skills for
+our<00:19:05.440><c> ecosystem</c><00:19:06.360><c> to</c><00:19:06.520><c> innovate</c><00:19:07.040><c> on.</c><00:19:07.680><c> And</c><00:19:07.840><c> the</c>
+
+00:19:07.950 --> 00:19:07.960 align:start position:0%
+our ecosystem to innovate on. And the
+ 
+
+00:19:07.960 --> 00:19:11.150 align:start position:0%
+our ecosystem to innovate on. And the
+Intel<00:19:08.360><c> Xeon</c><00:19:08.760><c> family</c><00:19:09.600><c> is</c><00:19:09.840><c> here</c><00:19:10.480><c> to</c><00:19:10.720><c> actually</c>
+
+00:19:11.150 --> 00:19:11.160 align:start position:0%
+Intel Xeon family is here to actually
+ 
+
+00:19:11.160 --> 00:19:14.150 align:start position:0%
+Intel Xeon family is here to actually
+power<00:19:11.760><c> the</c><00:19:11.880><c> future</c><00:19:12.360><c> of</c><00:19:12.480><c> this</c><00:19:12.680><c> agentic</c><00:19:13.120><c> era.</c>
+
+00:19:14.150 --> 00:19:14.160 align:start position:0%
+power the future of this agentic era.
+ 
+
+00:19:14.160 --> 00:19:16.350 align:start position:0%
+power the future of this agentic era.
+With<00:19:14.280><c> that,</c><00:19:15.160><c> I</c><00:19:15.240><c> really</c><00:19:15.560><c> want</c><00:19:15.720><c> to</c><00:19:15.800><c> thank</c><00:19:16.080><c> all</c><00:19:16.200><c> of</c>
+
+00:19:16.350 --> 00:19:16.360 align:start position:0%
+With that, I really want to thank all of
+ 
+
+00:19:16.360 --> 00:19:17.750 align:start position:0%
+With that, I really want to thank all of
+you<00:19:16.520><c> to</c><00:19:16.640><c> be</c><00:19:16.800><c> here.</c>
+
+00:19:17.750 --> 00:19:17.760 align:start position:0%
+you to be here.
+ 
+
+00:19:17.760 --> 00:19:19.950 align:start position:0%
+you to be here.
+Give<00:19:17.880><c> us</c><00:19:18.000><c> the</c><00:19:18.160><c> opportunity</c><00:19:18.800><c> to</c><00:19:18.960><c> present</c><00:19:19.720><c> how</c>
+
+00:19:19.950 --> 00:19:19.960 align:start position:0%
+Give us the opportunity to present how
+ 
+
+00:19:19.960 --> 00:19:22.430 align:start position:0%
+Give us the opportunity to present how
+we<00:19:20.240><c> are</c><00:19:21.040><c> putting</c><00:19:21.320><c> the</c><00:19:21.440><c> building</c><00:19:21.760><c> blocks</c>
+
+00:19:22.430 --> 00:19:22.440 align:start position:0%
+we are putting the building blocks
+ 
+
+00:19:22.440 --> 00:19:24.710 align:start position:0%
+we are putting the building blocks
+towards<00:19:22.760><c> this</c><00:19:22.960><c> agentic</c><00:19:23.400><c> future.</c><00:19:24.240><c> Lot</c><00:19:24.520><c> more</c>
+
+00:19:24.710 --> 00:19:24.720 align:start position:0%
+towards this agentic future. Lot more
+ 
+
+00:19:24.720 --> 00:19:27.190 align:start position:0%
+towards this agentic future. Lot more
+exciting<00:19:25.160><c> things</c><00:19:25.440><c> coming.</c><00:19:26.240><c> Please</c><00:19:26.520><c> do</c>
+
+00:19:27.190 --> 00:19:27.200 align:start position:0%
+exciting things coming. Please do
+ 
+
+00:19:27.200 --> 00:19:29.270 align:start position:0%
+exciting things coming. Please do
+Please<00:19:27.520><c> do</c><00:19:27.720><c> go</c><00:19:27.880><c> visit</c><00:19:28.200><c> the</c><00:19:28.280><c> booth</c>
+
+00:19:29.270 --> 00:19:29.280 align:start position:0%
+Please do go visit the booth
+ 
+
+00:19:29.280 --> 00:19:31.510 align:start position:0%
+Please do go visit the booth
+to<00:19:29.360><c> see</c><00:19:29.600><c> some</c><00:19:29.800><c> of</c><00:19:29.880><c> these</c><00:19:30.040><c> demos</c><00:19:30.400><c> in</c><00:19:30.520><c> action.</c>
+
+00:19:31.510 --> 00:19:31.520 align:start position:0%
+to see some of these demos in action.
+ 
+
+00:19:31.520 --> 00:19:33.150 align:start position:0%
+to see some of these demos in action.
+And<00:19:31.640><c> at</c><00:19:31.720><c> the</c><00:19:31.800><c> same</c><00:19:32.080><c> time,</c><00:19:32.680><c> we</c><00:19:32.800><c> have</c><00:19:33.000><c> our</c>
+
+00:19:33.150 --> 00:19:33.160 align:start position:0%
+And at the same time, we have our
+ 
+
+00:19:33.160 --> 00:19:35.390 align:start position:0%
+And at the same time, we have our
+keynote<00:19:33.560><c> session</c><00:19:33.920><c> tomorrow,</c><00:19:35.040><c> where</c><00:19:35.240><c> my</c>
+
+00:19:35.390 --> 00:19:35.400 align:start position:0%
+keynote session tomorrow, where my
+ 
+
+00:19:35.400 --> 00:19:37.510 align:start position:0%
+keynote session tomorrow, where my
+partner,<00:19:36.160><c> Nick</c><00:19:36.400><c> Dube,</c><00:19:36.800><c> will</c><00:19:37.000><c> be</c><00:19:37.120><c> talking</c>
+
+00:19:37.510 --> 00:19:37.520 align:start position:0%
+partner, Nick Dube, will be talking
+ 
+
+00:19:37.520 --> 00:19:39.790 align:start position:0%
+partner, Nick Dube, will be talking
+about,<00:19:38.160><c> you</c><00:19:38.200><c> know,</c><00:19:38.560><c> some</c><00:19:38.760><c> of</c><00:19:38.880><c> the</c><00:19:39.360><c> future</c>
+
+00:19:39.790 --> 00:19:39.800 align:start position:0%
+about, you know, some of the future
+ 
+
+00:19:39.800 --> 00:19:41.950 align:start position:0%
+about, you know, some of the future
+details<00:19:40.280><c> on</c><00:19:40.400><c> the</c><00:19:40.560><c> agentic</c><00:19:41.040><c> era.</c>
+
+00:19:41.950 --> 00:19:41.960 align:start position:0%
+details on the agentic era.
+ 
+
+00:19:41.960 --> 00:19:43.910 align:start position:0%
+details on the agentic era.
+So,<00:19:42.040><c> with</c><00:19:42.200><c> that,</c><00:19:42.720><c> thank</c><00:19:43.000><c> you.</c><00:19:43.440><c> Thank</c><00:19:43.680><c> you</c><00:19:43.760><c> for</c>
+
+00:19:43.910 --> 00:19:43.920 align:start position:0%
+So, with that, thank you. Thank you for
+ 
+
+00:19:43.920 --> 00:19:47.518 align:start position:0%
+So, with that, thank you. Thank you for
+your<00:19:44.040><c> time.</c>
+
+00:19:47.518 --> 00:19:47.528 align:start position:0%
+ 
+ 
+
+00:19:47.528 --> 00:19:49.548 align:start position:0%
+ 
+&gt;&gt; [applause]
+

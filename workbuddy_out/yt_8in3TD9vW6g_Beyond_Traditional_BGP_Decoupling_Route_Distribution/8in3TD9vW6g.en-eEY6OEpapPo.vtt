@@ -1,0 +1,1597 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.720 --> 00:00:11.440
+Yeah. So, hi everyone. So, I'm Eddie.
+
+00:00:07.440 --> 00:00:13.599
+So, I'm from IBA team. So, I think today
+
+00:00:11.440 --> 00:00:15.360
+is the last day for the OCP. So, I don't
+
+00:00:13.599 --> 00:00:18.640
+know everyone have a good conversation
+
+00:00:15.360 --> 00:00:21.760
+for the people who you only meet once a
+
+00:00:18.640 --> 00:00:23.439
+year. But this probably this week we I
+
+00:00:21.760 --> 00:00:26.720
+see a lot of old faces multiple times
+
+00:00:23.439 --> 00:00:30.240
+already. So I probably give you a story
+
+00:00:26.720 --> 00:00:34.399
+to see because oh this is OCP and we
+
+00:00:30.240 --> 00:00:37.600
+have a more considered as old boy club.
+
+00:00:34.399 --> 00:00:39.280
+No offending to the ladies here but but
+
+00:00:37.600 --> 00:00:41.440
+you don't want to join this old club
+
+00:00:39.280 --> 00:00:43.600
+anyway.
+
+00:00:41.440 --> 00:00:46.000
+So basically I want to show you like say
+
+00:00:43.600 --> 00:00:47.920
+how this uh chat will come into the
+
+00:00:46.000 --> 00:00:50.640
+picture and eventually we can come up
+
+00:00:47.920 --> 00:00:52.559
+some good solutions in the cloud. So
+
+00:00:50.640 --> 00:00:57.280
+today I basically want to talk about
+
+00:00:52.559 --> 00:01:00.719
+like I say how we could build 100k GPU
+
+00:00:57.280 --> 00:01:03.760
+cluster without MRC. We today we have a
+
+00:01:00.719 --> 00:01:07.280
+lot of MRC today. So I would say I won't
+
+00:01:03.760 --> 00:01:10.320
+do that but I start with the MRC slides.
+
+00:01:07.280 --> 00:01:13.360
+Let's recap like say that's a yeshan
+
+00:01:10.320 --> 00:01:15.760
+slide from last year. Say they did an
+
+00:01:13.360 --> 00:01:19.040
+excellent job. They delivered Microsoft
+
+00:01:15.760 --> 00:01:23.360
+delivered like 100k GPUs connecting in
+
+00:01:19.040 --> 00:01:25.439
+the the fair water and in this slide I
+
+00:01:23.360 --> 00:01:28.720
+highlight a little bit here. You see
+
+00:01:25.439 --> 00:01:32.159
+that they claim they improving the FR
+
+00:01:28.720 --> 00:01:35.600
+which is the BGP stack but 500 BGP
+
+00:01:32.159 --> 00:01:38.240
+sessions with only 1k routes but if
+
+00:01:35.600 --> 00:01:42.479
+you're looking on the if you want to
+
+00:01:38.240 --> 00:01:45.200
+support 100k GPUs which means 100k like
+
+00:01:42.479 --> 00:01:48.640
+addresses you need to connecting it so
+
+00:01:45.200 --> 00:01:52.079
+MRC basically did a one sneak way to
+
+00:01:48.640 --> 00:01:55.520
+avoiding the the job is basically say I
+
+00:01:52.079 --> 00:01:58.320
+do the SRV6 incap so are hiding all the
+
+00:01:55.520 --> 00:02:01.200
+tenant or GPU addresses out from the
+
+00:01:58.320 --> 00:02:04.399
+fabric. So fabric is only have the info
+
+00:02:01.200 --> 00:02:07.360
+routes. It's very small. So you can do
+
+00:02:04.399 --> 00:02:10.160
+the less than 1,000.
+
+00:02:07.360 --> 00:02:12.959
+So that's the beauty for the MRC.
+
+00:02:10.160 --> 00:02:16.000
+So initially like Clarence so I don't
+
+00:02:12.959 --> 00:02:19.360
+know why CL put me as a SRV6. I will
+
+00:02:16.000 --> 00:02:22.239
+explain this but you see that from point
+
+00:02:19.360 --> 00:02:24.400
+of view we already talk multiple times
+
+00:02:22.239 --> 00:02:28.239
+even like today when talking about we
+
+00:02:24.400 --> 00:02:31.120
+doing the DCI SRV6 so when we heard of
+
+00:02:28.239 --> 00:02:34.000
+say Microsoft use SRV6 doing the DCM we
+
+00:02:31.120 --> 00:02:36.239
+say my dream is come true because we
+
+00:02:34.000 --> 00:02:40.239
+always thinking about data center to
+
+00:02:36.239 --> 00:02:41.760
+data center end to end to do the SRV6 I
+
+00:02:40.239 --> 00:02:44.239
+think that's could be the one of the
+
+00:02:41.760 --> 00:02:45.519
+example for that because when SRVC
+
+00:02:44.239 --> 00:02:48.640
+initially started
+
+00:02:45.519 --> 00:02:52.480
+Like I think that's the entity guys or
+
+00:02:48.640 --> 00:02:55.440
+the KDDR guys say hey you want to do the
+
+00:02:52.480 --> 00:02:59.920
+from the antenna all the way to the data
+
+00:02:55.440 --> 00:03:03.120
+center. So that's another dream. But uh
+
+00:02:59.920 --> 00:03:06.000
+when I go back to our like internal team
+
+00:03:03.120 --> 00:03:08.560
+to see how we handling it, can we do the
+
+00:03:06.000 --> 00:03:11.280
+SRVC or copy the homework which
+
+00:03:08.560 --> 00:03:14.239
+Microsoft already showing up and the
+
+00:03:11.280 --> 00:03:16.239
+answer is no. It won't happen. The
+
+00:03:14.239 --> 00:03:18.879
+reason is like Microsoft is very lucky.
+
+00:03:16.239 --> 00:03:21.599
+They have only one big customer the open
+
+00:03:18.879 --> 00:03:25.680
+AI which can handle limit. So it's
+
+00:03:21.599 --> 00:03:27.200
+definitely lucky and for me I have a
+
+00:03:25.680 --> 00:03:29.440
+huge amount of because we are public
+
+00:03:27.200 --> 00:03:31.519
+cloud we have huge amount customers some
+
+00:03:29.440 --> 00:03:34.640
+customer even say I only need a bare
+
+00:03:31.519 --> 00:03:38.480
+metal machine from the Alibaba cloud but
+
+00:03:34.640 --> 00:03:42.560
+I don't need any Alibaba software on top
+
+00:03:38.480 --> 00:03:46.239
+of it. So how do I I won't be able to
+
+00:03:42.560 --> 00:03:47.840
+persuade everybody to take the MRC.
+
+00:03:46.239 --> 00:03:51.040
+That's when I'm not even want to think
+
+00:03:47.840 --> 00:03:53.200
+about it. Maybe education will later on
+
+00:03:51.040 --> 00:03:55.680
+happens but at this moment it won't
+
+00:03:53.200 --> 00:03:58.879
+happen. So basically say I won't be able
+
+00:03:55.680 --> 00:04:01.439
+to make the copy for the Microsoft
+
+00:03:58.879 --> 00:04:04.080
+homework. So that's why I say I will
+
+00:04:01.439 --> 00:04:06.239
+give you a break to say I want MRC today
+
+00:04:04.080 --> 00:04:08.640
+because it's way too much. But today I
+
+00:04:06.239 --> 00:04:11.920
+actually I was my talk is more like say
+
+00:04:08.640 --> 00:04:15.239
+I won't be able to use the SR6. How we
+
+00:04:11.920 --> 00:04:15.239
+doing it?
+
+00:04:15.519 --> 00:04:21.600
+So let's look at what the problem what
+
+00:04:17.359 --> 00:04:23.759
+we have. So say if we want to then so I
+
+00:04:21.600 --> 00:04:27.120
+just like throw in some like say this is
+
+00:04:23.759 --> 00:04:28.880
+a typical like a spine leaf topology I
+
+00:04:27.120 --> 00:04:31.600
+just throw some numbers for easy
+
+00:04:28.880 --> 00:04:34.479
+calculation so let's say spine I have
+
+00:04:31.600 --> 00:04:38.320
+like 200 spines there then each spine
+
+00:04:34.479 --> 00:04:40.880
+will be connecting to 500 to switches
+
+00:04:38.320 --> 00:04:44.160
+and each to be connecting to 200 like
+
+00:04:40.880 --> 00:04:46.720
+GPUs so that's one so let's look at the
+
+00:04:44.160 --> 00:04:48.400
+info routes the loop back address that
+
+00:04:46.720 --> 00:04:50.400
+will be your infer routes you that's the
+
+00:04:48.400 --> 00:04:53.040
+only thing you need. So then it's a
+
+00:04:50.400 --> 00:04:55.040
+basically say 200 plus 500 is simple
+
+00:04:53.040 --> 00:04:56.800
+it's just 700.
+
+00:04:55.040 --> 00:04:59.600
+Then we talking about like say the
+
+00:04:56.800 --> 00:05:01.600
+service routes because traditionally all
+
+00:04:59.600 --> 00:05:04.080
+these services routes we carry through
+
+00:05:01.600 --> 00:05:06.080
+the this fabric.
+
+00:05:04.080 --> 00:05:08.000
+So we talking about one concept called
+
+00:05:06.080 --> 00:05:10.560
+BGB pass. So let's see the service
+
+00:05:08.000 --> 00:05:13.759
+routes today right now it's like 200
+
+00:05:10.560 --> 00:05:17.120
+time 500 which is 100k that's just I on
+
+00:05:13.759 --> 00:05:20.080
+purpose making that numbers.
+
+00:05:17.120 --> 00:05:21.759
+then we need to each uh to need to learn
+
+00:05:20.080 --> 00:05:24.080
+all these one because let's assume we
+
+00:05:21.759 --> 00:05:26.479
+won't do the any aggregation for the
+
+00:05:24.080 --> 00:05:29.520
+routes we I will later explain why I
+
+00:05:26.479 --> 00:05:34.000
+cannot do it so then which means that
+
+00:05:29.520 --> 00:05:37.759
+for each tour I need to learn that 100k
+
+00:05:34.000 --> 00:05:40.240
+routes from that 200 peers
+
+00:05:37.759 --> 00:05:42.960
+right let's not talking about all the
+
+00:05:40.240 --> 00:05:45.680
+BGB complexity so it's funny we are one
+
+00:05:42.960 --> 00:05:47.360
+and a half day for the network sessions
+
+00:05:45.680 --> 00:05:50.320
+I'm the only guy talking about the BGP
+
+00:05:47.360 --> 00:05:52.160
+today.
+
+00:05:50.320 --> 00:05:55.280
+So, so you probably see a really really
+
+00:05:52.160 --> 00:05:58.639
+old like boy in the club.
+
+00:05:55.280 --> 00:06:02.080
+So then which means that I need to 100k
+
+00:05:58.639 --> 00:06:04.160
+time the 200 which is a 2 million pass
+
+00:06:02.080 --> 00:06:05.680
+we need to deal with. We are not even
+
+00:06:04.160 --> 00:06:07.520
+talking about the BB complexity all
+
+00:06:05.680 --> 00:06:10.240
+these things
+
+00:06:07.520 --> 00:06:14.000
+this one 200 million state you need to
+
+00:06:10.240 --> 00:06:16.000
+deal managing it's already a nightmare.
+
+00:06:14.000 --> 00:06:18.479
+So, so you see that problem is sitting
+
+00:06:16.000 --> 00:06:21.919
+there. Then let's look at what the
+
+00:06:18.479 --> 00:06:23.759
+Microsoft do. They say I that's why I
+
+00:06:21.919 --> 00:06:25.759
+just disappointed when they say I'm
+
+00:06:23.759 --> 00:06:28.160
+optimizing it but they are not really
+
+00:06:25.759 --> 00:06:31.919
+optimizing it because I probably still
+
+00:06:28.160 --> 00:06:36.800
+there for them they are 1,00 time 5 12
+
+00:06:31.919 --> 00:06:40.080
+which is 52k those BG passes. So it's
+
+00:06:36.800 --> 00:06:42.400
+tiny fraction compared to what I have.
+
+00:06:40.080 --> 00:06:45.840
+So, so that's why I like say I won't be
+
+00:06:42.400 --> 00:06:48.160
+able to copy the Microsoft. I also I
+
+00:06:45.840 --> 00:06:51.600
+already put someone to say let's tacken
+
+00:06:48.160 --> 00:06:54.639
+it. It's hard but we have to tacken it.
+
+00:06:51.600 --> 00:06:56.880
+So then
+
+00:06:54.639 --> 00:07:00.800
+so that's basically say we are it's hard
+
+00:06:56.880 --> 00:07:02.319
+but we say but our businesses to have to
+
+00:07:00.800 --> 00:07:04.400
+supporting it because we are kind of
+
+00:07:02.319 --> 00:07:09.280
+like the Microsoft we also need to bring
+
+00:07:04.400 --> 00:07:13.680
+in the 1,00 100k B GPUs the cluster to
+
+00:07:09.280 --> 00:07:15.280
+be online to generate the revenue.
+
+00:07:13.680 --> 00:07:17.280
+So
+
+00:07:15.280 --> 00:07:19.440
+after the last OCP I talked to the
+
+00:07:17.280 --> 00:07:21.599
+Google folks. It turned out they are
+
+00:07:19.440 --> 00:07:23.120
+Virgo have similar problems. So that's
+
+00:07:21.599 --> 00:07:25.440
+why like yesterday someone told me like
+
+00:07:23.120 --> 00:07:28.800
+they are doing the MRC. I would say they
+
+00:07:25.440 --> 00:07:30.960
+want to abandon me already.
+
+00:07:28.800 --> 00:07:33.840
+But it's kind of like because they also
+
+00:07:30.960 --> 00:07:36.319
+have multiple customers. So maybe like
+
+00:07:33.840 --> 00:07:37.599
+open eye will be one but they also need
+
+00:07:36.319 --> 00:07:39.199
+you deal with the public cloud. There
+
+00:07:37.599 --> 00:07:40.560
+are a lot of customer also similar one.
+
+00:07:39.199 --> 00:07:42.639
+That's why they say they also have the
+
+00:07:40.560 --> 00:07:46.000
+similar problems. But if you're looking
+
+00:07:42.639 --> 00:07:49.120
+on these two Alibaba and Google, it's
+
+00:07:46.000 --> 00:07:52.080
+very interesting. Google is centralized
+
+00:07:49.120 --> 00:07:54.400
+SDN approach. We are fully distributed
+
+00:07:52.080 --> 00:07:57.039
+on the BGB side.
+
+00:07:54.400 --> 00:08:00.479
+This is like the in this industry this
+
+00:07:57.039 --> 00:08:02.560
+is too extreme side right. So when we
+
+00:08:00.479 --> 00:08:04.319
+see this problem they have Virgo we have
+
+00:08:02.560 --> 00:08:07.440
+a 1000K
+
+00:08:04.319 --> 00:08:10.720
+BGP which we feel like I say the other
+
+00:08:07.440 --> 00:08:15.680
+side of glass is more green. So we we
+
+00:08:10.720 --> 00:08:18.319
+started talking and last November when
+
+00:08:15.680 --> 00:08:20.560
+Bard basically threw me a lifeline he
+
+00:08:18.319 --> 00:08:23.680
+gave me a very interesting idea say
+
+00:08:20.560 --> 00:08:26.720
+let's why not just add a controller
+
+00:08:23.680 --> 00:08:29.039
+let's put all the service routes that
+
+00:08:26.720 --> 00:08:32.479
+100k just through the controller to
+
+00:08:29.039 --> 00:08:35.120
+pushing down because GPU will not move
+
+00:08:32.479 --> 00:08:37.440
+not not like a VM GPU will not move at
+
+00:08:35.120 --> 00:08:40.880
+all it's it's physical it's sitting
+
+00:08:37.440 --> 00:08:43.599
+there so it's kind of anchored with to
+
+00:08:40.880 --> 00:08:46.720
+so then which means the GPU address to
+
+00:08:43.599 --> 00:08:48.160
+the to binding is very static so then
+
+00:08:46.720 --> 00:08:51.600
+you can use the controller to push him
+
+00:08:48.160 --> 00:08:53.839
+down so that's his idea then from the
+
+00:08:51.600 --> 00:08:56.880
+BGP side it's very simple you just need
+
+00:08:53.839 --> 00:08:58.720
+to handling the the recursive input
+
+00:08:56.880 --> 00:09:02.320
+routes you don't need to carry the all
+
+00:08:58.720 --> 00:09:06.160
+the service routes 100k service all gone
+
+00:09:02.320 --> 00:09:09.680
+I like it because compared to doing the
+
+00:09:06.160 --> 00:09:11.120
+20 million battery on the BGB side which
+
+00:09:09.680 --> 00:09:13.120
+almost like a another mission
+
+00:09:11.120 --> 00:09:14.720
+impossible. This one looks very
+
+00:09:13.120 --> 00:09:17.360
+promising
+
+00:09:14.720 --> 00:09:19.120
+right because I put add a controller
+
+00:09:17.360 --> 00:09:20.959
+then from difficult coding point of view
+
+00:09:19.120 --> 00:09:22.560
+I think
+
+00:09:20.959 --> 00:09:25.680
+on and a lot of people found software
+
+00:09:22.560 --> 00:09:28.800
+side you see it's doable
+
+00:09:25.680 --> 00:09:32.160
+so that's give me the sign to say hey
+
+00:09:28.800 --> 00:09:35.279
+it's good we would be do it
+
+00:09:32.160 --> 00:09:38.000
+then I last December so I talked to
+
+00:09:35.279 --> 00:09:40.160
+Clarence with the same idea to say I I
+
+00:09:38.000 --> 00:09:42.720
+want to add a controller to solving my
+
+00:09:40.160 --> 00:09:44.640
+problems you see that's Why the old boy
+
+00:09:42.720 --> 00:09:46.399
+club is very interesting. There's no
+
+00:09:44.640 --> 00:09:49.600
+secret in this valley. If you have a
+
+00:09:46.399 --> 00:09:51.519
+problem, you'll just ask around. So he
+
+00:09:49.600 --> 00:09:53.680
+looking around he said like you don't
+
+00:09:51.519 --> 00:09:56.560
+have controller.
+
+00:09:53.680 --> 00:09:58.480
+Why pay that cost? Why not just using
+
+00:09:56.560 --> 00:09:59.920
+router refractor?
+
+00:09:58.480 --> 00:10:01.519
+This is the first time we are thinking
+
+00:09:59.920 --> 00:10:03.360
+about using router refractor in the data
+
+00:10:01.519 --> 00:10:05.360
+center in the cloud because we never
+
+00:10:03.360 --> 00:10:07.839
+introducing the router refractor there.
+
+00:10:05.360 --> 00:10:10.880
+But this time seems like reasonable. The
+
+00:10:07.839 --> 00:10:13.440
+idea is like say you just don't have the
+
+00:10:10.880 --> 00:10:15.040
+so the same location the purple one
+
+00:10:13.440 --> 00:10:17.920
+instead of using controller I using
+
+00:10:15.040 --> 00:10:19.760
+router refractor your to will talk to ro
+
+00:10:17.920 --> 00:10:22.320
+refractor router reflector will be
+
+00:10:19.760 --> 00:10:24.640
+sending the all the routes to other toss
+
+00:10:22.320 --> 00:10:27.279
+your service routes the same concept the
+
+00:10:24.640 --> 00:10:30.160
+only thing is like just replacing the
+
+00:10:27.279 --> 00:10:32.880
+the router refractor
+
+00:10:30.160 --> 00:10:36.560
+so that's even beautiful because I'm a
+
+00:10:32.880 --> 00:10:39.760
+son guy from sonic point of view zero
+
+00:10:36.560 --> 00:10:41.360
+line of code I need to put in. That's a
+
+00:10:39.760 --> 00:10:44.320
+sweet because you think about it when
+
+00:10:41.360 --> 00:10:46.880
+you have a project you say zero line of
+
+00:10:44.320 --> 00:10:49.880
+code to you need to add it's a dream
+
+00:10:46.880 --> 00:10:49.880
+right.
+
+00:10:51.279 --> 00:10:57.519
+So let's put all these together. So this
+
+00:10:53.920 --> 00:11:00.160
+is our which we name it called HPM pivot
+
+00:10:57.519 --> 00:11:03.279
+for this project. Pivot basically you
+
+00:11:00.160 --> 00:11:06.800
+see that is this name reflecting our
+
+00:11:03.279 --> 00:11:09.279
+thought process. We start MRC then we
+
+00:11:06.800 --> 00:11:11.440
+want to do the BGP optimization then
+
+00:11:09.279 --> 00:11:13.760
+going to the Google's approach then
+
+00:11:11.440 --> 00:11:15.839
+taking the finally taking the Cisco
+
+00:11:13.760 --> 00:11:18.240
+suggestion then we come that's why you
+
+00:11:15.839 --> 00:11:21.760
+see the pivot is really the perfect name
+
+00:11:18.240 --> 00:11:25.440
+to reflecting this journey so then this
+
+00:11:21.760 --> 00:11:28.480
+is basically say we have like say two
+
+00:11:25.440 --> 00:11:30.160
+like say the ASW is basically the T0
+
+00:11:28.480 --> 00:11:32.720
+from the Microsoft point of view and the
+
+00:11:30.160 --> 00:11:35.680
+PSW is the T1. So this is our like a
+
+00:11:32.720 --> 00:11:38.880
+fabric and DSW is a third layer which is
+
+00:11:35.680 --> 00:11:41.760
+super spine we I'll explain that this is
+
+00:11:38.880 --> 00:11:43.920
+more mainly for rescue purpose. So it's
+
+00:11:41.760 --> 00:11:46.880
+normally what for only for exceptional
+
+00:11:43.920 --> 00:11:49.360
+packet which I will explain in
+
+00:11:46.880 --> 00:11:52.959
+then let's look at like say on the right
+
+00:11:49.360 --> 00:11:55.600
+hand side there's a src the BGP which
+
+00:11:52.959 --> 00:11:58.000
+means that this is my route refractor we
+
+00:11:55.600 --> 00:12:01.519
+called route service cluster basically
+
+00:11:58.000 --> 00:12:04.399
+put a bunch of refractor there. So from
+
+00:12:01.519 --> 00:12:07.760
+the to point of view we just publishing
+
+00:12:04.399 --> 00:12:09.920
+the routes to those router reflectors
+
+00:12:07.760 --> 00:12:12.480
+right then the only difference is like
+
+00:12:09.920 --> 00:12:14.000
+we are not using the it's we use the
+
+00:12:12.480 --> 00:12:16.079
+loop back address we are not using the
+
+00:12:14.000 --> 00:12:17.920
+interface address so we do the loop back
+
+00:12:16.079 --> 00:12:21.120
+appearing so sending the so that keeping
+
+00:12:17.920 --> 00:12:23.200
+that loop back address there then router
+
+00:12:21.120 --> 00:12:26.240
+refactor will be sending all these
+
+00:12:23.200 --> 00:12:28.480
+routes to the other tours
+
+00:12:26.240 --> 00:12:31.839
+then and also like we will do the
+
+00:12:28.480 --> 00:12:36.560
+recursive routing So which means the now
+
+00:12:31.839 --> 00:12:39.120
+for this one your GPU reachability is
+
+00:12:36.560 --> 00:12:41.600
+not determined by the fabric it's
+
+00:12:39.120 --> 00:12:43.600
+determined by the to reachability
+
+00:12:41.600 --> 00:12:46.240
+because you are physical device it's not
+
+00:12:43.600 --> 00:12:48.880
+a VM anymore you won't be able to change
+
+00:12:46.240 --> 00:12:52.240
+that often so we can rely on the static
+
+00:12:48.880 --> 00:12:55.519
+binding there so that's the one so then
+
+00:12:52.240 --> 00:12:59.600
+you see that I immediate benefit will be
+
+00:12:55.519 --> 00:13:02.639
+I reducing from the 400 to four so Even
+
+00:12:59.600 --> 00:13:04.880
+I have a 100k routes need to handle I
+
+00:13:02.639 --> 00:13:07.440
+only learn from the 400 four peoples
+
+00:13:04.880 --> 00:13:11.600
+instead of learning from 200 peoples. So
+
+00:13:07.440 --> 00:13:17.360
+my the data itself will reduced to the
+
+00:13:11.600 --> 00:13:20.480
+400k compared original 20 million right
+
+00:13:17.360 --> 00:13:23.040
+this is very doable I'm very competent
+
+00:13:20.480 --> 00:13:26.399
+because I'm a BGP and so it's very easy
+
+00:13:23.040 --> 00:13:28.480
+to doing it. So then the other side
+
+00:13:26.399 --> 00:13:31.760
+probably what people were asking say why
+
+00:13:28.480 --> 00:13:33.440
+you cannot do the route aggregate right
+
+00:13:31.760 --> 00:13:35.519
+if you can do it because that's was what
+
+00:13:33.440 --> 00:13:37.680
+some Microsoft folks ask me or say if
+
+00:13:35.519 --> 00:13:43.120
+you can do ro aggregate it all solve the
+
+00:13:37.680 --> 00:13:46.800
+problem two reasons one is we allow the
+
+00:13:43.120 --> 00:13:49.279
+customer to carry if the GPU go down you
+
+00:13:46.800 --> 00:13:52.160
+move into a different rack we allow the
+
+00:13:49.279 --> 00:13:53.440
+address to be moved around which means
+
+00:13:52.160 --> 00:13:54.720
+that from the customer point of view
+
+00:13:53.440 --> 00:13:57.760
+they don't need to do anything they just
+
+00:13:54.720 --> 00:13:59.839
+bring it up then everything is done that
+
+00:13:57.760 --> 00:14:02.639
+give the flexibility to the customer
+
+00:13:59.839 --> 00:14:08.480
+give a headache to us that's one the
+
+00:14:02.639 --> 00:14:09.920
+second one is the DSW layer we somehow
+
+00:14:08.480 --> 00:14:12.480
+basically this is a philosophy design
+
+00:14:09.920 --> 00:14:15.120
+philosophy for the failure handling do
+
+00:14:12.480 --> 00:14:18.160
+you want to believe everything you can
+
+00:14:15.120 --> 00:14:21.120
+detect on the whole site because if the
+
+00:14:18.160 --> 00:14:24.959
+moment you detect a fail it's black hole
+
+00:14:21.120 --> 00:14:28.000
+in traffic so we are thinking that we ex
+
+00:14:24.959 --> 00:14:30.240
+if session hap happens we use a DSW to
+
+00:14:28.000 --> 00:14:32.639
+jump into a different plan. So that's
+
+00:14:30.240 --> 00:14:36.399
+our belief. So at least you can
+
+00:14:32.639 --> 00:14:38.800
+detecting the latency go high but at
+
+00:14:36.399 --> 00:14:42.880
+least we won't you are not the single
+
+00:14:38.800 --> 00:14:45.360
+response guy to handling it. So so at
+
+00:14:42.880 --> 00:14:48.079
+least we see the outage but we won't be
+
+00:14:45.360 --> 00:14:50.079
+the catastrophe outage. So that's our
+
+00:14:48.079 --> 00:14:51.519
+design belief. So that's a little bit
+
+00:14:50.079 --> 00:14:53.279
+different with Microsoft and the meta
+
+00:14:51.519 --> 00:14:54.720
+because they always two layer. We are
+
+00:14:53.279 --> 00:14:57.920
+third layer but third layer is mainly
+
+00:14:54.720 --> 00:15:01.199
+for the exceptional handling.
+
+00:14:57.920 --> 00:15:02.880
+So that's the the main reason.
+
+00:15:01.199 --> 00:15:04.880
+Okay.
+
+00:15:02.880 --> 00:15:07.440
+So now from the architecture point of is
+
+00:15:04.880 --> 00:15:11.519
+pretty clean, right? I have zero code to
+
+00:15:07.440 --> 00:15:14.560
+be put in, right? And it seems like we
+
+00:15:11.519 --> 00:15:17.279
+just put in this part should be simple.
+
+00:15:14.560 --> 00:15:19.680
+But when you go into the detail from the
+
+00:15:17.279 --> 00:15:21.920
+architecture, the clean architecture to
+
+00:15:19.680 --> 00:15:25.120
+the deployment
+
+00:15:21.920 --> 00:15:27.920
+that's lot of interesting part. So I
+
+00:15:25.120 --> 00:15:30.240
+just list a couple of them. The first
+
+00:15:27.920 --> 00:15:32.079
+one in the form factor you're using the
+
+00:15:30.240 --> 00:15:34.240
+physical machine or you use the virtual
+
+00:15:32.079 --> 00:15:37.279
+machine right that's no brainer because
+
+00:15:34.240 --> 00:15:39.839
+I'm only the FR so I shuffling FR to be
+
+00:15:37.279 --> 00:15:42.399
+the the docker then it is a virtual
+
+00:15:39.839 --> 00:15:44.480
+devices so ideally I should use virtual
+
+00:15:42.399 --> 00:15:46.399
+devices it it doesn't make sense for me
+
+00:15:44.480 --> 00:15:49.360
+use the physical one because I don't
+
+00:15:46.399 --> 00:15:53.440
+need any data plan behaviors
+
+00:15:49.360 --> 00:15:55.519
+but there's one catch we are physical
+
+00:15:53.440 --> 00:15:58.720
+networking
+
+00:15:55.519 --> 00:16:02.160
+right Our like I say install base is
+
+00:15:58.720 --> 00:16:06.399
+like you put the device on the rack
+
+00:16:02.160 --> 00:16:08.320
+stacking that cable power on right now
+
+00:16:06.399 --> 00:16:11.680
+you have a virtual device what do you do
+
+00:16:08.320 --> 00:16:16.560
+with that so that a lot of headache for
+
+00:16:11.680 --> 00:16:20.079
+us so because as a the physical network
+
+00:16:16.560 --> 00:16:22.240
+team we never done it before so so
+
+00:16:20.079 --> 00:16:24.320
+different set of problem
+
+00:16:22.240 --> 00:16:27.839
+the second one is a placement where you
+
+00:16:24.320 --> 00:16:30.320
+want to put it we can put in cloud or we
+
+00:16:27.839 --> 00:16:33.040
+can put close to where the cluster will
+
+00:16:30.320 --> 00:16:35.040
+be and we choose close to the cluster
+
+00:16:33.040 --> 00:16:36.560
+the reason in the BFD protection because
+
+00:16:35.040 --> 00:16:39.360
+we want to be able to protect the BGP
+
+00:16:36.560 --> 00:16:41.839
+sessions. So to avoiding that you need
+
+00:16:39.360 --> 00:16:43.759
+to wait for the 90 second timeout. So we
+
+00:16:41.839 --> 00:16:48.560
+want to be the one times three or even
+
+00:16:43.759 --> 00:16:50.880
+like 300 times three right even better
+
+00:16:48.560 --> 00:16:52.800
+but if you want to pull the cloud who
+
+00:16:50.880 --> 00:16:54.480
+knows where is it it might be we are
+
+00:16:52.800 --> 00:16:58.079
+sitting in China the other one in the in
+
+00:16:54.480 --> 00:17:02.320
+the US right so we want to be close by
+
+00:16:58.079 --> 00:17:05.439
+then you can determine the BFD
+
+00:17:02.320 --> 00:17:07.839
+so that means that we need to managing
+
+00:17:05.439 --> 00:17:11.199
+the life cycle of those virtual device
+
+00:17:07.839 --> 00:17:13.039
+on our own so that introducing the oper
+
+00:17:11.199 --> 00:17:16.160
+operation complexity say how do you deal
+
+00:17:13.039 --> 00:17:18.000
+with that you need to deal with now a
+
+00:17:16.160 --> 00:17:20.559
+setup that how do you bring up those
+
+00:17:18.000 --> 00:17:23.679
+virtual machines how do you bring up the
+
+00:17:20.559 --> 00:17:25.360
+and monitoring this servers which so we
+
+00:17:23.679 --> 00:17:27.199
+introducing a new software piece called
+
+00:17:25.360 --> 00:17:30.160
+the pivot manager which is just do the
+
+00:17:27.199 --> 00:17:32.160
+automation for that so I didn't found my
+
+00:17:30.160 --> 00:17:35.360
+team on the sonic side single line of
+
+00:17:32.160 --> 00:17:38.559
+code but I found them to do the the
+
+00:17:35.360 --> 00:17:41.440
+pivot manager and this is probably will
+
+00:17:38.559 --> 00:17:43.120
+be the interesting part is Like I say if
+
+00:17:41.440 --> 00:17:45.200
+you talk we I always say I want to be
+
+00:17:43.120 --> 00:17:47.520
+productionizing for this one because I
+
+00:17:45.200 --> 00:17:51.039
+don't want to always put someone to on
+
+00:17:47.520 --> 00:17:53.039
+call to doing it. So but if you're
+
+00:17:51.039 --> 00:17:55.520
+asking for the requirement for the
+
+00:17:53.039 --> 00:17:56.960
+operation team they only give you high
+
+00:17:55.520 --> 00:18:00.799
+level there's no detail requirement at
+
+00:17:56.960 --> 00:18:02.799
+all the reason is they never done it
+
+00:18:00.799 --> 00:18:05.200
+they always deal with hardware machine
+
+00:18:02.799 --> 00:18:07.520
+they never done with software so that's
+
+00:18:05.200 --> 00:18:11.360
+a challenges so now we are still ongoing
+
+00:18:07.520 --> 00:18:13.679
+basis I put the no kubernet here the
+
+00:18:11.360 --> 00:18:17.280
+although I'm using docker kubernet too
+
+00:18:13.679 --> 00:18:20.320
+heavy I only have handsful like I say
+
+00:18:17.280 --> 00:18:22.160
+like couple ten of uh 20 or 30 like
+
+00:18:20.320 --> 00:18:24.960
+dockers. So that's why we say no
+
+00:18:22.160 --> 00:18:28.520
+Kubernetes just handling directly to
+
+00:18:24.960 --> 00:18:28.520
+reducing the complexity.
+
+00:18:28.559 --> 00:18:34.000
+The other one is like now we introducing
+
+00:18:30.559 --> 00:18:38.080
+the R need to be reliable.
+
+00:18:34.000 --> 00:18:41.360
+So the bottom line is like any R outage
+
+00:18:38.080 --> 00:18:44.080
+should not impact the AI cluster because
+
+00:18:41.360 --> 00:18:46.400
+you have the 100k
+
+00:18:44.080 --> 00:18:48.559
+GPU. Whoever be able to using that 100
+
+00:18:46.400 --> 00:18:53.600
+GPU normally they can make a phone call
+
+00:18:48.559 --> 00:18:56.320
+to our CEO big customer right then you
+
+00:18:53.600 --> 00:18:58.720
+cannot mess up with them. So you have to
+
+00:18:56.320 --> 00:19:02.320
+deal with that. So reliability is very
+
+00:18:58.720 --> 00:19:05.520
+crucial. So we put we say hey we put a
+
+00:19:02.320 --> 00:19:08.880
+four R instance per plan per protocol we
+
+00:19:05.520 --> 00:19:11.760
+even separate V4 V6. So we're doing that
+
+00:19:08.880 --> 00:19:14.240
+then since we put like R into the close
+
+00:19:11.760 --> 00:19:15.840
+to the the AI cluster actually that
+
+00:19:14.240 --> 00:19:19.919
+introducing a new set of problem which
+
+00:19:15.840 --> 00:19:22.320
+means that it's in the same campus
+
+00:19:19.919 --> 00:19:25.360
+right so which means that I need to make
+
+00:19:22.320 --> 00:19:27.360
+sure they are physical servers all four
+
+00:19:25.360 --> 00:19:30.480
+of them on different servers that's
+
+00:19:27.360 --> 00:19:35.440
+minimum right then they under the
+
+00:19:30.480 --> 00:19:39.360
+different uh um rack and even we are
+
+00:19:35.440 --> 00:19:42.000
+moving them to a different cluster.
+
+00:19:39.360 --> 00:19:45.280
+So, so then then we also have running
+
+00:19:42.000 --> 00:19:47.600
+the the R each run independently. So
+
+00:19:45.280 --> 00:19:50.559
+that's a R one. But were that good
+
+00:19:47.600 --> 00:19:53.440
+enough? And actually no because we are
+
+00:19:50.559 --> 00:19:54.960
+close by. So which in the same campus
+
+00:19:53.440 --> 00:19:58.160
+you could have like say one building
+
+00:19:54.960 --> 00:20:00.559
+outage a perfect storm something gone
+
+00:19:58.160 --> 00:20:04.000
+and also we do see the issue before in
+
+00:20:00.559 --> 00:20:07.679
+the our other servers within like uh
+
+00:20:04.000 --> 00:20:10.880
+perfect one hour about a 10 proving
+
+00:20:07.679 --> 00:20:14.080
+servers just reboot silently
+
+00:20:10.880 --> 00:20:17.280
+so which means it's will be have the
+
+00:20:14.080 --> 00:20:18.799
+risk I could losing all four of them
+
+00:20:17.280 --> 00:20:20.400
+simultaneously
+
+00:20:18.799 --> 00:20:21.200
+it's not like server pro because server
+
+00:20:20.400 --> 00:20:22.799
+provider
+
+00:20:21.200 --> 00:20:25.039
+they are physical machine sitting on as
+
+00:20:22.799 --> 00:20:27.360
+different cities so they don't have this
+
+00:20:25.039 --> 00:20:30.000
+problem but we do have this problem here
+
+00:20:27.360 --> 00:20:33.120
+now so that's why I introducing we
+
+00:20:30.000 --> 00:20:35.360
+working with Cisco camera and Chris
+
+00:20:33.120 --> 00:20:37.360
+basically introducing the group GR
+
+00:20:35.360 --> 00:20:39.919
+basically so we want to introducing the
+
+00:20:37.360 --> 00:20:43.360
+the grier restart but griff normally the
+
+00:20:39.919 --> 00:20:44.960
+peer-to-peer you only do the and we want
+
+00:20:43.360 --> 00:20:47.760
+to be the group level so we don't want
+
+00:20:44.960 --> 00:20:50.240
+to mess up the the BGP
+
+00:20:47.760 --> 00:20:53.679
+state machine we put a policy on top of
+
+00:20:50.240 --> 00:20:57.520
+it which means that if all four of them
+
+00:20:53.679 --> 00:21:01.440
+gone then we trigger the GR so the that
+
+00:20:57.520 --> 00:21:04.720
+the and to holding on the routes but if
+
+00:21:01.440 --> 00:21:06.400
+any one of them come back he recover so
+
+00:21:04.720 --> 00:21:08.960
+that's a little bit twist from the
+
+00:21:06.400 --> 00:21:11.039
+existing grace for JR concept but that's
+
+00:21:08.960 --> 00:21:12.799
+what we call the group JR for that so we
+
+00:21:11.039 --> 00:21:14.640
+introducing the group J and there to
+
+00:21:12.799 --> 00:21:16.159
+save this more like say headless folding
+
+00:21:14.640 --> 00:21:18.480
+because if you use controller you
+
+00:21:16.159 --> 00:21:20.720
+natively have headless forwarding group
+
+00:21:18.480 --> 00:21:22.799
+BGP doesn't have that this is basically
+
+00:21:20.720 --> 00:21:25.760
+introducing the headless forwarding in
+
+00:21:22.799 --> 00:21:28.480
+the GBGP.
+
+00:21:25.760 --> 00:21:33.039
+The other one is for the testing.
+
+00:21:28.480 --> 00:21:35.280
+So you have like say 100k GPUs
+
+00:21:33.039 --> 00:21:37.679
+you expecting everything will be day one
+
+00:21:35.280 --> 00:21:40.559
+everything working that's a good wish
+
+00:21:37.679 --> 00:21:43.520
+list it won't happen you have to test it
+
+00:21:40.559 --> 00:21:45.760
+so this is our emulation environment
+
+00:21:43.520 --> 00:21:48.080
+when we say system because this is one
+
+00:21:45.760 --> 00:21:51.360
+my colleague we're talking in tomorrow's
+
+00:21:48.080 --> 00:21:54.000
+sonic extending workshop also basically
+
+00:21:51.360 --> 00:21:56.159
+we will simulate the whole system not
+
+00:21:54.000 --> 00:21:58.240
+only the device device level we do the
+
+00:21:56.159 --> 00:22:00.240
+chip level emulation
+
+00:21:58.240 --> 00:22:02.080
+So we get exactly the same one beside
+
+00:22:00.240 --> 00:22:05.280
+the data plan everything will be the
+
+00:22:02.080 --> 00:22:07.120
+same. So it's a real configuration real
+
+00:22:05.280 --> 00:22:09.679
+like um form factor everything
+
+00:22:07.120 --> 00:22:13.039
+connection will be the same. So the if
+
+00:22:09.679 --> 00:22:15.679
+you see the light green one and the the
+
+00:22:13.039 --> 00:22:18.720
+the purple and the pink one dot this is
+
+00:22:15.679 --> 00:22:21.360
+basically our two the leaf and spine.
+
+00:22:18.720 --> 00:22:24.720
+Then the left and right side this is our
+
+00:22:21.360 --> 00:22:26.400
+like VM which are hosting on ours. So we
+
+00:22:24.720 --> 00:22:28.880
+can basically simulate the whole thing
+
+00:22:26.400 --> 00:22:31.280
+and even more because there are a lot of
+
+00:22:28.880 --> 00:22:32.640
+like configuration monitoring tools we
+
+00:22:31.280 --> 00:22:34.799
+will put in there that's why I called
+
+00:22:32.640 --> 00:22:37.360
+end full system end to end simulate
+
+00:22:34.799 --> 00:22:40.559
+emulator which we would not only
+
+00:22:37.360 --> 00:22:43.200
+simulate the device or the R we also let
+
+00:22:40.559 --> 00:22:46.799
+the whole orchestration layer be able to
+
+00:22:43.200 --> 00:22:50.000
+hands on it then that reducing a lot of
+
+00:22:46.799 --> 00:22:52.480
+uh risk because once you've tested
+
+00:22:50.000 --> 00:22:54.880
+everything you just run the same thing
+
+00:22:52.480 --> 00:22:58.080
+again in the real hardware which is same
+
+00:22:54.880 --> 00:23:02.000
+configuration same um connection so that
+
+00:22:58.080 --> 00:23:03.600
+won't be have a chance to have a mistake
+
+00:23:02.000 --> 00:23:06.320
+so
+
+00:23:03.600 --> 00:23:10.240
+so that's uh pretty much I just give you
+
+00:23:06.320 --> 00:23:11.840
+so today this 100k we already put online
+
+00:23:10.240 --> 00:23:15.760
+so actually there are two cluster
+
+00:23:11.840 --> 00:23:19.919
+already so it's already deployed
+
+00:23:15.760 --> 00:23:23.120
+but as AI moving we won't be still stand
+
+00:23:19.919 --> 00:23:25.200
+still there and in the recent Aspir
+
+00:23:23.120 --> 00:23:27.200
+conference Alibaba already announced.
+
+00:23:25.200 --> 00:23:29.679
+That's one big headache also for me is
+
+00:23:27.200 --> 00:23:32.400
+like I say it's no longer be 100k it's
+
+00:23:29.679 --> 00:23:35.200
+500k now
+
+00:23:32.400 --> 00:23:38.559
+how to deal with 500k so that's why we I
+
+00:23:35.200 --> 00:23:41.919
+need a old boy club come back let's
+
+00:23:38.559 --> 00:23:44.960
+discuss need help again so we probably
+
+00:23:41.919 --> 00:23:47.039
+need to like I say this time I avoiding
+
+00:23:44.960 --> 00:23:49.760
+the BGP enhancement I probably need to
+
+00:23:47.039 --> 00:23:53.120
+attacking that again and the group GR
+
+00:23:49.760 --> 00:23:56.240
+definitely we need it and also the maybe
+
+00:23:53.120 --> 00:23:57.679
+heterogeneous art something. So if
+
+00:23:56.240 --> 00:23:59.520
+anyone will be interested, we can
+
+00:23:57.679 --> 00:24:01.520
+discuss this uh sonic routing working
+
+00:23:59.520 --> 00:24:04.520
+group. So that's all I have. Thank you
+
+00:24:01.520 --> 00:24:04.520
+everyone.
+
+00:24:07.120 --> 00:24:10.520
+Right. Questions.
+
+00:24:12.240 --> 00:24:14.400
+Good.
+
+00:24:13.360 --> 00:24:17.720
+All right. Thank you.
+
+00:24:14.400 --> 00:24:17.720
+Okay. Thanks.
+

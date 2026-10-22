@@ -1,0 +1,1990 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.200 --> 00:00:07.914
+I will try to be very slow. [laughter]
+
+00:00:08.639 --> 00:00:19.359
+So go to the first slide. Okay. Uh I'm
+
+00:00:13.599 --> 00:00:22.720
+border from N level and I'm here to
+
+00:00:19.359 --> 00:00:25.680
+call for new vision and a new
+
+00:00:22.720 --> 00:00:28.160
+architecture for energy distribution. So
+
+00:00:25.680 --> 00:00:30.640
+we call it real-time energy rooting and
+
+00:00:28.160 --> 00:00:34.160
+I will show what is behind it and what
+
+00:00:30.640 --> 00:00:37.160
+to do in the next step.
+
+00:00:34.160 --> 00:00:37.160
+So so
+
+00:00:37.440 --> 00:00:42.239
+okay
+
+00:00:39.200 --> 00:00:45.040
+so the first question is what do we
+
+00:00:42.239 --> 00:00:48.800
+affect? we affect the whole power supply
+
+00:00:45.040 --> 00:00:50.559
+chain which is implemented in a a data
+
+00:00:48.800 --> 00:00:52.480
+center because if you have a
+
+00:00:50.559 --> 00:00:53.920
+architecture which is able to route the
+
+00:00:52.480 --> 00:00:56.800
+energy like the internet you're
+
+00:00:53.920 --> 00:01:02.160
+affecting everything.
+
+00:00:56.800 --> 00:01:05.760
+So in the uh old setup you have a lot of
+
+00:01:02.160 --> 00:01:09.520
+converters and uh lot of [snorts]
+
+00:01:05.760 --> 00:01:12.320
+devices which are designed to fulfill
+
+00:01:09.520 --> 00:01:17.040
+some special
+
+00:01:12.320 --> 00:01:20.159
+um rig uh demands and they are going to
+
+00:01:17.040 --> 00:01:22.240
+be like a UPS system ACAC for monolytic
+
+00:01:20.159 --> 00:01:25.759
+locked window
+
+00:01:22.240 --> 00:01:28.400
+locked units. uh we are going for a
+
+00:01:25.759 --> 00:01:32.000
+standard module which is able to route
+
+00:01:28.400 --> 00:01:37.200
+the energy and then we do not need all
+
+00:01:32.000 --> 00:01:39.680
+the standard components anymore.
+
+00:01:37.200 --> 00:01:44.720
+How it works? It's every time the same
+
+00:01:39.680 --> 00:01:48.640
+knot it's uh like internet of energy
+
+00:01:44.720 --> 00:01:51.920
+and you send a a
+
+00:01:48.640 --> 00:01:55.920
+stream of energy inside the matrix. your
+
+00:01:51.920 --> 00:01:58.960
+ribbit out in energy blocks. It's a
+
+00:01:55.920 --> 00:02:01.600
+payload of a energy frame. Then you can
+
+00:01:58.960 --> 00:02:05.280
+route it through the matrix and at every
+
+00:02:01.600 --> 00:02:07.520
+single endpoint you can recover uh the
+
+00:02:05.280 --> 00:02:12.000
+energy form you want to have maybe AC,
+
+00:02:07.520 --> 00:02:16.920
+DC, maybe input, maybe output, whatever
+
+00:02:12.000 --> 00:02:16.920
+you want any um power.
+
+00:02:19.120 --> 00:02:23.680
+I think it's really crucial to do it
+
+00:02:21.760 --> 00:02:27.920
+because I'm working on the hardware
+
+00:02:23.680 --> 00:02:31.120
+layer I call it zero and uh I care about
+
+00:02:27.920 --> 00:02:33.680
+the physics and the fi which is able to
+
+00:02:31.120 --> 00:02:37.599
+route energy but as we know from the
+
+00:02:33.680 --> 00:02:40.400
+internet we have eight layer or more
+
+00:02:37.599 --> 00:02:43.280
+which need to be added to have a real
+
+00:02:40.400 --> 00:02:48.160
+routing structure to capture multiple
+
+00:02:43.280 --> 00:02:50.879
+streams uh in a big noded matrix.
+
+00:02:48.160 --> 00:02:53.040
+So I'm trying to find people who are
+
+00:02:50.879 --> 00:02:58.000
+willing to
+
+00:02:53.040 --> 00:03:02.800
+uh join and to um yeah create the
+
+00:02:58.000 --> 00:03:08.400
+missing layers on top. So I dream for
+
+00:03:02.800 --> 00:03:12.080
+UCP work group who is able to design the
+
+00:03:08.400 --> 00:03:14.239
+full set for energy routing. So it's
+
+00:03:12.080 --> 00:03:17.760
+exactly looking like the internet but
+
+00:03:14.239 --> 00:03:22.400
+routing energy from power plants to the
+
+00:03:17.760 --> 00:03:24.400
+GPU devices and all the targets.
+
+00:03:22.400 --> 00:03:27.400
+Yeah. Thank you. Uh I tried to be very
+
+00:03:24.400 --> 00:03:27.400
+short.
+
+00:03:28.080 --> 00:03:32.560
+Thank you. Yeah. So let's move on to our
+
+00:03:30.000 --> 00:03:36.959
+next speaker uh which is uh from Soul
+
+00:03:32.560 --> 00:03:38.879
+National University. Is that right? Um
+
+00:03:36.959 --> 00:03:41.519
+your presentation slide should be on the
+
+00:03:38.879 --> 00:03:45.799
+next click. Yeah.
+
+00:03:41.519 --> 00:03:45.799
+and fi five minutes please.
+
+00:03:52.560 --> 00:03:57.120
+Hello everyone. I am in Kang from Soul
+
+00:03:54.959 --> 00:04:00.159
+National University. Today I will
+
+00:03:57.120 --> 00:04:03.519
+present NVME next a virtual NVME device
+
+00:04:00.159 --> 00:04:06.000
+for GPUcentric storage systems.
+
+00:04:03.519 --> 00:04:09.040
+As modern GPU workloads have outgrown
+
+00:04:06.000 --> 00:04:11.200
+HBM, recent systems offload data sets to
+
+00:04:09.040 --> 00:04:14.480
+the storage tier. But conventionally,
+
+00:04:11.200 --> 00:04:17.120
+the CPU sits in the middle of every GPU
+
+00:04:14.480 --> 00:04:19.680
+storage transfer and advine granularity,
+
+00:04:17.120 --> 00:04:22.960
+but that becomes the bottleneck. GPU
+
+00:04:19.680 --> 00:04:25.680
+initiated IO removes it. GPU threads
+
+00:04:22.960 --> 00:04:28.320
+issue IO's directly with no GPU
+
+00:04:25.680 --> 00:04:30.720
+intervention. The industry is moving the
+
+00:04:28.320 --> 00:04:32.800
+same direction. Nvidia's storage next
+
+00:04:30.720 --> 00:04:35.440
+vision redefineses storage as an
+
+00:04:32.800 --> 00:04:38.080
+extension of GPU memory for both
+
+00:04:35.440 --> 00:04:40.560
+performance and cost. But the devices
+
+00:04:38.080 --> 00:04:43.040
+this vision assumes do not exist yet.
+
+00:04:40.560 --> 00:04:45.440
+That is why we need a scalable emulator
+
+00:04:43.040 --> 00:04:47.759
+to scale under extreme concurrency and
+
+00:04:45.440 --> 00:04:50.160
+million IOPS class throughput demands
+
+00:04:47.759 --> 00:04:53.360
+and to perform efficient P-2e
+
+00:04:50.160 --> 00:04:57.120
+communication with GPUs. This is exactly
+
+00:04:53.360 --> 00:05:00.880
+the gap NVME next fills.
+
+00:04:57.120 --> 00:05:03.680
+We built NVME next on top of our prior
+
+00:05:00.880 --> 00:05:06.400
+emulator NVME vert rearchitecting around
+
+00:05:03.680 --> 00:05:09.039
+two elements. First, a multim manager
+
+00:05:06.400 --> 00:05:12.240
+architecture. A manager is the basic
+
+00:05:09.039 --> 00:05:14.479
+operating unit of NVME next performing
+
+00:05:12.240 --> 00:05:17.280
+the entire sequence from fetching NVME
+
+00:05:14.479 --> 00:05:19.680
+commands to posting completions. NVM
+
+00:05:17.280 --> 00:05:22.000
+next charge NVME Q pairs across
+
+00:05:19.680 --> 00:05:25.039
+managers. So each manager owns a
+
+00:05:22.000 --> 00:05:27.759
+disjoint set of cues. This parallelizes
+
+00:05:25.039 --> 00:05:30.240
+request processing with no inter thread
+
+00:05:27.759 --> 00:05:33.199
+synchronization letting the emulator
+
+00:05:30.240 --> 00:05:35.360
+scale under extreme concurrency.
+
+00:05:33.199 --> 00:05:38.160
+Second, the performance model. It
+
+00:05:35.360 --> 00:05:41.360
+captures NAND read latency along with
+
+00:05:38.160 --> 00:05:44.320
+PCIe and NAND channel occupancy because
+
+00:05:41.360 --> 00:05:46.800
+every manager shares this model. Locking
+
+00:05:44.320 --> 00:05:49.120
+becomes a critical design point. A
+
+00:05:46.800 --> 00:05:51.600
+global lock causes contention. Per
+
+00:05:49.120 --> 00:05:54.560
+manager partitioning avoids that but it
+
+00:05:51.600 --> 00:05:57.440
+is inaccurate for mixed workloads. Under
+
+00:05:54.560 --> 00:06:00.160
+small IOS NAND read latency dominates
+
+00:05:57.440 --> 00:06:02.720
+while channel and PCIe bandwidth save
+
+00:06:00.160 --> 00:06:05.440
+far from saturation. So NBME next
+
+00:06:02.720 --> 00:06:08.000
+assigns each transfer of precomputed
+
+00:06:05.440 --> 00:06:10.720
+latency instead of modeling channel
+
+00:06:08.000 --> 00:06:13.919
+contention. Then managers only need to
+
+00:06:10.720 --> 00:06:18.160
+share each plane status since NAND
+
+00:06:13.919 --> 00:06:21.869
+operations serialize per plane.
+
+00:06:18.160 --> 00:06:24.080
+Each manager operates in three phase
+
+00:06:21.869 --> 00:06:26.800
+[snorts] Each manager operates in three
+
+00:06:24.080 --> 00:06:29.600
+phases. Phase one is command fetching.
+
+00:06:26.800 --> 00:06:32.560
+The manager scans the SQ door burst then
+
+00:06:29.600 --> 00:06:35.520
+copies the SQ entries from GPU memory
+
+00:06:32.560 --> 00:06:38.560
+into its entry buffers. This copy is
+
+00:06:35.520 --> 00:06:42.720
+offloaded to Intel DSA batching entries
+
+00:06:38.560 --> 00:06:45.280
+from multiple SQS at once.
+
+00:06:42.720 --> 00:06:47.440
+Phase two is data processing. The
+
+00:06:45.280 --> 00:06:49.199
+manager consults the performance model
+
+00:06:47.440 --> 00:06:51.840
+to compute each command's target
+
+00:06:49.199 --> 00:06:55.360
+completion time. The manager then issues
+
+00:06:51.840 --> 00:06:58.639
+multiple transfers as a single DSA batch
+
+00:06:55.360 --> 00:07:01.199
+at 512 bytes. The per request setup
+
+00:06:58.639 --> 00:07:03.759
+overhead is no longer negligible
+
+00:07:01.199 --> 00:07:08.160
+relative to the payload and batching
+
+00:07:03.759 --> 00:07:10.639
+amortizes it across many requests.
+
+00:07:08.160 --> 00:07:13.520
+Phase three is completion handling. Once
+
+00:07:10.639 --> 00:07:16.000
+the target completion time has elapsed,
+
+00:07:13.520 --> 00:07:19.440
+the manager collects the CQ entries into
+
+00:07:16.000 --> 00:07:23.199
+the the entry buffer and posts them to
+
+00:07:19.440 --> 00:07:27.680
+the CQ in GPU memory.
+
+00:07:23.199 --> 00:07:30.639
+All experiments run on an A100 GPU. We
+
+00:07:27.680 --> 00:07:33.360
+configured the model with 16 N channels,
+
+00:07:30.639 --> 00:07:36.160
+32 planes per channel, and a 15
+
+00:07:33.360 --> 00:07:39.599
+microscond N read latency, giving a
+
+00:07:36.160 --> 00:07:42.560
+theoretical peak of 33 million IOPS. On
+
+00:07:39.599 --> 00:07:44.880
+the left, we run a 512 byte random read
+
+00:07:42.560 --> 00:07:47.440
+workload while varying the number of Q
+
+00:07:44.880 --> 00:07:49.680
+pairs and the per Q depth. Notice that
+
+00:07:47.440 --> 00:07:52.080
+the same total Q depth gives different
+
+00:07:49.680 --> 00:07:55.360
+throughput depending on the topology.
+
+00:07:52.080 --> 00:07:57.919
+Sharing a Q pair across more GPU threads
+
+00:07:55.360 --> 00:08:00.879
+increases synchronization overhead.
+
+00:07:57.919 --> 00:08:03.199
+Panel B applies warp level colossing
+
+00:08:00.879 --> 00:08:05.440
+where the lane zero thread performs the
+
+00:08:03.199 --> 00:08:08.960
+critical section work for the whole
+
+00:08:05.440 --> 00:08:11.759
+warp. Most configurations improve with
+
+00:08:08.960 --> 00:08:14.400
+the best case scanning 2x. Notably,
+
+00:08:11.759 --> 00:08:17.280
+NVMENX reaches the theoretical peak
+
+00:08:14.400 --> 00:08:19.759
+under a real GPU workload.
+
+00:08:17.280 --> 00:08:22.479
+On the right, BFS and connected
+
+00:08:19.759 --> 00:08:25.120
+components over the orut and model data
+
+00:08:22.479 --> 00:08:27.840
+sets. By default, one GPU thread per
+
+00:08:25.120 --> 00:08:30.560
+vertex scans all of its edges. One
+
+00:08:27.840 --> 00:08:32.880
+optimization is edge polishing where a
+
+00:08:30.560 --> 00:08:35.680
+single warp handles the edges of one
+
+00:08:32.880 --> 00:08:40.080
+vertex together. This changes execution
+
+00:08:35.680 --> 00:08:42.719
+time dramatically. BFS and on or runs 3x
+
+00:08:40.080 --> 00:08:46.240
+faster. But look at the third chart on
+
+00:08:42.719 --> 00:08:48.640
+MVME. The same optim optimization barely
+
+00:08:46.240 --> 00:08:51.680
+moves the execution time when the
+
+00:08:48.640 --> 00:08:54.640
+emulator itself is the bottleneck. GPU
+
+00:08:51.680 --> 00:08:57.279
+side optimizations become invisible.
+
+00:08:54.640 --> 00:08:59.600
+NVME next scales enough to let them
+
+00:08:57.279 --> 00:09:03.360
+show.
+
+00:08:59.600 --> 00:09:06.560
+To summarize, NVME next is an NVME SSD
+
+00:09:03.360 --> 00:09:09.200
+emulator for GPUcentric storage systems.
+
+00:09:06.560 --> 00:09:11.920
+It handles requests at million IOPS
+
+00:09:09.200 --> 00:09:15.839
+scale and works as a tool for system
+
+00:09:11.920 --> 00:09:18.480
+level analysis. MVM next is open source
+
+00:09:15.839 --> 00:09:24.360
+and we hope it's useful for future
+
+00:09:18.480 --> 00:09:24.360
+GPUcentric storage research. Thank you.
+
+00:09:27.360 --> 00:09:31.839
+Okay, thanks very much for that. Yeah,
+
+00:09:29.200 --> 00:09:34.080
+moving on to our third speaker. So,
+
+00:09:31.839 --> 00:09:35.600
+please do talk to the speakers after the
+
+00:09:34.080 --> 00:09:37.760
+event. Uh, I know there's no time for
+
+00:09:35.600 --> 00:09:40.480
+questions. Uh, but our third speaker is
+
+00:09:37.760 --> 00:09:42.720
+from EPC Power Corporation.
+
+00:09:40.480 --> 00:09:44.640
+You guys are up together or just Yeah.
+
+00:09:42.720 --> 00:09:47.519
+Good. [snorts] The the clicker should
+
+00:09:44.640 --> 00:09:50.560
+take you to your first slide. Yeah.
+
+00:09:47.519 --> 00:09:53.640
+And five minutes, please. Yeah.
+
+00:09:50.560 --> 00:09:53.640
+All right.
+
+00:09:53.839 --> 00:09:56.880
+It should come on.
+
+00:09:55.279 --> 00:09:57.680
+All right.
+
+00:09:56.880 --> 00:10:00.000
+Yeah, it's on.
+
+00:09:57.680 --> 00:10:01.279
+It is. Okay. Great. Yep. Well, thanks
+
+00:10:00.000 --> 00:10:04.399
+for having us. So, my name is Jason
+
+00:10:01.279 --> 00:10:06.480
+Barman. With me is Ma Wall from EPC
+
+00:10:04.399 --> 00:10:09.440
+Power. As of about three hours ago, we
+
+00:10:06.480 --> 00:10:11.519
+are now a part of Flex Axium. So, we're
+
+00:10:09.440 --> 00:10:14.000
+we're excited about that. Um, today
+
+00:10:11.519 --> 00:10:16.560
+we're going to talk about energy storage
+
+00:10:14.000 --> 00:10:19.600
+uh particularly around uh you know,
+
+00:10:16.560 --> 00:10:20.880
+parallel best solutions for um data
+
+00:10:19.600 --> 00:10:22.000
+centers. And there's a lot of ways that
+
+00:10:20.880 --> 00:10:23.360
+people are putting power conversion
+
+00:10:22.000 --> 00:10:24.800
+equipment in a data center. But we're
+
+00:10:23.360 --> 00:10:27.519
+we're going to talk about one technology
+
+00:10:24.800 --> 00:10:29.519
+we've developed around uh the challenges
+
+00:10:27.519 --> 00:10:31.120
+that that data centers are having when
+
+00:10:29.519 --> 00:10:33.920
+it comes to grid interconnection
+
+00:10:31.120 --> 00:10:36.240
+approvals from utilities or some of the
+
+00:10:33.920 --> 00:10:39.839
+on-site generation issues with AI load
+
+00:10:36.240 --> 00:10:41.920
+volatility uh as well as uh low voltage
+
+00:10:39.839 --> 00:10:44.399
+ride through frequency ride through and
+
+00:10:41.920 --> 00:10:46.320
+some of the uh you know subsynchronous
+
+00:10:44.399 --> 00:10:49.279
+oscillation issues that kind of crop up
+
+00:10:46.320 --> 00:10:51.200
+on some of these projects. Um, if you
+
+00:10:49.279 --> 00:10:53.200
+want a little bit more of a a deeper
+
+00:10:51.200 --> 00:10:55.519
+dive into it, tomorrow bright and early
+
+00:10:53.200 --> 00:10:57.200
+8 am I'll be talking for another 15
+
+00:10:55.519 --> 00:10:59.360
+minutes on a similar topic but more
+
+00:10:57.200 --> 00:11:00.640
+focusing on what the utilities are
+
+00:10:59.360 --> 00:11:04.480
+requiring. Today we're going to talk
+
+00:11:00.640 --> 00:11:05.839
+more about the solution itself. Um, so
+
+00:11:04.480 --> 00:11:07.440
+from a high level concept on the one
+
+00:11:05.839 --> 00:11:10.480
+line the top lefth hand screen you can
+
+00:11:07.440 --> 00:11:12.160
+see uh that this is mainly for a it's
+
+00:11:10.480 --> 00:11:14.160
+built off of a grid forming battery
+
+00:11:12.160 --> 00:11:17.279
+energy storage system and so we do the
+
+00:11:14.160 --> 00:11:18.720
+power conversion component for that. Um,
+
+00:11:17.279 --> 00:11:20.320
+the idea is that you don't have to
+
+00:11:18.720 --> 00:11:21.839
+change the entire data center design,
+
+00:11:20.320 --> 00:11:23.279
+the on-site generation. It can be
+
+00:11:21.839 --> 00:11:25.760
+flexible whether you're grid connected
+
+00:11:23.279 --> 00:11:27.279
+or off-rid. Uh, so you can keep all of
+
+00:11:25.760 --> 00:11:28.959
+that standardized and at the medium
+
+00:11:27.279 --> 00:11:31.360
+voltage bus, typically on the projects
+
+00:11:28.959 --> 00:11:33.519
+we're currently executing, that's a 35KV
+
+00:11:31.360 --> 00:11:35.600
+bus is where we would couple the battery
+
+00:11:33.519 --> 00:11:38.640
+system and I'll let a wall talk a little
+
+00:11:35.600 --> 00:11:40.720
+bit more about the the little particular
+
+00:11:38.640 --> 00:11:42.959
+uh nuance to standard grid forming
+
+00:11:40.720 --> 00:11:46.640
+battery systems.
+
+00:11:42.959 --> 00:11:48.640
+All right. Um so just to reiterate um
+
+00:11:46.640 --> 00:11:51.519
+the best that we're talking about that
+
+00:11:48.640 --> 00:11:55.120
+does not sit in between the load and the
+
+00:11:51.519 --> 00:11:56.959
+grid. It just sits on the side. It keeps
+
+00:11:55.120 --> 00:11:59.360
+an eye on what the load is trying to
+
+00:11:56.959 --> 00:12:03.040
+consume and it tries to match that so
+
+00:11:59.360 --> 00:12:06.399
+that the grid doesn't see it. So um from
+
+00:12:03.040 --> 00:12:09.680
+a very high level what the base system
+
+00:12:06.399 --> 00:12:12.000
+does it acts as almost like uh a
+
+00:12:09.680 --> 00:12:14.320
+combination of two components. one
+
+00:12:12.000 --> 00:12:17.120
+component actually senses what the load
+
+00:12:14.320 --> 00:12:20.240
+is consuming in real time. So that's
+
+00:12:17.120 --> 00:12:23.760
+what you see on the top right side. So
+
+00:12:20.240 --> 00:12:27.440
+um the the load uh you see a measurement
+
+00:12:23.760 --> 00:12:29.760
+link uh on top of the load um and then
+
+00:12:27.440 --> 00:12:31.600
+that link goes to each one of the
+
+00:12:29.760 --> 00:12:34.160
+inverters. So the inverter knows what
+
+00:12:31.600 --> 00:12:37.360
+the load is consuming at this instant.
+
+00:12:34.160 --> 00:12:38.959
+It tries to match that. when we are
+
+00:12:37.360 --> 00:12:41.920
+getting that measurement back to the
+
+00:12:38.959 --> 00:12:44.800
+inverter there is a finite time um that
+
+00:12:41.920 --> 00:12:46.959
+it takes in that time there is another
+
+00:12:44.800 --> 00:12:48.880
+component inside the inverter that will
+
+00:12:46.959 --> 00:12:50.720
+react instantaneously without knowing
+
+00:12:48.880 --> 00:12:53.360
+what is going on it doesn't need any
+
+00:12:50.720 --> 00:12:55.040
+external intervention it will respond
+
+00:12:53.360 --> 00:12:57.839
+instantaneously and that comes from the
+
+00:12:55.040 --> 00:13:01.040
+grid forming control inside the inverter
+
+00:12:57.839 --> 00:13:04.880
+so when we combine these two um we get
+
+00:13:01.040 --> 00:13:07.839
+almost um extremely fast uh load compens
+
+00:13:04.880 --> 00:13:11.200
+compensation that uh that reacts within
+
+00:13:07.839 --> 00:13:14.320
+a few millisecond and uh that's what you
+
+00:13:11.200 --> 00:13:17.920
+will see. So we tested it um at our
+
+00:13:14.320 --> 00:13:21.839
+factory um in powe. Um so on the top
+
+00:13:17.920 --> 00:13:24.399
+left corner you see our m system. So
+
+00:13:21.839 --> 00:13:26.079
+within that system we have a grid
+
+00:13:24.399 --> 00:13:28.480
+emulator that can emulate strong grid,
+
+00:13:26.079 --> 00:13:30.320
+weak grid and u different grid
+
+00:13:28.480 --> 00:13:34.800
+conditions and we also have a load
+
+00:13:30.320 --> 00:13:37.920
+emulator which is emulating uh AI load.
+
+00:13:34.800 --> 00:13:40.399
+Um and then uh we have the unit on a
+
+00:13:37.920 --> 00:13:43.120
+test. So basically the base uh that we
+
+00:13:40.399 --> 00:13:45.839
+just saw and then on the um on the right
+
+00:13:43.120 --> 00:13:48.560
+side you see um what it does when the
+
+00:13:45.839 --> 00:13:50.639
+load goes from zero to almost full load
+
+00:13:48.560 --> 00:13:54.320
+uh instantaneously.
+
+00:13:50.639 --> 00:13:57.680
+Um so the um green and yellow that shows
+
+00:13:54.320 --> 00:14:00.079
+how the load steps up and then the red
+
+00:13:57.680 --> 00:14:02.720
+and blue that shows what the gre grid
+
+00:14:00.079 --> 00:14:07.519
+sees. So essentially grid doesn't see
+
+00:14:02.720 --> 00:14:09.120
+almost anything. Then um u we tried to
+
+00:14:07.519 --> 00:14:11.440
+um
+
+00:14:09.120 --> 00:14:13.440
+make things more interesting. So we
+
+00:14:11.440 --> 00:14:16.880
+basically got the load emulators to
+
+00:14:13.440 --> 00:14:20.399
+emulate um different types of um AI
+
+00:14:16.880 --> 00:14:23.680
+load. So these are from different types
+
+00:14:20.399 --> 00:14:26.399
+of LLMs. So we are not uh actually
+
+00:14:23.680 --> 00:14:31.760
+talking about what LLM they exactly are
+
+00:14:26.399 --> 00:14:34.639
+but um at the uh last row you see the
+
+00:14:31.760 --> 00:14:37.199
+blue lines. So the blue lines show how
+
+00:14:34.639 --> 00:14:40.079
+the load consumption is changing in real
+
+00:14:37.199 --> 00:14:43.440
+time and the green line shows what the
+
+00:14:40.079 --> 00:14:46.160
+grid sees. So for the first two columns
+
+00:14:43.440 --> 00:14:48.000
+you can see that even though the load is
+
+00:14:46.160 --> 00:14:51.360
+going crazy the grid essentially doesn't
+
+00:14:48.000 --> 00:14:53.040
+see anything it stays flat and then um
+
+00:14:51.360 --> 00:14:56.000
+just for fun we thought why not
+
+00:14:53.040 --> 00:14:58.880
+accelerate the AI load so we accelerated
+
+00:14:56.000 --> 00:15:01.760
+that four times and we wanted to see if
+
+00:14:58.880 --> 00:15:04.720
+the inverters still can handle that and
+
+00:15:01.760 --> 00:15:06.560
+um that's what you see at the last one
+
+00:15:04.720 --> 00:15:09.839
+um so
+
+00:15:06.560 --> 00:15:12.399
+um and even uh the four time accelerated
+
+00:15:09.839 --> 00:15:14.240
+load for that the grid essentially
+
+00:15:12.399 --> 00:15:16.000
+doesn't see anything. It stays almost
+
+00:15:14.240 --> 00:15:19.199
+flat.
+
+00:15:16.000 --> 00:15:21.920
+Um so then um I'll give this back to
+
+00:15:19.199 --> 00:15:23.680
+Jason.
+
+00:15:21.920 --> 00:15:25.440
+Yeah. And and obviously there's been a
+
+00:15:23.680 --> 00:15:27.680
+lot of different solutions that are
+
+00:15:25.440 --> 00:15:29.440
+trying to address the the volatile load
+
+00:15:27.680 --> 00:15:31.680
+and smoothing whether it's at the rack
+
+00:15:29.440 --> 00:15:33.279
+or it's out at the medium voltage bus
+
+00:15:31.680 --> 00:15:35.120
+right before the utility you know sees
+
+00:15:33.279 --> 00:15:36.720
+it. Uh most of the projects that we're
+
+00:15:35.120 --> 00:15:38.560
+deploying today have some type of hybrid
+
+00:15:36.720 --> 00:15:40.079
+approach or multiple phases where some
+
+00:15:38.560 --> 00:15:42.560
+of the faster elements might be smoothed
+
+00:15:40.079 --> 00:15:44.959
+out at the rack uh and then you know the
+
+00:15:42.560 --> 00:15:46.639
+slower elements uh you know relatively
+
+00:15:44.959 --> 00:15:47.839
+or smooth out at the med medium voltage
+
+00:15:46.639 --> 00:15:50.480
+bus. But the problem is these data
+
+00:15:47.839 --> 00:15:52.079
+centers have to uh limit those loads you
+
+00:15:50.480 --> 00:15:54.800
+know for a gigawatt campus down to less
+
+00:15:52.079 --> 00:15:56.639
+than 10 megawatts per 5-second interval
+
+00:15:54.800 --> 00:15:58.800
+uh or other similar requirements from
+
+00:15:56.639 --> 00:16:00.320
+the utilities. And so the the speed is
+
+00:15:58.800 --> 00:16:02.160
+really essential but you also have have
+
+00:16:00.320 --> 00:16:04.079
+to have a stable output uh which is
+
+00:16:02.160 --> 00:16:06.800
+really you know part of the the grid
+
+00:16:04.079 --> 00:16:09.360
+forming aspect of our system as well. Uh
+
+00:16:06.800 --> 00:16:11.120
+the last is uh the other requirements
+
+00:16:09.360 --> 00:16:13.680
+that the utility is also requiring can't
+
+00:16:11.120 --> 00:16:15.839
+be handled with your standard uh rack
+
+00:16:13.680 --> 00:16:17.839
+based smoothing applications. You've got
+
+00:16:15.839 --> 00:16:19.600
+things like uh grid ride through uh
+
+00:16:17.839 --> 00:16:22.399
+constraints that uh you can see here
+
+00:16:19.600 --> 00:16:24.000
+we've im uh simulated where we have a
+
+00:16:22.399 --> 00:16:26.639
+utility discernments just basically a
+
+00:16:24.000 --> 00:16:29.040
+low voltage fault shorted uh you know
+
+00:16:26.639 --> 00:16:32.000
+transmission line uh on the high voltage
+
+00:16:29.040 --> 00:16:33.920
+site. Um and these inverters are
+
+00:16:32.000 --> 00:16:35.360
+designed for the most stringent ride
+
+00:16:33.920 --> 00:16:37.600
+through requirements and zero voltage
+
+00:16:35.360 --> 00:16:39.839
+ride through for 10 seconds. um
+
+00:16:37.600 --> 00:16:42.240
+basically be able to to ride through
+
+00:16:39.839 --> 00:16:43.519
+anything much worse than what the the
+
+00:16:42.240 --> 00:16:44.800
+large electrical loads are being
+
+00:16:43.519 --> 00:16:46.880
+demanded to ride through because we
+
+00:16:44.800 --> 00:16:48.480
+designed these for uh utility scale
+
+00:16:46.880 --> 00:16:50.399
+energy storage projects as well and
+
+00:16:48.480 --> 00:16:52.079
+those are a little bit more difficult uh
+
+00:16:50.399 --> 00:16:53.600
+to meet ride through requirements than
+
+00:16:52.079 --> 00:16:55.279
+what data centers are being asked to.
+
+00:16:53.600 --> 00:16:58.240
+So, even if the load does go on to
+
+00:16:55.279 --> 00:16:59.600
+backup uh UPS's or switch over to
+
+00:16:58.240 --> 00:17:01.519
+on-site generation and kind of
+
+00:16:59.600 --> 00:17:03.920
+disappears from the grid, similar to
+
+00:17:01.519 --> 00:17:07.439
+what happened with 3 gigawatts here, you
+
+00:17:03.920 --> 00:17:09.360
+know, just a few months ago in PJM, um
+
+00:17:07.439 --> 00:17:11.919
+the battery system can also act as more
+
+00:17:09.360 --> 00:17:13.439
+of a load emulator to the grid. Uh and
+
+00:17:11.919 --> 00:17:15.120
+because we're measuring it with that
+
+00:17:13.439 --> 00:17:17.600
+load sensing element, we know what that
+
+00:17:15.120 --> 00:17:20.079
+grid set or what the the grid was seeing
+
+00:17:17.600 --> 00:17:22.319
+at that particular time uh prior to the
+
+00:17:20.079 --> 00:17:24.480
+fault. And so when it comes to postfault
+
+00:17:22.319 --> 00:17:26.160
+active power recovery, uh we can help
+
+00:17:24.480 --> 00:17:27.679
+data centers be compliant with that as
+
+00:17:26.160 --> 00:17:30.080
+well. And you can see that we're working
+
+00:17:27.679 --> 00:17:31.440
+on the few milliseconds. So while a
+
+00:17:30.080 --> 00:17:33.440
+quarter of a second or a half a second
+
+00:17:31.440 --> 00:17:36.080
+is what's required, you can see we we
+
+00:17:33.440 --> 00:17:38.640
+far exceed that for uh having our
+
+00:17:36.080 --> 00:17:40.720
+response back to the the prefault
+
+00:17:38.640 --> 00:17:43.840
+conditions of the data center load on
+
+00:17:40.720 --> 00:17:46.960
+the grid. Um so yeah, with that, we'll
+
+00:17:43.840 --> 00:17:48.559
+go to the next the next presenter.
+
+00:17:46.960 --> 00:17:50.080
+Okay. Thank you very much and sorry
+
+00:17:48.559 --> 00:17:52.480
+there's no time for questions but
+
+00:17:50.080 --> 00:17:54.212
+congratulations on the next uh journey
+
+00:17:52.480 --> 00:17:56.320
+in your chapter in your journey. Yeah,
+
+00:17:54.212 --> 00:18:00.480
+[snorts] thank you. Do we have the next
+
+00:17:56.320 --> 00:18:02.720
+speaker um which is uh let's see
+
+00:18:00.480 --> 00:18:05.679
+University of Cambridge. Yeah. Hello.
+
+00:18:02.720 --> 00:18:09.080
+Yeah. So this is uh the 48vt to core
+
+00:18:05.679 --> 00:18:09.080
+power delivery.
+
+00:18:18.640 --> 00:18:23.520
+Good morning everyone. I'm Jayon from
+
+00:18:21.039 --> 00:18:25.760
+the University of Cambridge. Today I
+
+00:18:23.520 --> 00:18:28.559
+will introduce a new single stage
+
+00:18:25.760 --> 00:18:33.720
+vertical 48 volt to core power delivery
+
+00:18:28.559 --> 00:18:33.720
+architecture for future AI processors.
+
+00:18:34.000 --> 00:18:39.039
+So first why do we need a single stage
+
+00:18:36.559 --> 00:18:42.080
+conversion? The first reason is
+
+00:18:39.039 --> 00:18:44.799
+efficiency. Compared with a traditional
+
+00:18:42.080 --> 00:18:47.760
+two-stage architecture, the single stage
+
+00:18:44.799 --> 00:18:49.840
+conversion removes the intermediate bus
+
+00:18:47.760 --> 00:18:53.600
+and can improve the end to end
+
+00:18:49.840 --> 00:18:56.080
+efficiency by about 2 percentage point.
+
+00:18:53.600 --> 00:18:59.320
+At data center scale, this can make a
+
+00:18:56.080 --> 00:18:59.320
+big difference.
+
+00:18:59.919 --> 00:19:05.440
+But efficiency is not the only issue. As
+
+00:19:03.120 --> 00:19:07.440
+processor power increase, the low
+
+00:19:05.440 --> 00:19:10.880
+voltage bus also becomes more
+
+00:19:07.440 --> 00:19:15.200
+challenging to scale. Take the WSC3 as
+
+00:19:10.880 --> 00:19:19.760
+an example. Its power is about 23 kilow.
+
+00:19:15.200 --> 00:19:23.600
+So a 6 W bus carries about 3.8 kilo
+
+00:19:19.760 --> 00:19:25.919
+amps. For such a large processor power,
+
+00:19:23.600 --> 00:19:29.360
+it's quite difficult to keep the
+
+00:19:25.919 --> 00:19:32.559
+distribution resistance very low. Even
+
+00:19:29.360 --> 00:19:35.039
+with zero even with only 0.1 milliohm
+
+00:19:32.559 --> 00:19:38.720
+resistance, the conduction loss is
+
+00:19:35.039 --> 00:19:41.280
+already about 1.47 kilowatt.
+
+00:19:38.720 --> 00:19:43.200
+This is unacceptable for practical power
+
+00:19:41.280 --> 00:19:46.160
+delivery.
+
+00:19:43.200 --> 00:19:48.559
+Besides, a low voltage bus also stores
+
+00:19:46.160 --> 00:19:51.360
+less energy. So more decoupling
+
+00:19:48.559 --> 00:19:54.080
+capacitance are required which takes up
+
+00:19:51.360 --> 00:19:57.280
+valuable B area.
+
+00:19:54.080 --> 00:20:02.039
+That's why we prefer to keep 48 volts as
+
+00:19:57.280 --> 00:20:02.039
+the border level distribution wattage.
+
+00:20:02.480 --> 00:20:08.080
+From 48 volts, there are two passes to
+
+00:20:05.440 --> 00:20:10.799
+the core. One is direct to core
+
+00:20:08.080 --> 00:20:12.960
+conversion and the other is the AVR
+
+00:20:10.799 --> 00:20:16.960
+based architecture
+
+00:20:12.960 --> 00:20:20.240
+where a front end VRM generates a 1.8
+
+00:20:16.960 --> 00:20:24.320
+regulated voltage and the AVR performs
+
+00:20:20.240 --> 00:20:28.000
+the final regulation close die. So in
+
+00:20:24.320 --> 00:20:32.360
+this case our single CVM can also serves
+
+00:20:28.000 --> 00:20:32.360
+as the AVR front end.
+
+00:20:33.039 --> 00:20:38.640
+Based on this system architecture, we
+
+00:20:35.600 --> 00:20:41.039
+propose a single stage vertical VM.
+
+00:20:38.640 --> 00:20:43.440
+Actually, it has four main features.
+
+00:20:41.039 --> 00:20:46.320
+Single stage conversion, vertical power
+
+00:20:43.440 --> 00:20:50.120
+delivery, direct topside cooling, and
+
+00:20:46.320 --> 00:20:50.120
+the modular scalability.
+
+00:20:50.720 --> 00:20:55.840
+To achieve this, the converter must have
+
+00:20:53.520 --> 00:20:58.559
+high conversion ratio and high output
+
+00:20:55.840 --> 00:21:00.720
+current capability. We therefore choose
+
+00:20:58.559 --> 00:21:02.880
+the Hbridgeidge current douler topology
+
+00:21:00.720 --> 00:21:04.720
+with fractional turns.
+
+00:21:02.880 --> 00:21:06.799
+The operation modes are showing on the
+
+00:21:04.720 --> 00:21:09.440
+right but I will not go into the details
+
+00:21:06.799 --> 00:21:12.159
+here.
+
+00:21:09.440 --> 00:21:15.200
+From the operation mode we can find the
+
+00:21:12.159 --> 00:21:18.320
+two different current loops. First as
+
+00:21:15.200 --> 00:21:20.720
+shown on the left top the high frequency
+
+00:21:18.320 --> 00:21:23.600
+AC current remains within the
+
+00:21:20.720 --> 00:21:26.240
+transformer and rectifier stage and this
+
+00:21:23.600 --> 00:21:30.159
+current does not flow directly to the
+
+00:21:26.240 --> 00:21:33.440
+load. So for this loop the main design
+
+00:21:30.159 --> 00:21:37.679
+goal is to keep the high car is to keep
+
+00:21:33.440 --> 00:21:42.000
+the primary and secondary high coupling.
+
+00:21:37.679 --> 00:21:44.320
+So we use a closely interlar windings to
+
+00:21:42.000 --> 00:21:48.320
+reduce liquid inductance and the winding
+
+00:21:44.320 --> 00:21:51.760
+loss. In contrast as shown on the bottom
+
+00:21:48.320 --> 00:21:55.360
+the inductor DC current is flow directly
+
+00:21:51.760 --> 00:21:58.240
+to the load. So for this loop the main
+
+00:21:55.360 --> 00:22:01.760
+design goal is to keep the high current
+
+00:21:58.240 --> 00:22:04.240
+conduction path as short as possible. We
+
+00:22:01.760 --> 00:22:07.600
+therefore route the DC current
+
+00:22:04.240 --> 00:22:10.159
+vertically to the load. So this leads to
+
+00:22:07.600 --> 00:22:12.720
+the model structure showing on the right
+
+00:22:10.159 --> 00:22:16.000
+a planer transformer in the center with
+
+00:22:12.720 --> 00:22:18.000
+vertical inductors on both sides.
+
+00:22:16.000 --> 00:22:21.120
+We also selected different material
+
+00:22:18.000 --> 00:22:24.000
+magnetic materials to to satisfy
+
+00:22:21.120 --> 00:22:27.760
+different requirements. For AC flux we
+
+00:22:24.000 --> 00:22:30.320
+choose ferite for low loss and for DC
+
+00:22:27.760 --> 00:22:33.120
+flux you mean for the inductor we choose
+
+00:22:30.320 --> 00:22:37.320
+powder core for higher saturation and
+
+00:22:33.120 --> 00:22:37.320
+high output current capability.
+
+00:22:38.640 --> 00:22:43.760
+We can further integrate the transformer
+
+00:22:41.039 --> 00:22:46.880
+and the inductors by sharing part of the
+
+00:22:43.760 --> 00:22:49.840
+magnetic core. This works because the
+
+00:22:46.880 --> 00:22:52.400
+two flux passes are nearly orthogonal.
+
+00:22:49.840 --> 00:22:55.600
+So the interaction between them is quite
+
+00:22:52.400 --> 00:22:58.480
+small. Here we look at their two flux
+
+00:22:55.600 --> 00:23:02.159
+passes after integration. From the side
+
+00:22:58.480 --> 00:23:05.120
+view we can find the transformer AC flux
+
+00:23:02.159 --> 00:23:08.159
+closed through the ferite core and part
+
+00:23:05.120 --> 00:23:11.679
+of the powder core. And from the top
+
+00:23:08.159 --> 00:23:15.200
+view we can find the inductor flux
+
+00:23:11.679 --> 00:23:17.919
+remains within the powder core. So even
+
+00:23:15.200 --> 00:23:21.039
+after integration the two magnetic
+
+00:23:17.919 --> 00:23:22.960
+functions are still valented. The model
+
+00:23:21.039 --> 00:23:24.960
+structure is showing on the is showing
+
+00:23:22.960 --> 00:23:27.440
+on the right is similar with the
+
+00:23:24.960 --> 00:23:30.440
+previous one but with more integrated
+
+00:23:27.440 --> 00:23:30.440
+magnetics.
+
+00:23:32.000 --> 00:23:37.200
+Besides this architecture also provides
+
+00:23:34.720 --> 00:23:40.159
+us more flexibility in the inductor
+
+00:23:37.200 --> 00:23:43.360
+design. We can either use the direct
+
+00:23:40.159 --> 00:23:46.320
+negative coupling or TR based indirect
+
+00:23:43.360 --> 00:23:49.960
+coupling and both case can improve the
+
+00:23:46.320 --> 00:23:49.960
+transient response.
+
+00:23:50.400 --> 00:23:55.679
+Based on this concept, we built a
+
+00:23:52.880 --> 00:23:59.520
+prototype to validate the single stage
+
+00:23:55.679 --> 00:24:02.080
+conversion. It converts 54 volts to 0.8
+
+00:23:59.520 --> 00:24:04.880
+volts directly and achieves a current
+
+00:24:02.080 --> 00:24:07.679
+density about 1.5 amps per square
+
+00:24:04.880 --> 00:24:09.600
+millmter. And overall it's more
+
+00:24:07.679 --> 00:24:12.600
+efficient than a traditional two-c
+
+00:24:09.600 --> 00:24:12.600
+architecture.
+
+00:24:13.440 --> 00:24:18.559
+Finally, let's look at how this
+
+00:24:15.760 --> 00:24:20.960
+architecture can scale to multi kilo amp
+
+00:24:18.559 --> 00:24:24.400
+processor power delivery.
+
+00:24:20.960 --> 00:24:28.320
+From the system level, 800 W is firstly
+
+00:24:24.400 --> 00:24:32.000
+converted to a 48 volt and then 48 volt
+
+00:24:28.320 --> 00:24:34.640
+is distributed across the IT board
+
+00:24:32.000 --> 00:24:37.840
+around each processor. Multiple single
+
+00:24:34.640 --> 00:24:40.320
+CD RMS can work in parallel under
+
+00:24:37.840 --> 00:24:42.799
+standard digital mass phase control like
+
+00:24:40.320 --> 00:24:45.360
+the PWM control
+
+00:24:42.799 --> 00:24:48.000
+and they can also be placed directly
+
+00:24:45.360 --> 00:24:51.440
+underneath the processor also multiple
+
+00:24:48.000 --> 00:24:53.279
+uh where in parallel and in this case
+
+00:24:51.440 --> 00:24:56.000
+the high current conduction path can be
+
+00:24:53.279 --> 00:24:58.159
+very short
+
+00:24:56.000 --> 00:25:02.120
+that's the idea of single stage VM.
+
+00:24:58.159 --> 00:25:02.120
+Thank you very much for your attention.
+
+00:25:16.159 --> 00:25:19.600
+I think I've ah my mic is back now.
+
+00:25:18.000 --> 00:25:21.600
+Yeah, thank you very much. So just the
+
+00:25:19.600 --> 00:25:24.320
+last presentation for this five minute
+
+00:25:21.600 --> 00:25:27.120
+uh lightning talk session. So we've got
+
+00:25:24.320 --> 00:25:28.960
+um Vissim AI and Lawrence Berkeley
+
+00:25:27.120 --> 00:25:31.600
+National Laboratory. You two guys are
+
+00:25:28.960 --> 00:25:34.320
+up, aren't you? So if you click the next
+
+00:25:31.600 --> 00:25:37.320
+slide should be your first slide. Thank
+
+00:25:34.320 --> 00:25:37.320
+you.
+
+00:25:38.000 --> 00:25:39.679
+Can you hear me?
+
+00:25:39.039 --> 00:25:42.159
+Yep.
+
+00:25:39.679 --> 00:25:46.080
+Yes. All right. Marco Ponyi Lawrence
+
+00:25:42.159 --> 00:25:47.440
+Berkeley Lab and Nandra from Visi.
+
+00:25:46.080 --> 00:25:48.880
+So I'm going to give you the three
+
+00:25:47.440 --> 00:25:52.000
+things you need to remember from this
+
+00:25:48.880 --> 00:25:55.600
+talk in one minute. Number one, the
+
+00:25:52.000 --> 00:26:00.000
+current procedures for
+
+00:25:55.600 --> 00:26:03.200
+um emergency maintenance and safety of
+
+00:26:00.000 --> 00:26:06.159
+systems and equipment in data centers
+
+00:26:03.200 --> 00:26:08.000
+are not digitized and are not connected
+
+00:26:06.159 --> 00:26:10.320
+to other important information that you
+
+00:26:08.000 --> 00:26:13.520
+have available in the system. Number
+
+00:26:10.320 --> 00:26:15.760
+two, we developed a knowledge graph that
+
+00:26:13.520 --> 00:26:18.240
+is open source and available online that
+
+00:26:15.760 --> 00:26:20.960
+has all the information and connects all
+
+00:26:18.240 --> 00:26:23.440
+these things and it's tested on a a
+
+00:26:20.960 --> 00:26:26.640
+Google
+
+00:26:23.440 --> 00:26:28.559
+Google I contributed the CDU uh spec
+
+00:26:26.640 --> 00:26:29.919
+called deskutes. So we have implemented
+
+00:26:28.559 --> 00:26:31.760
+it on that spec.
+
+00:26:29.919 --> 00:26:34.559
+And number three, what you can do with
+
+00:26:31.760 --> 00:26:36.480
+this is a lot of things. When the
+
+00:26:34.559 --> 00:26:39.840
+information is digitized, you can do for
+
+00:26:36.480 --> 00:26:42.240
+example uh training of people with
+
+00:26:39.840 --> 00:26:44.240
+virtual reality using using the system
+
+00:26:42.240 --> 00:26:47.520
+and we have a a preliminary
+
+00:26:44.240 --> 00:26:51.120
+implementation on a simulation tool. So
+
+00:26:47.520 --> 00:26:53.840
+back to what in the other three minutes
+
+00:26:51.120 --> 00:26:56.640
+uh the important piece here is that CDUs
+
+00:26:53.840 --> 00:27:01.039
+are getting bigger, use more power and
+
+00:26:56.640 --> 00:27:04.240
+and being sort of uh uh if they fail,
+
+00:27:01.039 --> 00:27:07.600
+it's a it's a big deal. Number two, uh
+
+00:27:04.240 --> 00:27:09.600
+if you um a a cooling system fails, you
+
+00:27:07.600 --> 00:27:11.760
+add 23 seconds before the system starts
+
+00:27:09.600 --> 00:27:17.760
+throttling and so you have to react very
+
+00:27:11.760 --> 00:27:19.919
+quickly. Number three, um the um
+
+00:27:17.760 --> 00:27:23.039
+examples of of these things failing
+
+00:27:19.919 --> 00:27:25.039
+already happened in 2025. There was a
+
+00:27:23.039 --> 00:27:28.400
+cooling uh maintenance issue that
+
+00:27:25.039 --> 00:27:32.559
+happened and caused an 11hour outage
+
+00:27:28.400 --> 00:27:35.919
+that uh disrupted uh um global trading.
+
+00:27:32.559 --> 00:27:38.880
+So these things are very important.
+
+00:27:35.919 --> 00:27:42.000
+um procedures. They currently live in
+
+00:27:38.880 --> 00:27:43.440
+books, paper books or even PDFs, but
+
+00:27:42.000 --> 00:27:44.799
+they're not linked to the other
+
+00:27:43.440 --> 00:27:48.400
+information in the system. There's more
+
+00:27:44.799 --> 00:27:50.480
+than 800 procedures in the system that
+
+00:27:48.400 --> 00:27:53.039
+that uh talk talk about all the
+
+00:27:50.480 --> 00:27:54.559
+components of data center. It takes days
+
+00:27:53.039 --> 00:27:56.960
+for people to develop them through
+
+00:27:54.559 --> 00:27:59.520
+templates and other things and those are
+
+00:27:56.960 --> 00:28:02.159
+not currently connected with anything
+
+00:27:59.520 --> 00:28:04.320
+that exists in the data center. So we
+
+00:28:02.159 --> 00:28:06.720
+developed a knowledge graph which is
+
+00:28:04.320 --> 00:28:09.200
+based on uh work that done on the
+
+00:28:06.720 --> 00:28:11.919
+building domain and in industrial domain
+
+00:28:09.200 --> 00:28:15.120
+to connect all the information about
+
+00:28:11.919 --> 00:28:17.440
+procedures and systems and the building
+
+00:28:15.120 --> 00:28:20.240
+automation system that has the data and
+
+00:28:17.440 --> 00:28:23.200
+and can represent that.
+
+00:28:20.240 --> 00:28:28.000
+Um an example of application of this
+
+00:28:23.200 --> 00:28:31.279
+that we um developed is on a CDU uh that
+
+00:28:28.000 --> 00:28:34.559
+is connected to procedures and you can
+
+00:28:31.279 --> 00:28:37.760
+see for example if you replace a valve
+
+00:28:34.559 --> 00:28:41.200
+let's say supply valve this is typically
+
+00:28:37.760 --> 00:28:43.919
+impacts more than one uh procedure and
+
+00:28:41.200 --> 00:28:45.919
+so if you replace this and you have to
+
+00:28:43.919 --> 00:28:49.440
+update all the procedures you typically
+
+00:28:45.919 --> 00:28:51.360
+are in trouble and so by having a
+
+00:28:49.440 --> 00:28:54.320
+semantic model a data model that
+
+00:28:51.360 --> 00:28:58.559
+represent all the connection. You can do
+
+00:28:54.320 --> 00:29:02.559
+this like uh in in a in a uh clear and
+
+00:28:58.559 --> 00:29:07.679
+and error-free way. Does that clear? We
+
+00:29:02.559 --> 00:29:09.840
+got it. Okay. So the um
+
+00:29:07.679 --> 00:29:12.080
+um what's represented here are some of
+
+00:29:09.840 --> 00:29:14.559
+the main component. For example, a CDU
+
+00:29:12.080 --> 00:29:17.039
+has a failure mode coolant leak. The
+
+00:29:14.559 --> 00:29:20.720
+coolant leak uh is part of a procedure
+
+00:29:17.039 --> 00:29:23.039
+that has a sequence uh but the same
+
+00:29:20.720 --> 00:29:26.559
+component which is a supply shut off
+
+00:29:23.039 --> 00:29:28.799
+valve that that stops the system from uh
+
+00:29:26.559 --> 00:29:31.760
+exploding uh actually is in true
+
+00:29:28.799 --> 00:29:36.080
+procedure. So we we demonstrated that
+
+00:29:31.760 --> 00:29:38.320
+sort of we can link those all together.
+
+00:29:36.080 --> 00:29:41.919
+Um
+
+00:29:38.320 --> 00:29:45.279
+we um actually tested this in a system
+
+00:29:41.919 --> 00:29:47.520
+that um you want to mention that.
+
+00:29:45.279 --> 00:29:49.919
+Yeah. So we have ported implementation
+
+00:29:47.520 --> 00:29:51.679
+of this uh model build with this new
+
+00:29:49.919 --> 00:29:53.919
+vocabulary that we're introducing into
+
+00:29:51.679 --> 00:29:56.000
+Nvidia Omniverse. So there's a model
+
+00:29:53.919 --> 00:29:58.080
+there that you can now go and play with.
+
+00:29:56.000 --> 00:30:00.240
+I'm very happy to show people and the
+
+00:29:58.080 --> 00:30:01.919
+video link if anybody's interested.
+
+00:30:00.240 --> 00:30:03.679
+Thank you. So repeating the important
+
+00:30:01.919 --> 00:30:05.679
+things of the talk. Number one,
+
+00:30:03.679 --> 00:30:08.000
+currently all the information in
+
+00:30:05.679 --> 00:30:10.880
+maintenance procedures in uh emergency
+
+00:30:08.000 --> 00:30:13.120
+procedures is not digitized and it's not
+
+00:30:10.880 --> 00:30:15.919
+connected to other important system such
+
+00:30:13.120 --> 00:30:17.679
+as the kind of uh components of the
+
+00:30:15.919 --> 00:30:20.320
+system and the building automation
+
+00:30:17.679 --> 00:30:22.559
+system that shows the real-time data. We
+
+00:30:20.320 --> 00:30:24.240
+created a system to link all these
+
+00:30:22.559 --> 00:30:26.799
+things together using knowledge graphs
+
+00:30:24.240 --> 00:30:29.520
+which is you know a very well-known
+
+00:30:26.799 --> 00:30:33.279
+technique in in in computer science and
+
+00:30:29.520 --> 00:30:37.279
+we have a um an example of this um
+
+00:30:33.279 --> 00:30:40.080
+future work is actually testing uh
+
+00:30:37.279 --> 00:30:42.080
+training of people using uh this
+
+00:30:40.080 --> 00:30:43.919
+procedure uh and the knowledge graph
+
+00:30:42.080 --> 00:30:46.159
+that we developed and we're looking for
+
+00:30:43.919 --> 00:30:48.480
+collaboration with people that have
+
+00:30:46.159 --> 00:30:51.200
+access to cooling system and they're
+
+00:30:48.480 --> 00:30:53.919
+interested in this general topic. Thank
+
+00:30:51.200 --> 00:30:57.159
+you.
+
+00:30:53.919 --> 00:30:57.159
+Thank you.
+

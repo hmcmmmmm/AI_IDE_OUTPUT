@@ -1,0 +1,156 @@
+[
+ {
+  "idx": 1,
+  "start": 3.0,
+  "end": 51.0,
+  "rep_time": 25.0,
+  "en": "Okay. Good afternoon, folks, and welcome to OCP 2026. Super excited to be here. And what you'll hear from Intel today, along with some exciting guests from our partners that we have, is around what's happening in AI inference. And how heterogeneous systems are going to be the foundation for making these inference workloads, which are becoming more and more heterogeneous in the agentic world. What is Intel delivering solutions for this capability that is required? And what are we doing with our partners in the open ecosystem in enabling you all in building solutions for this exciting future?"
+ },
+ {
+  "idx": 2,
+  "start": 51.0,
+  "end": 78.0,
+  "rep_time": 60.0,
+  "en": "As you all know, OCP is anchored on being open. Open standards to move an entire industry forward. We Intel have been part of this community since its founding days. We've had over 116 contributions. And at this year in OCP, we have over 33 sessions across 16 tracks uh being presented."
+ },
+ {
+  "idx": 3,
+  "start": 78.0,
+  "end": 144.0,
+  "rep_time": 110.0,
+  "en": "Now, let's jump straight into it. As you all know, AI is booming. I don't have to say much. But what's really happening there is the rise of agents is causing a different problem into the ecosystem. The amount of tokens that are needed is exploding. While at the same time, the cost of delivering these agents is also exploding. So, the economics of delivering AI inference at scale needs to be looked at if you want to kind of feed this ecosystem forward. The other trend that is happening is the frontier models versus open weight models. More and more models are becoming open weight and the ratio of open weight models being used is increasing dramatically as the capabilities of open weight models get closer to frontier models. In fact, for enterprises, more and more significant amount of the basic AI work that they need to do can actually be handled by open weight models, whereas the higher end of the models need the frontier models. Now, not all tokens in this AI ecosystem are same. Based on the model size, based on the latency, or based on the KV cache, the computational requirements to deliver that efficiently is going to be very different. And all three variables have been factored in to figure out how do you get"
+ },
+ {
+  "idx": 4,
+  "start": 144.0,
+  "end": 171.0,
+  "rep_time": 155.0,
+  "en": "efficiency at scale."
+ },
+ {
+  "idx": 5,
+  "start": 171.0,
+  "end": 255.0,
+  "rep_time": 225.0,
+  "en": "Now, when you look at the agentic architecture, there's something very interesting happening. How do you write uh route the workloads to run at the right hardware? More and more, up until now, we were all looking about how to run tokens faster. How do you create faster tokens, slower to I mean lower latency tokens, and generate a huge interactivity per user for those tokens. But more and more in the agentic architecture, the CPU plays a very, very important role in couple of areas. First, the decision tree, the quarterback. How am I going to route, orchestrate, and deliver the agentic workflow? The security, the harness that needs to be built on it. How do I able to then handle the token generation and the API calls that need to be happening? And then, the outcome of those API call of the tokens have to be executed, sandboxed, verified. And CPUs are more and more in the agentic loop executing to all the outcomes that are coming from these LLMs. So, this is increasing the demand on CPU significantly that the ratio of CPU to GPU is also going up. In fact, it used to be about 2:8, now going to 1:4, 1:2, and even in 1:1 in some scenarios. Now, we at Intel have been huge"
+ },
+ {
+  "idx": 6,
+  "start": 255.0,
+  "end": 282.0,
+  "rep_time": 270.0,
+  "en": "builder of systems for the CPU workloads. And we start with the CPU as being the quarterback for this agentic era. This is where the control plane is. The Xeon has all the capabilities that are needed for these workloads to be running efficiently, to be orchestrated efficiently, and sandboxed efficiently. And for from Intel, we have significant number of choices for our customers and to you in the ecosystem to build upon. We have a rich history of delivering, you know, leadership products in these aspects. For the CPUs in the agentic era, we have our Xeon 6 Plus, the E-core with up to"
+ },
+ {
+  "idx": 7,
+  "start": 282.0,
+  "end": 324.0,
+  "rep_time": 300.0,
+  "en": "288 cores. We have our Xeon 6 with the the cores needed for orchestration and for different kinds of workloads, and our soon upcoming Diamond Rapids CPU, which will give you 250 core 256 cores to give you the one of the best agentic performance you can in the market."
+ },
+ {
+  "idx": 8,
+  "start": 324.0,
+  "end": 342.0,
+  "rep_time": 330.0,
+  "en": "Now, it's not just us building these. Our partners in the ecosystem, we showed this at Computex, a wide range of partners building Xeon servers and racks for this agentic era. But more importantly, today we have actually racks available to meet the computational needs of these large volume of tokens that need to be sandboxed and executed. These Xeon agentic AI rack systems are being deployed by our partners. There are QR codes up there. They can take you to the product pages, and you can"
+ },
+ {
+  "idx": 9,
+  "start": 342.0,
+  "end": 375.0,
+  "rep_time": 355.0,
+  "en": "actually see the capabilities of each of these racks with tens of thousands of cores, even more than 50,000 cores, and many of them in a ORV3 form factor."
+ },
+ {
+  "idx": 10,
+  "start": 375.0,
+  "end": 390.0,
+  "rep_time": 382.0,
+  "en": "Now, let's get to the token generation side of it. As you all know, GPUs have been the foundation for creating and running LLMs at scale. Today, we are excited to talk about a"
+ },
+ {
+  "idx": 11,
+  "start": 390.0,
+  "end": 429.0,
+  "rep_time": 405.0,
+  "en": "new product, Crescent Island, which was the code name we've been using so far, and the product name officially is our Intel GPU D-series. Now, this GPU is come back from the fabs. This is Crescent Island in my hand, the SOC. It is built for the agentic inference with low power, significant amount of memory capacity, extremely good bandwidth, and actually, why don't we see this working? How many of you want to see it working?"
+ },
+ {
+  "idx": 12,
+  "start": 429.0,
+  "end": 477.0,
+  "rep_time": 450.0,
+  "en": "Okay. So, what we are running here is the VAE model. It's a video generation model. It's a 27 billion parameter model that basically is a text-to-video. It's kicked off, and it's going to be running and creating a 5-second video out of this. Now, what makes Crescent Island great is that it has support for up to 480 GB of LPDDR5X memory with ECC. This card here that we are using for the demo has 160 GB of memory. Now, with deep amount of support for all kinds of data types, with 1.5 TB per second memory bandwidth, this is a very flexible PCI Express based solution that enables form factors from small to"
+ },
+ {
+  "idx": 13,
+  "start": 477.0,
+  "end": 495.0,
+  "rep_time": 485.0,
+  "en": "large, and I'll show you more about that. As you can see, that's a video generated on Crescent Island. You can see more at the booth, and you can try your own prompts and create videos at the Intel booth later during this conference."
+ },
+ {
+  "idx": 14,
+  "start": 495.0,
+  "end": 534.0,
+  "rep_time": 510.0,
+  "en": "It's not just that. That SOC that I raised in my hand, this is the PCI Express form factor. This is only 350 W. It's very flexible and scales into multiple OEM designs. But, we're not stopping there. This is OCP, after all. And OCP is innovating on this new form factor called OAC. And what we have here is two Crescent Islands on an OAC form factor that we are innovating with the OCP ecosystem. And this is one of the first OAC versions we are demonstrating."
+ },
+ {
+  "idx": 15,
+  "start": 534.0,
+  "end": 564.0,
+  "rep_time": 545.0,
+  "en": "Now, this enables a whole range of form factors. Our partners can take the SOC and build form factors. Our server partners can take the PCI Express card and build by eight, uh, you know, config or by 16 config server designs. And there are even partners who going to take this and build rack scale solutions with Crescent Island."
+ },
+ {
+  "idx": 16,
+  "start": 564.0,
+  "end": 600.0,
+  "rep_time": 580.0,
+  "en": "To talk more about this, I want to introduce some partners on stage. I'd like to introduce Praveen Patel from Astera Labs and Neil Mowar from Sale Research, the the of say CEO of Sale Research. Let's please give them a broad welcome. Hi Praveen, how are you doing?  Nice to meet you again, you know,  Hi Neil, great to see you again. Um so Praveen, you have some exciting news for this audience today.  Yes, sir.  You want to tell us more?  Yes, so I mean um what you saw today was like the new GPU introductions, right, from Intel. And now you got to have a home"
+ },
+ {
+  "idx": 17,
+  "start": 600.0,
+  "end": 675.0,
+  "rep_time": 640.0,
+  "en": "where you could take that advantage of the GPU and create a big cluster. So today ESTRA-LAB announced product called Orion. Orion is the product where we take our Scorpio 2 design that has a 320 lane biggest radix in the industry and create the PCI cluster. So now you used to you are limited to have eight GPU cluster or maybe 16 by putting X number of switches. Now with the single switch in the server you could scale up to 160 GPU full bandwidth in the PCI mode. What you see that Intel announced today with their GPU, you can do 80 GPU in the single rack. And still you don't have to worry about that power problem because that GPU only 350 watt.  And Praveen, we've been working closely on this and we have some things running and there's some data from the from the technical work that we've done. Do we want to share it with the team?  I think so. This is the perfect timing because we want to make sure that team understands the value of this new announcement from ESTRA-LAB along with Intel as a complete product"
+ },
+ {
+  "idx": 18,
+  "start": 675.0,
+  "end": 945.0,
+  "rep_time": 800.0,
+  "en": "along with the our customer from Scale Research also. So as you can see that we ran this is the real measurement data. It's not something that hey, we did the analytics. It's the real measurement data by using all radios all all to all communications. And as you can see that you can get 45% improvement by utilizing this new architecture with Intel GPU.  So PCI Express gives us a scalability and flexibility that's so easy to adopt that this becomes a very low friction. Now Neil, you've been at the spearhead of some Neo Cloud, you know, deployments and building some very very innovative stuff. I've read your article where you want to bring the cost of inferencing down by 1,000 X. Now how do these solutions help you in that journey?  Yeah, I mean, that's a very tall order. We have a lot of room to improve on the cost and tokenomics of inference today. And of course, we've been very lucky to work with Intel on the chip itself. Crescent Island we're big fans of and we're excited to be a launch partner customer for Crescent Island. But as we've said earlier in this talk, it's no longer our job to program one chip at a time. The job of a chip architect and the job of a model mapping from a software company like ours is to scale up efficiently to use eight GPUs, 64 GPUs, even 80 GPUs. And that's where we've been working with Astera to get PCIE to be the great scale of domain we need for inference. Now there's a couple factors here that really make the partnership between us, Intel, and Astera work extraordinarily well. The first is that scale up domains often discuss bandwidth, meaning peak data movement between our accelerators as the primary metric of interest. But for inference, it's actually quite different. We care quite a bit about the latency of small messages. And this is one of the areas where Astera's switch design is able to shave off microseconds and even nanoseconds in some cases to make sure that small messages, which we send all the time in inference, can happen quickly, reliably, and allow us to scale up modern large models like Kim K3, a huge mixture of experts model. We can scale that really efficiently on the Astera Labs fabric. In addition to that, Astera has innovated even further and brought some really critical new features such as the ability to cast data from one accelerator to other accelerators in the same domain really efficiently without amplifying data. They call it HyperCast, and we're really excited to be working with them on this new feature. PCIe is going to be a great scale of domain for the inference that we do.  So, Neil, is it fair to say that agentic inference is actually a heterogeneous workload?  Absolutely. The work can change on a dime from massive pre-fills, meaning lots and lots of tokens being sent in by a user prompt, or maybe a large tool call, suddenly to the agent now decoding thousands of tokens to reason for a long time on a hard problem. These are entirely opposite ends of the spectrum in terms of compute and memory intensity, and it's the flexibility we get from a scale of domain that's as large as Astera's, plus the custom tile and chip that allows us to have great compute as well as great memory bandwidth on one platform that we're super excited about.  Uh thank you, Neil. Uh we are super excited to making sure that we deliver the solutions to you, so you can actually deploy it. And Praveen, wonderful partnership. Uh we are excited to have this ecosystem, and truly kind of, you know, emulates what OCP is all about, uh bringing this partnerships into the ecosystem and building solutions so we can reduce costs, improve efficiency, and be able to bring solutions uh that give customers choice.  Thank you. Thank you, Anil. I mean, you you gave us actually chance to work on your new design and how we can show the performance with our devices. And we have actually proof over here where he can see that there is a value added in the PCI domain because as we all know PCI has been there for years, right? So now you're just creating the scale up within the PCI, it just change the game completely different.  Thank you.  to the internet.  Yeah. Thank you.  coming to be here.  Thank you. Yes. Look forward to exciting solutions from our partners.  [applause]  Now as you know, it doesn't take just us to bring this to market. It takes an ecosystem to build around that. We've been partnering with AI natives, Neo clouds, ecosystem partners, OEMs, ODMs, across"
+ },
+ {
+  "idx": 19,
+  "start": 945.0,
+  "end": 975.0,
+  "rep_time": 960.0,
+  "en": "the board helping bring Crest and Island to market. So I'm super excited and can't wait to see this in the hands of both developers and to customers who will actually use the compute from these systems."
+ },
+ {
+  "idx": 20,
+  "start": 975.0,
+  "end": 1017.0,
+  "rep_time": 995.0,
+  "en": "Now like I said earlier, AI agent and AI inference is not a homogeneous workload. It's a heterogeneous workload. It's not a one-size-fits-all. Not all tokens are going to be the same. Not all token requirements are going to be the same. There are going to be different kinds of compute enabled depending on what kind of volume of interactivity you need, what latencies you need, and what model sizes you need to build on. So we've been partnering with SambaNova. SambaNova has a data flow architecture that helps bring low latency, you know, high token throughput, high interactivity use cases for the agentic era. The SambaNova's um chip which is can give you up to 820"
+ },
+ {
+  "idx": 21,
+  "start": 1017.0,
+  "end": 1044.0,
+  "rep_time": 1030.0,
+  "en": "tokens per second. It's 4x faster on the SambaNova 50 series which they recently announced. We've been partnering with them to bring this heterogeneity along with our Intel Xeon, with the SambaNova RDUs, and with our upcoming s- Crescent Island Intel D-Series GPUs."
+ },
+ {
+  "idx": 22,
+  "start": 1044.0,
+  "end": 1000000060.0,
+  "rep_time": 1100.0,
+  "en": "These will not just come as single chips. At rack-scale inferencing grows, their solutions in both the brownfield data centers as well as the greenfield data centers give you flexibility of choice in a range of capabilities of compute that you can deploy. So, as in inference also becomes more distributed, you're going to need different kinds of computing solutions from the cloud going towards the edge servers. And with PCI Express for Crescent Island, the Intel D-Series, you're going to have that flexibility and the capability to scale this without a friction because a broad amount of OEM and ODM designs will be supporting Crescent Island straight off the bat. On top of it, with Crescent Island, we are committing to, you know, day zero support for mainstream models in the Open VET ecosystem. We'll be working towards the frameworks to be scaling up with VLLM, SG Lang, and all the industry frameworks that need to be supported upstreamed so that you don't need any extensions to be downloaded. We're partnering with our Sambanova to build racks that they are building the racks on to work efficiently for decode solutions on Sambanova with people like, you know, capability on Crescent Island. And of course, what runs all of this ecosystem, what runs the orchestration, is going to be the CPU. With our Intel Xeon portfolio, we have wide range of capabilities and choice and skills for our ecosystem to innovate on. And the Intel Xeon family is here to actually power the future of this agentic era. With that, I really want to thank all of you to be here. Give us the opportunity to present how we are putting the building blocks towards this agentic future. Lot more exciting things coming. Please do Please do go visit the booth to see some of these demos in action. And at the same time, we have our keynote session tomorrow, where my partner, Nick Dube, will be talking about, you know, some of the future details on the agentic era. So, with that, thank you. Thank you for your time."
+ }
+]

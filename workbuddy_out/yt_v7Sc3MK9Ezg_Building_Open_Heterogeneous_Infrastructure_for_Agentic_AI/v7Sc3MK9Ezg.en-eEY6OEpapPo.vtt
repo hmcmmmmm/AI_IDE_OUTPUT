@@ -1,0 +1,1324 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.000 --> 00:00:09.679
+Okay, good afternoon folks and welcome
+
+00:00:07.200 --> 00:00:12.400
+to OCP 2026.
+
+00:00:09.679 --> 00:00:15.679
+super excited to be here and what you'll
+
+00:00:12.400 --> 00:00:17.760
+hear from Intel today along with some
+
+00:00:15.679 --> 00:00:20.960
+exciting guests from our partners that
+
+00:00:17.760 --> 00:00:24.640
+we have is around what's happening in AI
+
+00:00:20.960 --> 00:00:27.119
+inference and how heterogeneous systems
+
+00:00:24.640 --> 00:00:29.439
+are going to be the foundation for
+
+00:00:27.119 --> 00:00:31.279
+making these inference workloads which
+
+00:00:29.439 --> 00:00:34.079
+are becoming more and more heterogeneous
+
+00:00:31.279 --> 00:00:37.200
+in the agentic world. What is Intel
+
+00:00:34.079 --> 00:00:40.160
+delivering solutions for this capability
+
+00:00:37.200 --> 00:00:43.360
+that is required and what are we doing
+
+00:00:40.160 --> 00:00:45.440
+with our partners in the open ecosystem
+
+00:00:43.360 --> 00:00:50.120
+in enabling you all in building
+
+00:00:45.440 --> 00:00:50.120
+solutions for this exciting future.
+
+00:00:50.239 --> 00:00:55.680
+As you all know OCP is anchored on being
+
+00:00:54.079 --> 00:00:57.920
+open
+
+00:00:55.680 --> 00:01:01.280
+standards to move an entire industry
+
+00:00:57.920 --> 00:01:04.159
+forward. We Intel have been part of this
+
+00:01:01.280 --> 00:01:07.680
+community since its founding days. We've
+
+00:01:04.159 --> 00:01:11.439
+had over 116 contributions and at this
+
+00:01:07.680 --> 00:01:17.159
+year in OCP we have over 33 sessions
+
+00:01:11.439 --> 00:01:17.159
+across 16 tracks uh being presented.
+
+00:01:17.200 --> 00:01:22.720
+Now let's jump straight into it. As you
+
+00:01:20.320 --> 00:01:24.960
+all know AI is booming. I don't have to
+
+00:01:22.720 --> 00:01:28.799
+say much but what's really happening
+
+00:01:24.960 --> 00:01:31.360
+there is the rise of agents is causing a
+
+00:01:28.799 --> 00:01:33.520
+different problem into the ecosystem.
+
+00:01:31.360 --> 00:01:36.640
+The amount of tokens that are needed is
+
+00:01:33.520 --> 00:01:39.119
+exploding while at the same time the
+
+00:01:36.640 --> 00:01:42.240
+costs of delivering these agents is also
+
+00:01:39.119 --> 00:01:45.200
+exploding. So the economics of
+
+00:01:42.240 --> 00:01:47.119
+delivering AI inference at scale needs
+
+00:01:45.200 --> 00:01:50.240
+to be looked at if we want to kind of
+
+00:01:47.119 --> 00:01:52.720
+feed this ecosystem forward.
+
+00:01:50.240 --> 00:01:54.479
+The other trend that is happening is the
+
+00:01:52.720 --> 00:01:57.520
+frontier models versus openw weight
+
+00:01:54.479 --> 00:02:00.079
+models. More and more models are
+
+00:01:57.520 --> 00:02:02.159
+becoming openweight and the ratio of
+
+00:02:00.079 --> 00:02:04.240
+openweight models being used is
+
+00:02:02.159 --> 00:02:06.560
+increasing dramatically as the
+
+00:02:04.240 --> 00:02:09.679
+capabilities of openweight models get
+
+00:02:06.560 --> 00:02:12.560
+closer to frontier models. In fact for
+
+00:02:09.679 --> 00:02:15.200
+enterprises more and more significant
+
+00:02:12.560 --> 00:02:17.760
+amount of the basic AI work that they
+
+00:02:15.200 --> 00:02:20.640
+need to do can actually be handled by
+
+00:02:17.760 --> 00:02:25.040
+openweight models whereas the higher end
+
+00:02:20.640 --> 00:02:27.840
+of the models need the frontier models.
+
+00:02:25.040 --> 00:02:32.000
+Now not all tokens in this AI ecosystem
+
+00:02:27.840 --> 00:02:35.360
+are same based on the model size based
+
+00:02:32.000 --> 00:02:37.120
+on the latency or based on the KV cache.
+
+00:02:35.360 --> 00:02:39.200
+The computational requirements to
+
+00:02:37.120 --> 00:02:42.160
+deliver that efficiently is going to be
+
+00:02:39.200 --> 00:02:44.879
+very different and all three variables
+
+00:02:42.160 --> 00:02:49.640
+have been factored in to figure out how
+
+00:02:44.879 --> 00:02:49.640
+do you get efficiency at scale.
+
+00:02:50.879 --> 00:02:54.800
+Now when you look at the agentic
+
+00:02:52.480 --> 00:02:57.440
+architecture, there's something very
+
+00:02:54.800 --> 00:03:00.160
+interesting happening. How do you write
+
+00:02:57.440 --> 00:03:02.879
+uh route the workloads to run at the
+
+00:03:00.160 --> 00:03:05.280
+right hardware? More and more up until
+
+00:03:02.879 --> 00:03:07.519
+now, we were all looking about how to
+
+00:03:05.280 --> 00:03:10.000
+run tokens faster. How do you create
+
+00:03:07.519 --> 00:03:12.640
+faster tokens, slower to I mean lower
+
+00:03:10.000 --> 00:03:16.480
+latency tokens and generate a huge
+
+00:03:12.640 --> 00:03:18.080
+interactivity per user for those tokens.
+
+00:03:16.480 --> 00:03:21.040
+But more and more in the agentic
+
+00:03:18.080 --> 00:03:25.040
+architecture the CPU plays a very very
+
+00:03:21.040 --> 00:03:27.760
+important role in couple of areas. First
+
+00:03:25.040 --> 00:03:30.239
+the decision tree the quarterback. How
+
+00:03:27.760 --> 00:03:32.640
+am I going to route orchestrate and
+
+00:03:30.239 --> 00:03:34.959
+deliver the agentic workflow the
+
+00:03:32.640 --> 00:03:38.080
+security the harness that needs to be
+
+00:03:34.959 --> 00:03:40.959
+built on it? How do I able to then
+
+00:03:38.080 --> 00:03:43.280
+handle the token generation and the API
+
+00:03:40.959 --> 00:03:45.280
+calls that need to be happening and then
+
+00:03:43.280 --> 00:03:48.319
+the outcome of those API call of the
+
+00:03:45.280 --> 00:03:51.440
+tokens have to be executed sandboxed
+
+00:03:48.319 --> 00:03:54.080
+verified and CPUs are more and more in
+
+00:03:51.440 --> 00:03:55.680
+the agentic loop executing to all the
+
+00:03:54.080 --> 00:03:58.959
+outcomes that are coming from these
+
+00:03:55.680 --> 00:04:01.840
+LLMs. So this is phen increasing the
+
+00:03:58.959 --> 00:04:05.360
+demand on CPU significantly that the
+
+00:04:01.840 --> 00:04:08.159
+ratio of CPU to GPU is also going up. In
+
+00:04:05.360 --> 00:04:12.080
+fact, it used to be about 2 is to8 now
+
+00:04:08.159 --> 00:04:15.360
+going to 1 is to 4, 1 is to2 and even in
+
+00:04:12.080 --> 00:04:19.440
+1 is to1 in some scenarios.
+
+00:04:15.360 --> 00:04:22.800
+Now we at Intel have been a huge
+
+00:04:19.440 --> 00:04:25.600
+builder of systems for the CPU workloads
+
+00:04:22.800 --> 00:04:28.240
+and we start with the CPU as being the
+
+00:04:25.600 --> 00:04:30.960
+quarterback for this agentic era. This
+
+00:04:28.240 --> 00:04:33.199
+is where the control plane is. The Xeon
+
+00:04:30.960 --> 00:04:35.120
+has all the capabilities that are needed
+
+00:04:33.199 --> 00:04:36.800
+for these workloads to be running
+
+00:04:35.120 --> 00:04:40.240
+efficiently, to be orchestrated
+
+00:04:36.800 --> 00:04:43.120
+efficiently and sandboxed efficiently.
+
+00:04:40.240 --> 00:04:45.919
+And for from Intel, we have significant
+
+00:04:43.120 --> 00:04:48.800
+number of choices for our customers and
+
+00:04:45.919 --> 00:04:51.040
+to you in the ecosystem to build upon.
+
+00:04:48.800 --> 00:04:53.199
+We have a rich history of delivering,
+
+00:04:51.040 --> 00:04:55.120
+you know, leadership products in these
+
+00:04:53.199 --> 00:04:57.840
+uh aspects.
+
+00:04:55.120 --> 00:05:01.199
+For the CPUs in the agentic era, we have
+
+00:04:57.840 --> 00:05:06.400
+our Xeon 6 Plus, the Ecore with up to
+
+00:05:01.199 --> 00:05:08.880
+288 cores. We have our Xeon 6 with a the
+
+00:05:06.400 --> 00:05:10.960
+cores needed for orchestration and for
+
+00:05:08.880 --> 00:05:13.919
+different kinds of workloads. And our
+
+00:05:10.960 --> 00:05:17.039
+soon upcoming Diamond Rapid CPU, which
+
+00:05:13.919 --> 00:05:19.199
+will give you 250 core, 256 cores to
+
+00:05:17.039 --> 00:05:24.199
+give you the one of the best agent
+
+00:05:19.199 --> 00:05:24.199
+performance uh you can in the market.
+
+00:05:24.639 --> 00:05:30.400
+Now it's not just us building these our
+
+00:05:28.240 --> 00:05:32.800
+partners in the ecosystem. We showed
+
+00:05:30.400 --> 00:05:35.919
+this at Computex a wide range of
+
+00:05:32.800 --> 00:05:38.639
+partners building Xeon servers and racks
+
+00:05:35.919 --> 00:05:42.080
+for this agentic era. But more
+
+00:05:38.639 --> 00:05:44.320
+importantly today we have actually racks
+
+00:05:42.080 --> 00:05:46.960
+available to meet the computational
+
+00:05:44.320 --> 00:05:49.680
+needs of these large volume of tokens
+
+00:05:46.960 --> 00:05:52.720
+that need to be sandboxed and executed.
+
+00:05:49.680 --> 00:05:55.600
+These Xeon agentic AI rack systems are
+
+00:05:52.720 --> 00:05:57.680
+being deployed by our partners. There
+
+00:05:55.600 --> 00:05:59.600
+are QR codes up there. They can take you
+
+00:05:57.680 --> 00:06:01.840
+to the product pages and you can
+
+00:05:59.600 --> 00:06:04.639
+actually see the capabilities of each of
+
+00:06:01.840 --> 00:06:07.759
+these racks with tens of thousands of
+
+00:06:04.639 --> 00:06:13.160
+cores even more than 50,000 cores uh and
+
+00:06:07.759 --> 00:06:13.160
+many of them in a OV3 form factor.
+
+00:06:17.360 --> 00:06:22.400
+Now let's get to the token generation
+
+00:06:19.440 --> 00:06:24.639
+side of it. As you all know, GPUs have
+
+00:06:22.400 --> 00:06:28.160
+been the foundation for creating and
+
+00:06:24.639 --> 00:06:31.199
+running LLMs at scale. Today we are
+
+00:06:28.160 --> 00:06:33.520
+excited to talk about a new product,
+
+00:06:31.199 --> 00:06:35.759
+Crescent Island, which was the code name
+
+00:06:33.520 --> 00:06:39.039
+we've been using so far. And the product
+
+00:06:35.759 --> 00:06:40.880
+name officially is our Intel GPU D
+
+00:06:39.039 --> 00:06:43.680
+series.
+
+00:06:40.880 --> 00:06:47.360
+Now this GPU
+
+00:06:43.680 --> 00:06:51.360
+is come back from the fabs. This is
+
+00:06:47.360 --> 00:06:54.000
+Crescent Island in my hand. The SOC
+
+00:06:51.360 --> 00:06:57.039
+it is built for the agentic inference
+
+00:06:54.000 --> 00:06:59.599
+with low power, significant amount of
+
+00:06:57.039 --> 00:07:02.479
+memory capacity, extremely good
+
+00:06:59.599 --> 00:07:04.240
+bandwidth and actually why don't we see
+
+00:07:02.479 --> 00:07:07.120
+this working? How many of you want to
+
+00:07:04.240 --> 00:07:10.639
+see it working?
+
+00:07:07.120 --> 00:07:12.800
+Okay. So what we are running here is the
+
+00:07:10.639 --> 00:07:15.759
+VAN model. It's a video generation
+
+00:07:12.800 --> 00:07:18.800
+model. It's a 27 billion parameter model
+
+00:07:15.759 --> 00:07:21.199
+that basically is a text to video. It's
+
+00:07:18.800 --> 00:07:23.759
+kicked off and it's going to be running
+
+00:07:21.199 --> 00:07:26.160
+and creating a 5-second video out of
+
+00:07:23.759 --> 00:07:29.120
+this. Now what makes Crescent Island
+
+00:07:26.160 --> 00:07:34.639
+great is that it has support for up to
+
+00:07:29.120 --> 00:07:37.120
+480 GB of LPDDR5X memory with ECC. This
+
+00:07:34.639 --> 00:07:40.720
+card here that we are using for the demo
+
+00:07:37.120 --> 00:07:45.039
+has 160 GB of memory.
+
+00:07:40.720 --> 00:07:48.319
+Now with deep amount of support for all
+
+00:07:45.039 --> 00:07:51.680
+kinds of data types with 1.5 terabytes
+
+00:07:48.319 --> 00:07:55.039
+per second memory bandwidth. This is a
+
+00:07:51.680 --> 00:07:58.879
+very flexible PCI Expressbased solution
+
+00:07:55.039 --> 00:08:00.479
+that enables form factors from small to
+
+00:07:58.879 --> 00:08:03.759
+large. And I'll show you more about
+
+00:08:00.479 --> 00:08:05.919
+that. As you can see, that's a video
+
+00:08:03.759 --> 00:08:08.080
+generated on Crescent Island. You can
+
+00:08:05.919 --> 00:08:10.639
+see more at the booth, and you can try
+
+00:08:08.080 --> 00:08:12.720
+your own prompts and create videos at
+
+00:08:10.639 --> 00:08:15.680
+the Intel booth later during this
+
+00:08:12.720 --> 00:08:18.479
+conference.
+
+00:08:15.680 --> 00:08:21.520
+It's not just that.
+
+00:08:18.479 --> 00:08:25.199
+That SOC that I raised in my hand, this
+
+00:08:21.520 --> 00:08:28.960
+is the PCIe Express form factor. This is
+
+00:08:25.199 --> 00:08:32.080
+only 350 watts. It's very flexible and
+
+00:08:28.960 --> 00:08:34.719
+scales into multiple OEM designs. But
+
+00:08:32.080 --> 00:08:37.599
+we're not stopping there. This is OCP
+
+00:08:34.719 --> 00:08:40.479
+after all. And OCP is innovating on this
+
+00:08:37.599 --> 00:08:43.519
+new form factor called OAC. And what we
+
+00:08:40.479 --> 00:08:46.320
+have here is two Crescent Islands on an
+
+00:08:43.519 --> 00:08:49.360
+OAC form factor that we are innovating
+
+00:08:46.320 --> 00:08:51.600
+with the OCP ecosystem. And this is one
+
+00:08:49.360 --> 00:08:54.600
+of the first OAC versions we are
+
+00:08:51.600 --> 00:08:54.600
+demonstrating.
+
+00:08:56.000 --> 00:09:02.080
+Now this enables a whole range of form
+
+00:08:58.320 --> 00:09:04.959
+factors. Our partners can take the SOC
+
+00:09:02.080 --> 00:09:07.440
+and build form factors. Our server
+
+00:09:04.959 --> 00:09:11.760
+partners can take the PC express card
+
+00:09:07.440 --> 00:09:14.640
+and build by 8 um you know config or by
+
+00:09:11.760 --> 00:09:16.800
+16 config server designs and there are
+
+00:09:14.640 --> 00:09:20.000
+even partners who going to take this and
+
+00:09:16.800 --> 00:09:22.959
+build rack scale solutions with Crescent
+
+00:09:20.000 --> 00:09:24.720
+Island.
+
+00:09:22.959 --> 00:09:27.360
+To talk more about this, I want to
+
+00:09:24.720 --> 00:09:29.279
+introduce some partners on stage. I'd
+
+00:09:27.360 --> 00:09:32.959
+like to introduce
+
+00:09:29.279 --> 00:09:35.839
+Pravin Patel from Astera Labs and Neil
+
+00:09:32.959 --> 00:09:38.480
+Moa from Sale Research, the founder of
+
+00:09:35.839 --> 00:09:42.440
+SA and CEO of Sale Research. Let's
+
+00:09:38.480 --> 00:09:42.440
+please give them a broad welcome.
+
+00:09:44.959 --> 00:09:48.959
+Hi Pravin, how are you doing?
+
+00:09:47.120 --> 00:09:50.399
+Nice to meet you again. Yeah.
+
+00:09:48.959 --> 00:09:51.519
+Hi Neil, great to see you again. see
+
+00:09:50.399 --> 00:09:53.440
+you.
+
+00:09:51.519 --> 00:09:55.440
+So, Preine, you have some exciting news
+
+00:09:53.440 --> 00:09:55.839
+for this audience today.
+
+00:09:55.440 --> 00:09:56.880
+Yes.
+
+00:09:55.839 --> 00:09:59.440
+Do you want to tell us more?
+
+00:09:56.880 --> 00:10:02.880
+Yeah. So, I mean, um, what you saw today
+
+00:09:59.440 --> 00:10:05.200
+was like the new GPU introductions,
+
+00:10:02.880 --> 00:10:07.120
+right, from Intel and now you got to
+
+00:10:05.200 --> 00:10:09.600
+have a home where you could take that
+
+00:10:07.120 --> 00:10:13.120
+advantage of the GPU and create a big
+
+00:10:09.600 --> 00:10:15.600
+cluster. So, today Estraab announced
+
+00:10:13.120 --> 00:10:18.160
+product called Orion. Orion is the
+
+00:10:15.600 --> 00:10:21.440
+product where we take our Scorpio 2
+
+00:10:18.160 --> 00:10:24.399
+design that has a 320 lane biggest
+
+00:10:21.440 --> 00:10:26.720
+radics in the industry and create the
+
+00:10:24.399 --> 00:10:29.680
+PCIe cluster.
+
+00:10:26.720 --> 00:10:32.480
+So now you used to you are limited to
+
+00:10:29.680 --> 00:10:35.279
+have 8 GPU cluster or maybe 16 by
+
+00:10:32.480 --> 00:10:38.079
+putting X number of switches. Now with
+
+00:10:35.279 --> 00:10:43.040
+the single switch in the server, you
+
+00:10:38.079 --> 00:10:47.040
+could scale up to 160 GPU full bandwidth
+
+00:10:43.040 --> 00:10:49.440
+in the PCI mode. What you see that Intel
+
+00:10:47.040 --> 00:10:53.200
+announced today with their GPU, you can
+
+00:10:49.440 --> 00:10:56.480
+do 80 GPU in the single rack and still
+
+00:10:53.200 --> 00:11:00.240
+you don't have to worry about that power
+
+00:10:56.480 --> 00:11:02.959
+problem because their GPU is only 350
+
+00:11:00.240 --> 00:11:06.320
+watt. and Pravin we've been working
+
+00:11:02.959 --> 00:11:08.480
+closely on this and we have some things
+
+00:11:06.320 --> 00:11:10.720
+running and there's some data from the
+
+00:11:08.480 --> 00:11:12.560
+from the technical work that we've done
+
+00:11:10.720 --> 00:11:14.320
+do we want to share it with the team
+
+00:11:12.560 --> 00:11:16.800
+I think so this is the perfect timing
+
+00:11:14.320 --> 00:11:18.880
+because we want to make sure that team
+
+00:11:16.800 --> 00:11:22.160
+understands the value of this new
+
+00:11:18.880 --> 00:11:25.200
+announcement from estra lab along with
+
+00:11:22.160 --> 00:11:28.880
+Intel as a complete product along with
+
+00:11:25.200 --> 00:11:32.640
+our customer from sale research also so
+
+00:11:28.880 --> 00:11:34.800
+as you can see that we ran. This is the
+
+00:11:32.640 --> 00:11:37.519
+real measurement data. It's not
+
+00:11:34.800 --> 00:11:40.320
+something that hey we did the analytics.
+
+00:11:37.519 --> 00:11:43.120
+It's the real measurement data by using
+
+00:11:40.320 --> 00:11:45.760
+all radios um all all through all
+
+00:11:43.120 --> 00:11:50.160
+communications. And as you can see that
+
+00:11:45.760 --> 00:11:54.560
+you can get 45% improvement by utilizing
+
+00:11:50.160 --> 00:11:57.519
+this new architecture with Intel GPU. So
+
+00:11:54.560 --> 00:12:00.959
+PCI Express gives us a scalability and
+
+00:11:57.519 --> 00:12:03.760
+flexibility that's so easy to adopt um
+
+00:12:00.959 --> 00:12:07.279
+that this becomes a very low friction.
+
+00:12:03.760 --> 00:12:10.320
+Now Neil, you've been at this spearhead
+
+00:12:07.279 --> 00:12:13.279
+of some Neocloud, you know, deployments
+
+00:12:10.320 --> 00:12:15.040
+and building some very very innovative
+
+00:12:13.279 --> 00:12:16.480
+stuff. I've read your article where you
+
+00:12:15.040 --> 00:12:19.120
+want to bring the cost of inferencing
+
+00:12:16.480 --> 00:12:21.600
+down by 10,000x. Now, how do these
+
+00:12:19.120 --> 00:12:23.440
+solutions help you in that journey?
+
+00:12:21.600 --> 00:12:25.600
+Yeah, I mean that's a very tall order.
+
+00:12:23.440 --> 00:12:27.839
+We have a lot of room to improve on the
+
+00:12:25.600 --> 00:12:29.680
+cost and tokconomics of of inference
+
+00:12:27.839 --> 00:12:31.120
+today. And of course, we've been very
+
+00:12:29.680 --> 00:12:32.800
+lucky to work with Intel on the chip
+
+00:12:31.120 --> 00:12:34.639
+itself. Crescent Island, we are big fans
+
+00:12:32.800 --> 00:12:36.720
+of and we are excited to be a launch
+
+00:12:34.639 --> 00:12:38.800
+partner customer for Crescent Island.
+
+00:12:36.720 --> 00:12:40.639
+But as we've said earlier in this talk,
+
+00:12:38.800 --> 00:12:43.200
+it's no longer our job to program one
+
+00:12:40.639 --> 00:12:45.680
+chip at a time. The job of a chip
+
+00:12:43.200 --> 00:12:47.760
+architect and the job of a model mapping
+
+00:12:45.680 --> 00:12:50.639
+from a software company like ours is to
+
+00:12:47.760 --> 00:12:53.519
+scale up efficiently to use eight GPUs,
+
+00:12:50.639 --> 00:12:55.440
+64 GPUs, even 80 GPUs. And that's where
+
+00:12:53.519 --> 00:12:58.000
+we've been working with Estera to get
+
+00:12:55.440 --> 00:13:00.399
+PCIe to be the great scaleup domain we
+
+00:12:58.000 --> 00:13:02.000
+need for inference. Now there's a couple
+
+00:13:00.399 --> 00:13:04.399
+factors here that really make the
+
+00:13:02.000 --> 00:13:06.399
+partnership between us intella work
+
+00:13:04.399 --> 00:13:08.720
+extraordinarily well. The first is that
+
+00:13:06.399 --> 00:13:10.880
+scaleup domains often discuss bandwidth
+
+00:13:08.720 --> 00:13:12.800
+being peak data movement between our
+
+00:13:10.880 --> 00:13:14.399
+accelerators as the primary metric of
+
+00:13:12.800 --> 00:13:15.839
+interest. But for inference it's
+
+00:13:14.399 --> 00:13:17.839
+actually quite different. We care quite
+
+00:13:15.839 --> 00:13:19.360
+a bit about the latency of small
+
+00:13:17.839 --> 00:13:21.600
+messages. And this is one of the areas
+
+00:13:19.360 --> 00:13:24.160
+where Astera's switch design is able to
+
+00:13:21.600 --> 00:13:26.079
+shave off microsconds even nanconds in
+
+00:13:24.160 --> 00:13:27.760
+some cases to make sure that small
+
+00:13:26.079 --> 00:13:30.240
+messages which we send all the time in
+
+00:13:27.760 --> 00:13:32.480
+inference can happen quickly reliably
+
+00:13:30.240 --> 00:13:34.560
+and allow us to scale up modern large
+
+00:13:32.480 --> 00:13:36.240
+models like Kimmy K3 a huge mixture of
+
+00:13:34.560 --> 00:13:38.800
+experts model we can scale that really
+
+00:13:36.240 --> 00:13:40.320
+efficiently on the Astera labs fabric.
+
+00:13:38.800 --> 00:13:42.399
+In addition to that, Astera has
+
+00:13:40.320 --> 00:13:44.240
+innovated even further and brought some
+
+00:13:42.399 --> 00:13:47.360
+really critical new features such as the
+
+00:13:44.240 --> 00:13:49.440
+ability to cast data from one
+
+00:13:47.360 --> 00:13:51.279
+accelerator to other accelerators in the
+
+00:13:49.440 --> 00:13:53.200
+same domain really efficiently without
+
+00:13:51.279 --> 00:13:54.480
+amplifying data. They call it hypercast
+
+00:13:53.200 --> 00:13:56.800
+and we're really excited to be working
+
+00:13:54.480 --> 00:13:58.160
+with them on this new feature. PCIe is
+
+00:13:56.800 --> 00:13:59.680
+going to be a great scale domain for the
+
+00:13:58.160 --> 00:14:03.120
+inference that we do.
+
+00:13:59.680 --> 00:14:04.720
+So Neil, is it fair to say that agentic
+
+00:14:03.120 --> 00:14:06.000
+inference is actually a heterogeneous
+
+00:14:04.720 --> 00:14:08.480
+workload?
+
+00:14:06.000 --> 00:14:11.120
+Absolutely. The work can change on a
+
+00:14:08.480 --> 00:14:13.199
+dime from massive prefills, meaning lots
+
+00:14:11.120 --> 00:14:16.000
+and lots of tokens being sent in by a
+
+00:14:13.199 --> 00:14:18.639
+user prompt or maybe a large tool call
+
+00:14:16.000 --> 00:14:20.399
+uh suddenly to the agent now decoding
+
+00:14:18.639 --> 00:14:22.240
+thousands of tokens to reason for a long
+
+00:14:20.399 --> 00:14:23.760
+time on a hard problem. These are
+
+00:14:22.240 --> 00:14:25.279
+entirely opposite ends of the spectrum
+
+00:14:23.760 --> 00:14:27.440
+in terms of compute and memory
+
+00:14:25.279 --> 00:14:29.360
+intensity. And it's the flexibility we
+
+00:14:27.440 --> 00:14:32.399
+get from a scale of domain that's as
+
+00:14:29.360 --> 00:14:34.560
+large as Asteras plus the Carson Island
+
+00:14:32.399 --> 00:14:36.000
+and chip that allows us to have great
+
+00:14:34.560 --> 00:14:37.680
+compute as well as great memory
+
+00:14:36.000 --> 00:14:40.160
+bandwidth on one platform that we're
+
+00:14:37.680 --> 00:14:42.399
+super excited about. Uh thank you Neil.
+
+00:14:40.160 --> 00:14:44.880
+Uh we are super excited to making sure
+
+00:14:42.399 --> 00:14:47.519
+that we deliver the solutions to you so
+
+00:14:44.880 --> 00:14:49.920
+you can actually deploy it and Pravin
+
+00:14:47.519 --> 00:14:53.680
+wonderful partnership. Uh we are excited
+
+00:14:49.920 --> 00:14:56.399
+to have this ecosystem and truly kind of
+
+00:14:53.680 --> 00:14:58.320
+you know emulates what OCP is all about
+
+00:14:56.399 --> 00:15:01.040
+uh bringing this uh partnerships into
+
+00:14:58.320 --> 00:15:03.839
+the ecosystem and building solutions so
+
+00:15:01.040 --> 00:15:06.880
+we can reduce costs improve efficiency
+
+00:15:03.839 --> 00:15:09.199
+and be able to bring solutions uh that
+
+00:15:06.880 --> 00:15:11.360
+give customers choice.
+
+00:15:09.199 --> 00:15:13.600
+No thank you. Thank you Anel. I mean you
+
+00:15:11.360 --> 00:15:16.000
+you gave us actually chance to work on
+
+00:15:13.600 --> 00:15:18.399
+your new design and how we can show the
+
+00:15:16.000 --> 00:15:20.240
+performance with our devices and we have
+
+00:15:18.399 --> 00:15:22.079
+actually proof over here where he can
+
+00:15:20.240 --> 00:15:24.720
+see that there is value added in the PCI
+
+00:15:22.079 --> 00:15:27.839
+domain because as we all know PCI has
+
+00:15:24.720 --> 00:15:29.440
+been there for years right so now he's
+
+00:15:27.839 --> 00:15:33.279
+just creating the scale up within the
+
+00:15:29.440 --> 00:15:34.240
+PCIe it just changed the game completely
+
+00:15:33.279 --> 00:15:36.639
+different
+
+00:15:34.240 --> 00:15:37.360
+thank you and going to the internet
+
+00:15:36.639 --> 00:15:41.199
+thank you thrilled
+
+00:15:37.360 --> 00:15:44.480
+to be working look forward to exciting
+
+00:15:41.199 --> 00:15:46.959
+solutions from our partners. [applause]
+
+00:15:44.480 --> 00:15:49.600
+Now, as you know, it doesn't take just
+
+00:15:46.959 --> 00:15:52.320
+us to bring this to market. It takes an
+
+00:15:49.600 --> 00:15:56.240
+ecosystem to build around it. We've been
+
+00:15:52.320 --> 00:16:00.560
+partnering with AI natives, neoclouds,
+
+00:15:56.240 --> 00:16:03.839
+ecosystem partners, OEMs, ODMs across
+
+00:16:00.560 --> 00:16:06.560
+the board, helping bring Crescent Island
+
+00:16:03.839 --> 00:16:08.639
+to market. So, I'm super excited and
+
+00:16:06.560 --> 00:16:11.199
+can't wait to see this in the hands of
+
+00:16:08.639 --> 00:16:13.120
+both developers and to customers who
+
+00:16:11.199 --> 00:16:15.600
+will actually use the compute from these
+
+00:16:13.120 --> 00:16:18.720
+systems.
+
+00:16:15.600 --> 00:16:21.519
+Now, like I said earlier, AI agent and
+
+00:16:18.720 --> 00:16:24.000
+AI inference is not a homogeneous
+
+00:16:21.519 --> 00:16:26.160
+workload. It's a heterogeneous workload.
+
+00:16:24.000 --> 00:16:28.639
+It's not a one-sizefititall.
+
+00:16:26.160 --> 00:16:30.399
+Not all tokens are going to be the same.
+
+00:16:28.639 --> 00:16:31.759
+Not all token requirements are going to
+
+00:16:30.399 --> 00:16:34.079
+be the same. There are going to be
+
+00:16:31.759 --> 00:16:36.399
+different kinds of compute enabled
+
+00:16:34.079 --> 00:16:38.399
+depending on what kind of volume of
+
+00:16:36.399 --> 00:16:40.639
+interactivity you need, what latencies
+
+00:16:38.399 --> 00:16:43.199
+you need and what model sizes you need
+
+00:16:40.639 --> 00:16:45.040
+to build on. So we've been partnering
+
+00:16:43.199 --> 00:16:47.680
+with Samanova.
+
+00:16:45.040 --> 00:16:50.480
+Samanova has a dataf flow architecture
+
+00:16:47.680 --> 00:16:52.399
+that helps bring low latency, you know,
+
+00:16:50.480 --> 00:16:56.240
+high token throughput, high
+
+00:16:52.399 --> 00:16:59.680
+interactivity use cases for the agentic
+
+00:16:56.240 --> 00:17:03.440
+era. the Samanova's
+
+00:16:59.680 --> 00:17:06.799
+um chip which is can give you up to 820
+
+00:17:03.440 --> 00:17:09.360
+tokens per second. It's 4x faster on the
+
+00:17:06.799 --> 00:17:11.360
+Samanova 50 series which they recently
+
+00:17:09.360 --> 00:17:14.079
+announced. We've been partnering with
+
+00:17:11.360 --> 00:17:16.799
+them to bring this heterogeneity along
+
+00:17:14.079 --> 00:17:20.640
+with our Intel Xeon with the Samanova
+
+00:17:16.799 --> 00:17:25.480
+RDUs and with our upcoming Crescent
+
+00:17:20.640 --> 00:17:25.480
+Island Intel D series GPUs.
+
+00:17:26.400 --> 00:17:32.960
+These will not just come as symbol chips
+
+00:17:29.919 --> 00:17:36.320
+at drag scale inferencing growth. Their
+
+00:17:32.960 --> 00:17:38.480
+solutions in both the brownfield data
+
+00:17:36.320 --> 00:17:41.360
+centers as well as the green field data
+
+00:17:38.480 --> 00:17:43.520
+centers give you flexibility of choice
+
+00:17:41.360 --> 00:17:47.200
+in a range of capabilities of compute
+
+00:17:43.520 --> 00:17:49.520
+that you can deploy. So as in inference
+
+00:17:47.200 --> 00:17:51.440
+also becomes more distributed, you're
+
+00:17:49.520 --> 00:17:54.640
+going to need different kinds of
+
+00:17:51.440 --> 00:17:57.919
+computing solutions from the cloud going
+
+00:17:54.640 --> 00:18:00.880
+towards the edge servers. And with PCI
+
+00:17:57.919 --> 00:18:02.559
+Express for Crescent Island, the Intel D
+
+00:18:00.880 --> 00:18:05.360
+series, you're going to have that
+
+00:18:02.559 --> 00:18:08.240
+flexibility and the capability to scale
+
+00:18:05.360 --> 00:18:11.280
+this without a friction because a broad
+
+00:18:08.240 --> 00:18:13.280
+amount of OEM and ODM designs will be
+
+00:18:11.280 --> 00:18:16.240
+supporting Crescent Island straight off
+
+00:18:13.280 --> 00:18:18.880
+the bat. On top of it with Crescent
+
+00:18:16.240 --> 00:18:21.120
+Island, we are committing to, you know,
+
+00:18:18.880 --> 00:18:24.640
+day zero support for mainstream models
+
+00:18:21.120 --> 00:18:26.720
+in the open weight ecosystem. We'll be
+
+00:18:24.640 --> 00:18:30.080
+working towards the frameworks to be
+
+00:18:26.720 --> 00:18:31.919
+scaling up with VLM, SG Lang and all the
+
+00:18:30.080 --> 00:18:34.320
+industry frameworks that need to be
+
+00:18:31.919 --> 00:18:37.120
+supported upstreamed so that you don't
+
+00:18:34.320 --> 00:18:40.320
+need any extensions to be downloaded.
+
+00:18:37.120 --> 00:18:42.400
+We are partnering with our Samanova to
+
+00:18:40.320 --> 00:18:45.840
+build racks that they are building the
+
+00:18:42.400 --> 00:18:48.559
+racks on to work efficiently for decode
+
+00:18:45.840 --> 00:18:50.960
+solutions on Samanova with prefill like
+
+00:18:48.559 --> 00:18:53.280
+you know capability on Crescent Island.
+
+00:18:50.960 --> 00:18:56.799
+And of course what runs all of this
+
+00:18:53.280 --> 00:19:00.000
+ecosystem what runs the orchestration is
+
+00:18:56.799 --> 00:19:02.240
+going to be the CPU with our Intel Xeon
+
+00:19:00.000 --> 00:19:05.600
+portfolio. We have wide range of
+
+00:19:02.240 --> 00:19:08.559
+capabilities and choice and SKUs for our
+
+00:19:05.600 --> 00:19:11.760
+ecosystem to innovate on and the Intel
+
+00:19:08.559 --> 00:19:14.400
+Xeon family is here to actually power
+
+00:19:11.760 --> 00:19:16.640
+the future of this agentic era. With
+
+00:19:14.400 --> 00:19:19.120
+that, I really want to thank all of you
+
+00:19:16.640 --> 00:19:21.919
+to be here. Give us the opportunity to
+
+00:19:19.120 --> 00:19:24.640
+present how we are putting the building
+
+00:19:21.919 --> 00:19:27.120
+blocks towards this agentic future. Lot
+
+00:19:24.640 --> 00:19:29.679
+more exciting things coming. Please do
+
+00:19:27.120 --> 00:19:31.919
+go please do go visit the booth to see
+
+00:19:29.679 --> 00:19:33.679
+some of these demos in action. And at
+
+00:19:31.919 --> 00:19:36.160
+the same time we have our keynote
+
+00:19:33.679 --> 00:19:38.400
+session tomorrow uh where my partner
+
+00:19:36.160 --> 00:19:40.640
+Nick Dubet will be talking about you
+
+00:19:38.400 --> 00:19:43.520
+know some of the future details on the
+
+00:19:40.640 --> 00:19:47.240
+agentic era. So with that thank you.
+
+00:19:43.520 --> 00:19:47.240
+Thank you for your time.
+
+00:19:47.528 --> 00:19:49.548
+[applause]
+
