@@ -1,0 +1,370 @@
+[
+ {
+  "cat": "01_视频图文实录",
+  "name": "Intel_FSP下一代演进_图文实录.md",
+  "src": "yt_-wfc8OlYciU_The_Next_Evolution_of_Intels_FSP_Aligning_to_openSFI/Intel_FSP下一代演进_图文实录.md",
+  "size": 23732,
+  "mtime": "2026-10-20",
+  "md5": "e17d5504"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "AMD_OCP_2026_实录版.md",
+  "src": "yt_3nFDQMaoNKc/AMD_OCP_2026_实录版.md",
+  "size": 55195,
+  "mtime": "2026-10-18",
+  "md5": "f76ac6a7"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "transcript_en_3nFDQMaoNKc.md",
+  "src": "yt_3nFDQMaoNKc/transcript_en.md",
+  "size": 24042,
+  "mtime": "2026-10-18",
+  "md5": "ccf84497"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "时间调度电路网络的预测误差预算_图文实录.md",
+  "src": "yt_6nQAvEFFf6U_Precision_Time_Circuit_Switching_for_AI_Training_Fabrics/时间调度电路网络的预测误差预算_图文实录.md",
+  "size": 29681,
+  "mtime": "2026-10-20",
+  "md5": "f06fa1ab"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "BGP路由解耦_图文实录.md",
+  "src": "yt_8in3TD9vW6g_Beyond_Traditional_BGP_Decoupling_Route_Distribution/BGP路由解耦_图文实录.md",
+  "size": 49666,
+  "mtime": "2026-10-22",
+  "md5": "e979ac39"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "时间卡与有保障PNT_图文实录.md",
+  "src": "yt_A_4x3G91Y6g_A_timecard_as_a_resilient_A_PNT_custom_solution/时间卡与有保障PNT_图文实录.md",
+  "size": 37630,
+  "mtime": "2026-10-20",
+  "md5": "d3dbf4fa"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "时钟对齐遥测_图文实录.md",
+  "src": "yt_N_4_1orETrc_Clock_Aligned_Telemetry_for_AI_Clusters_From_BMC_to_GPU/时钟对齐遥测_图文实录.md",
+  "size": 36709,
+  "mtime": "2026-10-20",
+  "md5": "7618db04"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "Intel_多域时间同步_图文实录.md",
+  "src": "yt_OQhaLXc7_PQ_Multidomain_Time_Synchronization_in_the_Modern_Datacenter/Intel_多域时间同步_图文实录.md",
+  "size": 32620,
+  "mtime": "2026-10-20",
+  "md5": "778f8cd2"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "高基数交换机与精确时间_实录版.md",
+  "src": "yt_P0lumqNAl5U_High_Radix_Switches_and_Precise_Time/高基数交换机与精确时间_实录版.md",
+  "size": 29064,
+  "mtime": "2026-10-19",
+  "md5": "acb71b38"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "800V_DCDC_拓扑比较与取舍_实录版.md",
+  "src": "yt_Qws5vRGyG7w_800V_Data_Center_DC_DC_Design_Considerations_Topology/800V_DCDC_拓扑比较与取舍_实录版.md",
+  "size": 50636,
+  "mtime": "2026-10-19",
+  "md5": "29334783"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "Delta_800VDC_供电与散热_实录版.md",
+  "src": "yt_UHYvWpdItR4_Delta_800_VDC_Power_and_Cooling_Solutions_for_Data_Centers/Delta_800VDC_供电与散热_实录版.md",
+  "size": 55838,
+  "mtime": "2026-10-19",
+  "md5": "88cb788f"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "transcript_en_UONmRpabnf4.md",
+  "src": "yt_UONmRpabnf4_Liquid_Cooled_Power_Shelf_and_800_VDC_platform_for_next/transcript_en.md",
+  "size": 13379,
+  "mtime": "2026-10-18",
+  "md5": "cf9efec8"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "液冷电源托盘与800VDC_实录版.md",
+  "src": "yt_UONmRpabnf4_Liquid_Cooled_Power_Shelf_and_800_VDC_platform_for_next/液冷电源托盘与800VDC_实录版.md",
+  "size": 36662,
+  "mtime": "2026-10-18",
+  "md5": "01c31bdb"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "NVIDIA_OCP_2026_实录版.md",
+  "src": "yt_UR7kJy7X_nQ/NVIDIA_OCP_2026_实录版.md",
+  "size": 59917,
+  "mtime": "2026-10-18",
+  "md5": "0045ea14"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "transcript_en_UR7kJy7X.md",
+  "src": "yt_UR7kJy7X_nQ/transcript_en.md",
+  "size": 23181,
+  "mtime": "2026-10-18",
+  "md5": "3cb3c699"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "树莓派时间服务器集群_实录版.md",
+  "src": "yt_W28mn4ihGs0_9902_Raspberry_Pi_Compute_Module_based_Open_Time_Server/树莓派时间服务器集群_实录版.md",
+  "size": 28273,
+  "mtime": "2026-10-19",
+  "md5": "daa172b0"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "TAP开放讨论_会议记录.md",
+  "src": "yt_X9Hx8DR5QYw_Time_Appliances_Open_Discussion_Q_A_1/TAP开放讨论_会议记录.md",
+  "size": 3766,
+  "mtime": "2026-10-19",
+  "md5": "6634e786"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "固件内存安全_圆桌实录.md",
+  "src": "yt_hVk3Z95_QEY_Scaling_Memory_Safe_Security_Across_Firmware_Stack/固件内存安全_圆桌实录.md",
+  "size": 51465,
+  "mtime": "2026-10-20",
+  "md5": "122f871e"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "光子量子计算如何规模化_实录版.md",
+  "src": "yt_ibZrZboxSnU_Scaling_Photonic_Quantum_Computers/光子量子计算如何规模化_实录版.md",
+  "size": 39101,
+  "mtime": "2026-10-19",
+  "md5": "bbc15fdc"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "AI与HPC闪电演讲_图文实录.md",
+  "src": "yt_jETYb_nhksA_AI_HPC_Lightning_Talks/AI与HPC闪电演讲_图文实录.md",
+  "size": 67238,
+  "mtime": "2026-10-22",
+  "md5": "d94ab7bd"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "无闪存启动与流式固件_实录版.md",
+  "src": "yt_t845BOkcVcQ_Advancing_Flash_less_Boot_in_OCP_Systems_A_Streaming/无闪存启动与流式固件_实录版.md",
+  "size": 40129,
+  "mtime": "2026-10-19",
+  "md5": "9aa30a09"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "智能体AI异构基础设施_图文实录.md",
+  "src": "yt_v7Sc3MK9Ezg_Building_Open_Heterogeneous_Infrastructure_for_Agentic_AI/智能体AI异构基础设施_图文实录.md",
+  "size": 48619,
+  "mtime": "2026-10-22",
+  "md5": "a096fafc"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "Open_DC_ML基础设施_图文实录.md",
+  "src": "yt_vemxcWJOLWA_Next_Generation_ML_Infrastructure_The_Open_DC_Architecture/Open_DC_ML基础设施_图文实录.md",
+  "size": 39798,
+  "mtime": "2026-10-22",
+  "md5": "f951371f"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "README_HotChips2026.md",
+  "src": "内容整理/HotChips2026/README.md",
+  "size": 7828,
+  "mtime": "2026-10-18",
+  "md5": "dc11531a"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "README_OCP2026会议资料.md",
+  "src": "内容整理/OCP2026会议资料/README.md",
+  "size": 4988,
+  "mtime": "2026-10-18",
+  "md5": "1b72e905"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "Astera_Labs_链路经济学_深度笔记.md",
+  "src": "内容整理/yt_BelB63ZA63s_Astera_Labs_Retimer_75pct_Gross_Margin/Astera_Labs_链路经济学_深度笔记.md",
+  "size": 41675,
+  "mtime": "2026-10-24",
+  "md5": "49ea08db"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "推理拆分_预填充与解码_深度笔记.md",
+  "src": "内容整理/yt_D3Dk_dG-mBA_Inference_Disaggregation/推理拆分_预填充与解码_深度笔记.md",
+  "size": 38457,
+  "mtime": "2026-10-24",
+  "md5": "2349a1dc"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "OCP_FTI-SROI_2026-10-22_会议纪要.md",
+  "src": "内容整理/yt_Tug9Ax_VtBM_FTI_SROI___Short_Reach_Optical_Interconnect_85206871737/OCP_FTI-SROI_2026-10-22_会议纪要.md",
+  "size": 37058,
+  "mtime": "2026-10-24",
+  "md5": "af84e489"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "为什么高速信号跑不远_正文源.md",
+  "src": "内容整理/yt_uljmNCg1WW0_为什么高速信号跑不远_AI_服务器里那颗_指甲盖芯片_重定时器原理/doc.md",
+  "size": 25414,
+  "mtime": "2026-10-24",
+  "md5": "a9113d8e"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "transcript_zh_uljmNCg1WW0.md",
+  "src": "内容整理/yt_uljmNCg1WW0_为什么高速信号跑不远_AI_服务器里那颗_指甲盖芯片_重定时器原理/transcript_zh.md",
+  "size": 11197,
+  "mtime": "2026-10-24",
+  "md5": "7234413e"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "CPO与光学IO原理_深度笔记.md",
+  "src": "内容整理/yt_v26yw-T8iSs_CPO_Optical_IO/CPO与光学IO原理_深度笔记.md",
+  "size": 47359,
+  "mtime": "2026-10-24",
+  "md5": "29b481e8"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "SILAB动画是怎么做出来的_制作管线深度调研.md",
+  "src": "内容整理/制作管线调研_SILAB_动画怎么做的/SILAB动画是怎么做出来的_制作管线深度调研.md",
+  "size": 40127,
+  "mtime": "2026-10-24",
+  "md5": "377c8a12"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "HC2026_完整日程.md",
+  "src": "内容整理/HotChips2026/01_会议日程/HC2026_完整日程.md",
+  "size": 6500,
+  "mtime": "2026-10-18",
+  "md5": "1e0341a5"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "HotChips2026_技术综述.md",
+  "src": "内容整理/HotChips2026/03_技术综述/HotChips2026_技术综述.md",
+  "size": 16588,
+  "mtime": "2026-10-18",
+  "md5": "1bd8a347"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "非官方渠道清单.md",
+  "src": "内容整理/HotChips2026/04_非官方渠道/非官方渠道清单.md",
+  "size": 4934,
+  "mtime": "2026-10-18",
+  "md5": "000d400d"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "01_知乎_内存干货与私货.md",
+  "src": "内容整理/HotChips2026/05_渠道图文归档/01_知乎_内存干货与私货.md",
+  "size": 47201,
+  "mtime": "2026-10-18",
+  "md5": "a8acf29b"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "02_雪球_全景梳理.md",
+  "src": "内容整理/HotChips2026/05_渠道图文归档/02_雪球_全景梳理.md",
+  "size": 23936,
+  "mtime": "2026-10-18",
+  "md5": "f99e92e0"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "03_什么值得买_Intel三张牌.md",
+  "src": "内容整理/HotChips2026/05_渠道图文归档/03_什么值得买_Intel三张牌.md",
+  "size": 13944,
+  "mtime": "2026-10-18",
+  "md5": "0fe2d8cb"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "04_NVIDIA官方_活动页与博客.md",
+  "src": "内容整理/HotChips2026/05_渠道图文归档/04_NVIDIA官方_活动页与博客.md",
+  "size": 12079,
+  "mtime": "2026-10-18",
+  "md5": "5aed27fe"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "05_百度百科_HotChips2026.md",
+  "src": "内容整理/HotChips2026/05_渠道图文归档/05_百度百科_HotChips2026.md",
+  "size": 20362,
+  "mtime": "2026-10-18",
+  "md5": "e2d532ce"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "README_HotChips2026_05_渠道图文归档.md",
+  "src": "内容整理/HotChips2026/05_渠道图文归档/README.md",
+  "size": 5721,
+  "mtime": "2026-10-18",
+  "md5": "eab1d67d"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "HotChips2026_深度分析报告.md",
+  "src": "内容整理/HotChips2026/06_深度分析报告/HotChips2026_深度分析报告.md",
+  "size": 124247,
+  "mtime": "2026-10-18",
+  "md5": "bb189b21"
+ },
+ {
+  "cat": "02_专题报告",
+  "name": "2026_OCP_Global_Summit_速览.md",
+  "src": "内容整理/OCP2026会议资料/02_2026_OCP_Global_Summit/2026_OCP_Global_Summit_速览.md",
+  "size": 7561,
+  "mtime": "2026-10-18",
+  "md5": "7328533b"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "DESIGN_可制造性技术分析.md",
+  "src": "内容整理/OCP2026会议资料/可制造性技术分析/DESIGN.md",
+  "size": 7133,
+  "mtime": "2026-10-18",
+  "md5": "c58da92c"
+ },
+ {
+  "cat": "03_转录与说明",
+  "name": "STORY_可制造性技术分析.md",
+  "src": "内容整理/OCP2026会议资料/可制造性技术分析/STORY.md",
+  "size": 11094,
+  "mtime": "2026-10-18",
+  "md5": "c5406147"
+ },
+ {
+  "cat": "01_视频图文实录",
+  "name": "训练一个会思考的模型_算力花在哪_正文源.md",
+  "src": "内容整理/yt_maY8Jsodgv0_训练一个会思考的模型_算力花在哪/doc.md",
+  "size": 34438,
+  "mtime": "2026-10-25",
+  "md5": "297dc23d"
+ }
+]

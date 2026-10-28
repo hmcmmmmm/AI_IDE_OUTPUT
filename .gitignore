@@ -1,3 +1,15 @@
+# ============================================================
+# 上传范围：仅 workbuddy_out/内容整理 与 workbuddy_out/md_output
+# 其余目录（yt_* 原始产出、_work 工作区、制作管线调研等）不纳入版本控制
+# ============================================================
+/workbuddy_out/*
+!/workbuddy_out/内容整理/
+!/workbuddy_out/md_output/
+
+# 内容整理 内的临时工作区与在制目录
+_work/
+/workbuddy_out/内容整理/yt_*/
+
 # 本地 AI Agent 运行数据，不纳入版本控制
 .workbuddy-ai/
 

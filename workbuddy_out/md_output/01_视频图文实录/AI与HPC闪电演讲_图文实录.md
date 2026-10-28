@@ -1,0 +1,417 @@
+# AI 与 HPC 闪电演讲：五场五分钟，五个硬问题
+
+> OCP Global Summit 2026 · AI / HPC Lightning Talks 专场
+> 讲者：Gerald Bode（N-Level）· Injae Kang / Jaehoon Shim（首尔国立大学）· M A Awal / Jason Barmann（EPC Power）· Jinshui Huang（剑桥大学）· Marco Pitoni（劳伦斯伯克利国家实验室）/ Noman Rafique（WiZem AI）
+> 全长 30 分 59 秒　|　共 22 页幻灯片
+
+```wechat-intro
+五个人，每人五分钟，没有提问环节。这种场次通常出不了什么大东西——但这一场例外。
+
+五个人各自拆掉了 AI 数据中心里的一根支柱：供电链路能不能像路由数据包一样路由电能；GPU 直接发 I/O 时 CPU 该不该还在中间；并网电池怎么把 AI 负载的剧烈波动"藏"起来；48V 直供核心能不能省掉中间母线；以及最不起眼但最致命的一件事——维修规程还写在纸上。
+
+五个题目看起来无关，但都在回答同一个问题：当机架功率奔向一兆瓦，哪些环节还停留在上一代的设计假设里。
+```
+
+```wechat-outline
+1. N-Level｜把电能当数据包路由：从 10 kV 交流到 0.75 V 直流
+2. 首尔国立大学｜NVMeNext：让 GPU 直接发 I/O 的 SSD 模拟器
+3. EPC Power｜毫秒级负载平滑：并网电池如何"藏住"AI 负载
+4. 剑桥大学｜单级 48V 直供核心：省掉中间母线的代价与收益
+5. WiZem AI × 劳伦斯伯克利｜把维修规程变成知识图谱
+```
+
+---
+
+## 01　N-Level：把电能当数据包路由
+
+Gerald Bode 只讲了不到四分钟，抛出的却是一个完整的架构主张：不要再用一串专用变换器把电能从 10 kV 交流一路"削"到 0.75 V 直流，而是像互联网转发数据包一样，把电能切成"能量帧"在矩阵里路由。
+
+### 1.1　今天的供电链路长什么样
+
+![Current Technology：从 Grid 10kV AC、Genset 480V AC、Solar 100V DC 三路输入，经 MV SWB → MV Xmer → LV SWB → UPS（480VAC，内含 Charger / Battery / Inverter）→ AC PDU → RPP → Power shelf 48V DC → DD 12V DC → DD 0.75V DC → GPU，另有支路供 Network 220V AC 与 Cooling 480V AC](images/01_00m45s.jpg)
+
+我会尽量讲得慢一点。
+
+呃，我是 N-Level 的 Gerald Bode，我来这里是想呼吁一种新的愿景、一种新的能量分配架构。我们把它叫做"实时能量路由"，我会讲讲它背后是什么，以及下一步该做什么。
+
+第一个问题是：我们影响的是什么？我们影响的是数据中心里落地的那整条供电链——因为如果你有一个能像互联网那样路由能量的架构，你影响的就是全部。
+
+> "I will try to be very slow. >> [laughter] >> So, go to the first slide. Okay. Uh I'm Gerald Bode from N-level and I'm here to uh call for new uh vision and a new architecture for energy distribution. So, we call it real-time energy routing and I will show what is behind it and what to do in the next step. Oh, okay. So, the first question is what do we affect? We affect the whole power supply chain what is implemented in a a data center because if you have a architecture which is able to route the energy like the internet, you're affecting everything."
+
+<div class="takeaway"><b>小结</b>　这张图是整场演讲的靶子：从市电到 GPU，中间有 MV 开关柜、变压器、LV 开关柜、UPS、AC PDU、RPP、电源架、两级 DC-DC，一共九到十个环节。每一个环节都有自己的效率损失、自己的故障率、自己的厂商。</div>
+
+### 1.2　为什么要换：功率墙、微秒级瞬变与"模拟税"
+
+![Enabling Petawatt AI Clusters together：左栏 The Power Wall（单体 AC-UPS-DC 链路无法扩展、微秒级瞬变会击穿集中式硬件、"模拟税"在浪费电网容量），右栏 Real-Time Energy Routing（能量不被转换或重建、对电压与功率完全不可知、软件定义矩阵、无中心故障的自愈集群矩阵）](images/02_01m15s.jpg)
+
+所以在旧的方案里，你有一大堆变换器和一大堆设备，它们是为了满足某些特定的机架需求而设计的，而且会变成那种 UPS 系统、AC-AC、单体化、被厂商锁定的单元。而我们要走向的是能够路由能量的标准模块，那样就不再需要所有这些标准部件了。
+
+> "So, in the uh old setup, you have a lot of um converters and uh a lot of devices which are designed to fulfill some special um rig uh demands and they are going to be like a UPS system AC AC for monolithic locked vendor locked units. Uh we are going for uh standard module which is able to route the energy and then we do not need all the standard components anymore."
+
+<div class="takeaway"><b>小结</b>　"Power Wall" 的三条理由值得单独记：单体链路不能扩展、微秒级瞬变会击穿集中式硬件、以及他称为"模拟税"的那部分——大量电网容量被浪费在变换损耗和冗余裕度上。第三条是唯一直接指向钱的。</div>
+
+### 1.3　怎么工作：能量帧、矩阵与端点重建
+
+![RER – Architecture：三行输入（Grid 10kV AC / Genset 480V AC / Solar 100V DC）与三行输出（GPU 0.75V DC / Network 220V AC / Cooling 480V AC）之间是 3×3 的 Nlevel Battery 节点矩阵，节点间以 Backbone 横向连接、以 Matrix Link 纵向连接](images/03_01m55s.jpg)
+
+它是怎么工作的？每次都是一样的。它像"能量的互联网"：你在矩阵里发送能量的流，把它拆成能量块，那就是一个能量帧的载荷。然后你可以让它穿过矩阵，在每一个端点，你可以恢复出你想要的能量形式——也许是交流，也许是直流，也许是输入，也许是输出，任何你想要的形式，任何功率。
+
+> "How it works, it's every time the same not. It's uh like internet of energy and you send uh stream of energy inside the matrix. You rip it out in energy blocks. It's a payload of uh energy frame. Then you can route it through the matrix and at every single endpoint, you can recover the energy form you want to have, maybe AC, DC, maybe input, maybe output, whatever you want, any power."
+
+<div class="takeaway"><b>小结</b>　矩阵里每个节点都是一个"Nlevel Battery"——既是储能也是变换器，节点之间横向走 Backbone、纵向走 Matrix Link。输入端三种电压形式、输出端三种负载形式，全部挂在同一个 3×3 网格上，路径由软件决定而不是由接线决定。</div>
+
+### 1.4　他要的不是产品，是一个 OCP 工作组
+
+![Let's Define the Interface Together：左侧说明把 RER 规范开放给社区、软硬件接口协同设计让任意厂商的部件都能互联；右侧三行大字 One Standard. / Any Vendor. / Infinite Scaling.](images/04_03m10s.jpg)
+
+我觉得做这件事真的很关键，因为我是在硬件层工作的，我把它叫做"零层"。我在乎的是物理，以及那个能够路由能量的"火"。但正如我们从互联网学到的，我们有八层甚至更多层需要被加上去，才能有一个真正的路由结构，去承载一个巨大的网状矩阵里的多路流。
+
+所以我在找愿意加入、愿意在上面把这些缺失的层建起来的人。我梦想有一个 OCP 工作组，能够为能量路由设计出完整的一套。它看起来就完全像互联网，只不过路由的是从电厂到 GPU 设备、到所有终端的能量。
+
+> "I think it's really crucial to do it because I'm working on the hardware layer. I call it zero. And I care about the physics and the fire which is able to route energy, but as we know from the internet, we have eight layer or more which need to be added to have a real routing structure to capture multiple streams in a big knotted matrix. So, I'm trying to find people who are willing to join and to um yeah, create the missing layers on top. So, I dream for OCP workgroup who is able to design the full set for energy routing. So, it's exactly looking like the internet, but routing energy from power plants to the GPU devices and all the targets."
+
+<div class="takeaway"><b>小结</b>　"零层"这个说法很准确，也很诚实：他手上有的只是物理层——一个能路由电能的硬件单元。上面七层（寻址、调度、QoS、故障域、计费）全部空缺，所以这场演讲的真实请求不是"买我的模块"，而是"来人和我一起写标准"。</div>
+
+<div class="insight"><b>想法</b>　"像互联网一样路由电能"这个类比很动人，但它在一个地方会断掉：数据包可以丢、可以重传、可以排队等几毫秒，而 0.75 V 供电轨上的电压跌落只要持续几微秒，芯片就已经复位了。也就是说，能量路由的"零层"必须同时做到互联网做不到的事——有损容忍为零、时延抖动为零。这也解释了为什么他的矩阵里每个节点都得自带电池：储能不是可选组件，它是这个架构能容忍调度的唯一前提。</div>
+
+---
+
+## 02　首尔国立大学：让 GPU 直接发 I/O 的 SSD 模拟器
+
+### 2.1　题目：一个面向 GPU 中心存储的虚拟 NVMe 设备
+
+![标题页：NVMeNext: Rearchitecting a Virtual NVMe Device for GPU-centric Storage Systems，作者 Injae Kang and Jaehoon Shim，首尔国立大学博士生，2026 年 10 月 14 日，圣何塞](images/05_03m55s.jpg)
+
+>> 谢谢。好，那我们进入下一位讲者，来自首尔国立大学，对吗？你的幻灯片应该在下一击之后出现。请控制在五分钟。
+
+大家好。我是首尔国立大学的 Injae Kang。今天我来讲 NVMeNext，一个面向 GPU 中心存储系统的虚拟 NVMe 设备。
+
+> ">> Thank you, yeah. So, let's move on to our next speaker which is from Seoul National University. Is that right? Um Your presentation slide should be on the next click. Yeah. And 5 minutes, please. So, >> Hello everyone. I'm Injae Kang from Seoul National University. Today I'll present NVMe Next, a virtual NVMe device for GPU-centric storage systems."
+
+<div class="takeaway"><b>小结</b>　注意题目里的两个限定词："virtual"和"rearchitecting"。这不是一颗新 SSD，而是把已有的模拟器 NVMeVirt（FAST '23）重新做了一遍架构——因为要研究 GPU 直发 I/O，你首先得有一个能扛住百万级 IOPS 的假硬盘。</div>
+
+### 2.2　问题：CPU 站在每一次 GPU 存储传输的中间
+
+![SSD Emulator for GPU-Initiated I/O：左侧要点——GPU 工作负载内存占用巨大、数据集从 HBM 下沉到存储层、CPU 参与传输成为瓶颈、GPU-initiated I/O 让 GPU 直接发 I/O；右侧存储金字塔从 Memory 到 Storage-Next（IOPS/TCO，IO 大小 512B）到 Compute storage / Warm storage / Cold storage](images/06_04m30s.jpg)
+
+随着现代 GPU 工作负载的规模超出 HBM，最近的系统开始把数据集下沉到存储层。但按传统做法，CPU 坐在每一次 GPU 存储传输的中间，在细粒度下这就成了瓶颈。GPU 发起的 I/O 把它去掉了——GPU 线程直接发 I/O，不需要 CPU 介入。
+
+产业界在往同一个方向走。NVIDIA 的 Storage-Next 愿景把存储重新定义为 GPU 内存的延伸，同时考虑性能和成本。但这个愿景所假设的设备今天还不存在。这就是为什么我们需要一个可扩展的模拟器：能在极端并发和百万 IOPS 级吞吐的需求下扩展，并且能与 GPU 做高效的 P2P 通信。这正是 NVMeNext 填补的空白。
+
+我们是在之前的模拟器 NVMeVirt 之上构建 NVMeNext 的，围绕两个要素重新做了架构。
+
+> "As modern GPU workloads have outgrown HBM, recent systems offload data sets to the storage tier, but conventionally, the CPU sits in the middle of every GPU storage transfer, and at fine granularity that becomes the bottleneck. GPU initiated IO removes it. GPU threads issue IOs directly with no CPU intervention. The industry is moving the same direction. NVIDIA's Storage Next vision redefines storage as an extension of GPU memory for both performance and cost. But the devices this vision assumes do not exist yet. That is why we need a scalable emulator to scale under extreme concurrency and million IOPS class throughput demands, and to perform efficient P2P communication with GPUs. This is exactly the gap NVMe Next fills. We built NVMe Next on top of our prior emulator, NVMe vult, re-architecting around two elements."
+
+<div class="takeaway"><b>小结</b>　这个金字塔把整件事的动机说清楚了：越往上（Memory → Storage-Next），每瓦容量和每瓦 IOPS 越高；越往下（Warm / Cold storage），单次传输越大、越容忍延迟。而 Storage-Next 这一层的 IO 大小是 512 字节——小到 CPU 的参与成本无法被摊薄，这就是"必须让 GPU 自己发"的根本原因。</div>
+
+### 2.3　两个设计：多 manager 架构与性能模型
+
+![NVMeNext Overview：左侧 GPU Memory 与 DSA Engine（Batch descriptor、src_dst_len），右侧 NVMeNext 内部为 Global NAND performance model、多个 Manager（各带 Entry buffer，共享 SQE/CQE Doorbells）与 Memory reserved for backend storage](images/07_06m10s.jpg)
+
+第一，多 manager 架构。manager 是 NVMeNext 的基本运行单元，它执行从取 NVMe 命令到提交完成项的整个序列。NVMeNext 在多个 manager 之间共享 NVMe 队列对，每个 manager 拥有一组互不重叠的队列。这让请求处理并行化，而且不需要线程间同步，使模拟器能在极端并发下扩展。
+
+第二，性能模型。它刻画了 NAND 读延迟，以及 PCIe 与 NAND 通道的占用。因为每个 manager 都共享这个模型，加锁就成了一个关键设计点。全局锁会造成争用。按 manager 分区能避免争用，但对混合负载不够。在小 IO 下，NAND 读延迟占主导，而通道和 PCIe 带宽远未饱和。所以 NVMeNext 给每次传输分配一个预先算好的延迟，而不是去建模通道争用。这样 manager 之间只需要共享每个 plane 的状态，因为 NAND 操作是按 plane 串行的。
+
+> "First, a multi-manager architecture. A manager is the basic operating unit of NVMe Next, performing the entire sequence from fetching NVMe commands to posting completions. NVMe Next shares NVMe queue pairs across managers, so each manager owns a disjoint set of queues. This parallelizes request processing with no inter-thread synchronization, letting the emulator scale under extreme concurrency. Second, the performance model. It captures NAND read latency along with PCIe and NAND channel occupancy. Because every manager shares this model, locking becomes a critical design point. A global causes contention. Per manager partitioning avoids that, but it is inadequate for mixed workloads. Under small IOs, NAND read latency dominates while channel and PCIe bandwidth stay far from saturation. So, NVMe next assigns each transfer a precomputed latency instead of modeling channel contention. Then, managers only need to share each plane's status since NAND operations serialize per plane."
+
+<div class="takeaway"><b>小结</b>　关键取舍在最后一句：不做通道争用的动态建模，而是查表给延迟。这是一个"用精度换并发"的选择——在 512 字节小 IO 下，NAND 读延迟（15 μs）比通道排队时间大一个数量级，所以查表的误差可以忽略，但省下来的锁开销是决定性的。</div>
+
+### 2.4　三个阶段的执行
+
+每个 manager 分三个阶段运行。第一阶段是取命令。manager 扫描 SQ 的 doorbell，然后把 SQ 条目从 GPU 内存拷进自己的条目缓冲区。这次拷贝被卸载到 Intel DSA 上，一次批处理来自多个 SQ 的条目。第二阶段是数据处理。manager 查性能模型，算出每条命令的目标完成时间，然后把多次传输作为一个 DSA 批次发出。在 512 字节下，单次请求的准备开销相对载荷已经不可忽略，批处理把它摊薄到很多请求上。第三阶段是完成处理。目标完成时间一到，manager 把 CQ 条目收进条目缓冲区，并提交到 GPU 内存里的 CQ。
+
+> "Each manager operates in three phases. Phase one is command fetching. The manager scans the SQ doorbells, then copies the SQ entries from GPU memory into its entry buffers. This copy is offloaded to Intel DSA, batching entries from multiple SQ's at once. Phase two is data processing. The manager consults the performance model to compute each command's target completion time. The manager then issues multiple transfers as a single DSA batch. At 512 bytes, the per request setup overhead is no longer negligible relative to the payload, and batching amortizes it across many requests. Phase three is completion handling. Once the target completion time has elapsed, the manager collects the CQ entries into the the entry buffer and posts them to the CQs in GPU memory."
+
+<div class="takeaway"><b>小结</b>　三个阶段里出现了两次 DSA（Intel 的数据流加速器）：一次用于把 SQ 条目从显存搬进来，一次用于把多次数据传输打包发出去。两次都是为了同一件事——在 512 字节这个尺度上，任何"逐条处理"的开销都会把 IOPS 上限压死。</div>
+
+### 2.5　系统级分析：热图、图算法与第三张图
+
+![System-Level Analysis with NVMeNext：SSD 配置为 16 通道 / 每通道 32 plane / 15 μs 读延迟；左侧两张热图为队列深度 × 队列对数量的吞吐（a 无 warp 级合并、b 有 warp 级合并）；右侧柱状图为 Orkut 与 MOLIERE 的 BFS / CC 对比，以及 NVMeVirt 上 Orkut BFS 的对比](images/08_08m10s.jpg)
+
+所有实验都跑在 A100 上。我们把模型配置成 16 个 NAND 通道、每通道 32 个 plane、NAND 读延迟 15 微秒，理论峰值 3300 万 IOPS。
+
+左边我们跑 512 字节随机读，同时改变队列对数量和每个队列的深度。注意同样的总队列深度，在不同拓扑下吞吐不同。一个队列对被更多 GPU 线程共享会增加同步开销。NVMeNext 采用 warp 级合并，由 lane 0 线程替整个 warp 执行临界区工作。大多数配置都有改善，最好情况提升 2 倍。值得注意的是，NVMeNext 在真实 GPU 负载下达到了理论峰值。
+
+右边是 Orkut 和 Moliere 数据集上的 BFS 与连通分量。默认是一个 GPU 线程负责一个顶点、扫描它所有的边。一个优化是边合并，让一个 warp 一起处理一个顶点的边。这显著改变了执行时间：Orkut 上的 BFS 快了 3 倍。但看第三张图——在 NVMeVirt 上，同一个优化几乎没让执行时间变化。当模拟器自己就是瓶颈时，GPU 侧的优化就变得不可见。NVMeNext 扩得足够开，让它们显现出来。
+
+> "All experiments run on an A100 GPU. We configured the model with 16 NAND channels, 32 planes per channel, and a 15 microsecond NAND read latency, giving a theoretical peak of 33 million IOPS. On the left, we run a 512 byte random read workload while varying the number of Q pairs and the per Q depth. Notice that the same total Q depth gives different throughput depending on the topology. Sharing a Q pair across more GPU threads increases synchronization overhead. NVMe applies warp level coalescing where the lane zero thread performs the critical section work for the whole warp. Most configurations improve with the best case gain being 2x. Notably, NVMe next reaches the theoretical peak under a real GPU workload. On the right, BFS and connected components over the Orkut and Moller datasets. By default, one GPU thread per vertex scans all of its edges. One optimization is edge coalescing where a single warp handles the edges of one vertex together. This changes execution time dramatically. BFS on Orkut runs 3x faster, but look at the third chart. On NVMe Virt, the same optimization barely moves the execution time. When the emulator itself is the bottleneck, GPU side optimizations become invisible. NVMe next scales enough to let them show."
+
+<div class="takeaway"><b>小结</b>　第三张图是这篇演讲真正的论点，也是很多论文会藏起来的那张图：同一个优化，在旧模拟器上 22.05 s → 21.6 s（几乎没动），在新模拟器上 2.08 s → 0.69 s。它证明的不是"我的模拟器更快"，而是"用旧模拟器得出的结论可能是错的"。</div>
+
+### 2.6　收尾：一个开源工具，而不是一个产品
+
+总结一下，NVMeNext 是一个面向 GPU 中心存储系统的 NVMe SSD 模拟器。它能在百万 IOPS 量级处理请求，并可作为系统级分析的工具。NVMeNext 是开源的，我们希望它对未来 GPU 中心存储的研究有用。谢谢。
+
+> "To summarize, NVMe next is an NVMe SSD emulator for GPU centric storage systems. It handles requests at million IOPS scale and works as a tool for system level analysis. NVMe next is open source and we hope it's useful for future GPU centric storage research. Thank you."
+
+<div class="takeaway"><b>小结</b>　五分钟里他一次都没提"我们的系统比 X 快"。定位很克制：模拟器是研究基础设施，价值在于"让别人的优化能被看见"。这种工作在会议上很难出彩，但 GPU 直发 I/O 这条路要走通，绕不过它。</div>
+
+---
+
+## 03　EPC Power：毫秒级负载平滑与电网故障穿越
+
+### 3.1　题目与要解决的四个电网问题
+
+![标题页：Millisecond-Scale Load Smoothing and Grid Contingency Ride-Through at GW-Scale: Future-Proofing for Emerging Grid Codes，作者 M A Awal & Jason Barmann，EPC Power Corporation，加州 Poway](images/09_10m00s.jpg)
+
+>> 好，非常感谢。下面进入第三位讲者。活动结束后请务必和讲者聊聊，我知道没有提问时间。第三位讲者来自 EPC Power。你们是一起上吧？好。
+
+谢谢邀请。我叫 Jason Barmann。和我一起的是 EPC Power 的 M A Awal——大约 3 小时前，我们成为了 Flex / Axium 的一部分，我们对此很兴奋。
+
+今天我们要讲的是储能，特别是围绕数据中心的并联电池方案。人们往数据中心里塞电力变换设备的方式有很多，但我们要讲的是我们针对数据中心正在遇到的几个挑战所开发的一项技术：一是公用事业公司的并网审批，二是 AI 负载波动带来的现场发电问题，三是低电压穿越、频率穿越，以及某些项目上会冒出来的次同步振荡问题。
+
+如果你想听更深入的版本，明天早上 8 点我会再讲 15 分钟，主题类似，但更聚焦在公用事业公司到底要求什么。今天更多讲方案本身。
+
+> ">> Okay, thanks very much for that. Yeah, moving on to our third speaker. So, please do talk to the speakers after the event. I know there's no time for questions. But, our third speaker is from EPC Power Corporation. You guys are up together or just yep, good. >> The clicker should take you to your first slide, yeah. And 5 minutes, please, yeah. >> All right. >> It should come on. >> All right. >> Yep, it's on. >> It is, okay, great. Yep, well, thanks for having us. So, my name is Jason Barman. With me is M A Wall from EPC Power as of about 3 hours ago. We are now a part of Flex / Axium. So, we're we're excited about that. Um today we're going to talk about uh energy storage uh particularly around uh you know, parallel best solutions for um data centers. And there's a lot of ways that people are putting power conversion equipment in a data center, but we're we're going to talk about one technology we've developed around the challenges that that data centers are having when it comes to grid interconnection approvals from utilities or some of the onsite generation issues with AI load volatility uh as well as uh low voltage ride through, frequency ride through, and some of the uh you know, subsynchronous oscillation issues that kind of crop up on some of these projects. Um if you want a little bit more of a deeper dive into it, tomorrow bright and early 8:00 a.m. I'll be talking for another 15 minutes on a similar topic, but more focusing on what the utilities are requiring. Today we're going to talk more about the solution itself."
+
+<div class="takeaway"><b>小结</b>　四个问题里，前两个（并网审批、负载波动）是商业与工程问题，后两个（低电压穿越、次同步振荡）是纯粹的电网稳定性问题。后两个恰恰是机架内的电源方案管不到的——这是他们把产品定位在"中压母线侧"而不是"机架内"的原因。</div>
+
+### 3.2　Agile Grid-Forming BESS：不站在负载和电网之间
+
+![Agile Grid-Forming™ BESS：左侧单线图——Grid 经 GSU 接到 MVT 母线，母线上并联 On-Site Generation、Data Center、Grid-Forming BESS 三路；右侧框图——Hybrid Grid Forming Inverter 内含 Grid-Forming Component 与 Load-Compensation Component，经 Digital Measurement 从 Rapidly Varying Load 取信号](images/10_11m40s.jpg)
+
+从左上角单线图的高层概念看，这主要建立在一个构网型电池储能系统之上，我们做的是其中的电力变换部分。思路是你不需要改变整个数据中心的设计和现场发电，它可以很灵活——不管你是并网还是离网。所以你可以把这一切都标准化，而在我们目前执行的项目上，耦合点通常是中压母线，也就是一条 35 kV 母线。
+
+下面我让 Awal 讲讲标准构网型电池系统里那个细微的差别。
+
+**M A Awal：** 好，我重申一下，我们说的这套 BESS 并不坐在负载和电网之间，它只是挂在旁边。它盯着负载想消耗多少，然后设法去匹配，这样电网就看不到它。
+
+从很高的层面说，这套 BESS 做的事情，几乎像是两个组件的组合。一个组件实时感知负载在消耗什么——就是右上角你看到的，负载上面有一条测量链路，这条链路送到每一台逆变器。于是逆变器知道此刻负载在消耗多少，并试图去匹配。但把这个测量送回逆变器的过程中，存在有限的时间。在这段时间里，逆变器内部还有另一个组件，它会在不知道发生什么的情况下瞬时响应。它不需要任何外部干预，会立刻响应，这来自逆变器内部的构网控制。把这两者结合起来，我们就得到了几乎极快的负载补偿，能在几毫秒内响应。
+
+> "Um so, from a high-level concept on the one line on the top left-hand screen, you can see uh that this is mainly for a is built off of a grid-forming battery energy storage system. And so, we do the power conversion component for that. Um the idea is that you don't have to change the entire data center design, the onsite generation. It could be flexible whether you're grid-connected or off-grid. Uh so, you can keep all of that standardized and at the medium voltage bus typically on the projects we're currently executing, that's a 35 kV bus is where we would couple the battery system. And I'll let the wall talk a little bit more about the the little particular nuance to standard grid-forming battery systems. >> All right. Um so, just to reiterate, um the best that we're talking about that does not sit in between the load and the grid. It just sits on the side. It keeps an eye on what the load is trying to consume, and it tries to match that so that the grid doesn't see it. So, um from a very high level, what the best system does, it acts as almost like a combination of two components. One component actually senses what the load is consuming in real time. So, that's what you see on the top right side. So, um the the load uh you see a measurement link uh on top of the load. Um and then that link goes to each one of the inverters. So, the inverter knows what the load is consuming at this instant. It tries to match that. But when we are getting that measurement back to the inverter, there is a finite time um that it takes. In that time, there is another component inside the inverter that will react instantaneously without knowing what is going on. It doesn't need any external intervention. It will respond instantaneously, and that comes from the grid-forming control inside the inverter. So, when you combine these two, um we get almost a um a extremely fast load compensation that uh that reacts within a few millisecond."
+
+<div class="takeaway"><b>小结</b>　"挂在旁边"是这套方案最关键的一句话：它不串在供电路径上，所以不增加单点故障，也不改变已有的 UPS、柴发、配电设计。代价是它必须靠测量+构网两条腿走路——测量负责"知道要补多少"，构网负责"在知道之前先顶住"。</div>
+
+### 3.3　实验室验证：0 → 95% 阶跃，以及四倍速的 AI 负载
+
+![Lab Validated Smoothing Performance：左侧为 Poway 工厂的硬件测试台（含电网模拟器与负载模拟器）；右侧示波器截图分上下两栏，标注 i_load、i_grid 与 0 to 95% Load Step](images/11_13m35s.jpg)
+
+我们在 Poway 的工厂做了测试。左上角是我们的 M 系统，里面有一台电网模拟器，可以模拟强电网、弱电网和不同电网条件；还有一台负载模拟器，用来模拟 AI 负载；然后是待测设备，也就是刚才看到的这套 BESS。
+
+右边你看到的是负载从零瞬时跳到接近满载时的表现。绿色和黄色显示负载怎么阶跃上去，红色和蓝色显示电网看到的是什么。本质上电网几乎什么都没看到。
+
+然后我们想让事情更有意思一点，就让负载模拟器去模拟不同类型的 AI 负载。这些来自不同类型的 LLM，我们不去说具体是哪些 LLM，但在最后一行你看到蓝线——蓝线显示负载消耗在实时变化，绿线显示电网看到的是什么。前两列你可以看到，即使负载在疯狂变化，电网基本上什么也看不到，它保持平稳。
+
+然后为了好玩，我们想为什么不把 AI 负载加速一下呢。我们把它加速了四倍，想看看逆变器还能不能扛住。这就是最后一张图。即便是四倍加速的负载，电网基本上什么也看不到，几乎保持平稳。
+
+> "So, we tested it um at our factory um in Poway. Um so, on the top left corner, you see the our M system. So, within that system, we have a grid emulator that can emulate strong grid, weak grid, and uh different grid conditions. And we also have a load emulator, which is emulating AI load. And then we have the unit under test, so basically the best that we just saw. And then on the on the right side you see what it does when the load goes from zero to almost full load uh instantaneously. Um so, the green and yellow, that shows how the load steps up. And then the red and blue, that shows what the grid grid sees. So essentially grid doesn't see almost anything. Then we tried to make things more interesting, so we basically got the load emulators to emulate different types of AI load. So these are from different types of LLMs, so we are not actually talking about what LLM they exactly are, but um at the last row you see the blue lines. So the blue lines show how the load consumption is changing in real time. And the green line shows what the grid sees. So for the first two columns you can see that even though the load is going crazy, the grid essentially doesn't see anything. It stays flat. And then just for fun we thought why not accelerate the AI load. So we accelerated that four times, and we wanted to see if the inverters is still can handle that. And that's what you see at the last one. So um and even the four time accelerated load, for that the grid essentially doesn't see anything. It stays almost flat."
+
+<div class="takeaway"><b>小结</b>　测试台上的三件套值得注意：电网模拟器可以调 SCR（强弱电网），负载模拟器可以回放不同 LLM 的功率曲线，还有四倍速这个压力档。这意味着他们测的不是"能不能平滑"，而是"在电网很弱、负载变化很快的极端组合下还能不能平滑"。</div>
+
+### 3.4　故障穿越：电网掉到零，也要撑 10 秒
+
+![Grid-Contingency Ride-Through：左侧同一张单线图；右侧上图显示 Utility Disturbance 造成的电压跌落，下图显示 Per Unit Load (Before Compensation) 随电压下滑、而 Per Unit Load (After Compensation) 维持高位，标注 "Retains pre-contingency load level immediately at fault clearance"](images/12_16m30s.jpg)
+
+**Jason Barmann：** 显然已经有很多不同的方案在试图解决波动负载和平滑问题，不管是在机架层面，还是在公用事业公司看到之前的那个中压母线层面。我们今天部署的大多数项目都有某种混合方案，或者分多个阶段：更快的部分可能在机架层面被平滑掉，而较慢的部分在中压母线层面被平滑掉。但问题是，这些数据中心必须把负载限制住——一个吉瓦级的园区，每 5 秒区间内要限制在 10 兆瓦以内，或者满足公用事业公司的其他类似要求。所以速度真的很关键，但同时你还必须有稳定的输出，这就是我们系统构网那一面的一部分。
+
+最后一点，公用事业公司还有另外一些要求，是你的标准机架级平滑方案处理不了的。比如电网穿越的约束——你可以看到这里我们做了仿真：高压侧发生一次公用事业扰动，基本上就是一次低电压故障，一条输电线路短路。这些逆变器是按照最严苛的穿越要求设计的，零电压穿越 10 秒。基本上它们能穿越的情况，比那些大型用电负载被要求穿越的还要糟糕得多，因为我们这些设备也是为公用事业级储能项目设计的，那些项目满足穿越要求比数据中心被要求满足的还要难一点。
+
+所以，即使负载真的切到了 UPS 上、或者切到现场发电、从电网上"消失"了——就像几个月前 PJM 那边 3 吉瓦发生的情况——这套电池系统也可以对电网扮演一个负载模拟器的角色。因为我们在用那个负载感知元件做测量，我们知道故障前那一刻电网看到的是什么。所以在故障后有功功率恢复这件事上，我们也能帮数据中心做到合规。你可以看到我们是在几毫秒的尺度上工作。虽然要求是四分之一秒或半秒，但你可以看到我们远远超过这个要求，能把数据中心的负载恢复到故障前电网看到的状态。
+
+> ">> Yeah, and obviously there's been a lot of different solutions that are trying to address the the volatile load and smoothing whether it's at the rack or it's out at the medium voltage bus right before the utility, you know, sees it. Uh, most of the projects that we're deploying today have some type of hybrid approach or multiple phases where some of the faster elements might be smoothed out at the rack. Uh, and then, you know, there's the slower elements, uh, you know, relatively are smoothed out at the medium medium voltage bus, but the problem is these data centers have to uh, limit those loads, you know, for a gigawatt campus down to less than 10 megawatts per 5 second interval uh, or other similar requirements from the utilities. And so, the the speed is really essential, but you also have this have to have a stable output uh, which is really, you know, part of the the grid forming aspect of our system as well. Uh, the last is, uh, the other requirements that the utilities also requiring can't be handled with your standard uh, rack based smoothing applications. You've got things like, uh, grid ride through uh, constraints that uh, you can see here we've uh, uh, simulated where we have a utility disturbance just basically a low fault voltage fault, a shorted, uh, you know, transmission line uh, on the high voltage site. Um, and these inverters are designed for the most stringent ride through requirements and zero voltage ride through for 10 seconds. Um, basically being able to to ride through anything much worse than what the the large electrical loads are being demanded to ride through because we designed these for uh, utility scale energy storage projects as well and those are a little bit more difficult uh, to meet ride through requirements than what data centers are being asked to. So, even if the load does go on a backup, uh, UPS's or switch over to onsite generation and kind of disappears from the grid similar to what happened with 3 gigawatts here, you know, just a few months ago in PJM. Um, the battery system can act also act as more of a load emulator to the grid uh, and because we're measuring it with that load sensing element, we know what that grid set or what the the grid was seeing at that particular time uh, prior to the fault. And so when it comes to post fault active power recovery, we can help data centers be compliant with that as well. And you can see that we're working on the few milliseconds. So while a quarter of a second or a half a second is what's required, you can see we we far exceed that for having our response back to the pre-fault conditions of the data center load on the grid. Um so yeah, with that we'll go to the next the next presenter."
+
+<div class="takeaway"><b>小结</b>　这一页藏着一个不太常见的用法：负载从电网"消失"（切 UPS 或切柴发）时，电池系统反过来扮演负载，把原来那个负载"假装"继续挂在电网上。这样做的目的是故障后有功功率恢复——电网要求你在规定时间内把功率拉回故障前的水平，而大多数数据中心一旦切走就做不到。</div>
+
+<div class="insight"><b>想法</b>　这套方案的经济价值，有一半来自"电网看不到真实负载"这件事本身。吉瓦级园区要求每 5 秒区间波动小于 10 兆瓦，本质上是把并网审批的难题转嫁给了一套储能系统——用电池的吞吐能力换取接入许可。这在工程上很漂亮，但它同时也意味着电网调度侧拿到的负荷曲线是被人为抹平的。当这种方案规模化之后，公用事业公司做规划所依赖的负荷模型会越来越失真。这一层矛盾，行业迟早要正面回答。</div>
+
+---
+
+## 04　剑桥大学：单级 48V 直供核心
+
+### 4.1　为什么非要单级：两个百分点意味着 19 TWh
+
+![Why Single-Stage?：上半部分对比两级架构（48 V → IBC → 6/12 V 中间母线 → VRM → Core）与单级架构（48 V → Single-stage vertical VRM → Core）；下半部分给出全球数据中心用电 485 → 950 TWh/年（2025→2030 预测），约 2 个百分点的端到端效率提升 ≈ 每年省 19 TWh ≈ 每年 19 亿美元（按 0.10 美元/kWh）](images/13_18m45s.jpg)
+
+大家早上好。我是剑桥大学的 Jinshui Huang。今天我介绍一种面向未来 AI 处理器的、新的单级垂直 48V 到核心的供电架构。
+
+首先，为什么我们需要单级变换？第一个原因是效率。与传统的两级架构相比，单级变换去掉了中间母线，可以把端到端效率提升大约两个百分点。在数据中心这个尺度上，这会带来很大的差别。
+
+> ">> Good morning everyone. I'm Jinshui Huang from the University of Cambridge. Today I will introduce a new single stage vertical 48-volt to core power delivery architecture for future air processors. So first, why do we need a single stage conversion? The first reason is efficiency. Compared with a traditional two-stage architecture, the single stage conversion removes the intermediate bus and it can improve the end-to-end efficiency by about two percentage point. At data center scale, this can make a big difference."
+
+<div class="takeaway"><b>小结</b>　"两个百分点"这个数字单独看很小，但乘上 950 TWh 的基数就是每年 19 TWh、约 19 亿美元。这是整场演讲里唯一一处把效率换算成钱的推导，也是单级架构最容易被决策层听懂的一句话。</div>
+
+### 4.2　低压母线为什么撑不住：3.8 kA 与 1.47 kW 的铜损
+
+![Why Low-Voltage Buses Do Not Scale?：左侧 WSE-3 晶圆级芯片示意，标注 ≈23 kW；中间给出 6 V 母线在 23 kW 下约 3.8 kA，经 0.1 mΩ 配电电阻产生 ≈1.47 kW 母线导通损耗；下方三个对比框——电流 8×、I²R 损耗 64×、储能 64×（相对 48 V）](images/14_19m30s.jpg)
+
+但效率不是唯一的问题。随着处理器功率上升，低压母线本身也越来越难扩展。以 WSE3 为例，它的功率大约是 23 千瓦。那么一条 6V 母线要承载大约 3.8 千安。对这么大的处理器功率，要把配电电阻压得非常低是相当困难的。即使只有 0.1 毫欧的电阻，导通损耗也已经达到约 1.47 千瓦。这对实际供电来说是不可接受的。此外，低压母线储存的能量也更少，所以需要更多的去耦电容，这会占掉宝贵的板面积。这就是为什么我们倾向于在板级配电保持 48V。
+
+> "But efficiency is not the only issue. As processor power increase, the low voltage bus also becomes more challenging to scale. Take the WSE3 as an example. Its power is about a 23 kilowatts. So, a 6 watts bus carries about 3.8 kiloamps. For such a large processor power, it's quite a difficult to keep the distribution resistance very low. Even with zero Even with only 0.1 milliohm resistance, the conduction loss is already about 1.47 kilowatts. This is unacceptable for practical power delivery. Besides, a low wattage bus also stores less energy. So, more decoupling capacitances are required. Which takes up valuable board area. That's why we prefer to keep 48 watts at the board level distribution wattage."
+
+<div class="takeaway"><b>小结</b>　三个 8 倍关系是这一页的核心：电压从 48 V 降到 6 V，同样功率下电流涨 8 倍，I²R 损耗涨 64 倍，而储能（E ∝ CV²）降到 1/64。前者是损耗问题，后者是瞬态响应问题——两个都在逼你把电压留在高位。</div>
+
+### 4.3　为什么是板级 48V：直供核心与 IVR 两条路
+
+![Why 48 V at the Board Level?：链路 Rack / tray 800 V DC → Tray edge 800V → 48V → Compute board 48 V bus；之后分两路——Direct-to-core（48V → VRM → core）与 IVR front end（48 V → regulated 1.8/3.3 V → IVR → core）；下方列出 IVR 的三个好处：封装电流更低（1.8 V → 0.8 V 近芯片处，约 2.25× 输入电流下降）、PDN 应力更小、瞬态裕度更好](images/15_20m15s.jpg)
+
+从 48V 到核心有两条路径。一条是直接到核心变换，另一条是基于 IVR 的架构：由 VRM 的前端产生一个 1.8V 的稳压母线，IVR 在靠近裸片的地方做最后一级稳压。在这种情况下，我们这颗单级 VRM 也可以充当 IVR 的前端。
+
+> "From 48 watts, there are two passes to the core. One is direct to core conversion, and the other is the IVR-based architecture. Where a front end of VRM generates a 1.8 regulated wattage. And the IVR performs the final regulation close to die. So, in this case, our single CD VRM can also serves as the IVR front end."
+
+<div class="takeaway"><b>小结</b>　这张图的层级很清楚：机架 800 V 直流 → 托盘边缘降到 48 V → 板级 48 V 母线 → 再分两条路。IVR 那条路的算术是"1.8 V → 0.8 V 在裸片旁完成，输入电流降到约 1/2.25"——这就是为什么高功率处理器的最后一级必须尽可能靠近裸片。</div>
+
+### 4.4　拓扑：分数匝的半桥电流倍增器
+
+![Fractional-Turn Current-Doubler Topology：左侧为半桥电流倍增器主电路（Q1/Q2、C1/C2、变压器 n:0.5、SR1a/SR1b/SR2a/SR2b、L1a/L2a/L1b/L2b），下附原边与副边分解图；右侧为三种工作模式下的电流回路](images/16_21m00s.jpg)
+
+基于这个系统架构，我们提出一种单级垂直 VRM。它其实有四个主要特点：单级变换、垂直供电、顶面直接散热、模块化可扩展。
+
+要做到这一点，变换器必须有高变比和高输出电流能力。所以我们选择了带分数匝的半桥电流倍增器拓扑。工作模式在右边，这里我不深入细节。从工作模式里我们可以发现两个不同的电流回路。
+
+第一，如左上所示，高频交流电流保持在变压器和整流级内部，这个电流不直接流向负载。所以对这个回路，主要设计目标是保持原边和副边绕组的高耦合。因此我们用紧密交错 planar 绕组来降低漏感和绕组损耗。
+
+相反，如下方所示，电感的直流电流直接流向负载。所以对这个回路，主要设计目标是让大电流的导电路径尽可能短。
+
+> "Based on this system architecture, we propose a single stage vertical VRM. Actually, it has four main features. Single stage conversion, vertical power delivery, direct top side cooling, and the modular scalability. To achieve this, the converter must have high conversion ratio and high output current capability. We therefore choose the half bridge current doubler topology with fractional turns. The operation modes are shown on the right, but I will not go into the details here. From the operation mode, we can find the two different current loops. First, as shown on the left top, the high frequency AC current remains within the transformer and rectifier stage. And this current does not flow directly to the load. So, for this loop, the main design goal is to keep the high current is to keep the primary and secondary winding high coupling. So, we use the closely interleaved planar windings to reduce leakage inductance and the winding loss. In contrast, as shown on the bottom, the inductor DC current is flow directly to the load. So, for this loop, the main design goal is to keep the high current conduction path as short as possible."
+
+<div class="takeaway"><b>小结</b>　把损耗拆成"交流回路"和"直流回路"分别优化，是这一页最实用的方法：交流回路靠交错 planar 绕组压漏感，直流回路靠垂直走线压路径长度。四分之一匝（n:0.5）的意义就在于此——它让变比足够大，从而让副边电流不必过大。</div>
+
+### 4.5　磁集成：让变压器和电感共用一部分磁芯
+
+![Magnetic Integration：上方说明 Transformer flux ⊥ Inductor flux → 弱磁耦合；左下侧视图显示 AC 磁通经铁氧体+粉芯闭合，右下俯视图显示电感磁通局限在粉芯内；右侧为集成后的三维结构与等效电路](images/17_23m00s.jpg)
+
+所以我们把直流电流垂直地引向负载。这就得到了右边所示的结构：中间一个 planar 变压器，两侧是垂直电感。我们还选择了不同的磁性材料来满足不同需求。对交流磁通，我们选铁氧体以获得低磁芯损耗；对直流磁通——也就是电感——我们选粉芯，以获得更高的饱和磁密和高输出电流能力。
+
+我们还可以通过共用一部分磁芯，把变压器和电感进一步集成。这之所以可行，是因为两条磁通路径几乎是正交的，所以它们之间的相互作用很小。这里我们看集成后的两条磁通路径：从侧视图可以看到，变压器的交流磁通通过铁氧体磁芯和一部分粉芯闭合；从俯视图可以看到，电感磁通保持在粉芯内部。所以即使集成之后，两个磁功能仍然保持得很好。
+
+此外，这个架构在电感设计上也提供了一点灵活性：我们可以用直接耦合，也可以用基于 TLVR 的间接耦合，两种情况都能改善瞬态响应。
+
+> "We therefore route the DC current vertically to the load. So, this leads to the model structure shown on the right. A planar transformer in the center with vertical inductors on both sides. We also select a different material magnetic materials to to satisfy different requirements. For AC flux, we choose ferrite for low core loss. And for DC flux, you mean for the inductor, we choose powder core for higher saturation and high output current capability. We can further integrate the transformer and the inductors by sharing part of the magnetic core. This works because the two flux passes are nearly orthogonal. So, the interaction between them is quite small. Here, we look at the two flux passes after integration. From the side view, we can find the transformer AC flux closed through the ferrite core and part of the powder core. And from the top view, we can find that the inductor flux remains within the powder core. So, even after integration, the two magnetic functions are still well maintained. The model structure is shown on the is shown on the right. It's similar with the previous one, but with more integrated magnetics. Besides, this architecture also provides a small flexibility in the inductor design. We can either use the direct connective coupling or TLVR based indirect coupling. And both case can improve the transient response."
+
+<div class="takeaway"><b>小结</b>　"正交磁通"是磁集成的全部理由：变压器走交流磁通、电感走直流磁通，两者方向垂直，所以共用一个磁芯时互相干扰很小。铁氧体管交流（低损耗）、粉芯管直流（高饱和），一种材料解决不了一半的问题。</div>
+
+### 4.6　样机：54V 进、0.8V/240A 出，90.6% 峰值效率
+
+![Prototype & Measured Performance：样机照片尺寸 17 mm × 10.4 mm × 6 mm；效率曲线在 54V→0.65/0.8/1.0/1.2V 四档下随输出电流变化，峰值约 90.6%；下方四个指标框——54 V → 0.8 V / 240A operation、≈1.5 A/mm² current density、2966 W/in³ power density、90.6% peak efficiency](images/18_24m00s.jpg)
+
+基于这个概念，我们做了一个样机来验证单级变换。它把 54V 直接变到 0.8V，达到约每平方毫米 1.5 安的电流密度，整体上比传统的两级架构更高效。
+
+最后，我们看看这个架构如何扩展到数千安培级的处理器供电。从系统层面，800V 先变到 48V，然后 48V 在 IT 板上分配。围绕每个处理器，多个单级 VRM 可以在标准的数字 MOSFET 控制（比如 PM 控制）下并联工作；它们也可以直接放在处理器正下方，同样多个 VRM 并联。在这种情况下，大电流的导电路径可以非常短。这就是单级 VRM 的思路。非常感谢大家的关注。
+
+> "Based on this concept, we built a prototype to validate the single-stage conversion. It converts 54 W to 0.8 W directly and achieves a current density about 1.5 A per square millimeter. And overall, it's more efficient than a traditional 2-stage architecture. Finally, let's look at how this architecture can scale to multi-kilo amp processor power delivery. From the system level, 800 W is firstly converted to a 48 W and then and then 48 W is distributed across the IT board. Around each processor, multiple single-stage VRMs can work in parallel under standard digital MOSFET control, like the PM control. And they can also be placed directly underneath the processor, also multiple uh VRM in parallel. And in this case, the high current conduction path can be very short. That's the idea of single-stage VRMs. Thank you very much for your attention."
+
+<div class="takeaway"><b>小结</b>　样机体积 17 × 10.4 × 6 mm，输出 0.8V/240A 即约 192 W，功率密度 2966 W/in³。注意这只是单模块——扩展到数千安培靠的是"多块并联 + 直接放在处理器下方"，而不是把单块做大。</div>
+
+<div class="insight"><b>想法</b>　90.6% 峰值效率听起来不错，但反过来读更值得琢磨：大约 9.4% 的损耗发生在 10.4×17×6 mm 这么小的体积里。按 192 W 输出算，模块内部要散掉接近 20 W，热流密度接近 30 W/cm²——这才是"顶面直接散热"被列为四大特点之一的原因。电压变换的效率问题，到最后往往变成封装和散热的问题。</div>
+
+---
+
+## 05　WiZem AI × 劳伦斯伯克利：把维修规程变成知识图谱
+
+### 5.1　一分钟讲完三件事
+
+![Procedures Are Not Linked to Equipment：左侧要点——AI 工厂机架正走向 1 MW、液冷与高压直流；ASHRAE TC 9.9 报告从 CDU 泵故障到处理器降频只有 23 秒；一次冷却维护中的规程错误导致了 11 小时宕机并扰乱全球交易；右侧要点——规程是写给人读的、不是给机器校验的，设备数据散落在工程图纸、OEM 手册和 SOP 里，没有任何语义图把规程和它所操作的设备连起来](images/19_26m20s.jpg)
+
+**Marco Pitoni：** 我是劳伦斯伯克利实验室的 Marco Pitoni。
+
+**Noman Rafique：** 我是 WiZem AI 的 Noman Rafique。我用一分钟讲完这场演讲里你需要记住的三件事。
+
+第一，目前数据中心里应急维护与系统设备安全的流程没有被数字化，也没有和系统里其他重要信息连起来。
+
+第二，我们开发了一个知识图谱，开源、可在线获取，它包含所有信息并把这些东西连起来，然后在一个 Google CDU 上做了测试。
+
+**Marco Pitoni：** Google 贡献了那份叫 Deschutes 的 CDU 规范，所以我们是在那份规范上实现的。
+
+**Noman Rafique：** 第三，你能用它做很多事。当信息被数字化之后，你可以做比如用这套系统做 VR 培训，我们有一个基于仿真工具的初步实现。
+
+回到正题。在另外 3 分钟里——这里重要的一点是：CDU 正在变得更大、用更多电，而且一旦失效就是大事。第二，如果冷却系统失效，你只有 23 秒，之后系统就开始降频。所以你必须反应得非常快。第三，这些失效的例子已经发生过了。2025 年有一次冷却维护问题，造成 11 小时宕机，扰乱了全球交易。所以这些事很重要。
+
+> ">> I think of my mic is back now. Yeah, thank you very much. So, just the last presentation for this 5-minute lightning talk session. So, we've got WiZem AI and Lawrence Berkeley National Laboratory. You two guys are up, aren't you? So, if you click the next slide should be your first slide. Thank you. >> Can you hear me? >> Yep. >> Yes. All right. Marco Pitoni, Lawrence Berkeley Lab. >> And Noman Rafique from WiZem AI. So, I'm going to give you the three things you need to remember from this talk in 1 minute. Number one, the current procedures for um emergency maintenance and safety of systems and equipment in a data centers are not digitized and they're not connected to other important information that you have available in the system. Number two, we developed a knowledge graph that is open source and available online that has all the information and connects all these things and then it's tested on a Google >> CDU. >> Google's I contributed the C >> CDU uh spec called Desiuts. So, we have implemented it on that spec. >> And number three, what you can do with this is a lot of things. When the information is digitized, you can do for example, uh training of people with virtual reality using using the system and we have a preliminary implementation on a simulation tool. So, back to what? In uh the other 3 minutes, uh the important piece here is that CDUs are getting bigger, use more power, and and being sort of uh if they fail, it it's a it's a big deal. Number two, uh if you um a a cooling system fails, you have 23 seconds before the system starts throttling. And so, you have to react very quickly. Number three, um the um examples of of these things failing already happen. In 2025, there was a cooling maintenance issue that happened and caused an 11-hour outage that uh disrupted um global trading. So, these things are very important."
+
+<div class="takeaway"><b>小结</b>　23 秒这个数字来自 ASHRAE TC 9.9（2024 年 9 月）：从 CDU 泵故障到处理器降频，只有 23 秒。11 小时那个来自 Uptime Institute 的 2026 年度宕机分析。两个数字一短一长，正好定义了这件事的两端——响应窗口极窄，但后果极长。</div>
+
+### 5.2　规程写在纸上，而设备在图纸里
+
+![Outdated Procedures Cause Outages：三个数字框 1 MW（AI 工厂机架正走向液冷、高压直流）、800+（一座现代数据中心所需的规程数量）、Days（资深工程师手写一份规程所需时间）；下方两段——Uptime Institute 发现宕机的主要人为因素是规程未被遵循，通常是因为它已经和现场不匹配；OSHA FY2025 的挂牌上锁罚单中约三分之二涉及书面规程、培训与检查](images/20_27m50s.jpg)
+
+规程目前活在书里、纸质书里，甚至 PDF 里，但它们没有和系统里的其他信息连起来。系统里有 800 多份规程，讲的是数据中心的各个部件。人们要用模板之类的东西花好几天才能写出一份，而这些规程目前和数据中心里存在的任何东西都不相连。
+
+所以我们开发了一个知识图谱，它基于我在建筑领域和工业领域做过的工作，把所有关于规程、系统以及楼宇自动化系统（BMS）的信息连起来——BMS 里有数据，可以表达这些。
+
+> "Um procedures, they currently live in books, paper books, or even PDFs, but they're not linked to the other information in the system. There's more than 800 procedures in the system that that uh talk talk about all the components of data center. It takes days for people to develop them through templates and other things, and those are not currently connected with anything that exist in the data center. So, we developed a knowledge graph, which is based on uh work that I've done on the building domain and in the industrial domain to connect all the information about procedures and systems and the building automation system that has the data and and and can represent that."
+
+<div class="takeaway"><b>小结</b>　三个数字把"规程"这件事的荒谬说清了：机架功率已经到了 1 MW，规程有 800 多份，而写一份要花资深工程师好几天——这意味着任何一次设备变更之后，更新所有受影响的规程在人力上根本不可能，于是规程就慢慢和现场脱节了。</div>
+
+### 5.3　一个阀门被两份规程同时引用
+
+![Validated on the OCP Deschutes CDU Spec：语义图显示 CDU_1 有 failure mode → Coolant Leak → mitigated by → Coolant Leak Response（emergency procedure）→ has sequence → Leak Response Sequence（6 steps）；同时 Pump Supply Shut-off Valve（isolation point）→ Pump Removal（maintenance procedure），红框标注 same valve, cited by both procedures；下方说明零 SHACL 违规、每个隔离点都引用规范章节与页码、部件变更时一次查询即可返回所有受影响规程](images/21_29m00s.jpg)
+
+我们开发的一个应用示例是在一台 CDU 上，它连到各种规程。你可以看到，比如你更换一个阀门——比如一个供水阀——这通常会影响不止一份规程。所以如果你换了它，还要更新所有规程，你通常就麻烦了。而有了一个表示所有连接的语义模型、数据模型，你就可以用一种清晰的、无差错的方式做到这一点。
+
+这里表示的是几个主要部件。比如一台 CDU 有一个失效模式叫冷却液泄漏。冷却液泄漏是一份有顺序的规程的一部分，但同一个部件——那个阻止系统"炸掉"的供水关断阀——实际上出现在三份规程里。所以我们演示了可以把这些全部连起来。
+
+我们实际上在一个系统里测试了这个——你要不要提一下？
+
+**Noman Rafique：** 是的，我们把用这套新词汇表构建的模型实现移植到了 NVIDIA Omniverse 里。现在那里有一个模型，你可以去玩。我很乐意给感兴趣的人展示这个模型，或者发一个视频链接。
+
+> "Um an example of application of this that we um developed is on a CDU uh that is connected to procedures, and you can see, for example, if you replace a valve, let's say a supply valve, this is typically impacts more than one uh procedure. And so, if you replace this and you have to update all the procedures, you typically are in trouble. And so, by having a semantic model, a data model that represents all the connection, you can do this like in in a in a clear and and error-free way. Is that clear? We got it. Okay. So, the um What's represented here are some of the main component, for example, a CDU has a failure mode coolant leak. The coolant leak uh is part of a procedure that has a sequence, uh but the same component, which is a supply shutoff valve, that that stops the system from uh exploding, uh actually is in triple procedure. So, we we demonstrated that sort of we can link those all together. Um We um actually tested this in a system that um Do you want to mention that? >> Yeah, so we have ported our implementation of this model built with this new vocabulary that we're introducing into Nvidia Omniverse. So, there's a model there that you can now go and play with. I'm very happy to show people that model or send them a video link if anybody's interested."
+
+<div class="takeaway"><b>小结</b>　图里那句 "same valve, cited by both procedures" 就是全部价值所在：同一个供水关断阀，既是"冷却液泄漏应急规程"的隔离点，又是"泵拆卸维护规程"的对象。纸质文档里这是两条互不知情的记录，语义图里它是一条边。</div>
+
+<div class="insight"><b>想法</b>　这件事真正的杠杆不在"把 PDF 数字化"，而在最后那句"一次查询返回所有受影响的规程"。800 份规程乘以平均每次变更影响 3 份，就是 2400 个需要人工核对的点；一个语义查询把它变成 1 次。而"零 SHACL 违规"这个提法也很有意思——它意味着这套东西不是画个图好看，而是可以被机器校验的，每个隔离点都能回溯到规范的章节和页码。</div>
+
+### 5.4　下一步：先跟标准组织对齐，再等两到五年
+
+![Next Steps：与 Brick Consortium 合作（下一个是 PR，Brick v1.4.4 已发布因此扩展今天可用）；与 ASHRAE 223 委员会合作对齐 2026 年 Q4 预期的标准；引入一家 CDU 厂商在第二个站点测试该扩展；运维类（operational classes）进入已发布标准需要两到五年，取决于多厂商验证](images/22_30m15s.jpg)
+
+再重复一下这场演讲的重点。第一，目前维护规程、应急规程里的所有信息都没有被数字化，也没有和系统里其他重要信息连起来，比如系统的各个部件，以及显示实时数据的楼宇自动化系统。我们做了一个系统，用知识图谱把这些东西连在一起——知识图谱是计算机科学里一项非常成熟的技术——并且我们有一个示例。
+
+未来的工作是测试用这些规程和我们开发的知识图谱来培训人员，我们在寻找合作者：有冷却系统访问权限、并且对这个话题感兴趣的人。谢谢。
+
+> "So, repeating the important things of the talk. Number one, currently all the information in maintenance procedures, in uh emergency procedures, is not digitized and it's not connected to other important system, such as the kind of uh com- components of the system and the building automation system that shows the real-time data. We created a system to link all these things together using knowledge graphs, which is, you know, very uh well known technique in in in computer science, and we have a um an example of this. Um Future work is actually testing uh uh training of people using uh this procedure uh and the knowledge graph that we developed and we're looking for collaboration with people that have access to cooling system and they're interested in this general topic. Thank you."
+
+<div class="takeaway"><b>小结</b>　路线图很实在，也很慢：Brick v1.4.4 已经发布，扩展今天就能用；ASHRAE 223 委员会要等 2026 年 Q4；而"运维类"真正进入已发布标准需要两到五年，并且卡在多厂商验证上。这句话其实是在说：现在能做的只是数据模型，标准化的路还长。</div>
+
+---
+
+## 结语
+
+一句话：**这五场演讲拼在一起，是一张"AI 数据中心里还没被重新设计过的地方"的清单。**
+
+五个题目分属五个不同的专业——电力电子、存储系统、电网并网、封装供电、运维安全——但它们共享同一个前提：机架功率从 10 kW 走向 1 MW 的过程中，上一代的设计假设正在一个个失效。九级变换链路失效了，所以有人提议把电能当数据包路由；CPU 中转失效了，所以有人让 GPU 直接发 I/O；机架内平滑失效了，所以有人把电池挂到 35 kV 母线上；两级变换失效了，所以有人做单级直供；纸质规程失效了，所以有人把它变成图。
+
+值得注意的是，这五个方案里没有一个已经成熟。三个还在实验室，一个刚做出样机，一个在等标准委员会排期。这大概就是闪电演讲这种形式的真实价值：它展示的不是成果，而是**问题的形状**。
+
+<div class="recap"><b>数字速览</b><br>
+场次时长　30 分 59 秒 / 5 场，每场 5 分钟<br>
+N-Level　输入端 10 kV AC / 480 V AC / 100 V DC，输出端 0.75 V DC / 220 V AC / 480 V AC<br>
+NVMeNext　16 个 NAND 通道 × 32 plane，读延迟 15 μs，理论峰值 3300 万 IOPS<br>
+NVMeNext 实测　队列拓扑最好情况约 2×，Orkut BFS 优化后 3×（2.08 s → 0.69 s）<br>
+EPC Power　35 kV 耦合母线，补偿 < 2 ms，0 → 95% 负载阶跃，零电压穿越 10 s<br>
+EPC Power 约束　1 GW 园区每 5 秒区间波动 < 10 MW<br>
+剑桥　54 V → 0.8 V / 240 A，1.5 A/mm²，2966 W/in³，90.6% 峰值效率<br>
+剑桥 换算　485 → 950 TWh/年，省 2 个百分点 ≈ 19 TWh/年 ≈ 19 亿美元/年<br>
+WiZem × LBNL　CDU 泵故障到降频 23 秒，一次维护事故宕机 11 小时，800+ 份规程</div>
+
+<div class="outro">本文依据 OCP Global Summit 2026「AI / HPC Lightning Talks」专场现场录像整理，数字以幻灯片标注为准；讲者姓名以幻灯片为准（录音识别存在偏差，如 Pravin/Praveen、Deschutes/Desiuts、Awal/A Wall 等）。原片：youtube.com/watch?v=jETYb_nhksA（30 分 59 秒）。五个题目里，你觉得哪一个最可能在两年内真正落地？欢迎留言聊聊。</div>
+
+---
+
+## 附录　时间轴
+
+| 时间 | 内容 |
+| --- | --- |
+| 00:05 | N-Level：呼吁一种新的能量分配架构 |
+| 00:39 | 今天的九级供电链路 |
+| 01:39 | 能量帧与 3×3 路由矩阵 |
+| 02:21 | 零层与 OCP 工作组倡议 |
+| 03:54 | 首尔国立大学：NVMeNext |
+| 04:30 | GPU 直发 I/O 与 Storage-Next 愿景 |
+| 05:03 | 多 manager 架构与性能模型 |
+| 06:21 | 三阶段执行与实验设置 |
+| 07:32 | 队列拓扑热图与图分析负载 |
+| 09:29 | EPC Power：负载平滑与故障穿越 |
+| 10:27 | 四个电网侧问题 |
+| 11:21 | Agile Grid-Forming BESS 架构 |
+| 13:30 | 工厂实测：0 → 95% 阶跃 |
+| 15:23 | 每 5 秒 10 MW 的约束与穿越要求 |
+| 18:20 | 剑桥大学：单级 48V 直供核心 |
+| 19:02 | 低压母线为什么撑不住 |
+| 20:05 | 直供核心与 IVR 两条路 |
+| 20:53 | 分数匝电流倍增器拓扑 |
+| 22:41 | 磁集成与 TLVR |
+| 23:52 | 样机实测与扩展方式 |
+| 25:17 | WiZem AI × LBNL：规程知识图谱 |
+| 26:23 | 23 秒、11 小时与 800 份规程 |
+| 27:35 | 语义图与阀门案例 |
+| 29:56 | 下一步与标准化路线 |

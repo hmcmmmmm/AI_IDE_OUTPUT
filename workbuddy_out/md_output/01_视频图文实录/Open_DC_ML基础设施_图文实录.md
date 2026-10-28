@@ -1,0 +1,239 @@
+# 下一代 ML 基础设施：开放 DC 架构
+
+> OCP Global Summit 2026 · 数据中心设施 / Open DC 规范分会场
+> 讲者：Ayan Majumdar（Google）· Paul Artman（AMD）· Mike Edie（Meta）· Maureen Tate（NVIDIA）
+> 全长 13 分 14 秒　|　共 11 页幻灯片
+
+```wechat-intro
+2027–2028 年的 AI 机房，瓶颈已经不在芯片，而在厂房。Google、AMD、Meta、NVIDIA 四家把各自的数据中心需求合成了一份公开的《Open DC》最小标准：功率密度从 125 kW/ft 抬到 350 kW/ft，集群规模从 12 MW 抬到 24 MW，机架做到 100 英寸高、71 英寸深、15,000 磅重。
+
+这份实录保留了全部 11 页幻灯片与现场原话（中英对照），每一页配一句小结。如果你在做机房规划，或者在做机架、母排、液冷选型，第 02、04、05 三节是最硬的数字，第 06–09 节是两套可以直接对照的参考实现。
+```
+
+---
+
+## 01　下一代 ML 基础设施与 Open DC 工作组
+
+![标题页：Next-Generation ML infrastructure。正文指出 Google、Meta、NVIDIA、AMD 成立 Open DC 工作组，为 2028 及以后的 AI 工厂制定一套最小标准；下方三张卡片分别为 bolt Power（功率密度从 125 kW/ft 到 350 kW/ft，统一冗余接口）、dns Physical（面向液冷环境的架构准则，支持 >70 英寸机架深度与 >80 英寸冷通道）、ac_unit Thermal（扩展先进液冷以支撑高 TDP 加速器）](images/01_00m45s.jpg)
+
+好，大家好。呃，我们今天在这里向大家介绍 ML——呃，下一代 ML 基础设施的开放 DC 架构。我叫 Mo，来自 Google。呃，我是一名系统工程师。我叫 Ayan，是 Google 的硬件负责人。Maureen Tate，我是 NVIDIA 的解决方案架构师。呃，Paul，我是 AMD 的热机械（工程师）。呃，Mike Eady，系统工程师，Meta。太好了。好。能用吗？开始了。
+
+呃，那么在这次演讲里，我们要讨论的是围绕电力、物理空间和散热，针对我们 2027、2028 年产品的需求，而这些需求在今天在座所有公司之间是共通的。那么，我就把话筒交给 Ayan。
+
+呃，我想，过去这几个月里我们所有人一直在做的一件事，就是试图对"功率密度"这个说法统一一套共同的术语。呃，既在基础设施层面，也在 IT……
+
+> "Okay, hello everyone. Um we're here to present to you the ML uh next generation ML infrastructure open DC architecture. My name is Mogamari. I'm with Google. Uh I'm a system engineer.  My name is Ion. I'm a hardware lead at Google.  Maureen Tate. I'm a solutions architect for Nvidia.  Uh Paul I'm an uh thermal mechanical AMD.  Uh Mike Eady, systems engineer, Meta.  Awesome.  Cool. Is it working? Here we go.  So uh in this presentation we're going to discuss uh the requirements around power, physical space, and thermal for our 2027 2028 uh products that are common across uh all the companies present here today. With that, I'll hand it over to Ion.  Um so I think one of the one of the things that, you know, all of us have been kind of working on over the last uh few months is kind of trying to align on one common nomenclature for talking about power density. Uh both at the infrastructure level also at the IT"
+
+<div class="takeaway"><b>小结</b>　开场交代阵容与命题：Google、AMD、Meta、NVIDIA 四家把 2027–2028 的电力、空间、散热需求写成同一份"最小标准"。这不是任何一家产品的规格书，而是四家共同署名的公共底座——后面所有数字都以它为约束。第一个动作是统一术语（功率密度到底怎么算），因为各家口径不同，数字就没法横向比较。</div>
+
+---
+
+## 02　统一功率与集群密度：2027 / 2028+ 三组指标
+
+![Unified Power & Cluster Density：建立一条覆盖 2027 至 2028 硬件部署的统一时间线目标。表格三行三列——混合 DC 容量基线（2027：12 kW/ft，其中风冷 8、液冷 8；2028+：25 kW/ft，其中风冷 15、液冷 25）；峰值 IT 密度（2027：125 kW/ft，液冷 115；2028+：350 kW/ft，液冷峰值 335）；集群规模基线（2027：12 MW 最低门槛；2028+：24 MW 首选设计基线）](images/02_01m30s.jpg)
+
+……层面。有不同的机架形态、不同的机架配置。所以，针对 2027 和 2028 及以后，我们发布了一组以"千瓦每英尺"计的直流容量数值。我想这是适用于大多数部署的说法。呃，我们同时也在统一"峰值 IT 密度"的表述方式，它代表的是——你知道——实际会被部署下去的那部分 IT。
+
+呃，还有另一件事，我想我们正在取得共识、并且在全行业范围内是对齐的，就是最小集群规模，以及我们偏好的那些最小值是多少。我认为 2027 年的 12 MW 算是某种最低基线；到 2028 及以后，12 仍然被推荐为最低基线，但随着我们开始看到这些更高密度的机架被部署，偏好会提高到 24。所以，更多细节也在规范里，但这些算是重点。
+
+Mike，抱歉。那么，正如我提到的，数据中心的最小规模是 12……
+
+> "level, there are different rack form factors, different rack uh configurations. So, um for 2027 and 2028 plus, we've published values for um uh DC capacity uh in a at a kilowatt per foot. I think that's the language sort of that's applicable to most uh deployments. Um and we're also kind of aligning on how to present the peak IT density, which represents, you know, the actual IT that'll get deployed. Um and then the other thing that I think we're kind of finding common that, uh you know, is is is in alignment across the board is the minimum cluster size and and what are those minimum values that we prefer. I think 12 MW for 2027 uh is sort of a minimum baseline for 2028 plus. 12 is still recommended as a minimum baseline, but the preference would be to increase to 24 as we start seeing these um higher density racks get deployed. So, you know, more details are in the spec as well, but those are kind of the highlights.  Mike, excuse me. So, as I mentioned, the minimum data center size is is at 12"
+
+<div class="takeaway"><b>小结</b>　三个指标一次性立起来：混合 DC 容量（12 → 25 kW/ft）、峰值 IT 密度（125 → 350 kW/ft）、集群规模（12 MW 最低 → 24 MW 首选）。用"每英尺"而不是"每机架"，是为了让不同机架形态换算到同一把尺子上；峰值与混合两个口径并存，是因为散热设备要按峰值选型，而配电与网络可以按混合值规划——混用这两个口径会把冷源无谓放大。</div>
+
+<div class="insight"><b>想法</b>　"每英尺"这个口径值得多想一层。它把功率密度从"每机架"里解耦出来，好处是不同机架形态能换算比较；代价是它默认了行是连续填满的。现实里更常见的情况是一行里混着满配计算架和半配网络架，按英尺算出来的数字会和实际配电容量对不上。规范给的是规划用的上界，不是验收标准。</div>
+
+---
+
+## 03　设施与基础设施规格：集群容量与机架重量
+
+![Facility & Infrastructure Specifications：集群容量基线 12–24 MW，每个数据大厅至少 4 个电力块（power block）；支持高重量高密度机架——最大机架重量 8,000 磅（3,629 kg），占地 28" 宽 × 48" 深（711 × 1219 mm）；峰值 IT 重量（ML 机架 + 边车）15,000 磅（6,804 kg），占地 56" 宽 × 48" 深（1422 × 1219 mm）](images/03_02m45s.jpg)
+
+……并且预期会增长。这些是"系统的系统"，所以我们越能把各个系统对齐到数据大厅的尺寸上、越能减少需要穿出数据大厅的网络量，就越好。所以，再说一次，12 和 24 的最小数据大厅尺寸是首选。
+
+然后我们还看到，机架的尺寸和重量在增长，它们持续在增长。我想过去几年我们谈过其中一些。而随着我们看到的功率密度上升，重量也在上升。所以我们看到机架宽到 56 英寸、深 48 英寸、甚至更深，重 15,000 磅。
+
+所以这实际上关乎物流：你怎么把它从卸货平台运到数据大厅的地板上，以及整条物流与运输路线上的承重能力是多少。
+
+> "and and expected to grow. These are systems of systems and so the better that we can align those systems to data hall sizes and we can minimize the amount of network and that will exit data halls is is is better. So, again, minimum data hall sizes of 12 and 24 is preferred. And then we're also seeing that rack sizes and weights are growing. They continue to grow. I think we've talked about some of this in years past. And as we see power densities increase, we're also seeing weight increases. So, we're seeing racks up to 56 inches wide, 48 inches deep, and and deeper in 15,000 lb. So, that's really about the logistics from how do you get from the loading dock to the data hall floor and what is the weight capacity throughout that logistics and travel travel plan."
+
+<div class="takeaway"><b>小结</b>　两个容易被忽略的物理约束。一是数据大厅尺寸下限（12/24 MW）其实是个网络拓扑约束——集群越大，越要把互联留在厅内，"少出厅"就是省钱；每个厅至少 4 个电力块，是为了让冗余与故障域有基本粒度。二是机架重量上到 15,000 磅（6.8 吨）后，瓶颈从结构承重转成搬运路径——卸货平台、走廊、坡道、地板每一点的承载都要按这个数复核，而不只是机房楼板。</div>
+
+---
+
+## 04　行布局与净空尺寸
+
+![Row Layout & Clearance Dimensions：左侧三条建议——行距维持推荐 24′，机架在冷通道内前对齐；运输通道净空 12′；层高两母线槽配置最低 18 ft（5.5 m），四母线槽或加装托盘需更高。右侧最小物理边界表——热通道宽 54"（1372 mm）、冷通道面对面宽 82"（2083 mm）、机架高 100"（2540 mm）、机架深 71"（1803 mm）、物料运输通道 12′（3658 mm）](images/04_04m20s.jpg)
+
+那么，谈到行布局以及我们在数据中心里需要的净空，正如大家在屏幕右侧看到的，我们看到的机架尺寸在高度方向上一直在长、一直在长，我们预期往后会在 100 英寸左右。所以，规划机架的最终就位、以及所有搬运路径和移出路径时，都必须把这块空间算进去，同时还要算上机架上方为电力、制冷和网络连接预留的净空。
+
+对我们这些加速器来说，机架深度也在增长。我们预期会达到 71 英寸的机架深度。呃，不是所有机架都会是这个深度。这也是为什么我们预期所有机架都做"前对齐"。而一旦做了前对齐，我们希望冷通道净空大约 82 英寸。这基本上给了我们足够空间，可以在冷通道里去操作任何现在深达 71 英寸的托盘。
+
+呃，热通道宽度是 54 英寸，这些加起来大约是 24 英尺的重复行距。呃，除此之外，呃，运输通道的净空，我们预期运输通道至少需要 12 英尺。
+
+呃，还有最后一项，我想是这张幻灯片上的天花板高度。两母线槽（busway）配置的预期天花板高度大约 18 英尺，呃，这只是考虑机架结构本身，不一定包含与之相关的送风静压箱。呃，而对于四母线槽配置，我们确实预期在 18 英尺之上还需要额外增加高度。
+
+> "So, talking about row layouts and the clearances we need in the data center, the as you can see on the right side of the screen, the dimensions of the rack that we're seeing are in terms of height have have been growing and growing and and we're expecting them to be around 100 in moving forward. So, planning for rack final placement and all the moving path and move out path for the racks have to account for that space as as well as clearances above the rack for power and cooling and network connections. The rack depth is also growing for our accelerators. We are expecting to hit a 71-in depth for the racks. Um not all racks will be at this uh depth. And that's why we're expecting to front-justify all our racks. And once they're front-justified, we would like the cold aisle clearance to be about 82 in. This gives us enough space to basically work on any of the trays uh that are now 71 in deep inside of the cold aisle. The uh hot aisle width is uh sitting at 54 in and that adds up to about 24 in of our uh of repeated aisle pitch. Uh other than that, uh the transport aisle clearances, we're expecting to require a minimum of 12 ft uh for our transport aisles. Um And the last uh item, I think, on this slide is the ceiling height. The expected ceiling height for a two-bus bay configuration uh is going to be around 18 ft uh considering just the rack structure and and not necessarily any of the air uh plenum associated with it. Uh and for a four-bus bay configuration, we do expect uh an additional height increase uh beyond the 18 ft as well."
+
+<div class="takeaway"><b>小结</b>　这是整份规范里最"硬"的一页，因为它直接约束土建：热通道 54″、冷通道面对面 82″、机架高 100″、机架深 71″、运输通道 12′、层高 18 ft（两母线槽）。关于行距，讲者口述为 "24 in"，幻灯片标 24′；按 54″ + 82″ + 两侧各 71″ 机架核算约 278″≈23 英尺，此处从幻灯片的 24′。所有尺寸都服务于同一个前提——机架前对齐，让 71″ 深的托盘能整条从冷通道抽出；82″ 冷通道正是为此留出的操作空间，而不是"越宽越好"。</div>
+
+---
+
+## 05　热管理与制冷边界
+
+![Thermal Management & Cooling Limits：ML 机架按峰值 IT 密度选型——液冷 335 kW/ft、风冷 15 kW/ft；网络、存储、xPU 按混合功率——液冷 25 kW/ft、风冷 15 kW/ft；最大流速 3 m/s（ASHRAE 标准），多个行业工作流正在测试以支持更高流速；功率支持能力是流速、入口 TCS 温度与 ΔT 的函数。下方管径表：1″ 管在 1.0 lpm/kW（ΔT 15℃）下 91 kW、1.5 lpm/kW（ΔT 10℃）下 61 kW；2″ 为 365/243 kW；3″ 为 820/547 kW；4″ 为 1459/972 kW](images/05_06m20s.jpg)
+
+Paul。好，我来谈一点——呃，散热。呃，就像我一开始说的，这其中的一部分也是关于我们如何为电力和制冷这些东西划出"护栏"——它们变化得非常快。所以，你知道，这里面有些东西又还是——你知道——是预测值，是我们可能达到的最大值。而且还有一个区别是"混合值"。
+
+呃，但我们确实看到，你知道，功率在往上走。所以我们在看——呃——335 kW 的液冷。呃，这个——我们看到按每千瓦每英尺算，风冷并没有消失。呃，还有存储、其他需要风冷的东西。呃，即使当我们谈到我们正在转向的无风扇服务器（fanless server），仍然有二次冷却——呃——是辐射所需要的，以及从那些机架出来的其他东西。我们看到——你知道——在液冷热侧的需求方面有巨大的影响，但风冷大体上是静态的。
+
+呃，另一场大讨论——呃——在我们……在我们拿到这些数字的过程中有很多争论，而且——这一点并不容易达成。呃，就是流体——流体的流速。所以，呃，ASHRAE 标准是 3 米每秒。我们——我们对齐到了这个值，它基本上决定了管径的选型。呃，这是一份活文档，是 1.0 版。呃，随着我们拿到更多数据，我能看到它有可能往上调。呃，但是，你知道，我们希望在你们现在选管径的时候就保守一点，这样我们就不会看到——呃——担心的是侵蚀（erosion）。
+
+呃，与此对应，我们看了管径或接头直径上一些不同的容量，这些是可以按比例放大的。呃，总体来说，我们看到高端是 1.5——呃——升每千瓦。呃，这实际上是按最高负载、最高温度来选型的。所以按需给出。呃，然后，你知道，0.9、0.8，它会根据温度和需求往下走。但是，我们只是按 1 英寸到 2 英寸、3 英寸、4 英寸这类连接来选型。
+
+呃，看——你知道——如果你在建设，呃，3 英寸和 4 英寸可能很有意思，当你在搭建你的分水器（manifold）时，就为了未来的能力。呃，有一些模块化——呃——分水器的概念，带有额外的支路用于扩展。我们——你知道，我们确实预期——呃——功率这一侧会继续增长。我还没看到它渐近的那一点。每次——每当我看到功率的更新，它只往一个方向走。它——它一直在涨。
+
+> "Paul.  Yeah, I'll talk a little bit about uh thermal. Um as I started, part of this too is conversation was was how do we kind of uh guardrail guardrail this power and cooling stuff is changing very quickly. So, you know, some of this stuff is again, it's you know, projections and kind of where we could end up max. And there's also there's the difference is blended. Uh but we are seeing, you know, power go up. So, we're looking at uh uh liquid cooling at 335 kW of liquid cooling. Um and this and we're seeing that the per kW per foot, we're seeing air cooling not going away. Um there's storage, other things that need air cooling. Um even when we when we talk famisc servers we're transitioning to, there's still secondary cooling from uh required for radiation, other things that come off that racks. We're seeing you know, huge impacts in in terms of the requirements from on the liquid cooling hot side, but air cooling kind of be static. Um another big discussion during the the the as we There was a lot of debate on this as we're getting these numbers and there's not a lot of it wasn't easy to get here. Uh was was fluid fluid's uh velocity. So, uh the ASHRAE standard is 3 m per second. We We aligned on that and it's kind of sizing on the pipes. Um this is a living document. It's 1.0. Uh I could see that possibly go up as we get more data around it. Uh but, you know, we we want to be conservative as you're sizing pipes now so that we're not seeing uh the concern is erosion. Um and and corresponding to that, we looked at some different capacities on on pipe diameters or or fitting diameters to to which can scale. Um and general, the what we see on the high end is 1.5 uh liters per kilowatt. And and that's really sized at at the highest workload, highest temperature. So, it puts that as needed. Um and then, you know, 0.9, 0.8, it goes down depending on temperature and the requirements. But, we just sized on the 1-in to 2-in, 3-in, 4-in kind of connections. Uh looking at, you know, if if you're building out um the 3-in and 4-in could be interesting as you're building out your manifold just for future capability. Uh there are some concepts of of a modular uh manifold that has additional drops for for expansion. We you know, we do expect uh that the power train is going to increase. I haven't seen that asymptote as it yet. Every Whenever I look at a get an update on power, it only goes one direction. It's It's always going up."
+
+<div class="takeaway"><b>小结</b>　这页把"选型口径"和"输运口径"分开：ML 机架按峰值 335 kW/ft 液冷 + 15 kW/ft 风冷选散热设备，而网络、存储、xPU 按混合值 25 + 15 kW/ft，避免为瞬时峰值把整个冷源放大。流速锁在 ASHRAE 的 3 m/s，理由是防冲蚀——这是当前唯一"不可谈"的硬约束，因为冲蚀是管壁的长期损伤，事后无法补救。管径表的关键读法是"管径 × ΔT 共同决定单路能力"：同样 1″ 管，ΔT 15℃ 能给 91 kW，ΔT 10℃ 只有 61 kW；4″ 管则到 1459/972 kW。1.5 lpm/kW 对应 ΔT 10℃，流量大但能力反而低约三分之一，取舍在泵功与温差之间。</div>
+
+<div class="insight"><b>想法</b>　3 m/s 这条线，本质是"管壁寿命"与"散热能力"之间的一次行业级妥协。提高流速能带走更多热量，但冲蚀速率大致随流速的高次方上升，铜管几年就会被冲薄。真正值得留意的是页脚那行小字——"多个行业工作流正在测试更高流速"。这意味着下一版规范很可能要动这条线；而今天按 3 m/s 选的管径，届时得靠提高 ΔT 而不是加大管径来吃下增量。</div>
+
+---
+
+## 06　参考实现：Google 版配置
+
+![Potential Configurations - Google：AI 标准旨在支持不同的设计体现。左侧两张剖面图与轴测图展示 4 母线槽 / 2 母线槽、23′ 或 26′ 行距、4 母线槽剖面（FAIL-1 到 2N）与 4 母线槽轴测；右侧列出四条——4 或 2 母线槽配置由层高限制决定；行距 23′ 或 26′ 取决于房间约束；行功率密度匹配 25 kW/ft 的混合 DC 密度（混合 ML、C&S、NW、辅助）；每行 IT 机架可支撑至 800 kW；制冷容量按行内实际交付功率配平](images/06_08m00s.jpg)
+
+谢谢。好。呃，文档里有一大堆规格——呃——讲的是——你知道——那些最小值。我想——我想我们在幻灯片里覆盖了其中一些重点。
+
+在——作为规范的一部分，我想我们也算是——呃——给出了一些"设计体现"（design manifestations），说明这些东西怎么凑到一起。24 英尺的行距是怎么凑出来的？机架高度——呃——深度——呃——冷通道间距——母线槽怎么排？而这只是达成同一份规范的一种方式。
+
+呃，你知道，我想有一个 Google 版本，呃，还有一个 NVIDIA 版本——今天上午（的另一场）。我们待会儿会谈到。呃，我们只是试图——呃——鼓励业界去采用这些设计标准，呃，因为它们在各方面都行得通。呃，有很多共通之处。呃，而且显然每个设计都会不同，但只要这些最低标准被满足，呃，你知道，我们就能造出一座 AI 工厂。
+
+> "Thank you.  All right. Um there are a bunch of specs on the on the document uh which talk about, you know, the minimums. I think uh I think we we covered some of the highlights in the slides. In the as a part of the spec, I think we've also sort of uh presented some design manifestations on how these come together. How does a 24-ft aisle pitch come together? What How does a rack height, uh the depth, um the cold aisle pitch, how do you arrange the busways? And it's just one way to to achieve that same spec. Um you know, I think there's a Google version um there's an Nvidia version morning. We'll talk about that in a bit. Um where we're just trying to sort of encourage, uh, the community to to adopt these design standards, uh, since they work across the board. Um, there's a lot of commonalities. Um, and obviously each design will differ, but as long as these minimum standards are being met, um, you know, we we can turn out an AI factory."
+
+<div class="takeaway"><b>小结</b>　从"规范"过渡到"实现"：同一份最小标准可以有多种设计体现，Google 版与 NVIDIA 版是两份参考实现，不是强制方案。判断标准只有一个——是否满足那组最小值（行距、机架高/深、冷通道、母线槽）。这也解释了规范为什么写"最小值"而不给标准图：给供应链留出差异化空间，同时保证任何实现都能落在同一套厂房里。Google 版的自由度落在两处：母线槽 4 或 2 条由层高决定，行距 23′ 或 26′ 由房间约束决定。</div>
+
+---
+
+## 07　参考实现：NVIDIA 版 4 行 12.5 MW 块
+
+![Potential Configurations - NVIDIA（4 row, 12.5MW block）：轴测图展示四行机架与两侧管路。Block Attributes 列出——最多 120 个 24″ 机架或 96 个 32″ 机架；每行最多 4 MW 制冷；4 条 5,000 A 母线槽（向 800 VDC 过渡）；行长 68′；占地 98′ × 48′（5,000 平方英尺）；成对行按 24′ 行距；行内近耦合风冷。标注包括隔离阀（快速动作，IE: Leak Defense by Watts）、4 路电力馈线（5,000 A 交流或未来 800 VDC）、两路水路（12″ 用于风冷、24″ 温水管）](images/07_09m10s.jpg)
+
+下一页。Marie？好，那么具体来看 NVIDIA 的建议，我们大致是按 12 MW 的块来看的。你在这里看到的是四行，所以每行大约能得到 4 MW 的制冷能力。呃，这些由四条不同的母线槽供电，以实现"四取三"——呃，5,000 安培的——呃，母线槽本身。
+
+而这个设计我想特别强调的好处是——呃——设计上的灵活性。所以，呃，首先，这条建议同时支持 24 英寸行距的机架以及按需更大的行距。呃，支路（drops）——从液冷往下到机架本身——也可以配置成不同尺寸。有可能从 4 英寸降到 2 英寸。
+
+所以这个——呃——设计的好处是，它在当前正在形成的生态里能很好地工作，同时也面向——呃——未来。所以，我们现在屏幕上看到的这个配置，是交流电送到机架本身做配电，415 到 480 V，但是，这个设计是被使能的——将来随着那个生态成熟，我们肯定会看向 800 V 配电。而这是一个灵活的设计，有助于把这个能力带到未来。
+
+> "Next slide. Marie?  Yeah, so specifically kind of looking at the NVIDIA recommendation, we're we're kind of looking at this in the 12 MW block. And what you're seeing here is a four row, so you're getting about 4 MW of cooling capacity per your row. Uh, these are fed off of four different busways in order to enable that four to make three, 5,000, um, 5,000 amp, uh, busways themselves. And the nice thing about the this design that I'd really like to emphasize is, uh, flexibility in the design. So, uh, first and foremost, the this particular recommendation supports both the 24-in pitch rack plus larger as needed. Uh, the drops are also to the from the liquid cooling down to the racks themselves can be configurable in different sizes. There's potential for 4-in down to reducing to to 2-in. So, the nice thing about this, uh, kind of design is it works well within the ecosystem that's being enabled now and also looks forward, uh, towards the future. So, the current configuration that we're seeing on screen right now is the the AC delivery to the rack itself for power distribution, the 415 to 480 V, but however, this is enabled that in the future as that ecosystem matures, we're going to be looking towards 800 V distribution for sure. And this is a flexible design that helps enable that into the future."
+
+<div class="takeaway"><b>小结</b>　NVIDIA 参考实现的关键数字：4 行一个 12.5 MW 块，每行 4 MW 制冷、四条 5,000 A 母线槽做"4 取 3"、行长 68′、单块占地 98′×48′（5,000 平方英尺）、最多 120 个 24″ 机架或 96 个 32″ 机架。设计意图是"不锁死"：机架宽度 24″/32″ 皆可、液冷支路 4″→2″ 可缩、配电当前 415–480 V 交流但预留 800 VDC 过渡路径。这类预留决定了今天建的厂房能否在下一代电源架构下复用——母线槽与馈线容量是唯一不好事后改的部分。</div>
+
+<div class="insight"><b>想法</b>　这份 NVIDIA 参考实现最容易被忽略的一句话是"4 条 5,000 A 母线槽（向 800 VDC 过渡）"。母线槽和馈线是整份规范里唯一不好事后改的部分——层高可以加吊顶、管径可以换接头，但母排容量埋在里面。"预留"在这里不是营销词，而是给 2028 年之后的电源架构留的一条物理通路；反过来，如果今天按 415–480 V 建满，将来改 800 VDC 就要停机重排。</div>
+
+---
+
+## 08　近耦合制冷与层高的对应关系
+
+![Close Coupled Cooling - NVIDIA：剖面图对比两种层高配置。左侧 Configured Heights 示例列出 16′（4 母线槽、3 层线缆托盘、本地二次回路）、17′（4 母线槽、3 层线缆托盘）、18′（4 母线槽、2 层线缆托盘）。图中标注 8″ 行分水器用于 DLC、冷却盘管、"4 取 3"母线槽（5,000 A）、3 层线缆托盘、层高 17 ft（16–18 ft）、54″ 热通道、96″ 与 24 ft 行距](images/08_10m30s.jpg)
+
+我们在这里可以看几件不同的事——呃——其中机架本身的高度其实是很可变的，取决于你在数据中心里优化什么。
+
+所以，如果你有——呃——16 英寸——或者说 16 英尺的层高，呃，你就有可能在那个区域里把两条母线槽做到四条母线槽，再加两层线缆托盘。
+
+如果你看的是大概 17 英尺以上的层高，你就有额外的容量，可以把线缆托盘的密度提高到可能三层，因为这些年计算节点的光纤密度在持续增加。
+
+然后，正如 Mo 之前讲过的，当我们看到比如 18 英尺层高时，你就有可能不仅拥有用于"四取三"冗余策略的四条母线槽，还有三层线缆托盘，再加上近耦合（close coupling）冷却回路——呃——同时覆盖较高温度和较低温度，也就是风冷用较低温、液冷用较高温。
+
+> "Couple of different things that, uh, that we can look at here is the the height of the hack itself is really fungible depending on what you're optimizing for in your data center. So, if you have, um, a 16-in and or 16-ft ceiling height, uh, you have the potential there to get your two busways up to four busways and two cable trays in that particular zone. If you're looking upwards of maybe a 17-ft ceiling height, you have the additional capacity there to increase the density of your cable trays potentially up to three tiers as the fiber density in these compute racks continues to increase. And then, as Mo had spoken about earlier, when we're looking at like maybe an 18-ft ceiling height, you have the potential there to not only have your four busways for your um 4 to make three redundancy strategy, but you also have three tiers of cable tray plus the close um close coupling cooling loops uh for both the higher temp and the lower temp uh for air cooling and higher temp for your liquid cooling."
+
+<div class="takeaway"><b>小结</b>　层高在这里被当成一个"容量开关"：16 ft 只能 2 母线槽 + 2 层托盘，17 ft 可上 3 层托盘（应对光纤密度上升），18 ft 才能同时容纳 4 母线槽（4 取 3）+ 3 层托盘 + 冷热两套近耦合回路。也就是说，多花的每一英尺层高买到的是具体的冗余与扩容能力，而不是"更宽敞"。需注意幻灯片示例表与讲者口述在托盘层数上并不一致（16′ 一栏幻灯片标 3 层、18′ 一栏标 2 层），按讲者口述的"16 ft = 2 层、17 ft 起 = 3 层"作为规划下限更稳妥。</div>
+
+---
+
+## 09　构件建议：行基础设施 / TAP 箱 / 分水器 / 热通道封闭
+
+![Building Blocks - Recommendations：四张卡片。Row Infrastructure——16'–18' 高、示例 34.6' 长、4 母线槽（4 取 3）或 2 母线槽、3 层网络托盘、支持二次分水器。TAP Boxes——双路输出、适配 18" 间距的母线槽、支持 415/480 V 交流（60A/100A/200A/250A）、800 VDC 支持（125A 与 250A 直流）、支持分励脱扣、可直接接电源架。Row Manifolds——最多 4" 接口（6 处）、可配 2" 或 4"、集成隔离阀、内置接水盘、可选机架内 CDU。Hot Aisle Containment（NVIDIA）——支持两种水温、每英尺每侧 15 kW 风冷、6" 主管用于风冷（2.4 MW/对）、双 8" 主管（4 MW/行）、可从底部完全维护、每英尺 4,200 CFM 风机](images/09_11m25s.jpg)
+
+我想这是你的最后一页。构件（building blocks）。好，这就是构件，更像是我们刚才谈到的内容的一个快照，也就是我之前展示过的——机架结构里那些关键部件。
+
+你知道，你有你的行配置，带母线槽、TAP 箱、行分水器，真正的重点在近耦合，也就是液冷到机架本身的耦合。
+
+呃，这里的驱动因素是你要两种不同的冷却温度。你有风侧冷却，加上你的直接芯片液冷。在这套配置里，它们应该由不同的分水器供给，这是可变的，以便同时支持两者。呃，我想差不多就这些。谢谢 Mo。谢谢。
+
+好。那么，行动号召。呃，我们会……
+
+> "I think this is your last slide. The building blocks.  Yeah, this is just kind of the building blocks and more of a snapshot of what we'd kind of just talked about, those like critical pieces within the hack structure that I had presented before. You know, you have your your row configuration with the busway, the tab boxes, the row manifolds, really kind of the emphasis on close coupling, that liquid cooling to to the actual hack itself. Uh the the driver here is you want two different cooling temperatures. You have your air side cooling plus your direct chip liquid cooling. Those should be fed off of different manifolds in this particular configuration is is fungibles to be able to support both. Um and I think that that's pretty much it. Thanks, Mo.  Thanks. Okay. So, call to action. Uh we would"
+
+<div class="takeaway"><b>小结</b>　四个构件构成一行，各自带可采购的规格：行基础设施（16–18 ft 高、示例 34.6 ft 长、4 条或 2 条母线槽、3 层网络托盘、支持二次分水器）、TAP 箱（双路输出、母线槽间距 18″、415/480 V 交流 60–250 A 或 800 VDC 125/250 A、支持分励脱扣、可直接接电源架）、行分水器（最多 4″ 接口 6 处、2″/4″ 可配、集成隔离阀、内置接水盘、可选机架内 CDU）、热通道封闭（支持两种水温、每英尺每侧 15 kW 风冷、6″ 主管 2.4 MW/对、双 8″ 主管 4 MW/行、每英尺 4,200 CFM 风机）。核心约束是"两套水温必须两套分水器"——风冷低温水与液冷高温水一旦共用一路，近耦合就退化成远距离换热，前面所有行内密度的前提都不成立。</div>
+
+---
+
+## 10　行动号召与跨工作流协作
+
+![Call to Action：把最小 AI 标准纳入基础建筑设计以支撑下一代 ML 负载——帮助制定满足这些标准的构件规格、帮助标准化子系统与元器件；审阅 v0.7 版 Open DC 标准并提供反馈；11 月起每月举行反馈会；v1.0 将有后续增补——与其他工作流合作以确定下一代规格，包括 LVDC 工作流与 Cooling 工作流](images/10_12m20s.jpg)
+
+……希望业界首先消化这些信息，并在我们推进这个——呃——工作流的下一版修订时给我们反馈。
+
+呃，我们希望看到设计、构件，以及元器件——呃——产品和子系统，围绕我们今天在这里分享的这些需求来设计。
+
+呃，那么——呃，哦，还有一件事，我想是我们正在与其他工作流合作。所以，今年在大会上我们已经听到很多关于 LVDC 的讨论。呃，所以我们正在与他们合作——呃——准备我们的下一版——呃——规范，以——呃——纳入一部分 LVDC——呃——电气架构。
+
+关于 Paul 谈到的冷却工作流，呃，我们也在那边工作，看看在流体——呃——流速方面我们能做什么，以及我们如何提高那些流速——呃——以满足我们正在要求的、更高的一些制冷需求。那么，我就先停在这里，看看有没有针对我们这组讲者的问题。
+
+> "like the industry to first and foremost absorb this information and provide feedback to us as we work on the next revisions of this uh um workstream. Uh we would like to see designs and building blocks as well as components and uh products and subsystems designed around some of the requirements we shared here today. Um and with that uh oh and one more thing I think is that we were partnering with other work streams. So, we've heard a lot about LVDC uh at the conference uh this year. Uh so, we're partnering with them to uh prepare our next uh specifications to uh incorporate some of the LVDC uh electrical architecture. Regarding the cooling work stream that uh Paul talked about, uh we're also working there to see what what what we can do there with uh regards to fluid uh speeds and how we can increase those fluid speeds uh to meet some of the higher cooling requirements that we're uh requiring. But with that, I'll pause and see if there's any questions for our panel."
+
+<div class="takeaway"><b>小结</b>　行动号召分三层：一是"吸收并反馈"——规范当前是 v0.7，11 月起每月开反馈会；二是"按标准做设计"——构件、元器件、子系统都要对齐今天这些最小值，把标准往下沉到可采购的颗粒度；三是"跨工作流合并"——下一版要把 LVDC 电气架构并进来，同时与冷却工作流一起研究提高流速以承接更高散热需求。换言之，今天这份文档是中间态而非终点：3 m/s 的流速上限、415–480 V 的配电电压，这两条都已被明确标注为"会被改"。</div>
+
+---
+
+## 11　结束
+
+![结尾页：Thank You!（深绿色主题背景）](images/11_13m00s.jpg)
+
+好。我们（时间）还比较宽裕，是吧？谢谢。谢谢。
+
+> "Okay. We're quite a liberal Yeah? Thank you. Thank you."
+
+<div class="takeaway"><b>小结</b>　本场无观众提问，直接结束。整场的主张可以压缩成一句：AI 工厂的瓶颈已经从"芯片能不能买到"转到"厂房能不能装得下"。350 kW/ft 的峰值密度、100″ 高 71″ 深 15,000 磅的机架、18 英尺层高、3 m/s 流速、24 英尺行距——这些数字一旦定下，就是混凝土、钢结构与管径，改起来以年计。所以四家选择在 2028 年产品出来之前两年，先把土建与机电的边界锁死。</div>
+
+---
+
+## 结语
+
+把这场 13 分钟的演讲压缩成一句话：**AI 工厂的瓶颈，已经从"芯片能不能买到"转到"厂房能不能装得下"。**
+
+这不是修辞。350 kW/ft 的峰值密度、100 英寸高 71 英寸深的机架、15,000 磅的单柜重量、18 英尺层高、3 m/s 的流速上限——这些数字一旦落成混凝土、钢结构和管径，改动周期以年计。四家选择在 2028 年产品面世之前两年先把土建与机电的边界锁死，原因就在这里；这份文档被明确定义为 v0.7 的中间态而非终稿，原因也在这里。
+
+<div class="recap"><b>数字速览</b><br>
+功率密度　125 → 350 kW/ft（2027 → 2028+）<br>
+集群规模　12 MW 最低 / 24 MW 首选<br>
+机架　　　高 100″、深 71″、重 15,000 磅<br>
+通道　　　冷 82″、热 54″、行距 24′<br>
+层高　　　18 ft（两母线槽配置）<br>
+流速上限　3 m/s（ASHRAE，防冲蚀）<br>
+单块容量　NVIDIA 12.5 MW / 4 行 / 每行 4 MW</div>
+
+<div class="outro">本文依据 OCP Global Summit 2026 现场录像整理，数字以幻灯片标注为准；口述与幻灯片不一致之处，已在对应小节注明。原片：youtube.com/watch?v=vemxcWJOLWA（13 分 14 秒）。如果你正在做机房规划或液冷选型，欢迎留言说说你所在的机房现在卡在哪一步——配电、承重，还是层高。</div>
+
+---
+
+## 附录　时间轴
+
+| 时间 | 内容 |
+| --- | --- |
+| 00:36 | 开场：下一代 ML 基础设施与 Open DC 工作组 |
+| 00:54 | 统一功率与集群密度：2027 / 2028+ 三组指标 |
+| 02:12 | 设施与基础设施规格：集群容量与机架重量 |
+| 03:24 | 行布局与净空尺寸（热/冷通道、机架高深、层高） |
+| 05:15 | 热管理与制冷边界（选型口径、流速、管径表） |
+| 07:30 | 参考实现：Google 版配置 |
+| 08:27 | 参考实现：NVIDIA 版 4 行 12.5 MW 块 |
+| 09:54 | 近耦合制冷与层高的对应关系 |
+| 11:03 | 构件建议：行基础设施 / TAP 箱 / 分水器 / 热通道封闭 |
+| 11:45 | 行动号召与跨工作流协作（LVDC、Cooling） |
+| 12:51 | 结束（无提问） |
+
